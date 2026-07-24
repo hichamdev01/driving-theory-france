@@ -1,0 +1,272 @@
+{
+  "country": { "code": "PT", "name": "Portugal" },
+  "languages": ["pt", "en"],
+  "categories": [
+    { "slug": "road_signs", "translations": { "en": "Road Signs", "pt": "Sinais de Trânsito" } },
+    { "slug": "priority_rules", "translations": { "en": "Priority Rules", "pt": "Regras de Prioridade" } },
+    { "slug": "speed_limits", "translations": { "en": "Speed Limits", "pt": "Limites de Velocidade" } },
+    { "slug": "parking_stopping", "translations": { "en": "Parking and Stopping", "pt": "Estacionamento e Paragem" } },
+    { "slug": "overtaking", "translations": { "en": "Overtaking", "pt": "Ultrapassagem" } },
+    { "slug": "motorways", "translations": { "en": "Motorways", "pt": "Autoestradas" } },
+    { "slug": "alcohol_drugs", "translations": { "en": "Alcohol and Driving", "pt": "Álcool e Condução" } },
+    { "slug": "safety", "translations": { "en": "Safety", "pt": "Segurança" } }
+  ],
+  "examConfiguration": {
+    "number_of_questions": 30,
+    "time_limit_seconds": 1800,
+    "passing_score": 80,
+    "allowed_mistakes": 6
+  },
+  "questions": [
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "translations": {
+        "en": { "question_text": "A red circular sign with a white horizontal bar means:", "answer_a": "Give way", "answer_b": "No entry for vehicles", "answer_c": "No parking", "answer_d": "Priority road", "explanation": "A red circle with a white horizontal bar is the 'No entry' sign — vehicles may not pass beyond this point in that direction." },
+        "pt": { "question_text": "Um sinal circular vermelho com uma barra horizontal branca significa:", "answer_a": "Cedência de passagem", "answer_b": "Sentido proibido", "answer_c": "Proibido estacionar", "answer_d": "Estrada com prioridade", "explanation": "O círculo vermelho com barra horizontal branca é o sinal de 'Sentido proibido' — nenhum veículo pode ultrapassar esse ponto naquele sentido." }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "en": { "question_text": "A triangular sign with a red border generally indicates:", "answer_a": "A warning of danger ahead", "answer_b": "A mandatory direction", "answer_c": "An informational service", "answer_d": "A prohibition", "explanation": "Triangular signs with a red border are warning signs, alerting drivers to a hazard or special condition ahead." },
+        "pt": { "question_text": "Um sinal triangular com orla vermelha indica, de um modo geral:", "answer_a": "Um aviso de perigo à frente", "answer_b": "Uma direção obrigatória", "answer_c": "Uma informação de serviço", "answer_d": "Uma proibição", "explanation": "Os sinais triangulares com orla vermelha são sinais de perigo, alertando para uma situação especial na via adiante." }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "translations": {
+        "en": { "question_text": "A blue circular sign with a white arrow pointing up means:", "answer_a": "Recommended direction", "answer_b": "One-way street ending", "answer_c": "Mandatory direction: straight ahead only", "answer_d": "No through road", "explanation": "Blue circular signs are mandatory signs. A white up arrow means you must continue straight ahead." },
+        "pt": { "question_text": "Um sinal circular azul com uma seta branca a apontar para cima significa:", "answer_a": "Direção recomendada", "answer_b": "Fim de rua de sentido único", "answer_c": "Obrigação de seguir em frente", "answer_d": "Via sem saída", "explanation": "Os sinais circulares azuis são sinais de obrigação. A seta branca para cima obriga a seguir em frente." }
+      }
+    },
+    {
+      "category_slug": "priority_rules",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "translations": {
+        "en": { "question_text": "At an intersection with no signs or traffic lights, who has priority?", "answer_a": "The vehicle already on the roundabout", "answer_b": "The faster vehicle", "answer_c": "The vehicle coming from the right", "answer_d": "The larger vehicle", "explanation": "When an intersection has no signs, markings, or lights, priority is given to traffic coming from the right." },
+        "pt": { "question_text": "Num cruzamento sem sinalização nem semáforos, quem tem prioridade?", "answer_a": "O veículo já na rotunda", "answer_b": "O veículo mais rápido", "answer_c": "O veículo que vem da direita", "answer_d": "O veículo de maiores dimensões", "explanation": "Quando um cruzamento não tem sinalização, marcas ou semáforos, a prioridade é de quem vem da direita." }
+      }
+    },
+    {
+      "category_slug": "priority_rules",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "en": { "question_text": "At a roundabout, who generally has priority?", "answer_a": "Vehicles already circulating on the roundabout", "answer_b": "Vehicles entering the roundabout", "answer_c": "Vehicles coming from the right of the entrance", "answer_d": "Whoever arrives first", "explanation": "Unless signs indicate otherwise, vehicles already on the roundabout have priority over vehicles entering it." },
+        "pt": { "question_text": "Numa rotunda, quem tem geralmente prioridade?", "answer_a": "Os veículos que já circulam na rotunda", "answer_b": "Os veículos que entram na rotunda", "answer_c": "Os veículos que vêm da direita da entrada", "answer_d": "Quem chegar primeiro", "explanation": "Salvo sinalização em contrário, os veículos que já circulam na rotunda têm prioridade sobre os que pretendem entrar." }
+      }
+    },
+    {
+      "category_slug": "priority_rules",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "translations": {
+        "en": { "question_text": "When must you always give way, regardless of other priority rules?", "answer_a": "To vehicles behind you signaling to overtake", "answer_b": "To emergency vehicles using sirens and lights", "answer_c": "To vehicles with tinted windows", "answer_d": "To vehicles towing a trailer", "explanation": "Emergency vehicles (ambulance, police, fire) with active sirens and lights always have priority; other drivers must give way and let them pass safely." },
+        "pt": { "question_text": "A quem se deve ceder sempre passagem, independentemente das outras regras de prioridade?", "answer_a": "Aos veículos atrás sinalizando ultrapassagem", "answer_b": "Aos veículos prioritários com sirene e sinais luminosos ativos", "answer_c": "Aos veículos com vidros fumados", "answer_d": "Aos veículos com reboque", "explanation": "Veículos prioritários (ambulâncias, polícia, bombeiros) com sirene e sinal luminoso ativos têm sempre prioridade; os restantes condutores devem ceder-lhes a passagem em segurança." }
+      }
+    },
+    {
+      "category_slug": "speed_limits",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "translations": {
+        "en": { "question_text": "What is the general speed limit inside urban (built-up) areas in Portugal?", "answer_a": "40 km/h", "answer_b": "50 km/h", "answer_c": "60 km/h", "answer_d": "70 km/h", "explanation": "Unless signed otherwise, the general urban speed limit in Portugal is 50 km/h." },
+        "pt": { "question_text": "Qual é o limite geral de velocidade dentro de localidades em Portugal?", "answer_a": "40 km/h", "answer_b": "50 km/h", "answer_c": "60 km/h", "answer_d": "70 km/h", "explanation": "Salvo sinalização em contrário, o limite geral de velocidade dentro de localidades em Portugal é de 50 km/h." }
+      }
+    },
+    {
+      "category_slug": "speed_limits",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "translations": {
+        "en": { "question_text": "What is the maximum speed limit on Portuguese motorways (autoestradas) for regular cars?", "answer_a": "100 km/h", "answer_b": "110 km/h", "answer_c": "120 km/h", "answer_d": "140 km/h", "explanation": "The maximum speed limit on Portuguese motorways for light passenger vehicles is 120 km/h." },
+        "pt": { "question_text": "Qual é o limite máximo de velocidade nas autoestradas portuguesas para ligeiros?", "answer_a": "100 km/h", "answer_b": "110 km/h", "answer_c": "120 km/h", "answer_d": "140 km/h", "explanation": "O limite máximo de velocidade nas autoestradas portuguesas para veículos ligeiros é de 120 km/h." }
+      }
+    },
+    {
+      "category_slug": "speed_limits",
+      "correct_answer": "a",
+      "difficulty": "hard",
+      "translations": {
+        "en": { "question_text": "A driver who has held their license for less than 1 year must not exceed which motorway speed?", "answer_a": "100 km/h", "answer_b": "110 km/h", "answer_c": "120 km/h", "answer_d": "90 km/h", "explanation": "New drivers, in their first year of license, are limited to a maximum of 100 km/h on motorways as a safety measure." },
+        "pt": { "question_text": "Um condutor com carta há menos de 1 ano não pode exceder que velocidade em autoestrada?", "answer_a": "100 km/h", "answer_b": "110 km/h", "answer_c": "120 km/h", "answer_d": "90 km/h", "explanation": "Condutores no primeiro ano de carta estão limitados a um máximo de 100 km/h em autoestrada, como medida de segurança." }
+      }
+    },
+    {
+      "category_slug": "parking_stopping",
+      "correct_answer": "d",
+      "difficulty": "medium",
+      "translations": {
+        "en": { "question_text": "It is prohibited to stop or park a vehicle:", "answer_a": "In a marked parking bay", "answer_b": "On a residential street with no signs", "answer_c": "In front of your own garage", "answer_d": "On a pedestrian crossing", "explanation": "Stopping or parking on a pedestrian crossing is always prohibited, since it blocks pedestrian visibility and safety." },
+        "pt": { "question_text": "É proibido parar ou estacionar um veículo:", "answer_a": "Num lugar de estacionamento marcado", "answer_b": "Numa rua residencial sem sinalização", "answer_c": "Em frente à própria garagem", "answer_d": "Sobre uma passadeira para peões", "explanation": "Parar ou estacionar sobre uma passadeira é sempre proibido, pois compromete a visibilidade e a segurança dos peões." }
+      }
+    },
+    {
+      "category_slug": "parking_stopping",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "translations": {
+        "en": { "question_text": "What is the minimum distance you must keep when parking near a road junction?", "answer_a": "1 metre", "answer_b": "5 metres", "answer_c": "15 metres", "answer_d": "There is no minimum distance", "explanation": "Vehicles must not be parked within 5 metres of a road junction, to preserve visibility for turning traffic." },
+        "pt": { "question_text": "Qual a distância mínima que deve respeitar ao estacionar perto de um cruzamento?", "answer_a": "1 metro", "answer_b": "5 metros", "answer_c": "15 metros", "answer_d": "Não existe distância mínima", "explanation": "Não é permitido estacionar a menos de 5 metros de um cruzamento, para preservar a visibilidade de quem muda de direção." }
+      }
+    },
+    {
+      "category_slug": "parking_stopping",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "en": { "question_text": "\"Stopping\" a vehicle, unlike \"parking\", means:", "answer_a": "A brief halt where the driver remains ready to move off", "answer_b": "Leaving the vehicle unattended for hours", "answer_c": "Only allowed on motorways", "answer_d": "The same thing as parking", "explanation": "Stopping is a brief interruption of movement (e.g., to let a passenger out) with the driver present and ready to continue; parking implies leaving the vehicle for longer." },
+        "pt": { "question_text": "\"Paragem\", ao contrário de \"estacionamento\", significa:", "answer_a": "Uma interrupção breve em que o condutor está pronto para retomar a marcha", "answer_b": "Deixar o veículo sem vigilância por horas", "answer_c": "Só é permitido em autoestradas", "answer_d": "O mesmo que estacionamento", "explanation": "A paragem é uma interrupção breve da marcha (por exemplo para largar um passageiro), com o condutor presente e pronto a continuar; o estacionamento implica deixar o veículo por mais tempo." }
+      }
+    },
+    {
+      "category_slug": "overtaking",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "translations": {
+        "en": { "question_text": "Before overtaking, a driver must:", "answer_a": "Sound the horn continuously", "answer_b": "Accelerate as fast as possible", "answer_c": "Make sure the manoeuvre can be completed safely and signal in advance", "answer_d": "Wait for the other vehicle to slow down", "explanation": "Before overtaking, the driver must check it's safe, has enough visibility and space, and signal the intention in advance." },
+        "pt": { "question_text": "Antes de ultrapassar, o condutor deve:", "answer_a": "Buzinar continuamente", "answer_b": "Acelerar o mais possível", "answer_c": "Certificar-se de que pode concluir a manobra em segurança e sinalizar com antecedência", "answer_d": "Esperar que o outro veículo abrande", "explanation": "Antes de ultrapassar, o condutor deve verificar se a manobra é segura, se tem visibilidade e espaço suficientes, e sinalizar a intenção com antecedência." }
+      }
+    },
+    {
+      "category_slug": "overtaking",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "translations": {
+        "en": { "question_text": "Overtaking is prohibited:", "answer_a": "On a straight road with good visibility", "answer_b": "On a pedestrian crossing or right before it", "answer_c": "On a motorway with three lanes", "answer_d": "When following a cyclist", "explanation": "Overtaking is forbidden on pedestrian crossings and immediately before them, due to the risk to crossing pedestrians." },
+        "pt": { "question_text": "A ultrapassagem é proibida:", "answer_a": "Numa reta com boa visibilidade", "answer_b": "Sobre uma passadeira ou imediatamente antes dela", "answer_c": "Numa autoestrada com três vias", "answer_d": "Ao seguir um ciclista", "explanation": "A ultrapassagem é proibida sobre passadeiras e imediatamente antes delas, devido ao risco para os peões que atravessam." }
+      }
+    },
+    {
+      "category_slug": "overtaking",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "translations": {
+        "en": { "question_text": "When overtaking a cyclist, the driver should leave a lateral safety distance of at least:", "answer_a": "1.5 metres", "answer_b": "0.5 metres", "answer_c": "3 metres", "answer_d": "No specific distance is required", "explanation": "Portuguese law requires a minimum lateral clearance of 1.5 metres when overtaking cyclists outside urban areas (1 metre within urban areas)." },
+        "pt": { "question_text": "Ao ultrapassar um ciclista, o condutor deve deixar uma distância lateral de segurança de pelo menos:", "answer_a": "1,5 metros", "answer_b": "0,5 metros", "answer_c": "3 metros", "answer_d": "Não é exigida distância específica", "explanation": "A lei portuguesa exige uma distância lateral mínima de 1,5 metros ao ultrapassar ciclistas fora de localidades (1 metro dentro de localidades)." }
+      }
+    },
+    {
+      "category_slug": "motorways",
+      "correct_answer": "c",
+      "difficulty": "easy",
+      "translations": {
+        "en": { "question_text": "On Portuguese motorways, which vehicles are prohibited?", "answer_a": "Cars towing small trailers", "answer_b": "Motorcycles above 50cc", "answer_c": "Mopeds, bicycles, and pedestrians", "answer_d": "Buses", "explanation": "Motorways are reserved for motor vehicles capable of higher speeds; mopeds, bicycles, and pedestrians are not allowed." },
+        "pt": { "question_text": "Nas autoestradas portuguesas, que veículos são proibidos?", "answer_a": "Automóveis com pequenos reboques", "answer_b": "Motociclos acima de 50cc", "answer_c": "Ciclomotores, bicicletas e peões", "answer_d": "Autocarros", "explanation": "As autoestradas são reservadas a veículos motorizados capazes de velocidades mais elevadas; ciclomotores, bicicletas e peões são proibidos." }
+      }
+    },
+    {
+      "category_slug": "motorways",
+      "correct_answer": "d",
+      "difficulty": "medium",
+      "translations": {
+        "en": { "question_text": "If your vehicle breaks down on a motorway, you should:", "answer_a": "Stay inside the vehicle with hazard lights on", "answer_b": "Try to repair it in the lane where you stopped", "answer_c": "Walk against the flow of traffic to seek help", "answer_d": "Move to the hard shoulder, put on a hi-vis vest, and stand behind the safety barrier", "explanation": "In a breakdown, pull onto the hard shoulder, turn on hazard lights, wear a high-visibility vest, and stand in a safe place behind the barrier while calling for help." },
+        "pt": { "question_text": "Se o seu veículo avariar numa autoestrada, deve:", "answer_a": "Permanecer dentro do veículo com os quatro piscas ligados", "answer_b": "Tentar repará-lo na via onde parou", "answer_c": "Caminhar em sentido contrário ao trânsito para pedir ajuda", "answer_d": "Deslocar-se para a berma, colocar o colete refletor e permanecer atrás do separador de segurança", "explanation": "Em caso de avaria, deve dirigir-se para a berma, ligar os quatro piscas, vestir o colete refletor e permanecer em local seguro atrás da proteção enquanto pede ajuda." }
+      }
+    },
+    {
+      "category_slug": "motorways",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "translations": {
+        "en": { "question_text": "The minimum following distance on a motorway should allow for:", "answer_a": "No specific consideration is needed above 100 km/h", "answer_b": "Enough time to react and brake safely if the vehicle ahead stops suddenly", "answer_c": "Exactly 10 metres regardless of speed", "answer_d": "Only matters when it's raining", "explanation": "The safe following distance is time-based (commonly a 2-second rule, more in poor conditions), giving enough time to react if the vehicle ahead brakes suddenly." },
+        "pt": { "question_text": "A distância mínima de seguimento numa autoestrada deve permitir:", "answer_a": "Não é necessária nenhuma consideração acima de 100 km/h", "answer_b": "Tempo suficiente para reagir e travar em segurança caso o veículo da frente pare subitamente", "answer_c": "Exatamente 10 metros independentemente da velocidade", "answer_d": "Só importa quando está a chover", "explanation": "A distância de segurança deve basear-se no tempo (regra dos 2 segundos, mais em más condições), garantindo tempo suficiente para reagir a uma travagem brusca do veículo da frente." }
+      }
+    },
+    {
+      "category_slug": "alcohol_drugs",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "translations": {
+        "en": { "question_text": "What is the general legal blood alcohol limit for driving in Portugal?", "answer_a": "0.8 g/L", "answer_b": "0.5 g/L", "answer_c": "0.2 g/L", "answer_d": "1.0 g/L", "explanation": "The general legal blood alcohol limit in Portugal is 0.5 g/L." },
+        "pt": { "question_text": "Qual é a taxa de alcoolemia geral legalmente permitida para conduzir em Portugal?", "answer_a": "0,8 g/L", "answer_b": "0,5 g/L", "answer_c": "0,2 g/L", "answer_d": "1,0 g/L", "explanation": "A taxa de alcoolemia geral legalmente permitida em Portugal é de 0,5 g/L." }
+      }
+    },
+    {
+      "category_slug": "alcohol_drugs",
+      "correct_answer": "a",
+      "difficulty": "hard",
+      "translations": {
+        "en": { "question_text": "Which drivers are subject to a stricter 0.2 g/L blood alcohol limit in Portugal?", "answer_a": "Professional drivers and those with less than 3 years of license", "answer_b": "Drivers over 60 years old", "answer_c": "Drivers of electric vehicles", "answer_d": "All drivers on Sundays", "explanation": "Professional drivers and drivers who have held their license for less than 3 years are subject to a stricter 0.2 g/L limit." },
+        "pt": { "question_text": "Que condutores estão sujeitos a um limite mais restrito de 0,2 g/L em Portugal?", "answer_a": "Condutores profissionais e com menos de 3 anos de carta", "answer_b": "Condutores com mais de 60 anos", "answer_c": "Condutores de veículos elétricos", "answer_d": "Todos os condutores aos domingos", "explanation": "Condutores profissionais e condutores há menos de 3 anos com carta de condução estão sujeitos a um limite mais restrito de 0,2 g/L." }
+      }
+    },
+    {
+      "category_slug": "alcohol_drugs",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "translations": {
+        "en": { "question_text": "Driving with a blood alcohol level above 1.2 g/L in Portugal is classified as:", "answer_a": "A minor administrative offence", "answer_b": "Legal but discouraged", "answer_c": "A criminal offence", "answer_d": "Only punishable with a warning", "explanation": "Driving with more than 1.2 g/L of blood alcohol is classified as a criminal offence under Portuguese law, not just an administrative fine." },
+        "pt": { "question_text": "Conduzir com uma taxa de álcool no sangue superior a 1,2 g/L em Portugal é classificado como:", "answer_a": "Uma contraordenação leve", "answer_b": "Legal mas desaconselhado", "answer_c": "Um crime", "answer_d": "Apenas punível com advertência", "explanation": "Conduzir com mais de 1,2 g/L de álcool no sangue é classificado como crime nos termos da lei portuguesa, e não apenas uma contraordenação." }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "d",
+      "difficulty": "easy",
+      "translations": {
+        "en": { "question_text": "Seat belts are mandatory:", "answer_a": "Only for the driver", "answer_b": "Only outside urban areas", "answer_c": "Only for front seat passengers", "answer_d": "For the driver and all passengers, front and rear", "explanation": "In Portugal, seat belts are mandatory for the driver and all passengers, in both front and rear seats, whenever fitted." },
+        "pt": { "question_text": "O cinto de segurança é obrigatório:", "answer_a": "Apenas para o condutor", "answer_b": "Apenas fora das localidades", "answer_c": "Apenas para os passageiros da frente", "answer_d": "Para o condutor e todos os passageiros, à frente e atrás", "explanation": "Em Portugal, o cinto de segurança é obrigatório para o condutor e todos os passageiros, tanto nos bancos da frente como de trás, sempre que existente." }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "translations": {
+        "en": { "question_text": "Children under 135 cm in height must travel:", "answer_a": "In the front seat only, without a restraint", "answer_b": "In an appropriate child restraint system suited to their height and weight", "answer_c": "Standing in the rear seat", "answer_d": "On an adult's lap with the adult's seat belt around both", "explanation": "Children under 135 cm must use an approved child restraint system (car seat or booster) appropriate to their height and weight." },
+        "pt": { "question_text": "As crianças com menos de 135 cm de altura devem viajar:", "answer_a": "No banco da frente, sem qualquer sistema de retenção", "answer_b": "Num sistema de retenção para crianças adequado à sua altura e peso", "answer_c": "De pé no banco de trás", "answer_d": "Ao colo de um adulto, com o cinto do adulto a envolver ambos", "explanation": "Crianças com menos de 135 cm devem usar um sistema de retenção homologado (cadeira ou assento elevatório) adequado à sua altura e peso." }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "en": { "question_text": "The mandatory equipment to be carried in the car and used in case of breakdown includes:", "answer_a": "A high-visibility vest and a warning triangle", "answer_b": "A spare set of car keys", "answer_c": "A first aid kit is mandatory nationwide", "answer_d": "Snow chains at all times", "explanation": "In Portugal, drivers must carry a high-visibility vest (worn if leaving the vehicle on the road) and a warning triangle to signal a stopped vehicle." },
+        "pt": { "question_text": "O equipamento obrigatório a transportar no automóvel e a usar em caso de avaria inclui:", "answer_a": "Colete refletor e triângulo de pré-sinalização", "answer_b": "Um jogo de chaves reserva do carro", "answer_c": "Estojo de primeiros socorros é obrigatório em todo o território", "answer_d": "Correntes de neve em permanência", "explanation": "Em Portugal, o condutor deve transportar colete refletor (a usar se sair do veículo na via) e triângulo de pré-sinalização para assinalar um veículo imobilizado." }
+      }
+    }
+  ],
+  "roadSigns": [
+    { "category_slug": "road_signs", "shape": "octagon", "color": "#C8102E", "translations": {
+      "en": { "name": "Stop", "meaning": "Come to a complete stop", "explanation": "You must stop completely at the sign or stop line and give way before proceeding, even if the road looks clear." },
+      "pt": { "name": "Paragem obrigatória (STOP)", "meaning": "Parar completamente", "explanation": "Deve parar completamente junto ao sinal ou linha de paragem e ceder a passagem antes de prosseguir, mesmo que a via pareça livre." }
+    }},
+    { "category_slug": "road_signs", "shape": "triangle", "color": "#C8102E", "translations": {
+      "en": { "name": "Give Way", "meaning": "Yield to traffic on the main road", "explanation": "You must slow down or stop if necessary to give priority to traffic on the road you are joining." },
+      "pt": { "name": "Cedência de passagem", "meaning": "Ceder prioridade à via principal", "explanation": "Deve reduzir a velocidade ou parar, se necessário, para dar prioridade ao trânsito da via a que se vai juntar." }
+    }},
+    { "category_slug": "road_signs", "shape": "circle", "color": "#C8102E", "translations": {
+      "en": { "name": "No Entry", "meaning": "Entry prohibited for all vehicles", "explanation": "No vehicle may enter the road from this direction; often used on the exit end of a one-way street." },
+      "pt": { "name": "Sentido proibido", "meaning": "Entrada proibida a todos os veículos", "explanation": "Nenhum veículo pode entrar na via a partir desta direção; usado frequentemente na saída de uma rua de sentido único." }
+    }},
+    { "category_slug": "speed_limits", "shape": "circle", "color": "#C8102E", "translations": {
+      "en": { "name": "Speed Limit", "meaning": "Maximum speed indicated on the sign", "explanation": "You may not exceed the speed shown on the sign until a sign cancelling or changing the limit appears." },
+      "pt": { "name": "Limite de velocidade", "meaning": "Velocidade máxima indicada no sinal", "explanation": "Não pode exceder a velocidade indicada no sinal até surgir um sinal que a cancele ou altere." }
+    }},
+    { "category_slug": "parking_stopping", "shape": "circle", "color": "#1E5AA8", "translations": {
+      "en": { "name": "No Parking", "meaning": "Parking prohibited in this area", "explanation": "Stopping briefly may be allowed, but leaving the vehicle unattended (parking) is prohibited in the signed area." },
+      "pt": { "name": "Estacionamento proibido", "meaning": "Proibido estacionar nesta zona", "explanation": "A paragem breve pode ser permitida, mas deixar o veículo sem vigilância (estacionar) é proibido na zona sinalizada." }
+    }},
+    { "category_slug": "priority_rules", "shape": "square", "color": "#FFC72C", "translations": {
+      "en": { "name": "Priority Road", "meaning": "You have priority over side roads", "explanation": "This yellow diamond sign indicates you are on a priority road; traffic from side roads must give way to you." },
+      "pt": { "name": "Estrada com prioridade", "meaning": "Tem prioridade sobre as vias secundárias", "explanation": "Este sinal em losango amarelo indica que está numa estrada com prioridade; o trânsito das vias secundárias deve ceder-lhe a passagem." }
+    }},
+    { "category_slug": "road_signs", "shape": "triangle", "color": "#C8102E", "translations": {
+      "en": { "name": "Pedestrian Crossing Ahead", "meaning": "Warning of a pedestrian crossing ahead", "explanation": "Reduce speed and be ready to stop for pedestrians who may be crossing or about to cross the road." },
+      "pt": { "name": "Passagem de peões", "meaning": "Aviso de passadeira à frente", "explanation": "Reduza a velocidade e esteja pronto a parar para peões que possam estar a atravessar ou prestes a atravessar a via." }
+    }},
+    { "category_slug": "motorways", "shape": "circle", "color": "#1E5AA8", "translations": {
+      "en": { "name": "Roundabout Ahead (Mandatory)", "meaning": "You must go around the roundabout in the direction of the arrows", "explanation": "This mandatory blue sign shows the roundabout ahead and requires circulation in the direction shown, counter-clockwise in Portugal." },
+      "pt": { "name": "Rotunda obrigatória", "meaning": "Deve circular na rotunda no sentido das setas", "explanation": "Este sinal azul de obrigação mostra a rotunda à frente e obriga a circular no sentido indicado, contrário ao dos ponteiros do relógio em Portugal." }
+    }}
+  ]
+}

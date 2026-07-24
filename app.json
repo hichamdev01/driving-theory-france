@@ -1,15 +1,18 @@
 {
   "expo": {
-    "name": "driving-theory-app",
+    "name": "Theory Prep",
     "slug": "driving-theory-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "description": "Multilingual driving theory test preparation for Portugal, France, and Spain.",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.drivingtheoryapp.mobile"
     },
     "android": {
+      "package": "com.drivingtheoryapp.mobile",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -20,6 +23,10 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-asset"
+    ]
   }
 }
