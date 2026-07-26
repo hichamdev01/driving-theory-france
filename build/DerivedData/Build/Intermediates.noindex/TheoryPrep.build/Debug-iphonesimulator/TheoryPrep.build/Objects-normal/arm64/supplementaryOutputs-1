@@ -1,0 +1,23 @@
+{
+  "/Users/hichamlabani/Desktop/driving-theory-app/TheoryPrep/Components/CardView.swift" : {
+    "const-values" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/CardView.swiftconstvalues",
+    "dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/CardView.d",
+    "diagnostics" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/CardView.dia",
+    "object" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/CardView.o",
+    "swift-dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/CardView.swiftdeps"
+  },
+  "/Users/hichamlabani/Desktop/driving-theory-app/TheoryPrep/Views/ExamFlowView.swift" : {
+    "const-values" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/ExamFlowView.swiftconstvalues",
+    "dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/ExamFlowView.d",
+    "diagnostics" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/ExamFlowView.dia",
+    "object" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/ExamFlowView.o",
+    "swift-dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/ExamFlowView.swiftdeps"
+  },
+  "/Users/hichamlabani/Desktop/driving-theory-app/TheoryPrep/Views/ExamResultView.swift" : {
+    "const-values" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/ExamResultView.swiftconstvalues",
+    "dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/ExamResultView.d",
+    "diagnostics" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/ExamResultView.dia",
+    "object" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/ExamResultView.o",
+    "swift-dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/ExamResultView.swiftdeps"
+  }
+}

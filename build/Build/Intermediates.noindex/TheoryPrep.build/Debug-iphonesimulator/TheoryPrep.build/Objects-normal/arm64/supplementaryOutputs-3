@@ -1,0 +1,30 @@
+{
+  "/Users/hichamlabani/Desktop/driving-theory-app/TheoryPrep/Models/Models.swift" : {
+    "const-values" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/Models.swiftconstvalues",
+    "dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/Models.d",
+    "diagnostics" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/Models.dia",
+    "object" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/Models.o",
+    "swift-dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/Models.swiftdeps"
+  },
+  "/Users/hichamlabani/Desktop/driving-theory-app/TheoryPrep/Views/HomeView.swift" : {
+    "const-values" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/HomeView.swiftconstvalues",
+    "dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/HomeView.d",
+    "diagnostics" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/HomeView.dia",
+    "object" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/HomeView.o",
+    "swift-dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/HomeView.swiftdeps"
+  },
+  "/Users/hichamlabani/Desktop/driving-theory-app/TheoryPrep/Views/MainTabView.swift" : {
+    "const-values" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/MainTabView.swiftconstvalues",
+    "dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/MainTabView.d",
+    "diagnostics" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/MainTabView.dia",
+    "object" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/MainTabView.o",
+    "swift-dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/MainTabView.swiftdeps"
+  },
+  "/Users/hichamlabani/Desktop/driving-theory-app/TheoryPrep/Views/MistakesView.swift" : {
+    "const-values" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/MistakesView.swiftconstvalues",
+    "dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/MistakesView.d",
+    "diagnostics" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/MistakesView.dia",
+    "object" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/MistakesView.o",
+    "swift-dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/MistakesView.swiftdeps"
+  }
+}

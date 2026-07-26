@@ -1,0 +1,23 @@
+{
+  "/Users/hichamlabani/Desktop/driving-theory-app/TheoryPrep/App/Theme.swift" : {
+    "const-values" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/Theme.swiftconstvalues",
+    "dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/Theme.d",
+    "diagnostics" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/Theme.dia",
+    "object" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/Theme.o",
+    "swift-dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/Theme.swiftdeps"
+  },
+  "/Users/hichamlabani/Desktop/driving-theory-app/TheoryPrep/App/TheoryPrepApp.swift" : {
+    "const-values" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/TheoryPrepApp.swiftconstvalues",
+    "dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/TheoryPrepApp.d",
+    "diagnostics" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/TheoryPrepApp.dia",
+    "object" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/TheoryPrepApp.o",
+    "swift-dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/TheoryPrepApp.swiftdeps"
+  },
+  "/Users/hichamlabani/Desktop/driving-theory-app/TheoryPrep/State/TabRouter.swift" : {
+    "const-values" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/TabRouter.swiftconstvalues",
+    "dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/TabRouter.d",
+    "diagnostics" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/TabRouter.dia",
+    "object" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/TabRouter.o",
+    "swift-dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/DerivedData/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/TabRouter.swiftdeps"
+  }
+}

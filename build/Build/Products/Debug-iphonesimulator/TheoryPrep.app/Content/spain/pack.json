@@ -1,0 +1,759 @@
+{
+  "country": {
+    "code": "ES",
+    "name": "Spain"
+  },
+  "languages": [
+    "es",
+    "en"
+  ],
+  "categories": [
+    {
+      "slug": "road_signs",
+      "translations": {
+        "en": "Road Signs",
+        "es": "Señales de Tráfico"
+      }
+    },
+    {
+      "slug": "priority_rules",
+      "translations": {
+        "en": "Priority Rules",
+        "es": "Normas de Prioridad"
+      }
+    },
+    {
+      "slug": "speed_limits",
+      "translations": {
+        "en": "Speed Limits",
+        "es": "Límites de Velocidad"
+      }
+    },
+    {
+      "slug": "parking_stopping",
+      "translations": {
+        "en": "Parking and Stopping",
+        "es": "Estacionamiento y Parada"
+      }
+    },
+    {
+      "slug": "overtaking",
+      "translations": {
+        "en": "Overtaking",
+        "es": "Adelantamiento"
+      }
+    },
+    {
+      "slug": "motorways",
+      "translations": {
+        "en": "Motorways",
+        "es": "Autopistas"
+      }
+    },
+    {
+      "slug": "alcohol_drugs",
+      "translations": {
+        "en": "Alcohol and Driving",
+        "es": "Alcohol y Conducción"
+      }
+    },
+    {
+      "slug": "safety",
+      "translations": {
+        "en": "Safety",
+        "es": "Seguridad"
+      }
+    }
+  ],
+  "examConfiguration": {
+    "number_of_questions": 30,
+    "time_limit_seconds": 1800,
+    "passing_score": 90,
+    "allowed_mistakes": 3
+  },
+  "questions": [
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "translations": {
+        "en": {
+          "question_text": "A red circular sign with a white horizontal bar means:",
+          "answer_a": "Give way",
+          "answer_b": "No entry for vehicles",
+          "answer_c": "No parking",
+          "answer_d": "Priority road",
+          "explanation": "A red circle with a white horizontal bar is the 'Entrada prohibida' (No entry) sign — vehicles may not enter the road in that direction."
+        },
+        "es": {
+          "question_text": "Una señal circular roja con una barra horizontal blanca significa:",
+          "answer_a": "Ceda el paso",
+          "answer_b": "Entrada prohibida a todo vehículo",
+          "answer_c": "Prohibido estacionar",
+          "answer_d": "Vía con prioridad",
+          "explanation": "El círculo rojo con barra horizontal blanca es la señal de 'Entrada prohibida' — ningún vehículo puede entrar en la vía en ese sentido."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "en": {
+          "question_text": "A triangular sign with a red border generally indicates:",
+          "answer_a": "A warning of danger ahead",
+          "answer_b": "A mandatory direction",
+          "answer_c": "An informational service",
+          "answer_d": "A prohibition",
+          "explanation": "Triangular signs with a red border are warning signs (señales de peligro)."
+        },
+        "es": {
+          "question_text": "Una señal triangular con borde rojo indica, en general:",
+          "answer_a": "Un aviso de peligro próximo",
+          "answer_b": "Una dirección obligatoria",
+          "answer_c": "Un servicio informativo",
+          "answer_d": "Una prohibición",
+          "explanation": "Las señales triangulares con borde rojo son señales de peligro, avisando de una circunstancia especial en la vía."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "A blue circular sign with a white arrow pointing up means:",
+          "answer_a": "Recommended direction",
+          "answer_b": "One-way street ending",
+          "answer_c": "Mandatory direction: straight ahead only",
+          "answer_d": "No through road",
+          "explanation": "Blue circular signs are mandatory signs (señales de obligación). A white up arrow means you must continue straight ahead."
+        },
+        "es": {
+          "question_text": "Una señal circular azul con una flecha blanca hacia arriba significa:",
+          "answer_a": "Dirección recomendada",
+          "answer_b": "Fin de calle de sentido único",
+          "answer_c": "Sentido obligatorio: solo de frente",
+          "answer_d": "Vía sin salida",
+          "explanation": "Las señales circulares azules son señales de obligación. La flecha blanca hacia arriba obliga a seguir recto."
+        }
+      }
+    },
+    {
+      "category_slug": "priority_rules",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "At an intersection with no signs or traffic lights, who has priority?",
+          "answer_a": "The vehicle already on the roundabout",
+          "answer_b": "The faster vehicle",
+          "answer_c": "The vehicle coming from the right",
+          "answer_d": "The larger vehicle",
+          "explanation": "In the absence of signs, priority goes to the vehicle coming from the right."
+        },
+        "es": {
+          "question_text": "En una intersección sin señales ni semáforos, ¿quién tiene prioridad?",
+          "answer_a": "El vehículo que ya circula por la rotonda",
+          "answer_b": "El vehículo más rápido",
+          "answer_c": "El vehículo que viene por la derecha",
+          "answer_d": "El vehículo de mayor tamaño",
+          "explanation": "En ausencia de señalización, la prioridad es de quien circula por la derecha."
+        }
+      }
+    },
+    {
+      "category_slug": "priority_rules",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "en": {
+          "question_text": "At a roundabout, who generally has priority?",
+          "answer_a": "Vehicles already circulating on the roundabout",
+          "answer_b": "Vehicles entering the roundabout",
+          "answer_c": "Vehicles coming from the right of the entrance",
+          "answer_d": "Whoever arrives first",
+          "explanation": "Unless signs indicate otherwise, vehicles already on the roundabout have priority over vehicles entering it."
+        },
+        "es": {
+          "question_text": "En una rotonda, ¿quién tiene generalmente prioridad?",
+          "answer_a": "Los vehículos que ya circulan por la rotonda",
+          "answer_b": "Los vehículos que entran en la rotonda",
+          "answer_c": "Los vehículos que vienen por la derecha de la entrada",
+          "answer_d": "Quien llegue primero",
+          "explanation": "Salvo señalización en contra, los vehículos que ya circulan por la rotonda tienen prioridad sobre los que quieren entrar."
+        }
+      }
+    },
+    {
+      "category_slug": "priority_rules",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "When must you always give way, regardless of other priority rules?",
+          "answer_a": "To vehicles behind you signaling to overtake",
+          "answer_b": "To emergency vehicles using sirens and lights",
+          "answer_c": "To vehicles with tinted windows",
+          "answer_d": "To vehicles towing a trailer",
+          "explanation": "Emergency vehicles (ambulance, police, fire) with active sirens and lights always have priority."
+        },
+        "es": {
+          "question_text": "¿A quién se debe ceder siempre el paso, independientemente de otras normas de prioridad?",
+          "answer_a": "A los vehículos detrás que señalizan un adelantamiento",
+          "answer_b": "A los vehículos prioritarios con sirena y luces activadas",
+          "answer_c": "A los vehículos con lunas tintadas",
+          "answer_d": "A los vehículos con remolque",
+          "explanation": "Los vehículos prioritarios (ambulancia, policía, bomberos) con sirena y luces activadas tienen siempre prioridad absoluta."
+        }
+      }
+    },
+    {
+      "category_slug": "speed_limits",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "translations": {
+        "en": {
+          "question_text": "What is the general speed limit inside urban areas (población) in Spain?",
+          "answer_a": "40 km/h",
+          "answer_b": "50 km/h",
+          "answer_c": "60 km/h",
+          "answer_d": "70 km/h",
+          "explanation": "Unless signed otherwise, the general urban speed limit on a normal two-way street in Spain is 50 km/h (with lower limits of 30 or 20 km/h on many single-carriageway or shared streets)."
+        },
+        "es": {
+          "question_text": "¿Cuál es el límite general de velocidad dentro de poblado en España?",
+          "answer_a": "40 km/h",
+          "answer_b": "50 km/h",
+          "answer_c": "60 km/h",
+          "answer_d": "70 km/h",
+          "explanation": "Salvo señalización en contra, el límite general en una calle de doble sentido dentro de poblado en España es de 50 km/h (con límites inferiores de 30 o 20 km/h en muchas calles de un solo carril o de convivencia)."
+        }
+      }
+    },
+    {
+      "category_slug": "speed_limits",
+      "correct_answer": "d",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "On a single-lane street with a raised pavement level (calle de plataforma única), the speed limit is generally:",
+          "answer_a": "50 km/h",
+          "answer_b": "30 km/h",
+          "answer_c": "40 km/h",
+          "answer_d": "20 km/h",
+          "explanation": "Streets with a single shared platform level (no separate pavement) have a general limit of 20 km/h, prioritizing pedestrians."
+        },
+        "es": {
+          "question_text": "En una calle de plataforma única (sin acera diferenciada), el límite de velocidad es generalmente:",
+          "answer_a": "50 km/h",
+          "answer_b": "30 km/h",
+          "answer_c": "40 km/h",
+          "answer_d": "20 km/h",
+          "explanation": "Las calles de plataforma única, sin acera diferenciada, tienen un límite general de 20 km/h, priorizando a los peatones."
+        }
+      }
+    },
+    {
+      "category_slug": "speed_limits",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "What is the maximum speed limit on Spanish motorways (autopistas/autovías) for regular cars?",
+          "answer_a": "100 km/h",
+          "answer_b": "110 km/h",
+          "answer_c": "120 km/h",
+          "answer_d": "140 km/h",
+          "explanation": "The maximum speed limit on Spanish motorways and dual carriageways for passenger cars is 120 km/h."
+        },
+        "es": {
+          "question_text": "¿Cuál es el límite máximo de velocidad en autopistas y autovías españolas para turismos?",
+          "answer_a": "100 km/h",
+          "answer_b": "110 km/h",
+          "answer_c": "120 km/h",
+          "answer_d": "140 km/h",
+          "explanation": "El límite máximo de velocidad en autopistas y autovías españolas para turismos es de 120 km/h."
+        }
+      }
+    },
+    {
+      "category_slug": "parking_stopping",
+      "correct_answer": "d",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "It is prohibited to stop or park a vehicle:",
+          "answer_a": "In a marked parking bay",
+          "answer_b": "On a residential street with no signs",
+          "answer_c": "In front of your own garage",
+          "answer_d": "On a pedestrian crossing",
+          "explanation": "Stopping or parking on a pedestrian crossing (paso de peatones) is always prohibited."
+        },
+        "es": {
+          "question_text": "Está prohibido parar o estacionar un vehículo:",
+          "answer_a": "En una plaza de aparcamiento señalizada",
+          "answer_b": "En una calle residencial sin señalización",
+          "answer_c": "Delante de su propio garaje",
+          "answer_d": "Sobre un paso de peatones",
+          "explanation": "Parar o estacionar sobre un paso de peatones está siempre prohibido."
+        }
+      }
+    },
+    {
+      "category_slug": "parking_stopping",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "What is the minimum distance you must keep when parking near a road junction?",
+          "answer_a": "1 metre",
+          "answer_b": "5 metres",
+          "answer_c": "15 metres",
+          "answer_d": "There is no minimum distance",
+          "explanation": "Vehicles must not be parked within 5 metres of a road junction, to preserve visibility for turning traffic."
+        },
+        "es": {
+          "question_text": "¿Cuál es la distancia mínima que debe respetar al estacionar cerca de un cruce?",
+          "answer_a": "1 metro",
+          "answer_b": "5 metros",
+          "answer_c": "15 metros",
+          "answer_d": "No existe distancia mínima",
+          "explanation": "No se puede estacionar a menos de 5 metros de un cruce, para preservar la visibilidad de quien cambia de dirección."
+        }
+      }
+    },
+    {
+      "category_slug": "parking_stopping",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "en": {
+          "question_text": "\"Stopping\" (parada) a vehicle, unlike \"parking\" (estacionamiento), means:",
+          "answer_a": "A brief halt where the driver remains ready to move off",
+          "answer_b": "Leaving the vehicle unattended for hours",
+          "answer_c": "Only allowed on motorways",
+          "answer_d": "The same thing as parking",
+          "explanation": "A 'parada' is a brief interruption (max 2 minutes) with the driver present; 'estacionamiento' implies leaving the vehicle for longer."
+        },
+        "es": {
+          "question_text": "La \"parada\", a diferencia del \"estacionamiento\", significa:",
+          "answer_a": "Una detención breve en la que el conductor permanece listo para reanudar la marcha",
+          "answer_b": "Dejar el vehículo sin vigilancia durante horas",
+          "answer_c": "Solo se permite en autopistas",
+          "answer_d": "Lo mismo que estacionamiento",
+          "explanation": "La parada es una detención breve (máximo 2 minutos) con el conductor presente; el estacionamiento implica dejar el vehículo más tiempo."
+        }
+      }
+    },
+    {
+      "category_slug": "overtaking",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "Before overtaking, a driver must:",
+          "answer_a": "Sound the horn continuously",
+          "answer_b": "Accelerate as fast as possible",
+          "answer_c": "Make sure the manoeuvre can be completed safely and signal in advance",
+          "answer_d": "Wait for the other vehicle to slow down",
+          "explanation": "Before overtaking (adelantamiento), check mirrors, blind spots, visibility, and signal the intention in advance."
+        },
+        "es": {
+          "question_text": "Antes de adelantar, un conductor debe:",
+          "answer_a": "Tocar el claxon continuamente",
+          "answer_b": "Acelerar todo lo posible",
+          "answer_c": "Asegurarse de poder completar la maniobra con seguridad y señalizar con antelación",
+          "answer_d": "Esperar a que el otro vehículo reduzca la velocidad",
+          "explanation": "Antes de adelantar hay que comprobar retrovisores, ángulos muertos, visibilidad y señalizar la intención con antelación."
+        }
+      }
+    },
+    {
+      "category_slug": "overtaking",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "translations": {
+        "en": {
+          "question_text": "Overtaking is prohibited:",
+          "answer_a": "On a straight road with good visibility",
+          "answer_b": "On a pedestrian crossing or right before it",
+          "answer_c": "On a motorway with three lanes",
+          "answer_d": "When following a cyclist",
+          "explanation": "Overtaking is forbidden on pedestrian crossings and immediately before them."
+        },
+        "es": {
+          "question_text": "El adelantamiento está prohibido:",
+          "answer_a": "En una recta con buena visibilidad",
+          "answer_b": "En un paso de peatones o justo antes de él",
+          "answer_c": "En una autopista de tres carriles",
+          "answer_d": "Al seguir a un ciclista",
+          "explanation": "El adelantamiento está prohibido en los pasos de peatones y justo antes de ellos."
+        }
+      }
+    },
+    {
+      "category_slug": "overtaking",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "When overtaking a cyclist outside urban areas, the minimum lateral safety distance is:",
+          "answer_a": "1.5 metres",
+          "answer_b": "0.5 metres",
+          "answer_c": "3 metres",
+          "answer_d": "No specific distance is required",
+          "explanation": "Spanish law requires a minimum lateral clearance of 1.5 metres when overtaking cyclists, regardless of the road type or speed limit."
+        },
+        "es": {
+          "question_text": "Al adelantar a un ciclista fuera de poblado, la distancia lateral de seguridad mínima es:",
+          "answer_a": "1,5 metros",
+          "answer_b": "0,5 metros",
+          "answer_c": "3 metros",
+          "answer_d": "No se exige una distancia específica",
+          "explanation": "La ley española exige una distancia lateral mínima de 1,5 metros al adelantar a ciclistas, sea cual sea el tipo de vía o el límite de velocidad."
+        }
+      }
+    },
+    {
+      "category_slug": "motorways",
+      "correct_answer": "c",
+      "difficulty": "easy",
+      "translations": {
+        "en": {
+          "question_text": "On Spanish motorways (autopistas), which road users are prohibited?",
+          "answer_a": "Cars towing small trailers",
+          "answer_b": "Motorcycles above 50cc",
+          "answer_c": "Mopeds, bicycles, and pedestrians",
+          "answer_d": "Buses",
+          "explanation": "Motorways are reserved for motor vehicles capable of higher speeds; mopeds, bicycles, and pedestrians are prohibited."
+        },
+        "es": {
+          "question_text": "En las autopistas españolas, ¿qué usuarios están prohibidos?",
+          "answer_a": "Turismos con pequeños remolques",
+          "answer_b": "Motocicletas de más de 50cc",
+          "answer_c": "Ciclomotores, bicicletas y peatones",
+          "answer_d": "Autobuses",
+          "explanation": "Las autopistas están reservadas a vehículos a motor capaces de altas velocidades; ciclomotores, bicicletas y peatones están prohibidos."
+        }
+      }
+    },
+    {
+      "category_slug": "motorways",
+      "correct_answer": "d",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "If your vehicle breaks down on a motorway, you should:",
+          "answer_a": "Stay inside the vehicle with hazard lights on",
+          "answer_b": "Try to repair it in the lane where you stopped",
+          "answer_c": "Walk against the flow of traffic to seek help",
+          "answer_d": "Move to the hard shoulder, put on a hi-vis vest, and stand behind the safety barrier",
+          "explanation": "In a breakdown, pull onto the hard shoulder (arcén), turn on hazard lights, wear a high-visibility vest, and stand behind the barrier while calling for help."
+        },
+        "es": {
+          "question_text": "Si su vehículo se avería en una autopista, debe:",
+          "answer_a": "Permanecer dentro del vehículo con las luces de emergencia encendidas",
+          "answer_b": "Intentar repararlo en el carril donde se detuvo",
+          "answer_c": "Caminar en sentido contrario a la circulación para pedir ayuda",
+          "answer_d": "Desplazarse al arcén, ponerse el chaleco reflectante y colocarse detrás del sistema de contención",
+          "explanation": "En caso de avería, debe dirigirse al arcén, encender las luces de emergencia, ponerse el chaleco reflectante y permanecer en lugar seguro detrás de la protección mientras pide ayuda."
+        }
+      }
+    },
+    {
+      "category_slug": "motorways",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "The minimum following distance on a motorway should allow for:",
+          "answer_a": "No specific consideration is needed above 100 km/h",
+          "answer_b": "Enough time to react and brake safely if the vehicle ahead stops suddenly",
+          "answer_c": "Exactly 10 metres regardless of speed",
+          "answer_d": "Only matters when it's raining",
+          "explanation": "The safe following distance is time-based (the two-second rule, more in poor conditions), giving enough time to react to sudden braking ahead."
+        },
+        "es": {
+          "question_text": "La distancia mínima de seguimiento en una autopista debe permitir:",
+          "answer_a": "No es necesaria ninguna consideración por encima de 100 km/h",
+          "answer_b": "Tiempo suficiente para reaccionar y frenar con seguridad si el vehículo de delante se detiene bruscamente",
+          "answer_c": "Exactamente 10 metros independientemente de la velocidad",
+          "answer_d": "Solo importa cuando llueve",
+          "explanation": "La distancia de seguridad se calcula en función del tiempo (regla de los dos segundos, más en malas condiciones), para tener tiempo de reaccionar ante un frenazo del vehículo de delante."
+        }
+      }
+    },
+    {
+      "category_slug": "alcohol_drugs",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "What is the general legal blood alcohol limit for driving in Spain?",
+          "answer_a": "0.8 g/L",
+          "answer_b": "0.5 g/L",
+          "answer_c": "0.3 g/L",
+          "answer_d": "1.0 g/L",
+          "explanation": "The general legal blood alcohol limit in Spain is 0.5 g/L (0.25 mg/L in breath)."
+        },
+        "es": {
+          "question_text": "¿Cuál es la tasa general de alcoholemia legalmente permitida para conducir en España?",
+          "answer_a": "0,8 g/L",
+          "answer_b": "0,5 g/L",
+          "answer_c": "0,3 g/L",
+          "answer_d": "1,0 g/L",
+          "explanation": "La tasa general de alcoholemia legalmente permitida en España es de 0,5 g/L (0,25 mg/L en aire espirado)."
+        }
+      }
+    },
+    {
+      "category_slug": "alcohol_drugs",
+      "correct_answer": "a",
+      "difficulty": "hard",
+      "translations": {
+        "en": {
+          "question_text": "Which drivers are subject to a stricter 0.3 g/L blood alcohol limit in Spain?",
+          "answer_a": "Novice drivers (first 2 years) and professional drivers",
+          "answer_b": "Drivers over 60 years old",
+          "answer_c": "Drivers of electric vehicles",
+          "answer_d": "All drivers on Sundays",
+          "explanation": "Novice drivers (in their first 2 years of license) and professional drivers are subject to a stricter 0.3 g/L limit."
+        },
+        "es": {
+          "question_text": "¿Qué conductores están sujetos a un límite más estricto de 0,3 g/L en España?",
+          "answer_a": "Conductores noveles (primeros 2 años) y conductores profesionales",
+          "answer_b": "Conductores mayores de 60 años",
+          "answer_c": "Conductores de vehículos eléctricos",
+          "answer_d": "Todos los conductores los domingos",
+          "explanation": "Los conductores noveles (primeros 2 años de carné) y los conductores profesionales están sujetos a un límite más estricto de 0,3 g/L."
+        }
+      }
+    },
+    {
+      "category_slug": "alcohol_drugs",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "Driving with a blood alcohol level above 1.2 g/L in Spain is classified as:",
+          "answer_a": "A minor administrative offence",
+          "answer_b": "Legal but discouraged",
+          "answer_c": "A criminal offence",
+          "answer_d": "Only punishable with a warning",
+          "explanation": "Driving with more than 1.2 g/L of blood alcohol is classified as a criminal offence ('delito') under Spanish law, not just an administrative fine."
+        },
+        "es": {
+          "question_text": "Conducir con una tasa de alcoholemia superior a 1,2 g/L en España se clasifica como:",
+          "answer_a": "Una infracción administrativa leve",
+          "answer_b": "Legal pero desaconsejado",
+          "answer_c": "Un delito",
+          "answer_d": "Solo punible con una advertencia",
+          "explanation": "Conducir con más de 1,2 g/L de alcoholemia se clasifica como delito según la ley española, y no solo como una infracción administrativa."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "d",
+      "difficulty": "easy",
+      "translations": {
+        "en": {
+          "question_text": "Seat belts are mandatory:",
+          "answer_a": "Only for the driver",
+          "answer_b": "Only outside urban areas",
+          "answer_c": "Only for front seat passengers",
+          "answer_d": "For the driver and all passengers, front and rear",
+          "explanation": "In Spain, seat belts are mandatory for the driver and all passengers, in both front and rear seats."
+        },
+        "es": {
+          "question_text": "El cinturón de seguridad es obligatorio:",
+          "answer_a": "Solo para el conductor",
+          "answer_b": "Solo fuera de poblado",
+          "answer_c": "Solo para los pasajeros delanteros",
+          "answer_d": "Para el conductor y todos los pasajeros, delante y detrás",
+          "explanation": "En España, el cinturón de seguridad es obligatorio para el conductor y todos los pasajeros, tanto en los asientos delanteros como traseros."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "Children under 135 cm in height must travel:",
+          "answer_a": "In the front seat only, without a restraint",
+          "answer_b": "In an appropriate child restraint system suited to their height and weight",
+          "answer_c": "Standing in the rear seat",
+          "answer_d": "On an adult's lap with the adult's seat belt around both",
+          "explanation": "Children under 135 cm must use an approved child restraint system (silla infantil) appropriate to their height and weight."
+        },
+        "es": {
+          "question_text": "Los niños de menos de 135 cm de altura deben viajar:",
+          "answer_a": "En el asiento delantero, sin ningún sistema de retención",
+          "answer_b": "En un sistema de retención infantil adecuado a su altura y peso",
+          "answer_c": "De pie en el asiento trasero",
+          "answer_d": "En el regazo de un adulto, con el cinturón del adulto rodeando a ambos",
+          "explanation": "Los niños de menos de 135 cm deben usar un sistema de retención homologado (silla infantil) adecuado a su altura y peso."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "en": {
+          "question_text": "The mandatory equipment to be carried in the car and used in case of breakdown includes:",
+          "answer_a": "A high-visibility vest and a warning triangle",
+          "answer_b": "A spare set of car keys",
+          "answer_c": "A first aid kit is mandatory nationwide",
+          "answer_d": "Snow chains at all times",
+          "explanation": "In Spain, drivers must carry a high-visibility vest (chaleco reflectante) to be worn if leaving the vehicle, and warning devices to signal a stopped vehicle."
+        },
+        "es": {
+          "question_text": "El equipamiento obligatorio que debe llevarse en el coche y usarse en caso de avería incluye:",
+          "answer_a": "Un chaleco reflectante y un dispositivo de preseñalización",
+          "answer_b": "Un juego de llaves de repuesto del coche",
+          "answer_c": "Un botiquín de primeros auxilios es obligatorio en todo el territorio",
+          "answer_d": "Cadenas para nieve en todo momento",
+          "explanation": "En España, el conductor debe llevar un chaleco reflectante (a usar si sale del vehículo en la vía) y dispositivos de preseñalización para avisar de un vehículo inmovilizado."
+        }
+      }
+    }
+  ],
+  "roadSigns": [
+    {
+      "road_sign_category_slug": "general",
+      "shape": "octagon",
+      "color": "#C8102E",
+      "translations": {
+        "en": {
+          "name": "Stop",
+          "meaning": "Come to a complete stop"
+        },
+        "es": {
+          "name": "Stop",
+          "meaning": "Detención obligatoria"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "triangle",
+      "color": "#C8102E",
+      "translations": {
+        "en": {
+          "name": "Give Way",
+          "meaning": "Yield to traffic on the main road"
+        },
+        "es": {
+          "name": "Ceda el paso",
+          "meaning": "Ceder la prioridad a la vía principal"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "circle",
+      "color": "#C8102E",
+      "translations": {
+        "en": {
+          "name": "No Entry",
+          "meaning": "Entry prohibited for all vehicles"
+        },
+        "es": {
+          "name": "Entrada prohibida",
+          "meaning": "Entrada prohibida a todo vehículo"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "circle",
+      "color": "#C8102E",
+      "translations": {
+        "en": {
+          "name": "Speed Limit",
+          "meaning": "Maximum speed indicated on the sign"
+        },
+        "es": {
+          "name": "Límite de velocidad",
+          "meaning": "Velocidad máxima indicada en la señal"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No Parking",
+          "meaning": "Parking prohibited in this area"
+        },
+        "es": {
+          "name": "Estacionamiento prohibido",
+          "meaning": "Prohibido estacionar en esta zona"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "square",
+      "color": "#FFC72C",
+      "translations": {
+        "en": {
+          "name": "Priority Road",
+          "meaning": "You have priority over side roads"
+        },
+        "es": {
+          "name": "Vía con prioridad",
+          "meaning": "Tiene prioridad sobre las vías laterales"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "triangle",
+      "color": "#C8102E",
+      "translations": {
+        "en": {
+          "name": "Pedestrian Crossing Ahead",
+          "meaning": "Warning of a pedestrian crossing ahead"
+        },
+        "es": {
+          "name": "Paso de peatones",
+          "meaning": "Aviso de paso de peatones próximo"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Roundabout Ahead (Mandatory)",
+          "meaning": "You must go around the roundabout in the direction of the arrows"
+        },
+        "es": {
+          "name": "Intersección con glorieta",
+          "meaning": "Debe circular en el sentido de las flechas"
+        }
+      }
+    }
+  ],
+  "roadSignCategories": [
+    {
+      "slug": "general",
+      "translations": {
+        "en": "Road Signs",
+        "es": "Señales"
+      }
+    }
+  ]
+}

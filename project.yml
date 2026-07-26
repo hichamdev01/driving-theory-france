@@ -1,0 +1,36 @@
+name: TheoryPrep
+options:
+  bundleIdPrefix: com.drivingtheoryapp
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+targets:
+  TheoryPrep:
+    type: application
+    platform: iOS
+    sources:
+      - path: TheoryPrep
+        excludes:
+          - "Resources/Content/**"
+      - path: TheoryPrep/Resources/Content
+        type: folder
+        buildPhase: resources
+    info:
+      path: TheoryPrep/Info.plist
+      properties:
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        CFBundleDisplayName: Theory Prep
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.drivingtheoryapp.mobile
+        TARGETED_DEVICE_FAMILY: "1"
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: true
+        ASSETCATALOG_COMPILER_APPICON_NAME: ""

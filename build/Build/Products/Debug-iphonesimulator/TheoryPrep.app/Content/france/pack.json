@@ -1,0 +1,759 @@
+{
+  "country": {
+    "code": "FR",
+    "name": "France"
+  },
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "categories": [
+    {
+      "slug": "road_signs",
+      "translations": {
+        "en": "Road Signs",
+        "fr": "Panneaux de Signalisation"
+      }
+    },
+    {
+      "slug": "priority_rules",
+      "translations": {
+        "en": "Priority Rules",
+        "fr": "Règles de Priorité"
+      }
+    },
+    {
+      "slug": "speed_limits",
+      "translations": {
+        "en": "Speed Limits",
+        "fr": "Limitations de Vitesse"
+      }
+    },
+    {
+      "slug": "parking_stopping",
+      "translations": {
+        "en": "Parking and Stopping",
+        "fr": "Stationnement et Arrêt"
+      }
+    },
+    {
+      "slug": "overtaking",
+      "translations": {
+        "en": "Overtaking",
+        "fr": "Dépassement"
+      }
+    },
+    {
+      "slug": "motorways",
+      "translations": {
+        "en": "Motorways",
+        "fr": "Autoroutes"
+      }
+    },
+    {
+      "slug": "alcohol_drugs",
+      "translations": {
+        "en": "Alcohol and Driving",
+        "fr": "Alcool et Conduite"
+      }
+    },
+    {
+      "slug": "safety",
+      "translations": {
+        "en": "Safety",
+        "fr": "Sécurité"
+      }
+    }
+  ],
+  "examConfiguration": {
+    "number_of_questions": 40,
+    "time_limit_seconds": 1800,
+    "passing_score": 88,
+    "allowed_mistakes": 5
+  },
+  "questions": [
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "translations": {
+        "en": {
+          "question_text": "A red circular sign with a white horizontal bar means:",
+          "answer_a": "Give way",
+          "answer_b": "No entry for vehicles",
+          "answer_c": "No parking",
+          "answer_d": "Priority road",
+          "explanation": "A red circle with a white horizontal bar is the 'Sens interdit' (No entry) sign — vehicles may not enter the road in that direction."
+        },
+        "fr": {
+          "question_text": "Un panneau circulaire rouge avec une barre horizontale blanche signifie :",
+          "answer_a": "Cédez le passage",
+          "answer_b": "Sens interdit à tout véhicule",
+          "answer_c": "Stationnement interdit",
+          "answer_d": "Route à caractère prioritaire",
+          "explanation": "Le cercle rouge avec barre horizontale blanche est le panneau 'Sens interdit' — aucun véhicule ne peut entrer sur la voie dans ce sens."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "en": {
+          "question_text": "A triangular sign with a red border generally indicates:",
+          "answer_a": "A warning of danger ahead",
+          "answer_b": "A mandatory direction",
+          "answer_c": "An informational service",
+          "answer_d": "A prohibition",
+          "explanation": "Triangular signs with a red border are danger warning signs (panneaux de danger)."
+        },
+        "fr": {
+          "question_text": "Un panneau triangulaire à bordure rouge indique généralement :",
+          "answer_a": "Un danger à l'approche",
+          "answer_b": "Une direction obligatoire",
+          "answer_c": "Un service",
+          "answer_d": "Une interdiction",
+          "explanation": "Les panneaux triangulaires à bordure rouge sont des panneaux de danger, annonçant une situation particulière sur la route."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "A blue circular sign with a white arrow pointing up means:",
+          "answer_a": "Recommended direction",
+          "answer_b": "One-way street ending",
+          "answer_c": "Mandatory direction: straight ahead only",
+          "answer_d": "No through road",
+          "explanation": "Blue circular signs are obligation signs (panneaux d'obligation). A white up arrow means you must continue straight ahead."
+        },
+        "fr": {
+          "question_text": "Un panneau rond bleu avec une flèche blanche vers le haut signifie :",
+          "answer_a": "Direction conseillée",
+          "answer_b": "Fin de sens unique",
+          "answer_c": "Obligation d'aller tout droit",
+          "answer_d": "Voie sans issue",
+          "explanation": "Les panneaux ronds bleus sont des panneaux d'obligation. La flèche blanche vers le haut oblige à continuer tout droit."
+        }
+      }
+    },
+    {
+      "category_slug": "priority_rules",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "At an intersection with no signs or traffic lights, who has priority?",
+          "answer_a": "The vehicle already on the roundabout",
+          "answer_b": "The faster vehicle",
+          "answer_c": "The vehicle coming from the right",
+          "answer_d": "The larger vehicle",
+          "explanation": "In the absence of signs, 'priorité à droite' applies: traffic coming from the right has priority."
+        },
+        "fr": {
+          "question_text": "À une intersection sans panneau ni feu, qui est prioritaire ?",
+          "answer_a": "Le véhicule déjà engagé sur le rond-point",
+          "answer_b": "Le véhicule le plus rapide",
+          "answer_c": "Le véhicule venant de la droite",
+          "answer_d": "Le véhicule le plus imposant",
+          "explanation": "En l'absence de signalisation, la priorité à droite s'applique : le véhicule venant de la droite est prioritaire."
+        }
+      }
+    },
+    {
+      "category_slug": "priority_rules",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "en": {
+          "question_text": "At a roundabout with a 'Cédez le passage' sign at the entry, who has priority?",
+          "answer_a": "Vehicles already circulating on the roundabout",
+          "answer_b": "Vehicles entering the roundabout",
+          "answer_c": "Vehicles coming from the right of the entrance",
+          "answer_d": "Whoever arrives first",
+          "explanation": "With a give-way sign at the entrance, vehicles already on the roundabout always have priority over entering traffic."
+        },
+        "fr": {
+          "question_text": "À un rond-point avec un panneau 'Cédez le passage' à l'entrée, qui est prioritaire ?",
+          "answer_a": "Les véhicules déjà engagés sur le rond-point",
+          "answer_b": "Les véhicules qui entrent sur le rond-point",
+          "answer_c": "Les véhicules venant de la droite de l'entrée",
+          "answer_d": "Celui qui arrive en premier",
+          "explanation": "Avec un panneau cédez-le-passage à l'entrée, les véhicules déjà engagés sur le rond-point sont toujours prioritaires sur ceux qui entrent."
+        }
+      }
+    },
+    {
+      "category_slug": "priority_rules",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "When must you always give way, regardless of other priority rules?",
+          "answer_a": "To vehicles behind you signaling to overtake",
+          "answer_b": "To emergency vehicles using sirens and lights",
+          "answer_c": "To vehicles with tinted windows",
+          "answer_d": "To vehicles towing a trailer",
+          "explanation": "Emergency vehicles (ambulance, police, fire brigade) with active sirens always have absolute priority."
+        },
+        "fr": {
+          "question_text": "À qui doit-on toujours céder le passage, indépendamment des autres règles de priorité ?",
+          "answer_a": "Aux véhicules derrière signalant un dépassement",
+          "answer_b": "Aux véhicules prioritaires avec avertisseurs sonores et lumineux activés",
+          "answer_c": "Aux véhicules aux vitres teintées",
+          "answer_d": "Aux véhicules tractant une remorque",
+          "explanation": "Les véhicules prioritaires (ambulance, police, pompiers) avec avertisseurs sonores et lumineux activés ont toujours la priorité absolue."
+        }
+      }
+    },
+    {
+      "category_slug": "speed_limits",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "translations": {
+        "en": {
+          "question_text": "What is the general speed limit inside built-up areas (agglomération) in France?",
+          "answer_a": "40 km/h",
+          "answer_b": "50 km/h",
+          "answer_c": "60 km/h",
+          "answer_d": "70 km/h",
+          "explanation": "Unless signed otherwise, the general speed limit within built-up areas in France is 50 km/h."
+        },
+        "fr": {
+          "question_text": "Quelle est la vitesse maximale générale en agglomération en France ?",
+          "answer_a": "40 km/h",
+          "answer_b": "50 km/h",
+          "answer_c": "60 km/h",
+          "answer_d": "70 km/h",
+          "explanation": "Sauf signalisation contraire, la vitesse maximale générale en agglomération en France est de 50 km/h."
+        }
+      }
+    },
+    {
+      "category_slug": "speed_limits",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "On a two-way road outside built-up areas without a central reservation, the general speed limit is:",
+          "answer_a": "90 km/h",
+          "answer_b": "80 km/h",
+          "answer_c": "70 km/h",
+          "answer_d": "100 km/h",
+          "explanation": "Since 2018, the default limit on two-way roads without a central median outside built-up areas is 80 km/h (some départements have restored 90 km/h on specific roads with signage)."
+        },
+        "fr": {
+          "question_text": "Sur une route bidirectionnelle hors agglomération sans séparateur central, la vitesse maximale générale est :",
+          "answer_a": "90 km/h",
+          "answer_b": "80 km/h",
+          "answer_c": "70 km/h",
+          "answer_d": "100 km/h",
+          "explanation": "Depuis 2018, la limite par défaut sur les routes bidirectionnelles sans séparateur central hors agglomération est de 80 km/h (certains départements ont rétabli 90 km/h sur des axes signalés)."
+        }
+      }
+    },
+    {
+      "category_slug": "speed_limits",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "What is the maximum speed on French motorways (autoroutes) in dry conditions for regular cars?",
+          "answer_a": "110 km/h",
+          "answer_b": "120 km/h",
+          "answer_c": "130 km/h",
+          "answer_d": "150 km/h",
+          "explanation": "The maximum speed on French motorways in dry weather is 130 km/h, reduced to 110 km/h in wet weather."
+        },
+        "fr": {
+          "question_text": "Quelle est la vitesse maximale sur autoroute en France par temps sec pour une voiture ?",
+          "answer_a": "110 km/h",
+          "answer_b": "120 km/h",
+          "answer_c": "130 km/h",
+          "answer_d": "150 km/h",
+          "explanation": "La vitesse maximale sur autoroute par temps sec est de 130 km/h, réduite à 110 km/h par temps de pluie."
+        }
+      }
+    },
+    {
+      "category_slug": "parking_stopping",
+      "correct_answer": "d",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "It is prohibited to stop or park a vehicle:",
+          "answer_a": "In a marked parking bay",
+          "answer_b": "On a residential street with no signs",
+          "answer_c": "In front of your own garage",
+          "answer_d": "On a pedestrian crossing",
+          "explanation": "Stopping or parking on a pedestrian crossing (passage piéton) is always prohibited."
+        },
+        "fr": {
+          "question_text": "Il est interdit de s'arrêter ou de stationner :",
+          "answer_a": "Sur un emplacement matérialisé",
+          "answer_b": "Dans une rue résidentielle sans panneau",
+          "answer_c": "Devant son propre garage",
+          "answer_d": "Sur un passage piéton",
+          "explanation": "L'arrêt et le stationnement sur un passage piéton sont toujours interdits."
+        }
+      }
+    },
+    {
+      "category_slug": "parking_stopping",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "What must you activate when stopping briefly in a place that is not a designated stopping area, e.g. due to an emergency?",
+          "answer_a": "Nothing is required",
+          "answer_b": "Hazard warning lights",
+          "answer_c": "High beam headlights",
+          "answer_d": "The horn",
+          "explanation": "Hazard warning lights (warning/feux de détresse) must be used to signal an unusual or hazardous stop to other road users."
+        },
+        "fr": {
+          "question_text": "Que devez-vous activer lors d'un arrêt bref à un endroit non prévu, par exemple en cas d'urgence ?",
+          "answer_a": "Rien n'est nécessaire",
+          "answer_b": "Les feux de détresse",
+          "answer_c": "Les feux de route",
+          "answer_d": "L'avertisseur sonore",
+          "explanation": "Les feux de détresse doivent être utilisés pour signaler un arrêt inhabituel ou dangereux aux autres usagers."
+        }
+      }
+    },
+    {
+      "category_slug": "parking_stopping",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "en": {
+          "question_text": "\"Stopping\" (arrêt) a vehicle, unlike \"parking\" (stationnement), means:",
+          "answer_a": "A brief halt where the driver remains ready to move off",
+          "answer_b": "Leaving the vehicle unattended for hours",
+          "answer_c": "Only allowed on motorways",
+          "answer_d": "The same thing as parking",
+          "explanation": "An 'arrêt' is a brief interruption with the driver present and ready to move; 'stationnement' implies leaving the vehicle for longer, with or without the driver."
+        },
+        "fr": {
+          "question_text": "\"L'arrêt\", contrairement au \"stationnement\", signifie :",
+          "answer_a": "Une interruption brève, le conducteur restant prêt à repartir",
+          "answer_b": "Laisser le véhicule sans surveillance pendant des heures",
+          "answer_c": "Uniquement autorisé sur autoroute",
+          "answer_d": "La même chose que le stationnement",
+          "explanation": "L'arrêt est une interruption brève avec le conducteur présent et prêt à repartir ; le stationnement implique de laisser le véhicule plus longtemps."
+        }
+      }
+    },
+    {
+      "category_slug": "overtaking",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "Before overtaking, a driver must:",
+          "answer_a": "Sound the horn continuously",
+          "answer_b": "Accelerate as fast as possible",
+          "answer_c": "Make sure the manoeuvre can be completed safely and signal in advance",
+          "answer_d": "Wait for the other vehicle to slow down",
+          "explanation": "Before overtaking (dépassement), check mirrors, blind spots, visibility, and signal the intention in advance."
+        },
+        "fr": {
+          "question_text": "Avant de dépasser, un conducteur doit :",
+          "answer_a": "Klaxonner continuellement",
+          "answer_b": "Accélérer le plus possible",
+          "answer_c": "S'assurer de pouvoir effectuer la manœuvre en sécurité et signaler à l'avance",
+          "answer_d": "Attendre que l'autre véhicule ralentisse",
+          "explanation": "Avant de dépasser, il faut vérifier rétroviseurs, angles morts, visibilité et signaler l'intention à l'avance."
+        }
+      }
+    },
+    {
+      "category_slug": "overtaking",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "translations": {
+        "en": {
+          "question_text": "Overtaking is prohibited:",
+          "answer_a": "On a straight road with good visibility",
+          "answer_b": "On a pedestrian crossing or right before it",
+          "answer_c": "On a motorway with three lanes",
+          "answer_d": "When following a cyclist",
+          "explanation": "Overtaking is forbidden on pedestrian crossings and immediately before them."
+        },
+        "fr": {
+          "question_text": "Le dépassement est interdit :",
+          "answer_a": "Sur une ligne droite avec bonne visibilité",
+          "answer_b": "Sur un passage piéton ou juste avant",
+          "answer_c": "Sur une autoroute à trois voies",
+          "answer_d": "En suivant un cycliste",
+          "explanation": "Le dépassement est interdit sur les passages piétons et juste avant ceux-ci."
+        }
+      }
+    },
+    {
+      "category_slug": "overtaking",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "When overtaking a cyclist outside built-up areas, the minimum lateral safety distance is:",
+          "answer_a": "1.5 metres",
+          "answer_b": "0.5 metres",
+          "answer_c": "3 metres",
+          "answer_d": "No specific distance is required",
+          "explanation": "French law requires a minimum lateral clearance of 1.5 metres when overtaking cyclists outside built-up areas (1 metre within built-up areas)."
+        },
+        "fr": {
+          "question_text": "Lors d'un dépassement d'un cycliste hors agglomération, la distance latérale de sécurité minimale est :",
+          "answer_a": "1,5 mètre",
+          "answer_b": "0,5 mètre",
+          "answer_c": "3 mètres",
+          "answer_d": "Aucune distance spécifique n'est requise",
+          "explanation": "La loi française impose une distance latérale minimale de 1,5 mètre lors du dépassement de cyclistes hors agglomération (1 mètre en agglomération)."
+        }
+      }
+    },
+    {
+      "category_slug": "motorways",
+      "correct_answer": "c",
+      "difficulty": "easy",
+      "translations": {
+        "en": {
+          "question_text": "On French motorways, which road users are prohibited?",
+          "answer_a": "Cars towing small trailers",
+          "answer_b": "Motorcycles above 50cc",
+          "answer_c": "Mopeds, bicycles, and pedestrians",
+          "answer_d": "Buses",
+          "explanation": "Motorways are reserved for motor vehicles capable of higher speeds; mopeds, bicycles, and pedestrians are prohibited."
+        },
+        "fr": {
+          "question_text": "Sur les autoroutes françaises, quels usagers sont interdits ?",
+          "answer_a": "Les voitures tractant de petites remorques",
+          "answer_b": "Les motos de plus de 50cc",
+          "answer_c": "Les cyclomoteurs, vélos et piétons",
+          "answer_d": "Les autocars",
+          "explanation": "Les autoroutes sont réservées aux véhicules à moteur capables de vitesses élevées ; cyclomoteurs, vélos et piétons y sont interdits."
+        }
+      }
+    },
+    {
+      "category_slug": "motorways",
+      "correct_answer": "d",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "If your vehicle breaks down on a motorway, you should:",
+          "answer_a": "Stay inside the vehicle with hazard lights on",
+          "answer_b": "Try to repair it in the lane where you stopped",
+          "answer_c": "Walk against the flow of traffic to seek help",
+          "answer_d": "Move to the hard shoulder, put on a hi-vis vest, and stand behind the safety barrier",
+          "explanation": "In a breakdown, pull onto the hard shoulder (bande d'arrêt d'urgence), turn on hazard lights, wear a high-visibility vest, and stand behind the barrier while calling for help."
+        },
+        "fr": {
+          "question_text": "Si votre véhicule tombe en panne sur autoroute, vous devez :",
+          "answer_a": "Rester dans le véhicule avec les feux de détresse allumés",
+          "answer_b": "Essayer de le réparer sur la voie où vous vous êtes arrêté",
+          "answer_c": "Marcher à contresens pour chercher de l'aide",
+          "answer_d": "Vous garer sur la bande d'arrêt d'urgence, mettre le gilet et vous mettre derrière la glissière de sécurité",
+          "explanation": "En cas de panne, il faut se garer sur la bande d'arrêt d'urgence, allumer les feux de détresse, mettre le gilet haute visibilité et se placer derrière la glissière en attendant les secours."
+        }
+      }
+    },
+    {
+      "category_slug": "motorways",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "The minimum following distance on a motorway should allow for:",
+          "answer_a": "No specific consideration is needed above 100 km/h",
+          "answer_b": "Enough time to react and brake safely if the vehicle ahead stops suddenly",
+          "answer_c": "Exactly 10 metres regardless of speed",
+          "answer_d": "Only matters when it's raining",
+          "explanation": "The safe following distance is time-based (the 'two-second rule', more in poor conditions), giving enough time to react to sudden braking ahead."
+        },
+        "fr": {
+          "question_text": "La distance de sécurité minimale sur autoroute doit permettre :",
+          "answer_a": "Aucune considération particulière au-delà de 100 km/h",
+          "answer_b": "Un temps suffisant pour réagir et freiner en sécurité si le véhicule devant s'arrête brusquement",
+          "answer_c": "Exactement 10 mètres quelle que soit la vitesse",
+          "answer_d": "Cela compte seulement en cas de pluie",
+          "explanation": "La distance de sécurité se calcule en temps (règle des deux secondes, davantage par mauvais temps), pour avoir le temps de réagir à un freinage brusque devant soi."
+        }
+      }
+    },
+    {
+      "category_slug": "alcohol_drugs",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "What is the general legal blood alcohol limit for driving in France?",
+          "answer_a": "0.8 g/L",
+          "answer_b": "0.5 g/L",
+          "answer_c": "0.2 g/L",
+          "answer_d": "1.0 g/L",
+          "explanation": "The general legal blood alcohol limit in France is 0.5 g/L of blood (0.25 mg/L of breath)."
+        },
+        "fr": {
+          "question_text": "Quel est le taux d'alcoolémie légal général autorisé pour conduire en France ?",
+          "answer_a": "0,8 g/L",
+          "answer_b": "0,5 g/L",
+          "answer_c": "0,2 g/L",
+          "answer_d": "1,0 g/L",
+          "explanation": "Le taux d'alcoolémie légal général autorisé en France est de 0,5 g/L de sang (0,25 mg/L d'air expiré)."
+        }
+      }
+    },
+    {
+      "category_slug": "alcohol_drugs",
+      "correct_answer": "a",
+      "difficulty": "hard",
+      "translations": {
+        "en": {
+          "question_text": "Which drivers are subject to a stricter 0.2 g/L blood alcohol limit in France?",
+          "answer_a": "Drivers on a probationary license (permis probatoire)",
+          "answer_b": "Drivers over 60 years old",
+          "answer_c": "Drivers of electric vehicles",
+          "answer_d": "All drivers on Sundays",
+          "explanation": "Drivers on a probationary license (the first 3 years, or 2 with accelerated training) must respect a stricter 0.2 g/L limit."
+        },
+        "fr": {
+          "question_text": "Quels conducteurs sont soumis à une limite plus stricte de 0,2 g/L en France ?",
+          "answer_a": "Les conducteurs en période probatoire (permis probatoire)",
+          "answer_b": "Les conducteurs de plus de 60 ans",
+          "answer_c": "Les conducteurs de véhicules électriques",
+          "answer_d": "Tous les conducteurs le dimanche",
+          "explanation": "Les conducteurs en permis probatoire (3 premières années, ou 2 ans avec conduite accompagnée) doivent respecter une limite plus stricte de 0,2 g/L."
+        }
+      }
+    },
+    {
+      "category_slug": "alcohol_drugs",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "Driving with a blood alcohol level of 0.8 g/L or more in France is classified as:",
+          "answer_a": "A minor administrative offence",
+          "answer_b": "Legal but discouraged",
+          "answer_c": "A criminal offence (délit)",
+          "answer_d": "Only punishable with a warning",
+          "explanation": "Driving at or above 0.8 g/L blood alcohol is a criminal offence ('délit') in France, carrying heavier penalties than the lower-tier fine."
+        },
+        "fr": {
+          "question_text": "Conduire avec un taux d'alcoolémie de 0,8 g/L ou plus en France est classé comme :",
+          "answer_a": "Une contravention mineure",
+          "answer_b": "Légal mais déconseillé",
+          "answer_c": "Un délit",
+          "answer_d": "Punissable uniquement d'un avertissement",
+          "explanation": "Conduire avec un taux d'alcoolémie de 0,8 g/L ou plus constitue un délit en France, avec des sanctions plus lourdes qu'une simple contravention."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "d",
+      "difficulty": "easy",
+      "translations": {
+        "en": {
+          "question_text": "Seat belts are mandatory:",
+          "answer_a": "Only for the driver",
+          "answer_b": "Only outside built-up areas",
+          "answer_c": "Only for front seat passengers",
+          "answer_d": "For the driver and all passengers, front and rear",
+          "explanation": "In France, seat belts are mandatory for the driver and all passengers, in both front and rear seats."
+        },
+        "fr": {
+          "question_text": "La ceinture de sécurité est obligatoire :",
+          "answer_a": "Uniquement pour le conducteur",
+          "answer_b": "Uniquement hors agglomération",
+          "answer_c": "Uniquement pour les passagers avant",
+          "answer_d": "Pour le conducteur et tous les passagers, à l'avant comme à l'arrière",
+          "explanation": "En France, la ceinture de sécurité est obligatoire pour le conducteur et tous les passagers, à l'avant comme à l'arrière."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "translations": {
+        "en": {
+          "question_text": "Children under 135 cm in height must travel:",
+          "answer_a": "In the front seat only, without a restraint",
+          "answer_b": "In an appropriate child restraint system suited to their height and weight",
+          "answer_c": "Standing in the rear seat",
+          "answer_d": "On an adult's lap with the adult's seat belt around both",
+          "explanation": "Children under 135 cm must use an approved child restraint system (siège auto or rehausseur) appropriate to their height and weight."
+        },
+        "fr": {
+          "question_text": "Les enfants de moins de 135 cm doivent voyager :",
+          "answer_a": "À l'avant uniquement, sans dispositif de retenue",
+          "answer_b": "Dans un dispositif de retenue adapté à leur taille et poids",
+          "answer_c": "Debout à l'arrière",
+          "answer_d": "Sur les genoux d'un adulte, avec la ceinture de l'adulte autour des deux",
+          "explanation": "Les enfants de moins de 135 cm doivent utiliser un dispositif de retenue homologué (siège auto ou rehausseur) adapté à leur taille et poids."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "en": {
+          "question_text": "The mandatory equipment to be carried in the car and used in case of breakdown includes:",
+          "answer_a": "A high-visibility vest and a warning triangle",
+          "answer_b": "A spare set of car keys",
+          "answer_c": "A first aid kit is mandatory nationwide",
+          "answer_d": "Snow chains at all times",
+          "explanation": "In France, drivers must carry a high-visibility vest (gilet) to be worn if leaving the vehicle, and a warning triangle (triangle de pré-signalisation)."
+        },
+        "fr": {
+          "question_text": "L'équipement obligatoire à transporter dans la voiture et à utiliser en cas de panne comprend :",
+          "answer_a": "Un gilet haute visibilité et un triangle de pré-signalisation",
+          "answer_b": "Un double des clés de la voiture",
+          "answer_c": "Une trousse de premiers secours est obligatoire partout",
+          "answer_d": "Des chaînes à neige en permanence",
+          "explanation": "En France, le conducteur doit transporter un gilet haute visibilité (à porter en cas de sortie du véhicule) et un triangle de pré-signalisation."
+        }
+      }
+    }
+  ],
+  "roadSigns": [
+    {
+      "road_sign_category_slug": "general",
+      "shape": "octagon",
+      "color": "#C8102E",
+      "translations": {
+        "en": {
+          "name": "Stop",
+          "meaning": "Come to a complete stop"
+        },
+        "fr": {
+          "name": "Stop",
+          "meaning": "Arrêt obligatoire"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "triangle",
+      "color": "#C8102E",
+      "translations": {
+        "en": {
+          "name": "Give Way",
+          "meaning": "Yield to traffic on the main road"
+        },
+        "fr": {
+          "name": "Cédez le passage",
+          "meaning": "Céder la priorité à la route principale"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "circle",
+      "color": "#C8102E",
+      "translations": {
+        "en": {
+          "name": "No Entry",
+          "meaning": "Entry prohibited for all vehicles"
+        },
+        "fr": {
+          "name": "Sens interdit",
+          "meaning": "Entrée interdite à tout véhicule"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "circle",
+      "color": "#C8102E",
+      "translations": {
+        "en": {
+          "name": "Speed Limit",
+          "meaning": "Maximum speed indicated on the sign"
+        },
+        "fr": {
+          "name": "Limitation de vitesse",
+          "meaning": "Vitesse maximale indiquée sur le panneau"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No Parking",
+          "meaning": "Parking prohibited in this area"
+        },
+        "fr": {
+          "name": "Stationnement interdit",
+          "meaning": "Stationnement interdit dans cette zone"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "square",
+      "color": "#FFC72C",
+      "translations": {
+        "en": {
+          "name": "Priority Road",
+          "meaning": "You have priority over side roads"
+        },
+        "fr": {
+          "name": "Route à caractère prioritaire",
+          "meaning": "Vous êtes prioritaire sur les voies latérales"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "triangle",
+      "color": "#C8102E",
+      "translations": {
+        "en": {
+          "name": "Pedestrian Crossing Ahead",
+          "meaning": "Warning of a pedestrian crossing ahead"
+        },
+        "fr": {
+          "name": "Passage piéton",
+          "meaning": "Annonce d'un passage piéton"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Roundabout Ahead (Mandatory)",
+          "meaning": "You must go around the roundabout in the direction of the arrows"
+        },
+        "fr": {
+          "name": "Carrefour à sens giratoire",
+          "meaning": "Vous devez circuler dans le sens des flèches"
+        }
+      }
+    }
+  ],
+  "roadSignCategories": [
+    {
+      "slug": "general",
+      "translations": {
+        "en": "Road Signs",
+        "fr": "Panneaux"
+      }
+    }
+  ]
+}

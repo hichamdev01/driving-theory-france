@@ -1,0 +1,375 @@
+{
+  "country": {
+    "code": "FR",
+    "name": "France"
+  },
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "categories": [
+    {
+      "slug": "road_signs",
+      "translations": {
+        "en": "Road Signs",
+        "fr": "Panneaux de Signalisation"
+      }
+    },
+    {
+      "slug": "priority_rules",
+      "translations": {
+        "en": "Priority Rules",
+        "fr": "Règles de Priorité"
+      }
+    },
+    {
+      "slug": "speed_limits",
+      "translations": {
+        "en": "Speed Limits",
+        "fr": "Limitations de Vitesse"
+      }
+    },
+    {
+      "slug": "parking_stopping",
+      "translations": {
+        "en": "Parking and Stopping",
+        "fr": "Stationnement et Arrêt"
+      }
+    },
+    {
+      "slug": "overtaking",
+      "translations": {
+        "en": "Overtaking",
+        "fr": "Dépassement"
+      }
+    },
+    {
+      "slug": "motorways",
+      "translations": {
+        "en": "Motorways",
+        "fr": "Autoroutes"
+      }
+    },
+    {
+      "slug": "alcohol_drugs",
+      "translations": {
+        "en": "Alcohol and Driving",
+        "fr": "Alcool et Conduite"
+      }
+    },
+    {
+      "slug": "safety",
+      "translations": {
+        "en": "Safety",
+        "fr": "Sécurité"
+      }
+    }
+  ],
+  "examConfiguration": {
+    "number_of_questions": 7,
+    "time_limit_seconds": 1800,
+    "passing_score": 88,
+    "allowed_mistakes": 5
+  },
+  "questions": [
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "image_path": "france/situation_children.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign indicate?",
+          "answer_a": "Pedestrian crossing ahead.",
+          "answer_b": "Children likely to cross the road (near a school).",
+          "answer_c": "Playground nearby.",
+          "answer_d": "No stopping allowed near the school.",
+          "explanation": "This is the AB1 danger sign showing an adult and child — it warns that children are likely to cross the road, typically near a school, and drivers should slow down and be ready to stop."
+        },
+        "fr": {
+          "question_text": "Que vous indique ce panneau ?",
+          "answer_a": "Passage pour piétons à l'approche.",
+          "answer_b": "Risque de traversée d'enfants (à proximité d'une école).",
+          "answer_c": "Aire de jeux à proximité.",
+          "answer_d": "Arrêt interdit à proximité de l'école.",
+          "explanation": "Il s'agit du panneau de danger AB1 représentant un adulte et un enfant — il annonce un risque de traversée d'enfants, généralement près d'une école, et impose de ralentir et de rester prêt à s'arrêter."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "image_path": "france/situation_tunnel.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign indicate?",
+          "answer_a": "The tunnel entrance is located 150 metres ahead.",
+          "answer_b": "The tunnel is 150 metres long.",
+          "answer_c": "You must turn on your headlights in 150 metres.",
+          "answer_d": "The speed limit inside the tunnel is 150 km/h.",
+          "explanation": "This is the CE19 tunnel sign with a distance plate — the number underneath gives the distance to the tunnel entrance, not the tunnel's length. Headlights are required inside the tunnel itself regardless of this plate."
+        },
+        "fr": {
+          "question_text": "Que vous indique ce panneau ?",
+          "answer_a": "L'entrée d'un tunnel est située à 150 mètres.",
+          "answer_b": "La longueur du tunnel est de 150 mètres.",
+          "answer_c": "Vous devez allumer vos feux dans 150 mètres.",
+          "answer_d": "La vitesse limite dans le tunnel est de 150 km/h.",
+          "explanation": "Il s'agit du panneau CE19 avec panonceau de distance — le nombre indiqué donne la distance jusqu'à l'entrée du tunnel, pas sa longueur. L'éclairage est obligatoire dans le tunnel lui-même, indépendamment de ce panonceau."
+        }
+      }
+    },
+    {
+      "category_slug": "priority_rules",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_yield.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What must you do as you approach this sign?",
+          "answer_a": "Slow down and give way to vehicles already on the road you are about to join.",
+          "answer_b": "Enter the roundabout first.",
+          "answer_c": "Come to a mandatory stop before proceeding.",
+          "answer_d": "Reverse back onto the main road.",
+          "explanation": "The inverted triangle 'Cédez le passage' sign means give way — unlike a STOP sign, it does not require a mandatory full stop, only slowing down enough to yield if another vehicle is present."
+        },
+        "fr": {
+          "question_text": "Que devez-vous faire à l'approche de ce panneau ?",
+          "answer_a": "Ralentir et céder le passage aux véhicules circulant sur la chaussée que vous allez rejoindre.",
+          "answer_b": "Vous engager en premier dans le carrefour giratoire.",
+          "answer_c": "Marquer un arrêt obligatoire avant de vous engager.",
+          "answer_d": "Faire marche arrière sur la route principale.",
+          "explanation": "Le panneau triangulaire inversé 'Cédez le passage' impose de céder la priorité — contrairement au STOP, il n'impose pas un arrêt obligatoire, seulement de ralentir suffisamment pour céder le passage si nécessaire."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "image_path": "france/situation_bend_right.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign indicate?",
+          "answer_a": "A dangerous bend to the right.",
+          "answer_b": "A mandatory turn to the right.",
+          "answer_c": "The end of a speed restriction.",
+          "answer_d": "Slippery road ahead.",
+          "explanation": "Triangular signs with a red border are danger warnings, not obligations — this one (AC1a) warns of a bend to the right ahead, so the driver should slow down and not cut the corner."
+        },
+        "fr": {
+          "question_text": "Que vous indique ce panneau ?",
+          "answer_a": "Un virage dangereux à droite.",
+          "answer_b": "Une obligation de tourner à droite.",
+          "answer_c": "La fin d'une limitation de vitesse.",
+          "answer_d": "Chaussée glissante.",
+          "explanation": "Les panneaux triangulaires à bordure rouge sont des panneaux de danger et non d'obligation — celui-ci (AC1a) annonce un virage à droite, il faut donc ralentir et ne pas couper le virage."
+        }
+      }
+    },
+    {
+      "category_slug": "overtaking",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_no_overtaking.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign mean for you?",
+          "answer_a": "You may not overtake any vehicle, including cyclists or two-wheelers.",
+          "answer_b": "You may overtake a cyclist but not a car.",
+          "answer_c": "You may overtake if the road ahead is clear for a long distance.",
+          "answer_d": "The restriction only applies to trucks.",
+          "explanation": "This B3 sign prohibits overtaking any vehicle for the distance shown on the plate underneath (here 2.5 km) — the restriction applies until you pass the matching end-of-prohibition sign."
+        },
+        "fr": {
+          "question_text": "Que devez-vous faire à la vue de ce panneau ?",
+          "answer_a": "Je ne peux pas dépasser, même un cycliste ou un deux-roues.",
+          "answer_b": "Je peux dépasser un cycliste mais pas une voiture.",
+          "answer_c": "Je peux dépasser si la voie est libre sur une longue distance.",
+          "answer_d": "L'interdiction ne concerne que les poids lourds.",
+          "explanation": "Ce panneau B3 interdit de dépasser tout véhicule sur la distance indiquée par le panonceau (ici 2,5 km) — l'interdiction s'applique jusqu'au panneau de fin d'interdiction correspondant."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_level_crossing.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign indicate?",
+          "answer_a": "A level crossing with barriers.",
+          "answer_b": "A level crossing without barriers.",
+          "answer_c": "A railway line with no crossing.",
+          "answer_d": "A speed bump ahead.",
+          "explanation": "This A7 sign, showing a striped barrier pictogram, warns of an upcoming level crossing equipped with gates — approach with caution and be ready to stop if the barriers are lowering."
+        },
+        "fr": {
+          "question_text": "Que vous indique ce panneau ?",
+          "answer_a": "Un passage à niveau avec barrières.",
+          "answer_b": "Un passage à niveau sans barrière.",
+          "answer_c": "Une voie ferrée sans croisement.",
+          "answer_d": "Un ralentisseur à l'approche.",
+          "explanation": "Ce panneau A7, représentant une barrière rayée, annonce un passage à niveau équipé de barrières — il faut ralentir et être prêt à s'arrêter si les barrières s'abaissent."
+        }
+      }
+    },
+    {
+      "category_slug": "priority_rules",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "image_path": "france/situation_stop.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What must you do at this intersection?",
+          "answer_a": "Come to a complete stop at the stop line and give way to traffic on the priority road.",
+          "answer_b": "Slow down and proceed without stopping if the road is clear.",
+          "answer_c": "Stop only if there is also a 'Yield' sign.",
+          "answer_d": "Sound the horn before proceeding.",
+          "explanation": "A STOP sign always requires a complete stop at the marked line (or at the intersection if unmarked), even if the road looks clear, before giving way to traffic on the priority road."
+        },
+        "fr": {
+          "question_text": "Que devez-vous faire à cette intersection ?",
+          "answer_a": "Marquer l'arrêt à la ligne d'effet du STOP et céder le passage aux véhicules sur la route prioritaire.",
+          "answer_b": "Ralentir et passer sans marquer l'arrêt si la voie est libre.",
+          "answer_c": "S'arrêter uniquement s'il y a un panneau « Cédez le passage ».",
+          "answer_d": "Klaxonner avant de s'engager.",
+          "explanation": "Le panneau STOP impose toujours un arrêt complet à la ligne d'effet (ou à l'intersection si elle n'est pas marquée), même si la voie semble libre, avant de céder le passage à la route prioritaire."
+        }
+      }
+    }
+  ],
+  "roadSigns": [
+    {
+      "road_sign_category_slug": "general",
+      "shape": "octagon",
+      "color": "#C8102E",
+      "translations": {
+        "en": {
+          "name": "Stop",
+          "meaning": "Come to a complete stop"
+        },
+        "fr": {
+          "name": "Stop",
+          "meaning": "Arrêt obligatoire"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "triangle",
+      "color": "#C8102E",
+      "translations": {
+        "en": {
+          "name": "Give Way",
+          "meaning": "Yield to traffic on the main road"
+        },
+        "fr": {
+          "name": "Cédez le passage",
+          "meaning": "Céder la priorité à la route principale"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "circle",
+      "color": "#C8102E",
+      "translations": {
+        "en": {
+          "name": "No Entry",
+          "meaning": "Entry prohibited for all vehicles"
+        },
+        "fr": {
+          "name": "Sens interdit",
+          "meaning": "Entrée interdite à tout véhicule"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "circle",
+      "color": "#C8102E",
+      "translations": {
+        "en": {
+          "name": "Speed Limit",
+          "meaning": "Maximum speed indicated on the sign"
+        },
+        "fr": {
+          "name": "Limitation de vitesse",
+          "meaning": "Vitesse maximale indiquée sur le panneau"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No Parking",
+          "meaning": "Parking prohibited in this area"
+        },
+        "fr": {
+          "name": "Stationnement interdit",
+          "meaning": "Stationnement interdit dans cette zone"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "square",
+      "color": "#FFC72C",
+      "translations": {
+        "en": {
+          "name": "Priority Road",
+          "meaning": "You have priority over side roads"
+        },
+        "fr": {
+          "name": "Route à caractère prioritaire",
+          "meaning": "Vous êtes prioritaire sur les voies latérales"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "triangle",
+      "color": "#C8102E",
+      "translations": {
+        "en": {
+          "name": "Pedestrian Crossing Ahead",
+          "meaning": "Warning of a pedestrian crossing ahead"
+        },
+        "fr": {
+          "name": "Passage piéton",
+          "meaning": "Annonce d'un passage piéton"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "general",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Roundabout Ahead (Mandatory)",
+          "meaning": "You must go around the roundabout in the direction of the arrows"
+        },
+        "fr": {
+          "name": "Carrefour à sens giratoire",
+          "meaning": "Vous devez circuler dans le sens des flèches"
+        }
+      }
+    }
+  ],
+  "roadSignCategories": [
+    {
+      "slug": "general",
+      "translations": {
+        "en": "Road Signs",
+        "fr": "Panneaux"
+      }
+    }
+  ]
+}

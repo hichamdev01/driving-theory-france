@@ -1,0 +1,30 @@
+{
+  "/Users/hichamlabani/Desktop/driving-theory-app/TheoryPrep/Components/BundledImage.swift" : {
+    "const-values" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/BundledImage.swiftconstvalues",
+    "dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/BundledImage.d",
+    "diagnostics" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/BundledImage.dia",
+    "object" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/BundledImage.o",
+    "swift-dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/BundledImage.swiftdeps"
+  },
+  "/Users/hichamlabani/Desktop/driving-theory-app/TheoryPrep/Components/CardView.swift" : {
+    "const-values" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/CardView.swiftconstvalues",
+    "dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/CardView.d",
+    "diagnostics" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/CardView.dia",
+    "object" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/CardView.o",
+    "swift-dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/CardView.swiftdeps"
+  },
+  "/Users/hichamlabani/Desktop/driving-theory-app/TheoryPrep/Models/ContentPack.swift" : {
+    "const-values" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/ContentPack.swiftconstvalues",
+    "dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/ContentPack.d",
+    "diagnostics" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/ContentPack.dia",
+    "object" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/ContentPack.o",
+    "swift-dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/ContentPack.swiftdeps"
+  },
+  "/Users/hichamlabani/Desktop/driving-theory-app/TheoryPrep/State/AppSettings.swift" : {
+    "const-values" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/AppSettings.swiftconstvalues",
+    "dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/AppSettings.d",
+    "diagnostics" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/AppSettings.dia",
+    "object" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/AppSettings.o",
+    "swift-dependencies" : "/Users/hichamlabani/Desktop/driving-theory-app/build/Build/Intermediates.noindex/TheoryPrep.build/Debug-iphonesimulator/TheoryPrep.build/Objects-normal/arm64/AppSettings.swiftdeps"
+  }
+}
