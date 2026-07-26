@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'TheoryPrep' in project 'TheoryPrep' (no dependencies)
