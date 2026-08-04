@@ -2579,6 +2579,7 @@
   "roadSigns": [
     {
       "road_sign_category_slug": "general",
+      "image_path": "france/road_sign_stop.png",
       "shape": "octagon",
       "color": "#C8102E",
       "translations": {
@@ -2594,6 +2595,7 @@
     },
     {
       "road_sign_category_slug": "general",
+      "image_path": "france/road_sign_yield.png",
       "shape": "triangle",
       "color": "#C8102E",
       "translations": {
@@ -2609,6 +2611,7 @@
     },
     {
       "road_sign_category_slug": "general",
+      "image_path": "france/road_sign_no_entry.png",
       "shape": "circle",
       "color": "#C8102E",
       "translations": {
@@ -2624,21 +2627,23 @@
     },
     {
       "road_sign_category_slug": "general",
+      "image_path": "france/road_sign_speed_limit_50.png",
       "shape": "circle",
       "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Speed Limit",
-          "meaning": "Maximum speed indicated on the sign"
+          "meaning": "Maximum speed of 50 km/h"
         },
         "fr": {
           "name": "Limitation de vitesse",
-          "meaning": "Vitesse maximale indiquée sur le panneau"
+          "meaning": "Vitesse maximale de 50 km/h"
         }
       }
     },
     {
       "road_sign_category_slug": "general",
+      "image_path": "france/road_sign_no_parking.png",
       "shape": "circle",
       "color": "#1E5AA8",
       "translations": {
@@ -2654,6 +2659,7 @@
     },
     {
       "road_sign_category_slug": "general",
+      "image_path": "france/road_sign_priority_road.png",
       "shape": "square",
       "color": "#FFC72C",
       "translations": {
@@ -2669,31 +2675,33 @@
     },
     {
       "road_sign_category_slug": "general",
+      "image_path": "france/road_sign_pedestrian_crossing.png",
       "shape": "triangle",
       "color": "#C8102E",
       "translations": {
         "en": {
-          "name": "Pedestrian Crossing Ahead",
-          "meaning": "Warning of a pedestrian crossing ahead"
+          "name": "Pedestrian Crossing",
+          "meaning": "Location of a pedestrian crossing"
         },
         "fr": {
           "name": "Passage piéton",
-          "meaning": "Annonce d'un passage piéton"
+          "meaning": "Emplacement d'un passage pour piétons"
         }
       }
     },
     {
       "road_sign_category_slug": "general",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "image_path": "france/road_sign_roundabout_ahead.png",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
-          "name": "Roundabout Ahead (Mandatory)",
-          "meaning": "You must go around the roundabout in the direction of the arrows"
+          "name": "Roundabout Ahead",
+          "meaning": "Warning of a roundabout ahead"
         },
         "fr": {
           "name": "Carrefour à sens giratoire",
-          "meaning": "Vous devez circuler dans le sens des flèches"
+          "meaning": "Annonce d'un carrefour à sens giratoire"
         }
       }
     }

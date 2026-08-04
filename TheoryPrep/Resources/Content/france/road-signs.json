@@ -1,0 +1,2873 @@
+{
+  "categories": [
+    {
+      "slug": "danger",
+      "translations": {
+        "en": "Danger signs",
+        "fr": "Panneaux de danger"
+      }
+    },
+    {
+      "slug": "obligation",
+      "translations": {
+        "en": "Mandatory signs",
+        "fr": "Panneaux d’obligation"
+      }
+    },
+    {
+      "slug": "prohibition",
+      "translations": {
+        "en": "Prohibition signs",
+        "fr": "Panneaux d’interdiction"
+      }
+    },
+    {
+      "slug": "end_prohibition",
+      "translations": {
+        "en": "End of prohibition signs",
+        "fr": "Fin d’interdiction"
+      }
+    },
+    {
+      "slug": "indication",
+      "translations": {
+        "en": "Information signs",
+        "fr": "Panneaux d’indication"
+      }
+    }
+  ],
+  "signs": [
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_001.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Permanent danger",
+          "meaning": "Permanent danger"
+        },
+        "fr": {
+          "name": "Danger permanent",
+          "meaning": "Danger permanent"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_002.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Temporary danger",
+          "meaning": "Temporary danger"
+        },
+        "fr": {
+          "name": "Danger temporaire",
+          "meaning": "Danger temporaire"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_003.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Priority to traffic from the right",
+          "meaning": "Priority to traffic from the right"
+        },
+        "fr": {
+          "name": "Cédez le passage aux véhicules arrivant à votre droite",
+          "meaning": "Cédez le passage aux véhicules arrivant à votre droite"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_004.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Right bend",
+          "meaning": "Right bend"
+        },
+        "fr": {
+          "name": "Virage à droite",
+          "meaning": "Virage à droite"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_005.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Left bend",
+          "meaning": "Left bend"
+        },
+        "fr": {
+          "name": "Virage à gauche",
+          "meaning": "Virage à gauche"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_006.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Double bend, first to the right",
+          "meaning": "Double bend, first to the right"
+        },
+        "fr": {
+          "name": "Succession de virages dont le premier est à droite",
+          "meaning": "Succession de virages dont le premier est à droite"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_007.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Double bend, first to the left",
+          "meaning": "Double bend, first to the left"
+        },
+        "fr": {
+          "name": "Succession de virages dont le premier est à gauche",
+          "meaning": "Succession de virages dont le premier est à gauche"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_008.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Uneven road",
+          "meaning": "Uneven road"
+        },
+        "fr": {
+          "name": "Cassis ou dos-d’âne",
+          "meaning": "Cassis ou dos-d’âne"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_009.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Speed hump",
+          "meaning": "Speed hump"
+        },
+        "fr": {
+          "name": "Ralentisseur",
+          "meaning": "Ralentisseur"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_010.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Road narrows on the right",
+          "meaning": "Road narrows on the right"
+        },
+        "fr": {
+          "name": "Chaussée rétrécie par la droite",
+          "meaning": "Chaussée rétrécie par la droite"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_011.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Road narrows on the left",
+          "meaning": "Road narrows on the left"
+        },
+        "fr": {
+          "name": "Chaussée rétrécie par la gauche",
+          "meaning": "Chaussée rétrécie par la gauche"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_012.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Road narrows",
+          "meaning": "Road narrows"
+        },
+        "fr": {
+          "name": "Chaussée rétrécie",
+          "meaning": "Chaussée rétrécie"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_013.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Slippery road",
+          "meaning": "Slippery road"
+        },
+        "fr": {
+          "name": "Chaussée particulièrement glissante",
+          "meaning": "Chaussée particulièrement glissante"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_014.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Opening bridge",
+          "meaning": "Opening bridge"
+        },
+        "fr": {
+          "name": "Pont mobile",
+          "meaning": "Pont mobile"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_015.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Manually operated barriers",
+          "meaning": "Manually operated barriers"
+        },
+        "fr": {
+          "name": "Barrières à fonctionnement manuel",
+          "meaning": "Barrières à fonctionnement manuel"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_016.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Level crossing without barrier",
+          "meaning": "Level crossing without barrier"
+        },
+        "fr": {
+          "name": "Passage à niveau sans barrière ni demi-barrière",
+          "meaning": "Passage à niveau sans barrière ni demi-barrière"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_017.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Tramway crossing",
+          "meaning": "Tramway crossing"
+        },
+        "fr": {
+          "name": "Traversée de voies de tramways",
+          "meaning": "Traversée de voies de tramways"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_018.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Public transport crossing",
+          "meaning": "Public transport crossing"
+        },
+        "fr": {
+          "name": "Traversée de voies de transport en commun",
+          "meaning": "Traversée de voies de transport en commun"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_019.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Children",
+          "meaning": "Children"
+        },
+        "fr": {
+          "name": "Endroit fréquenté par les enfants",
+          "meaning": "Endroit fréquenté par les enfants"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_020.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Pedestrian crossing",
+          "meaning": "Pedestrian crossing"
+        },
+        "fr": {
+          "name": "Passage pour piétons",
+          "meaning": "Passage pour piétons"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_021.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Other danger",
+          "meaning": "Other danger"
+        },
+        "fr": {
+          "name": "Danger pouvant être précisé ou non par un panonceau",
+          "meaning": "Danger pouvant être précisé ou non par un panonceau"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_022.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Cattle crossing",
+          "meaning": "Cattle crossing"
+        },
+        "fr": {
+          "name": "Passage d’animaux domestiques",
+          "meaning": "Passage d’animaux domestiques"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_023.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Sheep crossing",
+          "meaning": "Sheep crossing"
+        },
+        "fr": {
+          "name": "Passage d’animaux domestiques",
+          "meaning": "Passage d’animaux domestiques"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_024.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Wild animals",
+          "meaning": "Wild animals"
+        },
+        "fr": {
+          "name": "Passage d’animaux sauvages",
+          "meaning": "Passage d’animaux sauvages"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_025.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Horse riders",
+          "meaning": "Horse riders"
+        },
+        "fr": {
+          "name": "Passage de cavaliers",
+          "meaning": "Passage de cavaliers"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_026.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Steep descent",
+          "meaning": "Steep descent"
+        },
+        "fr": {
+          "name": "Descente dangereuse",
+          "meaning": "Descente dangereuse"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_027.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Traffic lights ahead",
+          "meaning": "Traffic lights ahead"
+        },
+        "fr": {
+          "name": "Annonce de feux tricolores",
+          "meaning": "Annonce de feux tricolores"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_028.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Two-way traffic",
+          "meaning": "Two-way traffic"
+        },
+        "fr": {
+          "name": "Circulation dans les deux sens",
+          "meaning": "Circulation dans les deux sens"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_029.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Falling rocks",
+          "meaning": "Falling rocks"
+        },
+        "fr": {
+          "name": "Risque de chute de pierres",
+          "meaning": "Risque de chute de pierres"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_030.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Quayside or riverbank",
+          "meaning": "Quayside or riverbank"
+        },
+        "fr": {
+          "name": "Débouché sur un quai ou une berge",
+          "meaning": "Débouché sur un quai ou une berge"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_031.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Cyclists crossing",
+          "meaning": "Cyclists crossing"
+        },
+        "fr": {
+          "name": "Débouché de cyclistes venant de droite ou de gauche",
+          "meaning": "Débouché de cyclistes venant de droite ou de gauche"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_032.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Low-flying aircraft",
+          "meaning": "Low-flying aircraft"
+        },
+        "fr": {
+          "name": "Traversée d’une aire de danger aérien",
+          "meaning": "Traversée d’une aire de danger aérien"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_033.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Crosswind",
+          "meaning": "Crosswind"
+        },
+        "fr": {
+          "name": "Risque de fort vent latéral",
+          "meaning": "Risque de fort vent latéral"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_034.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Priority intersection",
+          "meaning": "Priority intersection"
+        },
+        "fr": {
+          "name": "Intersection où vous êtes prioritaire",
+          "meaning": "Intersection où vous êtes prioritaire"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "danger",
+      "image_path": "france/road_sign_danger_035.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Roundabout ahead",
+          "meaning": "Roundabout ahead"
+        },
+        "fr": {
+          "name": "Carrefour à sens giratoire avec priorité aux usagers circulant sur l’anneau",
+          "meaning": "Carrefour à sens giratoire avec priorité aux usagers circulant sur l’anneau"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_001.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Turn left before the sign",
+          "meaning": "Turn left before the sign"
+        },
+        "fr": {
+          "name": "Obligation de tourner à gauche avant le panneau",
+          "meaning": "Obligation de tourner à gauche avant le panneau"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_002.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Turn right before the sign",
+          "meaning": "Turn right before the sign"
+        },
+        "fr": {
+          "name": "Obligation de tourner à droite avant le panneau",
+          "meaning": "Obligation de tourner à droite avant le panneau"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_003.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Pass the obstacle on the right",
+          "meaning": "Pass the obstacle on the right"
+        },
+        "fr": {
+          "name": "Contournement obligatoire de l’obstacle par la droite",
+          "meaning": "Contournement obligatoire de l’obstacle par la droite"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_004.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Pass the obstacle on the left",
+          "meaning": "Pass the obstacle on the left"
+        },
+        "fr": {
+          "name": "Contournement obligatoire de l’obstacle par la gauche",
+          "meaning": "Contournement obligatoire de l’obstacle par la gauche"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_005.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Go straight",
+          "meaning": "Go straight"
+        },
+        "fr": {
+          "name": "Direction obligatoire à la prochaine intersection : tout droit",
+          "meaning": "Direction obligatoire à la prochaine intersection : tout droit"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_006.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Turn right",
+          "meaning": "Turn right"
+        },
+        "fr": {
+          "name": "Direction obligatoire à la prochaine intersection : à droite",
+          "meaning": "Direction obligatoire à la prochaine intersection : à droite"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_007.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Turn left",
+          "meaning": "Turn left"
+        },
+        "fr": {
+          "name": "Direction obligatoire à la prochaine intersection : à gauche",
+          "meaning": "Direction obligatoire à la prochaine intersection : à gauche"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_008.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Go straight or turn left",
+          "meaning": "Go straight or turn left"
+        },
+        "fr": {
+          "name": "Direction obligatoire à la prochaine intersection : tout droit ou à gauche",
+          "meaning": "Direction obligatoire à la prochaine intersection : tout droit ou à gauche"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_009.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Go straight or turn right",
+          "meaning": "Go straight or turn right"
+        },
+        "fr": {
+          "name": "Direction obligatoire à la prochaine intersection : tout droit ou à droite",
+          "meaning": "Direction obligatoire à la prochaine intersection : tout droit ou à droite"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_010.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Turn left or right",
+          "meaning": "Turn left or right"
+        },
+        "fr": {
+          "name": "Direction obligatoire à la prochaine intersection : à gauche ou à droite",
+          "meaning": "Direction obligatoire à la prochaine intersection : à gauche ou à droite"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_011.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Mandatory cycle track",
+          "meaning": "Mandatory cycle track"
+        },
+        "fr": {
+          "name": "Piste ou bande obligatoire pour cycles sans side-car à 2 ou 3 roues",
+          "meaning": "Piste ou bande obligatoire pour cycles sans side-car à 2 ou 3 roues"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_012.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Pedestrian area",
+          "meaning": "Pedestrian area"
+        },
+        "fr": {
+          "name": "Entrée d’aire piétonne",
+          "meaning": "Entrée d’aire piétonne"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_013.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Mandatory horse-rider path",
+          "meaning": "Mandatory horse-rider path"
+        },
+        "fr": {
+          "name": "Chemin obligatoire pour cavaliers",
+          "meaning": "Chemin obligatoire pour cavaliers"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_014.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Minimum speed 50",
+          "meaning": "Minimum speed 50"
+        },
+        "fr": {
+          "name": "Vitesse minimale obligatoire",
+          "meaning": "Vitesse minimale obligatoire"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_015.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Snow chains required",
+          "meaning": "Snow chains required"
+        },
+        "fr": {
+          "name": "Chaînes à neige obligatoires sur au moins 2 roues motrices",
+          "meaning": "Chaînes à neige obligatoires sur au moins 2 roues motrices"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_016.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Reserved public-transport lane",
+          "meaning": "Reserved public-transport lane"
+        },
+        "fr": {
+          "name": "Voie réservée aux véhicules des services réguliers de transport en commun",
+          "meaning": "Voie réservée aux véhicules des services réguliers de transport en commun"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_017.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Reserved tramway lane",
+          "meaning": "Reserved tramway lane"
+        },
+        "fr": {
+          "name": "Voie réservée aux tramways",
+          "meaning": "Voie réservée aux tramways"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_018.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Turn on your lights",
+          "meaning": "Turn on your lights"
+        },
+        "fr": {
+          "name": "Obligation dont la nature est mentionnée sur le panneau",
+          "meaning": "Obligation dont la nature est mentionnée sur le panneau"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_019.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of mandatory cycle track",
+          "meaning": "End of mandatory cycle track"
+        },
+        "fr": {
+          "name": "Fin de piste ou de bande cyclable",
+          "meaning": "Fin de piste ou de bande cyclable"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_020.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of pedestrian area",
+          "meaning": "End of pedestrian area"
+        },
+        "fr": {
+          "name": "Sortie d’aire piétonne",
+          "meaning": "Sortie d’aire piétonne"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_021.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of mandatory horse-rider path",
+          "meaning": "End of mandatory horse-rider path"
+        },
+        "fr": {
+          "name": "Fin de chemin obligatoire pour cavaliers",
+          "meaning": "Fin de chemin obligatoire pour cavaliers"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_022.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of minimum speed",
+          "meaning": "End of minimum speed"
+        },
+        "fr": {
+          "name": "Fin de vitesse minimale obligatoire",
+          "meaning": "Fin de vitesse minimale obligatoire"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_023.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of snow-chain requirement",
+          "meaning": "End of snow-chain requirement"
+        },
+        "fr": {
+          "name": "Fin de l’obligation d’utilisation des chaînes à neige",
+          "meaning": "Fin de l’obligation d’utilisation des chaînes à neige"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_024.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of reserved public-transport lane",
+          "meaning": "End of reserved public-transport lane"
+        },
+        "fr": {
+          "name": "Fin de voie réservée aux véhicules des services réguliers de transport en commun",
+          "meaning": "Fin de voie réservée aux véhicules des services réguliers de transport en commun"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "obligation",
+      "image_path": "france/road_sign_obligation_025.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of lights-on requirement",
+          "meaning": "End of lights-on requirement"
+        },
+        "fr": {
+          "name": "Fin d’obligation d’allumage des feux",
+          "meaning": "Fin d’obligation d’allumage des feux"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_001.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Road closed to all vehicles",
+          "meaning": "Road closed to all vehicles"
+        },
+        "fr": {
+          "name": "Circulation interdite à tout véhicule dans les deux sens",
+          "meaning": "Circulation interdite à tout véhicule dans les deux sens"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_002.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No entry",
+          "meaning": "No entry"
+        },
+        "fr": {
+          "name": "Sens interdit",
+          "meaning": "Sens interdit"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_003.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No left turn",
+          "meaning": "No left turn"
+        },
+        "fr": {
+          "name": "Interdiction de tourner à gauche à la prochaine intersection",
+          "meaning": "Interdiction de tourner à gauche à la prochaine intersection"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_004.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No right turn",
+          "meaning": "No right turn"
+        },
+        "fr": {
+          "name": "Interdiction de tourner à droite à la prochaine intersection",
+          "meaning": "Interdiction de tourner à droite à la prochaine intersection"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_005.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No U-turn",
+          "meaning": "No U-turn"
+        },
+        "fr": {
+          "name": "Interdiction de faire demi-tour",
+          "meaning": "Interdiction de faire demi-tour"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_006.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No overtaking",
+          "meaning": "No overtaking"
+        },
+        "fr": {
+          "name": "Interdiction de dépasser tout véhicule à moteur sauf deux roues",
+          "meaning": "Interdiction de dépasser tout véhicule à moteur sauf deux roues"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_007.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No overtaking by goods vehicles over 3.5 t",
+          "meaning": "No overtaking by goods vehicles over 3.5 t"
+        },
+        "fr": {
+          "name": "Interdiction de dépasser pour les transports de marchandises > à 3,5 t",
+          "meaning": "Interdiction de dépasser pour les transports de marchandises > à 3,5 t"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_008.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Customs stop",
+          "meaning": "Customs stop"
+        },
+        "fr": {
+          "name": "Arrêt obligatoire au poste de douane",
+          "meaning": "Arrêt obligatoire au poste de douane"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_009.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Gendarmerie stop",
+          "meaning": "Gendarmerie stop"
+        },
+        "fr": {
+          "name": "Arrêt obligatoire au barrage de gendarmerie",
+          "meaning": "Arrêt obligatoire au barrage de gendarmerie"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_010.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Police stop",
+          "meaning": "Police stop"
+        },
+        "fr": {
+          "name": "Arrêt obligatoire au barrage de police",
+          "meaning": "Arrêt obligatoire au barrage de police"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_011.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No parking",
+          "meaning": "No parking"
+        },
+        "fr": {
+          "name": "Stationnement interdit",
+          "meaning": "Stationnement interdit"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_012.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No parking on odd-numbered dates",
+          "meaning": "No parking on odd-numbered dates"
+        },
+        "fr": {
+          "name": "Stationnement interdit du côté du panneau du 1er au 15 du mois",
+          "meaning": "Stationnement interdit du côté du panneau du 1er au 15 du mois"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_013.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No parking on even-numbered dates",
+          "meaning": "No parking on even-numbered dates"
+        },
+        "fr": {
+          "name": "Stationnement interdit du côté du panneau du 16 à la fin du mois",
+          "meaning": "Stationnement interdit du côté du panneau du 16 à la fin du mois"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_014.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No stopping or parking",
+          "meaning": "No stopping or parking"
+        },
+        "fr": {
+          "name": "Arrêt et stationnement interdits",
+          "meaning": "Arrêt et stationnement interdits"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_015.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No motor vehicles except mopeds",
+          "meaning": "No motor vehicles except mopeds"
+        },
+        "fr": {
+          "name": "Accès interdit aux véhicules à moteur sauf cyclomoteurs",
+          "meaning": "Accès interdit aux véhicules à moteur sauf cyclomoteurs"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_016.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No motor vehicles",
+          "meaning": "No motor vehicles"
+        },
+        "fr": {
+          "name": "Accès interdit aux véhicules à moteur",
+          "meaning": "Accès interdit aux véhicules à moteur"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_017.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No goods vehicles",
+          "meaning": "No goods vehicles"
+        },
+        "fr": {
+          "name": "Accès interdit aux véhicules transportant des marchandises",
+          "meaning": "Accès interdit aux véhicules transportant des marchandises"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_018.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No pedestrians",
+          "meaning": "No pedestrians"
+        },
+        "fr": {
+          "name": "Accès interdit aux piétons",
+          "meaning": "Accès interdit aux piétons"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_019.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No cycles",
+          "meaning": "No cycles"
+        },
+        "fr": {
+          "name": "Accès interdit aux cycles",
+          "meaning": "Accès interdit aux cycles"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_020.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No animal-drawn vehicles",
+          "meaning": "No animal-drawn vehicles"
+        },
+        "fr": {
+          "name": "Accès interdit aux véhicules à traction animale",
+          "meaning": "Accès interdit aux véhicules à traction animale"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_021.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No agricultural vehicles",
+          "meaning": "No agricultural vehicles"
+        },
+        "fr": {
+          "name": "Accès interdit aux véhicules agricoles à moteur",
+          "meaning": "Accès interdit aux véhicules agricoles à moteur"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_022.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No handcarts",
+          "meaning": "No handcarts"
+        },
+        "fr": {
+          "name": "Accès interdit aux voitures à bras",
+          "meaning": "Accès interdit aux voitures à bras"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_023.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No public-transport vehicles",
+          "meaning": "No public-transport vehicles"
+        },
+        "fr": {
+          "name": "Accès interdit aux véhicules de transport en commun",
+          "meaning": "Accès interdit aux véhicules de transport en commun"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_024.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No mopeds",
+          "meaning": "No mopeds"
+        },
+        "fr": {
+          "name": "Accès interdit aux cyclomoteurs",
+          "meaning": "Accès interdit aux cyclomoteurs"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_025.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No motorcycles or mopeds",
+          "meaning": "No motorcycles or mopeds"
+        },
+        "fr": {
+          "name": "Accès interdit aux motos et motos légères",
+          "meaning": "Accès interdit aux motos et motos légères"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_026.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No caravans or trailers over 250 kg",
+          "meaning": "No caravans or trailers over 250 kg"
+        },
+        "fr": {
+          "name": "Accès interdit aux véhicules tractant une caravane ou remorque de plus de 250 kg",
+          "meaning": "Accès interdit aux véhicules tractant une caravane ou remorque de plus de 250 kg"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_027.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No vehicles carrying explosives",
+          "meaning": "No vehicles carrying explosives"
+        },
+        "fr": {
+          "name": "Accès interdit aux véhicules de transport de marchandises explosives ou facilement inflammables",
+          "meaning": "Accès interdit aux véhicules de transport de marchandises explosives ou facilement inflammables"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_028.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No vehicles carrying water pollutants",
+          "meaning": "No vehicles carrying water pollutants"
+        },
+        "fr": {
+          "name": "Accès interdit aux véhicules transportant des marchandises polluant l’eau",
+          "meaning": "Accès interdit aux véhicules transportant des marchandises polluant l’eau"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_029.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No vehicles carrying dangerous goods",
+          "meaning": "No vehicles carrying dangerous goods"
+        },
+        "fr": {
+          "name": "Accès interdit aux véhicules transportant des marchandises dangereuses",
+          "meaning": "Accès interdit aux véhicules transportant des marchandises dangereuses"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_030.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "No horns",
+          "meaning": "No horns"
+        },
+        "fr": {
+          "name": "Signaux sonores interdits",
+          "meaning": "Signaux sonores interdits"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_031.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Maximum axle load 2 t",
+          "meaning": "Maximum axle load 2 t"
+        },
+        "fr": {
+          "name": "Interdit aux véhicules de plus de 2 t sur un même essieu",
+          "meaning": "Interdit aux véhicules de plus de 2 t sur un même essieu"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_032.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Maximum weight 5.5 t",
+          "meaning": "Maximum weight 5.5 t"
+        },
+        "fr": {
+          "name": "Interdit aux véhicules de plus de 5,5 t",
+          "meaning": "Interdit aux véhicules de plus de 5,5 t"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_033.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Maximum width 2.5 m",
+          "meaning": "Maximum width 2.5 m"
+        },
+        "fr": {
+          "name": "Accès interdit aux véhicules dont la largeur, chargement compris, dépasse la dimension indiquée",
+          "meaning": "Accès interdit aux véhicules dont la largeur, chargement compris, dépasse la dimension indiquée"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_034.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Maximum height 3.5 m",
+          "meaning": "Maximum height 3.5 m"
+        },
+        "fr": {
+          "name": "Accès interdit aux véhicules dont la hauteur, chargement compris, dépasse la dimension indiquée",
+          "meaning": "Accès interdit aux véhicules dont la hauteur, chargement compris, dépasse la dimension indiquée"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_035.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Maximum length 10 m",
+          "meaning": "Maximum length 10 m"
+        },
+        "fr": {
+          "name": "Accès interdit aux véhicules dont la longueur, chargement compris, dépasse la dimension indiquée",
+          "meaning": "Accès interdit aux véhicules dont la longueur, chargement compris, dépasse la dimension indiquée"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_036.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Speed limit 30",
+          "meaning": "Speed limit 30"
+        },
+        "fr": {
+          "name": "Limitation de vitesse à 30 km/h",
+          "meaning": "Limitation de vitesse à 30 km/h"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_037.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Speed limit 50",
+          "meaning": "Speed limit 50"
+        },
+        "fr": {
+          "name": "Limitation de vitesse à 50 km/h",
+          "meaning": "Limitation de vitesse à 50 km/h"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_038.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Speed limit 70",
+          "meaning": "Speed limit 70"
+        },
+        "fr": {
+          "name": "Limitation de vitesse à 70 km/h",
+          "meaning": "Limitation de vitesse à 70 km/h"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_039.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Speed limit 90",
+          "meaning": "Speed limit 90"
+        },
+        "fr": {
+          "name": "Limitation de vitesse à 90 km/h",
+          "meaning": "Limitation de vitesse à 90 km/h"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_040.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Speed limit 110",
+          "meaning": "Speed limit 110"
+        },
+        "fr": {
+          "name": "Limitation de vitesse à 110 km/h",
+          "meaning": "Limitation de vitesse à 110 km/h"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_041.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Speed limit 130",
+          "meaning": "Speed limit 130"
+        },
+        "fr": {
+          "name": "Limitation de vitesse à 130 km/h",
+          "meaning": "Limitation de vitesse à 130 km/h"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_042.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Give way to oncoming traffic",
+          "meaning": "Give way to oncoming traffic"
+        },
+        "fr": {
+          "name": "Cédez le passage à la circulation venant en sens inverse",
+          "meaning": "Cédez le passage à la circulation venant en sens inverse"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "prohibition",
+      "image_path": "france/road_sign_prohibition_043.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Minimum following distance 70 m",
+          "meaning": "Minimum following distance 70 m"
+        },
+        "fr": {
+          "name": "Interdiction de circuler sans maintenir l’intervalle indiqué",
+          "meaning": "Interdiction de circuler sans maintenir l’intervalle indiqué"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "end_prohibition",
+      "image_path": "france/road_sign_end_prohibition_001.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of all restrictions",
+          "meaning": "End of all restrictions"
+        },
+        "fr": {
+          "name": "Fin de toutes les interdictions précédemment signalées et imposées aux véhicules en mouvement",
+          "meaning": "Fin de toutes les interdictions précédemment signalées et imposées aux véhicules en mouvement"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "end_prohibition",
+      "image_path": "france/road_sign_end_prohibition_002.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of speed limit 30",
+          "meaning": "End of speed limit 30"
+        },
+        "fr": {
+          "name": "Fin de limitation de vitesse à 30 km/h",
+          "meaning": "Fin de limitation de vitesse à 30 km/h"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "end_prohibition",
+      "image_path": "france/road_sign_end_prohibition_003.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of speed limit 50",
+          "meaning": "End of speed limit 50"
+        },
+        "fr": {
+          "name": "Fin de limitation de vitesse à 50 km/h",
+          "meaning": "Fin de limitation de vitesse à 50 km/h"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "end_prohibition",
+      "image_path": "france/road_sign_end_prohibition_004.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of speed limit 70",
+          "meaning": "End of speed limit 70"
+        },
+        "fr": {
+          "name": "Fin de limitation de vitesse à 70 km/h",
+          "meaning": "Fin de limitation de vitesse à 70 km/h"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "end_prohibition",
+      "image_path": "france/road_sign_end_prohibition_005.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of speed limit 90",
+          "meaning": "End of speed limit 90"
+        },
+        "fr": {
+          "name": "Fin de limitation de vitesse à 90 km/h",
+          "meaning": "Fin de limitation de vitesse à 90 km/h"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "end_prohibition",
+      "image_path": "france/road_sign_end_prohibition_006.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of speed limit 110",
+          "meaning": "End of speed limit 110"
+        },
+        "fr": {
+          "name": "Fin de limitation de vitesse à 110 km/h",
+          "meaning": "Fin de limitation de vitesse à 110 km/h"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "end_prohibition",
+      "image_path": "france/road_sign_end_prohibition_007.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of no-overtaking restriction",
+          "meaning": "End of no-overtaking restriction"
+        },
+        "fr": {
+          "name": "Fin d’interdiction de dépasser",
+          "meaning": "Fin d’interdiction de dépasser"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "end_prohibition",
+      "image_path": "france/road_sign_end_prohibition_008.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of no-overtaking restriction for goods vehicles",
+          "meaning": "End of no-overtaking restriction for goods vehicles"
+        },
+        "fr": {
+          "name": "Fin d’interdiction de dépasser pour les véhicules de transport de marchandises de plus de 3,5 t",
+          "meaning": "Fin d’interdiction de dépasser pour les véhicules de transport de marchandises de plus de 3,5 t"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "end_prohibition",
+      "image_path": "france/road_sign_end_prohibition_009.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of horn restriction",
+          "meaning": "End of horn restriction"
+        },
+        "fr": {
+          "name": "Fin de l’interdiction de l’emploi des avertisseurs sonores",
+          "meaning": "Fin de l’interdiction de l’emploi des avertisseurs sonores"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "end_prohibition",
+      "image_path": "france/road_sign_end_prohibition_010.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of indicated restriction",
+          "meaning": "End of indicated restriction"
+        },
+        "fr": {
+          "name": "Fin d’interdiction dont la nature est mentionnée sur le panneau",
+          "meaning": "Fin d’interdiction dont la nature est mentionnée sur le panneau"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_001.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Pedestrian crossing",
+          "meaning": "Pedestrian crossing"
+        },
+        "fr": {
+          "name": "Passage pour piétons",
+          "meaning": "Passage pour piétons"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_002.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Meeting zone entrance",
+          "meaning": "Meeting zone entrance"
+        },
+        "fr": {
+          "name": "Entrée de zone de rencontre",
+          "meaning": "Entrée de zone de rencontre"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_003.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of meeting zone",
+          "meaning": "End of meeting zone"
+        },
+        "fr": {
+          "name": "Sortie de zone de rencontre",
+          "meaning": "Sortie de zone de rencontre"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_004.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Pedestrian area entrance",
+          "meaning": "Pedestrian area entrance"
+        },
+        "fr": {
+          "name": "Entrée d’aire piétonne",
+          "meaning": "Entrée d’aire piétonne"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_005.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of pedestrian area",
+          "meaning": "End of pedestrian area"
+        },
+        "fr": {
+          "name": "Sortie d’aire piétonne",
+          "meaning": "Sortie d’aire piétonne"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_006.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Parking",
+          "meaning": "Parking"
+        },
+        "fr": {
+          "name": "Lieu aménagé pour le stationnement : parking",
+          "meaning": "Lieu aménagé pour le stationnement : parking"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_007.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Free time-limited parking with disc",
+          "meaning": "Free time-limited parking with disc"
+        },
+        "fr": {
+          "name": "Lieu aménagé pour le stationnement gratuit à durée limitée avec contrôle par disque",
+          "meaning": "Lieu aménagé pour le stationnement gratuit à durée limitée avec contrôle par disque"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_008.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Paid parking",
+          "meaning": "Paid parking"
+        },
+        "fr": {
+          "name": "Stationnement payant",
+          "meaning": "Stationnement payant"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_009.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Advisory speed 70",
+          "meaning": "Advisory speed 70"
+        },
+        "fr": {
+          "name": "Vitesse conseillée",
+          "meaning": "Vitesse conseillée"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_010.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of advisory speed",
+          "meaning": "End of advisory speed"
+        },
+        "fr": {
+          "name": "Fin de vitesse conseillée",
+          "meaning": "Fin de vitesse conseillée"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_011.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Taxi rank",
+          "meaning": "Taxi rank"
+        },
+        "fr": {
+          "name": "Station de taxis",
+          "meaning": "Station de taxis"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_012.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Bus stop",
+          "meaning": "Bus stop"
+        },
+        "fr": {
+          "name": "Station d’arrêt d’autobus",
+          "meaning": "Station d’arrêt d’autobus"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_013.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Emergency stopping place",
+          "meaning": "Emergency stopping place"
+        },
+        "fr": {
+          "name": "Emplacement d’arrêt d’urgence",
+          "meaning": "Emplacement d’arrêt d’urgence"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_014.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Car-sharing vehicle stop",
+          "meaning": "Car-sharing vehicle stop"
+        },
+        "fr": {
+          "name": "Station pour véhicule bénéficiant du label Autopartage",
+          "meaning": "Station pour véhicule bénéficiant du label Autopartage"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_015.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "One-way traffic",
+          "meaning": "One-way traffic"
+        },
+        "fr": {
+          "name": "Circulation à sens unique",
+          "meaning": "Circulation à sens unique"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_016.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Dead end",
+          "meaning": "Dead end"
+        },
+        "fr": {
+          "name": "Impasse ou rue sans issue",
+          "meaning": "Impasse ou rue sans issue"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_017.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Advance warning of a dead end",
+          "meaning": "Advance warning of a dead end"
+        },
+        "fr": {
+          "name": "Présignalisation d’une impasse",
+          "meaning": "Présignalisation d’une impasse"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_018.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Dead end with pedestrian exit",
+          "meaning": "Dead end with pedestrian exit"
+        },
+        "fr": {
+          "name": "Impasse comportant une issue pour les piétons",
+          "meaning": "Impasse comportant une issue pour les piétons"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_019.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Dead end with pedestrian and cycle exit",
+          "meaning": "Dead end with pedestrian and cycle exit"
+        },
+        "fr": {
+          "name": "Impasse comportant une issue pour les piétons et les cyclistes",
+          "meaning": "Impasse comportant une issue pour les piétons et les cyclistes"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_020.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Priority over oncoming traffic",
+          "meaning": "Priority over oncoming traffic"
+        },
+        "fr": {
+          "name": "Priorité par rapport à la circulation venant en sens inverse",
+          "meaning": "Priorité par rapport à la circulation venant en sens inverse"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_021.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Special traffic conditions on the centre lane",
+          "meaning": "Special traffic conditions on the centre lane"
+        },
+        "fr": {
+          "name": "Conditions particulières de circulation sur la voie centrale",
+          "meaning": "Conditions particulières de circulation sur la voie centrale"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_022.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Special lane speed limits",
+          "meaning": "Special lane speed limits"
+        },
+        "fr": {
+          "name": "Conditions particulières de circulation par voie en terme de limitation de vitesse",
+          "meaning": "Conditions particulières de circulation par voie en terme de limitation de vitesse"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_023.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Two-way cycle traffic",
+          "meaning": "Two-way cycle traffic"
+        },
+        "fr": {
+          "name": "Chaussée à double sens. Sens opposé réservé aux cycles",
+          "meaning": "Chaussée à double sens. Sens opposé réservé aux cycles"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_024.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Two-way road with opposing bus lane",
+          "meaning": "Two-way road with opposing bus lane"
+        },
+        "fr": {
+          "name": "Chaussée à double sens. Sens opposé réservé aux bus",
+          "meaning": "Chaussée à double sens. Sens opposé réservé aux bus"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_025.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Three lanes in this direction",
+          "meaning": "Three lanes in this direction"
+        },
+        "fr": {
+          "name": "Conditions particulières de circulation : trois voies de circulation dans ce sens",
+          "meaning": "Conditions particulières de circulation : trois voies de circulation dans ce sens"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_026.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Lane direction indication",
+          "meaning": "Lane direction indication"
+        },
+        "fr": {
+          "name": "Signalisation par voie",
+          "meaning": "Signalisation par voie"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_027.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Assigned lanes",
+          "meaning": "Assigned lanes"
+        },
+        "fr": {
+          "name": "Voies affectées",
+          "meaning": "Voies affectées"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_028.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Special traffic conditions by lane",
+          "meaning": "Special traffic conditions by lane"
+        },
+        "fr": {
+          "name": "Conditions particulières de circulation sur la route ou la voie embranchée",
+          "meaning": "Conditions particulières de circulation sur la route ou la voie embranchée"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_029.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Contraflow cycle lane",
+          "meaning": "Contraflow cycle lane"
+        },
+        "fr": {
+          "name": "La voie de circulation en sens inverse est réservée aux cyclistes",
+          "meaning": "La voie de circulation en sens inverse est réservée aux cyclistes"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_030.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Escape lane",
+          "meaning": "Escape lane"
+        },
+        "fr": {
+          "name": "Voie de détresse",
+          "meaning": "Voie de détresse"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_031.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Escape lane",
+          "meaning": "Escape lane"
+        },
+        "fr": {
+          "name": "Voie de détresse",
+          "meaning": "Voie de détresse"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_032.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Tramway crossing",
+          "meaning": "Tramway crossing"
+        },
+        "fr": {
+          "name": "Traversée de voie de tramways",
+          "meaning": "Traversée de voie de tramways"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_033.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Speed hump",
+          "meaning": "Speed hump"
+        },
+        "fr": {
+          "name": "Ralentisseur",
+          "meaning": "Ralentisseur"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_034.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Public transport crossing",
+          "meaning": "Public transport crossing"
+        },
+        "fr": {
+          "name": "Traversée de voie de véhicules routiers des services réguliers de transport en commun",
+          "meaning": "Traversée de voie de véhicules routiers des services réguliers de transport en commun"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_035.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Overtaking lane on a three-lane road",
+          "meaning": "Overtaking lane on a three-lane road"
+        },
+        "fr": {
+          "name": "Créneau de dépassement sur section de route à trois voies",
+          "meaning": "Créneau de dépassement sur section de route à trois voies"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_036.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Lane reduction",
+          "meaning": "Lane reduction"
+        },
+        "fr": {
+          "name": "Réduction du nombre de voies",
+          "meaning": "Réduction du nombre de voies"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_037.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Lane reduction",
+          "meaning": "Lane reduction"
+        },
+        "fr": {
+          "name": "Réduction du nombre de voies",
+          "meaning": "Réduction du nombre de voies"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_038.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Lane reduction",
+          "meaning": "Lane reduction"
+        },
+        "fr": {
+          "name": "Réduction du nombre de voies",
+          "meaning": "Réduction du nombre de voies"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_039.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of overtaking lane",
+          "meaning": "End of overtaking lane"
+        },
+        "fr": {
+          "name": "Fin de créneau de dépassement",
+          "meaning": "Fin de créneau de dépassement"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_040.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Advance warning of an overtaking lane",
+          "meaning": "Advance warning of an overtaking lane"
+        },
+        "fr": {
+          "name": "Annonce d’un créneau de dépassement ou d’une route 2x2 voies",
+          "meaning": "Annonce d’un créneau de dépassement ou d’une route 2x2 voies"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_041.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Three assigned lanes",
+          "meaning": "Three assigned lanes"
+        },
+        "fr": {
+          "name": "Section de route à trois voies affectées",
+          "meaning": "Section de route à trois voies affectées"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_042.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Miscellaneous indication",
+          "meaning": "Miscellaneous indication"
+        },
+        "fr": {
+          "name": "Indications diverses",
+          "meaning": "Indications diverses"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_043.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Variable speed section ahead",
+          "meaning": "Variable speed section ahead"
+        },
+        "fr": {
+          "name": "Présignalisation du début d’une section à vitesse régulée",
+          "meaning": "Présignalisation du début d’une section à vitesse régulée"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_044.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of variable speed section",
+          "meaning": "End of variable speed section"
+        },
+        "fr": {
+          "name": "Fin de section à vitesse régulée",
+          "meaning": "Fin de section à vitesse régulée"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_045.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Regulated caravan parking",
+          "meaning": "Regulated caravan parking"
+        },
+        "fr": {
+          "name": "Stationnement réglementé pour les caravanes et les autocaravanes",
+          "meaning": "Stationnement réglementé pour les caravanes et les autocaravanes"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_046.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Toll ticket machine ahead",
+          "meaning": "Toll ticket machine ahead"
+        },
+        "fr": {
+          "name": "Présignalisation d’une borne de retrait de ticket de péage",
+          "meaning": "Présignalisation d’une borne de retrait de ticket de péage"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_047.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Payment by bank card",
+          "meaning": "Payment by bank card"
+        },
+        "fr": {
+          "name": "Paiement par carte bancaire",
+          "meaning": "Paiement par carte bancaire"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_048.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Automatic coin payment",
+          "meaning": "Automatic coin payment"
+        },
+        "fr": {
+          "name": "Paiement automatique par pièces de monnaie",
+          "meaning": "Paiement automatique par pièces de monnaie"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_049.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Subscription payment",
+          "meaning": "Subscription payment"
+        },
+        "fr": {
+          "name": "Paiement par abonnement",
+          "meaning": "Paiement par abonnement"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_050.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Payment to a toll collector",
+          "meaning": "Payment to a toll collector"
+        },
+        "fr": {
+          "name": "Paiement auprès d’un péagiste",
+          "meaning": "Paiement auprès d’un péagiste"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_051.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Payment by bank or credit card",
+          "meaning": "Payment by bank or credit card"
+        },
+        "fr": {
+          "name": "Paiement par carte bancaire ou accréditive",
+          "meaning": "Paiement par carte bancaire ou accréditive"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_052.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Automatic payment by coins and notes",
+          "meaning": "Automatic payment by coins and notes"
+        },
+        "fr": {
+          "name": "Paiement automatique par pièces et billets",
+          "meaning": "Paiement automatique par pièces et billets"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_053.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Regulated-access road",
+          "meaning": "Regulated-access road"
+        },
+        "fr": {
+          "name": "Route à accès réglementé",
+          "meaning": "Route à accès réglementé"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_054.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of regulated-access road",
+          "meaning": "End of regulated-access road"
+        },
+        "fr": {
+          "name": "Fin de route à accès réglementé",
+          "meaning": "Fin de route à accès réglementé"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_055.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Tunnel entrance",
+          "meaning": "Tunnel entrance"
+        },
+        "fr": {
+          "name": "Entrée d’un tunnel",
+          "meaning": "Entrée d’un tunnel"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_056.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Tunnel exit",
+          "meaning": "Tunnel exit"
+        },
+        "fr": {
+          "name": "Sortie de tunnel",
+          "meaning": "Sortie de tunnel"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_057.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Recommended cycle track",
+          "meaning": "Recommended cycle track"
+        },
+        "fr": {
+          "name": "Piste ou bande cyclable conseillée et réservée aux cycles à 2 ou 3 roues",
+          "meaning": "Piste ou bande cyclable conseillée et réservée aux cycles à 2 ou 3 roues"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_058.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of recommended cycle track",
+          "meaning": "End of recommended cycle track"
+        },
+        "fr": {
+          "name": "Fin de piste ou bande cyclable conseillée et réservée aux cycles à 2 ou 3 roues",
+          "meaning": "Fin de piste ou bande cyclable conseillée et réservée aux cycles à 2 ou 3 roues"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_059.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Greenway entrance",
+          "meaning": "Greenway entrance"
+        },
+        "fr": {
+          "name": "Début de voie verte",
+          "meaning": "Début de voie verte"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_060.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of greenway",
+          "meaning": "End of greenway"
+        },
+        "fr": {
+          "name": "Fin de voie verte",
+          "meaning": "Fin de voie verte"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_061.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Motorway entrance",
+          "meaning": "Motorway entrance"
+        },
+        "fr": {
+          "name": "Début d’une section d’autoroute",
+          "meaning": "Début d’une section d’autoroute"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_062.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "End of motorway",
+          "meaning": "End of motorway"
+        },
+        "fr": {
+          "name": "Fin d’une section d’autoroute",
+          "meaning": "Fin d’une section d’autoroute"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_063.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Motorway under video surveillance",
+          "meaning": "Motorway under video surveillance"
+        },
+        "fr": {
+          "name": "Indication sur autoroute",
+          "meaning": "Indication sur autoroute"
+        }
+      }
+    },
+    {
+      "road_sign_category_slug": "indication",
+      "image_path": "france/road_sign_indication_064.png",
+      "shape": "circle",
+      "color": "#1E5AA8",
+      "translations": {
+        "en": {
+          "name": "Tunnel under video surveillance",
+          "meaning": "Tunnel under video surveillance"
+        },
+        "fr": {
+          "name": "Indication sur autoroute",
+          "meaning": "Indication sur autoroute"
+        }
+      }
+    }
+  ]
+}

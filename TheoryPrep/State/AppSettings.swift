@@ -28,10 +28,10 @@ final class AppSettings: ObservableObject {
     }
 
     func t(_ key: StringKey, _ args: CVarArg...) -> String {
-        localizedString(key, languageCode)
+        localizedString(key, languageCode, arguments: args)
     }
 
     func t(_ key: StringKey, count: Int) -> String {
-        localizedString(key, languageCode, "\(count)")
+        localizedString(key, languageCode, arguments: ["\(count)"])
     }
 }

@@ -119,6 +119,7 @@ struct ProgressScreen: View {
         let formatter = ISO8601DateFormatter()
         guard let date = formatter.date(from: iso) else { return iso }
         let display = DateFormatter()
+        display.locale = Locale(identifier: settings.languageCode == .fr ? "fr_FR" : "en_US")
         display.dateStyle = .short
         return display.string(from: date)
     }

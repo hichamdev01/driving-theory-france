@@ -81,6 +81,13 @@ struct RoadSignWithTranslation: Identifiable, Hashable {
     let meaning: String
 }
 
+struct RoadSignCategorySummary: Identifiable, Hashable {
+    let id: Int64
+    let slug: String
+    let name: String
+    let signCount: Int
+}
+
 struct ExamConfiguration: Hashable {
     let id: Int64
     let countryId: Int64

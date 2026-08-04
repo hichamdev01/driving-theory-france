@@ -7,26 +7,14 @@ struct HomeView: View {
     @State private var examConfig: ExamConfiguration?
     @State private var roadProgress: CGFloat = 0
 
-    // MARK: – Greeting helpers
-
-    private var greetingText: String {
-        let h = Calendar.current.component(.hour, from: Date())
-        switch h {
-        case 5..<12:  return "Good morning"
-        case 12..<17: return "Good afternoon"
-        case 17..<21: return "Good evening"
-        default:      return "Night session"
-        }
-    }
-
     private var readinessStatus: (label: String, icon: String) {
         switch progress.accuracy {
-        case 0:      return ("Let's get started", "flag.fill")
-        case 1..<40: return ("Building foundations", "book.fill")
-        case 40..<65:return ("Making progress", "arrow.up.right")
-        case 65..<80:return ("Getting strong", "bolt.fill")
-        case 80..<90:return ("Almost exam ready", "target")
-        default:     return ("Exam ready!", "checkmark.seal.fill")
+        case 0:      return (settings.t(.readinessStart), "flag.fill")
+        case 1..<40: return (settings.t(.readinessBuilding), "book.fill")
+        case 40..<65:return (settings.t(.readinessProgress), "arrow.up.right")
+        case 65..<80:return (settings.t(.readinessStrong), "bolt.fill")
+        case 80..<90:return (settings.t(.readinessAlmostReady), "target")
+        default:     return (settings.t(.readinessReady), "checkmark.seal.fill")
         }
     }
 
@@ -80,10 +68,6 @@ struct HomeView: View {
                         .tracking(1.5)
                         .foregroundColor(Theme.textMuted)
                 }
-                Text(greetingText)
-                    .font(.display(30, .bold))
-                    .tracking(-0.3)
-                    .foregroundColor(Theme.text)
             }
 
             Spacer()
@@ -164,7 +148,7 @@ struct HomeView: View {
                         .foregroundColor(Theme.accent)
                         .padding(.leading, 1)
                         .padding(.bottom, 8)
-                    Text("ACCURACY")
+                    Text(settings.t(.accuracy).uppercased())
                         .font(.system(size: 10, weight: .bold))
                         .tracking(1)
                         .foregroundColor(.white.opacity(0.45))
@@ -179,7 +163,7 @@ struct HomeView: View {
                 HStack(spacing: 0) {
                     statItem(
                         value: "\(progress.questionsAnswered)",
-                        label: "QUESTIONS",
+                        label: settings.t(.questionsShort).uppercased(),
                         icon: "checkmark.circle.fill"
                     )
                     Divider()
@@ -189,12 +173,16 @@ struct HomeView: View {
                     if let weakest = progress.weakestCategory {
                         statItem(
                             value: weakest.categoryName,
-                            label: "WEAKEST",
+                            label: settings.t(.weakestShort).uppercased(),
                             icon: "exclamationmark.triangle.fill",
                             warn: true
                         )
                     } else {
-                        statItem(value: "—", label: "WEAKEST", icon: "exclamationmark.triangle.fill")
+                        statItem(
+                            value: "—",
+                            label: settings.t(.weakestShort).uppercased(),
+                            icon: "exclamationmark.triangle.fill"
+                        )
                     }
                     Spacer()
                 }
@@ -413,7 +401,7 @@ struct HomeView: View {
                     Text(settings.t(.mistakes))
                         .font(.display(18, .bold))
                         .foregroundColor(Theme.text)
-                    Text("Focus on weak spots")
+                    Text(settings.t(.focusWeakSpots))
                         .font(.system(size: 10.5, weight: .semibold))
                         .foregroundColor(Theme.textMuted)
                 }
@@ -445,7 +433,7 @@ struct HomeView: View {
                     Text(settings.t(.roadSigns))
                         .font(.display(18, .semibold))
                         .foregroundColor(Theme.text)
-                    Text("French road signs library")
+                    Text(settings.t(.roadSignsLibrary))
                         .font(.system(size: 12, weight: .medium))
                         .foregroundColor(Theme.textMuted)
                 }
@@ -468,8 +456,8 @@ struct HomeView: View {
     // MARK: – Helpers
 
     private var examMetadata: String {
-        guard let c = examConfig else { return "40Q · 30min · 5 max mistakes" }
-        return "\(c.numberOfQuestions)Q · \(c.timeLimitSeconds / 60)min · \(c.allowedMistakes) max mistakes"
+        guard let c = examConfig else { return settings.t(.examMetadata, 40, 30, 5) }
+        return settings.t(.examMetadata, c.numberOfQuestions, c.timeLimitSeconds / 60, c.allowedMistakes)
     }
 
     private func reload() {

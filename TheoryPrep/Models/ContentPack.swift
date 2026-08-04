@@ -87,6 +87,11 @@ struct ContentRoadSignTranslation: Codable {
     let meaning: String
 }
 
+private struct ContentRoadSignCatalog: Codable {
+    let categories: [ContentCategory]
+    let signs: [ContentRoadSign]
+}
+
 enum ContentLoader {
     static func loadPack(named folderName: String) -> ContentCountryPack {
         guard let url = Bundle.main.url(forResource: "pack", withExtension: "json", subdirectory: "Content/\(folderName)") else {
@@ -95,10 +100,73 @@ enum ContentLoader {
         let data = try! Data(contentsOf: url)
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        return try! decoder.decode(ContentCountryPack.self, from: data)
+        let pack = try! decoder.decode(ContentCountryPack.self, from: data)
+        guard let catalogURL = Bundle.main.url(
+            forResource: "road-signs", withExtension: "json", subdirectory: "Content/\(folderName)"
+        ) else {
+            validateTranslations(in: pack)
+            return pack
+        }
+        let catalogData = try! Data(contentsOf: catalogURL)
+        let catalog = try! decoder.decode(ContentRoadSignCatalog.self, from: catalogData)
+        let completePack = ContentCountryPack(
+            country: pack.country,
+            languages: pack.languages,
+            categories: pack.categories,
+            roadSignCategories: catalog.categories,
+            examConfiguration: pack.examConfiguration,
+            questions: pack.questions,
+            roadSigns: catalog.signs
+        )
+        validateTranslations(in: completePack)
+        return completePack
     }
 
     static func loadAllPacks() -> [ContentCountryPack] {
         ["france"].map(loadPack)
+    }
+
+    private static func validateTranslations(in pack: ContentCountryPack) {
+        let requiredLanguages = pack.languages.map(\.rawValue)
+
+        for category in pack.categories + pack.roadSignCategories {
+            precondition(
+                requiredLanguages.allSatisfy { category.translations[$0]?.isEmpty == false },
+                "Missing translation for category \(category.slug)"
+            )
+        }
+
+        for (index, question) in pack.questions.enumerated() {
+            for language in requiredLanguages {
+                guard let translation = question.translations[language] else {
+                    preconditionFailure("Missing \(language) translation for question \(index)")
+                }
+                let fields = [
+                    translation.questionText,
+                    translation.answerA,
+                    translation.answerB,
+                    translation.answerC,
+                    translation.answerD,
+                    translation.explanation,
+                ]
+                precondition(
+                    fields.allSatisfy { !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty },
+                    "Empty \(language) field for question \(index)"
+                )
+            }
+        }
+
+        for (index, sign) in pack.roadSigns.enumerated() {
+            for language in requiredLanguages {
+                guard let translation = sign.translations[language] else {
+                    preconditionFailure("Missing \(language) translation for road sign \(index)")
+                }
+                precondition(
+                    !translation.name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+                        && !translation.meaning.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
+                    "Empty \(language) translation for road sign \(index)"
+                )
+            }
+        }
     }
 }

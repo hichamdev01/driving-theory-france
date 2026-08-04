@@ -2,25 +2,12 @@ import SwiftUI
 
 struct RoadSignsView: View {
     @EnvironmentObject var settings: AppSettings
-    @State private var signs: [RoadSignWithTranslation] = []
-
-    private var grouped: [(String, [RoadSignWithTranslation])] {
-        var order: [String] = []
-        var map: [String: [RoadSignWithTranslation]] = [:]
-        for sign in signs {
-            if map[sign.categoryName] == nil {
-                order.append(sign.categoryName)
-                map[sign.categoryName] = []
-            }
-            map[sign.categoryName]!.append(sign)
-        }
-        return order.map { ($0, map[$0]!) }
-    }
+    @State private var categories: [RoadSignCategorySummary] = []
 
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: 16) {
+                VStack(alignment: .leading, spacing: 20) {
                     VStack(alignment: .leading, spacing: 2) {
                         Text(settings.t(.appName).uppercased())
                             .font(.system(size: 10, weight: .bold))
@@ -32,32 +19,25 @@ struct RoadSignsView: View {
                     }
                     .padding(.top, 12)
 
-                    ForEach(grouped, id: \.0) { categoryName, categorySigns in
-                        Text(categoryName)
-                            .font(.system(size: 14, weight: .semibold))
-                            .foregroundColor(Theme.textMuted)
-                            .textCase(.uppercase)
+                    HStack(spacing: 8) {
+                        Text(settings.t(.signCountFormat, categories.reduce(0) { $0 + $1.signCount }))
+                        Circle()
+                            .fill(Theme.textMuted.opacity(0.45))
+                            .frame(width: 3, height: 3)
+                        Text(settings.t(.categoryCountFormat, categories.count))
+                    }
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundColor(Theme.textMuted)
 
-                        LazyVGrid(columns: [GridItem(.adaptive(minimum: 96), spacing: 12)], spacing: 12) {
-                            ForEach(Array(categorySigns.enumerated()), id: \.element.id) { i, sign in
-                                NavigationLink(destination: RoadSignDetailView(signId: sign.id)) {
-                                    VStack(spacing: 8) {
-                                        RoadSignImageView(imagePath: sign.imagePath, shape: sign.shape, color: sign.color, size: 48)
-                                        Text(sign.name)
-                                            .font(.system(size: 12, weight: .semibold))
-                                            .foregroundColor(Theme.text)
-                                            .multilineTextAlignment(.center)
-                                            .lineLimit(2)
-                                    }
-                                    .padding(.vertical, 16)
-                                    .frame(maxWidth: .infinity)
-                                    .background(Theme.surface)
-                                    .overlay(RoundedRectangle(cornerRadius: Theme.controlRadius).stroke(Theme.border, lineWidth: 1))
-                                    .clipShape(RoundedRectangle(cornerRadius: Theme.controlRadius))
-                                }
-                                .buttonStyle(PressableStyle())
-                                .appear(i)
+                    LazyVStack(spacing: 12) {
+                        ForEach(Array(categories.enumerated()), id: \.element.id) { index, category in
+                            NavigationLink {
+                                RoadSignCategoryView(category: category)
+                            } label: {
+                                RoadSignCategoryCard(category: category)
                             }
+                            .buttonStyle(PressableStyle())
+                            .appear(index)
                         }
                     }
                 }
@@ -75,6 +55,128 @@ struct RoadSignsView: View {
 
     private func reload() {
         guard let country = settings.countryCode, let language = settings.languageCode else { return }
-        signs = Queries.getRoadSigns(Database.shared, country, language)
+        categories = Queries.getRoadSignCategories(Database.shared, country, language)
+    }
+}
+
+private struct RoadSignCategoryCard: View {
+    let category: RoadSignCategorySummary
+
+    private var presentation: (icon: String, color: Color, background: Color) {
+        switch category.slug {
+        case "danger":
+            return ("exclamationmark.triangle.fill", Theme.danger, Theme.danger.opacity(0.10))
+        case "obligation":
+            return ("arrow.up.circle.fill", Theme.routeBlue, Theme.routeBlue.opacity(0.10))
+        case "prohibition":
+            return ("nosign", Theme.danger, Theme.danger.opacity(0.10))
+        case "end_prohibition":
+            return ("circle.slash", Theme.textMuted, Theme.surfaceAlt)
+        default:
+            return ("info.circle.fill", Theme.routeBlue, Theme.routeBlue.opacity(0.10))
+        }
+    }
+
+    var body: some View {
+        HStack(spacing: 16) {
+            ZStack {
+                RoundedRectangle(cornerRadius: 18)
+                    .fill(presentation.background)
+                Image(systemName: presentation.icon)
+                    .font(.system(size: 34, weight: .semibold))
+                    .foregroundColor(presentation.color)
+            }
+            .frame(width: 72, height: 72)
+
+            VStack(alignment: .leading, spacing: 6) {
+                Text(category.name)
+                    .font(.display(21, .bold))
+                    .foregroundColor(Theme.text)
+                    .multilineTextAlignment(.leading)
+                Text("\(category.signCount)")
+                    .font(.gauge(14, .bold))
+                    .foregroundColor(Theme.textMuted)
+            }
+
+            Spacer(minLength: 8)
+
+            Image(systemName: "chevron.right")
+                .font(.system(size: 14, weight: .bold))
+                .foregroundColor(Theme.textMuted)
+                .padding(12)
+                .background(Theme.surfaceAlt)
+                .clipShape(Circle())
+        }
+        .padding(16)
+        .frame(maxWidth: .infinity, minHeight: 104)
+        .background(Theme.surface)
+        .overlay(
+            RoundedRectangle(cornerRadius: Theme.cardRadius)
+                .stroke(Theme.border, lineWidth: 1)
+        )
+        .clipShape(RoundedRectangle(cornerRadius: Theme.cardRadius))
+    }
+}
+
+private struct RoadSignCategoryView: View {
+    let category: RoadSignCategorySummary
+    @EnvironmentObject var settings: AppSettings
+    @State private var signs: [RoadSignWithTranslation] = []
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 18) {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(category.name)
+                        .font(.display(30, .bold))
+                        .foregroundColor(Theme.text)
+                    Text(settings.t(.signCountFormat, category.signCount))
+                        .font(.system(size: 13, weight: .semibold))
+                        .foregroundColor(Theme.textMuted)
+                }
+
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 104), spacing: 12)], spacing: 12) {
+                    ForEach(Array(signs.enumerated()), id: \.element.id) { index, sign in
+                        NavigationLink(destination: RoadSignDetailView(signId: sign.id)) {
+                            VStack(spacing: 10) {
+                                RoadSignImageView(
+                                    imagePath: sign.imagePath,
+                                    shape: sign.shape,
+                                    color: sign.color,
+                                    size: 68
+                                )
+                                Text(sign.name)
+                                    .font(.system(size: 12, weight: .semibold))
+                                    .foregroundColor(Theme.text)
+                                    .multilineTextAlignment(.center)
+                                    .lineLimit(3)
+                            }
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 16)
+                            .frame(maxWidth: .infinity, minHeight: 132)
+                            .background(Theme.surface)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: Theme.controlRadius)
+                                    .stroke(Theme.border, lineWidth: 1)
+                            )
+                            .clipShape(RoundedRectangle(cornerRadius: Theme.controlRadius))
+                        }
+                        .buttonStyle(PressableStyle())
+                        .appear(index)
+                    }
+                }
+            }
+            .padding(20)
+            .padding(.bottom, TabBarLayout.scrollContentBottomPadding - 20)
+        }
+        .background(Theme.background.ignoresSafeArea())
+        .navigationTitle("")
+        .navigationBarTitleDisplayMode(.inline)
+        .onAppear(perform: reload)
+    }
+
+    private func reload() {
+        guard let country = settings.countryCode, let language = settings.languageCode else { return }
+        signs = Queries.getRoadSigns(Database.shared, country, language, categoryId: category.id)
     }
 }

@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct SplashView: View {
+    @EnvironmentObject var settings: AppSettings
     @State private var badgeScale: CGFloat = 0.55
     @State private var badgeOpacity: Double = 0
     @State private var flagRevealed = false
@@ -58,10 +59,10 @@ struct SplashView: View {
                 .opacity(badgeOpacity)
 
                 VStack(spacing: 6) {
-                    Text("Prépa Code")
+                    Text(settings.t(.appName))
                         .font(.display(32, .bold))
                         .foregroundColor(.white)
-                    Text("Code de la route — France")
+                    Text(settings.t(.splashSubtitle))
                         .font(.system(size: 14, weight: .medium))
                         .foregroundColor(.white.opacity(0.78))
                         .textCase(.uppercase)

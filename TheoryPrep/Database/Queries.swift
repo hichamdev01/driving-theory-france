@@ -191,6 +191,33 @@ enum Queries {
         }
     }
 
+    static func getRoadSignCategories(
+        _ db: Database, _ countryCode: CountryCode, _ languageCode: LanguageCode
+    ) -> [RoadSignCategorySummary] {
+        db.query(
+            """
+            SELECT
+              cat.id as id, cat.slug as slug, ct.name as name, COUNT(rs.id) as sign_count
+            FROM road_sign_categories cat
+            JOIN countries c ON c.id = cat.country_id
+            JOIN road_sign_category_translations ct
+              ON ct.road_sign_category_id = cat.id AND ct.language_code = ?
+            LEFT JOIN road_signs rs ON rs.category_id = cat.id AND rs.active = 1
+            WHERE c.code = ?
+            GROUP BY cat.id, cat.slug, ct.name
+            ORDER BY cat.id ASC
+            """,
+            [languageCode.rawValue, countryCode.rawValue]
+        ) { row in
+            RoadSignCategorySummary(
+                id: row.int64("id"),
+                slug: row.text("slug"),
+                name: row.text("name"),
+                signCount: row.int("sign_count")
+            )
+        }
+    }
+
     static func getRoadSigns(
         _ db: Database, _ countryCode: CountryCode, _ languageCode: LanguageCode, categoryId: Int64? = nil
     ) -> [RoadSignWithTranslation] {

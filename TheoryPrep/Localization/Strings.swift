@@ -1,6 +1,6 @@
 import Foundation
 
-enum StringKey: String {
+enum StringKey: String, CaseIterable {
     case appName, selectLanguageTitle, selectLanguageSubtitle
     case changeLanguage
     case home, practice, exam, roadSigns, mistakes, progress
@@ -13,6 +13,9 @@ enum StringKey: String {
     case examResults, passed, failed, yourScore, reviewAnswers, retakeExam, timeUp
     case noMistakesTitle, noMistakesSubtitle, practiceMistakes, incorrectTimes
     case byCategory, recentExams, noExamsYet, loading, meaning
+    case readinessStart, readinessBuilding, readinessProgress, readinessStrong, readinessAlmostReady, readinessReady
+    case questionsShort, weakestShort, focusWeakSpots, roadSignsLibrary
+    case examMetadata, splashSubtitle, signCountFormat, categoryCountFormat
 }
 
 private typealias L = [LanguageCode: String]
@@ -103,14 +106,46 @@ private func buildStrings() -> [StringKey: L] {
     s[.noExamsYet] = entry("No exam simulations completed yet.", "Aucun examen blanc terminé pour l’instant.")
     s[.loading] = entry("Loading…", "Chargement…")
     s[.meaning] = entry("Meaning", "Signification")
+    s[.readinessStart] = entry("Let’s get started", "Commençons")
+    s[.readinessBuilding] = entry("Building foundations", "Acquisition des bases")
+    s[.readinessProgress] = entry("Making progress", "En progression")
+    s[.readinessStrong] = entry("Getting strong", "Bon niveau")
+    s[.readinessAlmostReady] = entry("Almost exam ready", "Presque prêt pour l’examen")
+    s[.readinessReady] = entry("Exam ready!", "Prêt pour l’examen !")
+    s[.questionsShort] = entry("Questions", "Questions")
+    s[.weakestShort] = entry("Weakest", "À renforcer")
+    s[.focusWeakSpots] = entry("Focus on weak spots", "Révisez vos points faibles")
+    s[.roadSignsLibrary] = entry("French road signs library", "Bibliothèque des panneaux français")
+    s[.examMetadata] = entry(
+        "%d questions · %d min · %d max mistakes",
+        "%d questions · %d min · %d fautes max"
+    )
+    s[.splashSubtitle] = entry("French driving theory", "Code de la route — France")
+    s[.signCountFormat] = entry("%d signs", "%d panneaux")
+    s[.categoryCountFormat] = entry("%d categories", "%d catégories")
 
     return s
 }
 
-private let strings: [StringKey: L] = buildStrings()
+private let strings: [StringKey: L] = {
+    let values = buildStrings()
+    precondition(
+        Set(values.keys) == Set(StringKey.allCases),
+        "Every StringKey must have an English and French localization entry"
+    )
+    precondition(
+        values.values.allSatisfy { $0[.en] != nil && $0[.fr] != nil },
+        "Every localized string must provide both English and French"
+    )
+    return values
+}()
 
 func localizedString(_ key: StringKey, _ language: LanguageCode?, _ args: CVarArg...) -> String {
+    localizedString(key, language, arguments: args)
+}
+
+func localizedString(_ key: StringKey, _ language: LanguageCode?, arguments: [CVarArg]) -> String {
     let lang: LanguageCode = language ?? .en
     let template: String = strings[key]?[lang] ?? strings[key]?[.en] ?? key.rawValue
-    return args.isEmpty ? template : String(format: template, arguments: args)
+    return arguments.isEmpty ? template : String(format: template, arguments: arguments)
 }
