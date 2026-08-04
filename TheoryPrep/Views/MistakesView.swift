@@ -9,10 +9,16 @@ struct MistakesView: View {
         NavigationStack(path: $path) {
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
-                    Text(settings.t(.mistakes))
-                        .font(.display(26, .bold))
-                        .foregroundColor(Theme.text)
-                        .padding(.top, 12)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(settings.t(.appName).uppercased())
+                            .font(.system(size: 10, weight: .bold))
+                            .tracking(1.5)
+                            .foregroundColor(Theme.danger)
+                        Text(settings.t(.mistakes))
+                            .font(.display(34, .bold))
+                            .foregroundColor(Theme.text)
+                    }
+                    .padding(.top, 12)
 
                     if mistakes.isEmpty {
                         CardView {
@@ -58,6 +64,10 @@ struct MistakesView: View {
                     }
                 }
                 .padding(20)
+                .padding(
+                    .bottom,
+                    TabBarLayout.scrollContentBottomPadding - 20
+                )
             }
             .background(Theme.background.ignoresSafeArea())
             .navigationBarHidden(true)

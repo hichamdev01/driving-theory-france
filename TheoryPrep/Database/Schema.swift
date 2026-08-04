@@ -1,7 +1,7 @@
 import Foundation
 
 enum Schema {
-    static let contentVersion: Int64 = 6
+    static let contentVersion: Int64 = 19
 
     static let createTablesSQL = """
     CREATE TABLE IF NOT EXISTS countries (
@@ -40,8 +40,10 @@ enum Schema {
       country_id INTEGER NOT NULL REFERENCES countries(id),
       category_id INTEGER NOT NULL REFERENCES categories(id),
       correct_answer TEXT NOT NULL CHECK (correct_answer IN ('a','b','c','d')),
+      correct_answers TEXT NOT NULL DEFAULT '',
       difficulty TEXT NOT NULL DEFAULT 'medium',
       image_path TEXT,
+      video_path TEXT,
       active INTEGER NOT NULL DEFAULT 1,
       content_version INTEGER NOT NULL DEFAULT 1
     );
@@ -129,6 +131,7 @@ enum Schema {
       exam_result_id INTEGER NOT NULL REFERENCES exam_results(id),
       question_id INTEGER NOT NULL REFERENCES questions(id),
       selected_answer TEXT,
+      selected_answers TEXT,
       correct INTEGER NOT NULL
     );
 
@@ -146,4 +149,16 @@ enum Schema {
     CREATE INDEX IF NOT EXISTS idx_category_translations_category ON category_translations(category_id, language_code);
     CREATE INDEX IF NOT EXISTS idx_road_sign_category_translations ON road_sign_category_translations(road_sign_category_id, language_code);
     """
+
+    static func migrate(_ db: Database) {
+        addColumnIfNeeded(db, table: "questions", column: "correct_answers", definition: "TEXT NOT NULL DEFAULT ''")
+        addColumnIfNeeded(db, table: "questions", column: "video_path", definition: "TEXT")
+        addColumnIfNeeded(db, table: "exam_result_answers", column: "selected_answers", definition: "TEXT")
+    }
+
+    private static func addColumnIfNeeded(_ db: Database, table: String, column: String, definition: String) {
+        let columns = db.query("PRAGMA table_info(\(table))") { $0.text("name") }
+        guard !columns.contains(column) else { return }
+        db.exec("ALTER TABLE \(table) ADD COLUMN \(column) \(definition)")
+    }
 }

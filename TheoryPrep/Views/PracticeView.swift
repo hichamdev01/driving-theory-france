@@ -8,46 +8,35 @@ struct PracticeView: View {
     var body: some View {
         NavigationStack(path: $path) {
             ScrollView {
-                VStack(alignment: .leading, spacing: 16) {
-                    Text(settings.t(.practice))
-                        .font(.display(26, .bold))
-                        .foregroundColor(Theme.text)
-                        .padding(.top, 12)
+                VStack(alignment: .leading, spacing: 22) {
+                    screenHeader
+                    randomPracticeCard
 
-                    Button(action: { path.append(LearningRoute.question(mode: .practice, categoryId: nil)) }) {
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text(settings.t(.randomPractice))
-                                .font(.display(18, .bold))
-                                .foregroundColor(.white)
-                            Text(settings.t(.randomPracticeSubtitle))
-                                .font(.system(size: 13))
-                                .foregroundColor(Color.white.opacity(0.85))
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(18)
-                        .background(Theme.heroGradient)
-                        .clipShape(RoundedRectangle(cornerRadius: Theme.cardRadius))
-                        .shadow(color: Theme.routeBlue.opacity(0.3), radius: 14, x: 0, y: 6)
+                    HStack {
+                        Text(settings.t(.practiceByCategory).uppercased())
+                            .font(.system(size: 10.5, weight: .bold))
+                            .tracking(1.4)
+                            .foregroundColor(Theme.textMuted)
+                        Spacer()
+                        Text("\(categories.count)")
+                            .font(.gauge(11, .bold))
+                            .foregroundColor(Theme.routeBlue)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 3)
+                            .background(Theme.routeBlue.opacity(0.10))
+                            .clipShape(Capsule())
                     }
-                    .buttonStyle(PressableStyle())
 
-                    LaneDivider().padding(.vertical, 2)
-
-                    Text(settings.t(.practiceByCategory))
-                        .font(.system(size: 14, weight: .semibold))
-                        .foregroundColor(Theme.textMuted)
-                        .textCase(.uppercase)
-
-                    ForEach(Array(categories.enumerated()), id: \.element.id) { i, category in
-                        CardView(action: { path.append(LearningRoute.question(mode: .practice, categoryId: category.id)) }) {
-                            Text(category.name)
-                                .font(.system(size: 16, weight: .semibold))
-                                .foregroundColor(Theme.text)
+                    LazyVStack(spacing: 8) {
+                        ForEach(Array(categories.enumerated()), id: \.element.id) { index, category in
+                            categoryRow(category, index: index)
+                                .appear(index)
                         }
-                        .appear(i)
                     }
                 }
-                .padding(20)
+                .padding(.horizontal, 20)
+                .padding(.top, 16)
+                .padding(.bottom, TabBarLayout.scrollContentBottomPadding)
             }
             .background(Theme.background.ignoresSafeArea())
             .navigationBarHidden(true)
@@ -62,6 +51,125 @@ struct PracticeView: View {
             .onAppear(perform: reload)
         }
     }
+
+    // MARK: – Header
+
+    private var screenHeader: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text(settings.t(.appName).uppercased())
+                .font(.system(size: 10, weight: .bold))
+                .tracking(1.6)
+                .foregroundColor(Theme.routeBlue)
+            Text(settings.t(.practice))
+                .font(.display(34, .bold))
+                .foregroundColor(Theme.text)
+        }
+    }
+
+    // MARK: – Random practice banner
+
+    private var randomPracticeCard: some View {
+        Button(action: { path.append(LearningRoute.question(mode: .practice, categoryId: nil)) }) {
+            HStack(spacing: 16) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(.white.opacity(0.12))
+                    Image(systemName: "shuffle")
+                        .font(.system(size: 24, weight: .semibold))
+                        .foregroundColor(.white)
+                }
+                .frame(width: 60, height: 60)
+
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(settings.t(.randomPractice))
+                        .font(.display(21, .bold))
+                        .foregroundColor(.white)
+                    Text(settings.t(.randomPracticeSubtitle))
+                        .font(.system(size: 12, weight: .medium))
+                        .foregroundColor(.white.opacity(0.7))
+                        .lineLimit(2)
+                }
+
+                Spacer(minLength: 4)
+
+                ZStack {
+                    Circle()
+                        .fill(.white.opacity(0.15))
+                        .frame(width: 30, height: 30)
+                    Image(systemName: "arrow.up.right")
+                        .font(.system(size: 12, weight: .bold))
+                        .foregroundColor(Theme.accent)
+                }
+            }
+            .padding(20)
+            .background(Theme.heroGradient)
+            .clipShape(RoundedRectangle(cornerRadius: Theme.cardRadius))
+            // Lane marking decoration
+            .overlay(alignment: .bottomTrailing) {
+                HStack(spacing: 9) {
+                    ForEach(0..<4, id: \.self) { _ in
+                        Capsule()
+                            .fill(Color.white.opacity(0.10))
+                            .frame(width: 24, height: 5)
+                    }
+                }
+                .rotationEffect(.degrees(-28))
+                .offset(x: 20, y: 12)
+                .clipped()
+            }
+            .clipShape(RoundedRectangle(cornerRadius: Theme.cardRadius))
+            // Glass shine
+            .overlay(alignment: .top) {
+                LinearGradient(
+                    colors: [.white.opacity(0.10), .clear],
+                    startPoint: .top,
+                    endPoint: .center
+                )
+                .clipShape(RoundedRectangle(cornerRadius: Theme.cardRadius))
+                .frame(height: 50)
+            }
+        }
+        .buttonStyle(PressableStyle())
+        .shadow(color: Color(hex: "0B1B3E").opacity(0.28), radius: 14, x: 0, y: 6)
+    }
+
+    // MARK: – Category row
+
+    private func categoryRow(_ category: CategoryWithName, index: Int) -> some View {
+        Button(action: { path.append(LearningRoute.question(mode: .practice, categoryId: category.id)) }) {
+            HStack(spacing: 14) {
+                // Number badge
+                ZStack {
+                    Circle()
+                        .fill(Theme.routeBlue.opacity(0.10))
+                        .frame(width: 40, height: 40)
+                    Text(String(format: "%02d", index + 1))
+                        .font(.gauge(11.5, .bold))
+                        .foregroundColor(Theme.routeBlue)
+                }
+
+                Text(category.name)
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundColor(Theme.text)
+                    .multilineTextAlignment(.leading)
+
+                Spacer()
+
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 11, weight: .bold))
+                    .foregroundColor(Theme.textMuted)
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 14)
+            .background(Theme.surface)
+            .clipShape(RoundedRectangle(cornerRadius: Theme.controlRadius))
+            .shadow(color: .black.opacity(0.03), radius: 2, x: 0, y: 1)
+            .shadow(color: .black.opacity(0.05), radius: 10, x: 0, y: 3)
+        }
+        .buttonStyle(PressableStyle())
+    }
+
+    // MARK: – Data
 
     private func reload() {
         guard let country = settings.countryCode, let language = settings.languageCode else { return }

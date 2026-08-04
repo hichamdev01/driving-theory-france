@@ -66,7 +66,7 @@
     }
   ],
   "examConfiguration": {
-    "number_of_questions": 7,
+    "number_of_questions": 40,
     "time_limit_seconds": 1800,
     "passing_score": 88,
     "allowed_mistakes": 5
@@ -237,6 +237,2341 @@
           "answer_c": "S'arrêter uniquement s'il y a un panneau « Cédez le passage ».",
           "answer_d": "Klaxonner avant de s'engager.",
           "explanation": "Le panneau STOP impose toujours un arrêt complet à la ligne d'effet (ou à l'intersection si elle n'est pas marquée), même si la voie semble libre, avant de céder le passage à la route prioritaire."
+        }
+      }
+    },
+    {
+      "category_slug": "speed_limits",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_speed_limit_110.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What is the maximum speed permitted on this motorway?",
+          "answer_a": "90 km/h",
+          "answer_b": "110 km/h",
+          "answer_c": "130 km/h",
+          "answer_d": "The speed depends only on traffic conditions.",
+          "explanation": "The sign or situation means: 110 km/h This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Quelle est la vitesse maximale autorisée sur cette autoroute ?",
+          "answer_a": "90 km/h",
+          "answer_b": "110 km/h",
+          "answer_c": "130 km/h",
+          "answer_d": "La vitesse dépend uniquement de la circulation.",
+          "explanation": "Le panneau ou la situation signifie : 110 km/h C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_uneven_road.jpg",
+      "translations": {
+        "en": {
+          "question_text": "How should you react to this sign?",
+          "answer_a": "Slow down and adjust my speed.",
+          "answer_b": "Accelerate to avoid jolts.",
+          "answer_c": "Drive in the centre to avoid the edges.",
+          "answer_d": "Stop immediately on the carriageway.",
+          "explanation": "The sign or situation means: Slow down and adjust my speed. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Face à ce panneau, quelle attitude dois-je adopter ?",
+          "answer_a": "Je ralentis et j'adapte mon allure.",
+          "answer_b": "J'accélère pour éviter les secousses.",
+          "answer_c": "Je roule au centre pour éviter les bords.",
+          "answer_d": "Je m'arrête immédiatement sur la chaussée.",
+          "explanation": "Le panneau ou la situation signifie : Je ralentis et j'adapte mon allure. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_bus_lane.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign indicate?",
+          "answer_a": "A lane reserved for public transport vehicles.",
+          "answer_b": "A bus stop on the right.",
+          "answer_c": "A compulsory route for buses.",
+          "answer_d": "Parking reserved for coaches.",
+          "explanation": "The sign or situation means: A lane reserved for public transport vehicles. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Que vous indique ce panneau ?",
+          "answer_a": "Voie réservée aux véhicules de transport en commun.",
+          "answer_b": "Arrêt de bus à droite.",
+          "answer_c": "Passage obligatoire pour les bus.",
+          "answer_d": "Stationnement réservé aux autocars.",
+          "explanation": "Le panneau ou la situation signifie : Voie réservée aux véhicules de transport en commun. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answers": [
+        "a",
+        "b",
+        "c"
+      ],
+      "difficulty": "medium",
+      "image_path": "france/situation_roadworks.jpg",
+      "translations": {
+        "en": {
+          "question_text": "Which actions should I take when approaching these roadworks?",
+          "answer_a": "Reduce my speed.",
+          "answer_b": "Follow the temporary yellow markings.",
+          "answer_c": "Increase my safety distance.",
+          "answer_d": "Accelerate to clear the area more quickly.",
+          "explanation": "At roadworks, I reduce my speed, follow the temporary yellow markings and increase my safety distance. I remain alert to workers, machinery and possible lane changes."
+        },
+        "fr": {
+          "question_text": "À l'approche de cette zone de travaux, quelles actions dois-je effectuer ?",
+          "answer_a": "Je réduis mon allure.",
+          "answer_b": "Je suis le marquage temporaire jaune.",
+          "answer_c": "J'augmente ma distance de sécurité.",
+          "answer_d": "J'accélère pour franchir la zone plus rapidement.",
+          "explanation": "À l'approche de travaux, je réduis mon allure, je suis le marquage temporaire jaune et j'augmente ma distance de sécurité. Je reste attentif aux agents, aux engins et aux changements de voie."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_double_bend_left.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign indicate?",
+          "answer_a": "Successive bends, the first to the right.",
+          "answer_b": "Successive bends, the first to the left.",
+          "answer_c": "A winding road.",
+          "answer_d": "A compulsory left turn.",
+          "explanation": "The sign or situation means: Successive bends, the first to the left. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Que vous indique ce panneau ?",
+          "answer_a": "Succession de virages, le premier à droite.",
+          "answer_b": "Succession de virages, le premier à gauche.",
+          "answer_c": "Chaussée sinueuse.",
+          "answer_d": "Virage obligatoire à gauche.",
+          "explanation": "Le panneau ou la situation signifie : Succession de virages, le premier à gauche. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_falling_rocks.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign indicate?",
+          "answer_a": "Risk of falling rocks over a 2 km section.",
+          "answer_b": "Risk of falling rocks from the side of the road.",
+          "answer_c": "Rocks are definitely present on the road.",
+          "answer_d": "A quarry closed to vehicles.",
+          "explanation": "The sign or situation means: Risk of falling rocks from the side of the road. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Que vous indique ce panneau ?",
+          "answer_a": "Un risque de chute de pierres sur une section de 2 km.",
+          "answer_b": "Un risque de chute de pierres sur le côté de la route.",
+          "answer_c": "La présence certaine de pierres sur la chaussée.",
+          "answer_d": "Une carrière interdite aux véhicules.",
+          "explanation": "Le panneau ou la situation signifie : Un risque de chute de pierres sur le côté de la route. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "speed_limits",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_speed_limit_50.jpg",
+      "translations": {
+        "en": {
+          "question_text": "From this sign, what is the maximum permitted speed?",
+          "answer_a": "50 km/h",
+          "answer_b": "70 km/h",
+          "answer_c": "30 km/h",
+          "answer_d": "The limit applies only to heavy goods vehicles.",
+          "explanation": "The sign or situation means: 50 km/h This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "À partir de ce panneau, quelle est la vitesse maximale autorisée ?",
+          "answer_a": "50 km/h",
+          "answer_b": "70 km/h",
+          "answer_c": "30 km/h",
+          "answer_d": "La limitation ne s'applique qu'aux poids lourds.",
+          "explanation": "Le panneau ou la situation signifie : 50 km/h C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_slippery_rain.jpg",
+      "translations": {
+        "en": {
+          "question_text": "In rain, how should you react to this sign?",
+          "answer_a": "Reduce speed and avoid sudden manoeuvres.",
+          "answer_b": "Accelerate to leave the area quickly.",
+          "answer_c": "Brake hard while cornering.",
+          "answer_d": "Drive in the centre of the road.",
+          "explanation": "The sign or situation means: Reduce speed and avoid sudden manoeuvres. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Par temps de pluie, face à ce panneau, quelle attitude dois-je adopter ?",
+          "answer_a": "Réduire ma vitesse et éviter les manœuvres brusques.",
+          "answer_b": "Accélérer pour franchir la zone plus rapidement.",
+          "answer_c": "Freiner fortement en plein virage.",
+          "answer_d": "Rouler au centre de la chaussée.",
+          "explanation": "Le panneau ou la situation signifie : Réduire ma vitesse et éviter les manœuvres brusques. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "priority_rules",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_priority_oncoming.jpg",
+      "translations": {
+        "en": {
+          "question_text": "May you enter this narrow section first?",
+          "answer_a": "Yes. If it is clear, I have priority over oncoming traffic.",
+          "answer_b": "No. I must always yield to oncoming traffic.",
+          "answer_c": "Yes, but only with hazard lights on.",
+          "answer_d": "No. The road is closed in both directions.",
+          "explanation": "The sign or situation means: Yes. If it is clear, I have priority over oncoming traffic. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "À l'approche de ce passage rétréci, puis-je m'engager en priorité ?",
+          "answer_a": "Oui, si le passage est libre, je suis prioritaire sur le véhicule venant en sens inverse.",
+          "answer_b": "Non, je dois toujours céder le passage au véhicule venant en sens inverse.",
+          "answer_c": "Oui, mais seulement avec les feux de détresse.",
+          "answer_d": "Non, le passage est interdit dans les deux sens.",
+          "explanation": "Le panneau ou la situation signifie : Oui, si le passage est libre, je suis prioritaire sur le véhicule venant en sens inverse. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_speed_hump.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What precaution should you take when approaching this sign?",
+          "answer_a": "Slow down because a speed hump is ahead.",
+          "answer_b": "Accelerate to cross it more easily.",
+          "answer_c": "Always stop before the hump.",
+          "answer_d": "Drive around it using the opposite lane.",
+          "explanation": "The sign or situation means: Slow down because a speed hump is ahead. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "À l'approche de ce panneau, quelle précaution dois-je prendre ?",
+          "answer_a": "Ralentir car un dos-d'âne est annoncé.",
+          "answer_b": "Accélérer pour franchir l'obstacle plus facilement.",
+          "answer_c": "M'arrêter systématiquement avant la bosse.",
+          "answer_d": "Contourner la bosse par la voie opposée.",
+          "explanation": "Le panneau ou la situation signifie : Ralentir car un dos-d'âne est annoncé. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_wild_animals.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign warn of?",
+          "answer_a": "Wild animals crossing.",
+          "answer_b": "Domestic animals crossing.",
+          "answer_c": "Farmers crossing.",
+          "answer_d": "A nature reserve closed to vehicles.",
+          "explanation": "The sign or situation means: Wild animals crossing. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "Passage d'animaux sauvages.",
+          "answer_b": "Passage d'animaux domestiques.",
+          "answer_c": "Passage d'éleveurs.",
+          "answer_d": "Réserve naturelle interdite aux véhicules.",
+          "explanation": "Le panneau ou la situation signifie : Passage d'animaux sauvages. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_chevron_left.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign indicate?",
+          "answer_a": "A sharp change of direction to the right.",
+          "answer_b": "A dangerous bend to the left.",
+          "answer_c": "A double bend, first to the right.",
+          "answer_d": "A compulsory U-turn.",
+          "explanation": "The sign or situation means: A dangerous bend to the left. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Que vous indique ce panneau ?",
+          "answer_a": "Un changement brusque de direction à droite.",
+          "answer_b": "Un virage dangereux à gauche.",
+          "answer_c": "Un double virage, le premier à droite.",
+          "answer_d": "Une obligation de faire demi-tour.",
+          "explanation": "Le panneau ou la situation signifie : Un virage dangereux à gauche. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_obstacle_marker.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What is the purpose of this marker?",
+          "answer_a": "It marks a hazard and indicates the side on which to pass it.",
+          "answer_b": "It only marks an obstacle at the side of the road.",
+          "answer_c": "It marks the end of a restriction.",
+          "answer_d": "It announces a parking area.",
+          "explanation": "The sign or situation means: It marks a hazard and indicates the side on which to pass it. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Quel est le rôle de cette balise ?",
+          "answer_a": "Elle m'indique un danger et le côté par lequel le contourner.",
+          "answer_b": "Elle indique la présence d'un obstacle sur le côté de la chaussée uniquement.",
+          "answer_c": "Elle indique la fin d'une interdiction.",
+          "answer_d": "Elle annonce une aire de stationnement.",
+          "explanation": "Le panneau ou la situation signifie : Elle m'indique un danger et le côté par lequel le contourner. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_no_left_turn.jpg",
+      "translations": {
+        "en": {
+          "question_text": "May you turn left at the next junction?",
+          "answer_a": "No. The sign prohibits it.",
+          "answer_b": "Yes, if I slow down sharply.",
+          "answer_c": "Yes, unless a vehicle is approaching.",
+          "answer_d": "Yes, after using the indicator.",
+          "explanation": "The sign or situation means: No. The sign prohibits it. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Au prochain carrefour, puis-je tourner à gauche ?",
+          "answer_a": "Non, le panneau me l'interdit.",
+          "answer_b": "Oui, si je ralentis fortement.",
+          "answer_c": "Oui, sauf si un véhicule arrive en face.",
+          "answer_d": "Oui, après avoir actionné le clignotant.",
+          "explanation": "Le panneau ou la situation signifie : Non, le panneau me l'interdit. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "parking_stopping",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_no_parking.jpg",
+      "translations": {
+        "en": {
+          "question_text": "May you stop briefly to let a passenger out?",
+          "answer_a": "Yes. Only parking is prohibited.",
+          "answer_b": "No. Both stopping and parking are prohibited.",
+          "answer_c": "Yes, but only with hazard lights on.",
+          "answer_d": "No, except at night.",
+          "explanation": "The sign or situation means: Yes. Only parking is prohibited. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Face à ce panneau, puis-je m'arrêter quelques instants pour laisser descendre un passager ?",
+          "answer_a": "Oui, car seul le stationnement est interdit.",
+          "answer_b": "Non, tout arrêt et tout stationnement sont interdits.",
+          "answer_c": "Oui, mais seulement avec les feux de détresse.",
+          "answer_d": "Non, sauf la nuit.",
+          "explanation": "Le panneau ou la situation signifie : Oui, car seul le stationnement est interdit. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "speed_limits",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_end_speed_30.jpg",
+      "translations": {
+        "en": {
+          "question_text": "After this sign, what is the maximum permitted speed for a car on this street?",
+          "answer_a": "50 km/h unless another sign says otherwise.",
+          "answer_b": "30 km/h until the next junction.",
+          "answer_c": "70 km/h.",
+          "answer_d": "There is no speed limit.",
+          "explanation": "The sign or situation means: 50 km/h unless another sign says otherwise. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Après ce panneau, quelle est la vitesse maximale autorisée pour une voiture dans cette rue ?",
+          "answer_a": "50 km/h, sauf autre signalisation.",
+          "answer_b": "30 km/h jusqu'au prochain carrefour.",
+          "answer_c": "70 km/h.",
+          "answer_d": "La vitesse est libre.",
+          "explanation": "Le panneau ou la situation signifie : 50 km/h, sauf autre signalisation. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "priority_rules",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_traffic_lights_blocked.jpg",
+      "translations": {
+        "en": {
+          "question_text": "The light is green but traffic is stopped beyond the junction. May you enter?",
+          "answer_a": "Yes, because the green light authorizes me.",
+          "answer_b": "No, if I risk blocking the junction.",
+          "answer_c": "Yes, if I sound the horn.",
+          "answer_d": "Yes, if I have priority from the right.",
+          "explanation": "The sign or situation means: No, if I risk blocking the junction. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Le feu est vert, mais la circulation est arrêtée après le carrefour : puis-je m'engager ?",
+          "answer_a": "Oui, puisque le feu m'autorise à passer.",
+          "answer_b": "Non, si je risque d'immobiliser mon véhicule dans le carrefour.",
+          "answer_c": "Oui, à condition de klaxonner.",
+          "answer_d": "Oui, si je suis prioritaire à droite.",
+          "explanation": "Le panneau ou la situation signifie : Non, si je risque d'immobiliser mon véhicule dans le carrefour. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "overtaking",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_end_no_overtaking.jpg",
+      "translations": {
+        "en": {
+          "question_text": "May you overtake the vehicle ahead after this sign?",
+          "answer_a": "Yes, if road markings and visibility permit it.",
+          "answer_b": "Yes, without making any other checks.",
+          "answer_c": "No, I must wait until the next junction.",
+          "answer_d": "Yes, but only on the right.",
+          "explanation": "The sign or situation means: Yes, if road markings and visibility permit it. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "À partir de ce panneau, puis-je dépasser le véhicule qui me précède ?",
+          "answer_a": "Oui, si le marquage au sol et la visibilité le permettent.",
+          "answer_b": "Oui, sans aucune autre vérification.",
+          "answer_c": "Non, je dois attendre le prochain carrefour.",
+          "answer_d": "Oui, mais uniquement par la droite.",
+          "explanation": "Le panneau ou la situation signifie : Oui, si le marquage au sol et la visibilité le permettent. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_domestic_animals.jpg",
+      "translations": {
+        "en": {
+          "question_text": "How should you react when approaching this sign?",
+          "answer_a": "Slow down and be ready to stop for animals.",
+          "answer_b": "Maintain speed if the road is dry.",
+          "answer_c": "Sound the horn to frighten animals away.",
+          "answer_d": "Accelerate before they arrive.",
+          "explanation": "The sign or situation means: Slow down and be ready to stop for animals. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "À l'approche de ce panneau, quelle attitude dois-je adopter ?",
+          "answer_a": "Je ralentis et je suis prêt à m'arrêter pour laisser passer les animaux.",
+          "answer_b": "Je maintiens ma vitesse si la chaussée est sèche.",
+          "answer_c": "Je klaxonne pour faire fuir les animaux.",
+          "answer_d": "J'accélère avant leur arrivée.",
+          "explanation": "Le panneau ou la situation signifie : Je ralentis et je suis prêt à m'arrêter pour laisser passer les animaux. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "speed_limits",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_speed_limit_70.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What is the maximum permitted speed on this road?",
+          "answer_a": "70 km/h",
+          "answer_b": "80 km/h",
+          "answer_c": "90 km/h",
+          "answer_d": "The limit applies only in rain.",
+          "explanation": "The sign or situation means: 70 km/h This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Quelle est la vitesse maximale autorisée sur cette route ?",
+          "answer_a": "70 km/h",
+          "answer_b": "80 km/h",
+          "answer_c": "90 km/h",
+          "answer_d": "La limitation ne vaut que par temps de pluie.",
+          "explanation": "Le panneau ou la situation signifie : 70 km/h C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_wild_animals_action.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What should you do when approaching this hazard?",
+          "answer_a": "Sound the horn to warn the animals.",
+          "answer_b": "Slow down and be ready to brake.",
+          "answer_c": "Accelerate through quickly.",
+          "answer_d": "Stop and wait for an officer.",
+          "explanation": "The sign or situation means: Slow down and be ready to brake. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Que devez-vous faire à l'approche de ce danger ?",
+          "answer_a": "Klaxonner pour prévenir les animaux.",
+          "answer_b": "Ralentir et être prêt à freiner.",
+          "answer_c": "Accélérer pour passer rapidement.",
+          "answer_d": "S'arrêter et attendre un agent.",
+          "explanation": "Le panneau ou la situation signifie : Ralentir et être prêt à freiner. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_weight_limit_3_5t.jpg",
+      "translations": {
+        "en": {
+          "question_text": "My loaded van has a 3.8 t maximum authorized mass. May I proceed?",
+          "answer_a": "Yes, if I drive slowly.",
+          "answer_b": "No, I must take another route.",
+          "answer_c": "Yes, if the bridge looks strong enough.",
+          "answer_d": "Yes, if I return empty.",
+          "explanation": "The sign or situation means: No, I must take another route. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Mon utilitaire chargé a un PTAC de 3,8 t : puis-je m'engager ?",
+          "answer_a": "Oui, si je passe lentement.",
+          "answer_b": "Non, je dois emprunter un autre itinéraire.",
+          "answer_c": "Oui, si le pont paraît solide.",
+          "answer_d": "Oui, si je roule à vide au retour.",
+          "explanation": "Le panneau ou la situation signifie : Non, je dois emprunter un autre itinéraire. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_mandatory_right.jpg",
+      "translations": {
+        "en": {
+          "question_text": "May you continue straight ahead at this junction?",
+          "answer_a": "No, I must turn right.",
+          "answer_b": "Yes, if the road is clear.",
+          "answer_c": "Yes, if I slow down sharply.",
+          "answer_d": "Yes, if I use my indicator.",
+          "explanation": "The sign or situation means: No, I must turn right. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "À ce carrefour, puis-je continuer tout droit ?",
+          "answer_a": "Non, je dois tourner à droite.",
+          "answer_b": "Oui, si la chaussée est libre.",
+          "answer_c": "Oui, si je ralentis fortement.",
+          "answer_d": "Oui, si je mets mon clignotant.",
+          "explanation": "Le panneau ou la situation signifie : Non, je dois tourner à droite. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_cyclists_crossing.jpg",
+      "translations": {
+        "en": {
+          "question_text": "This sign warns of:",
+          "answer_a": "Cyclists entering from the right or left.",
+          "answer_b": "A compulsory cycle path.",
+          "answer_c": "Cycling prohibited.",
+          "answer_d": "A lane reserved for mopeds.",
+          "explanation": "The sign or situation means: Cyclists entering from the right or left. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Ce panneau m'annonce :",
+          "answer_a": "Un débouché de cyclistes venant de droite ou de gauche.",
+          "answer_b": "Une piste cyclable obligatoire.",
+          "answer_c": "L'interdiction de circuler à bicyclette.",
+          "answer_d": "Une voie réservée aux cyclomoteurs.",
+          "explanation": "Le panneau ou la situation signifie : Un débouché de cyclistes venant de droite ou de gauche. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_traffic_lights_ahead.jpg",
+      "translations": {
+        "en": {
+          "question_text": "How should you react when approaching this sign?",
+          "answer_a": "Slow down and anticipate possibly stopping at the lights.",
+          "answer_b": "Assume I definitely have priority.",
+          "answer_c": "Accelerate to pass before red.",
+          "answer_d": "Stop immediately at the sign.",
+          "explanation": "The sign or situation means: Slow down and anticipate possibly stopping at the lights. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "À l'approche de ce panneau, quelle attitude dois-je adopter ?",
+          "answer_a": "Je ralentis et j'anticipe un arrêt éventuel aux feux.",
+          "answer_b": "Je suis certain d'avoir la priorité.",
+          "answer_c": "J'accélère pour passer avant le rouge.",
+          "answer_d": "Je m'arrête immédiatement au panneau.",
+          "explanation": "Le panneau ou la situation signifie : Je ralentis et j'anticipe un arrêt éventuel aux feux. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_no_motor_vehicles.jpg",
+      "translations": {
+        "en": {
+          "question_text": "May you enter this street by car to drop off a passenger?",
+          "answer_a": "Yes, if the stop is very brief.",
+          "answer_b": "No, access is prohibited to all motor vehicles.",
+          "answer_c": "Yes, if I drive at walking pace.",
+          "answer_d": "Yes, with hazard lights on.",
+          "explanation": "The sign or situation means: No, access is prohibited to all motor vehicles. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Avec ma voiture, puis-je m'engager dans cette rue pour déposer un passager ?",
+          "answer_a": "Oui, si l'arrêt est très bref.",
+          "answer_b": "Non, l'accès est interdit à tout véhicule à moteur.",
+          "answer_c": "Oui, à condition de rouler au pas.",
+          "answer_d": "Oui, avec les feux de détresse.",
+          "explanation": "Le panneau ou la situation signifie : Non, l'accès est interdit à tout véhicule à moteur. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_quayside.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What is the safest precaution alongside this quay?",
+          "answer_a": "Reduce speed and keep away from the edge.",
+          "answer_b": "Move closer to the edge if no vehicle is coming.",
+          "answer_c": "Keep far right to leave others more room.",
+          "answer_d": "Stop on the quay to inspect the road.",
+          "explanation": "The sign or situation means: Reduce speed and keep away from the edge. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "En longeant ce quai, quelle précaution est la plus adaptée ?",
+          "answer_a": "Je réduis ma vitesse et je reste à distance du bord.",
+          "answer_b": "Je me rapproche du bord si aucun véhicule n'arrive.",
+          "answer_c": "Je serre à droite pour laisser plus de place.",
+          "answer_d": "Je m'arrête sur le quai pour contrôler la route.",
+          "explanation": "Le panneau ou la situation signifie : Je réduis ma vitesse et je reste à distance du bord. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_steep_descent.jpg",
+      "translations": {
+        "en": {
+          "question_text": "How should you drive when approaching this descent?",
+          "answer_a": "Adjust speed and use engine braking.",
+          "answer_b": "Switch off the engine to save fuel.",
+          "answer_c": "Accelerate before the slope.",
+          "answer_d": "Coast in neutral.",
+          "explanation": "The sign or situation means: Adjust speed and use engine braking. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "À l'approche de cette descente, quelle attitude dois-je adopter ?",
+          "answer_a": "J'adapte ma vitesse et j'utilise le frein moteur.",
+          "answer_b": "Je coupe le moteur pour économiser du carburant.",
+          "answer_c": "J'accélère avant la pente.",
+          "answer_d": "Je roule au point mort.",
+          "explanation": "Le panneau ou la situation signifie : J'adapte ma vitesse et j'utilise le frein moteur. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_no_entry.jpg",
+      "translations": {
+        "en": {
+          "question_text": "May you use this street to turn right at the next junction?",
+          "answer_a": "Yes, if I drive at walking pace.",
+          "answer_b": "No, entry to this street is prohibited.",
+          "answer_c": "Yes, if no vehicle is coming out.",
+          "answer_d": "Yes, if I live nearby.",
+          "explanation": "The sign or situation means: No, entry to this street is prohibited. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Pour tourner à droite au prochain carrefour, puis-je emprunter cette rue ?",
+          "answer_a": "Oui, si je roule au pas.",
+          "answer_b": "Non, l'accès à cette rue m'est interdit.",
+          "answer_c": "Oui, si aucun véhicule n'en sort.",
+          "answer_d": "Oui, si je suis riverain.",
+          "explanation": "Le panneau ou la situation signifie : Non, l'accès à cette rue m'est interdit. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_no_right_turn.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What rule applies if you want to follow this street to the right?",
+          "answer_a": "I may turn after slowing down.",
+          "answer_b": "I may not turn right at this junction.",
+          "answer_c": "I may turn only to stop immediately.",
+          "answer_d": "I may turn with hazard lights on.",
+          "explanation": "The sign or situation means: I may not turn right at this junction. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Pour suivre cette rue à droite, quelle règle s'impose ?",
+          "answer_a": "Je peux tourner après avoir ralenti.",
+          "answer_b": "Je ne peux pas tourner à droite à ce carrefour.",
+          "answer_c": "Je peux tourner seulement pour m'arrêter.",
+          "answer_d": "Je peux tourner avec les feux de détresse.",
+          "explanation": "Le panneau ou la situation signifie : Je ne peux pas tourner à droite à ce carrefour. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_height_limit_3_5m.jpg",
+      "translations": {
+        "en": {
+          "question_text": "My loaded vehicle is 3.6 m high. May I continue?",
+          "answer_a": "Yes, if I drive very slowly.",
+          "answer_b": "No, I must take another route.",
+          "answer_c": "Yes, if no vehicle is approaching.",
+          "answer_d": "Yes, by staying in the centre.",
+          "explanation": "The sign or situation means: No, I must take another route. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Mon véhicule chargé mesure 3,6 m de haut : puis-je continuer ?",
+          "answer_a": "Oui, si je passe très lentement.",
+          "answer_b": "Non, je dois emprunter un autre itinéraire.",
+          "answer_c": "Oui, si aucun véhicule n'arrive en face.",
+          "answer_d": "Oui, en restant au centre.",
+          "explanation": "Le panneau ou la situation signifie : Non, je dois emprunter un autre itinéraire. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_width_limit_2_1m.jpg",
+      "translations": {
+        "en": {
+          "question_text": "With mirrors extended, your vehicle is 2.05 m wide. May you proceed?",
+          "answer_a": "Yes, its total width does not exceed 2.1 m.",
+          "answer_b": "No, I need 20 cm clearance on each side.",
+          "answer_c": "No, the restriction applies to narrower vehicles.",
+          "answer_d": "Yes, but only without passengers.",
+          "explanation": "The sign or situation means: Yes, its total width does not exceed 2.1 m. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Rétroviseurs déployés, mon véhicule mesure 2,05 m de large : puis-je m'engager ?",
+          "answer_a": "Oui, sa largeur totale ne dépasse pas 2,1 m.",
+          "answer_b": "Non, je dois laisser 20 cm de marge de chaque côté.",
+          "answer_c": "Non, cette limitation concerne les véhicules plus étroits.",
+          "answer_d": "Oui, mais uniquement sans passager.",
+          "explanation": "Le panneau ou la situation signifie : Oui, sa largeur totale ne dépasse pas 2,1 m. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_end_all_restrictions.jpg",
+      "translations": {
+        "en": {
+          "question_text": "After this sign, the previously indicated overtaking ban:",
+          "answer_a": "Continues until the next junction.",
+          "answer_b": "Ends, provided road markings permit overtaking.",
+          "answer_c": "Ends only for motorcycles.",
+          "answer_d": "Is replaced by a parking ban.",
+          "explanation": "The sign or situation means: Ends, provided road markings permit overtaking. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "À partir de ce panneau, l'interdiction de dépasser précédemment signalée :",
+          "answer_a": "Continue jusqu'au prochain carrefour.",
+          "answer_b": "Prend fin, si le marquage au sol l'autorise.",
+          "answer_c": "Prend fin seulement pour les motos.",
+          "answer_d": "Est remplacée par une interdiction de stationner.",
+          "explanation": "Le panneau ou la situation signifie : Prend fin, si le marquage au sol l'autorise. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "speed_limits",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_minimum_speed_80.jpg",
+      "translations": {
+        "en": {
+          "question_text": "On this free-flowing road, may you drive at 60 km/h without a special reason?",
+          "answer_a": "Yes, if I keep right.",
+          "answer_b": "No, I must obey the minimum speed unless safety requires otherwise.",
+          "answer_c": "Yes, with hazard lights on.",
+          "answer_d": "Yes, if nobody is behind me.",
+          "explanation": "The sign or situation means: No, I must obey the minimum speed unless safety requires otherwise. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Sur cette voie fluide, puis-je circuler à 60 km/h sans raison particulière ?",
+          "answer_a": "Oui, si je reste à droite.",
+          "answer_b": "Non, je dois respecter la vitesse minimale sauf nécessité de sécurité.",
+          "answer_c": "Oui, avec les feux de détresse.",
+          "answer_d": "Oui, si aucun véhicule ne me suit.",
+          "explanation": "Le panneau ou la situation signifie : Non, je dois respecter la vitesse minimale sauf nécessité de sécurité. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "motorways",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_motorway_entry.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What should you do when joining a motorway?",
+          "answer_a": "Use the acceleration lane to match speed before merging.",
+          "answer_b": "Stop at the start of the slip road.",
+          "answer_c": "Drive along the hard shoulder.",
+          "answer_d": "Force motorway traffic to give way.",
+          "explanation": "The sign or situation means: Use the acceleration lane to match speed before merging. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "En m'engageant sur l'autoroute, que dois-je faire ?",
+          "answer_a": "Utiliser la voie d'accélération pour adapter ma vitesse avant de m'insérer.",
+          "answer_b": "M'arrêter au début de la bretelle.",
+          "answer_c": "Rouler sur la bande d'arrêt d'urgence.",
+          "answer_d": "Forcer les véhicules à me céder le passage.",
+          "explanation": "Le panneau ou la situation signifie : Utiliser la voie d'accélération pour adapter ma vitesse avant de m'insérer. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_no_u_turn.jpg",
+      "translations": {
+        "en": {
+          "question_text": "May you make a U-turn here?",
+          "answer_a": "Yes, if the road is clear.",
+          "answer_b": "No, U-turns are prohibited.",
+          "answer_c": "Yes, outside peak hours.",
+          "answer_d": "Yes, after sounding the horn.",
+          "explanation": "The sign or situation means: No, U-turns are prohibited. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Pour changer de sens ici, puis-je faire demi-tour ?",
+          "answer_a": "Oui, si la chaussée est libre.",
+          "answer_b": "Non, le demi-tour est interdit.",
+          "answer_c": "Oui, en dehors des heures de pointe.",
+          "answer_d": "Oui, après avoir klaxonné.",
+          "explanation": "Le panneau ou la situation signifie : Non, le demi-tour est interdit. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_crosswind.jpg",
+      "translations": {
+        "en": {
+          "question_text": "How should you react to this sign?",
+          "answer_a": "Reduce speed and hold a steady course.",
+          "answer_b": "Move closer to the centre line.",
+          "answer_c": "Accelerate to leave the area quickly.",
+          "answer_d": "Stop on the shoulder.",
+          "explanation": "The sign or situation means: Reduce speed and hold a steady course. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Face à ce panneau, quelle attitude dois-je adopter ?",
+          "answer_a": "Réduire mon allure et maintenir fermement ma trajectoire.",
+          "answer_b": "Me rapprocher de la ligne médiane.",
+          "answer_c": "Accélérer pour sortir plus vite de la zone.",
+          "answer_d": "M'arrêter sur l'accotement.",
+          "explanation": "Le panneau ou la situation signifie : Réduire mon allure et maintenir fermement ma trajectoire. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_no_goods_vehicles.jpg",
+      "translations": {
+        "en": {
+          "question_text": "Does this sign prohibit access by private car?",
+          "answer_a": "Yes, it prohibits all motor vehicles.",
+          "answer_b": "No, it applies to goods vehicles.",
+          "answer_c": "Yes, unless I am travelling empty.",
+          "answer_d": "Yes, but only at weekends.",
+          "explanation": "The sign or situation means: No, it applies to goods vehicles. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Ce panneau m'interdit-il l'accès avec une voiture particulière ?",
+          "answer_a": "Oui, il interdit tous les véhicules motorisés.",
+          "answer_b": "Non, il vise les véhicules de transport de marchandises.",
+          "answer_c": "Oui, sauf si je circule à vide.",
+          "answer_d": "Oui, uniquement le week-end.",
+          "explanation": "Le panneau ou la situation signifie : Non, il vise les véhicules de transport de marchandises. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_double_bend_right.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign warn of?",
+          "answer_a": "Successive bends, the first to the right.",
+          "answer_b": "Successive bends, the first to the left.",
+          "answer_c": "A winding road for several kilometres.",
+          "answer_d": "A requirement to turn twice.",
+          "explanation": "The sign or situation means: Successive bends, the first to the right. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "Une succession de virages, le premier à droite.",
+          "answer_b": "Une succession de virages, le premier à gauche.",
+          "answer_c": "Une route sinueuse sur plusieurs kilomètres.",
+          "answer_d": "Une obligation de tourner deux fois.",
+          "explanation": "Le panneau ou la situation signifie : Une succession de virages, le premier à droite. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_children_action.jpg",
+      "translations": {
+        "en": {
+          "question_text": "How should you react when approaching this sign?",
+          "answer_a": "Slow down and be especially vigilant.",
+          "answer_b": "Maintain speed if the road is clear.",
+          "answer_c": "Always stop.",
+          "answer_d": "Sound the horn to warn children.",
+          "explanation": "The sign or situation means: Slow down and be especially vigilant. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "À l'approche de ce panneau, quelle attitude dois-je adopter ?",
+          "answer_a": "Je ralentis et je redouble de vigilance.",
+          "answer_b": "Je maintiens ma vitesse si la route est libre.",
+          "answer_c": "Je m'arrête systématiquement.",
+          "answer_d": "Je klaxonne pour prévenir les enfants.",
+          "explanation": "Le panneau ou la situation signifie : Je ralentis et je redouble de vigilance. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_level_crossing_no_barrier.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign warn of?",
+          "answer_a": "A level crossing without a barrier or half-barrier.",
+          "answer_b": "A level crossing with a barrier.",
+          "answer_c": "A tramway crossing.",
+          "answer_d": "A railway station.",
+          "explanation": "The sign or situation means: A level crossing without a barrier or half-barrier. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "Un passage à niveau sans barrière ni demi-barrière.",
+          "answer_b": "Un passage à niveau avec barrière.",
+          "answer_c": "Un passage de tramway.",
+          "answer_d": "Une gare ferroviaire.",
+          "explanation": "Le panneau ou la situation signifie : Un passage à niveau sans barrière ni demi-barrière. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answers": [
+        "a",
+        "b"
+      ],
+      "difficulty": "medium",
+      "image_path": "france/situation_strong_crosswind.jpg",
+      "translations": {
+        "en": {
+          "question_text": "How should I react in this strong crosswind area?",
+          "answer_a": "Reduce my speed.",
+          "answer_b": "Hold the steering wheel firmly and anticipate deviations.",
+          "answer_c": "Accelerate to leave the area more quickly.",
+          "answer_d": "Drive close to the centre line.",
+          "explanation": "In strong crosswinds, I reduce my speed and hold the steering wheel firmly while anticipating sudden deviations, particularly in exposed areas and near large vehicles."
+        },
+        "fr": {
+          "question_text": "Dans cette zone de fort vent latéral, comment dois-je réagir ?",
+          "answer_a": "Je réduis mon allure.",
+          "answer_b": "Je tiens fermement le volant et j'anticipe les écarts.",
+          "answer_c": "J'accélère pour quitter la zone plus rapidement.",
+          "answer_d": "Je roule près de la ligne médiane.",
+          "explanation": "En présence d'un fort vent latéral, je réduis mon allure et je tiens fermement le volant en anticipant les écarts brusques, notamment dans les zones exposées et près des véhicules volumineux."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_falling_rocks_2km.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign warn of?",
+          "answer_a": "Risk of falling rocks for 2 km.",
+          "answer_b": "An uneven road for 2 km.",
+          "answer_c": "A 2 km/h speed limit.",
+          "answer_d": "A quarry in 2 km.",
+          "explanation": "The sign or situation means: Risk of falling rocks for 2 km. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "Un risque de chutes de pierres sur 2 km.",
+          "answer_b": "Une chaussée déformée sur 2 km.",
+          "answer_c": "Une limitation à 2 km/h.",
+          "answer_d": "Une carrière à 2 km.",
+          "explanation": "Le panneau ou la situation signifie : Un risque de chutes de pierres sur 2 km. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_tramway_crossing.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What should you watch for at this sign?",
+          "answer_a": "A tram may cross, so adjust speed accordingly.",
+          "answer_b": "Accelerate across the rails.",
+          "answer_c": "Move into the left lane.",
+          "answer_d": "Stop on the rails to look.",
+          "explanation": "The sign or situation means: A tram may cross, so adjust speed accordingly. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "À l'approche de cette signalisation, quelle vigilance dois-je avoir ?",
+          "answer_a": "Surveiller la traversée possible d'un tramway et adapter mon allure.",
+          "answer_b": "Accélérer pour franchir les rails.",
+          "answer_c": "Me rabattre obligatoirement à gauche.",
+          "answer_d": "M'arrêter sur les rails pour regarder.",
+          "explanation": "Le panneau ou la situation signifie : Surveiller la traversée possible d'un tramway et adapter mon allure. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_slippery_road.jpg",
+      "translations": {
+        "en": {
+          "question_text": "How should you react when approaching this sign?",
+          "answer_a": "Adjust speed and take extra care.",
+          "answer_b": "Accelerate if the road looks clear.",
+          "answer_c": "Stop immediately on the carriageway.",
+          "answer_d": "Brake sharply in bends.",
+          "explanation": "The sign or situation means: Adjust speed and take extra care. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "À l'approche de ce panneau, quelle attitude dois-je adopter ?",
+          "answer_a": "J'adapte ma vitesse et je redouble de prudence.",
+          "answer_b": "J'accélère si la route semble dégagée.",
+          "answer_c": "Je m'arrête immédiatement sur la chaussée.",
+          "answer_d": "Je freine brusquement dans les virages.",
+          "explanation": "Le panneau ou la situation signifie : J'adapte ma vitesse et je redouble de prudence. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_speed_hump_info.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign indicate?",
+          "answer_a": "A speed hump.",
+          "answer_b": "A slippery road.",
+          "answer_c": "Risk of falling rocks.",
+          "answer_d": "A level crossing.",
+          "explanation": "The sign or situation means: A speed hump. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "Un ralentisseur.",
+          "answer_b": "Une chaussée glissante.",
+          "answer_c": "Un danger de chute de pierres.",
+          "answer_d": "Un passage à niveau.",
+          "explanation": "Le panneau ou la situation signifie : Un ralentisseur. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_aircraft.jpg",
+      "translations": {
+        "en": {
+          "question_text": "How should you react when approaching this sign?",
+          "answer_a": "Stay alert because aircraft may fly at low altitude.",
+          "answer_b": "I have priority over airport traffic.",
+          "answer_c": "I may stop to watch aircraft.",
+          "answer_d": "I must switch on hazard lights.",
+          "explanation": "The sign or situation means: Stay alert because aircraft may fly at low altitude. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "À l'approche de ce panneau, quelle attitude dois-je adopter ?",
+          "answer_a": "Je reste vigilant : des aéronefs peuvent évoluer à basse altitude.",
+          "answer_b": "Je suis prioritaire sur les véhicules venant de l'aéroport.",
+          "answer_c": "Je peux m'arrêter pour regarder les avions.",
+          "answer_d": "Je dois allumer mes feux de détresse.",
+          "explanation": "Le panneau ou la situation signifie : Je reste vigilant : des aéronefs peuvent évoluer à basse altitude. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "motorways",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_motorway_end.jpg",
+      "translations": {
+        "en": {
+          "question_text": "After this sign, if there is no other indication, which rule applies?",
+          "answer_a": "I may continue at 130 km/h.",
+          "answer_b": "I follow the rules of the road that continues after the motorway.",
+          "answer_c": "I stop on the hard shoulder.",
+          "answer_d": "I automatically retain priority.",
+          "explanation": "The sign or situation means: I follow the rules of the road that continues after the motorway. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Après ce panneau, en l'absence d'autre indication, quelle règle s'applique ?",
+          "answer_a": "Je peux continuer à 130 km/h.",
+          "answer_b": "Je respecte les règles de la route qui succède à l'autoroute.",
+          "answer_c": "Je m'arrête sur la bande d'arrêt d'urgence.",
+          "answer_d": "Je conserve automatiquement la priorité.",
+          "explanation": "Le panneau ou la situation signifie : Je respecte les règles de la route qui succède à l'autoroute. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_two_way_traffic.jpg",
+      "translations": {
+        "en": {
+          "question_text": "After this sign, may you freely use the left side of the road?",
+          "answer_a": "Yes, if I drive slowly.",
+          "answer_b": "No, oncoming traffic may approach.",
+          "answer_c": "Yes, if no vehicle is visible.",
+          "answer_d": "Yes, but only to overtake.",
+          "explanation": "The sign or situation means: No, oncoming traffic may approach. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "À partir de ce panneau, puis-je utiliser librement la partie gauche de la chaussée ?",
+          "answer_a": "Oui, si je roule lentement.",
+          "answer_b": "Non, des véhicules peuvent arriver en sens inverse.",
+          "answer_c": "Oui, si aucun véhicule n'est visible.",
+          "answer_d": "Oui, uniquement pour dépasser.",
+          "explanation": "Le panneau ou la situation signifie : Non, des véhicules peuvent arriver en sens inverse. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_height_limit_2_8m.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign indicate?",
+          "answer_a": "The maximum permitted height is 2.8 metres.",
+          "answer_b": "The maximum width is 2.8 metres.",
+          "answer_c": "The minimum following distance is 2.8 metres.",
+          "answer_d": "The maximum length is 2.8 metres.",
+          "explanation": "The sign or situation means: The maximum permitted height is 2.8 metres. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "La hauteur maximale autorisée est de 2,8 mètres.",
+          "answer_b": "La largeur maximale est de 2,8 mètres.",
+          "answer_c": "La distance minimale est de 2,8 mètres.",
+          "answer_d": "La longueur maximale est de 2,8 mètres.",
+          "explanation": "Le panneau ou la situation signifie : La hauteur maximale autorisée est de 2,8 mètres. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "overtaking",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_no_overtaking_goods.jpg",
+      "translations": {
+        "en": {
+          "question_text": "Does this restriction apply to your private car?",
+          "answer_a": "Yes, it applies to all motor vehicles.",
+          "answer_b": "No, it applies to goods vehicles.",
+          "answer_c": "Yes, but only in the left lane.",
+          "answer_d": "Yes, but only when towing a trailer.",
+          "explanation": "The sign or situation means: No, it applies to goods vehicles. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Avec ma voiture particulière, cette interdiction me concerne-t-elle ?",
+          "answer_a": "Oui, elle concerne tous les véhicules à moteur.",
+          "answer_b": "Non, elle vise les véhicules de transport de marchandises.",
+          "answer_c": "Oui, seulement sur la voie de gauche.",
+          "answer_d": "Oui, uniquement si je tracte une remorque.",
+          "explanation": "Le panneau ou la situation signifie : Non, elle vise les véhicules de transport de marchandises. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "overtaking",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_no_overtaking_basic.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What must you do when you see this sign?",
+          "answer_a": "Do not overtake other motor vehicles.",
+          "answer_b": "I may overtake a moped.",
+          "answer_c": "I may overtake if the road is clear.",
+          "answer_d": "I may overtake only at night.",
+          "explanation": "The sign or situation means: Do not overtake other motor vehicles. This is why that response is the safe and lawful choice."
+        },
+        "fr": {
+          "question_text": "Que devez-vous faire en présence de ce panneau ?",
+          "answer_a": "Je ne dois pas dépasser les autres véhicules à moteur.",
+          "answer_b": "Je peux dépasser un cyclomoteur.",
+          "answer_c": "Je peux dépasser si la route est dégagée.",
+          "answer_d": "Je peux dépasser uniquement la nuit.",
+          "explanation": "Le panneau ou la situation signifie : Je ne dois pas dépasser les autres véhicules à moteur. C'est donc la réponse conforme à la signalisation et la plus sûre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "image_path": "france/situation_roundabout_ab25.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign warn you about?",
+          "answer_a": "A roundabout is ahead.",
+          "answer_b": "You must turn right immediately.",
+          "answer_c": "You always have priority at the next intersection.",
+          "answer_d": "The roundabout has ended.",
+          "explanation": "The triangular AB25 danger sign warns that a roundabout is ahead. Slow down, observe the approach signs and road markings, and be ready to give way where required."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "Un carrefour à sens giratoire à l'approche.",
+          "answer_b": "Une obligation de tourner immédiatement à droite.",
+          "answer_c": "Une intersection où je suis toujours prioritaire.",
+          "answer_d": "La fin d'un carrefour à sens giratoire.",
+          "explanation": "Le panneau de danger AB25 annonce un carrefour à sens giratoire. Je ralentis, j'observe la signalisation et le marquage à l'approche, et je me prépare à céder le passage si cela est indiqué."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_road_narrows_right_a3a.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What should you anticipate when approaching this sign?",
+          "answer_a": "The road narrows on the right; I slow down and adjust my road position.",
+          "answer_b": "The road narrows only on the left.",
+          "answer_c": "The road necessarily becomes one-way.",
+          "answer_d": "The right-hand lane is reserved for overtaking.",
+          "explanation": "The A3a danger sign warns that the carriageway narrows from the right. I reduce my speed, watch for oncoming traffic, and adapt my position while remaining on my side of the road."
+        },
+        "fr": {
+          "question_text": "À l'approche de ce panneau, que dois-je anticiper ?",
+          "answer_a": "La chaussée se rétrécit par la droite ; je ralentis et j'adapte mon placement.",
+          "answer_b": "La chaussée se rétrécit uniquement par la gauche.",
+          "answer_c": "La circulation devient obligatoirement à sens unique.",
+          "answer_d": "La voie de droite est réservée au dépassement.",
+          "explanation": "Le panneau de danger A3a annonce un rétrécissement de la chaussée par la droite. Je réduis mon allure, je surveille les véhicules venant en sens inverse et j'adapte mon placement sans franchir l'axe de la chaussée."
+        }
+      }
+    },
+    {
+      "category_slug": "priority_rules",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "image_path": "france/situation_priority_right_ab1.jpg",
+      "translations": {
+        "en": {
+          "question_text": "As you approach this intersection, a vehicle enters from the right. What should you do?",
+          "answer_a": "Slow down and give way to it.",
+          "answer_b": "Proceed first because I am on the wider road.",
+          "answer_c": "Sound the horn to make it stop.",
+          "answer_d": "Stop in every case, even when no vehicle is approaching.",
+          "explanation": "The AB1 sign warns that priority to the right applies at the next intersection. Road width does not determine priority, so I slow down and give way to the vehicle entering from my right."
+        },
+        "fr": {
+          "question_text": "À l'approche de cette intersection, le véhicule à droite s'engage. Que dois-je faire ?",
+          "answer_a": "Je ralentis et je lui cède le passage.",
+          "answer_b": "Je passe en premier car je circule sur la route la plus large.",
+          "answer_c": "Je klaxonne pour lui imposer l'arrêt.",
+          "answer_d": "Je m'arrête systématiquement, même si aucun véhicule n'arrive.",
+          "explanation": "Le panneau AB1 annonce l'application de la priorité à droite à la prochaine intersection. La largeur de la route ne détermine pas la priorité : je ralentis et je cède le passage au véhicule venant de ma droite."
+        }
+      }
+    },
+    {
+      "category_slug": "priority_rules",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "image_path": "france/situation_stop_ab4_realistic.jpg",
+      "translations": {
+        "en": {
+          "question_text": "What must I do at this intersection?",
+          "answer_a": "Stop at the line and give way.",
+          "answer_b": "Slow down only if a vehicle is approaching.",
+          "answer_c": "Proceed because the road appears clear.",
+          "answer_d": "Stop beside the sign, even after crossing the line.",
+          "explanation": "The AB4 STOP sign requires a complete stop at the stop line. After checking both directions, I give way to traffic on the priority road and proceed only when it is safe."
+        },
+        "fr": {
+          "question_text": "À cette intersection, que dois-je faire ?",
+          "answer_a": "Je marque l'arrêt à la ligne et je cède le passage.",
+          "answer_b": "Je ralentis seulement si un véhicule arrive.",
+          "answer_c": "Je passe car la route semble libre.",
+          "answer_d": "Je m'arrête au niveau du panneau, après avoir franchi la ligne.",
+          "explanation": "Le panneau AB4 STOP impose un arrêt complet à la ligne d'arrêt. Après avoir contrôlé des deux côtés, je cède le passage aux véhicules circulant sur la route prioritaire et je repars uniquement lorsque la voie est libre."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_permanent_warning.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this type of sign indicate?",
+          "answer_a": "A permanent danger ahead.",
+          "answer_b": "A temporary roadworks danger only.",
+          "answer_c": "The end of all restrictions.",
+          "answer_d": "A mandatory direction.",
+          "explanation": "A red-bordered triangle with a white background is the standard form of a permanent danger warning. The pictogram normally identifies the hazard, so I approach carefully and adapt my speed."
+        },
+        "fr": {
+          "question_text": "Que signifie ce type de panneau ?",
+          "answer_a": "Un danger permanent à l'approche.",
+          "answer_b": "Uniquement un danger temporaire lié à des travaux.",
+          "answer_c": "La fin de toutes les interdictions.",
+          "answer_d": "Une direction obligatoire.",
+          "explanation": "Un triangle à bordure rouge sur fond blanc constitue la forme habituelle d'un panneau de danger permanent. Le pictogramme précise normalement la nature du danger : j'approche avec prudence et j'adapte mon allure."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_temporary_warning.png",
+      "translations": {
+        "en": {
+          "question_text": "What does the yellow background of this sign indicate?",
+          "answer_a": "A permanent danger.",
+          "answer_b": "A temporary danger, often linked to roadworks.",
+          "answer_c": "A recommended route.",
+          "answer_d": "The end of all restrictions.",
+          "explanation": "A yellow-background danger sign indicates a temporary hazard, commonly in or near roadworks. I follow the temporary signs and adapt my speed to the conditions."
+        },
+        "fr": {
+          "question_text": "Que signifie le fond jaune de ce panneau ?",
+          "answer_a": "Un danger permanent.",
+          "answer_b": "Un danger temporaire, souvent lié à des travaux.",
+          "answer_c": "Un itinéraire conseillé.",
+          "answer_d": "La fin de toutes les interdictions.",
+          "explanation": "Le fond jaune d'un panneau de danger signale un danger temporaire, souvent présent dans une zone de travaux. Je respecte la signalisation temporaire et j'adapte mon allure."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "image_path": "france/danger_sign_priority_to_right.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign announce?",
+          "answer_a": "I have priority at the next intersection.",
+          "answer_b": "A mandatory stop at the next intersection.",
+          "answer_c": "An intersection where priority to the right applies.",
+          "answer_d": "The beginning of a one-way road.",
+          "explanation": "This sign announces an intersection governed by priority to the right. I slow down and give way to any vehicle approaching from my right."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "Je suis prioritaire à la prochaine intersection.",
+          "answer_b": "Un arrêt obligatoire à la prochaine intersection.",
+          "answer_c": "Une intersection où la priorité à droite s'applique.",
+          "answer_d": "Le début d'une route à sens unique.",
+          "explanation": "Ce panneau annonce une intersection où la priorité à droite s'applique. Je ralentis et je cède le passage à tout véhicule arrivant de ma droite."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "d",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_bend_right.png",
+      "translations": {
+        "en": {
+          "question_text": "What danger does this sign announce?",
+          "answer_a": "A dangerous bend to the left.",
+          "answer_b": "An obligation to keep right.",
+          "answer_c": "A roundabout ahead.",
+          "answer_d": "A dangerous bend to the right.",
+          "explanation": "This sign warns of a dangerous bend to the right. I reduce my speed before entering the bend and remain correctly positioned in my lane."
+        },
+        "fr": {
+          "question_text": "Quel danger ce panneau annonce-t-il ?",
+          "answer_a": "Un virage dangereux à gauche.",
+          "answer_b": "Une obligation de serrer à droite.",
+          "answer_c": "Un carrefour à sens giratoire.",
+          "answer_d": "Un virage dangereux à droite.",
+          "explanation": "Ce panneau annonce un virage dangereux à droite. Je réduis mon allure avant le virage et je reste correctement placé sur ma voie."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_bend_left.png",
+      "translations": {
+        "en": {
+          "question_text": "What danger does this sign announce?",
+          "answer_a": "A dangerous bend to the left.",
+          "answer_b": "A dangerous bend to the right.",
+          "answer_c": "A road narrowing on the left.",
+          "answer_d": "A mandatory left turn.",
+          "explanation": "This sign warns of a dangerous bend to the left. I reduce my speed before the bend and avoid cutting across the centre of the road."
+        },
+        "fr": {
+          "question_text": "Quel danger ce panneau annonce-t-il ?",
+          "answer_a": "Un virage dangereux à gauche.",
+          "answer_b": "Un virage dangereux à droite.",
+          "answer_c": "Un rétrécissement de chaussée par la gauche.",
+          "answer_d": "Une obligation de tourner à gauche.",
+          "explanation": "Ce panneau annonce un virage dangereux à gauche. Je réduis mon allure avant le virage et j'évite de couper l'axe de la chaussée."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_double_bend_right.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign warn you about?",
+          "answer_a": "A single bend to the right.",
+          "answer_b": "A series of bends, the first to the right.",
+          "answer_c": "A series of bends, the first to the left.",
+          "answer_d": "The end of a winding section.",
+          "explanation": "This sign announces a series of bends, with the first bend to the right. I slow down before the first bend and remain prepared for the following changes of direction."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "Un seul virage à droite.",
+          "answer_b": "Une succession de virages dont le premier est à droite.",
+          "answer_c": "Une succession de virages dont le premier est à gauche.",
+          "answer_d": "La fin d'une route sinueuse.",
+          "explanation": "Ce panneau annonce une succession de virages dont le premier est à droite. Je ralentis avant le premier virage et je reste prêt à adapter ma trajectoire aux suivants."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "c",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_double_bend_left.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign warn you about?",
+          "answer_a": "A single bend to the left.",
+          "answer_b": "A series of bends, the first to the right.",
+          "answer_c": "A series of bends, the first to the left.",
+          "answer_d": "A road narrowing on both sides.",
+          "explanation": "This sign announces a series of bends, with the first bend to the left. I reduce my speed and stay alert throughout the winding section."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "Un seul virage à gauche.",
+          "answer_b": "Une succession de virages dont le premier est à droite.",
+          "answer_c": "Une succession de virages dont le premier est à gauche.",
+          "answer_d": "Un rétrécissement de la chaussée des deux côtés.",
+          "explanation": "Ce panneau annonce une succession de virages dont le premier est à gauche. Je réduis mon allure et je reste vigilant pendant toute la section sinueuse."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "d",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_uneven_road.png",
+      "translations": {
+        "en": {
+          "question_text": "What road condition does this sign announce?",
+          "answer_a": "A speed hump.",
+          "answer_b": "A particularly slippery road.",
+          "answer_c": "Falling rocks.",
+          "answer_d": "A dip or uneven hump in the road.",
+          "explanation": "This sign warns of a dip or uneven hump that may affect vehicle stability. I slow down before the uneven section and keep firm control of the vehicle."
+        },
+        "fr": {
+          "question_text": "Quel état de la chaussée ce panneau annonce-t-il ?",
+          "answer_a": "Un ralentisseur de type dos-d'âne.",
+          "answer_b": "Une chaussée particulièrement glissante.",
+          "answer_c": "Un risque de chute de pierres.",
+          "answer_d": "Un cassis ou un dos-d'âne.",
+          "explanation": "Ce panneau annonce un cassis ou un dos-d'âne susceptible de déstabiliser le véhicule. Je ralentis avant la déformation et je garde une bonne maîtrise de mon véhicule."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_speed_hump.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign announce?",
+          "answer_a": "A speed hump ahead.",
+          "answer_b": "A bridge with a steep arch.",
+          "answer_c": "A particularly slippery road.",
+          "answer_d": "A dangerous descent.",
+          "explanation": "This sign warns of a speed hump ahead. I reduce my speed early and cross it smoothly without sudden braking."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "Un ralentisseur de type dos-d'âne.",
+          "answer_b": "Un pont fortement bombé.",
+          "answer_c": "Une chaussée particulièrement glissante.",
+          "answer_d": "Une descente dangereuse.",
+          "explanation": "Ce panneau annonce un ralentisseur de type dos-d'âne. Je réduis suffisamment mon allure avant de le franchir, sans freiner brutalement dessus."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_road_narrows_right.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign announce?",
+          "answer_a": "The road narrows on the left.",
+          "answer_b": "The road narrows on the right.",
+          "answer_c": "The road narrows on both sides.",
+          "answer_d": "The right-hand lane becomes mandatory.",
+          "explanation": "This sign warns that the carriageway narrows on the right. I slow down, monitor surrounding traffic and adjust my position while remaining in my lane."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "La chaussée se rétrécit par la gauche.",
+          "answer_b": "La chaussée se rétrécit par la droite.",
+          "answer_c": "La chaussée se rétrécit des deux côtés.",
+          "answer_d": "La voie de droite devient obligatoire.",
+          "explanation": "Ce panneau annonce un rétrécissement de la chaussée par la droite. Je ralentis, je surveille les autres usagers et j'adapte mon placement en restant sur ma voie."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "c",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_road_narrows_left.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign announce?",
+          "answer_a": "The road narrows on the right.",
+          "answer_b": "The road narrows on both sides.",
+          "answer_c": "The road narrows on the left.",
+          "answer_d": "Traffic must move to the left.",
+          "explanation": "This sign warns that the carriageway narrows on the left. I reduce my speed and stay alert for changes in road position and oncoming traffic."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "La chaussée se rétrécit par la droite.",
+          "answer_b": "La chaussée se rétrécit des deux côtés.",
+          "answer_c": "La chaussée se rétrécit par la gauche.",
+          "answer_d": "La circulation doit se déporter à gauche.",
+          "explanation": "Ce panneau annonce un rétrécissement de la chaussée par la gauche. Je réduis mon allure et je reste attentif au déplacement des voies et aux véhicules venant en sens inverse."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "d",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_road_narrows_both.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign announce?",
+          "answer_a": "The road narrows only on the right.",
+          "answer_b": "The road narrows only on the left.",
+          "answer_c": "Two-way traffic ends.",
+          "answer_d": "The road narrows on both sides.",
+          "explanation": "This sign warns that the carriageway narrows on both sides. I slow down, check the available width and remain ready to adjust my position safely."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "La chaussée se rétrécit uniquement par la droite.",
+          "answer_b": "La chaussée se rétrécit uniquement par la gauche.",
+          "answer_c": "La circulation à double sens prend fin.",
+          "answer_d": "La chaussée se rétrécit des deux côtés.",
+          "explanation": "Ce panneau annonce un rétrécissement de la chaussée des deux côtés. Je ralentis, j'évalue la largeur disponible et je me tiens prêt à adapter mon placement en sécurité."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_slippery_road.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign mean?",
+          "answer_a": "The road is particularly slippery.",
+          "answer_b": "The road has a dip or uneven hump.",
+          "answer_c": "Loose chippings may be thrown up.",
+          "answer_d": "The road narrows ahead.",
+          "explanation": "This sign warns that the road may be particularly slippery. I slow down, increase my following distance and avoid sudden braking or steering."
+        },
+        "fr": {
+          "question_text": "Que signifie ce panneau ?",
+          "answer_a": "La chaussée est particulièrement glissante.",
+          "answer_b": "La chaussée présente un cassis ou un dos-d'âne.",
+          "answer_c": "Des gravillons peuvent être projetés.",
+          "answer_d": "La chaussée se rétrécit.",
+          "explanation": "Ce panneau annonce une chaussée particulièrement glissante. Je ralentis, j'augmente la distance de sécurité et j'évite les freinages ou changements de direction brusques."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_movable_bridge.png",
+      "translations": {
+        "en": {
+          "question_text": "What danger does this sign announce?",
+          "answer_a": "A quayside or river bank.",
+          "answer_b": "A movable bridge.",
+          "answer_c": "A steep descent.",
+          "answer_d": "A tunnel entrance.",
+          "explanation": "This sign warns of a movable bridge. I slow down and remain ready to stop if the bridge is raised or access is closed."
+        },
+        "fr": {
+          "question_text": "Quel danger ce panneau annonce-t-il ?",
+          "answer_a": "Un débouché sur un quai ou une berge.",
+          "answer_b": "Un pont mobile.",
+          "answer_c": "Une descente dangereuse.",
+          "answer_d": "L'entrée d'un tunnel.",
+          "explanation": "Ce panneau annonce un pont mobile. Je ralentis et je me tiens prêt à m'arrêter si le pont est levé ou si l'accès est fermé."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "c",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_level_crossing_barriers.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign announce?",
+          "answer_a": "A tramway crossing.",
+          "answer_b": "A level crossing without barriers.",
+          "answer_c": "A level crossing with barriers or half-barriers.",
+          "answer_d": "A movable bridge.",
+          "explanation": "This sign warns of a level crossing equipped with barriers or half-barriers. I slow down and obey the lights, audible warning and barriers."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "Une traversée de voies de tramways.",
+          "answer_b": "Un passage à niveau sans barrière.",
+          "answer_c": "Un passage à niveau muni de barrières ou de demi-barrières.",
+          "answer_d": "Un pont mobile.",
+          "explanation": "Ce panneau annonce un passage à niveau muni de barrières ou de demi-barrières. Je ralentis et je respecte les feux, le signal sonore et les barrières."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "d",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_level_crossing_no_barrier.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign announce?",
+          "answer_a": "A tramway crossing.",
+          "answer_b": "A tunnel entrance.",
+          "answer_c": "A level crossing with barriers.",
+          "answer_d": "A level crossing without barriers or half-barriers.",
+          "explanation": "This sign warns of a level crossing without barriers or half-barriers. I approach slowly, look and listen carefully, and cross only when no train is approaching."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "Une traversée de voies de tramways.",
+          "answer_b": "L'entrée d'un tunnel.",
+          "answer_c": "Un passage à niveau muni de barrières.",
+          "answer_d": "Un passage à niveau sans barrière ni demi-barrière.",
+          "explanation": "Ce panneau annonce un passage à niveau sans barrière ni demi-barrière. J'approche lentement, je regarde et j'écoute attentivement, puis je traverse uniquement si aucun train n'arrive."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_tramway_crossing.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign announce?",
+          "answer_a": "A tramway track crossing.",
+          "answer_b": "A level crossing with barriers.",
+          "answer_c": "A bus lane.",
+          "answer_d": "A railway station.",
+          "explanation": "This sign warns that tramway tracks cross the road. I slow down, watch for trams and obey any lights or priority rules at the crossing."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "Une traversée de voies de tramways.",
+          "answer_b": "Un passage à niveau muni de barrières.",
+          "answer_c": "Une voie réservée aux autobus.",
+          "answer_d": "Une gare ferroviaire.",
+          "explanation": "Ce panneau annonce une traversée de voies de tramways. Je ralentis, je surveille l'arrivée des tramways et je respecte les feux ou les règles de priorité."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/danger_sign_public_transport_crossing.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign warn you about?",
+          "answer_a": "A bus stop on the right.",
+          "answer_b": "A crossing used by public transport vehicles.",
+          "answer_c": "A lane reserved for bicycles.",
+          "answer_d": "Access prohibited to buses.",
+          "explanation": "This sign warns that public transport vehicles may cross the road. I slow down and remain ready to give way according to the signs and traffic conditions."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "Un arrêt d'autobus sur la droite.",
+          "answer_b": "Une traversée de voies empruntées par des véhicules de transport en commun.",
+          "answer_c": "Une voie réservée aux cycles.",
+          "answer_d": "Un accès interdit aux autobus.",
+          "explanation": "Ce panneau annonce une traversée de voies empruntées par des véhicules de transport en commun. Je ralentis et je reste prêt à céder le passage selon la signalisation et les conditions de circulation."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "c",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_children.png",
+      "translations": {
+        "en": {
+          "question_text": "What danger does this sign announce?",
+          "answer_a": "A pedestrian-only area.",
+          "answer_b": "A playground entrance.",
+          "answer_c": "A place frequently used by children.",
+          "answer_d": "Access prohibited to pedestrians.",
+          "explanation": "This sign warns of a place frequently used by children, often near a school. I slow down and remain ready to stop for a child entering the road."
+        },
+        "fr": {
+          "question_text": "Quel danger ce panneau annonce-t-il ?",
+          "answer_a": "Une aire réservée aux piétons.",
+          "answer_b": "L'entrée d'une aire de jeux.",
+          "answer_c": "Un endroit fréquenté par les enfants.",
+          "answer_d": "Un accès interdit aux piétons.",
+          "explanation": "Ce panneau annonce un endroit fréquenté par les enfants, souvent à proximité d'une école. Je ralentis et je reste prêt à m'arrêter si un enfant s'engage sur la chaussée."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "d",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_pedestrian_crossing.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign announce?",
+          "answer_a": "A pedestrian-only street.",
+          "answer_b": "Access prohibited to pedestrians.",
+          "answer_c": "A hiking trail.",
+          "answer_d": "A pedestrian crossing ahead.",
+          "explanation": "This sign warns of a pedestrian crossing ahead. I reduce my speed, check both sides and prepare to stop for pedestrians crossing or about to cross."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "Une rue réservée aux piétons.",
+          "answer_b": "Un accès interdit aux piétons.",
+          "answer_c": "Un itinéraire de randonnée.",
+          "answer_d": "Un passage pour piétons à l'approche.",
+          "explanation": "Ce panneau annonce un passage pour piétons. Je réduis mon allure, je contrôle les deux côtés et je me prépare à m'arrêter pour les piétons qui traversent ou souhaitent traverser."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_unspecified_danger.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign mean?",
+          "answer_a": "A danger not represented by a specific symbol.",
+          "answer_b": "A mandatory full stop.",
+          "answer_c": "The end of all restrictions.",
+          "answer_d": "A priority intersection.",
+          "explanation": "This sign warns of a danger that has no dedicated pictogram. An additional plate may specify the hazard, so I slow down and observe the surroundings carefully."
+        },
+        "fr": {
+          "question_text": "Que signifie ce panneau ?",
+          "answer_a": "Un danger qui n'est pas représenté par un symbole spécifique.",
+          "answer_b": "Un arrêt obligatoire.",
+          "answer_c": "La fin de toutes les interdictions.",
+          "answer_d": "Une intersection où je suis prioritaire.",
+          "explanation": "Ce panneau annonce un danger qui ne possède pas de pictogramme spécifique. Un panonceau peut en préciser la nature : je ralentis et j'observe attentivement mon environnement."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_cattle.png",
+      "translations": {
+        "en": {
+          "question_text": "What danger does this sign announce?",
+          "answer_a": "Wild animals crossing.",
+          "answer_b": "Domestic animals, particularly cattle, crossing.",
+          "answer_c": "Horse riders crossing.",
+          "answer_d": "A livestock market.",
+          "explanation": "This sign warns that domestic animals, particularly cattle, may cross the road. I slow down and stay ready to stop without sounding the horn unnecessarily."
+        },
+        "fr": {
+          "question_text": "Quel danger ce panneau annonce-t-il ?",
+          "answer_a": "Un passage d'animaux sauvages.",
+          "answer_b": "Un passage d'animaux domestiques, notamment de bovins.",
+          "answer_c": "Un passage de cavaliers.",
+          "answer_d": "Un marché aux bestiaux.",
+          "explanation": "Ce panneau annonce un passage possible d'animaux domestiques, notamment de bovins. Je ralentis et je reste prêt à m'arrêter sans utiliser inutilement l'avertisseur sonore."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "c",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_sheep.png",
+      "translations": {
+        "en": {
+          "question_text": "What danger does this sign announce?",
+          "answer_a": "Wild animals crossing.",
+          "answer_b": "A farm entrance.",
+          "answer_c": "Domestic animals, particularly sheep, crossing.",
+          "answer_d": "Animals prohibited.",
+          "explanation": "This sign warns that domestic animals, particularly sheep, may cross the road. I reduce my speed and allow the animals and their handler to pass safely."
+        },
+        "fr": {
+          "question_text": "Quel danger ce panneau annonce-t-il ?",
+          "answer_a": "Un passage d'animaux sauvages.",
+          "answer_b": "L'entrée d'une exploitation agricole.",
+          "answer_c": "Un passage d'animaux domestiques, notamment de moutons.",
+          "answer_d": "Une interdiction d'accès aux animaux.",
+          "explanation": "Ce panneau annonce un passage possible d'animaux domestiques, notamment de moutons. Je réduis mon allure et je laisse les animaux et leur accompagnateur traverser en sécurité."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "d",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_wild_animals.png",
+      "translations": {
+        "en": {
+          "question_text": "What danger does this sign announce?",
+          "answer_a": "A nature reserve entrance.",
+          "answer_b": "Domestic animals crossing.",
+          "answer_c": "Hunting is prohibited.",
+          "answer_d": "Wild animals crossing.",
+          "explanation": "This sign warns that wild animals may cross the road. I reduce my speed, scan the verges and remain ready to brake, especially at dawn, dusk and night."
+        },
+        "fr": {
+          "question_text": "Quel danger ce panneau annonce-t-il ?",
+          "answer_a": "L'entrée d'une réserve naturelle.",
+          "answer_b": "Un passage d'animaux domestiques.",
+          "answer_c": "Une interdiction de chasser.",
+          "answer_d": "Un passage d'animaux sauvages.",
+          "explanation": "Ce panneau annonce un passage possible d'animaux sauvages. Je réduis mon allure, je surveille les bas-côtés et je reste prêt à freiner, notamment à l'aube, au crépuscule et la nuit."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_horse_riders.png",
+      "translations": {
+        "en": {
+          "question_text": "What danger does this sign announce?",
+          "answer_a": "Horse riders may be crossing.",
+          "answer_b": "Horse-drawn vehicles are prohibited.",
+          "answer_c": "A racecourse entrance.",
+          "answer_d": "Wild animals may be crossing.",
+          "explanation": "This sign warns that horse riders may cross or use the road. I slow down, leave plenty of space and avoid noise or sudden movements that could startle the horses."
+        },
+        "fr": {
+          "question_text": "Quel danger ce panneau annonce-t-il ?",
+          "answer_a": "Un passage possible de cavaliers.",
+          "answer_b": "Une interdiction aux véhicules à traction animale.",
+          "answer_c": "L'entrée d'un hippodrome.",
+          "answer_d": "Un passage possible d'animaux sauvages.",
+          "explanation": "Ce panneau annonce un passage possible de cavaliers. Je ralentis, je laisse une distance suffisante et j'évite le bruit ou les mouvements brusques susceptibles d'effrayer les chevaux."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_steep_descent.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign announce?",
+          "answer_a": "A steep climb of 10%.",
+          "answer_b": "A dangerous descent with a 10% gradient.",
+          "answer_c": "A maximum speed of 10 km/h.",
+          "answer_d": "A slippery road for 10 kilometres.",
+          "explanation": "This sign warns of a dangerous 10% descent. I select a suitable gear, control my speed with engine braking and avoid overheating the brakes."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "Une montée dangereuse à 10 %.",
+          "answer_b": "Une descente dangereuse présentant une pente de 10 %.",
+          "answer_c": "Une vitesse maximale de 10 km/h.",
+          "answer_d": "Une chaussée glissante sur 10 kilomètres.",
+          "explanation": "Ce panneau annonce une descente dangereuse présentant une pente de 10 %. Je choisis un rapport adapté, je contrôle mon allure avec le frein moteur et j'évite de surchauffer les freins."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "c",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_traffic_lights.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign announce?",
+          "answer_a": "A level crossing.",
+          "answer_b": "A priority intersection.",
+          "answer_c": "Traffic lights ahead.",
+          "answer_d": "Traffic lights no longer apply.",
+          "explanation": "This sign warns of traffic lights ahead, particularly where they may be unexpected or difficult to see. I slow down and prepare to stop."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "Un passage à niveau.",
+          "answer_b": "Une intersection où je suis prioritaire.",
+          "answer_c": "Des feux tricolores à l'approche.",
+          "answer_d": "La fin de l'application des feux tricolores.",
+          "explanation": "Ce panneau annonce des feux tricolores, notamment lorsqu'ils peuvent surprendre ou être difficiles à voir. Je ralentis et je me prépare à m'arrêter."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "d",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_two_way_traffic.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign announce?",
+          "answer_a": "I have priority over oncoming traffic.",
+          "answer_b": "A one-way road begins.",
+          "answer_c": "Overtaking is compulsory.",
+          "answer_d": "Two-way traffic begins or resumes.",
+          "explanation": "This sign warns that traffic will run in both directions. I keep to the right and remain alert for oncoming vehicles."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "Je suis prioritaire sur les véhicules venant en sens inverse.",
+          "answer_b": "Le début d'une route à sens unique.",
+          "answer_c": "Une obligation de dépasser.",
+          "answer_d": "Le début ou la reprise d'une circulation à double sens.",
+          "explanation": "Ce panneau annonce le début ou la reprise d'une circulation à double sens. Je serre à droite et je reste attentif aux véhicules venant en sens inverse."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_falling_rocks.png",
+      "translations": {
+        "en": {
+          "question_text": "What danger does this sign announce?",
+          "answer_a": "Falling rocks and stones on the road.",
+          "answer_b": "Loose chippings from roadworks.",
+          "answer_c": "A quarry entrance.",
+          "answer_d": "An uneven road.",
+          "explanation": "This sign warns of a risk of falling rocks and stones already lying on the road. I slow down, watch the carriageway and avoid stopping in the exposed area."
+        },
+        "fr": {
+          "question_text": "Quel danger ce panneau annonce-t-il ?",
+          "answer_a": "Un risque de chute de pierres et de pierres présentes sur la chaussée.",
+          "answer_b": "Des projections de gravillons dues à des travaux.",
+          "answer_c": "L'entrée d'une carrière.",
+          "answer_d": "Une chaussée déformée.",
+          "explanation": "Ce panneau annonce un risque de chute de pierres et la présence possible de pierres sur la chaussée. Je ralentis, je surveille la route et j'évite de m'arrêter dans la zone exposée."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_quayside.png",
+      "translations": {
+        "en": {
+          "question_text": "What danger does this sign announce?",
+          "answer_a": "A ferry terminal.",
+          "answer_b": "A road leading onto a quayside or river bank.",
+          "answer_c": "A movable bridge.",
+          "answer_d": "A flooded road.",
+          "explanation": "This sign warns that the road leads directly onto a quayside or river bank, with a risk of falling into the water. I slow down and follow the road alignment carefully."
+        },
+        "fr": {
+          "question_text": "Quel danger ce panneau annonce-t-il ?",
+          "answer_a": "Un embarcadère.",
+          "answer_b": "Un débouché sur un quai ou une berge.",
+          "answer_c": "Un pont mobile.",
+          "answer_d": "Une chaussée inondée.",
+          "explanation": "Ce panneau annonce un débouché sur un quai ou une berge, avec un risque de chute dans l'eau. Je ralentis et je suis attentivement le tracé de la chaussée."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "c",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_cyclists.png",
+      "translations": {
+        "en": {
+          "question_text": "What danger does this sign announce?",
+          "answer_a": "A mandatory cycle lane.",
+          "answer_b": "Access prohibited to cyclists.",
+          "answer_c": "Cyclists may enter or cross from the right or left.",
+          "answer_d": "A bicycle parking area.",
+          "explanation": "This sign warns that cyclists may enter or cross the road from either side. I reduce my speed, check the side roads and maintain a safe distance."
+        },
+        "fr": {
+          "question_text": "Quel danger ce panneau annonce-t-il ?",
+          "answer_a": "Une piste cyclable obligatoire.",
+          "answer_b": "Un accès interdit aux cyclistes.",
+          "answer_c": "Un débouché de cyclistes venant de droite ou de gauche.",
+          "answer_d": "Un stationnement réservé aux vélos.",
+          "explanation": "Ce panneau annonce que des cyclistes peuvent déboucher ou traverser depuis la droite ou la gauche. Je réduis mon allure, je contrôle les voies latérales et je conserve une distance de sécurité."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "d",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_aircraft.png",
+      "translations": {
+        "en": {
+          "question_text": "What danger does this sign announce?",
+          "answer_a": "An airport entrance.",
+          "answer_b": "Aircraft are prohibited.",
+          "answer_c": "A road reserved for airport vehicles.",
+          "answer_d": "Low-flying aircraft crossing the area.",
+          "explanation": "This sign warns that low-flying aircraft may cross above the road near an airfield. I remain focused on the road and avoid being startled or distracted."
+        },
+        "fr": {
+          "question_text": "Quel danger ce panneau annonce-t-il ?",
+          "answer_a": "L'entrée d'un aéroport.",
+          "answer_b": "Une interdiction de survol.",
+          "answer_c": "Une route réservée aux véhicules aéroportuaires.",
+          "answer_d": "La traversée d'une aire où des avions peuvent voler à basse altitude.",
+          "explanation": "Ce panneau annonce le passage possible d'avions à basse altitude près d'un aérodrome. Je reste concentré sur la route et je ne me laisse pas surprendre ou distraire."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "image_path": "france/danger_sign_crosswind.png",
+      "translations": {
+        "en": {
+          "question_text": "What danger does this sign announce?",
+          "answer_a": "A risk of strong crosswinds.",
+          "answer_b": "A slippery road.",
+          "answer_c": "A compulsory direction shown by the windsock.",
+          "answer_d": "An airport parking area.",
+          "explanation": "This sign warns of strong crosswinds. I reduce my speed, hold the steering wheel firmly and take extra care when passing exposed areas or large vehicles."
+        },
+        "fr": {
+          "question_text": "Quel danger ce panneau annonce-t-il ?",
+          "answer_a": "Un risque de fort vent latéral.",
+          "answer_b": "Une chaussée glissante.",
+          "answer_c": "Une direction obligatoire indiquée par la manche à air.",
+          "answer_d": "Une aire de stationnement aéroportuaire.",
+          "explanation": "Ce panneau annonce un risque de fort vent latéral. Je réduis mon allure, je tiens fermement le volant et je redouble de prudence dans les zones exposées ou lors du dépassement d'un véhicule volumineux."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/danger_sign_priority_intersection.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign announce?",
+          "answer_a": "Priority to the right applies at the next intersection.",
+          "answer_b": "I have priority at the next intersection.",
+          "answer_c": "I must give way at the next intersection.",
+          "answer_d": "A roundabout is ahead.",
+          "explanation": "This sign announces an intersection where my road has priority over the side road. I remain cautious because other road users may still fail to give way."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "La priorité à droite s'applique à la prochaine intersection.",
+          "answer_b": "Je suis prioritaire à la prochaine intersection.",
+          "answer_c": "Je dois céder le passage à la prochaine intersection.",
+          "answer_d": "Un carrefour à sens giratoire à l'approche.",
+          "explanation": "Ce panneau annonce une intersection où ma route est prioritaire sur la voie latérale. Je reste néanmoins prudent, car un autre usager peut ne pas respecter la priorité."
+        }
+      }
+    },
+    {
+      "category_slug": "road_signs",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "image_path": "france/danger_sign_roundabout.png",
+      "translations": {
+        "en": {
+          "question_text": "What does this sign announce?",
+          "answer_a": "The end of a roundabout.",
+          "answer_b": "A mandatory right turn immediately.",
+          "answer_c": "A roundabout ahead, normally with priority for traffic on the ring.",
+          "answer_d": "I always have priority when entering.",
+          "explanation": "This sign warns of a roundabout ahead. I slow down, observe the approach signs and markings, and give way to traffic on the ring when required."
+        },
+        "fr": {
+          "question_text": "Que vous annonce ce panneau ?",
+          "answer_a": "La fin d'un carrefour à sens giratoire.",
+          "answer_b": "Une obligation de tourner immédiatement à droite.",
+          "answer_c": "Un carrefour à sens giratoire, généralement avec priorité aux usagers de l'anneau.",
+          "answer_d": "Je suis toujours prioritaire en entrant.",
+          "explanation": "Ce panneau annonce un carrefour à sens giratoire. Je ralentis, j'observe la signalisation et le marquage à l'approche, puis je cède le passage aux usagers de l'anneau lorsque cela est imposé."
+        }
+      }
+    },
+    {
+      "category_slug": "parking_stopping",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "image_path": "france/situation_no_stopping_b6d.png",
+      "translations": {
+        "en": {
+          "question_text": "May I stop after this sign to let a passenger out?",
+          "answer_a": "Yes, if I remain at the wheel.",
+          "answer_b": "Yes, if the stop lasts less than one minute.",
+          "answer_c": "No, even for a very brief stop.",
+          "answer_d": "Yes, if I switch on the hazard lights.",
+          "explanation": "The B6d sign prohibits both stopping and parking on the side of the road where it is placed. I may not stop there, even briefly to let a passenger out."
+        },
+        "fr": {
+          "question_text": "Puis-je m'arrêter après ce panneau pour laisser descendre un passager ?",
+          "answer_a": "Oui, si je reste au volant.",
+          "answer_b": "Oui, si l'arrêt dure moins d'une minute.",
+          "answer_c": "Non, même pour un arrêt très bref.",
+          "answer_d": "Oui, si j'allume les feux de détresse.",
+          "explanation": "Le panneau B6d interdit l'arrêt et le stationnement du côté de la chaussée où il est implanté. Je ne peux donc pas m'arrêter à cet endroit, même brièvement pour laisser descendre un passager."
+        }
+      }
+    },
+    {
+      "category_slug": "priority_rules",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_priority_c18_bridge.png",
+      "translations": {
+        "en": {
+          "question_text": "The oncoming vehicle is already committed to the narrow passage. What should I do?",
+          "answer_a": "Enter the passage because I have priority.",
+          "answer_b": "Wait until the vehicle has cleared the passage.",
+          "answer_c": "Sound the horn so the vehicle reverses.",
+          "answer_d": "Enter at the same time and pass carefully.",
+          "explanation": "The C18 sign normally gives me priority over oncoming traffic. However, I must not force the passage when another vehicle is already committed and cannot pass me safely. I wait until the bridge is clear."
+        },
+        "fr": {
+          "question_text": "Le véhicule venant en face est déjà engagé. Que dois-je faire ?",
+          "answer_a": "M'engager, car je suis prioritaire.",
+          "answer_b": "Attendre qu'il ait dégagé le passage.",
+          "answer_c": "Klaxonner pour qu'il recule.",
+          "answer_d": "M'engager en même temps et le croiser prudemment.",
+          "explanation": "Le panneau C18 m'accorde normalement la priorité sur la circulation venant en sens inverse. Toutefois, je ne dois pas forcer le passage lorsqu'un véhicule est déjà engagé et que le croisement est impossible. J'attends que le pont soit dégagé."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_pedestrian_crossing_c20a.png",
+      "translations": {
+        "en": {
+          "question_text": "This pedestrian clearly intends to cross. What should I do?",
+          "answer_a": "Slow down and pass before the pedestrian.",
+          "answer_b": "Stop and let the pedestrian cross.",
+          "answer_c": "Sound the horn to signal my presence.",
+          "answer_d": "Continue because the pedestrian is still on the pavement.",
+          "explanation": "At a pedestrian crossing, I must give way by stopping when necessary to a pedestrian who is crossing or clearly intends to cross. Here, I stop and let the pedestrian cross safely."
+        },
+        "fr": {
+          "question_text": "Ce piéton manifeste l'intention de traverser. Que dois-je faire ?",
+          "answer_a": "Ralentir et passer avant lui.",
+          "answer_b": "M'arrêter pour le laisser traverser.",
+          "answer_c": "Klaxonner pour signaler ma présence.",
+          "answer_d": "Continuer, car le piéton est encore sur le trottoir.",
+          "explanation": "À un passage pour piétons, je dois céder le passage en m'arrêtant si nécessaire à tout piéton engagé ou manifestant clairement l'intention de traverser. Ici, je m'arrête et je le laisse traverser en sécurité."
+        }
+      }
+    },
+    {
+      "category_slug": "priority_rules",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_priority_road_ab6.png",
+      "translations": {
+        "en": {
+          "question_text": "At this intersection, must I give way to the vehicle coming from the right?",
+          "answer_a": "Yes, priority to the right applies.",
+          "answer_b": "No, I am travelling on a priority road.",
+          "answer_c": "Yes, but only if that vehicle is turning left.",
+          "answer_d": "Yes, because the side road is on my right.",
+          "explanation": "The AB6 sign indicates that I am travelling on a priority road. At this intersection, the vehicle entering from the side road must give way. I nevertheless remain vigilant and ensure that it has seen me."
+        },
+        "fr": {
+          "question_text": "À cette intersection, dois-je céder le passage au véhicule venant de droite ?",
+          "answer_a": "Oui, la priorité à droite s'applique.",
+          "answer_b": "Non, je circule sur une route prioritaire.",
+          "answer_c": "Oui, uniquement si ce véhicule tourne à gauche.",
+          "answer_d": "Oui, car la voie latérale se trouve à ma droite.",
+          "explanation": "Le panneau AB6 indique que je circule sur une route à caractère prioritaire. À cette intersection, le véhicule venant de la voie latérale doit me céder le passage. Je reste néanmoins vigilant et je vérifie qu'il m'a vu."
+        }
+      }
+    },
+    {
+      "category_slug": "priority_rules",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_end_priority_road_ab7.png",
+      "translations": {
+        "en": {
+          "question_text": "At the next intersection, does the vehicle coming from the right have priority?",
+          "answer_a": "No, I remain on a priority road until another sign.",
+          "answer_b": "Yes, priority to the right applies.",
+          "answer_c": "No, because I am travelling on the wider road.",
+          "answer_d": "No, because I am continuing straight ahead.",
+          "explanation": "The AB7 sign ends the priority-road status. At the following unregulated intersection, I must apply priority to the right and give way to the vehicle approaching from that side."
+        },
+        "fr": {
+          "question_text": "À la prochaine intersection, le véhicule venant de droite est-il prioritaire ?",
+          "answer_a": "Non, je reste prioritaire jusqu'au prochain panneau.",
+          "answer_b": "Oui, la priorité à droite s'applique.",
+          "answer_c": "Non, car je circule sur la route la plus large.",
+          "answer_d": "Non, car je continue tout droit.",
+          "explanation": "Le panneau AB7 met fin au caractère prioritaire de la route. À l'intersection suivante dépourvue d'autre signalisation, j'applique la priorité à droite et je cède le passage au véhicule arrivant de ce côté."
+        }
+      }
+    },
+    {
+      "category_slug": "safety",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "image_path": "france/situation_mandatory_cycle_lane_b22a.png",
+      "translations": {
+        "en": {
+          "question_text": "May I use this cycle lane to overtake the vehicle on the right?",
+          "answer_a": "Yes, if no cyclist is immediately beside me.",
+          "answer_b": "No, this lane is reserved for cycles.",
+          "answer_c": "Yes, but only for a brief overtake.",
+          "answer_d": "Yes, if I switch on my right indicator.",
+          "explanation": "The B22a sign indicates a mandatory cycle lane or path reserved for cycles. A motor vehicle may not use it to overtake, even briefly or when no cyclist is immediately alongside."
+        },
+        "fr": {
+          "question_text": "Puis-je emprunter cette piste cyclable pour dépasser le véhicule par la droite ?",
+          "answer_a": "Oui, si aucun cycliste n'est juste à côté de moi.",
+          "answer_b": "Non, cette piste est réservée aux cycles.",
+          "answer_c": "Oui, uniquement pour un dépassement bref.",
+          "answer_d": "Oui, si j'actionne mon clignotant droit.",
+          "explanation": "Le panneau B22a indique une piste ou une bande obligatoire réservée aux cycles. Un véhicule motorisé ne peut pas l'emprunter pour dépasser, même brièvement ou lorsqu'aucun cycliste ne se trouve immédiatement à sa hauteur."
         }
       }
     }

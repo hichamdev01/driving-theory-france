@@ -5,7 +5,29 @@ enum MainTab: Hashable {
 }
 
 final class TabRouter: ObservableObject {
-    @Published var selectedTab: MainTab = .home
+    @Published var selectedTab: MainTab
+
+    init() {
+        #if DEBUG
+        let arguments = ProcessInfo.processInfo.arguments
+        if let flagIndex = arguments.firstIndex(of: "-UITestTab"), arguments.indices.contains(flagIndex + 1) {
+            selectedTab = Self.tab(named: arguments[flagIndex + 1]) ?? .home
+            return
+        }
+        #endif
+        selectedTab = .home
+    }
+
+    private static func tab(named name: String) -> MainTab? {
+        switch name {
+        case "practice": .practice
+        case "exam": .exam
+        case "signs": .roadSigns
+        case "progress": .progress
+        case "mistakes": .mistakes
+        default: nil
+        }
+    }
 }
 
 enum QuizMode: Hashable {

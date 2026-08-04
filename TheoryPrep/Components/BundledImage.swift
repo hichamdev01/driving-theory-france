@@ -1,5 +1,6 @@
 import SwiftUI
 import UIKit
+import AVKit
 
 enum BundledImageLoader {
     /// imagePath is expected as "<country-folder>/<filename.ext>" relative to Content/, e.g. "france/stop.png"
@@ -16,6 +17,50 @@ enum BundledImageLoader {
             )
         else { return nil }
         return UIImage(contentsOfFile: url.path)
+    }
+}
+
+enum BundledVideoLoader {
+    /// videoPath is expected as "<country-folder>/<filename.ext>" relative to Content/.
+    static func url(for videoPath: String) -> URL? {
+        let parts = videoPath.split(separator: "/", maxSplits: 1)
+        guard parts.count == 2 else { return nil }
+        let countryFolder = String(parts[0])
+        let filename = String(parts[1])
+        let ext = (filename as NSString).pathExtension
+        let name = (filename as NSString).deletingPathExtension
+        return Bundle.main.url(
+            forResource: name, withExtension: ext, subdirectory: "Content/\(countryFolder)/videos"
+        )
+    }
+}
+
+struct BundledQuestionMedia: View {
+    let imagePath: String?
+    let videoPath: String?
+
+    var body: some View {
+        if let videoPath, let url = BundledVideoLoader.url(for: videoPath) {
+            BundledVideoPlayer(url: url)
+        } else if let imagePath, let uiImage = BundledImageLoader.uiImage(for: imagePath) {
+            Image(uiImage: uiImage)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+        }
+    }
+}
+
+private struct BundledVideoPlayer: View {
+    @State private var player: AVPlayer
+
+    init(url: URL) {
+        _player = State(initialValue: AVPlayer(url: url))
+    }
+
+    var body: some View {
+        VideoPlayer(player: player)
+            .aspectRatio(16 / 9, contentMode: .fit)
+            .onDisappear { player.pause() }
     }
 }
 

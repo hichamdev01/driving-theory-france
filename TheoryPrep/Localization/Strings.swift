@@ -7,6 +7,7 @@ enum StringKey: String {
     case yourProgress, questionsAnswered, accuracy, weakTopic, continueStudying, startExam, noDataYet
     case allCategories, randomPractice, randomPracticeSubtitle, practiceByCategory
     case submitAnswer, continueButton, finishButton, correct, incorrect, correctAnswerWas, explanation
+    case selectAllAnswers, maximumMistakes, mistakeCount
     case questionOf, practiceComplete, backToHome, practiceAgain
     case timeRemaining, examIntroTitle, examIntroDescription, numberOfQuestions, timeLimit, passingScore, beginExam
     case examResults, passed, failed, yourScore, reviewAnswers, retakeExam, timeUp
@@ -57,6 +58,12 @@ private func buildStrings() -> [StringKey: L] {
     )
     s[.practiceByCategory] = entry("Practice by Category", "S’entraîner par Catégorie")
     s[.submitAnswer] = entry("Submit", "Valider")
+    s[.selectAllAnswers] = entry(
+        "Select all correct answers. More than one answer may be correct.",
+        "Sélectionnez toutes les bonnes réponses. Plusieurs réponses peuvent être correctes."
+    )
+    s[.maximumMistakes] = entry("Maximum Mistakes", "Fautes Maximales")
+    s[.mistakeCount] = entry("mistakes", "fautes")
     s[.continueButton] = entry("Continue", "Continuer")
     s[.finishButton] = entry("Finish", "Terminer")
     s[.correct] = entry("Correct!", "Correct !")

@@ -17,39 +17,62 @@ struct PrimaryButton: View {
 
     var body: some View {
         Button(action: action) {
-            Group {
-                if loading {
-                    ProgressView().tint(foreground)
-                } else {
-                    Text(label)
-                        .font(.display(16, .semibold))
-                        .foregroundColor(foreground)
+            ZStack {
+                // Background
+                backgroundFill
+
+                // Glass shine overlay for primary/danger
+                if variant != .secondary {
+                    LinearGradient(
+                        colors: [.white.opacity(0.14), .clear],
+                        startPoint: .top,
+                        endPoint: .center
+                    )
+                }
+
+                // Label / spinner
+                Group {
+                    if loading {
+                        ProgressView().tint(foreground)
+                    } else {
+                        Text(label)
+                            .font(.display(18, .semibold))
+                            .foregroundColor(foreground)
+                            .tracking(0.2)
+                    }
                 }
             }
             .frame(maxWidth: .infinity)
-            .padding(.vertical, 16)
-            .background(background)
+            .frame(height: 54)
             .overlay(
                 RoundedRectangle(cornerRadius: Theme.controlRadius)
-                    .stroke(variant == .secondary ? Theme.routeBlue.opacity(0.5) : .clear, lineWidth: 1.5)
+                    .stroke(
+                        variant == .secondary ? Theme.routeBlue.opacity(0.4) : .clear,
+                        lineWidth: 1.5
+                    )
             )
             .clipShape(RoundedRectangle(cornerRadius: Theme.controlRadius))
-            .shadow(
-                color: variant == .primary ? Theme.routeBlue.opacity(0.35) : .clear,
-                radius: 14, x: 0, y: 8
-            )
+            .shadow(color: shadowColor, radius: 10, x: 0, y: 5)
         }
         .buttonStyle(PressableStyle())
-        .opacity(disabled ? 0.5 : 1)
+        .opacity(disabled ? 0.45 : 1)
         .disabled(disabled || loading)
     }
 
     @ViewBuilder
-    private var background: some View {
+    private var backgroundFill: some View {
         switch variant {
         case .primary: Theme.buttonGradient
-        case .danger: LinearGradient(colors: [Theme.danger, Theme.danger.opacity(0.85)], startPoint: .top, endPoint: .bottom)
+        case .danger:  Theme.dangerGradient
         case .secondary: Theme.surface
+        }
+    }
+
+    private var shadowColor: Color {
+        switch variant {
+        case .primary: Color(hex: "0F44C4").opacity(0.28)
+        case .danger:  Color(hex: "B51D30").opacity(0.28)
+        case .secondary: .clear
         }
     }
 }

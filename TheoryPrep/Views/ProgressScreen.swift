@@ -8,10 +8,16 @@ struct ProgressScreen: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                Text(settings.t(.progress))
-                    .font(.display(26, .bold))
-                    .foregroundColor(Theme.text)
-                    .padding(.top, 12)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(settings.t(.appName).uppercased())
+                        .font(.system(size: 10, weight: .bold))
+                        .tracking(1.5)
+                        .foregroundColor(Theme.routeBlue)
+                    Text(settings.t(.progress))
+                        .font(.display(34, .bold))
+                        .foregroundColor(Theme.text)
+                }
+                .padding(.top, 12)
 
                 CardView {
                     HStack(spacing: 20) {
@@ -87,6 +93,10 @@ struct ProgressScreen: View {
                 }
             }
             .padding(20)
+            .padding(
+                .bottom,
+                TabBarLayout.scrollContentBottomPadding - 20
+            )
         }
         .background(Theme.background.ignoresSafeArea())
         .navigationBarHidden(true)

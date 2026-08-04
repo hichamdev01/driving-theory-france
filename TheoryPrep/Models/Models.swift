@@ -10,6 +10,14 @@ enum CountryCode: String, Codable, CaseIterable, Hashable {
 
 enum AnswerKey: String, Codable, CaseIterable, Hashable {
     case a, b, c, d
+
+    static func decodeSet(_ value: String) -> Set<AnswerKey> {
+        Set(value.split(separator: ",").compactMap { AnswerKey(rawValue: String($0)) })
+    }
+
+    static func encodeSet(_ answers: Set<AnswerKey>) -> String {
+        answers.sorted { $0.rawValue < $1.rawValue }.map(\.rawValue).joined(separator: ",")
+    }
 }
 
 struct Language: Identifiable, Hashable {
@@ -28,9 +36,10 @@ struct QuestionWithTranslation: Identifiable, Hashable {
     let id: Int64
     let countryId: Int64
     let categoryId: Int64
-    let correctAnswer: AnswerKey
+    let correctAnswers: Set<AnswerKey>
     let difficulty: String
     let imagePath: String?
+    let videoPath: String?
     let categorySlug: String
     let categoryName: String
     let questionText: String
@@ -39,6 +48,17 @@ struct QuestionWithTranslation: Identifiable, Hashable {
     let answerC: String
     let answerD: String
     let explanation: String
+
+    var correctAnswer: AnswerKey {
+        correctAnswers.sorted { $0.rawValue < $1.rawValue }.first ?? .a
+    }
+
+    var correctAnswerText: String {
+        correctAnswers
+            .sorted { $0.rawValue < $1.rawValue }
+            .map { "\($0.rawValue.uppercased()). \(answerText(for: $0))" }
+            .joined(separator: " • ")
+    }
 
     func answerText(for key: AnswerKey) -> String {
         switch key {
@@ -117,7 +137,7 @@ struct ExamResultRow: Identifiable, Hashable {
 
 struct ExamResultAnswerRow: Identifiable, Hashable {
     let question: QuestionWithTranslation
-    let selectedAnswer: AnswerKey?
+    let selectedAnswers: Set<AnswerKey>
     let wasCorrect: Bool
 
     var id: Int64 { question.id }

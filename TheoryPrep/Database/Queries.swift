@@ -52,7 +52,8 @@ enum Queries {
     private static let questionSelect = """
         SELECT
           q.id as id, q.country_id as country_id, q.category_id as category_id,
-          q.correct_answer as correct_answer, q.difficulty as difficulty, q.image_path as image_path,
+          q.correct_answers as correct_answers, q.difficulty as difficulty,
+          q.image_path as image_path, q.video_path as video_path,
           cat.slug as category_slug, ct.name as category_name,
           qt.question_text as question_text, qt.answer_a as answer_a, qt.answer_b as answer_b,
           qt.answer_c as answer_c, qt.answer_d as answer_d, qt.explanation as explanation
@@ -69,9 +70,10 @@ enum Queries {
             id: r.int64("id"),
             countryId: r.int64("country_id"),
             categoryId: r.int64("category_id"),
-            correctAnswer: AnswerKey(rawValue: r.text("correct_answer"))!,
+            correctAnswers: AnswerKey.decodeSet(r.text("correct_answers")),
             difficulty: r.text("difficulty"),
             imagePath: r.textOrNil("image_path"),
+            videoPath: r.textOrNil("video_path"),
             categorySlug: r.text("category_slug"),
             categoryName: r.text("category_name"),
             questionText: r.text("question_text"),
@@ -168,7 +170,8 @@ enum Queries {
             """
             SELECT
               q.id as id, q.country_id as country_id, q.category_id as category_id,
-              q.correct_answer as correct_answer, q.difficulty as difficulty, q.image_path as image_path,
+              q.correct_answers as correct_answers, q.difficulty as difficulty,
+              q.image_path as image_path, q.video_path as video_path,
               cat.slug as category_slug, ct.name as category_name,
               qt.question_text as question_text, qt.answer_a as answer_a, qt.answer_b as answer_b,
               qt.answer_c as answer_c, qt.answer_d as answer_d, qt.explanation as explanation,
@@ -243,7 +246,7 @@ enum Queries {
 
     struct ExamAnswerInput {
         let questionId: Int64
-        let selectedAnswer: AnswerKey?
+        let selectedAnswers: Set<AnswerKey>
         let correct: Bool
     }
 
@@ -268,10 +271,15 @@ enum Queries {
             for answer in answers {
                 db.run(
                     """
-                    INSERT INTO exam_result_answers (exam_result_id, question_id, selected_answer, correct)
-                    VALUES (?, ?, ?, ?)
+                    INSERT INTO exam_result_answers
+                      (exam_result_id, question_id, selected_answer, selected_answers, correct)
+                    VALUES (?, ?, ?, ?, ?)
                     """,
-                    [examResultId, answer.questionId, answer.selectedAnswer?.rawValue, answer.correct]
+                    [
+                        examResultId, answer.questionId,
+                        answer.selectedAnswers.sorted { $0.rawValue < $1.rawValue }.first?.rawValue,
+                        AnswerKey.encodeSet(answer.selectedAnswers), answer.correct,
+                    ]
                 )
             }
         }
@@ -296,11 +304,12 @@ enum Queries {
             """
             SELECT
               q.id as id, q.country_id as country_id, q.category_id as category_id,
-              q.correct_answer as correct_answer, q.difficulty as difficulty, q.image_path as image_path,
+              q.correct_answers as correct_answers, q.difficulty as difficulty,
+              q.image_path as image_path, q.video_path as video_path,
               cat.slug as category_slug, ct.name as category_name,
               qt.question_text as question_text, qt.answer_a as answer_a, qt.answer_b as answer_b,
               qt.answer_c as answer_c, qt.answer_d as answer_d, qt.explanation as explanation,
-              era.selected_answer as selected_answer, era.correct as was_correct
+              era.selected_answers as selected_answers, era.correct as was_correct
             FROM exam_result_answers era
             JOIN questions q ON q.id = era.question_id
             JOIN categories cat ON cat.id = q.category_id
@@ -313,7 +322,7 @@ enum Queries {
         ) { r in
             ExamResultAnswerRow(
                 question: mapQuestion(r),
-                selectedAnswer: r.textOrNil("selected_answer").flatMap(AnswerKey.init(rawValue:)),
+                selectedAnswers: AnswerKey.decodeSet(r.textOrNil("selected_answers") ?? ""),
                 wasCorrect: r.bool("was_correct")
             )
         }

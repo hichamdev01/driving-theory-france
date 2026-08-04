@@ -8,7 +8,7 @@ struct QuestionView: View {
     @EnvironmentObject var settings: AppSettings
     @State private var questions: [QuestionWithTranslation]?
     @State private var index = 0
-    @State private var selected: AnswerKey?
+    @State private var selected: Set<AnswerKey> = []
     @State private var submitted = false
     @State private var correctCount = 0
 
@@ -32,23 +32,38 @@ struct QuestionView: View {
             }
         }
         .onAppear(perform: loadQuestions)
+        // A question is a focused flow. Keeping the floating tab bar visible
+        // consumes the space needed by the Validate button on smaller screens.
+        .preference(key: TabBarHiddenPreferenceKey.self, value: true)
     }
 
     @ViewBuilder
     private func questionBody(_ question: QuestionWithTranslation, total: Int) -> some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                VStack(alignment: .leading, spacing: 6) {
+            VStack(alignment: .leading, spacing: 20) {
+
+                // Header: question counter + progress bar
+                VStack(alignment: .leading, spacing: 8) {
                     HStack {
                         Text("\(settings.t(.questionOf)) \(index + 1) / \(total)")
-                            .font(.system(size: 13))
-                            .foregroundColor(Theme.textMuted)
+                            .font(.gauge(11.5, .bold))
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 6)
+                            .background(Theme.buttonGradient)
+                            .clipShape(Capsule())
+
                         Spacer()
+
                         Text(question.categoryName)
-                            .font(.system(size: 12, weight: .semibold))
-                            .foregroundColor(Theme.routeBlue)
+                            .font(.system(size: 10, weight: .bold))
+                            .tracking(0.8)
+                            .foregroundColor(Theme.textMuted)
                             .textCase(.uppercase)
+                            .lineLimit(1)
                     }
+
+                    // Progress bar
                     GeometryReader { geo in
                         ZStack(alignment: .leading) {
                             Capsule().fill(Theme.border)
@@ -58,139 +73,217 @@ struct QuestionView: View {
                                 .animation(.spring(response: 0.5, dampingFraction: 0.85), value: index)
                         }
                     }
-                    .frame(height: 6)
+                    .frame(height: 5)
                 }
                 .padding(.top, 8)
 
-                if let imagePath = question.imagePath, let uiImage = BundledImageLoader.uiImage(for: imagePath) {
-                    Image(uiImage: uiImage)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
+                // Image / video
+                if question.imagePath != nil || question.videoPath != nil {
+                    BundledQuestionMedia(imagePath: question.imagePath, videoPath: question.videoPath)
                         .frame(maxWidth: .infinity)
                         .clipShape(RoundedRectangle(cornerRadius: Theme.cardRadius))
-                        .shadow(color: Theme.text.opacity(0.12), radius: 14, x: 0, y: 6)
+                        .shadow(color: .black.opacity(0.12), radius: 14, x: 0, y: 6)
                         .padding(.horizontal, -20)
                 }
 
+                // Question text
                 Text(question.questionText)
-                    .font(.display(20, .bold))
+                    .font(.display(24, .bold))
                     .foregroundColor(Theme.text)
+                    .lineSpacing(3)
 
+                // Instruction
+                Text(settings.t(.selectAllAnswers))
+                    .font(.system(size: 12.5, weight: .medium))
+                    .foregroundColor(Theme.textMuted)
+                    .lineSpacing(1.5)
+
+                // Answer choices
                 VStack(spacing: 10) {
                     ForEach(AnswerKey.allCases, id: \.self) { key in
                         answerRow(key, question: question)
                     }
                 }
 
+                // Feedback card
                 if submitted {
                     feedbackCard(question)
-                        .transition(.asymmetric(insertion: .opacity.combined(with: .move(edge: .top)), removal: .opacity))
+                        .transition(.asymmetric(
+                            insertion: .opacity.combined(with: .move(edge: .top)),
+                            removal: .opacity
+                        ))
                 }
 
+                // Action button
                 PrimaryButton(
-                    label: submitted ? (index == total - 1 ? settings.t(.finishButton) : settings.t(.continueButton)) : settings.t(.submitAnswer),
-                    disabled: !submitted && selected == nil
+                    label: submitted
+                        ? (index == total - 1 ? settings.t(.finishButton) : settings.t(.continueButton))
+                        : settings.t(.submitAnswer),
+                    disabled: !submitted && selected.isEmpty
                 ) {
                     submitted ? handleContinue(total: total) : handleSubmit(question)
                 }
             }
             .padding(20)
+            .padding(
+                .bottom,
+                TabBarLayout.scrollContentBottomPadding - 20
+            )
         }
         .background(Theme.background.ignoresSafeArea())
         .navigationBarTitleDisplayMode(.inline)
-        .animation(.spring(response: 0.4, dampingFraction: 0.85), value: submitted)
+        .animation(.spring(response: 0.38, dampingFraction: 0.85), value: submitted)
     }
 
+    // MARK: – Answer row
+
     private func answerRow(_ key: AnswerKey, question: QuestionWithTranslation) -> some View {
-        let isSelected = selected == key
-        let isCorrectAnswer = key == question.correctAnswer
-        var borderColor = Theme.border
-        var backgroundColor = Theme.surface
-        if submitted && isCorrectAnswer {
-            borderColor = Theme.success
-            backgroundColor = Theme.success.opacity(0.1)
-        } else if submitted && isSelected && !isCorrectAnswer {
-            borderColor = Theme.danger
-            backgroundColor = Theme.danger.opacity(0.1)
-        } else if !submitted && isSelected {
-            borderColor = Theme.routeBlue
-            backgroundColor = Theme.routeBlue.opacity(0.08)
-        }
+        let isSelected = selected.contains(key)
+        let isCorrectAnswer = question.correctAnswers.contains(key)
+
+        // Colours
+        let accentColor: Color = {
+            if submitted && isCorrectAnswer { return Theme.success }
+            if submitted && isSelected && !isCorrectAnswer { return Theme.danger }
+            if !submitted && isSelected { return Theme.routeBlue }
+            return Theme.border
+        }()
+        let bgColor: Color = {
+            if submitted && isCorrectAnswer { return Theme.success.opacity(0.08) }
+            if submitted && isSelected && !isCorrectAnswer { return Theme.danger.opacity(0.08) }
+            if !submitted && isSelected { return Theme.routeBlue.opacity(0.07) }
+            return Theme.surface
+        }()
 
         return Button(action: {
             if !submitted {
-                withAnimation(.spring(response: 0.3, dampingFraction: 0.55)) { selected = key }
-            }
-        }) {
-            HStack(spacing: 12) {
-                Text(key.rawValue.uppercased())
-                    .font(.system(size: 14, weight: .heavy))
-                    .foregroundColor(Theme.textMuted)
-                    .frame(width: 20, alignment: .leading)
-                Text(question.answerText(for: key))
-                    .font(.system(size: 15))
-                    .foregroundColor(Theme.text)
-                    .multilineTextAlignment(.leading)
-                Spacer()
-                if submitted && isCorrectAnswer {
-                    Image(systemName: "checkmark.circle.fill").foregroundColor(Theme.success)
-                } else if submitted && isSelected && !isCorrectAnswer {
-                    Image(systemName: "xmark.circle.fill").foregroundColor(Theme.danger)
+                withAnimation(.spring(response: 0.28, dampingFraction: 0.7)) {
+                    if selected.contains(key) { selected.remove(key) } else { selected.insert(key) }
                 }
             }
-            .padding(16)
-            .background(backgroundColor)
-            .overlay(RoundedRectangle(cornerRadius: Theme.controlRadius).stroke(borderColor, lineWidth: 2))
+        }) {
+            HStack(spacing: 14) {
+                // Letter badge
+                ZStack {
+                    Circle()
+                        .fill(isSelected && !submitted
+                              ? Theme.buttonGradient
+                              : LinearGradient(colors: [Theme.surfaceAlt, Theme.surfaceAlt],
+                                               startPoint: .top, endPoint: .bottom))
+                        .frame(width: 32, height: 32)
+
+                    Text(key.rawValue.uppercased())
+                        .font(.gauge(11.5, .bold))
+                        .foregroundColor(isSelected && !submitted ? .white : Theme.textMuted)
+                }
+
+                Text(question.answerText(for: key))
+                    .font(.system(size: 15, weight: .regular))
+                    .foregroundColor(Theme.text)
+                    .multilineTextAlignment(.leading)
+                    .lineSpacing(1.5)
+
+                Spacer()
+
+                if submitted && isCorrectAnswer {
+                    Image(systemName: "checkmark.circle.fill")
+                        .foregroundColor(Theme.success)
+                        .font(.system(size: 18))
+                } else if submitted && isSelected && !isCorrectAnswer {
+                    Image(systemName: "xmark.circle.fill")
+                        .foregroundColor(Theme.danger)
+                        .font(.system(size: 18))
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 14)
+            .background(bgColor)
+            .overlay(alignment: .leading) {
+                // Left accent bar (replaces full border — cleaner look)
+                RoundedRectangle(cornerRadius: 3)
+                    .fill(accentColor)
+                    .frame(width: 3)
+                    .padding(.vertical, 10)
+            }
+            .overlay(
+                RoundedRectangle(cornerRadius: Theme.controlRadius)
+                    .stroke(accentColor.opacity(submitted ? 0.5 : 0.8), lineWidth: 1)
+            )
             .clipShape(RoundedRectangle(cornerRadius: Theme.controlRadius))
-            .scaleEffect(isSelected && !submitted ? 1.02 : 1)
+            .scaleEffect(isSelected && !submitted ? 1.015 : 1)
         }
         .buttonStyle(.plain)
         .disabled(submitted)
     }
 
+    // MARK: – Feedback card
+
     private func feedbackCard(_ question: QuestionWithTranslation) -> some View {
-        let isCorrect = selected == question.correctAnswer
-        return VStack(alignment: .leading, spacing: 6) {
-            HStack(spacing: 8) {
-                Image(systemName: isCorrect ? "checkmark.seal.fill" : "xmark.seal.fill")
-                    .foregroundColor(isCorrect ? Theme.success : Theme.danger)
+        let isCorrect = selected == question.correctAnswers
+        let accentColor = isCorrect ? Theme.success : Theme.danger
+        let gradient = isCorrect ? Theme.successGradient : Theme.dangerGradient
+
+        return VStack(alignment: .leading, spacing: 10) {
+            HStack(spacing: 10) {
+                ZStack {
+                    Circle()
+                        .fill(gradient)
+                        .frame(width: 32, height: 32)
+                    Image(systemName: isCorrect ? "checkmark" : "xmark")
+                        .font(.system(size: 13, weight: .bold))
+                        .foregroundColor(.white)
+                }
                 Text(isCorrect ? settings.t(.correct) : settings.t(.incorrect))
-                    .font(.display(17, .heavy))
-                    .foregroundColor(isCorrect ? Theme.success : Theme.danger)
+                    .font(.display(18, .heavy))
+                    .foregroundColor(accentColor)
             }
+
             if !isCorrect {
-                Text("\(settings.t(.correctAnswerWas)) \(question.answerText(for: question.correctAnswer))")
-                    .font(.system(size: 14, weight: .semibold))
+                Text("\(settings.t(.correctAnswerWas)) \(question.correctAnswerText)")
+                    .font(.system(size: 13.5, weight: .semibold))
                     .foregroundColor(Theme.text)
             }
-            Text(settings.t(.explanation))
-                .font(.system(size: 12, weight: .bold))
-                .foregroundColor(Theme.textMuted)
-                .textCase(.uppercase)
-                .padding(.top, 4)
-            Text(question.explanation)
-                .font(.system(size: 14))
-                .foregroundColor(Theme.text)
+
+            Divider().background(Theme.border)
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text(settings.t(.explanation).uppercased())
+                    .font(.system(size: 10, weight: .bold))
+                    .tracking(1)
+                    .foregroundColor(Theme.textMuted)
+                Text(question.explanation)
+                    .font(.system(size: 14))
+                    .foregroundColor(Theme.text)
+                    .lineSpacing(2)
+            }
         }
-        .padding(16)
+        .padding(18)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Theme.surfaceAlt)
+        .overlay(alignment: .leading) {
+            RoundedRectangle(cornerRadius: 3)
+                .fill(accentColor)
+                .frame(width: 3)
+                .padding(.vertical, 14)
+        }
         .clipShape(RoundedRectangle(cornerRadius: Theme.controlRadius))
     }
+
+    // MARK: – Logic
 
     private func loadQuestions() {
         guard questions == nil, let country = settings.countryCode, let language = settings.languageCode else { return }
         switch mode {
         case .practice:
-            questions = Queries.getPracticeQuestions(Database.shared, country, language, categoryId: categoryId, limit: 10)
+            questions = Queries.getPracticeQuestions(Database.shared, country, language, categoryId: categoryId)
         case .mistakes:
             questions = Queries.getMistakes(Database.shared, country, language).map(\.question)
         }
     }
 
     private func handleSubmit(_ question: QuestionWithTranslation) {
-        guard let selected else { return }
-        let isCorrect = selected == question.correctAnswer
+        guard !selected.isEmpty else { return }
+        let isCorrect = selected == question.correctAnswers
         if isCorrect { correctCount += 1 }
         Queries.recordAnswer(Database.shared, question.id, isCorrect)
         submitted = true
@@ -202,7 +295,7 @@ struct QuestionView: View {
             return
         }
         index += 1
-        selected = nil
+        selected = []
         submitted = false
     }
 }

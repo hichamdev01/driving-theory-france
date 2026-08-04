@@ -22,9 +22,11 @@ struct CardView<Content: View>: View {
             .background(background)
             .overlay(
                 RoundedRectangle(cornerRadius: Theme.cardRadius)
-                    .stroke(borderColor ?? .clear, lineWidth: borderColor == nil ? 0 : 1)
+                    .stroke(borderColor ?? .clear, lineWidth: borderColor == nil ? 0 : 0.75)
             )
             .clipShape(RoundedRectangle(cornerRadius: Theme.cardRadius))
-            .shadow(color: Theme.text.opacity(0.05), radius: 12, x: 0, y: 4)
+            // Two-layer shadow: tight dark for definition, wide soft for elevation
+            .shadow(color: .black.opacity(0.04), radius: 2, x: 0, y: 1)
+            .shadow(color: .black.opacity(0.07), radius: 14, x: 0, y: 5)
     }
 }

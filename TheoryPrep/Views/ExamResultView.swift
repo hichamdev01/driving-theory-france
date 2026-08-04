@@ -29,6 +29,9 @@ struct ExamResultView: View {
                             Text("\(result.correctQuestions) / \(result.totalQuestions) \(settings.t(.questionsAnswered))")
                                 .font(.system(size: 14, weight: .semibold))
                                 .foregroundColor(Theme.text)
+                            Text("\(result.totalQuestions - result.correctQuestions) \(settings.t(.mistakeCount))")
+                                .font(.system(size: 14, weight: .semibold))
+                                .foregroundColor(result.passed ? Theme.textMuted : Theme.danger)
                         }
                         .frame(maxWidth: .infinity)
                     }
@@ -52,10 +55,8 @@ struct ExamResultView: View {
                                         .foregroundColor(Theme.primary)
                                         .textCase(.uppercase)
 
-                                    if let imagePath = row.question.imagePath, let uiImage = BundledImageLoader.uiImage(for: imagePath) {
-                                        Image(uiImage: uiImage)
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
+                                    if row.question.imagePath != nil || row.question.videoPath != nil {
+                                        BundledQuestionMedia(imagePath: row.question.imagePath, videoPath: row.question.videoPath)
                                             .frame(maxWidth: .infinity)
                                             .clipShape(RoundedRectangle(cornerRadius: Theme.controlRadius))
                                     }
@@ -63,7 +64,7 @@ struct ExamResultView: View {
                                     Text(row.question.questionText)
                                         .font(.system(size: 15, weight: .bold))
                                         .foregroundColor(Theme.text)
-                                    Text("\(settings.t(.correctAnswerWas)) \(row.question.answerText(for: row.question.correctAnswer))")
+                                    Text("\(settings.t(.correctAnswerWas)) \(row.question.correctAnswerText)")
                                         .font(.system(size: 13, weight: .semibold))
                                         .foregroundColor(Theme.success)
                                     Text(row.question.explanation)

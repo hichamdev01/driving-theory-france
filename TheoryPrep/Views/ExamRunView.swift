@@ -7,11 +7,12 @@ struct ExamRunView: View {
     @State private var config: ExamConfiguration?
     @State private var questions: [QuestionWithTranslation]?
     @State private var index = 0
-    @State private var answers: [Int64: AnswerKey] = [:]
+    @State private var answers: [Int64: Set<AnswerKey>] = [:]
     @State private var remainingSeconds = 0
     @State private var finishing = false
     @State private var finished = false
     @State private var timer: Timer?
+    @State private var deadline: Date?
 
     var body: some View {
         Group {
@@ -26,44 +27,54 @@ struct ExamRunView: View {
         }
         .onAppear(perform: load)
         .onDisappear { timer?.invalidate() }
+        .preference(key: TabBarHiddenPreferenceKey.self, value: true)
     }
 
     @ViewBuilder
     private func examBody(config: ExamConfiguration, questions: [QuestionWithTranslation]) -> some View {
         let question = questions[index]
         let isLast = index == questions.count - 1
-        let selected = answers[question.id]
+        let selected = answers[question.id] ?? []
 
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                HStack {
-                    Image(systemName: "timer")
-                    Text("\(settings.t(.timeRemaining)): \(formatTime(remainingSeconds))")
-                        .font(.gauge(14, .bold))
+                HStack(spacing: 10) {
+                    Image(systemName: remainingSeconds < 60 ? "exclamationmark.triangle.fill" : "timer")
+                        .font(.system(size: 14, weight: .semibold))
+                    Text(formatTime(remainingSeconds))
+                        .font(.gauge(15, .bold))
+                    Text(settings.t(.timeRemaining).uppercased())
+                        .font(.system(size: 9, weight: .bold))
+                        .tracking(0.9)
+                    Spacer()
+                    Text("\(index + 1) / \(questions.count)")
+                        .font(.gauge(13, .bold))
                 }
-                .foregroundColor(remainingSeconds < 60 ? Theme.danger : Theme.textMuted)
+                .foregroundColor(remainingSeconds < 60 ? Theme.danger : Theme.text)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 11)
+                .background(remainingSeconds < 60 ? Theme.danger.opacity(0.09) : Theme.surface)
+                .clipShape(RoundedRectangle(cornerRadius: Theme.controlRadius))
+                .overlay(
+                    RoundedRectangle(cornerRadius: Theme.controlRadius)
+                        .stroke(remainingSeconds < 60 ? Theme.danger.opacity(0.5) : Theme.border, lineWidth: 1)
+                )
+                .shadow(color: .black.opacity(0.04), radius: 4, x: 0, y: 2)
                 .padding(.top, 8)
 
-                VStack(alignment: .leading, spacing: 6) {
-                    Text("\(settings.t(.questionOf)) \(index + 1) / \(questions.count)")
-                        .font(.system(size: 13))
-                        .foregroundColor(Theme.textMuted)
-                    GeometryReader { geo in
-                        ZStack(alignment: .leading) {
-                            Capsule().fill(Theme.border)
-                            Capsule()
-                                .fill(Theme.buttonGradient)
-                                .frame(width: geo.size.width * CGFloat(index + 1) / CGFloat(questions.count))
-                                .animation(.spring(response: 0.5, dampingFraction: 0.85), value: index)
-                        }
+                GeometryReader { geo in
+                    ZStack(alignment: .leading) {
+                        Capsule().fill(Theme.border)
+                        Capsule()
+                            .fill(Theme.dangerGradient)
+                            .frame(width: geo.size.width * CGFloat(index + 1) / CGFloat(questions.count))
+                            .animation(.spring(response: 0.5, dampingFraction: 0.85), value: index)
                     }
-                    .frame(height: 6)
                 }
+                .frame(height: 5)
 
-                if let imagePath = question.imagePath, let uiImage = BundledImageLoader.uiImage(for: imagePath) {
-                    Image(uiImage: uiImage)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
+                if question.imagePath != nil || question.videoPath != nil {
+                    BundledQuestionMedia(imagePath: question.imagePath, videoPath: question.videoPath)
                         .frame(maxWidth: .infinity)
                         .clipShape(RoundedRectangle(cornerRadius: Theme.cardRadius))
                         .shadow(color: Theme.text.opacity(0.12), radius: 14, x: 0, y: 6)
@@ -71,30 +82,60 @@ struct ExamRunView: View {
                 }
 
                 Text(question.questionText)
-                    .font(.display(20, .bold))
+                    .font(.display(23, .bold))
                     .foregroundColor(Theme.text)
+                    .lineSpacing(2)
+
+                Text(settings.t(.selectAllAnswers))
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundColor(Theme.textMuted)
 
                 VStack(spacing: 10) {
                     ForEach(AnswerKey.allCases, id: \.self) { key in
+                        let isSelected = selected.contains(key)
                         Button(action: {
-                            withAnimation(.spring(response: 0.3, dampingFraction: 0.55)) { answers[question.id] = key }
+                            withAnimation(.spring(response: 0.28, dampingFraction: 0.7)) {
+                                var updated = selected
+                                if updated.contains(key) { updated.remove(key) } else { updated.insert(key) }
+                                answers[question.id] = updated
+                            }
                         }) {
-                            HStack(spacing: 12) {
-                                Text(key.rawValue.uppercased())
-                                    .font(.system(size: 14, weight: .heavy))
-                                    .foregroundColor(Theme.textMuted)
-                                    .frame(width: 20, alignment: .leading)
+                            HStack(spacing: 14) {
+                                // Letter badge
+                                ZStack {
+                                    Circle()
+                                        .fill(isSelected
+                                              ? Theme.buttonGradient
+                                              : LinearGradient(colors: [Theme.surfaceAlt, Theme.surfaceAlt],
+                                                               startPoint: .top, endPoint: .bottom))
+                                        .frame(width: 32, height: 32)
+                                    Text(key.rawValue.uppercased())
+                                        .font(.gauge(11.5, .bold))
+                                        .foregroundColor(isSelected ? .white : Theme.textMuted)
+                                }
+
                                 Text(question.answerText(for: key))
                                     .font(.system(size: 15))
                                     .foregroundColor(Theme.text)
                                     .multilineTextAlignment(.leading)
+                                    .lineSpacing(1.5)
                                 Spacer()
                             }
-                            .padding(16)
-                            .background(selected == key ? Theme.routeBlue.opacity(0.08) : Theme.surface)
-                            .overlay(RoundedRectangle(cornerRadius: Theme.controlRadius).stroke(selected == key ? Theme.routeBlue : Theme.border, lineWidth: 2))
+                            .padding(.horizontal, 16)
+                            .padding(.vertical, 14)
+                            .background(isSelected ? Theme.routeBlue.opacity(0.07) : Theme.surface)
+                            .overlay(alignment: .leading) {
+                                RoundedRectangle(cornerRadius: 3)
+                                    .fill(isSelected ? Theme.routeBlue : Color.clear)
+                                    .frame(width: 3)
+                                    .padding(.vertical, 10)
+                            }
+                            .overlay(
+                                RoundedRectangle(cornerRadius: Theme.controlRadius)
+                                    .stroke(isSelected ? Theme.routeBlue.opacity(0.8) : Theme.border, lineWidth: 1)
+                            )
                             .clipShape(RoundedRectangle(cornerRadius: Theme.controlRadius))
-                            .scaleEffect(selected == key ? 1.02 : 1)
+                            .scaleEffect(isSelected ? 1.015 : 1)
                         }
                         .buttonStyle(.plain)
                     }
@@ -120,14 +161,15 @@ struct ExamRunView: View {
         config = cfg
         questions = Queries.getPracticeQuestions(Database.shared, country, language, limit: cfg.numberOfQuestions)
         remainingSeconds = cfg.timeLimitSeconds
+        deadline = Date().addingTimeInterval(TimeInterval(cfg.timeLimitSeconds))
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-            if remainingSeconds <= 1 {
+            let updatedSeconds = max(0, Int((deadline?.timeIntervalSinceNow ?? 0).rounded(.up)))
+            remainingSeconds = updatedSeconds
+            if updatedSeconds == 0 {
                 timer?.invalidate()
                 if let cfg = config, let qs = questions {
                     finishExam(config: cfg, questions: qs)
                 }
-            } else {
-                remainingSeconds -= 1
             }
         }
     }
@@ -141,15 +183,16 @@ struct ExamRunView: View {
         var correctCount = 0
         var answerInputs: [Queries.ExamAnswerInput] = []
         for question in questions {
-            let selected = answers[question.id]
-            let isCorrect = selected == question.correctAnswer
+            let selected = answers[question.id] ?? []
+            let isCorrect = selected == question.correctAnswers
             if isCorrect { correctCount += 1 }
             Queries.recordAnswer(Database.shared, question.id, isCorrect)
-            answerInputs.append(Queries.ExamAnswerInput(questionId: question.id, selectedAnswer: selected, correct: isCorrect))
+            answerInputs.append(Queries.ExamAnswerInput(questionId: question.id, selectedAnswers: selected, correct: isCorrect))
         }
 
         let score = questions.isEmpty ? 0 : Int((Double(correctCount) / Double(questions.count) * 100).rounded())
-        let passed = score >= config.passingScore
+        let mistakes = questions.count - correctCount
+        let passed = mistakes <= config.allowedMistakes
         let examResultId = Queries.saveExamResult(
             Database.shared, countryCode: country, score: score, passed: passed,
             totalQuestions: questions.count, correctQuestions: correctCount, answers: answerInputs

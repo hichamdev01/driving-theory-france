@@ -2,31 +2,48 @@ import SwiftUI
 import UIKit
 
 enum Theme {
-    static let background = Color(light: "F3F6FC", dark: "0B1220")
-    static let surface = Color(light: "FFFFFF", dark: "131B2E")
-    static let surfaceAlt = Color(light: "EAF0FA", dark: "182238")
-    static let routeBlue = Color(light: "1D4FA6", dark: "3B72D6")
-    static let routeBlueDeep = Color(light: "0F2E66", dark: "0B2450")
-    static let signalCyan = Color(light: "17B8C4", dark: "2FD0DC")
-    static let accent = Color(light: "F5A623", dark: "FFC24B")
-    static let success = Color(light: "16A34A", dark: "34D399")
-    static let danger = Color(light: "E0263D", dark: "FF5468")
-    static let text = Color(light: "10182B", dark: "F1F5FC")
-    static let textMuted = Color(light: "5B6478", dark: "8D97B0")
-    static let border = Color(light: "E3E8F2", dark: "253147")
+    // The palette comes from French road furniture: route signs, regulatory
+    // rings, painted lane markings, and the warm stock used in road atlases.
+    static let background = Color(light: "EFF1F5", dark: "090D15")
+    static let surface = Color(light: "FFFFFF", dark: "131A26")
+    static let surfaceAlt = Color(light: "E8ECF2", dark: "1B2436")
+    static let routeBlue = Color(light: "1654A3", dark: "5B8EDB")
+    static let routeBlueDeep = Color(light: "10294D", dark: "10294D")
+    static let signalCyan = Color(light: "6BA4C8", dark: "79B7DC")
+    static let accent = Color(light: "F2C84B", dark: "F6D66E")
+    static let success = Color(light: "13805B", dark: "3EC992")
+    static let danger = Color(light: "D5273D", dark: "FF5F70")
+    static let text = Color(light: "0F1923", dark: "EDF1F6")
+    static let textMuted = Color(light: "5E6E82", dark: "8899AE")
+    static let border = Color(light: "D4DCE6", dark: "222E40")
+    static let laneWhite = Color(light: "FFFFFF", dark: "EEF3F7")
 
     /// Alias kept for call sites written before the palette rename.
     static let primary = routeBlue
     static let primaryDark = routeBlueDeep
 
+    /// Real gradients — two-stop so buttons and hero cards have genuine depth.
     static let buttonGradient = LinearGradient(
-        colors: [routeBlue, signalCyan],
+        colors: [Color(hex: "2B72E3"), Color(hex: "0F44C4")],
         startPoint: .topLeading, endPoint: .bottomTrailing
     )
     static let heroGradient = LinearGradient(
-        colors: [routeBlueDeep, routeBlue],
+        colors: [Color(hex: "0B1B3E"), Color(hex: "163378")],
         startPoint: .topLeading, endPoint: .bottomTrailing
     )
+    static let dangerGradient = LinearGradient(
+        colors: [Color(hex: "E63A50"), Color(hex: "B51D30")],
+        startPoint: .topLeading, endPoint: .bottomTrailing
+    )
+    static let successGradient = LinearGradient(
+        colors: [Color(hex: "1CA876"), Color(hex: "0E7050")],
+        startPoint: .topLeading, endPoint: .bottomTrailing
+    )
+    static let accentGradient = LinearGradient(
+        colors: [Color(hex: "F9D55C"), Color(hex: "E0A820")],
+        startPoint: .topLeading, endPoint: .bottomTrailing
+    )
+
     static let cardRadius: CGFloat = 20
     static let controlRadius: CGFloat = 16
 
@@ -36,14 +53,28 @@ enum Theme {
         if value >= 50 { return accent }
         return danger
     }
+
+    /// Matching gradient for the gauge zone color.
+    static func gaugeGradient(_ value: Int) -> LinearGradient {
+        if value >= 75 { return successGradient }
+        if value >= 50 { return accentGradient }
+        return dangerGradient
+    }
 }
 
 extension Font {
     static func display(_ size: CGFloat, _ weight: Font.Weight = .bold) -> Font {
-        .system(size: size, weight: weight, design: .rounded)
+        let name: String
+        switch weight {
+        case .black, .heavy, .bold, .semibold:
+            name = "AvenirNextCondensed-DemiBold"
+        default:
+            name = "AvenirNextCondensed-Medium"
+        }
+        return .custom(name, size: size, relativeTo: .title2)
     }
     static func gauge(_ size: CGFloat, _ weight: Font.Weight = .bold) -> Font {
-        .system(size: size, weight: weight, design: .monospaced)
+        .system(size: size, weight: weight).monospacedDigit()
     }
 }
 
@@ -71,9 +102,9 @@ extension Color {
 struct PressableStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .scaleEffect(configuration.isPressed ? 0.97 : 1)
-            .opacity(configuration.isPressed ? 0.9 : 1)
-            .animation(.spring(response: 0.28, dampingFraction: 0.6), value: configuration.isPressed)
+            .scaleEffect(configuration.isPressed ? 0.96 : 1)
+            .brightness(configuration.isPressed ? -0.03 : 0)
+            .animation(.spring(response: 0.22, dampingFraction: 0.65), value: configuration.isPressed)
     }
 }
 

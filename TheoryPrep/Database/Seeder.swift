@@ -3,6 +3,7 @@ import Foundation
 enum Seeder {
     static func seedIfNeeded(_ db: Database) {
         db.exec(Schema.createTablesSQL)
+        Schema.migrate(db)
 
         let row = db.queryOne("SELECT content_version FROM user_settings WHERE id = 1") { r in
             r.int64("content_version")
@@ -79,10 +80,16 @@ enum Seeder {
                     guard let categoryId = categoryIdBySlug[question.categorySlug] else { continue }
                     let questionId = db.run(
                         """
-                        INSERT INTO questions (country_id, category_id, correct_answer, difficulty, image_path, active, content_version)
-                        VALUES (?, ?, ?, ?, ?, 1, ?)
+                        INSERT INTO questions
+                          (country_id, category_id, correct_answer, correct_answers, difficulty, image_path, video_path, active, content_version)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, 1, ?)
                         """,
-                        [countryId, categoryId, question.correctAnswer.rawValue, question.difficulty, question.imagePath, Schema.contentVersion]
+                        [
+                            countryId, categoryId,
+                            question.correctAnswers.sorted { $0.rawValue < $1.rawValue }.first!.rawValue,
+                            AnswerKey.encodeSet(question.correctAnswers), question.difficulty,
+                            question.imagePath, question.videoPath, Schema.contentVersion,
+                        ]
                     )
                     for (languageCode, t) in question.translations {
                         db.run(

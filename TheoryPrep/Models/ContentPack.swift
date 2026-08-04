@@ -29,10 +29,40 @@ struct ContentExamConfiguration: Codable {
 
 struct ContentQuestion: Codable {
     let categorySlug: String
-    let correctAnswer: AnswerKey
+    let correctAnswers: Set<AnswerKey>
     let difficulty: String
     let imagePath: String?
+    let videoPath: String?
     let translations: [String: ContentQuestionTranslation]
+
+    private enum CodingKeys: String, CodingKey {
+        case categorySlug, correctAnswer, correctAnswers, difficulty, imagePath, videoPath, translations
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        categorySlug = try container.decode(String.self, forKey: .categorySlug)
+        difficulty = try container.decode(String.self, forKey: .difficulty)
+        imagePath = try container.decodeIfPresent(String.self, forKey: .imagePath)
+        videoPath = try container.decodeIfPresent(String.self, forKey: .videoPath)
+        translations = try container.decode([String: ContentQuestionTranslation].self, forKey: .translations)
+
+        if let answers = try container.decodeIfPresent(Set<AnswerKey>.self, forKey: .correctAnswers), !answers.isEmpty {
+            correctAnswers = answers
+        } else {
+            correctAnswers = [try container.decode(AnswerKey.self, forKey: .correctAnswer)]
+        }
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(categorySlug, forKey: .categorySlug)
+        try container.encode(correctAnswers, forKey: .correctAnswers)
+        try container.encode(difficulty, forKey: .difficulty)
+        try container.encodeIfPresent(imagePath, forKey: .imagePath)
+        try container.encodeIfPresent(videoPath, forKey: .videoPath)
+        try container.encode(translations, forKey: .translations)
+    }
 }
 
 struct ContentQuestionTranslation: Codable {
