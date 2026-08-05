@@ -87,7 +87,7 @@ struct ExamIntroView: View {
             }
             .padding(.horizontal, 20)
             .padding(.top, 14)
-            .padding(.bottom, TabBarLayout.scrollContentBottomPadding)
+            .padding(.bottom, AppSpacing.section)
         }
         .background(Theme.background.ignoresSafeArea())
         .navigationBarHidden(true)

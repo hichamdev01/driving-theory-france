@@ -6,36 +6,80 @@ struct SelectLanguageView: View {
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                Image(systemName: "road.lanes")
-                    .font(.system(size: 36))
-                    .foregroundStyle(Theme.buttonGradient)
-                    .padding(.top, 24)
-                Text(settings.t(.selectLanguageTitle))
-                    .font(.display(26, .bold))
-                    .foregroundColor(Theme.text)
-                Text(settings.t(.selectLanguageSubtitle))
-                    .font(.system(size: 15))
-                    .foregroundColor(Theme.textMuted)
+            VStack(alignment: .leading, spacing: AppSpacing.large) {
+                HStack(alignment: .top, spacing: AppSpacing.standard) {
+                    LearningRouteMark()
 
-                ForEach(Array(languages.enumerated()), id: \.element.id) { i, language in
-                    CardView(action: { settings.chooseLanguage(language.code) }) {
-                        Text(language.name)
-                            .font(.display(18, .semibold))
-                            .foregroundColor(Theme.text)
-                            .frame(maxWidth: .infinity, alignment: .center)
+                    VStack(alignment: .leading, spacing: AppSpacing.medium) {
+                        Image(systemName: "road.lanes")
+                            .font(.title2.weight(.semibold))
+                            .foregroundStyle(AppColor.action)
+                            .accessibilityHidden(true)
+
+                        Text(settings.t(.selectLanguageTitle))
+                            .font(.largeTitle.bold())
+                            .foregroundStyle(AppColor.text)
+                            .accessibilityAddTraits(.isHeader)
+
+                        Text(settings.t(.selectLanguageSubtitle))
+                            .font(.body)
+                            .foregroundStyle(AppColor.textSecondary)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
-                    .padding(.vertical, 4)
-                    .appear(i)
+                }
+
+                VStack(spacing: AppSpacing.medium) {
+                    ForEach(languages) { language in
+                        languageButton(language)
+                    }
                 }
             }
-            .padding(20)
+            .padding(.horizontal, AppSpacing.standard)
+            .padding(.vertical, AppSpacing.large)
         }
-        .background(Theme.background.ignoresSafeArea())
+        .background(AppColor.background.ignoresSafeArea())
         .onAppear {
             if let code = settings.countryCode {
                 languages = Queries.getLanguagesForCountry(Database.shared, code)
             }
         }
+    }
+
+    private func languageButton(_ language: Language) -> some View {
+        Button {
+            settings.chooseLanguage(language.code)
+        } label: {
+            HStack(spacing: AppSpacing.standard) {
+                Image(systemName: "character.bubble")
+                    .font(.title3)
+                    .foregroundStyle(AppColor.action)
+                    .frame(width: 28)
+                    .accessibilityHidden(true)
+
+                Text(language.name)
+                    .font(.headline)
+                    .foregroundStyle(AppColor.text)
+                    .multilineTextAlignment(.leading)
+
+                Spacer(minLength: AppSpacing.small)
+
+                Image(systemName: "chevron.forward")
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(AppColor.textTertiary)
+                    .accessibilityHidden(true)
+            }
+            .padding(AppSpacing.standard)
+            .frame(maxWidth: .infinity, minHeight: 56, alignment: .leading)
+            .background(AppColor.surface)
+            .overlay {
+                RoundedRectangle(cornerRadius: AppRadius.control, style: .continuous)
+                    .stroke(AppColor.separator, lineWidth: 0.5)
+            }
+            .clipShape(RoundedRectangle(cornerRadius: AppRadius.control, style: .continuous))
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(PressableStyle())
+        .accessibilityLabel(language.name)
+        .accessibilityHint(settings.t(.selectLanguageActionHint))
     }
 }

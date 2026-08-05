@@ -1,6 +1,58 @@
 import SwiftUI
 import UIKit
 
+// MARK: - Quiet Wayfinding design system
+
+/// Semantic roles used by migrated screens. Keeping these separate from the
+/// legacy `Theme` palette lets us migrate without restyling unfinished flows.
+enum AppColor {
+    static let background = Color(uiColor: .systemGroupedBackground)
+    static let surface = Color(uiColor: .secondarySystemGroupedBackground)
+    static let surfaceRaised = Color(uiColor: .tertiarySystemGroupedBackground)
+    static let text = Color(uiColor: .label)
+    static let textSecondary = Color(uiColor: .secondaryLabel)
+    static let textTertiary = Color(uiColor: .tertiaryLabel)
+    static let separator = Color(uiColor: .separator)
+    static let fillSubtle = Color(uiColor: .tertiarySystemFill)
+    static let action = Color(light: "245B9E", dark: "6EA8FE")
+    static let success = Color(uiColor: .systemGreen)
+    static let danger = Color(uiColor: .systemRed)
+    static let warning = Color(uiColor: .systemOrange)
+}
+
+enum AppSpacing {
+    static let xSmall: CGFloat = 4
+    static let small: CGFloat = 8
+    static let medium: CGFloat = 12
+    static let standard: CGFloat = 16
+    static let section: CGFloat = 24
+    static let large: CGFloat = 32
+    static let xLarge: CGFloat = 48
+}
+
+enum AppRadius {
+    static let control: CGFloat = 12
+    static let card: CGFloat = 16
+}
+
+/// A structural route marker for meaningful learning steps.
+struct LearningRouteMark: View {
+    var body: some View {
+        VStack(spacing: 0) {
+            Circle()
+                .fill(AppColor.action)
+                .frame(width: 12, height: 12)
+            Rectangle()
+                .fill(AppColor.action.opacity(0.28))
+                .frame(width: 2, height: 36)
+            Circle()
+                .stroke(AppColor.action.opacity(0.55), lineWidth: 2)
+                .frame(width: 12, height: 12)
+        }
+        .accessibilityHidden(true)
+    }
+}
+
 enum Theme {
     // The palette comes from French road furniture: route signs, regulatory
     // rings, painted lane markings, and the warm stock used in road atlases.
@@ -100,11 +152,12 @@ extension Color {
 
 /// A press-in scale + fade, used by buttons and tappable cards for tactile feedback.
 struct PressableStyle: ButtonStyle {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .scaleEffect(configuration.isPressed ? 0.96 : 1)
-            .brightness(configuration.isPressed ? -0.03 : 0)
-            .animation(.spring(response: 0.22, dampingFraction: 0.65), value: configuration.isPressed)
+            .opacity(configuration.isPressed ? 0.72 : 1)
+            .animation(reduceMotion ? nil : .easeOut(duration: 0.12), value: configuration.isPressed)
     }
 }
 

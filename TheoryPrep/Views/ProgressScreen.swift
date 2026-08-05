@@ -93,10 +93,7 @@ struct ProgressScreen: View {
                 }
             }
             .padding(20)
-            .padding(
-                .bottom,
-                TabBarLayout.scrollContentBottomPadding - 20
-            )
+            .padding(.bottom, AppSpacing.section)
         }
         .background(Theme.background.ignoresSafeArea())
         .navigationBarHidden(true)

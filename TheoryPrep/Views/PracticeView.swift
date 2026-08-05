@@ -11,6 +11,7 @@ struct PracticeView: View {
                 VStack(alignment: .leading, spacing: 22) {
                     screenHeader
                     randomPracticeCard
+                    roadSignsRow
 
                     HStack {
                         Text(settings.t(.practiceByCategory).uppercased())
@@ -36,7 +37,7 @@ struct PracticeView: View {
                 }
                 .padding(.horizontal, 20)
                 .padding(.top, 16)
-                .padding(.bottom, TabBarLayout.scrollContentBottomPadding)
+                .padding(.bottom, AppSpacing.section)
             }
             .background(Theme.background.ignoresSafeArea())
             .navigationBarHidden(true)
@@ -46,10 +47,48 @@ struct PracticeView: View {
                     QuestionView(mode: mode, categoryId: categoryId, path: $path)
                 case .summary(let total, let correct):
                     PracticeSummaryView(total: total, correct: correct, path: $path)
+                case .roadSigns:
+                    RoadSignsView()
                 }
             }
             .onAppear(perform: reload)
         }
+    }
+
+    private var roadSignsRow: some View {
+        Button {
+            path.append(LearningRoute.roadSigns)
+        } label: {
+            HStack(spacing: AppSpacing.standard) {
+                Image(systemName: "signpost.right")
+                    .font(.title3)
+                    .foregroundStyle(AppColor.action)
+                    .frame(width: 28)
+                    .accessibilityHidden(true)
+
+                VStack(alignment: .leading, spacing: AppSpacing.xSmall) {
+                    Text(settings.t(.roadSigns))
+                        .font(.headline)
+                        .foregroundStyle(AppColor.text)
+                    Text(settings.t(.roadSignsLibrary))
+                        .font(.subheadline)
+                        .foregroundStyle(AppColor.textSecondary)
+                }
+
+                Spacer(minLength: AppSpacing.small)
+
+                Image(systemName: "chevron.forward")
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(AppColor.textTertiary)
+                    .accessibilityHidden(true)
+            }
+            .padding(AppSpacing.standard)
+            .frame(maxWidth: .infinity, minHeight: 56, alignment: .leading)
+            .background(AppColor.surface)
+            .clipShape(RoundedRectangle(cornerRadius: AppRadius.control, style: .continuous))
+        }
+        .buttonStyle(PressableStyle())
+        .accessibilityHint(settings.t(.opensRoadSignsHint))
     }
 
     // MARK: – Header

@@ -31,7 +31,7 @@ struct HomeView: View {
             }
             .padding(.horizontal, 20)
             .padding(.top, 18)
-            .padding(.bottom, TabBarLayout.scrollContentBottomPadding)
+            .padding(.bottom, AppSpacing.section)
         }
         .background(Theme.background.ignoresSafeArea())
         .navigationBarHidden(true)
@@ -375,7 +375,7 @@ struct HomeView: View {
     }
 
     private var mistakesCard: some View {
-        Button { router.selectedTab = .mistakes } label: {
+        Button { router.selectedTab = .review } label: {
             VStack(alignment: .leading, spacing: 0) {
                 HStack {
                     ZStack {
@@ -418,7 +418,7 @@ struct HomeView: View {
     // MARK: – Road Signs strip
 
     private var roadSignsRow: some View {
-        Button { router.selectedTab = .roadSigns } label: {
+        Button { router.selectedTab = .practice } label: {
             HStack(spacing: 16) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 13)

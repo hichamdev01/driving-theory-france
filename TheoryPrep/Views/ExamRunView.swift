@@ -27,7 +27,7 @@ struct ExamRunView: View {
         }
         .onAppear(perform: load)
         .onDisappear { timer?.invalidate() }
-        .preference(key: TabBarHiddenPreferenceKey.self, value: true)
+        .toolbar(.hidden, for: .tabBar)
     }
 
     @ViewBuilder

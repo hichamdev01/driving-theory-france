@@ -32,9 +32,7 @@ struct QuestionView: View {
             }
         }
         .onAppear(perform: loadQuestions)
-        // A question is a focused flow. Keeping the floating tab bar visible
-        // consumes the space needed by the Validate button on smaller screens.
-        .preference(key: TabBarHiddenPreferenceKey.self, value: true)
+        .toolbar(.hidden, for: .tabBar)
     }
 
     @ViewBuilder
@@ -125,10 +123,7 @@ struct QuestionView: View {
                 }
             }
             .padding(20)
-            .padding(
-                .bottom,
-                TabBarLayout.scrollContentBottomPadding - 20
-            )
+            .padding(.bottom, AppSpacing.section)
         }
         .background(Theme.background.ignoresSafeArea())
         .navigationBarTitleDisplayMode(.inline)

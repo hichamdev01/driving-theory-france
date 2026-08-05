@@ -81,7 +81,7 @@ struct ExamResultView: View {
                         }
                         PrimaryButton(label: settings.t(.backToHome), variant: .secondary) {
                             path = NavigationPath()
-                            router.selectedTab = .home
+                            router.selectedTab = .today
                         }
                     }
                     .padding(.top, 8)

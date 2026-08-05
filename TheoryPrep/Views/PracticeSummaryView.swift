@@ -37,7 +37,7 @@ struct PracticeSummaryView: View {
             }
             PrimaryButton(label: settings.t(.backToHome), variant: .secondary) {
                 path = NavigationPath()
-                router.selectedTab = .home
+                router.selectedTab = .today
             }
         }
         .padding(20)

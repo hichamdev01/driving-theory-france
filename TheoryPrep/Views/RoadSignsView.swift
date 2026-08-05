@@ -5,20 +5,8 @@ struct RoadSignsView: View {
     @State private var categories: [RoadSignCategorySummary] = []
 
     var body: some View {
-        NavigationStack {
-            ScrollView {
+        ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text(settings.t(.appName).uppercased())
-                            .font(.system(size: 10, weight: .bold))
-                            .tracking(1.5)
-                            .foregroundColor(Theme.routeBlue)
-                        Text(settings.t(.roadSigns))
-                            .font(.display(34, .bold))
-                            .foregroundColor(Theme.text)
-                    }
-                    .padding(.top, 12)
-
                     HStack(spacing: 8) {
                         Text(settings.t(.signCountFormat, categories.reduce(0) { $0 + $1.signCount }))
                         Circle()
@@ -42,15 +30,12 @@ struct RoadSignsView: View {
                     }
                 }
                 .padding(20)
-                .padding(
-                    .bottom,
-                    TabBarLayout.scrollContentBottomPadding - 20
-                )
+                .padding(.bottom, AppSpacing.section)
             }
             .background(Theme.background.ignoresSafeArea())
-            .navigationBarHidden(true)
+            .navigationTitle(settings.t(.roadSigns))
+            .navigationBarTitleDisplayMode(.large)
             .onAppear(perform: reload)
-        }
     }
 
     private func reload() {
@@ -167,7 +152,7 @@ private struct RoadSignCategoryView: View {
                 }
             }
             .padding(20)
-            .padding(.bottom, TabBarLayout.scrollContentBottomPadding - 20)
+            .padding(.bottom, AppSpacing.section)
         }
         .background(Theme.background.ignoresSafeArea())
         .navigationTitle("")

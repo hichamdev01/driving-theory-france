@@ -64,10 +64,7 @@ struct MistakesView: View {
                     }
                 }
                 .padding(20)
-                .padding(
-                    .bottom,
-                    TabBarLayout.scrollContentBottomPadding - 20
-                )
+                .padding(.bottom, AppSpacing.section)
             }
             .background(Theme.background.ignoresSafeArea())
             .navigationBarHidden(true)
@@ -77,6 +74,8 @@ struct MistakesView: View {
                     QuestionView(mode: mode, categoryId: categoryId, path: $path)
                 case .summary(let total, let correct):
                     PracticeSummaryView(total: total, correct: correct, path: $path)
+                case .roadSigns:
+                    RoadSignsView()
                 }
             }
             .onAppear(perform: reload)

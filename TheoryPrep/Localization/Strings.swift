@@ -1,9 +1,9 @@
 import Foundation
 
 enum StringKey: String, CaseIterable {
-    case appName, selectLanguageTitle, selectLanguageSubtitle
+    case appName, selectLanguageTitle, selectLanguageSubtitle, selectLanguageActionHint
     case changeLanguage
-    case home, practice, exam, roadSigns, mistakes, progress
+    case home, today, practice, exam, roadSigns, mistakes, review, progress
     case yourProgress, questionsAnswered, accuracy, weakTopic, continueStudying, startExam, noDataYet
     case allCategories, randomPractice, randomPracticeSubtitle, practiceByCategory
     case submitAnswer, continueButton, finishButton, correct, incorrect, correctAnswerWas, explanation
@@ -16,6 +16,7 @@ enum StringKey: String, CaseIterable {
     case readinessStart, readinessBuilding, readinessProgress, readinessStrong, readinessAlmostReady, readinessReady
     case questionsShort, weakestShort, focusWeakSpots, roadSignsLibrary
     case examMetadata, splashSubtitle, signCountFormat, categoryCountFormat
+    case opensRoadSignsHint
 }
 
 private typealias L = [LanguageCode: String]
@@ -36,12 +37,18 @@ private func buildStrings() -> [StringKey: L] {
         "You can study in English even if it is not the local language.",
         "Vous pouvez étudier en anglais même si ce n’est pas la langue locale."
     )
+    s[.selectLanguageActionHint] = entry(
+        "Uses this language for questions and explanations.",
+        "Utilise cette langue pour les questions et les explications."
+    )
     s[.changeLanguage] = entry("Change language", "Changer de langue")
     s[.home] = entry("Home", "Accueil")
+    s[.today] = entry("Today", "Aujourd’hui")
     s[.practice] = entry("Practice", "Entraînement")
     s[.exam] = entry("Exam", "Examen")
     s[.roadSigns] = entry("Road Signs", "Panneaux")
     s[.mistakes] = entry("Mistakes", "Erreurs")
+    s[.review] = entry("Review", "Révision")
     s[.progress] = entry("Progress", "Progrès")
     s[.yourProgress] = entry("Your Progress", "Votre Progression")
     s[.questionsAnswered] = entry("Questions Answered", "Questions Répondues")
@@ -123,6 +130,10 @@ private func buildStrings() -> [StringKey: L] {
     s[.splashSubtitle] = entry("French driving theory", "Code de la route — France")
     s[.signCountFormat] = entry("%d signs", "%d panneaux")
     s[.categoryCountFormat] = entry("%d categories", "%d catégories")
+    s[.opensRoadSignsHint] = entry(
+        "Opens the road signs reference.",
+        "Ouvre le guide des panneaux routiers."
+    )
 
     return s
 }
