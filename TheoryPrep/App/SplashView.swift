@@ -2,6 +2,7 @@ import SwiftUI
 
 struct SplashView: View {
     @EnvironmentObject var settings: AppSettings
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var badgeScale: CGFloat = 0.55
     @State private var badgeOpacity: Double = 0
     @State private var flagRevealed = false
@@ -57,6 +58,7 @@ struct SplashView: View {
                 }
                 .scaleEffect(badgeScale)
                 .opacity(badgeOpacity)
+                .accessibilityHidden(true)
 
                 VStack(spacing: 6) {
                     Text(settings.t(.appName))
@@ -73,19 +75,23 @@ struct SplashView: View {
             }
         }
         .onAppear {
-            withAnimation(.spring(response: 0.55, dampingFraction: 0.65)) {
+            withAnimation(reduceMotion ? nil : .spring(response: 0.55, dampingFraction: 0.70)) {
                 badgeScale = 1
                 badgeOpacity = 1
             }
             flagRevealed = true
-            withAnimation(.easeOut(duration: 1.4)) {
+            withAnimation(reduceMotion ? nil : .easeOut(duration: 0.9)) {
                 lineProgress = 1
             }
-            withAnimation(.easeOut(duration: 0.5).delay(0.4)) {
+            withAnimation(reduceMotion ? nil : .easeOut(duration: 0.42).delay(0.22)) {
                 titleOpacity = 1
                 titleOffset = 0
             }
-            withAnimation(.easeInOut(duration: 1.6).delay(0.6).repeatForever(autoreverses: true)) {
+            guard !reduceMotion else {
+                glow = true
+                return
+            }
+            withAnimation(.easeInOut(duration: 1.6).delay(0.45).repeatForever(autoreverses: true)) {
                 glow = true
             }
         }
@@ -95,6 +101,6 @@ struct SplashView: View {
         Rectangle()
             .fill(color)
             .scaleEffect(y: flagRevealed ? 1 : 0, anchor: .bottom)
-            .animation(.spring(response: 0.5, dampingFraction: 0.72).delay(delay), value: flagRevealed)
+            .animation(reduceMotion ? nil : .spring(response: 0.5, dampingFraction: 0.72).delay(delay), value: flagRevealed)
     }
 }

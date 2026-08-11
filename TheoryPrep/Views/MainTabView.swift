@@ -41,6 +41,9 @@ struct MainTabView: View {
             .tag(MainTab.progress)
         }
         .tint(AppColor.action)
+        .toolbarBackground(Theme.surface, for: .tabBar)
+        .toolbarBackground(.visible, for: .tabBar)
+        .sensoryFeedback(.selection, trigger: router.selectedTab)
         .environmentObject(router)
     }
 }

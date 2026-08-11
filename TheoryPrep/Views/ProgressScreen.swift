@@ -2,52 +2,31 @@ import SwiftUI
 
 struct ProgressScreen: View {
     @EnvironmentObject var settings: AppSettings
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var progress: OverallProgress = .empty
     @State private var examResults: [ExamResultRow] = []
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                VStack(alignment: .leading, spacing: 2) {
-                    Text(settings.t(.appName).uppercased())
-                        .font(.system(size: 10, weight: .bold))
-                        .tracking(1.5)
-                        .foregroundColor(Theme.routeBlue)
-                    Text(settings.t(.progress))
-                        .font(.display(34, .bold))
-                        .foregroundColor(Theme.text)
-                }
+                AppScreenHeader(eyebrow: settings.t(.appName), title: settings.t(.progress))
                 .padding(.top, 12)
 
                 CardView {
-                    HStack(spacing: 20) {
-                        GaugeRing(value: progress.accuracy, size: 100, lineWidth: 10, caption: settings.t(.accuracy))
-                        VStack(alignment: .leading, spacing: 6) {
-                            Text(settings.t(.questionsAnswered))
-                                .font(.system(size: 13))
-                                .foregroundColor(Theme.textMuted)
-                            Text("\(progress.questionsAnswered)")
-                                .font(.gauge(24))
-                                .foregroundColor(Theme.text)
-                        }
-                        Spacer()
-                    }
+                    overviewContent
                 }
                 .appear(0)
 
                 LaneDivider().padding(.vertical, 4)
 
-                Text(settings.t(.byCategory))
-                    .font(.system(size: 14, weight: .semibold))
-                    .foregroundColor(Theme.textMuted)
-                    .textCase(.uppercase)
+                AppSectionHeader(title: settings.t(.byCategory), count: progress.categories.count)
 
                 ForEach(Array(progress.categories.enumerated()), id: \.element.id) { index, category in
                     CardView {
                         VStack(alignment: .leading, spacing: 8) {
                             HStack {
                                 Text(category.categoryName)
-                                    .font(.system(size: 14, weight: .semibold))
+                                    .font(.body.weight(.semibold))
                                     .foregroundColor(Theme.text)
                                 Spacer()
                                 Text(category.attempts > 0 ? "\(category.accuracy)%" : "—")
@@ -58,26 +37,32 @@ struct ProgressScreen: View {
                         }
                     }
                     .appear(index + 1)
+                    .accessibilityElement(children: .combine)
+                    .accessibilityLabel(category.categoryName)
+                    .accessibilityValue(category.attempts > 0 ? "\(category.accuracy)%" : "—")
                 }
 
-                Text(settings.t(.recentExams))
-                    .font(.system(size: 14, weight: .semibold))
-                    .foregroundColor(Theme.textMuted)
-                    .textCase(.uppercase)
+                AppSectionHeader(title: settings.t(.recentExams), count: examResults.count)
                     .padding(.top, 8)
 
                 if examResults.isEmpty {
                     CardView {
-                        Text(settings.t(.noExamsYet))
-                            .font(.system(size: 14))
-                            .foregroundColor(Theme.textMuted)
+                        HStack(spacing: 14) {
+                            Image(systemName: "flag.checkered")
+                                .font(.title2)
+                                .foregroundStyle(Theme.routeBlue)
+                                .accessibilityHidden(true)
+                            Text(settings.t(.noExamsYet))
+                                .font(.subheadline)
+                                .foregroundColor(Theme.textMuted)
+                        }
                     }
                 } else {
                     ForEach(examResults) { result in
                         CardView {
                             HStack {
                                 Text(result.passed ? settings.t(.passed) : settings.t(.failed))
-                                    .font(.system(size: 14, weight: .bold))
+                                    .font(.subheadline.weight(.bold))
                                     .foregroundColor(result.passed ? Theme.success : Theme.danger)
                                 Spacer()
                                 Text("\(result.score)%")
@@ -85,19 +70,49 @@ struct ProgressScreen: View {
                                     .foregroundColor(Theme.text)
                                 Spacer()
                                 Text(formattedDate(result.completedAt))
-                                    .font(.system(size: 12))
+                                    .font(.caption)
                                     .foregroundColor(Theme.textMuted)
                             }
                         }
+                        .accessibilityElement(children: .combine)
                     }
                 }
             }
             .padding(20)
             .padding(.bottom, AppSpacing.section)
         }
-        .background(Theme.background.ignoresSafeArea())
+        .background(AppScreenBackground())
         .navigationBarHidden(true)
         .onAppear(perform: reload)
+    }
+
+    @ViewBuilder
+    private var overviewContent: some View {
+        if dynamicTypeSize.isAccessibilitySize {
+            VStack(spacing: 18) {
+                GaugeRing(value: progress.accuracy, size: 112, lineWidth: 11, caption: settings.t(.accuracy))
+                questionCount
+            }
+            .frame(maxWidth: .infinity)
+        } else {
+            HStack(spacing: 20) {
+                GaugeRing(value: progress.accuracy, size: 100, lineWidth: 10, caption: settings.t(.accuracy))
+                questionCount
+                Spacer()
+            }
+        }
+    }
+
+    private var questionCount: some View {
+        VStack(alignment: dynamicTypeSize.isAccessibilitySize ? .center : .leading, spacing: 5) {
+            Text(settings.t(.questionsAnswered))
+                .font(.subheadline)
+                .foregroundColor(Theme.textMuted)
+            Text("\(progress.questionsAnswered)")
+                .font(.gauge(28))
+                .foregroundColor(Theme.text)
+        }
+        .accessibilityElement(children: .combine)
     }
 
     private func reload() {
@@ -126,6 +141,7 @@ private struct AnimatedBar: View {
     let fraction: CGFloat
     let color: Color
     @State private var animatedFraction: CGFloat = 0
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     var body: some View {
         GeometryReader { geo in
@@ -137,8 +153,9 @@ private struct AnimatedBar: View {
             }
         }
         .frame(height: 8)
+        .accessibilityHidden(true)
         .onAppear {
-            withAnimation(.spring(response: 0.7, dampingFraction: 0.85).delay(0.1)) {
+            withAnimation(reduceMotion ? nil : .spring(response: 0.7, dampingFraction: 0.85).delay(0.1)) {
                 animatedFraction = fraction
             }
         }

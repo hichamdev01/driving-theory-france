@@ -3,6 +3,7 @@ import SwiftUI
 struct ExamRunView: View {
     @Binding var path: NavigationPath
     @EnvironmentObject var settings: AppSettings
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     @State private var config: ExamConfiguration?
     @State private var questions: [QuestionWithTranslation]?
@@ -13,15 +14,34 @@ struct ExamRunView: View {
     @State private var finished = false
     @State private var timer: Timer?
     @State private var deadline: Date?
+    @State private var showFinishConfirmation = false
+    @AccessibilityFocusState private var questionFocused: Bool
 
     var body: some View {
         Group {
             if let config, let questions {
-                examBody(config: config, questions: questions)
+                if questions.isEmpty {
+                    VStack(spacing: 14) {
+                        Image(systemName: "exclamationmark.triangle")
+                            .font(.largeTitle)
+                            .foregroundStyle(Theme.danger)
+                            .accessibilityHidden(true)
+                        Text(settings.t(.noDataYet))
+                            .font(.headline)
+                            .multilineTextAlignment(.center)
+                            .foregroundStyle(Theme.text)
+                    }
+                    .padding(32)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(AppScreenBackground())
+                } else {
+                    examBody(config: config, questions: questions)
+                }
             } else {
                 ZStack {
-                    Theme.background.ignoresSafeArea()
+                    AppScreenBackground()
                     ProgressView().tint(Theme.primary)
+                        .accessibilityLabel(settings.t(.loading))
                 }
             }
         }
@@ -36,15 +56,16 @@ struct ExamRunView: View {
         let isLast = index == questions.count - 1
         let selected = answers[question.id] ?? []
 
-        ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
+        ScrollViewReader { proxy in
+            ScrollView {
+                VStack(alignment: .leading, spacing: 16) {
                 HStack(spacing: 10) {
                     Image(systemName: remainingSeconds < 60 ? "exclamationmark.triangle.fill" : "timer")
-                        .font(.system(size: 14, weight: .semibold))
+                        .font(.subheadline.weight(.semibold))
                     Text(formatTime(remainingSeconds))
                         .font(.gauge(15, .bold))
                     Text(settings.t(.timeRemaining).uppercased())
-                        .font(.system(size: 9, weight: .bold))
+                        .font(.caption2.weight(.bold))
                         .tracking(0.9)
                     Spacer()
                     Text("\(index + 1) / \(questions.count)")
@@ -61,6 +82,11 @@ struct ExamRunView: View {
                 )
                 .shadow(color: .black.opacity(0.04), radius: 4, x: 0, y: 2)
                 .padding(.top, 8)
+                .accessibilityElement(children: .combine)
+                .accessibilityLabel(settings.t(.timeRemaining))
+                .accessibilityValue("\(formatTime(remainingSeconds)), \(index + 1) / \(questions.count)")
+                .accessibilityAddTraits(.updatesFrequently)
+                .id("examQuestionTop")
 
                 GeometryReader { geo in
                     ZStack(alignment: .leading) {
@@ -68,10 +94,14 @@ struct ExamRunView: View {
                         Capsule()
                             .fill(Theme.dangerGradient)
                             .frame(width: geo.size.width * CGFloat(index + 1) / CGFloat(questions.count))
-                            .animation(.spring(response: 0.5, dampingFraction: 0.85), value: index)
+                            .animation(
+                                reduceMotion ? nil : .spring(response: 0.5, dampingFraction: 0.85),
+                                value: index
+                            )
                     }
                 }
                 .frame(height: 5)
+                .accessibilityHidden(true)
 
                 if question.imagePath != nil || question.videoPath != nil {
                     BundledQuestionMedia(imagePath: question.imagePath, videoPath: question.videoPath)
@@ -79,22 +109,26 @@ struct ExamRunView: View {
                         .clipShape(RoundedRectangle(cornerRadius: Theme.cardRadius))
                         .shadow(color: Theme.text.opacity(0.12), radius: 14, x: 0, y: 6)
                         .padding(.horizontal, -20)
+                        .accessibilityLabel(question.questionText)
                 }
 
                 Text(question.questionText)
                     .font(.display(23, .bold))
                     .foregroundColor(Theme.text)
                     .lineSpacing(2)
+                    .accessibilityAddTraits(.isHeader)
+                    .accessibilityFocused($questionFocused)
 
                 Text(settings.t(.selectAllAnswers))
-                    .font(.system(size: 13, weight: .semibold))
+                    .font(.subheadline.weight(.semibold))
                     .foregroundColor(Theme.textMuted)
 
                 VStack(spacing: 10) {
                     ForEach(AnswerKey.allCases, id: \.self) { key in
                         let isSelected = selected.contains(key)
                         Button(action: {
-                            withAnimation(.spring(response: 0.28, dampingFraction: 0.7)) {
+                            AppFeedback.selection()
+                            withAnimation(reduceMotion ? nil : .spring(response: 0.28, dampingFraction: 0.75)) {
                                 var updated = selected
                                 if updated.contains(key) { updated.remove(key) } else { updated.insert(key) }
                                 answers[question.id] = updated
@@ -115,14 +149,21 @@ struct ExamRunView: View {
                                 }
 
                                 Text(question.answerText(for: key))
-                                    .font(.system(size: 15))
+                                    .font(.body)
                                     .foregroundColor(Theme.text)
                                     .multilineTextAlignment(.leading)
                                     .lineSpacing(1.5)
                                 Spacer()
+
+                                if isSelected {
+                                    Image(systemName: "checkmark.circle.fill")
+                                        .foregroundColor(Theme.routeBlue)
+                                        .font(.system(size: 18))
+                                }
                             }
                             .padding(.horizontal, 16)
                             .padding(.vertical, 14)
+                            .frame(maxWidth: .infinity, minHeight: 56, alignment: .leading)
                             .background(isSelected ? Theme.routeBlue.opacity(0.07) : Theme.surface)
                             .overlay(alignment: .leading) {
                                 RoundedRectangle(cornerRadius: 3)
@@ -138,29 +179,69 @@ struct ExamRunView: View {
                             .scaleEffect(isSelected ? 1.015 : 1)
                         }
                         .buttonStyle(.plain)
+                        .accessibilityElement(children: .ignore)
+                        .accessibilityLabel("\(key.rawValue.uppercased()). \(question.answerText(for: key))")
+                        .accessibilityAddTraits(isSelected ? .isSelected : [])
                     }
                 }
-
-                PrimaryButton(label: isLast ? settings.t(.finishButton) : settings.t(.continueButton), loading: finishing) {
+                }
+                .padding(20)
+                .padding(.bottom, AppSpacing.standard)
+            }
+            .safeAreaInset(edge: .bottom, spacing: 0) {
+                PrimaryButton(
+                    label: isLast ? settings.t(.finishButton) : settings.t(.continueButton),
+                    loading: finishing,
+                    icon: isLast ? "checkmark.seal" : "arrow.right"
+                ) {
                     if isLast {
-                        finishExam(config: config, questions: questions)
+                        showFinishConfirmation = true
                     } else {
                         index += 1
                     }
                 }
+                .padding(.horizontal, 20)
+                .padding(.vertical, 12)
+                .background(BottomBarBackground())
+                .overlay(alignment: .top) { Divider() }
             }
-            .padding(20)
+            .background(AppScreenBackground())
+            .navigationBarBackButtonHidden(true)
+            .onAppear { questionFocused = true }
+            .onChange(of: index) {
+                withAnimation(reduceMotion ? nil : .easeOut(duration: 0.28)) {
+                    proxy.scrollTo("examQuestionTop", anchor: .top)
+                }
+                questionFocused = true
+            }
+            .confirmationDialog(
+                settings.t(.finishExamPrompt),
+                isPresented: $showFinishConfirmation,
+                titleVisibility: .visible
+            ) {
+                Button(settings.t(.finishExamConfirm)) {
+                    finishExam(config: config, questions: questions)
+                }
+                Button(settings.t(.cancel), role: .cancel) {}
+            } message: {
+                Text(settings.t(.unansweredQuestionsFormat, unansweredCount(in: questions)))
+            }
         }
-        .background(Theme.background.ignoresSafeArea())
-        .navigationBarBackButtonHidden(true)
     }
 
     private func load() {
         guard let country = settings.countryCode, let language = settings.languageCode else { return }
         let cfg = Queries.getExamConfiguration(Database.shared, country)
         config = cfg
-        questions = Queries.getPracticeQuestions(Database.shared, country, language, limit: cfg.numberOfQuestions)
+        let loadedQuestions = Queries.getPracticeQuestions(
+            Database.shared,
+            country,
+            language,
+            limit: cfg.numberOfQuestions
+        )
+        questions = loadedQuestions
         remainingSeconds = cfg.timeLimitSeconds
+        guard !loadedQuestions.isEmpty else { return }
         deadline = Date().addingTimeInterval(TimeInterval(cfg.timeLimitSeconds))
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
             let updatedSeconds = max(0, Int((deadline?.timeIntervalSinceNow ?? 0).rounded(.up)))
@@ -204,5 +285,11 @@ struct ExamRunView: View {
         let m = totalSeconds / 60
         let s = totalSeconds % 60
         return String(format: "%d:%02d", m, s)
+    }
+
+    private func unansweredCount(in questions: [QuestionWithTranslation]) -> Int {
+        questions.reduce(into: 0) { count, question in
+            if answers[question.id]?.isEmpty ?? true { count += 1 }
+        }
     }
 }

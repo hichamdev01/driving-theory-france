@@ -9,15 +9,15 @@ struct ExamResultView: View {
     @State private var result: ExamResultRow?
     @State private var answers: [ExamResultAnswerRow] = []
     @State private var showReview = false
+    @AccessibilityFocusState private var resultFocused: Bool
 
     var body: some View {
         ScrollView {
             if let result {
                 VStack(alignment: .leading, spacing: 16) {
-                    Text(settings.t(.examResults))
-                        .font(.display(26, .bold))
-                        .foregroundColor(Theme.text)
+                    AppScreenHeader(eyebrow: settings.t(.exam), title: settings.t(.examResults))
                         .padding(.top, 12)
+                        .accessibilityFocused($resultFocused)
 
                     CardView {
                         VStack(spacing: 8) {
@@ -27,14 +27,15 @@ struct ExamResultView: View {
                             GaugeRing(value: result.score, caption: settings.t(.yourScore))
                                 .padding(.vertical, 4)
                             Text("\(result.correctQuestions) / \(result.totalQuestions) \(settings.t(.questionsAnswered))")
-                                .font(.system(size: 14, weight: .semibold))
+                                .font(.subheadline.weight(.semibold))
                                 .foregroundColor(Theme.text)
                             Text("\(result.totalQuestions - result.correctQuestions) \(settings.t(.mistakeCount))")
-                                .font(.system(size: 14, weight: .semibold))
+                                .font(.subheadline.weight(.semibold))
                                 .foregroundColor(result.passed ? Theme.textMuted : Theme.danger)
                         }
                         .frame(maxWidth: .infinity)
                     }
+                    .accessibilityElement(children: .combine)
 
                     let incorrect = answers.filter { !$0.wasCorrect }
 
@@ -44,14 +45,15 @@ struct ExamResultView: View {
                             variant: .secondary,
                             disabled: incorrect.isEmpty
                         ) {
-                            showReview = true
+                            withAnimation(.easeInOut(duration: 0.25)) { showReview = true }
+                            AppFeedback.selection()
                         }
                     } else {
                         ForEach(incorrect) { row in
                             CardView {
                                 VStack(alignment: .leading, spacing: 8) {
                                     Text(row.question.categoryName)
-                                        .font(.system(size: 12, weight: .bold))
+                                        .font(.caption.weight(.bold))
                                         .foregroundColor(Theme.primary)
                                         .textCase(.uppercase)
 
@@ -59,27 +61,29 @@ struct ExamResultView: View {
                                         BundledQuestionMedia(imagePath: row.question.imagePath, videoPath: row.question.videoPath)
                                             .frame(maxWidth: .infinity)
                                             .clipShape(RoundedRectangle(cornerRadius: Theme.controlRadius))
+                                            .accessibilityLabel(row.question.questionText)
                                     }
 
                                     Text(row.question.questionText)
-                                        .font(.system(size: 15, weight: .bold))
+                                        .font(.body.weight(.bold))
                                         .foregroundColor(Theme.text)
                                     Text("\(settings.t(.correctAnswerWas)) \(row.question.correctAnswerText)")
-                                        .font(.system(size: 13, weight: .semibold))
+                                        .font(.subheadline.weight(.semibold))
                                         .foregroundColor(Theme.success)
                                     Text(row.question.explanation)
-                                        .font(.system(size: 13))
+                                        .font(.body)
                                         .foregroundColor(Theme.textMuted)
                                 }
                             }
+                            .accessibilityElement(children: .combine)
                         }
                     }
 
                     VStack(spacing: 12) {
-                        PrimaryButton(label: settings.t(.retakeExam)) {
+                        PrimaryButton(label: settings.t(.retakeExam), icon: "arrow.clockwise") {
                             path = NavigationPath()
                         }
-                        PrimaryButton(label: settings.t(.backToHome), variant: .secondary) {
+                        PrimaryButton(label: settings.t(.backToHome), variant: .secondary, icon: "house") {
                             path = NavigationPath()
                             router.selectedTab = .today
                         }
@@ -89,12 +93,22 @@ struct ExamResultView: View {
                 .padding(20)
             }
         }
-        .background(Theme.background.ignoresSafeArea())
+        .background(AppScreenBackground())
         .navigationBarHidden(true)
         .onAppear {
             guard let language = settings.languageCode else { return }
-            result = Queries.getExamResultById(Database.shared, examResultId)
+            let loadedResult = Queries.getExamResultById(Database.shared, examResultId)
+            result = loadedResult
             answers = Queries.getExamResultAnswers(Database.shared, examResultId, language)
+            if let result = loadedResult {
+                AppFeedback.result(
+                    correct: result.passed,
+                    announcement: result.passed ? settings.t(.passed) : settings.t(.failed)
+                )
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                resultFocused = true
+            }
         }
     }
 }

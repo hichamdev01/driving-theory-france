@@ -2,6 +2,7 @@ import SwiftUI
 
 struct PracticeView: View {
     @EnvironmentObject var settings: AppSettings
+    @EnvironmentObject var router: TabRouter
     @State private var path = NavigationPath()
     @State private var categories: [CategoryWithName] = []
 
@@ -13,20 +14,7 @@ struct PracticeView: View {
                     randomPracticeCard
                     roadSignsRow
 
-                    HStack {
-                        Text(settings.t(.practiceByCategory).uppercased())
-                            .font(.system(size: 10.5, weight: .bold))
-                            .tracking(1.4)
-                            .foregroundColor(Theme.textMuted)
-                        Spacer()
-                        Text("\(categories.count)")
-                            .font(.gauge(11, .bold))
-                            .foregroundColor(Theme.routeBlue)
-                            .padding(.horizontal, 8)
-                            .padding(.vertical, 3)
-                            .background(Theme.routeBlue.opacity(0.10))
-                            .clipShape(Capsule())
-                    }
+                    AppSectionHeader(title: settings.t(.practiceByCategory), count: categories.count)
 
                     LazyVStack(spacing: 8) {
                         ForEach(Array(categories.enumerated()), id: \.element.id) { index, category in
@@ -39,7 +27,7 @@ struct PracticeView: View {
                 .padding(.top, 16)
                 .padding(.bottom, AppSpacing.section)
             }
-            .background(Theme.background.ignoresSafeArea())
+            .background(AppScreenBackground())
             .navigationBarHidden(true)
             .navigationDestination(for: LearningRoute.self) { route in
                 switch route {
@@ -51,7 +39,13 @@ struct PracticeView: View {
                     RoadSignsView()
                 }
             }
-            .onAppear(perform: reload)
+            .onAppear {
+                reload()
+                openPendingRouteIfNeeded()
+            }
+            .onChange(of: router.pendingLearningRoute) {
+                openPendingRouteIfNeeded()
+            }
         }
     }
 
@@ -94,15 +88,7 @@ struct PracticeView: View {
     // MARK: – Header
 
     private var screenHeader: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Text(settings.t(.appName).uppercased())
-                .font(.system(size: 10, weight: .bold))
-                .tracking(1.6)
-                .foregroundColor(Theme.routeBlue)
-            Text(settings.t(.practice))
-                .font(.display(34, .bold))
-                .foregroundColor(Theme.text)
-        }
+        AppScreenHeader(eyebrow: settings.t(.appName), title: settings.t(.practice))
     }
 
     // MARK: – Random practice banner
@@ -124,9 +110,9 @@ struct PracticeView: View {
                         .font(.display(21, .bold))
                         .foregroundColor(.white)
                     Text(settings.t(.randomPracticeSubtitle))
-                        .font(.system(size: 12, weight: .medium))
+                        .font(.subheadline.weight(.medium))
                         .foregroundColor(.white.opacity(0.7))
-                        .lineLimit(2)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
 
                 Spacer(minLength: 4)
@@ -142,6 +128,7 @@ struct PracticeView: View {
             }
             .padding(20)
             .background(Theme.heroGradient)
+            .overlay { RouteRibbon(opacity: 0.7) }
             .clipShape(RoundedRectangle(cornerRadius: Theme.cardRadius))
             // Lane marking decoration
             .overlay(alignment: .bottomTrailing) {
@@ -170,6 +157,8 @@ struct PracticeView: View {
         }
         .buttonStyle(PressableStyle())
         .shadow(color: Color(hex: "0B1B3E").opacity(0.28), radius: 14, x: 0, y: 6)
+        .accessibilityElement(children: .combine)
+        .accessibilityHint(settings.t(.randomPracticeSubtitle))
     }
 
     // MARK: – Category row
@@ -188,7 +177,7 @@ struct PracticeView: View {
                 }
 
                 Text(category.name)
-                    .font(.system(size: 15, weight: .semibold))
+                    .font(.body.weight(.semibold))
                     .foregroundColor(Theme.text)
                     .multilineTextAlignment(.leading)
 
@@ -206,6 +195,7 @@ struct PracticeView: View {
             .shadow(color: .black.opacity(0.05), radius: 10, x: 0, y: 3)
         }
         .buttonStyle(PressableStyle())
+        .accessibilityElement(children: .combine)
     }
 
     // MARK: – Data
@@ -213,5 +203,12 @@ struct PracticeView: View {
     private func reload() {
         guard let country = settings.countryCode, let language = settings.languageCode else { return }
         categories = Queries.getCategoriesForCountry(Database.shared, country, language)
+    }
+
+    private func openPendingRouteIfNeeded() {
+        guard router.selectedTab == .practice, let route = router.pendingLearningRoute else { return }
+        path = NavigationPath()
+        path.append(route)
+        router.pendingLearningRoute = nil
     }
 }

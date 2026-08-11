@@ -16,19 +16,20 @@ struct RoadSignDetailView: View {
                         .font(.display(24, .bold))
                         .foregroundColor(Theme.text)
                         .multilineTextAlignment(.center)
+                        .accessibilityAddTraits(.isHeader)
                     Text(sign.categoryName)
-                        .font(.system(size: 13, weight: .semibold))
+                        .font(.subheadline.weight(.semibold))
                         .foregroundColor(Theme.routeBlue)
                         .textCase(.uppercase)
 
                     CardView {
                         VStack(alignment: .leading, spacing: 6) {
                             Text(settings.t(.meaning))
-                                .font(.system(size: 12, weight: .bold))
+                                .font(.caption.weight(.bold))
                                 .foregroundColor(Theme.textMuted)
                                 .textCase(.uppercase)
                             Text(sign.meaning)
-                                .font(.system(size: 16, weight: .semibold))
+                                .font(.body.weight(.semibold))
                                 .foregroundColor(Theme.text)
                         }
                     }
@@ -36,7 +37,7 @@ struct RoadSignDetailView: View {
                 .padding(20)
             }
         }
-        .background(Theme.background.ignoresSafeArea())
+        .background(AppScreenBackground())
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {

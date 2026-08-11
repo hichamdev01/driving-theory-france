@@ -14,7 +14,7 @@ struct RoadSignsView: View {
                             .frame(width: 3, height: 3)
                         Text(settings.t(.categoryCountFormat, categories.count))
                     }
-                    .font(.system(size: 13, weight: .semibold))
+                    .font(.subheadline.weight(.semibold))
                     .foregroundColor(Theme.textMuted)
 
                     LazyVStack(spacing: 12) {
@@ -32,7 +32,7 @@ struct RoadSignsView: View {
                 .padding(20)
                 .padding(.bottom, AppSpacing.section)
             }
-            .background(Theme.background.ignoresSafeArea())
+            .background(AppScreenBackground())
             .navigationTitle(settings.t(.roadSigns))
             .navigationBarTitleDisplayMode(.large)
             .onAppear(perform: reload)
@@ -100,6 +100,7 @@ private struct RoadSignCategoryCard: View {
                 .stroke(Theme.border, lineWidth: 1)
         )
         .clipShape(RoundedRectangle(cornerRadius: Theme.cardRadius))
+        .accessibilityElement(children: .combine)
     }
 }
 
@@ -116,7 +117,7 @@ private struct RoadSignCategoryView: View {
                         .font(.display(30, .bold))
                         .foregroundColor(Theme.text)
                     Text(settings.t(.signCountFormat, category.signCount))
-                        .font(.system(size: 13, weight: .semibold))
+                        .font(.subheadline.weight(.semibold))
                         .foregroundColor(Theme.textMuted)
                 }
 
@@ -131,10 +132,10 @@ private struct RoadSignCategoryView: View {
                                     size: 68
                                 )
                                 Text(sign.name)
-                                    .font(.system(size: 12, weight: .semibold))
+                                    .font(.caption.weight(.semibold))
                                     .foregroundColor(Theme.text)
                                     .multilineTextAlignment(.center)
-                                    .lineLimit(3)
+                                    .fixedSize(horizontal: false, vertical: true)
                             }
                             .padding(.horizontal, 8)
                             .padding(.vertical, 16)
@@ -148,13 +149,14 @@ private struct RoadSignCategoryView: View {
                         }
                         .buttonStyle(PressableStyle())
                         .appear(index)
+                        .accessibilityElement(children: .combine)
                     }
                 }
             }
             .padding(20)
             .padding(.bottom, AppSpacing.section)
         }
-        .background(Theme.background.ignoresSafeArea())
+        .background(AppScreenBackground())
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
         .onAppear(perform: reload)

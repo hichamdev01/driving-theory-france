@@ -7,15 +7,12 @@ struct SelectLanguageView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: AppSpacing.large) {
+                introCard
+
                 HStack(alignment: .top, spacing: AppSpacing.standard) {
                     LearningRouteMark()
 
                     VStack(alignment: .leading, spacing: AppSpacing.medium) {
-                        Image(systemName: "road.lanes")
-                            .font(.title2.weight(.semibold))
-                            .foregroundStyle(AppColor.action)
-                            .accessibilityHidden(true)
-
                         Text(settings.t(.selectLanguageTitle))
                             .font(.largeTitle.bold())
                             .foregroundStyle(AppColor.text)
@@ -37,7 +34,7 @@ struct SelectLanguageView: View {
             .padding(.horizontal, AppSpacing.standard)
             .padding(.vertical, AppSpacing.large)
         }
-        .background(AppColor.background.ignoresSafeArea())
+        .background(AppScreenBackground())
         .onAppear {
             if let code = settings.countryCode {
                 languages = Queries.getLanguagesForCountry(Database.shared, code)
@@ -45,15 +42,55 @@ struct SelectLanguageView: View {
         }
     }
 
+    private var introCard: some View {
+        ZStack(alignment: .bottomLeading) {
+            RoundedRectangle(cornerRadius: 26, style: .continuous)
+                .fill(Theme.heroGradient)
+
+            RouteRibbon()
+                .clipShape(RoundedRectangle(cornerRadius: 26, style: .continuous))
+
+            VStack(alignment: .leading, spacing: AppSpacing.small) {
+                HStack(spacing: 7) {
+                    Text("FR")
+                        .font(.caption2.weight(.black))
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 5)
+                        .background(Theme.routeBlue, in: RoundedRectangle(cornerRadius: 5))
+                    Text(settings.countryName.uppercased())
+                        .font(.caption2.weight(.bold))
+                        .tracking(1.3)
+                        .foregroundStyle(.white.opacity(0.78))
+                }
+
+                Text(settings.t(.appName))
+                    .font(.display(34, .bold))
+                    .foregroundStyle(.white)
+
+                Text(settings.t(.splashSubtitle))
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(.white.opacity(0.82))
+            }
+            .padding(24)
+        }
+        .frame(minHeight: 180)
+        .shadow(color: Theme.routeBlueDeep.opacity(0.24), radius: 20, y: 10)
+        .accessibilityElement(children: .combine)
+        .accessibilityAddTraits(.isHeader)
+    }
+
     private func languageButton(_ language: Language) -> some View {
         Button {
+            AppFeedback.selection()
             settings.chooseLanguage(language.code)
         } label: {
             HStack(spacing: AppSpacing.standard) {
-                Image(systemName: "character.bubble")
-                    .font(.title3)
-                    .foregroundStyle(AppColor.action)
-                    .frame(width: 28)
+                Text(language.code.rawValue.uppercased())
+                    .font(.gauge(13, .bold))
+                    .foregroundStyle(.white)
+                    .frame(width: 44, height: 44)
+                    .background(Theme.buttonGradient, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
                     .accessibilityHidden(true)
 
                 Text(language.name)
@@ -79,6 +116,7 @@ struct SelectLanguageView: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(PressableStyle())
+        .shadow(color: Theme.routeBlueDeep.opacity(0.05), radius: 12, y: 5)
         .accessibilityLabel(language.name)
         .accessibilityHint(settings.t(.selectLanguageActionHint))
     }

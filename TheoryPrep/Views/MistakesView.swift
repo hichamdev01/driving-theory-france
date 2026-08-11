@@ -9,26 +9,33 @@ struct MistakesView: View {
         NavigationStack(path: $path) {
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text(settings.t(.appName).uppercased())
-                            .font(.system(size: 10, weight: .bold))
-                            .tracking(1.5)
-                            .foregroundColor(Theme.danger)
-                        Text(settings.t(.mistakes))
-                            .font(.display(34, .bold))
-                            .foregroundColor(Theme.text)
-                    }
+                    AppScreenHeader(
+                        eyebrow: settings.t(.appName),
+                        title: settings.t(.mistakes),
+                        accent: Theme.danger
+                    )
                     .padding(.top, 12)
 
                     if mistakes.isEmpty {
                         CardView {
-                            VStack(alignment: .leading, spacing: 4) {
+                            VStack(alignment: .leading, spacing: 12) {
+                                Image(systemName: "checkmark.circle.fill")
+                                    .font(.largeTitle)
+                                    .foregroundStyle(Theme.success)
+                                    .accessibilityHidden(true)
                                 Text(settings.t(.noMistakesTitle))
-                                    .font(.system(size: 16, weight: .bold))
+                                    .font(.headline)
                                     .foregroundColor(Theme.text)
                                 Text(settings.t(.noMistakesSubtitle))
-                                    .font(.system(size: 14))
+                                    .font(.subheadline)
                                     .foregroundColor(Theme.textMuted)
+                                PrimaryButton(
+                                    label: settings.t(.randomPractice),
+                                    variant: .secondary,
+                                    icon: "shuffle"
+                                ) {
+                                    path.append(LearningRoute.question(mode: .practice, categoryId: nil))
+                                }
                             }
                         }
                     } else {
@@ -39,7 +46,7 @@ struct MistakesView: View {
                             CardView {
                                 VStack(alignment: .leading, spacing: 8) {
                                     Text(mistake.question.categoryName)
-                                        .font(.system(size: 12, weight: .bold))
+                                        .font(.caption.weight(.bold))
                                         .foregroundColor(Theme.routeBlue)
                                         .textCase(.uppercase)
 
@@ -49,24 +56,26 @@ struct MistakesView: View {
                                             .aspectRatio(contentMode: .fit)
                                             .frame(maxWidth: .infinity)
                                             .clipShape(RoundedRectangle(cornerRadius: Theme.controlRadius))
+                                            .accessibilityLabel(mistake.question.questionText)
                                     }
 
                                     Text(mistake.question.questionText)
-                                        .font(.system(size: 15, weight: .semibold))
+                                        .font(.body.weight(.semibold))
                                         .foregroundColor(Theme.text)
                                     Text(settings.t(.incorrectTimes, count: mistake.incorrectCount))
-                                        .font(.system(size: 13, weight: .semibold))
+                                        .font(.subheadline.weight(.semibold))
                                         .foregroundColor(Theme.danger)
                                 }
                             }
                             .appear(i)
+                            .accessibilityElement(children: .combine)
                         }
                     }
                 }
                 .padding(20)
                 .padding(.bottom, AppSpacing.section)
             }
-            .background(Theme.background.ignoresSafeArea())
+            .background(AppScreenBackground())
             .navigationBarHidden(true)
             .navigationDestination(for: LearningRoute.self) { route in
                 switch route {

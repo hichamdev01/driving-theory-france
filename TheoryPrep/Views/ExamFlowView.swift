@@ -31,57 +31,68 @@ struct ExamFlowView: View {
 struct ExamIntroView: View {
     @Binding var path: NavigationPath
     @EnvironmentObject var settings: AppSettings
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var config: ExamConfiguration?
 
     var body: some View {
         ScrollView {
             VStack(spacing: 22) {
-                VStack(spacing: 2) {
-                    Text(settings.t(.appName).uppercased())
-                        .font(.system(size: 10, weight: .bold))
-                        .tracking(1.5)
-                        .foregroundColor(Theme.danger)
-                    Text(settings.t(.examIntroTitle))
-                        .font(.display(34, .bold))
-                        .foregroundColor(Theme.text)
-                }
+                AppScreenHeader(
+                    eyebrow: settings.t(.appName),
+                    title: settings.t(.examIntroTitle),
+                    accent: Theme.danger
+                )
+                .frame(maxWidth: .infinity, alignment: .leading)
 
                 if let config {
                     ZStack {
-                        Circle()
-                            .fill(Theme.surface)
-                            .shadow(color: Theme.routeBlueDeep.opacity(0.1), radius: 12, y: 6)
-                        Circle().stroke(Theme.danger, lineWidth: 12)
-                        VStack(spacing: -2) {
-                            Text("\(config.allowedMistakes)")
-                                .font(.gauge(52, .bold))
-                                .foregroundColor(Theme.text)
-                            Text(settings.t(.maximumMistakes).uppercased())
-                                .font(.system(size: 9, weight: .black))
-                                .tracking(0.8)
-                                .foregroundColor(Theme.textMuted)
-                                .multilineTextAlignment(.center)
+                        RoundedRectangle(cornerRadius: 26, style: .continuous)
+                            .fill(Theme.heroGradient)
+                        RouteRibbon()
+                            .clipShape(RoundedRectangle(cornerRadius: 26, style: .continuous))
+                        ZStack {
+                            Circle().fill(.white)
+                            Circle().stroke(Theme.danger, lineWidth: 11)
+                            VStack(spacing: -2) {
+                                Text("\(config.allowedMistakes)")
+                                    .font(.gauge(50, .bold))
+                                    .foregroundColor(Color(hex: "0F1923"))
+                                Text(settings.t(.maximumMistakes).uppercased())
+                                    .font(.caption2.weight(.black))
+                                    .tracking(0.6)
+                                    .foregroundColor(Color(hex: "54657A"))
+                                    .multilineTextAlignment(.center)
+                            }
                         }
+                        .frame(width: 156, height: 156)
+                        .padding(.vertical, 24)
                     }
-                    .frame(width: 172, height: 172)
+                    .frame(maxWidth: .infinity, minHeight: 204)
+                    .shadow(color: Theme.routeBlueDeep.opacity(0.22), radius: 18, y: 9)
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel(settings.t(.maximumMistakes))
+                    .accessibilityValue("\(config.allowedMistakes)")
                 }
 
                 Text(settings.t(.examIntroDescription))
-                    .font(.system(size: 14))
+                    .font(.body)
                     .foregroundColor(Theme.textMuted)
                     .multilineTextAlignment(.center)
                     .lineSpacing(3)
                     .padding(.horizontal, 12)
 
                 if let config {
-                    HStack(spacing: 10) {
+                    LazyVGrid(
+                        columns: [GridItem(.adaptive(minimum: dynamicTypeSize.isAccessibilitySize ? 220 : 100), spacing: 10)],
+                        spacing: 10
+                    ) {
                         stat(value: "\(config.numberOfQuestions)", label: settings.t(.numberOfQuestions), icon: "rectangle.stack")
                         stat(value: "\(config.timeLimitSeconds / 60) min", label: settings.t(.timeLimit), icon: "timer")
                         stat(value: "\(config.numberOfQuestions - config.allowedMistakes)/\(config.numberOfQuestions)", label: settings.t(.passingScore), icon: "checkmark.seal")
                     }
                 }
 
-                PrimaryButton(label: settings.t(.beginExam), disabled: config == nil) {
+                PrimaryButton(label: settings.t(.beginExam), disabled: config == nil, icon: "checkmark.seal") {
                     path.append(ExamRoute.run)
                 }
             }
@@ -89,7 +100,7 @@ struct ExamIntroView: View {
             .padding(.top, 14)
             .padding(.bottom, AppSpacing.section)
         }
-        .background(Theme.background.ignoresSafeArea())
+        .background(AppScreenBackground())
         .navigationBarHidden(true)
         .onAppear {
             guard let country = settings.countryCode else { return }
@@ -103,14 +114,14 @@ struct ExamIntroView: View {
                 .font(.system(size: 15, weight: .semibold))
                 .foregroundColor(Theme.routeBlue)
             Text(value)
-                .font(.gauge(14, .bold))
+                .font(.headline.monospacedDigit())
                 .foregroundColor(Theme.text)
             Text(label.uppercased())
-                .font(.system(size: 8, weight: .bold))
+                .font(.caption2.weight(.bold))
                 .tracking(0.5)
                 .foregroundColor(Theme.textMuted)
                 .multilineTextAlignment(.center)
-                .lineLimit(2)
+                .fixedSize(horizontal: false, vertical: true)
         }
         .padding(.horizontal, 6)
         .padding(.vertical, 14)
@@ -118,5 +129,6 @@ struct ExamIntroView: View {
         .background(Theme.surface)
         .overlay(RoundedRectangle(cornerRadius: Theme.controlRadius).stroke(Theme.border, lineWidth: 1))
         .clipShape(RoundedRectangle(cornerRadius: Theme.controlRadius))
+        .accessibilityElement(children: .combine)
     }
 }

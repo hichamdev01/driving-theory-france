@@ -17,6 +17,7 @@ enum StringKey: String, CaseIterable {
     case questionsShort, weakestShort, focusWeakSpots, roadSignsLibrary
     case examMetadata, splashSubtitle, signCountFormat, categoryCountFormat
     case opensRoadSignsHint
+    case finishExamPrompt, finishExamConfirm, cancel, unansweredQuestionsFormat
 }
 
 private typealias L = [LanguageCode: String]
@@ -63,8 +64,8 @@ private func buildStrings() -> [StringKey: L] {
     s[.allCategories] = entry("All Categories", "Toutes les Catégories")
     s[.randomPractice] = entry("Random Practice", "Entraînement Aléatoire")
     s[.randomPracticeSubtitle] = entry(
-        "A mix of questions from every category",
-        "Un mélange de questions de toutes les catégories"
+        "A focused 10-question mix from every category",
+        "Une série ciblée de 10 questions de toutes les catégories"
     )
     s[.practiceByCategory] = entry("Practice by Category", "S’entraîner par Catégorie")
     s[.submitAnswer] = entry("Submit", "Valider")
@@ -133,6 +134,13 @@ private func buildStrings() -> [StringKey: L] {
     s[.opensRoadSignsHint] = entry(
         "Opens the road signs reference.",
         "Ouvre le guide des panneaux routiers."
+    )
+    s[.finishExamPrompt] = entry("Finish this exam?", "Terminer cet examen ?")
+    s[.finishExamConfirm] = entry("Finish Exam", "Terminer l’examen")
+    s[.cancel] = entry("Keep Working", "Continuer l’examen")
+    s[.unansweredQuestionsFormat] = entry(
+        "%d unanswered questions will be marked incorrect.",
+        "%d questions sans réponse seront comptées comme incorrectes."
     )
 
     return s

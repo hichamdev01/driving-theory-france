@@ -2,6 +2,7 @@ import SwiftUI
 
 struct RootView: View {
     @EnvironmentObject var settings: AppSettings
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var minimumSplashElapsed = false
 
     private var showSplash: Bool { settings.loading || !minimumSplashElapsed }
@@ -17,10 +18,11 @@ struct RootView: View {
                 MainTabView()
             }
         }
-        .animation(.easeInOut(duration: 0.4), value: showSplash)
-        .animation(.default, value: settings.languageCode)
+        .animation(reduceMotion ? nil : .easeInOut(duration: 0.35), value: showSplash)
+        .animation(reduceMotion ? nil : .easeInOut(duration: 0.3), value: settings.languageCode)
         .task {
-            try? await Task.sleep(nanoseconds: 1_600_000_000)
+            let delay: UInt64 = reduceMotion ? 250_000_000 : 900_000_000
+            try? await Task.sleep(nanoseconds: delay)
             minimumSplashElapsed = true
         }
     }

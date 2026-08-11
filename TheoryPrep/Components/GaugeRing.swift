@@ -9,6 +9,7 @@ struct GaugeRing: View {
     var caption: String? = nil
 
     @State private var animatedProgress: CGFloat = 0
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     private var progress: CGFloat { CGFloat(max(0, min(100, value))) / 100 }
     private var zoneColor: Color { Theme.gaugeColor(value) }
@@ -57,13 +58,16 @@ struct GaugeRing: View {
             }
         }
         .frame(width: size, height: size)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(caption ?? "Progress")
+        .accessibilityValue("\(value)%")
         .onAppear {
-            withAnimation(.spring(response: 0.9, dampingFraction: 0.82).delay(0.1)) {
+            withAnimation(reduceMotion ? nil : .spring(response: 0.9, dampingFraction: 0.82).delay(0.1)) {
                 animatedProgress = progress
             }
         }
         .onChange(of: value) {
-            withAnimation(.spring(response: 0.9, dampingFraction: 0.82)) {
+            withAnimation(reduceMotion ? nil : .spring(response: 0.9, dampingFraction: 0.82)) {
                 animatedProgress = progress
             }
         }

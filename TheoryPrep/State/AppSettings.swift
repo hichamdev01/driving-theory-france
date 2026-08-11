@@ -15,6 +15,14 @@ final class AppSettings: ObservableObject {
         Seeder.seedIfNeeded(db)
         let settings = Queries.getUserSettings(db)
         languageCode = settings.selectedLanguageCode
+        #if DEBUG
+        let arguments = ProcessInfo.processInfo.arguments
+        if let flagIndex = arguments.firstIndex(of: "-UITestLanguage"),
+           arguments.indices.contains(flagIndex + 1),
+           let code = LanguageCode(rawValue: arguments[flagIndex + 1]) {
+            chooseLanguage(code)
+        }
+        #endif
         loading = false
     }
 

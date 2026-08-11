@@ -3,6 +3,8 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var settings: AppSettings
     @EnvironmentObject var router: TabRouter
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var progress: OverallProgress = .empty
     @State private var examConfig: ExamConfiguration?
     @State private var roadProgress: CGFloat = 0
@@ -33,16 +35,16 @@ struct HomeView: View {
             .padding(.top, 18)
             .padding(.bottom, AppSpacing.section)
         }
-        .background(Theme.background.ignoresSafeArea())
+        .background(AppScreenBackground())
         .navigationBarHidden(true)
         .onAppear {
             reload()
-            withAnimation(.spring(response: 1.1, dampingFraction: 0.82).delay(0.4)) {
+            withAnimation(reduceMotion ? nil : .spring(response: 1.1, dampingFraction: 0.82).delay(0.3)) {
                 roadProgress = CGFloat(progress.accuracy) / 100
             }
         }
         .onChange(of: progress.accuracy) { _, new in
-            withAnimation(.spring(response: 1.1, dampingFraction: 0.82)) {
+            withAnimation(reduceMotion ? nil : .spring(response: 1.1, dampingFraction: 0.82)) {
                 roadProgress = CGFloat(new) / 100
             }
         }
@@ -53,6 +55,10 @@ struct HomeView: View {
     private var topBar: some View {
         HStack(alignment: .center) {
             VStack(alignment: .leading, spacing: 5) {
+                Text(settings.t(.appName))
+                    .font(.display(24, .bold))
+                    .foregroundStyle(Theme.text)
+
                 // Country pill
                 HStack(spacing: 5) {
                     ZStack {
@@ -64,7 +70,7 @@ struct HomeView: View {
                     }
                     .frame(width: 22, height: 15)
                     Text(settings.countryName.uppercased())
-                        .font(.system(size: 10, weight: .bold))
+                        .font(.caption2.weight(.bold))
                         .tracking(1.5)
                         .foregroundColor(Theme.textMuted)
                 }
@@ -85,6 +91,7 @@ struct HomeView: View {
             }
             .buttonStyle(PressableStyle())
             .accessibilityLabel(settings.t(.changeLanguage))
+            .accessibilityHint(settings.t(.selectLanguageActionHint))
         }
     }
 
@@ -96,24 +103,8 @@ struct HomeView: View {
             RoundedRectangle(cornerRadius: 26)
                 .fill(Theme.heroGradient)
 
-            // Dot grid texture
-            Canvas { ctx, size in
-                let step: CGFloat = 22
-                let r: CGFloat    = 1.2
-                var x: CGFloat = step
-                while x < size.width {
-                    var y: CGFloat = step
-                    while y < size.height {
-                        ctx.fill(
-                            Path(ellipseIn: CGRect(x: x - r, y: y - r, width: r*2, height: r*2)),
-                            with: .color(.white.opacity(0.07))
-                        )
-                        y += step
-                    }
-                    x += step
-                }
-            }
-            .clipShape(RoundedRectangle(cornerRadius: 26))
+            RouteRibbon()
+                .clipShape(RoundedRectangle(cornerRadius: 26))
 
             // Top-right glow
             RadialGradient(
@@ -133,64 +124,102 @@ struct HomeView: View {
                         .font(.system(size: 11, weight: .bold))
                         .foregroundColor(Theme.accent)
                     Text(readinessStatus.label.uppercased())
-                        .font(.system(size: 10, weight: .bold))
+                        .font(.caption2.weight(.bold))
                         .tracking(1.2)
-                        .foregroundColor(.white.opacity(0.55))
+                        .foregroundColor(.white.opacity(0.78))
                 }
 
-                // Big number
-                HStack(alignment: .lastTextBaseline, spacing: 2) {
-                    Text("\(progress.accuracy)")
-                        .font(.gauge(64, .bold))
-                        .foregroundColor(.white)
-                    Text("%")
-                        .font(.gauge(24, .bold))
-                        .foregroundColor(Theme.accent)
-                        .padding(.leading, 1)
-                        .padding(.bottom, 8)
-                    Text(settings.t(.accuracy).uppercased())
-                        .font(.system(size: 10, weight: .bold))
-                        .tracking(1)
-                        .foregroundColor(.white.opacity(0.45))
-                        .padding(.leading, 8)
-                        .padding(.bottom, 10)
-                }
+                accuracyReadout
 
                 // Road-to-exam meter
                 roadMeter
 
-                // Bottom stat row
-                HStack(spacing: 0) {
-                    statItem(
-                        value: "\(progress.questionsAnswered)",
-                        label: settings.t(.questionsShort).uppercased(),
-                        icon: "checkmark.circle.fill"
-                    )
-                    Divider()
-                        .frame(height: 28)
-                        .background(.white.opacity(0.15))
-                        .padding(.horizontal, 16)
-                    if let weakest = progress.weakestCategory {
-                        statItem(
-                            value: weakest.categoryName,
-                            label: settings.t(.weakestShort).uppercased(),
-                            icon: "exclamationmark.triangle.fill",
-                            warn: true
-                        )
-                    } else {
-                        statItem(
-                            value: "—",
-                            label: settings.t(.weakestShort).uppercased(),
-                            icon: "exclamationmark.triangle.fill"
-                        )
-                    }
-                    Spacer()
-                }
+                readinessStats
             }
             .padding(24)
         }
         .clipShape(RoundedRectangle(cornerRadius: 26))
         .shadow(color: Color(hex: "0B1B3E").opacity(0.28), radius: 20, x: 0, y: 10)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(readinessAccessibilityLabel)
+    }
+
+    private var readinessAccessibilityLabel: String {
+        var parts = [
+            readinessStatus.label,
+            "\(settings.t(.accuracy)) \(progress.accuracy)%",
+            "\(progress.questionsAnswered) \(settings.t(.questionsShort))"
+        ]
+        if let weakest = progress.weakestCategory {
+            parts.append("\(settings.t(.weakestShort)): \(weakest.categoryName)")
+        }
+        return parts.joined(separator: ". ")
+    }
+
+    private var accuracyReadout: some View {
+        HStack(alignment: .lastTextBaseline, spacing: 2) {
+            Text("\(progress.accuracy)")
+                .font(.gauge(64, .bold))
+                .foregroundColor(.white)
+            Text("%")
+                .font(.gauge(24, .bold))
+                .foregroundColor(Theme.accent)
+                .padding(.leading, 1)
+                .padding(.bottom, 8)
+            Text(settings.t(.accuracy).uppercased())
+                .font(.caption2.weight(.bold))
+                .tracking(1)
+                .foregroundColor(.white.opacity(0.72))
+                .padding(.leading, 8)
+                .padding(.bottom, 10)
+        }
+    }
+
+    @ViewBuilder
+    private var readinessStats: some View {
+        if dynamicTypeSize.isAccessibilitySize {
+            VStack(alignment: .leading, spacing: 12) {
+                answeredStat
+                weakestStat
+            }
+        } else {
+            HStack(spacing: 0) {
+                answeredStat
+                Divider()
+                    .frame(height: 28)
+                    .background(.white.opacity(0.22))
+                    .padding(.horizontal, 16)
+                weakestStat
+                Spacer()
+            }
+        }
+    }
+
+    private var answeredStat: some View {
+        statItem(
+            value: "\(progress.questionsAnswered)",
+            label: settings.t(.questionsShort).uppercased(),
+            icon: "checkmark.circle.fill"
+        )
+    }
+
+    private var weakestStat: some View {
+        Group {
+            if let weakest = progress.weakestCategory {
+                statItem(
+                    value: weakest.categoryName,
+                    label: settings.t(.weakestShort).uppercased(),
+                    icon: "exclamationmark.triangle.fill",
+                    warn: true
+                )
+            } else {
+                statItem(
+                    value: "—",
+                    label: settings.t(.weakestShort).uppercased(),
+                    icon: "exclamationmark.triangle.fill"
+                )
+            }
+        }
     }
 
     // Custom segmented road-progress meter
@@ -238,7 +267,8 @@ struct HomeView: View {
                 Text("100%")
             }
             .font(.system(size: 8.5, weight: .semibold))
-            .foregroundColor(.white.opacity(0.3))
+            .foregroundColor(.white.opacity(0.58))
+            .accessibilityHidden(true)
         }
     }
 
@@ -249,14 +279,13 @@ struct HomeView: View {
                 .foregroundColor(warn ? Theme.accent : .white.opacity(0.5))
             VStack(alignment: .leading, spacing: 2) {
                 Text(value)
-                    .font(.system(size: 13, weight: .bold))
+                    .font(.subheadline.weight(.bold))
                     .foregroundColor(.white)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.65)
+                    .fixedSize(horizontal: false, vertical: true)
                 Text(label)
-                    .font(.system(size: 8, weight: .bold))
+                    .font(.caption2.weight(.bold))
                     .tracking(0.6)
-                    .foregroundColor(.white.opacity(0.4))
+                    .foregroundColor(.white.opacity(0.68))
             }
         }
     }
@@ -264,7 +293,7 @@ struct HomeView: View {
     // MARK: – Practice card (primary CTA)
 
     private var practiceCard: some View {
-        Button { router.selectedTab = .practice } label: {
+        Button { router.openLearning(.question(mode: .practice, categoryId: nil)) } label: {
             HStack(spacing: 16) {
                 // Frosted icon box
                 ZStack {
@@ -281,9 +310,9 @@ struct HomeView: View {
                         .font(.display(22, .bold))
                         .foregroundColor(.white)
                     Text(settings.t(.randomPracticeSubtitle))
-                        .font(.system(size: 12, weight: .medium))
+                        .font(.subheadline.weight(.medium))
                         .foregroundColor(.white.opacity(0.65))
-                        .lineLimit(2)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
 
                 Spacer(minLength: 0)
@@ -310,14 +339,25 @@ struct HomeView: View {
         }
         .buttonStyle(PressableStyle())
         .shadow(color: Color(hex: "0F44C4").opacity(0.38), radius: 16, x: 0, y: 7)
+        .accessibilityElement(children: .combine)
+        .accessibilityHint(settings.t(.randomPracticeSubtitle))
     }
 
     // MARK: – Secondary grid (Exam + Mistakes)
 
     private var secondaryGrid: some View {
-        HStack(spacing: 12) {
-            examCard
-            mistakesCard
+        Group {
+            if dynamicTypeSize.isAccessibilitySize {
+                VStack(spacing: 12) {
+                    examCard
+                    mistakesCard
+                }
+            } else {
+                HStack(spacing: 12) {
+                    examCard
+                    mistakesCard
+                }
+            }
         }
     }
 
@@ -354,9 +394,9 @@ struct HomeView: View {
                         .font(.display(18, .bold))
                         .foregroundColor(Theme.text)
                     Text(examMetadata)
-                        .font(.system(size: 10.5, weight: .semibold))
+                        .font(.caption.weight(.semibold))
                         .foregroundColor(Theme.textMuted)
-                        .lineLimit(2)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
                 .padding(16)
             }
@@ -372,6 +412,7 @@ struct HomeView: View {
             .shadow(color: .black.opacity(0.08), radius: 14, x: 0, y: 5)
         }
         .buttonStyle(PressableStyle())
+        .accessibilityElement(children: .combine)
     }
 
     private var mistakesCard: some View {
@@ -402,7 +443,7 @@ struct HomeView: View {
                         .font(.display(18, .bold))
                         .foregroundColor(Theme.text)
                     Text(settings.t(.focusWeakSpots))
-                        .font(.system(size: 10.5, weight: .semibold))
+                        .font(.caption.weight(.semibold))
                         .foregroundColor(Theme.textMuted)
                 }
                 .padding(16)
@@ -413,12 +454,13 @@ struct HomeView: View {
             .shadow(color: .black.opacity(0.08), radius: 14, x: 0, y: 5)
         }
         .buttonStyle(PressableStyle())
+        .accessibilityElement(children: .combine)
     }
 
     // MARK: – Road Signs strip
 
     private var roadSignsRow: some View {
-        Button { router.selectedTab = .practice } label: {
+        Button { router.openLearning(.roadSigns) } label: {
             HStack(spacing: 16) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 13)
@@ -434,7 +476,7 @@ struct HomeView: View {
                         .font(.display(18, .semibold))
                         .foregroundColor(Theme.text)
                     Text(settings.t(.roadSignsLibrary))
-                        .font(.system(size: 12, weight: .medium))
+                        .font(.subheadline.weight(.medium))
                         .foregroundColor(Theme.textMuted)
                 }
 
@@ -451,6 +493,8 @@ struct HomeView: View {
             .shadow(color: .black.opacity(0.07), radius: 14, x: 0, y: 5)
         }
         .buttonStyle(PressableStyle())
+        .accessibilityElement(children: .combine)
+        .accessibilityHint(settings.t(.opensRoadSignsHint))
     }
 
     // MARK: – Helpers

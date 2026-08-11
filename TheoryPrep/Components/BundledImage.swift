@@ -64,6 +64,9 @@ private struct BundledVideoPlayer: View {
     }
 }
 
+/// Renders a road sign's image (or vector fallback). Always paired with the
+/// sign's name/meaning as adjacent text, so it is hidden from assistive
+/// technologies to avoid a redundant, unlabeled announcement.
 struct RoadSignImageView: View {
     let imagePath: String?
     let shape: String
@@ -71,13 +74,16 @@ struct RoadSignImageView: View {
     var size: CGFloat = 56
 
     var body: some View {
-        if let imagePath, let uiImage = BundledImageLoader.uiImage(for: imagePath) {
-            Image(uiImage: uiImage)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: size, height: size)
-        } else {
-            RoadSignBadge(shape: shape, color: color, size: size)
+        Group {
+            if let imagePath, let uiImage = BundledImageLoader.uiImage(for: imagePath) {
+                Image(uiImage: uiImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: size, height: size)
+            } else {
+                RoadSignBadge(shape: shape, color: color, size: size)
+            }
         }
+        .accessibilityHidden(true)
     }
 }

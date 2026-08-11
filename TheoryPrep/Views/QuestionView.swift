@@ -1,33 +1,46 @@
 import SwiftUI
 
 struct QuestionView: View {
+    private let sessionLength = 10
     let mode: QuizMode
     var categoryId: Int64? = nil
     @Binding var path: NavigationPath
 
     @EnvironmentObject var settings: AppSettings
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var questions: [QuestionWithTranslation]?
     @State private var index = 0
     @State private var selected: Set<AnswerKey> = []
     @State private var submitted = false
     @State private var correctCount = 0
+    @AccessibilityFocusState private var questionFocused: Bool
+    @AccessibilityFocusState private var feedbackFocused: Bool
 
     var body: some View {
         Group {
             if let questions {
                 if questions.isEmpty {
-                    VStack(spacing: 16) {
-                        Text(settings.t(.noDataYet)).foregroundColor(Theme.textMuted)
+                    VStack(spacing: 14) {
+                        Image(systemName: "road.lanes")
+                            .font(.largeTitle)
+                            .foregroundStyle(Theme.routeBlue)
+                            .accessibilityHidden(true)
+                        Text(settings.t(.noDataYet))
+                            .font(.headline)
+                            .foregroundColor(Theme.text)
+                            .multilineTextAlignment(.center)
                     }
+                    .padding(32)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(Theme.background.ignoresSafeArea())
+                    .background(AppScreenBackground())
                 } else {
                     questionBody(questions[index], total: questions.count)
                 }
             } else {
                 ZStack {
-                    Theme.background.ignoresSafeArea()
+                    AppScreenBackground()
                     ProgressView().tint(Theme.routeBlue)
+                        .accessibilityLabel(settings.t(.loading))
                 }
             }
         }
@@ -37,8 +50,9 @@ struct QuestionView: View {
 
     @ViewBuilder
     private func questionBody(_ question: QuestionWithTranslation, total: Int) -> some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
+        ScrollViewReader { proxy in
+            ScrollView {
+                VStack(alignment: .leading, spacing: 20) {
 
                 // Header: question counter + progress bar
                 VStack(alignment: .leading, spacing: 8) {
@@ -54,11 +68,11 @@ struct QuestionView: View {
                         Spacer()
 
                         Text(question.categoryName)
-                            .font(.system(size: 10, weight: .bold))
+                            .font(.caption2.weight(.bold))
                             .tracking(0.8)
                             .foregroundColor(Theme.textMuted)
                             .textCase(.uppercase)
-                            .lineLimit(1)
+                            .multilineTextAlignment(.trailing)
                     }
 
                     // Progress bar
@@ -68,12 +82,19 @@ struct QuestionView: View {
                             Capsule()
                                 .fill(Theme.buttonGradient)
                                 .frame(width: geo.size.width * CGFloat(index + 1) / CGFloat(total))
-                                .animation(.spring(response: 0.5, dampingFraction: 0.85), value: index)
+                                .animation(
+                                    reduceMotion ? nil : .spring(response: 0.5, dampingFraction: 0.85),
+                                    value: index
+                                )
                         }
                     }
                     .frame(height: 5)
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel(settings.t(.questionOf))
+                    .accessibilityValue("\(index + 1) / \(total)")
                 }
                 .padding(.top, 8)
+                .id("questionTop")
 
                 // Image / video
                 if question.imagePath != nil || question.videoPath != nil {
@@ -82,6 +103,7 @@ struct QuestionView: View {
                         .clipShape(RoundedRectangle(cornerRadius: Theme.cardRadius))
                         .shadow(color: .black.opacity(0.12), radius: 14, x: 0, y: 6)
                         .padding(.horizontal, -20)
+                        .accessibilityLabel(question.questionText)
                 }
 
                 // Question text
@@ -89,10 +111,12 @@ struct QuestionView: View {
                     .font(.display(24, .bold))
                     .foregroundColor(Theme.text)
                     .lineSpacing(3)
+                    .accessibilityAddTraits(.isHeader)
+                    .accessibilityFocused($questionFocused)
 
                 // Instruction
                 Text(settings.t(.selectAllAnswers))
-                    .font(.system(size: 12.5, weight: .medium))
+                    .font(.subheadline)
                     .foregroundColor(Theme.textMuted)
                     .lineSpacing(1.5)
 
@@ -106,28 +130,53 @@ struct QuestionView: View {
                 // Feedback card
                 if submitted {
                     feedbackCard(question)
+                        .id("feedbackCard")
+                        .accessibilityFocused($feedbackFocused)
                         .transition(.asymmetric(
                             insertion: .opacity.combined(with: .move(edge: .top)),
                             removal: .opacity
                         ))
                 }
 
-                // Action button
+                }
+                .padding(20)
+                .padding(.bottom, AppSpacing.standard)
+            }
+            .safeAreaInset(edge: .bottom, spacing: 0) {
                 PrimaryButton(
                     label: submitted
                         ? (index == total - 1 ? settings.t(.finishButton) : settings.t(.continueButton))
                         : settings.t(.submitAnswer),
-                    disabled: !submitted && selected.isEmpty
+                    disabled: !submitted && selected.isEmpty,
+                    icon: submitted ? "arrow.right" : "checkmark"
                 ) {
                     submitted ? handleContinue(total: total) : handleSubmit(question)
                 }
+                .padding(.horizontal, 20)
+                .padding(.vertical, 12)
+                .background(BottomBarBackground())
+                .overlay(alignment: .top) { Divider() }
             }
-            .padding(20)
-            .padding(.bottom, AppSpacing.section)
+            .background(AppScreenBackground())
+            .navigationBarTitleDisplayMode(.inline)
+            .animation(reduceMotion ? nil : .spring(response: 0.38, dampingFraction: 0.85), value: submitted)
+            .onAppear { questionFocused = true }
+            .onChange(of: index) {
+                withAnimation(reduceMotion ? nil : .easeOut(duration: 0.28)) {
+                    proxy.scrollTo("questionTop", anchor: .top)
+                }
+                questionFocused = true
+            }
+            .onChange(of: submitted) { _, isSubmitted in
+                guard isSubmitted else { return }
+                withAnimation(reduceMotion ? nil : .easeOut(duration: 0.3)) {
+                    proxy.scrollTo("feedbackCard", anchor: .top)
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                    feedbackFocused = true
+                }
+            }
         }
-        .background(Theme.background.ignoresSafeArea())
-        .navigationBarTitleDisplayMode(.inline)
-        .animation(.spring(response: 0.38, dampingFraction: 0.85), value: submitted)
     }
 
     // MARK: – Answer row
@@ -152,7 +201,8 @@ struct QuestionView: View {
 
         return Button(action: {
             if !submitted {
-                withAnimation(.spring(response: 0.28, dampingFraction: 0.7)) {
+                AppFeedback.selection()
+                withAnimation(reduceMotion ? nil : .spring(response: 0.28, dampingFraction: 0.75)) {
                     if selected.contains(key) { selected.remove(key) } else { selected.insert(key) }
                 }
             }
@@ -173,7 +223,7 @@ struct QuestionView: View {
                 }
 
                 Text(question.answerText(for: key))
-                    .font(.system(size: 15, weight: .regular))
+                    .font(.body)
                     .foregroundColor(Theme.text)
                     .multilineTextAlignment(.leading)
                     .lineSpacing(1.5)
@@ -188,10 +238,15 @@ struct QuestionView: View {
                     Image(systemName: "xmark.circle.fill")
                         .foregroundColor(Theme.danger)
                         .font(.system(size: 18))
+                } else if !submitted && isSelected {
+                    Image(systemName: "checkmark.circle.fill")
+                        .foregroundColor(Theme.routeBlue)
+                        .font(.system(size: 18))
                 }
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 14)
+            .frame(maxWidth: .infinity, minHeight: 56, alignment: .leading)
             .background(bgColor)
             .overlay(alignment: .leading) {
                 // Left accent bar (replaces full border — cleaner look)
@@ -209,6 +264,10 @@ struct QuestionView: View {
         }
         .buttonStyle(.plain)
         .disabled(submitted)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("\(key.rawValue.uppercased()). \(question.answerText(for: key))")
+        .accessibilityValue(submitted && isCorrectAnswer ? settings.t(.correct) : "")
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 
     // MARK: – Feedback card
@@ -229,13 +288,13 @@ struct QuestionView: View {
                         .foregroundColor(.white)
                 }
                 Text(isCorrect ? settings.t(.correct) : settings.t(.incorrect))
-                    .font(.display(18, .heavy))
+                    .font(.headline)
                     .foregroundColor(accentColor)
             }
 
             if !isCorrect {
                 Text("\(settings.t(.correctAnswerWas)) \(question.correctAnswerText)")
-                    .font(.system(size: 13.5, weight: .semibold))
+                    .font(.subheadline.weight(.semibold))
                     .foregroundColor(Theme.text)
             }
 
@@ -243,11 +302,11 @@ struct QuestionView: View {
 
             VStack(alignment: .leading, spacing: 4) {
                 Text(settings.t(.explanation).uppercased())
-                    .font(.system(size: 10, weight: .bold))
+                    .font(.caption2.weight(.bold))
                     .tracking(1)
                     .foregroundColor(Theme.textMuted)
                 Text(question.explanation)
-                    .font(.system(size: 14))
+                    .font(.body)
                     .foregroundColor(Theme.text)
                     .lineSpacing(2)
             }
@@ -262,6 +321,7 @@ struct QuestionView: View {
                 .padding(.vertical, 14)
         }
         .clipShape(RoundedRectangle(cornerRadius: Theme.controlRadius))
+        .accessibilityElement(children: .combine)
     }
 
     // MARK: – Logic
@@ -270,9 +330,19 @@ struct QuestionView: View {
         guard questions == nil, let country = settings.countryCode, let language = settings.languageCode else { return }
         switch mode {
         case .practice:
-            questions = Queries.getPracticeQuestions(Database.shared, country, language, categoryId: categoryId)
+            questions = Queries.getPracticeQuestions(
+                Database.shared,
+                country,
+                language,
+                categoryId: categoryId,
+                limit: sessionLength
+            )
         case .mistakes:
-            questions = Queries.getMistakes(Database.shared, country, language).map(\.question)
+            questions = Array(
+                Queries.getMistakes(Database.shared, country, language)
+                    .prefix(sessionLength)
+                    .map(\.question)
+            )
         }
     }
 
@@ -282,6 +352,10 @@ struct QuestionView: View {
         if isCorrect { correctCount += 1 }
         Queries.recordAnswer(Database.shared, question.id, isCorrect)
         submitted = true
+        AppFeedback.result(
+            correct: isCorrect,
+            announcement: isCorrect ? settings.t(.correct) : settings.t(.incorrect)
+        )
     }
 
     private func handleContinue(total: Int) {
