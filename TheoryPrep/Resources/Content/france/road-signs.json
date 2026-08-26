@@ -40,40 +40,40 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_001.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
-          "name": "Permanent danger",
-          "meaning": "Permanent danger"
+          "name": "A14 — Other dangers",
+          "meaning": "A danger not represented by a more specific symbol; an additional plate may describe it"
         },
         "fr": {
-          "name": "Danger permanent",
-          "meaning": "Danger permanent"
+          "name": "A14 — Autres dangers",
+          "meaning": "Danger autre que ceux représentés par un symbole spécifique ; un panonceau peut le préciser"
         }
       }
     },
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_002.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
-          "name": "Temporary danger",
-          "meaning": "Temporary danger"
+          "name": "AK14 — Other temporary dangers",
+          "meaning": "Another temporary danger; an additional plate may describe it"
         },
         "fr": {
-          "name": "Danger temporaire",
-          "meaning": "Danger temporaire"
+          "name": "AK14 — Autres dangers temporaires",
+          "meaning": "Autre danger de caractère temporaire ; un panonceau peut le préciser"
         }
       }
     },
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_003.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Priority to traffic from the right",
@@ -88,8 +88,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_004.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Right bend",
@@ -104,8 +104,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_005.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Left bend",
@@ -120,8 +120,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_006.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Double bend, first to the right",
@@ -136,8 +136,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_007.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Double bend, first to the left",
@@ -152,8 +152,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_008.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Uneven road",
@@ -168,8 +168,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_009.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Speed hump",
@@ -184,8 +184,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_010.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Road narrows on the right",
@@ -200,8 +200,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_011.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Road narrows on the left",
@@ -216,8 +216,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_012.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Road narrows",
@@ -232,8 +232,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_013.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Slippery road",
@@ -248,8 +248,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_014.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Opening bridge",
@@ -264,24 +264,24 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_015.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
-          "name": "Manually operated barriers",
-          "meaning": "Manually operated barriers"
+          "name": "A7 — Level crossing with manually operated gates or half-gates",
+          "meaning": "Warns of a level crossing equipped with manually operated gates or half-gates."
         },
         "fr": {
-          "name": "Barrières à fonctionnement manuel",
-          "meaning": "Barrières à fonctionnement manuel"
+          "name": "A7 — Passage à niveau muni de barrières ou de demi-barrières à fonctionnement manuel",
+          "meaning": "A7 — Passage à niveau muni de barrières ou de demi-barrières à fonctionnement manuel"
         }
       }
     },
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_016.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Level crossing without barrier",
@@ -296,8 +296,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_017.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Tramway crossing",
@@ -312,8 +312,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_018.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Public transport crossing",
@@ -328,8 +328,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_019.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Children",
@@ -344,8 +344,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_020.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Pedestrian crossing",
@@ -359,25 +359,9 @@
     },
     {
       "road_sign_category_slug": "danger",
-      "image_path": "france/road_sign_danger_021.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
-      "translations": {
-        "en": {
-          "name": "Other danger",
-          "meaning": "Other danger"
-        },
-        "fr": {
-          "name": "Danger pouvant être précisé ou non par un panonceau",
-          "meaning": "Danger pouvant être précisé ou non par un panonceau"
-        }
-      }
-    },
-    {
-      "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_022.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Cattle crossing",
@@ -392,8 +376,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_023.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Sheep crossing",
@@ -408,8 +392,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_024.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Wild animals",
@@ -424,8 +408,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_025.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Horse riders",
@@ -440,8 +424,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_026.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Steep descent",
@@ -456,8 +440,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_027.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Traffic lights ahead",
@@ -472,8 +456,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_028.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Two-way traffic",
@@ -488,8 +472,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_029.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Falling rocks",
@@ -504,8 +488,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_030.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Quayside or riverbank",
@@ -520,8 +504,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_031.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Cyclists crossing",
@@ -536,8 +520,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_032.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Low-flying aircraft",
@@ -552,8 +536,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_033.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Crosswind",
@@ -568,8 +552,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_034.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Priority intersection",
@@ -584,8 +568,8 @@
     {
       "road_sign_category_slug": "danger",
       "image_path": "france/road_sign_danger_035.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "triangle",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Roundabout ahead",
@@ -780,12 +764,12 @@
       "color": "#1E5AA8",
       "translations": {
         "en": {
-          "name": "Pedestrian area",
-          "meaning": "Pedestrian area"
+          "name": "B22b — Compulsory pedestrian path",
+          "meaning": "Path reserved for pedestrians; vehicle drivers and horse riders must not use or stop on it"
         },
         "fr": {
-          "name": "Entrée d’aire piétonne",
-          "meaning": "Entrée d’aire piétonne"
+          "name": "B22b — Chemin obligatoire pour piétons",
+          "meaning": "Chemin réservé aux piétons ; les conducteurs de véhicules et les cavaliers ne doivent ni l’emprunter ni s’y arrêter"
         }
       }
     },
@@ -812,12 +796,12 @@
       "color": "#1E5AA8",
       "translations": {
         "en": {
-          "name": "Minimum speed 50",
-          "meaning": "Minimum speed 50"
+          "name": "B25 — Minimum speed: 30 km/h",
+          "meaning": "A minimum speed of 30 km/h is compulsory"
         },
         "fr": {
-          "name": "Vitesse minimale obligatoire",
-          "meaning": "Vitesse minimale obligatoire"
+          "name": "B25 — Vitesse minimale obligatoire : 30 km/h",
+          "meaning": "Une vitesse minimale de 30 km/h est obligatoire"
         }
       }
     },
@@ -828,12 +812,12 @@
       "color": "#1E5AA8",
       "translations": {
         "en": {
-          "name": "Snow chains required",
-          "meaning": "Snow chains required"
+          "name": "B26 — Snow chains required",
+          "meaning": "Chains are required on at least two driven wheels. For the vehicle categories specified by law, winter tyres compliant with Article D314-8 are accepted as satisfying the requirement"
         },
         "fr": {
-          "name": "Chaînes à neige obligatoires sur au moins 2 roues motrices",
-          "meaning": "Chaînes à neige obligatoires sur au moins 2 roues motrices"
+          "name": "B26 — Chaînes à neige obligatoires",
+          "meaning": "Chaînes obligatoires sur au moins deux roues motrices. Pour les catégories prévues par le texte, des pneumatiques hiver conformes à l’article D314-8 satisfont à la prescription"
         }
       }
     },
@@ -908,12 +892,12 @@
       "color": "#1E5AA8",
       "translations": {
         "en": {
-          "name": "End of pedestrian area",
-          "meaning": "End of pedestrian area"
+          "name": "B41 — End of compulsory pedestrian path",
+          "meaning": "End of the obligation and reservation notified by B22b"
         },
         "fr": {
-          "name": "Sortie d’aire piétonne",
-          "meaning": "Sortie d’aire piétonne"
+          "name": "B41 — Fin de chemin obligatoire pour piétons",
+          "meaning": "Fin de l’obligation et de la réservation signalées par B22b"
         }
       }
     },
@@ -972,12 +956,12 @@
       "color": "#1E5AA8",
       "translations": {
         "en": {
-          "name": "End of reserved public-transport lane",
-          "meaning": "End of reserved public-transport lane"
+          "name": "B45 — End of lane reserved for public transport and its associated speed limit",
+          "meaning": "Ends the reservation indicated by B27a and the speed limit associated with it."
         },
         "fr": {
-          "name": "Fin de voie réservée aux véhicules des services réguliers de transport en commun",
-          "meaning": "Fin de voie réservée aux véhicules des services réguliers de transport en commun"
+          "name": "B45 — Fin de voie réservée aux transports en commun et de la limitation de vitesse associée",
+          "meaning": "Met fin à la réservation signalée par B27a ainsi qu’à la limitation de vitesse qui lui était associée."
         }
       }
     },
@@ -1001,7 +985,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_001.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Road closed to all vehicles",
@@ -1017,7 +1001,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_002.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No entry",
@@ -1033,7 +1017,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_003.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No left turn",
@@ -1049,7 +1033,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_004.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No right turn",
@@ -1065,7 +1049,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_005.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No U-turn",
@@ -1081,15 +1065,15 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_006.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
-          "name": "No overtaking",
-          "meaning": "No overtaking"
+          "name": "B3 — No overtaking",
+          "meaning": "No overtaking motor vehicles other than two-wheelers without a sidecar"
         },
         "fr": {
-          "name": "Interdiction de dépasser tout véhicule à moteur sauf deux roues",
-          "meaning": "Interdiction de dépasser tout véhicule à moteur sauf deux roues"
+          "name": "B3 — Interdiction de dépasser",
+          "meaning": "Interdiction de dépasser les véhicules à moteur autres que ceux à deux roues sans side-car"
         }
       }
     },
@@ -1097,7 +1081,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_007.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No overtaking by goods vehicles over 3.5 t",
@@ -1113,7 +1097,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_008.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Customs stop",
@@ -1129,7 +1113,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_009.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Gendarmerie stop",
@@ -1145,7 +1129,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_010.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Police stop",
@@ -1161,7 +1145,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_011.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No parking",
@@ -1177,11 +1161,11 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_012.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
-          "name": "No parking on odd-numbered dates",
-          "meaning": "No parking on odd-numbered dates"
+          "name": "B6a2 — No parking from the 1st through the 15th",
+          "meaning": "No parking on the side of the sign from the 1st through the 15th of each month"
         },
         "fr": {
           "name": "Stationnement interdit du côté du panneau du 1er au 15 du mois",
@@ -1193,11 +1177,11 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_013.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
-          "name": "No parking on even-numbered dates",
-          "meaning": "No parking on even-numbered dates"
+          "name": "B6a3 — No parking from the 16th through the end of the month",
+          "meaning": "No parking on the side of the sign from the 16th through the end of each month"
         },
         "fr": {
           "name": "Stationnement interdit du côté du panneau du 16 à la fin du mois",
@@ -1209,7 +1193,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_014.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No stopping or parking",
@@ -1225,7 +1209,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_015.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No motor vehicles except mopeds",
@@ -1241,7 +1225,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_016.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No motor vehicles",
@@ -1257,15 +1241,15 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_017.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
-          "name": "No goods vehicles",
-          "meaning": "No goods vehicles"
+          "name": "B8 — No entry for goods vehicles",
+          "meaning": "No entry for vehicles assigned to goods transport"
         },
         "fr": {
-          "name": "Accès interdit aux véhicules transportant des marchandises",
-          "meaning": "Accès interdit aux véhicules transportant des marchandises"
+          "name": "B8 — Accès interdit aux véhicules affectés au transport de marchandises",
+          "meaning": "Accès interdit aux véhicules affectés au transport de marchandises"
         }
       }
     },
@@ -1273,7 +1257,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_018.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No pedestrians",
@@ -1289,7 +1273,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_019.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No cycles",
@@ -1305,7 +1289,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_020.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No animal-drawn vehicles",
@@ -1321,7 +1305,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_021.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No agricultural vehicles",
@@ -1337,7 +1321,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_022.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No handcarts",
@@ -1353,7 +1337,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_023.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No public-transport vehicles",
@@ -1369,7 +1353,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_024.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No mopeds",
@@ -1385,15 +1369,15 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_025.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
-          "name": "No motorcycles or mopeds",
-          "meaning": "No motorcycles or mopeds"
+          "name": "B9h — No motorcycles or light motorcycles",
+          "meaning": "No entry for motorcycles and light motorcycles"
         },
         "fr": {
-          "name": "Accès interdit aux motos et motos légères",
-          "meaning": "Accès interdit aux motos et motos légères"
+          "name": "B9h — Accès interdit aux motocyclettes et motocyclettes légères",
+          "meaning": "Accès interdit aux motocyclettes et motocyclettes légères"
         }
       }
     },
@@ -1401,7 +1385,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_026.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No caravans or trailers over 250 kg",
@@ -1417,7 +1401,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_027.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No vehicles carrying explosives",
@@ -1433,7 +1417,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_028.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No vehicles carrying water pollutants",
@@ -1449,7 +1433,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_029.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No vehicles carrying dangerous goods",
@@ -1465,7 +1449,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_030.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "No horns",
@@ -1481,7 +1465,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_031.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Maximum axle load 2 t",
@@ -1497,7 +1481,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_032.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Maximum weight 5.5 t",
@@ -1513,7 +1497,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_033.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Maximum width 2.5 m",
@@ -1529,7 +1513,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_034.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Maximum height 3.5 m",
@@ -1545,7 +1529,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_035.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Maximum length 10 m",
@@ -1561,7 +1545,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_036.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Speed limit 30",
@@ -1577,7 +1561,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_037.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Speed limit 50",
@@ -1593,7 +1577,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_038.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Speed limit 70",
@@ -1609,7 +1593,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_039.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Speed limit 90",
@@ -1625,7 +1609,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_040.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Speed limit 110",
@@ -1641,7 +1625,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_041.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Speed limit 130",
@@ -1657,7 +1641,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_042.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Give way to oncoming traffic",
@@ -1673,7 +1657,7 @@
       "road_sign_category_slug": "prohibition",
       "image_path": "france/road_sign_prohibition_043.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#C8102E",
       "translations": {
         "en": {
           "name": "Minimum following distance 70 m",
@@ -1689,7 +1673,7 @@
       "road_sign_category_slug": "end_prohibition",
       "image_path": "france/road_sign_end_prohibition_001.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#FFFFFF",
       "translations": {
         "en": {
           "name": "End of all restrictions",
@@ -1705,7 +1689,7 @@
       "road_sign_category_slug": "end_prohibition",
       "image_path": "france/road_sign_end_prohibition_002.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#FFFFFF",
       "translations": {
         "en": {
           "name": "End of speed limit 30",
@@ -1721,7 +1705,7 @@
       "road_sign_category_slug": "end_prohibition",
       "image_path": "france/road_sign_end_prohibition_003.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#FFFFFF",
       "translations": {
         "en": {
           "name": "End of speed limit 50",
@@ -1737,7 +1721,7 @@
       "road_sign_category_slug": "end_prohibition",
       "image_path": "france/road_sign_end_prohibition_004.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#FFFFFF",
       "translations": {
         "en": {
           "name": "End of speed limit 70",
@@ -1753,7 +1737,7 @@
       "road_sign_category_slug": "end_prohibition",
       "image_path": "france/road_sign_end_prohibition_005.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#FFFFFF",
       "translations": {
         "en": {
           "name": "End of speed limit 90",
@@ -1769,7 +1753,7 @@
       "road_sign_category_slug": "end_prohibition",
       "image_path": "france/road_sign_end_prohibition_006.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#FFFFFF",
       "translations": {
         "en": {
           "name": "End of speed limit 110",
@@ -1785,7 +1769,7 @@
       "road_sign_category_slug": "end_prohibition",
       "image_path": "france/road_sign_end_prohibition_007.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#FFFFFF",
       "translations": {
         "en": {
           "name": "End of no-overtaking restriction",
@@ -1801,7 +1785,7 @@
       "road_sign_category_slug": "end_prohibition",
       "image_path": "france/road_sign_end_prohibition_008.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#FFFFFF",
       "translations": {
         "en": {
           "name": "End of no-overtaking restriction for goods vehicles",
@@ -1817,7 +1801,7 @@
       "road_sign_category_slug": "end_prohibition",
       "image_path": "france/road_sign_end_prohibition_009.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#FFFFFF",
       "translations": {
         "en": {
           "name": "End of horn restriction",
@@ -1833,7 +1817,7 @@
       "road_sign_category_slug": "end_prohibition",
       "image_path": "france/road_sign_end_prohibition_010.png",
       "shape": "circle",
-      "color": "#1E5AA8",
+      "color": "#FFFFFF",
       "translations": {
         "en": {
           "name": "End of indicated restriction",
@@ -1848,7 +1832,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_001.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -1864,7 +1848,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_002.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -1880,7 +1864,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_003.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -1896,7 +1880,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_004.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -1912,7 +1896,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_005.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -1928,7 +1912,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_006.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -1944,7 +1928,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_007.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -1960,7 +1944,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_008.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -1976,7 +1960,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_009.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -1992,7 +1976,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_010.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2008,7 +1992,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_011.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2024,7 +2008,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_012.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2040,7 +2024,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_013.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2056,7 +2040,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_014.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2072,7 +2056,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_015.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2088,7 +2072,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_016.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2104,7 +2088,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_017.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2120,7 +2104,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_018.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2136,7 +2120,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_019.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2152,7 +2136,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_020.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2168,7 +2152,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_021.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2184,7 +2168,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_022.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2200,7 +2184,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_023.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2216,7 +2200,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_024.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2232,7 +2216,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_025.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2248,7 +2232,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_026.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2264,7 +2248,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_027.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2280,7 +2264,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_028.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2296,7 +2280,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_029.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2312,7 +2296,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_030.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2328,7 +2312,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_031.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2344,7 +2328,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_032.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2360,7 +2344,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_033.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2376,7 +2360,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_034.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2392,7 +2376,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_035.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2408,7 +2392,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_036.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2424,7 +2408,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_037.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2440,7 +2424,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_038.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2456,7 +2440,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_039.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2472,7 +2456,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_040.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2488,7 +2472,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_041.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2504,7 +2488,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_042.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2520,7 +2504,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_043.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2536,7 +2520,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_044.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2552,7 +2536,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_045.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2568,7 +2552,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_046.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2584,7 +2568,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_047.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2600,7 +2584,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_048.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2616,8 +2600,8 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_049.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "square",
+      "color": "#FFC72C",
       "translations": {
         "en": {
           "name": "Subscription payment",
@@ -2632,7 +2616,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_050.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2648,7 +2632,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_051.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2664,7 +2648,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_052.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2680,7 +2664,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_053.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2696,7 +2680,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_054.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2712,7 +2696,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_055.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2728,7 +2712,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_056.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2744,7 +2728,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_057.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2760,7 +2744,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_058.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2776,8 +2760,8 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_059.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "square",
+      "color": "#00843D",
       "translations": {
         "en": {
           "name": "Greenway entrance",
@@ -2792,8 +2776,8 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_060.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "square",
+      "color": "#00843D",
       "translations": {
         "en": {
           "name": "End of greenway",
@@ -2808,7 +2792,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_061.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2824,7 +2808,7 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_062.png",
-      "shape": "circle",
+      "shape": "square",
       "color": "#1E5AA8",
       "translations": {
         "en": {
@@ -2840,32 +2824,32 @@
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_063.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "rectangle",
+      "color": "#FFC72C",
       "translations": {
         "en": {
-          "name": "Motorway under video surveillance",
-          "meaning": "Motorway under video surveillance"
+          "name": "SR4 — Motorway under video surveillance",
+          "meaning": "This section of motorway is under video surveillance to improve user safety and traffic regulation."
         },
         "fr": {
-          "name": "Indication sur autoroute",
-          "meaning": "Indication sur autoroute"
+          "name": "SR4 — Autoroute sous vidéoprotection",
+          "meaning": "Cette section d’autoroute est placée sous vidéoprotection pour améliorer la sécurité des usagers et la régulation du trafic."
         }
       }
     },
     {
       "road_sign_category_slug": "indication",
       "image_path": "france/road_sign_indication_064.png",
-      "shape": "circle",
-      "color": "#1E5AA8",
+      "shape": "rectangle",
+      "color": "#FFC72C",
       "translations": {
         "en": {
-          "name": "Tunnel under video surveillance",
-          "meaning": "Tunnel under video surveillance"
+          "name": "SR4 — Tunnel under video surveillance",
+          "meaning": "This tunnel is under video surveillance to improve user safety and traffic regulation."
         },
         "fr": {
-          "name": "Indication sur autoroute",
-          "meaning": "Indication sur autoroute"
+          "name": "SR4 — Tunnel sous vidéoprotection",
+          "meaning": "Ce tunnel est placé sous vidéoprotection pour améliorer la sécurité des usagers et la régulation du trafic."
         }
       }
     }

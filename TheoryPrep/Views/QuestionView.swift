@@ -8,9 +8,11 @@ struct QuestionView: View {
 
     @EnvironmentObject var settings: AppSettings
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var questions: [QuestionWithTranslation]?
     @State private var index = 0
     @State private var selected: Set<AnswerKey> = []
+    @State private var answerOrders: [Int64: [AnswerKey]] = [:]
     @State private var submitted = false
     @State private var correctCount = 0
     @AccessibilityFocusState private var questionFocused: Bool
@@ -50,6 +52,7 @@ struct QuestionView: View {
 
     @ViewBuilder
     private func questionBody(_ question: QuestionWithTranslation, total: Int) -> some View {
+        let answerOrder = answerOrders[question.id] ?? AnswerPresentation.canonicalOrder
         ScrollViewReader { proxy in
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
@@ -106,6 +109,16 @@ struct QuestionView: View {
                         .accessibilityLabel(question.questionText)
                 }
 
+                if !question.hasExamMedia {
+                    Label(settings.t(.knowledgeDrill), systemImage: "book.closed")
+                        .font(.caption.weight(.bold))
+                        .foregroundColor(Theme.routeBlue)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 6)
+                        .background(Theme.routeBlue.opacity(0.09))
+                        .clipShape(Capsule())
+                }
+
                 // Question text
                 Text(question.questionText)
                     .font(.display(24, .bold))
@@ -115,21 +128,25 @@ struct QuestionView: View {
                     .accessibilityFocused($questionFocused)
 
                 // Instruction
-                Text(settings.t(.selectAllAnswers))
+                Text(settings.t(question.correctAnswers.count > 1 ? .selectAllAnswers : .selectOneAnswer))
                     .font(.subheadline)
                     .foregroundColor(Theme.textMuted)
                     .lineSpacing(1.5)
 
                 // Answer choices
                 VStack(spacing: 10) {
-                    ForEach(AnswerKey.allCases, id: \.self) { key in
-                        answerRow(key, question: question)
+                    ForEach(answerOrder.indices, id: \.self) { index in
+                        answerRow(
+                            answerOrder[index],
+                            displayKey: AnswerPresentation.canonicalOrder[index],
+                            question: question
+                        )
                     }
                 }
 
                 // Feedback card
                 if submitted {
-                    feedbackCard(question)
+                        feedbackCard(question, answerOrder: answerOrder)
                         .id("feedbackCard")
                         .accessibilityFocused($feedbackFocused)
                         .transition(.asymmetric(
@@ -143,14 +160,17 @@ struct QuestionView: View {
                 .padding(.bottom, AppSpacing.standard)
             }
             .safeAreaInset(edge: .bottom, spacing: 0) {
-                PrimaryButton(
-                    label: submitted
-                        ? (index == total - 1 ? settings.t(.finishButton) : settings.t(.continueButton))
-                        : settings.t(.submitAnswer),
-                    disabled: !submitted && selected.isEmpty,
-                    icon: submitted ? "arrow.right" : "checkmark"
-                ) {
-                    submitted ? handleContinue(total: total) : handleSubmit(question)
+                Group {
+                    if submitted {
+                        PrimaryButton(
+                            label: index == total - 1 ? settings.t(.finishButton) : settings.t(.continueButton),
+                            icon: "arrow.right"
+                        ) {
+                            handleContinue(total: total)
+                        }
+                    } else {
+                        confidenceSubmitBar(question)
+                    }
                 }
                 .padding(.horizontal, 20)
                 .padding(.vertical, 12)
@@ -181,7 +201,9 @@ struct QuestionView: View {
 
     // MARK: – Answer row
 
-    private func answerRow(_ key: AnswerKey, question: QuestionWithTranslation) -> some View {
+    private func answerRow(
+        _ key: AnswerKey, displayKey: AnswerKey, question: QuestionWithTranslation
+    ) -> some View {
         let isSelected = selected.contains(key)
         let isCorrectAnswer = question.correctAnswers.contains(key)
 
@@ -217,7 +239,7 @@ struct QuestionView: View {
                                                startPoint: .top, endPoint: .bottom))
                         .frame(width: 32, height: 32)
 
-                    Text(key.rawValue.uppercased())
+                    Text(displayKey.rawValue.uppercased())
                         .font(.gauge(11.5, .bold))
                         .foregroundColor(isSelected && !submitted ? .white : Theme.textMuted)
                 }
@@ -265,14 +287,16 @@ struct QuestionView: View {
         .buttonStyle(.plain)
         .disabled(submitted)
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel("\(key.rawValue.uppercased()). \(question.answerText(for: key))")
+        .accessibilityLabel("\(displayKey.rawValue.uppercased()). \(question.answerText(for: key))")
         .accessibilityValue(submitted && isCorrectAnswer ? settings.t(.correct) : "")
         .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 
     // MARK: – Feedback card
 
-    private func feedbackCard(_ question: QuestionWithTranslation) -> some View {
+    private func feedbackCard(
+        _ question: QuestionWithTranslation, answerOrder: [AnswerKey]
+    ) -> some View {
         let isCorrect = selected == question.correctAnswers
         let accentColor = isCorrect ? Theme.success : Theme.danger
         let gradient = isCorrect ? Theme.successGradient : Theme.dangerGradient
@@ -293,7 +317,7 @@ struct QuestionView: View {
             }
 
             if !isCorrect {
-                Text("\(settings.t(.correctAnswerWas)) \(question.correctAnswerText)")
+                Text("\(settings.t(.correctAnswerWas)) \(question.correctAnswerText(displayOrder: answerOrder))")
                     .font(.subheadline.weight(.semibold))
                     .foregroundColor(Theme.text)
             }
@@ -328,29 +352,81 @@ struct QuestionView: View {
 
     private func loadQuestions() {
         guard questions == nil, let country = settings.countryCode, let language = settings.languageCode else { return }
+        let loaded: [QuestionWithTranslation]
         switch mode {
         case .practice:
-            questions = Queries.getPracticeQuestions(
+            loaded = Queries.getPracticeQuestions(
                 Database.shared,
                 country,
                 language,
                 categoryId: categoryId,
-                limit: sessionLength
+                // Random practice covers the complete bank. Category and
+                // mistake sessions stay intentionally shorter.
+                limit: categoryId == nil ? nil : sessionLength
             )
         case .mistakes:
-            questions = Array(
+            loaded = Array(
                 Queries.getMistakes(Database.shared, country, language)
                     .prefix(sessionLength)
                     .map(\.question)
             )
         }
+        questions = loaded
+        answerOrders = Dictionary(uniqueKeysWithValues: loaded.map {
+            ($0.id, AnswerPresentation.shuffledOrder())
+        })
     }
 
-    private func handleSubmit(_ question: QuestionWithTranslation) {
+    /// Submitting *is* the confidence answer, so tagging costs no extra tap and
+    /// is captured every time rather than only when the learner opts in.
+    @ViewBuilder
+    private func confidenceSubmitBar(_ question: QuestionWithTranslation) -> some View {
+        let disabled = selected.isEmpty
+
+        VStack(spacing: 8) {
+            Text(settings.t(.confidencePrompt))
+                .font(.caption)
+                .foregroundColor(Theme.textMuted)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .accessibilityHidden(true)
+
+            // Equal visual weight on both options: making one the obvious
+            // default would bias the very signal being collected.
+            let buttons = Group {
+                PrimaryButton(
+                    label: settings.t(.confidenceSure),
+                    variant: .primary,
+                    disabled: disabled,
+                    icon: "checkmark"
+                ) {
+                    handleSubmit(question, confidence: .sure)
+                }
+                .accessibilityHint(settings.t(.confidenceSureHint))
+
+                PrimaryButton(
+                    label: settings.t(.confidenceUnsure),
+                    variant: .secondary,
+                    disabled: disabled,
+                    icon: "questionmark"
+                ) {
+                    handleSubmit(question, confidence: .unsure)
+                }
+                .accessibilityHint(settings.t(.confidenceUnsureHint))
+            }
+
+            if dynamicTypeSize.isAccessibilitySize {
+                VStack(spacing: 10) { buttons }
+            } else {
+                HStack(spacing: 10) { buttons }
+            }
+        }
+    }
+
+    private func handleSubmit(_ question: QuestionWithTranslation, confidence: Confidence) {
         guard !selected.isEmpty else { return }
         let isCorrect = selected == question.correctAnswers
         if isCorrect { correctCount += 1 }
-        Queries.recordAnswer(Database.shared, question.id, isCorrect)
+        Queries.recordAnswer(Database.shared, question.id, isCorrect, confidence: confidence)
         submitted = true
         AppFeedback.result(
             correct: isCorrect,

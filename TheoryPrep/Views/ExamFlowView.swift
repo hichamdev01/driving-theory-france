@@ -6,7 +6,7 @@ struct ExamFlowView: View {
     init() {
         #if DEBUG
         if ProcessInfo.processInfo.arguments.contains("-UITestExamRun") {
-            _path = State(initialValue: NavigationPath([ExamRoute.run]))
+            _path = State(initialValue: NavigationPath([ExamRoute.run(timed: true)]))
             return
         }
         #endif
@@ -18,8 +18,8 @@ struct ExamFlowView: View {
             ExamIntroView(path: $path)
                 .navigationDestination(for: ExamRoute.self) { route in
                     switch route {
-                    case .run:
-                        ExamRunView(path: $path)
+                    case .run(let timed):
+                        ExamRunView(path: $path, timed: timed)
                     case .result(let examResultId):
                         ExamResultView(examResultId: examResultId, path: $path)
                     }
@@ -33,6 +33,9 @@ struct ExamIntroView: View {
     @EnvironmentObject var settings: AppSettings
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var config: ExamConfiguration?
+    /// The countdown is an optional training aid, not an asserted ETG rule.
+    /// Leave it off until the learner explicitly chooses timed practice.
+    @State private var timed = false
 
     var body: some View {
         ScrollView {
@@ -87,13 +90,14 @@ struct ExamIntroView: View {
                         spacing: 10
                     ) {
                         stat(value: "\(config.numberOfQuestions)", label: settings.t(.numberOfQuestions), icon: "rectangle.stack")
-                        stat(value: "\(config.timeLimitSeconds / 60) min", label: settings.t(.timeLimit), icon: "timer")
                         stat(value: "\(config.numberOfQuestions - config.allowedMistakes)/\(config.numberOfQuestions)", label: settings.t(.passingScore), icon: "checkmark.seal")
                     }
+
+                    timingChoice(config)
                 }
 
                 PrimaryButton(label: settings.t(.beginExam), disabled: config == nil, icon: "checkmark.seal") {
-                    path.append(ExamRoute.run)
+                    path.append(ExamRoute.run(timed: timed))
                 }
             }
             .padding(.horizontal, 20)
@@ -106,6 +110,31 @@ struct ExamIntroView: View {
             guard let country = settings.countryCode else { return }
             config = Queries.getExamConfiguration(Database.shared, country)
         }
+    }
+
+    /// The timing accommodation. Presented as a plain choice rather than
+    /// buried in settings, and worded so that turning it off does not read as
+    /// cheating: the result is recorded either way.
+    private func timingChoice(_ config: ExamConfiguration) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Toggle(isOn: $timed) {
+                Text(settings.t(.examTimedToggle, config.practiceSecondsPerQuestion))
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundColor(Theme.text)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            .tint(Theme.routeBlue)
+
+            Text(settings.t(.examTimedToggleHint))
+                .font(.caption)
+                .foregroundColor(Theme.textMuted)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(16)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Theme.surface)
+        .overlay(RoundedRectangle(cornerRadius: Theme.controlRadius).stroke(Theme.border, lineWidth: 1))
+        .clipShape(RoundedRectangle(cornerRadius: Theme.controlRadius))
     }
 
     private func stat(value: String, label: String, icon: String) -> some View {

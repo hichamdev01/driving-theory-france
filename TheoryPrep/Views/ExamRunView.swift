@@ -2,6 +2,11 @@ import SwiftUI
 
 struct ExamRunView: View {
     @Binding var path: NavigationPath
+    /// When false the optional practice countdown is disabled. The public ETG
+    /// specification does not establish a universal per-question duration, so
+    /// this timer is deliberately presented as a training setting.
+    var timed: Bool = true
+
     @EnvironmentObject var settings: AppSettings
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
@@ -9,13 +14,22 @@ struct ExamRunView: View {
     @State private var questions: [QuestionWithTranslation]?
     @State private var index = 0
     @State private var answers: [Int64: Set<AnswerKey>] = [:]
+    @State private var answerOrders: [Int64: [AnswerKey]] = [:]
     @State private var remainingSeconds = 0
     @State private var finishing = false
     @State private var finished = false
     @State private var timer: Timer?
     @State private var deadline: Date?
     @State private var showFinishConfirmation = false
+    @State private var showExitConfirmation = false
     @AccessibilityFocusState private var questionFocused: Bool
+
+    /// Warn only in the final third of the question's time, so the exam reads
+    /// as focused rather than panicked.
+    private var isRunningOut: Bool {
+        guard timed, let config else { return false }
+        return remainingSeconds <= max(3, config.practiceSecondsPerQuestion / 3)
+    }
 
     var body: some View {
         Group {
@@ -55,37 +69,55 @@ struct ExamRunView: View {
         let question = questions[index]
         let isLast = index == questions.count - 1
         let selected = answers[question.id] ?? []
+        let answerOrder = answerOrders[question.id] ?? AnswerPresentation.canonicalOrder
 
         ScrollViewReader { proxy in
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
                 HStack(spacing: 10) {
-                    Image(systemName: remainingSeconds < 60 ? "exclamationmark.triangle.fill" : "timer")
-                        .font(.subheadline.weight(.semibold))
-                    Text(formatTime(remainingSeconds))
-                        .font(.gauge(15, .bold))
-                    Text(settings.t(.timeRemaining).uppercased())
-                        .font(.caption2.weight(.bold))
-                        .tracking(0.9)
+                exitButton
+
+                HStack(spacing: 10) {
+                    if timed {
+                        Image(systemName: isRunningOut ? "exclamationmark.triangle.fill" : "timer")
+                            .font(.subheadline.weight(.semibold))
+                        Text("\(remainingSeconds) s")
+                            .font(.gauge(15, .bold))
+                            .monospacedDigit()
+                        Text(settings.t(.perQuestion).uppercased())
+                            .font(.caption2.weight(.bold))
+                            .tracking(0.9)
+                    } else {
+                        Image(systemName: "infinity")
+                            .font(.subheadline.weight(.semibold))
+                        Text(settings.t(.examUntimedBadge).uppercased())
+                            .font(.caption2.weight(.bold))
+                            .tracking(0.9)
+                    }
                     Spacer()
                     Text("\(index + 1) / \(questions.count)")
                         .font(.gauge(13, .bold))
                 }
-                .foregroundColor(remainingSeconds < 60 ? Theme.danger : Theme.text)
+                .foregroundColor(isRunningOut ? Theme.danger : Theme.text)
                 .padding(.horizontal, 16)
                 .padding(.vertical, 11)
-                .background(remainingSeconds < 60 ? Theme.danger.opacity(0.09) : Theme.surface)
+                .background(isRunningOut ? Theme.danger.opacity(0.09) : Theme.surface)
                 .clipShape(RoundedRectangle(cornerRadius: Theme.controlRadius))
                 .overlay(
                     RoundedRectangle(cornerRadius: Theme.controlRadius)
-                        .stroke(remainingSeconds < 60 ? Theme.danger.opacity(0.5) : Theme.border, lineWidth: 1)
+                        .stroke(isRunningOut ? Theme.danger.opacity(0.5) : Theme.border, lineWidth: 1)
                 )
                 .shadow(color: .black.opacity(0.04), radius: 4, x: 0, y: 2)
-                .padding(.top, 8)
                 .accessibilityElement(children: .combine)
-                .accessibilityLabel(settings.t(.timeRemaining))
-                .accessibilityValue("\(formatTime(remainingSeconds)), \(index + 1) / \(questions.count)")
+                .accessibilityLabel(timed ? settings.t(.timeRemaining) : settings.t(.examUntimedBadge))
+                .accessibilityValue(
+                    timed
+                        ? "\(remainingSeconds) s, \(index + 1) / \(questions.count)"
+                        : "\(index + 1) / \(questions.count)"
+                )
                 .accessibilityAddTraits(.updatesFrequently)
+                }
+                .padding(.top, 8)
                 .id("examQuestionTop")
 
                 GeometryReader { geo in
@@ -119,12 +151,14 @@ struct ExamRunView: View {
                     .accessibilityAddTraits(.isHeader)
                     .accessibilityFocused($questionFocused)
 
-                Text(settings.t(.selectAllAnswers))
+                Text(settings.t(question.correctAnswers.count > 1 ? .selectAllAnswers : .selectOneAnswer))
                     .font(.subheadline.weight(.semibold))
                     .foregroundColor(Theme.textMuted)
 
                 VStack(spacing: 10) {
-                    ForEach(AnswerKey.allCases, id: \.self) { key in
+                    ForEach(answerOrder.indices, id: \.self) { answerIndex in
+                        let key = answerOrder[answerIndex]
+                        let displayKey = AnswerPresentation.canonicalOrder[answerIndex]
                         let isSelected = selected.contains(key)
                         Button(action: {
                             AppFeedback.selection()
@@ -143,7 +177,7 @@ struct ExamRunView: View {
                                               : LinearGradient(colors: [Theme.surfaceAlt, Theme.surfaceAlt],
                                                                startPoint: .top, endPoint: .bottom))
                                         .frame(width: 32, height: 32)
-                                    Text(key.rawValue.uppercased())
+                                    Text(displayKey.rawValue.uppercased())
                                         .font(.gauge(11.5, .bold))
                                         .foregroundColor(isSelected ? .white : Theme.textMuted)
                                 }
@@ -180,7 +214,7 @@ struct ExamRunView: View {
                         }
                         .buttonStyle(.plain)
                         .accessibilityElement(children: .ignore)
-                        .accessibilityLabel("\(key.rawValue.uppercased()). \(question.answerText(for: key))")
+                        .accessibilityLabel("\(displayKey.rawValue.uppercased()). \(question.answerText(for: key))")
                         .accessibilityAddTraits(isSelected ? .isSelected : [])
                     }
                 }
@@ -213,6 +247,7 @@ struct ExamRunView: View {
                     proxy.scrollTo("examQuestionTop", anchor: .top)
                 }
                 questionFocused = true
+                startQuestionTimer(config)
             }
             .confirmationDialog(
                 settings.t(.finishExamPrompt),
@@ -229,29 +264,83 @@ struct ExamRunView: View {
         }
     }
 
+    /// Leaves the exam without recording anything.
+    ///
+    /// The alternative — saving a part-finished attempt — would put a failing
+    /// score and a pile of never-answered questions into the mistake list,
+    /// which would misrepresent what the learner actually got wrong.
+    private var exitButton: some View {
+        Button {
+            showExitConfirmation = true
+        } label: {
+            ZStack {
+                Circle()
+                    .fill(Theme.surface)
+                    .overlay(Circle().stroke(Theme.border, lineWidth: 1))
+                Image(systemName: "xmark")
+                    .font(.system(size: 14, weight: .bold))
+                    .foregroundColor(Theme.textMuted)
+            }
+            .frame(width: 44, height: 44)
+        }
+        .buttonStyle(PressableStyle())
+        .accessibilityLabel(settings.t(.exitExamLabel))
+        .accessibilityHint(settings.t(.exitExamMessage))
+        .confirmationDialog(
+            settings.t(.exitExamTitle),
+            isPresented: $showExitConfirmation,
+            titleVisibility: .visible
+        ) {
+            Button(settings.t(.exitExamConfirm), role: .destructive) { exitExam() }
+            Button(settings.t(.cancel), role: .cancel) {}
+        } message: {
+            Text(settings.t(.exitExamMessage))
+        }
+    }
+
+    private func exitExam() {
+        // Mark finished first so an in-flight timer tick cannot save a result
+        // on the way out.
+        finished = true
+        timer?.invalidate()
+        if !path.isEmpty { path.removeLast() }
+    }
+
     private func load() {
         guard let country = settings.countryCode, let language = settings.languageCode else { return }
         let cfg = Queries.getExamConfiguration(Database.shared, country)
         config = cfg
-        let loadedQuestions = Queries.getPracticeQuestions(
-            Database.shared,
-            country,
-            language,
-            limit: cfg.numberOfQuestions
-        )
+        let loadedQuestions = Queries.getExamQuestions(Database.shared, country, language)
         questions = loadedQuestions
-        remainingSeconds = cfg.timeLimitSeconds
+        answerOrders = Dictionary(uniqueKeysWithValues: loadedQuestions.map {
+            ($0.id, AnswerPresentation.shuffledOrder())
+        })
         guard !loadedQuestions.isEmpty else { return }
-        deadline = Date().addingTimeInterval(TimeInterval(cfg.timeLimitSeconds))
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-            let updatedSeconds = max(0, Int((deadline?.timeIntervalSinceNow ?? 0).rounded(.up)))
-            remainingSeconds = updatedSeconds
-            if updatedSeconds == 0 {
-                timer?.invalidate()
-                if let cfg = config, let qs = questions {
-                    finishExam(config: cfg, questions: qs)
-                }
-            }
+        startQuestionTimer(cfg)
+    }
+
+    /// Starts the optional practice countdown for the current question.
+    private func startQuestionTimer(_ cfg: ExamConfiguration) {
+        timer?.invalidate()
+        guard timed else { return }
+        remainingSeconds = cfg.practiceSecondsPerQuestion
+        deadline = Date().addingTimeInterval(TimeInterval(cfg.practiceSecondsPerQuestion))
+        timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { _ in
+            let left = max(0, Int((deadline?.timeIntervalSinceNow ?? 0).rounded(.up)))
+            if left != remainingSeconds { remainingSeconds = left }
+            if left == 0 { advanceOnTimeout() }
+        }
+    }
+
+    /// Time ran out: lock the current selection and move to the next practice
+    /// item without making a claim about a provider's official slide timing.
+    private func advanceOnTimeout() {
+        timer?.invalidate()
+        guard let cfg = config, let qs = questions, !finished else { return }
+        if index == qs.count - 1 {
+            finishExam(config: cfg, questions: qs)
+        } else {
+            withAnimation(reduceMotion ? nil : .easeOut(duration: 0.2)) { index += 1 }
         }
     }
 
@@ -268,7 +357,12 @@ struct ExamRunView: View {
             let isCorrect = selected == question.correctAnswers
             if isCorrect { correctCount += 1 }
             Queries.recordAnswer(Database.shared, question.id, isCorrect)
-            answerInputs.append(Queries.ExamAnswerInput(questionId: question.id, selectedAnswers: selected, correct: isCorrect))
+            answerInputs.append(Queries.ExamAnswerInput(
+                questionId: question.id,
+                selectedAnswers: selected,
+                answerOrder: answerOrders[question.id] ?? AnswerPresentation.canonicalOrder,
+                correct: isCorrect
+            ))
         }
 
         let score = questions.isEmpty ? 0 : Int((Double(correctCount) / Double(questions.count) * 100).rounded())
@@ -279,12 +373,6 @@ struct ExamRunView: View {
             totalQuestions: questions.count, correctQuestions: correctCount, answers: answerInputs
         )
         path.append(ExamRoute.result(examResultId: examResultId))
-    }
-
-    private func formatTime(_ totalSeconds: Int) -> String {
-        let m = totalSeconds / 60
-        let s = totalSeconds % 60
-        return String(format: "%d:%02d", m, s)
     }
 
     private func unansweredCount(in questions: [QuestionWithTranslation]) -> Int {

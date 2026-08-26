@@ -63,6 +63,7 @@ enum LearningRoute: Hashable {
 }
 
 enum ExamRoute: Hashable {
-    case run
+    /// `timed` carries the accommodation choice made on the intro screen.
+    case run(timed: Bool)
     case result(examResultId: Int64)
 }

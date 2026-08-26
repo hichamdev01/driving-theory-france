@@ -40,7 +40,9 @@ enum Queries {
             FROM categories cat
             JOIN countries c ON c.id = cat.country_id
             JOIN category_translations ct ON ct.category_id = cat.id AND ct.language_code = ?
+            JOIN questions q ON q.category_id = cat.id AND q.active = 1
             WHERE c.code = ?
+            GROUP BY cat.id, cat.slug, ct.name
             ORDER BY cat.id ASC
             """,
             [languageCode.rawValue, countryCode.rawValue]
@@ -107,8 +109,9 @@ enum Queries {
         let row = db.queryOne(
             """
             SELECT ec.id as id, ec.country_id as country_id, ec.number_of_questions as number_of_questions,
-                   ec.time_limit_seconds as time_limit_seconds, ec.passing_score as passing_score,
-                   ec.allowed_mistakes as allowed_mistakes
+                   ec.time_limit_seconds as practice_session_seconds, ec.passing_score as passing_score,
+                   ec.allowed_mistakes as allowed_mistakes,
+                   ec.seconds_per_question as practice_seconds_per_question
             FROM exam_configurations ec
             JOIN countries c ON c.id = ec.country_id
             WHERE c.code = ?
@@ -118,9 +121,10 @@ enum Queries {
             ExamConfiguration(
                 id: r.int64("id"), countryId: r.int64("country_id"),
                 numberOfQuestions: r.int("number_of_questions"),
-                timeLimitSeconds: r.int("time_limit_seconds"),
+                practiceSessionSeconds: r.int("practice_session_seconds"),
                 passingScore: r.int("passing_score"),
-                allowedMistakes: r.int("allowed_mistakes")
+                allowedMistakes: r.int("allowed_mistakes"),
+                practiceSecondsPerQuestion: r.int("practice_seconds_per_question")
             )
         }
         guard let row else { fatalError("No exam configuration for \(countryCode)") }
@@ -129,23 +133,34 @@ enum Queries {
 
     static func getExamQuestions(_ db: Database, _ countryCode: CountryCode, _ languageCode: LanguageCode) -> [QuestionWithTranslation] {
         let config = getExamConfiguration(db, countryCode)
-        return getPracticeQuestions(db, countryCode, languageCode, limit: config.numberOfQuestions)
+        let bank = getPracticeQuestions(db, countryCode, languageCode)
+        return ExamQuestionSelector.select(from: bank, count: config.numberOfQuestions)
     }
 
-    static func recordAnswer(_ db: Database, _ questionId: Int64, _ isCorrect: Bool) {
+    /// Records an answer. `confidence` is nil when it was not asked — during a
+    /// timed exam, where a third tap would be both unrealistic and unfair.
+    static func recordAnswer(
+        _ db: Database, _ questionId: Int64, _ isCorrect: Bool, confidence: Confidence? = nil
+    ) {
         let now = ISO8601DateFormatter().string(from: Date())
+        let wasSure = confidence == .sure
         db.transaction {
             db.run(
                 """
-                INSERT INTO user_question_progress (question_id, attempts, correct_attempts, incorrect_attempts, last_answered_at)
-                VALUES (?, 1, ?, ?, ?)
+                INSERT INTO user_question_progress
+                  (question_id, attempts, correct_attempts, incorrect_attempts,
+                   confident_attempts, confident_correct, last_answered_at)
+                VALUES (?, 1, ?, ?, ?, ?, ?)
                 ON CONFLICT(question_id) DO UPDATE SET
                   attempts = attempts + 1,
                   correct_attempts = correct_attempts + excluded.correct_attempts,
                   incorrect_attempts = incorrect_attempts + excluded.incorrect_attempts,
+                  confident_attempts = confident_attempts + excluded.confident_attempts,
+                  confident_correct = confident_correct + excluded.confident_correct,
                   last_answered_at = excluded.last_answered_at
                 """,
-                [questionId, isCorrect ? 1 : 0, isCorrect ? 0 : 1, now]
+                [questionId, isCorrect ? 1 : 0, isCorrect ? 0 : 1,
+                 wasSure ? 1 : 0, (wasSure && isCorrect) ? 1 : 0, now]
             )
 
             if !isCorrect {
@@ -175,19 +190,28 @@ enum Queries {
               cat.slug as category_slug, ct.name as category_name,
               qt.question_text as question_text, qt.answer_a as answer_a, qt.answer_b as answer_b,
               qt.answer_c as answer_c, qt.answer_d as answer_d, qt.explanation as explanation,
-              um.incorrect_count as incorrect_count, um.last_incorrect_at as last_incorrect_at
+              um.incorrect_count as incorrect_count, um.last_incorrect_at as last_incorrect_at,
+              COALESCE(uqp.confident_attempts, 0) - COALESCE(uqp.confident_correct, 0) as confidently_wrong
             FROM user_mistakes um
             JOIN questions q ON q.id = um.question_id
             JOIN countries c ON c.id = q.country_id
             JOIN categories cat ON cat.id = q.category_id
             JOIN category_translations ct ON ct.category_id = cat.id AND ct.language_code = ?
             JOIN question_translations qt ON qt.question_id = q.id AND qt.language_code = ?
+            LEFT JOIN user_question_progress uqp ON uqp.question_id = q.id
             WHERE c.code = ?
-            ORDER BY um.last_incorrect_at DESC
+            -- Confidently-wrong questions first: the learner does not know
+            -- they have a gap, so they are the least likely to self-select.
+            ORDER BY confidently_wrong DESC, um.last_incorrect_at DESC
             """,
             [languageCode.rawValue, languageCode.rawValue, countryCode.rawValue]
         ) { r in
-            MistakeRow(question: mapQuestion(r), incorrectCount: r.int("incorrect_count"), lastIncorrectAt: r.text("last_incorrect_at"))
+            MistakeRow(
+                question: mapQuestion(r),
+                incorrectCount: r.int("incorrect_count"),
+                lastIncorrectAt: r.text("last_incorrect_at"),
+                confidentlyWrongCount: max(0, r.int("confidently_wrong"))
+            )
         }
     }
 
@@ -274,6 +298,7 @@ enum Queries {
     struct ExamAnswerInput {
         let questionId: Int64
         let selectedAnswers: Set<AnswerKey>
+        let answerOrder: [AnswerKey]
         let correct: Bool
     }
 
@@ -299,13 +324,14 @@ enum Queries {
                 db.run(
                     """
                     INSERT INTO exam_result_answers
-                      (exam_result_id, question_id, selected_answer, selected_answers, correct)
-                    VALUES (?, ?, ?, ?, ?)
+                      (exam_result_id, question_id, selected_answer, selected_answers, answer_order, correct)
+                    VALUES (?, ?, ?, ?, ?, ?)
                     """,
                     [
                         examResultId, answer.questionId,
                         answer.selectedAnswers.sorted { $0.rawValue < $1.rawValue }.first?.rawValue,
-                        AnswerKey.encodeSet(answer.selectedAnswers), answer.correct,
+                        AnswerKey.encodeSet(answer.selectedAnswers),
+                        AnswerPresentation.encode(answer.answerOrder), answer.correct,
                     ]
                 )
             }
@@ -336,7 +362,8 @@ enum Queries {
               cat.slug as category_slug, ct.name as category_name,
               qt.question_text as question_text, qt.answer_a as answer_a, qt.answer_b as answer_b,
               qt.answer_c as answer_c, qt.answer_d as answer_d, qt.explanation as explanation,
-              era.selected_answers as selected_answers, era.correct as was_correct
+              era.selected_answers as selected_answers, era.answer_order as answer_order,
+              era.correct as was_correct
             FROM exam_result_answers era
             JOIN questions q ON q.id = era.question_id
             JOIN categories cat ON cat.id = q.category_id
@@ -350,6 +377,7 @@ enum Queries {
             ExamResultAnswerRow(
                 question: mapQuestion(r),
                 selectedAnswers: AnswerKey.decodeSet(r.textOrNil("selected_answers") ?? ""),
+                answerOrder: AnswerPresentation.decode(r.textOrNil("answer_order")),
                 wasCorrect: r.bool("was_correct")
             )
         }
@@ -374,6 +402,46 @@ enum Queries {
                 completedAt: r.text("completed_at")
             )
         }
+    }
+
+    /// Per-theme facts behind the readiness report.
+    ///
+    /// Unlike `getOverallProgress`, this counts *distinct questions seen* as
+    /// well as raw attempts, and reports how many questions each theme actually
+    /// holds — both are needed to tell "knows the theme" apart from "answered
+    /// the same three questions twenty times".
+    static func getReadinessReport(_ db: Database, _ countryCode: CountryCode, _ languageCode: LanguageCode) -> ReadinessReport {
+        let parser = ISO8601DateFormatter()
+        let inputs = db.query(
+            """
+            SELECT cat.id as category_id, ct.name as category_name,
+                   COUNT(DISTINCT q.id) as available,
+                   COUNT(DISTINCT CASE WHEN uqp.attempts > 0 THEN q.id END) as seen,
+                   COALESCE(SUM(uqp.attempts), 0) as attempts,
+                   COALESCE(SUM(uqp.correct_attempts), 0) as correct,
+                   MAX(uqp.last_answered_at) as last_answered_at
+            FROM categories cat
+            JOIN countries c ON c.id = cat.country_id
+            JOIN category_translations ct ON ct.category_id = cat.id AND ct.language_code = ?
+            LEFT JOIN questions q ON q.category_id = cat.id AND q.active = 1
+            LEFT JOIN user_question_progress uqp ON uqp.question_id = q.id
+            WHERE c.code = ?
+            GROUP BY cat.id, ct.name
+            ORDER BY cat.id ASC
+            """,
+            [languageCode.rawValue, countryCode.rawValue]
+        ) { r -> ReadinessReport.ThemeInput in
+            ReadinessReport.ThemeInput(
+                categoryId: r.int64("category_id"),
+                name: r.text("category_name"),
+                availableQuestions: r.int("available"),
+                seenQuestions: r.int("seen"),
+                attempts: r.int("attempts"),
+                correctAttempts: r.int("correct"),
+                lastAnsweredAt: r.textOrNil("last_answered_at").flatMap { parser.date(from: $0) }
+            )
+        }
+        return ReadinessReport.make(from: inputs)
     }
 
     static func getOverallProgress(_ db: Database, _ countryCode: CountryCode, _ languageCode: LanguageCode) -> OverallProgress {

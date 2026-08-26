@@ -5,19 +5,33 @@ struct HomeView: View {
     @EnvironmentObject var router: TabRouter
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
-    @State private var progress: OverallProgress = .empty
+    @State private var readiness: ReadinessReport = .empty
     @State private var examConfig: ExamConfiguration?
     @State private var roadProgress: CGFloat = 0
 
-    private var readinessStatus: (label: String, icon: String) {
-        switch progress.accuracy {
-        case 0:      return (settings.t(.readinessStart), "flag.fill")
-        case 1..<40: return (settings.t(.readinessBuilding), "book.fill")
-        case 40..<65:return (settings.t(.readinessProgress), "arrow.up.right")
-        case 65..<80:return (settings.t(.readinessStrong), "bolt.fill")
-        case 80..<90:return (settings.t(.readinessAlmostReady), "target")
-        default:     return (settings.t(.readinessReady), "checkmark.seal.fill")
+    /// Headline verdict. Deliberately not a percentage — a single number is
+    /// what let the old readiness signal flatter the user.
+    private var verdictLabel: String {
+        switch readiness.verdict {
+        case .noData:          return settings.t(.readinessNoData)
+        case .notReady:        return settings.t(.readinessNotReady)
+        case .readyOnMeasured: return settings.t(.readinessReadyOnMeasured)
         }
+    }
+
+    private var verdictIcon: String {
+        switch readiness.verdict {
+        case .noData:          return "flag"
+        case .notReady:        return "arrow.triangle.turn.up.right.circle"
+        case .readyOnMeasured: return "checkmark.seal"
+        }
+    }
+
+    /// Share of *measurable* themes that are solid. Themes the bank cannot
+    /// measure are excluded rather than counted as progress.
+    private var solidFraction: CGFloat {
+        guard !readiness.measured.isEmpty else { return 0 }
+        return CGFloat(readiness.solid.count) / CGFloat(readiness.measured.count)
     }
 
     // MARK: – Body
@@ -40,12 +54,12 @@ struct HomeView: View {
         .onAppear {
             reload()
             withAnimation(reduceMotion ? nil : .spring(response: 1.1, dampingFraction: 0.82).delay(0.3)) {
-                roadProgress = CGFloat(progress.accuracy) / 100
+                roadProgress = solidFraction
             }
         }
-        .onChange(of: progress.accuracy) { _, new in
+        .onChange(of: readiness) { _, _ in
             withAnimation(reduceMotion ? nil : .spring(response: 1.1, dampingFraction: 0.82)) {
-                roadProgress = CGFloat(new) / 100
+                roadProgress = solidFraction
             }
         }
     }
@@ -118,23 +132,27 @@ struct HomeView: View {
             // Content
             VStack(alignment: .leading, spacing: 18) {
 
-                // Status label
+                // Section eyebrow
                 HStack(spacing: 7) {
-                    Image(systemName: readinessStatus.icon)
+                    Image(systemName: verdictIcon)
                         .font(.system(size: 11, weight: .bold))
                         .foregroundColor(Theme.accent)
-                    Text(readinessStatus.label.uppercased())
+                    Text(settings.t(.readinessTitle).uppercased())
                         .font(.caption2.weight(.bold))
                         .tracking(1.2)
                         .foregroundColor(.white.opacity(0.78))
                 }
 
-                accuracyReadout
+                verdictReadout
 
-                // Road-to-exam meter
-                roadMeter
+                // Per-theme route: one marker per theme, encoded by shape as
+                // well as colour so the state survives Differentiate Without
+                // Color and greyscale.
+                themeRoute
 
                 readinessStats
+
+                ceilingNote
             }
             .padding(24)
         }
@@ -144,132 +162,105 @@ struct HomeView: View {
         .accessibilityLabel(readinessAccessibilityLabel)
     }
 
+    /// Spoken form of the whole card. Leads with the verdict and always states
+    /// what could not be measured, so VoiceOver users get the caveat too.
     private var readinessAccessibilityLabel: String {
         var parts = [
-            readinessStatus.label,
-            "\(settings.t(.accuracy)) \(progress.accuracy)%",
-            "\(progress.questionsAnswered) \(settings.t(.questionsShort))"
+            "\(settings.t(.readinessTitle)). \(verdictLabel)",
+            "\(settings.t(.readinessSolidLabel)): \(settings.t(.readinessThemesFormat, readiness.solid.count, readiness.measured.count))"
         ]
-        if let weakest = progress.weakestCategory {
-            parts.append("\(settings.t(.weakestShort)): \(weakest.categoryName)")
+        if !readiness.belowBar.isEmpty {
+            parts.append("\(settings.t(.readinessBelowBarLabel)): \(readiness.belowBar.count)")
         }
+        if !readiness.unmeasurable.isEmpty {
+            parts.append("\(settings.t(.readinessUnmeasuredLabel)): \(readiness.unmeasurable.count)")
+        }
+        parts.append("\(settings.t(.readinessFreshnessLabel)): \(freshnessText)")
+        parts.append(settings.t(.readinessCeiling, readiness.bankSize))
         return parts.joined(separator: ". ")
     }
 
-    private var accuracyReadout: some View {
-        HStack(alignment: .lastTextBaseline, spacing: 2) {
-            Text("\(progress.accuracy)")
-                .font(.gauge(64, .bold))
-                .foregroundColor(.white)
-            Text("%")
-                .font(.gauge(24, .bold))
-                .foregroundColor(Theme.accent)
-                .padding(.leading, 1)
-                .padding(.bottom, 8)
-            Text(settings.t(.accuracy).uppercased())
-                .font(.caption2.weight(.bold))
-                .tracking(1)
-                .foregroundColor(.white.opacity(0.72))
-                .padding(.leading, 8)
-                .padding(.bottom, 10)
+    private var verdictReadout: some View {
+        Text(verdictLabel)
+            .font(.display(34, .bold))
+            .foregroundColor(.white)
+            .fixedSize(horizontal: false, vertical: true)
+    }
+
+    private var freshnessText: String {
+        guard let days = readiness.daysSinceLastStudied else { return settings.t(.readinessNeverStudied) }
+        return days == 0 ? settings.t(.today) : settings.t(.readinessDaysAgoFormat, days)
+    }
+
+    /// One marker per theme, in bank order, joined by a lane line.
+    private var themeRoute: some View {
+        HStack(spacing: 0) {
+            ForEach(Array(readiness.themes.enumerated()), id: \.element.id) { index, theme in
+                if index > 0 {
+                    Rectangle()
+                        .fill(.white.opacity(0.22))
+                        .frame(height: 1.5)
+                        .frame(maxWidth: .infinity)
+                }
+                ThemeRouteMarker(status: theme.status)
+            }
         }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 2)
+        .accessibilityHidden(true)
     }
 
     @ViewBuilder
     private var readinessStats: some View {
+        let items = [
+            (settings.t(.readinessSolidLabel),
+             settings.t(.readinessThemesFormat, readiness.solid.count, readiness.measured.count),
+             "checkmark.circle.fill", false),
+            (settings.t(.readinessBelowBarLabel), "\(readiness.belowBar.count)",
+             "exclamationmark.triangle.fill", !readiness.belowBar.isEmpty),
+            (settings.t(.readinessUnmeasuredLabel), "\(readiness.unmeasurable.count)",
+             "questionmark.circle.fill", !readiness.unmeasurable.isEmpty),
+            (settings.t(.readinessFreshnessLabel), freshnessText, "clock.fill", false)
+        ]
+
+        // Two columns normally; a single stacked column at accessibility sizes,
+        // where two columns of long French labels would truncate.
         if dynamicTypeSize.isAccessibilitySize {
             VStack(alignment: .leading, spacing: 12) {
-                answeredStat
-                weakestStat
+                ForEach(items, id: \.0) { item in
+                    statItem(value: item.1, label: item.0.uppercased(), icon: item.2, warn: item.3)
+                }
             }
         } else {
-            HStack(spacing: 0) {
-                answeredStat
-                Divider()
-                    .frame(height: 28)
-                    .background(.white.opacity(0.22))
-                    .padding(.horizontal, 16)
-                weakestStat
-                Spacer()
-            }
-        }
-    }
-
-    private var answeredStat: some View {
-        statItem(
-            value: "\(progress.questionsAnswered)",
-            label: settings.t(.questionsShort).uppercased(),
-            icon: "checkmark.circle.fill"
-        )
-    }
-
-    private var weakestStat: some View {
-        Group {
-            if let weakest = progress.weakestCategory {
-                statItem(
-                    value: weakest.categoryName,
-                    label: settings.t(.weakestShort).uppercased(),
-                    icon: "exclamationmark.triangle.fill",
-                    warn: true
-                )
-            } else {
-                statItem(
-                    value: "—",
-                    label: settings.t(.weakestShort).uppercased(),
-                    icon: "exclamationmark.triangle.fill"
-                )
-            }
-        }
-    }
-
-    // Custom segmented road-progress meter
-    private var roadMeter: some View {
-        VStack(alignment: .leading, spacing: 7) {
-            GeometryReader { geo in
-                ZStack(alignment: .leading) {
-                    // Track
-                    Capsule()
-                        .fill(Color.white.opacity(0.13))
-                        .frame(height: 8)
-
-                    // Gradient fill
-                    Capsule()
-                        .fill(
-                            LinearGradient(
-                                colors: [Theme.danger, Theme.accent, Theme.success],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                        .frame(width: max(14, geo.size.width * roadProgress), height: 8)
-
-                    // Milestone ticks at 25 / 50 / 75 %
-                    ForEach([0.25, 0.5, 0.75] as [CGFloat], id: \.self) { pos in
-                        Capsule()
-                            .fill(Color(hex: "0B1B3E").opacity(0.5))
-                            .frame(width: 2, height: 14)
-                            .offset(x: geo.size.width * pos - 1)
+            VStack(alignment: .leading, spacing: 12) {
+                ForEach(Array(stride(from: 0, to: items.count, by: 2)), id: \.self) { row in
+                    HStack(alignment: .top, spacing: 16) {
+                        ForEach(items[row..<min(row + 2, items.count)], id: \.0) { item in
+                            statItem(value: item.1, label: item.0.uppercased(), icon: item.2, warn: item.3)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
                     }
                 }
             }
-            .frame(height: 8)
-
-            // Tick labels
-            HStack {
-                Text("0")
-                Spacer()
-                Text("25%")
-                Spacer()
-                Text("50%")
-                Spacer()
-                Text("75%")
-                Spacer()
-                Text("100%")
-            }
-            .font(.system(size: 8.5, weight: .semibold))
-            .foregroundColor(.white.opacity(0.58))
-            .accessibilityHidden(true)
         }
+    }
+
+    /// The honest ceiling: states the size of the bank so the verdict above is
+    /// never mistaken for a claim about the real exam.
+    private var ceilingNote: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            if readiness.verdict == .readyOnMeasured && !readiness.unmeasurable.isEmpty {
+                Text(settings.t(.readinessReadyCaveat, readiness.unmeasurable.count))
+                    .font(.caption.weight(.semibold))
+                    .foregroundColor(Theme.accent)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            Text(settings.t(.readinessCeiling, readiness.bankSize))
+                .font(.caption2)
+                .foregroundColor(.white.opacity(0.62))
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(.top, 2)
     }
 
     private func statItem(value: String, label: String, icon: String, warn: Bool = false) -> some View {
@@ -500,13 +491,49 @@ struct HomeView: View {
     // MARK: – Helpers
 
     private var examMetadata: String {
-        guard let c = examConfig else { return settings.t(.examMetadata, 40, 30, 5) }
-        return settings.t(.examMetadata, c.numberOfQuestions, c.timeLimitSeconds / 60, c.allowedMistakes)
+        guard let c = examConfig else { return settings.t(.examMetadata, 40, 35) }
+        return settings.t(.examMetadata, c.numberOfQuestions, c.numberOfQuestions - c.allowedMistakes)
     }
 
     private func reload() {
         guard let country = settings.countryCode, let language = settings.languageCode else { return }
-        progress = Queries.getOverallProgress(Database.shared, country, language)
+        readiness = Queries.getReadinessReport(Database.shared, country, language)
         examConfig = Queries.getExamConfiguration(Database.shared, country)
+    }
+}
+
+/// A single theme's state on the route.
+///
+/// Shape and fill carry the meaning, not colour alone: solid themes are filled
+/// discs with a tick, themes below the bar are open rings, and themes the bank
+/// cannot measure are dashed rings. This stays readable under Differentiate
+/// Without Color and in greyscale.
+private struct ThemeRouteMarker: View {
+    let status: ThemeStatus
+
+    var body: some View {
+        ZStack {
+            switch status {
+            case .solid:
+                Circle()
+                    .fill(Theme.accent)
+                    .frame(width: 16, height: 16)
+                Image(systemName: "checkmark")
+                    .font(.system(size: 9, weight: .black))
+                    .foregroundColor(Color(hex: "0B1B3E"))
+            case .unmeasurable:
+                Circle()
+                    .strokeBorder(
+                        .white.opacity(0.45),
+                        style: StrokeStyle(lineWidth: 1.5, dash: [2.5, 2.5])
+                    )
+                    .frame(width: 16, height: 16)
+            case .notStarted, .buildingCoverage, .needsAccuracy, .stale:
+                Circle()
+                    .strokeBorder(.white.opacity(0.85), lineWidth: 2)
+                    .frame(width: 16, height: 16)
+            }
+        }
+        .frame(width: 20, height: 20)
     }
 }

@@ -42,6 +42,8 @@ struct MistakesView: View {
                         PrimaryButton(label: settings.t(.practiceMistakes)) {
                             path.append(LearningRoute.question(mode: .mistakes, categoryId: nil))
                         }
+
+                        if confidentlyWrongCount > 0 { confidentlyWrongCard }
                         ForEach(Array(mistakes.enumerated()), id: \.element.id) { i, mistake in
                             CardView {
                                 VStack(alignment: .leading, spacing: 8) {
@@ -65,6 +67,21 @@ struct MistakesView: View {
                                     Text(settings.t(.incorrectTimes, count: mistake.incorrectCount))
                                         .font(.subheadline.weight(.semibold))
                                         .foregroundColor(Theme.danger)
+
+                                    if mistake.wasConfidentlyWrong {
+                                        HStack(spacing: 5) {
+                                            Image(systemName: "exclamationmark.triangle.fill")
+                                                .font(.caption2.weight(.bold))
+                                                .accessibilityHidden(true)
+                                            Text(settings.t(.confidentBadge))
+                                                .font(.caption.weight(.semibold))
+                                                .fixedSize(horizontal: false, vertical: true)
+                                        }
+                                        .foregroundColor(Theme.accent)
+                                        .padding(.horizontal, 8)
+                                        .padding(.vertical, 4)
+                                        .background(Theme.accent.opacity(0.12), in: Capsule())
+                                    }
                                 }
                             }
                             .appear(i)
@@ -89,6 +106,34 @@ struct MistakesView: View {
             }
             .onAppear(perform: reload)
         }
+    }
+
+    /// Mistakes made while the learner believed they knew the answer. These are
+    /// listed first by the query, because nothing else prompts the learner to
+    /// revise them — they do not feel like gaps.
+    private var confidentlyWrongCount: Int {
+        mistakes.filter(\.wasConfidentlyWrong).count
+    }
+
+    private var confidentlyWrongCard: some View {
+        CardView {
+            VStack(alignment: .leading, spacing: 8) {
+                HStack(spacing: 7) {
+                    Image(systemName: "exclamationmark.triangle.fill")
+                        .foregroundStyle(Theme.accent)
+                        .accessibilityHidden(true)
+                    Text(settings.t(.confidentlyWrongTitle, confidentlyWrongCount))
+                        .font(.headline)
+                        .foregroundColor(Theme.text)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                Text(settings.t(.confidentlyWrongBody))
+                    .font(.subheadline)
+                    .foregroundColor(Theme.textMuted)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+        }
+        .accessibilityElement(children: .combine)
     }
 
     private func reload() {

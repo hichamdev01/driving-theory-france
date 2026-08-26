@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "jurisdiction": "FR",
+  "reviewed_on": "2026-08-23",
+  "positioning": "Independent exam-style practice; not the confidential official ETG question bank",
+  "official_format": {
+    "questions": 40,
+    "minimum_correct": 35,
+    "response_letters": ["a", "b", "c", "d"],
+    "public_overall_maximum_seconds": null,
+    "per_question_seconds": null,
+    "per_question_timing_note": "Provider/DSR confirmation required before making an official-duration claim"
+  },
+  "practice_timing": {
+    "practice_session_seconds": 1800,
+    "practice_seconds_per_question": 20,
+    "note": "Internal optional training settings; not presented as official ETG timings"
+  },
+  "mock_exam_quotas": {
+    "road_signs": 8,
+    "priority_rules": 5,
+    "speed_limits": 4,
+    "parking_stopping": 3,
+    "overtaking": 4,
+    "motorways": 3,
+    "alcohol_drugs": 5,
+    "safety": 8
+  },
+  "mock_exam_media_policy": "Only photo/video questions are eligible; any category shortfall is filled from other media-eligible themes until question-specific media is added",
+  "required_topics": [
+    "signs_and_road_markings",
+    "priority_and_intersections",
+    "speed_and_weather",
+    "parking_and_stopping",
+    "overtaking_and_lateral_clearance",
+    "motorways_and_breakdowns",
+    "alcohol_drugs_and_medicines",
+    "phone_distraction_and_fatigue",
+    "following_distance",
+    "occupant_and_child_safety",
+    "first_aid_and_post_crash_actions",
+    "vehicle_equipment_and_tyres",
+    "eco_driving",
+    "pedestrians_cyclists_edpm_and_other_vulnerable_users"
+  ],
+  "authoritative_sources": [
+    "https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006075080/",
+    "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049502288",
+    "https://www.interieur.gouv.fr/actualites/communiques-de-presse/renouvellement-de-banque-de-questions-du-code-plus-de-lisibilite",
+    "https://www.onisr.securite-routiere.gouv.fr/politique-de-securite-routiere/code-de-la-route"
+  ]
+}

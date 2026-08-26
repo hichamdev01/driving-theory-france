@@ -45,6 +45,7 @@ struct BundledQuestionMedia: View {
         } else if let imagePath, let uiImage = BundledImageLoader.uiImage(for: imagePath) {
             Image(uiImage: uiImage)
                 .resizable()
+                .interpolation(.high)
                 .aspectRatio(contentMode: .fit)
         }
     }
@@ -64,7 +65,7 @@ private struct BundledVideoPlayer: View {
     }
 }
 
-/// Renders a road sign's image (or vector fallback). Always paired with the
+/// Renders a road sign's image (or a neutral missing-image state). Always paired with the
 /// sign's name/meaning as adjacent text, so it is hidden from assistive
 /// technologies to avoid a redundant, unlabeled announcement.
 struct RoadSignImageView: View {
@@ -78,10 +79,20 @@ struct RoadSignImageView: View {
             if let imagePath, let uiImage = BundledImageLoader.uiImage(for: imagePath) {
                 Image(uiImage: uiImage)
                     .resizable()
+                    .interpolation(.high)
                     .aspectRatio(contentMode: .fit)
                     .frame(width: size, height: size)
             } else {
-                RoadSignBadge(shape: shape, color: color, size: size)
+                // A guessed sign shape or colour can teach the wrong rule.
+                // Missing regulatory artwork is therefore shown neutrally.
+                Image(systemName: "photo.badge.exclamationmark")
+                    .resizable()
+                    .scaledToFit()
+                    .foregroundStyle(Theme.textMuted)
+                    .padding(size * 0.22)
+                    .frame(width: size, height: size)
+                    .background(Theme.surfaceAlt)
+                    .clipShape(RoundedRectangle(cornerRadius: Theme.controlRadius))
             }
         }
         .accessibilityHidden(true)

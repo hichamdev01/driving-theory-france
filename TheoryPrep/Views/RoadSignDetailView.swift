@@ -9,7 +9,10 @@ struct RoadSignDetailView: View {
         ScrollView {
             if let sign {
                 VStack(spacing: 16) {
-                    RoadSignImageView(imagePath: sign.imagePath, shape: sign.shape, color: sign.color, size: 160)
+                    // Keep legacy raster catalogue art close to its source
+                    // resolution; high-quality interpolation handles the
+                    // remaining Retina scaling without an oversized blur.
+                    RoadSignImageView(imagePath: sign.imagePath, shape: sign.shape, color: sign.color, size: 132)
                         .padding(.vertical, 24)
 
                     Text(sign.name)

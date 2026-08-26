@@ -22,12 +22,17 @@ struct ContentCategory: Codable {
 
 struct ContentExamConfiguration: Codable {
     let numberOfQuestions: Int
-    let timeLimitSeconds: Int
+    let practiceSessionSeconds: Int
     let passingScore: Int
     let allowedMistakes: Int
+    let practiceSecondsPerQuestion: Int?
 }
 
 struct ContentQuestion: Codable {
+    /// Stable identity, independent of the question's position in the pack.
+    /// Optional so a pack that predates the field still loads; `stableKey`
+    /// derives the same value the database backfill uses.
+    let key: String?
     let categorySlug: String
     let correctAnswers: Set<AnswerKey>
     let difficulty: String
@@ -36,11 +41,12 @@ struct ContentQuestion: Codable {
     let translations: [String: ContentQuestionTranslation]
 
     private enum CodingKeys: String, CodingKey {
-        case categorySlug, correctAnswer, correctAnswers, difficulty, imagePath, videoPath, translations
+        case key, categorySlug, correctAnswer, correctAnswers, difficulty, imagePath, videoPath, translations
     }
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
+        key = try container.decodeIfPresent(String.self, forKey: .key)
         categorySlug = try container.decode(String.self, forKey: .categorySlug)
         difficulty = try container.decode(String.self, forKey: .difficulty)
         imagePath = try container.decodeIfPresent(String.self, forKey: .imagePath)
@@ -62,6 +68,17 @@ struct ContentQuestion: Codable {
         try container.encodeIfPresent(imagePath, forKey: .imagePath)
         try container.encodeIfPresent(videoPath, forKey: .videoPath)
         try container.encode(translations, forKey: .translations)
+    }
+}
+
+extension ContentQuestion {
+    /// The key used to match this question against rows already in the
+    /// database. Falls back to the image file stem, which is how existing
+    /// installs were backfilled.
+    var stableKey: String? {
+        if let key, !key.isEmpty { return key }
+        guard let imagePath else { return nil }
+        return ((imagePath as NSString).lastPathComponent as NSString).deletingPathExtension
     }
 }
 
@@ -109,14 +126,30 @@ enum ContentLoader {
         }
         let catalogData = try! Data(contentsOf: catalogURL)
         let catalog = try! decoder.decode(ContentRoadSignCatalog.self, from: catalogData)
+        // `road-signs.json` is the canonical catalogue, while pack.json may
+        // contribute a category that the catalogue does not yet contain (for
+        // France, the core priority signs). Only merge signs belonging to
+        // those additional categories so legacy duplicate general signs do
+        // not appear twice.
+        let catalogCategorySlugs = Set(catalog.categories.map(\.slug))
+        let additionalCategories = pack.roadSignCategories.filter {
+            !catalogCategorySlugs.contains($0.slug)
+        }
+        let additionalCategorySlugs = Set(additionalCategories.map(\.slug))
+        let catalogImagePaths = Set(catalog.signs.compactMap(\.imagePath))
+        let additionalSigns = pack.roadSigns.filter { sign in
+            guard additionalCategorySlugs.contains(sign.roadSignCategorySlug) else { return false }
+            guard let imagePath = sign.imagePath else { return true }
+            return !catalogImagePaths.contains(imagePath)
+        }
         let completePack = ContentCountryPack(
             country: pack.country,
             languages: pack.languages,
             categories: pack.categories,
-            roadSignCategories: catalog.categories,
+            roadSignCategories: catalog.categories + additionalCategories,
             examConfiguration: pack.examConfiguration,
             questions: pack.questions,
-            roadSigns: catalog.signs
+            roadSigns: catalog.signs + additionalSigns
         )
         validateTranslations(in: completePack)
         return completePack
@@ -157,6 +190,10 @@ enum ContentLoader {
         }
 
         for (index, sign) in pack.roadSigns.enumerated() {
+            precondition(
+                pack.roadSignCategories.contains { $0.slug == sign.roadSignCategorySlug },
+                "Unknown road-sign category \(sign.roadSignCategorySlug) for road sign \(index)"
+            )
             for language in requiredLanguages {
                 guard let translation = sign.translations[language] else {
                     preconditionFailure("Missing \(language) translation for road sign \(index)")

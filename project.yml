@@ -34,3 +34,25 @@ targets:
         TARGETED_DEVICE_FAMILY: "1"
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: true
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+
+  TheoryPrepTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: TheoryPrepTests
+    dependencies:
+      - target: TheoryPrep
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.drivingtheoryapp.mobile.tests
+        GENERATE_INFOPLIST_FILE: true
+
+schemes:
+  TheoryPrep:
+    build:
+      targets:
+        TheoryPrep: all
+        TheoryPrepTests: [test]
+    test:
+      targets:
+        - TheoryPrepTests

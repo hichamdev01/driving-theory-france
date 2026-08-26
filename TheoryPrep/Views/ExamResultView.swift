@@ -67,7 +67,7 @@ struct ExamResultView: View {
                                     Text(row.question.questionText)
                                         .font(.body.weight(.bold))
                                         .foregroundColor(Theme.text)
-                                    Text("\(settings.t(.correctAnswerWas)) \(row.question.correctAnswerText)")
+                                    Text("\(settings.t(.correctAnswerWas)) \(row.question.correctAnswerText(displayOrder: row.answerOrder))")
                                         .font(.subheadline.weight(.semibold))
                                         .foregroundColor(Theme.success)
                                     Text(row.question.explanation)

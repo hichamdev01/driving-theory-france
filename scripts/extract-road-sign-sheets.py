@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Extract the road-sign artwork used by the app from the supplied reference sheets."""
 
-from collections import deque
+from collections import Counter, deque
 import json
 from pathlib import Path
 
@@ -17,18 +17,6 @@ SHEETS = {
     "obligations": DOWNLOADS / "68d0f44bb77de411032d7821_66e94092a0870c6a06edd920_6667fc0f0596b7f640c33aea_OBLIGATIONS%2520(1).png",
     "interdictions": DOWNLOADS / "68d0f44cb77de411032d7834_66e9462fc010ad7f6a133fbd_6667fc9fc27b9d5e8218f59f_panneaux-interdictions.png",
     "dangers": DOWNLOADS / "68d0f44bb77de411032d782a_66e9462fc010ad7f6a133fc0_6667fc8c4dc135b5258d87cc_panneaux-danger.png",
-}
-
-# Coordinates intentionally contain only the sign, never the sheet labels or branding.
-SIGNS = {
-    "road_sign_danger_permanent.png": ("dangers", (38, 198, 175, 320)),
-    "road_sign_bend_right.png": ("dangers", (611, 198, 748, 320)),
-    "road_sign_no_entry.png": ("interdictions", (234, 192, 362, 319)),
-    "road_sign_speed_limit_50.png": ("interdictions", (234, 1795, 362, 1922)),
-    "road_sign_no_parking.png": ("interdictions", (43, 645, 171, 772)),
-    "road_sign_pedestrian_crossing.png": ("indications", (44, 192, 175, 318)),
-    "road_sign_roundabout_ahead.png": ("dangers", (803, 1554, 940, 1676)),
-    "road_sign_turn_right.png": ("obligations", (43, 419, 171, 546)),
 }
 
 X_CENTERS = [107, 298, 489, 680, 871]
@@ -48,7 +36,7 @@ DANGER_SIGNS = [
     ("Road narrows", "Chaussée rétrécie"),
     ("Slippery road", "Chaussée particulièrement glissante"),
     ("Opening bridge", "Pont mobile"),
-    ("Manually operated barriers", "Barrières à fonctionnement manuel"),
+    ("A7 — Level crossing with manually operated gates or half-gates", "A7 — Passage à niveau muni de barrières ou de demi-barrières à fonctionnement manuel"),
     ("Level crossing without barrier", "Passage à niveau sans barrière ni demi-barrière"),
     ("Tramway crossing", "Traversée de voies de tramways"),
     ("Public transport crossing", "Traversée de voies de transport en commun"),
@@ -95,7 +83,7 @@ OBLIGATION_SIGNS = [
     ("End of mandatory horse-rider path", "Fin de chemin obligatoire pour cavaliers"),
     ("End of minimum speed", "Fin de vitesse minimale obligatoire"),
     ("End of snow-chain requirement", "Fin de l’obligation d’utilisation des chaînes à neige"),
-    ("End of reserved public-transport lane", "Fin de voie réservée aux véhicules des services réguliers de transport en commun"),
+    ("B45 — End of lane reserved for public transport and its associated speed limit", "B45 — Fin de voie réservée aux transports en commun et de la limitation de vitesse associée"),
     ("End of lights-on requirement", "Fin d’obligation d’allumage des feux"),
 ]
 
@@ -221,8 +209,8 @@ INDICATION_SIGNS = [
     ("End of greenway", "Fin de voie verte"),
     ("Motorway entrance", "Début d’une section d’autoroute"),
     ("End of motorway", "Fin d’une section d’autoroute"),
-    ("Motorway under video surveillance", "Indication sur autoroute"),
-    ("Tunnel under video surveillance", "Indication sur autoroute"),
+    ("SR4 — Motorway under video surveillance", "SR4 — Autoroute sous vidéoprotection"),
+    ("SR4 — Tunnel under video surveillance", "SR4 — Tunnel sous vidéoprotection"),
 ]
 
 
@@ -285,7 +273,8 @@ def make_missing_reference_signs() -> None:
     draw.polygon(inner, fill="#C8102E")
     font = ImageFont.truetype("/System/Library/Fonts/Supplemental/Arial Bold.ttf", 34 * scale)
     draw.text(center, "STOP", font=font, fill="white", anchor="mm", stroke_width=1 * scale, stroke_fill="white")
-    stop.resize((128, 128), Image.Resampling.LANCZOS).save(OUTPUT / "road_sign_stop.png", optimize=True)
+    if not (OUTPUT / "road_sign_stop.png").exists():
+        stop.resize((128, 128), Image.Resampling.LANCZOS).save(OUTPUT / "road_sign_stop.png", optimize=True)
 
     yield_sign = Image.new("RGBA", (canvas_size, canvas_size), (0, 0, 0, 0))
     draw = ImageDraw.Draw(yield_sign)
@@ -295,7 +284,8 @@ def make_missing_reference_signs() -> None:
     draw.polygon(outer, fill="#263238")
     draw.polygon(middle, fill="#D7262E")
     draw.polygon(inner, fill="#FFFFFF")
-    yield_sign.resize((128, 128), Image.Resampling.LANCZOS).save(OUTPUT / "road_sign_yield.png", optimize=True)
+    if not (OUTPUT / "road_sign_yield.png").exists():
+        yield_sign.resize((128, 128), Image.Resampling.LANCZOS).save(OUTPUT / "road_sign_yield.png", optimize=True)
 
     priority = Image.new("RGBA", (canvas_size, canvas_size), (0, 0, 0, 0))
     draw = ImageDraw.Draw(priority)
@@ -305,7 +295,48 @@ def make_missing_reference_signs() -> None:
     draw.polygon(outer, fill="#263238")
     draw.polygon(white, fill="#FFFFFF")
     draw.polygon(yellow, fill="#F7D117")
-    priority.resize((128, 128), Image.Resampling.LANCZOS).save(OUTPUT / "road_sign_priority_road.png", optimize=True)
+    if not (OUTPUT / "road_sign_priority_road.png").exists():
+        priority.resize((128, 128), Image.Resampling.LANCZOS).save(OUTPUT / "road_sign_priority_road.png", optimize=True)
+
+
+def sign_metadata(slug: str, sign: Image.Image) -> tuple[str, str]:
+    if slug == "danger":
+        return "triangle", "#C8102E"
+    if slug == "obligation":
+        return "circle", "#1E5AA8"
+    if slug == "prohibition":
+        return "circle", "#C8102E"
+    if slug == "end_prohibition":
+        return "circle", "#FFFFFF"
+
+    ratio = sign.width / sign.height
+    shape = "rectangle" if ratio > 1.15 or ratio < 0.87 else "square"
+    palette = {
+        "#C8102E": (200, 16, 46),
+        "#1E5AA8": (30, 90, 168),
+        "#00843D": (0, 132, 61),
+        "#FFC72C": (255, 199, 44),
+        "#E95420": (233, 84, 32),
+    }
+    sample = sign.convert("RGB")
+    sample.thumbnail((80, 80))
+    colored = []
+    for red, green, blue in sample.getdata():
+        if min(red, green, blue) > 235 or max(red, green, blue) < 55:
+            continue
+        if max(red, green, blue) - min(red, green, blue) < 35:
+            continue
+        colored.append((red // 24 * 24, green // 24 * 24, blue // 24 * 24))
+    if not colored:
+        return shape, "#FFFFFF"
+    dominant = Counter(colored).most_common(1)[0][0]
+    color = min(
+        palette,
+        key=lambda candidate: sum(
+            (dominant[channel] - palette[candidate][channel]) ** 2 for channel in range(3)
+        ),
+    )
+    return shape, color
 
 
 def extract_catalog(opened: dict[str, Image.Image]) -> None:
@@ -326,6 +357,10 @@ def extract_catalog(opened: dict[str, Image.Image]) -> None:
             raise RuntimeError(f"{slug}: {len(labels)} labels for {len(positions)} positions")
 
         for index, ((english, french), (column, y_center)) in enumerate(zip(labels, positions), start=1):
+            # The sheet repeats A14 at position 21. Position 1 is the clearer
+            # canonical record, so do not emit a duplicate asset or entry.
+            if slug == "danger" and index == 21:
+                continue
             x_center = X_CENTERS[column]
             half_width = 70
             half_height = 66 if not (slug == "indication" and y_center == 3150) else 50
@@ -334,16 +369,29 @@ def extract_catalog(opened: dict[str, Image.Image]) -> None:
             sign.thumbnail((512, 512), Image.Resampling.LANCZOS)
             filename = f"road_sign_{slug}_{index:03d}.png"
             sign.save(OUTPUT / filename, optimize=True)
+            shape, color = sign_metadata(slug, sign)
+            translations = {
+                "en": {"name": english, "meaning": english},
+                "fr": {"name": french, "meaning": french},
+            }
+            if slug == "danger" and index == 15:
+                translations["en"]["meaning"] = "Warns of a level crossing equipped with manually operated gates or half-gates."
+            elif slug == "obligation" and index == 24:
+                translations["en"]["meaning"] = "Ends the reservation indicated by B27a and the speed limit associated with it."
+                translations["fr"]["meaning"] = "Met fin à la réservation signalée par B27a ainsi qu’à la limitation de vitesse qui lui était associée."
+            elif slug == "indication" and index == 63:
+                translations["en"]["meaning"] = "This section of motorway is under video surveillance to improve user safety and traffic regulation."
+                translations["fr"]["meaning"] = "Cette section d’autoroute est placée sous vidéoprotection pour améliorer la sécurité des usagers et la régulation du trafic."
+            elif slug == "indication" and index == 64:
+                translations["en"]["meaning"] = "This tunnel is under video surveillance to improve user safety and traffic regulation."
+                translations["fr"]["meaning"] = "Ce tunnel est placé sous vidéoprotection pour améliorer la sécurité des usagers et la régulation du trafic."
             catalog_signs.append(
                 {
                     "road_sign_category_slug": slug,
                     "image_path": f"france/{filename}",
-                    "shape": "circle",
-                    "color": "#1E5AA8",
-                    "translations": {
-                        "en": {"name": english, "meaning": english},
-                        "fr": {"name": french, "meaning": french},
-                    },
+                    "shape": shape,
+                    "color": color,
+                    "translations": translations,
                 }
             )
 
@@ -358,11 +406,6 @@ def extract_catalog(opened: dict[str, Image.Image]) -> None:
 def main() -> None:
     OUTPUT.mkdir(parents=True, exist_ok=True)
     opened = {name: Image.open(path) for name, path in SHEETS.items()}
-    for filename, (sheet, box) in SIGNS.items():
-        sign = remove_connected_white(opened[sheet].crop(box))
-        sign.thumbnail((512, 512), Image.Resampling.LANCZOS)
-        sign.save(OUTPUT / filename, optimize=True)
-        print(f"{filename}: {sign.width}x{sign.height}")
     make_missing_reference_signs()
     extract_catalog(opened)
 

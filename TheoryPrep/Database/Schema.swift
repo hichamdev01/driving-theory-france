@@ -1,7 +1,7 @@
 import Foundation
 
 enum Schema {
-    static let contentVersion: Int64 = 21
+    static let contentVersion: Int64 = 24
 
     static let createTablesSQL = """
     CREATE TABLE IF NOT EXISTS countries (
@@ -39,6 +39,7 @@ enum Schema {
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       country_id INTEGER NOT NULL REFERENCES countries(id),
       category_id INTEGER NOT NULL REFERENCES categories(id),
+      question_key TEXT,
       correct_answer TEXT NOT NULL CHECK (correct_answer IN ('a','b','c','d')),
       correct_answers TEXT NOT NULL DEFAULT '',
       difficulty TEXT NOT NULL DEFAULT 'medium',
@@ -97,7 +98,8 @@ enum Schema {
       number_of_questions INTEGER NOT NULL,
       time_limit_seconds INTEGER NOT NULL,
       passing_score INTEGER NOT NULL,
-      allowed_mistakes INTEGER NOT NULL
+      allowed_mistakes INTEGER NOT NULL,
+      seconds_per_question INTEGER NOT NULL DEFAULT 20
     );
 
     CREATE TABLE IF NOT EXISTS user_question_progress (
@@ -106,6 +108,8 @@ enum Schema {
       attempts INTEGER NOT NULL DEFAULT 0,
       correct_attempts INTEGER NOT NULL DEFAULT 0,
       incorrect_attempts INTEGER NOT NULL DEFAULT 0,
+      confident_attempts INTEGER NOT NULL DEFAULT 0,
+      confident_correct INTEGER NOT NULL DEFAULT 0,
       last_answered_at TEXT
     );
 
@@ -132,6 +136,7 @@ enum Schema {
       question_id INTEGER NOT NULL REFERENCES questions(id),
       selected_answer TEXT,
       selected_answers TEXT,
+      answer_order TEXT,
       correct INTEGER NOT NULL
     );
 
@@ -143,6 +148,8 @@ enum Schema {
     );
 
     CREATE INDEX IF NOT EXISTS idx_questions_country_category ON questions(country_id, category_id);
+    -- The unique indexes backing content upserts are created in `migrate()`,
+    -- after the columns they cover are guaranteed to exist on older installs.
     CREATE INDEX IF NOT EXISTS idx_question_translations_question ON question_translations(question_id, language_code);
     CREATE INDEX IF NOT EXISTS idx_road_signs_country_category ON road_signs(country_id, category_id);
     CREATE INDEX IF NOT EXISTS idx_road_sign_translations_sign ON road_sign_translations(road_sign_id, language_code);
@@ -154,6 +161,41 @@ enum Schema {
         addColumnIfNeeded(db, table: "questions", column: "correct_answers", definition: "TEXT NOT NULL DEFAULT ''")
         addColumnIfNeeded(db, table: "questions", column: "video_path", definition: "TEXT")
         addColumnIfNeeded(db, table: "exam_result_answers", column: "selected_answers", definition: "TEXT")
+        addColumnIfNeeded(db, table: "exam_result_answers", column: "answer_order", definition: "TEXT")
+        // Optional practice timer. This is a training setting rather than a
+        // claim about the timing used by every official ETG provider.
+        addColumnIfNeeded(db, table: "exam_configurations", column: "seconds_per_question", definition: "INTEGER NOT NULL DEFAULT 20")
+        // Confidence is only captured in practice, so these stay at 0 for
+        // answers given before the feature existed and during exams.
+        addColumnIfNeeded(db, table: "user_question_progress", column: "confident_attempts", definition: "INTEGER NOT NULL DEFAULT 0")
+        addColumnIfNeeded(db, table: "user_question_progress", column: "confident_correct", definition: "INTEGER NOT NULL DEFAULT 0")
+
+        addColumnIfNeeded(db, table: "questions", column: "question_key", definition: "TEXT")
+        backfillQuestionKeys(db)
+
+        // Created after the backfill: the index is UNIQUE, so it can only be
+        // built once every existing row has its key.
+        db.exec("CREATE UNIQUE INDEX IF NOT EXISTS idx_questions_key ON questions(country_id, question_key)")
+        db.exec("CREATE UNIQUE INDEX IF NOT EXISTS idx_categories_slug ON categories(country_id, slug)")
+    }
+
+    /// Gives already-installed questions the same stable key the content pack
+    /// now carries, derived the same way (image file name without extension).
+    ///
+    /// Without this an upgrade would see every question as new, insert
+    /// duplicates, and strand the progress attached to the old rows.
+    private static func backfillQuestionKeys(_ db: Database) {
+        let rows = db.query(
+            "SELECT id, image_path FROM questions WHERE question_key IS NULL AND image_path IS NOT NULL"
+        ) { ($0.int64("id"), $0.text("image_path")) }
+        guard !rows.isEmpty else { return }
+        db.transaction {
+            for (id, imagePath) in rows {
+                let key = (imagePath as NSString).lastPathComponent
+                let stem = (key as NSString).deletingPathExtension
+                db.run("UPDATE questions SET question_key = ? WHERE id = ?", [stem, id])
+            }
+        }
     }
 
     private static func addColumnIfNeeded(_ db: Database, table: String, column: String, definition: String) {
