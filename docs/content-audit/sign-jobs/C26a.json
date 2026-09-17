@@ -1,0 +1,49 @@
+{
+  "id": "C26a",
+  "code": "C26a",
+  "state": "imported",
+  "created_on": "2026-09-16",
+  "proposal": {
+    "code": "C26a",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+    "scenario_id": "c26a_car_scenario",
+    "scenario": "French mountain descent, learner ordinary car with functioning brakes stays on main asphalt roadway bending left. Escape ramp branches to the RIGHT into uphill gravel arrestor bed visible ahead. Prominent square BLUE sign with white main line bending left and right branch topped by RED-WHITE checkerboard rectangle, exact reference C26a. No parking furniture or other signs.",
+    "novelty_review": "Right-side escape lane for distress, not C8 emergency stopping recess and not a rest area.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. French mountain descent, learner ordinary car with functioning brakes stays on main asphalt roadway bending left. Escape ramp branches to the RIGHT into uphill gravel arrestor bed visible ahead. Prominent square BLUE sign with white main line bending left and right branch topped by RED-WHITE checkerboard rectangle, exact reference C26a. No parking furniture or other signs. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+    "question": {
+      "key": "situation_c26a_car_scenario",
+      "category_slug": "road_signs",
+      "correct_answer": "d",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Que désigne la branche terminée par un damier sur ce panneau ?",
+          "answer_a": "Une aire de pique-nique.",
+          "answer_b": "Une station-service.",
+          "answer_c": "Un parking touristique.",
+          "answer_d": "Une voie de détresse à droite.",
+          "explanation": "Le panneau C26a indique une voie de détresse située à droite, prévue pour les véhicules en difficulté. Ce n’est pas une aire de repos ; lorsque ma voiture fonctionne normalement, je reste sur la chaussée ordinaire."
+        },
+        "en": {
+          "question_text": "What does the branch ending in a chequered block represent?",
+          "answer_a": "A picnic area.",
+          "answer_b": "A fuel station.",
+          "answer_c": "Tourist parking.",
+          "answer_d": "An escape lane on the right.",
+          "explanation": "Sign C26a identifies an escape lane on the right for vehicles in distress. It is not a rest area; when my car is operating normally, I remain on the ordinary carriageway."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/C26a/scene.jpg",
+  "image_sha256": "2dae7db97e22fa0e3d4bbce519e647bd2ee70658f1ed3d0411fdb3b655b5dffd",
+  "review_note": "Actual image reviewed: blue square left-curving main route and right branch with red-white checkerboard, beside actual rising gravel escape lane to right. Learner remains on main asphalt. D only describes escape lane, not parking or rest area, in both languages.",
+  "reviewed_sha256": "696f5faba123b5dc5d398bd42a1cdf460f452c61295161ce5a66053214fc660b",
+  "question_key": "situation_c26a_car_scenario",
+  "imported_content_version": 69,
+  "imported_on": "2026-09-16"
+}

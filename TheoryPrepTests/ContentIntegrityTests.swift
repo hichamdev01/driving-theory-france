@@ -29,9 +29,34 @@ final class ContentIntegrityTests: XCTestCase {
         return []
     }
 
+    func testAuditedSignCorrectionsStayConsistentAcrossLanguages() throws {
+        let bank = try questions()
+        for (key, correctCode, wrongCode) in [
+            ("situation_mandatory_right", "B21-1", "B21b"),
+            ("situation_motorway_end", "C208", "C112"),
+        ] {
+            let item = try question(key, in: bank)
+            let translations = try XCTUnwrap(item["translations"] as? [String: [String: String]])
+            for language in ["en", "fr"] {
+                let explanation = try XCTUnwrap(translations[language]?["explanation"])
+                XCTAssertTrue(explanation.contains(correctCode))
+                XCTAssertFalse(explanation.contains(wrongCode))
+            }
+        }
+        let height = try question("situation_height_limit_3_5m", in: bank)
+        XCTAssertEqual(correctAnswers(in: height), ["b"])
+        let heightText = try XCTUnwrap(height["translations"] as? [String: [String: String]])
+        XCTAssertTrue(try XCTUnwrap(heightText["fr"]?["answer_b"]).contains("coffre de toit"))
+        XCTAssertTrue(try XCTUnwrap(heightText["en"]?["answer_b"]).contains("roof box"))
+        let load = try question("situation_front_load_no_projection", in: bank)
+        let loadText = try XCTUnwrap(load["translations"] as? [String: [String: String]])
+        XCTAssertFalse(try XCTUnwrap(loadText["fr"]?["question_text"]).contains("camionnette"))
+        XCTAssertFalse(try XCTUnwrap(loadText["en"]?["question_text"]).contains("van"))
+    }
+
     func testFranceQuestionBankHasCoverageAndCompleteTranslations() throws {
         let questions = try questions()
-        XCTAssertGreaterThanOrEqual(questions.count, 134)
+        XCTAssertGreaterThanOrEqual(questions.count, 297)
 
         let keys = try questions.map { try XCTUnwrap($0["key"] as? String) }
         XCTAssertEqual(Set(keys).count, keys.count, "Question keys must remain stable and unique")
@@ -61,6 +86,73 @@ final class ContentIntegrityTests: XCTestCase {
                 }
             }
         }
+    }
+
+    func testFranceQuestionBankStaysWithinPassengerCarScope() throws {
+        let questions = try questions()
+        let keys = Set(questions.compactMap { $0["key"] as? String })
+        let excludedNonPassengerCarQuestions: Set<String> = [
+            "safety_edpm_age_speed",
+            "situation_axle_load_b13a",
+            "situation_bicycle_night_rear_light_required",
+            "situation_bus_standing_passengers_70",
+            "situation_child_cyclist_helmet_unfastened",
+            "situation_coach_over10t_motorway_100",
+            "situation_cyclist_m12_red_yield",
+            "situation_cyclist_night_high_visibility_vest",
+            "situation_cyclists_two_abreast_at_dusk",
+            "situation_cycles_prohibited_b9b",
+            "situation_dangerous_goods_10t_motorway_90",
+            "situation_dangerous_goods_access_b18c",
+            "situation_dangerous_goods_over12_motorway_80",
+            "situation_edpm_passenger_prohibited",
+            "situation_heavy_7_5t_rural_80",
+            "situation_heavy_articulated_over12_rural_60",
+            "situation_heavy_combination_motorway_90",
+            "situation_long_combination_two_right_lanes",
+            "situation_motorcycle_daytime_light_required",
+            "situation_motorcycle_helmet_unfastened",
+            "situation_motorcycle_interfiles_stopped_30",
+            "situation_motorcycle_passenger_no_gloves",
+            "situation_motorway_bicycle_prohibited",
+            "situation_motorway_heavy_following_50m",
+            "situation_motorway_microcar_prohibited",
+            "situation_motorway_moped_prohibited",
+            "situation_motorway_multiple_trailers_prohibited",
+            "situation_motorway_tractor_access_prohibited",
+            "situation_motorway_tractor_prohibited",
+            "situation_narrow_road_long_vehicle_yields_car",
+            "situation_no_pedestrians_b9a",
+            "situation_rear_load_overhang_3_4m",
+            "situation_weight_limit_3_5t",
+        ]
+
+        XCTAssertTrue(
+            keys.isDisjoint(with: excludedNonPassengerCarQuestions),
+            "The France bank targets passenger-car learners, not operation of other vehicle classes"
+        )
+
+        let approvedTractorContexts: Set<String> = [
+            "situation_solid_line_tractor_no_overlap",
+        ]
+        let tractorQuestionKeys = Set(questions.compactMap { question -> String? in
+            guard
+                let key = question["key"] as? String,
+                let translations = question["translations"] as? [String: Any],
+                let french = translations["fr"] as? [String: Any]
+            else { return nil }
+
+            let searchableText = french.values
+                .compactMap { $0 as? String }
+                .joined(separator: " ")
+                .folding(options: [.diacriticInsensitive, .caseInsensitive], locale: Locale(identifier: "fr_FR"))
+            return searchableText.contains("tracteur") ? key : nil
+        })
+        XCTAssertEqual(
+            tractorQuestionKeys,
+            approvedTractorContexts,
+            "Tractor content requires an explicit passenger-car-context review"
+        )
     }
 
     func testAuditedAnswerKeysAndSignRulesStayCorrected() throws {
@@ -114,6 +206,22 @@ final class ContentIntegrityTests: XCTestCase {
                 XCTAssertGreaterThanOrEqual(explanation.count, 100)
                 XCTAssertTrue(explanation.contains("."))
             }
+        }
+    }
+
+    func testEveryQuestionImagePathResolvesToBundledMedia() throws {
+        let imagesDirectory = franceContentDirectory.appendingPathComponent("images")
+
+        for question in try questions() {
+            guard let imagePath = question["image_path"] as? String else { continue }
+            let key = question["key"] as? String ?? "<unknown>"
+            let imageURL = imagesDirectory.appendingPathComponent(
+                URL(fileURLWithPath: imagePath).lastPathComponent
+            )
+            XCTAssertTrue(
+                FileManager.default.fileExists(atPath: imageURL.path),
+                "Missing image for \(key): \(imagePath)"
+            )
         }
     }
 

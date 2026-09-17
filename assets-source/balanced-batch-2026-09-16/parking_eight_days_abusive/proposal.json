@@ -1,0 +1,49 @@
+{
+  "sequence": 12,
+  "scenario_id": "parking_eight_days_abusive",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Stationnement prolongé sur voie publique",
+  "references": [
+    "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000006842300"
+  ],
+  "novelty_review": "Uninterrupted duration beyond seven days, not location or payment restrictions.",
+  "scenario": "Natural exterior editorial photograph of ordinary compact passenger car correctly parked in a marked curbside public street space in calm French residential town, few fallen leaves on windscreen and under tyres suggesting unused car. No abandoned damage, no text dates or signs, daylight.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Natural exterior editorial photograph of ordinary compact passenger car correctly parked in a marked curbside public street space in calm French residential town, few fallen leaves on windscreen and under tyres suggesting unused car. No abandoned damage, no text dates or signs, daylight. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_parking_eight_days_abusive",
+    "category_slug": "parking_stopping",
+    "correct_answer": "d",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Ma voiture reste au même endroit sur la voie publique pendant huit jours consécutifs, sans règle locale plus stricte. Est-ce autorisé ?",
+        "answer_a": "Oui, tant que la place est gratuite.",
+        "answer_b": "Oui, si les pneus touchent toujours le trottoir.",
+        "answer_c": "Oui, si je viens regarder la voiture chaque jour sans la déplacer.",
+        "answer_d": "Non, ce stationnement est abusif.",
+        "explanation": "Au même endroit sur la voie publique, un stationnement ininterrompu de plus de sept jours est abusif. Une autorité locale peut fixer une durée encore plus courte."
+      },
+      "en": {
+        "question_text": "My car stays in the same public-street space for eight consecutive days, with no stricter local rule. Is that allowed?",
+        "answer_a": "Yes, as long as the space is free.",
+        "answer_b": "Yes, if the tyres keep touching the kerb.",
+        "answer_c": "Yes, if I check the car every day without moving it.",
+        "answer_d": "No, this is excessive-duration parking.",
+        "explanation": "Uninterrupted parking at the same point on the public road for more than seven days is excessive. A local authority may set an even shorter duration."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/parking_eight_days_abusive/scene.jpg",
+  "image_sha256": "14943c9733d7baf35863dd07b1ec5a832968da4a998fded0f3677f482ee614b2",
+  "native_image_sha256": "2b513bf8aedb5f96de6e942f64d091dacfed61fd333a474677055ba46447e7f9",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-f6e5f404-28ad-4486-95f0-bc24d234b022.png",
+  "visual_review": "Residential curbside parking scene; continuous eight-day duration and absence of stricter local duration are supplied explicitly in the question.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "92fe74a896ef218dad3d18f26b3b33894ebee161e3a1c076f7921ef68169a338",
+  "question_key": "situation_parking_eight_days_abusive",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

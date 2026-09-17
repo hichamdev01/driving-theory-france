@@ -1,0 +1,36 @@
+{
+  "code": "C64c2",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+  "scenario_id": "c64c2_car_scenario",
+  "scenario": "French automatic toll payment lane viewed from ordinary car. Payment machine on driver left, closed barrier ahead. Prominent BLUE SQUARE sign on right with WHITE outlined BANKNOTE containing euro symbol tilted diagonally and TWO COINS below/right exactly C64c2 reference. No bank card CB, subscription t, or attendant symbol. No additional legible text.",
+  "novelty_review": "Cash machine accepting notes and coins, distinct from C64b card and C64d subscription.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. French automatic toll payment lane viewed from ordinary car. Payment machine on driver left, closed barrier ahead. Prominent BLUE SQUARE sign on right with WHITE outlined BANKNOTE containing euro symbol tilted diagonally and TWO COINS below/right exactly C64c2 reference. No bank card CB, subscription t, or attendant symbol. No additional legible text. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+  "question": {
+    "key": "situation_c64c2_car_scenario",
+    "category_slug": "motorways",
+    "correct_answer": "b",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Quel moyen de paiement ce symbole indique-t-il ?",
+        "answer_a": "Un abonnement de télépéage obligatoire.",
+        "answer_b": "Des pièces et des billets acceptés par l’automate.",
+        "answer_c": "Une carte bancaire uniquement.",
+        "answer_d": "Un disque de stationnement.",
+        "explanation": "Le panneau C64c2 indique le paiement automatique par pièces et billets. Je prépare un moyen de paiement accepté et suis les indications de l’automate avant d’attendre l’ouverture de la barrière."
+      },
+      "en": {
+        "question_text": "Which payment method does this symbol indicate?",
+        "answer_a": "A compulsory electronic toll subscription.",
+        "answer_b": "Coins and banknotes accepted by the machine.",
+        "answer_c": "Bank cards only.",
+        "answer_d": "A parking disc.",
+        "explanation": "Sign C64c2 indicates automatic payment using coins and banknotes. I prepare accepted payment and follow the machine’s instructions before waiting for the barrier to open."
+      }
+    }
+  }
+}

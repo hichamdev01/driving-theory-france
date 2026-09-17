@@ -1,0 +1,1528 @@
+{
+  "batch_id": "balanced-30-2026-09-16",
+  "created_on": "2026-09-16",
+  "state": "imported",
+  "generation_method": "built-in image_gen, one image per question",
+  "questions_before": 348,
+  "content_version_before": 87,
+  "allocation": {
+    "motorways": 6,
+    "speed_limits": 5,
+    "parking_stopping": 5,
+    "overtaking": 5,
+    "priority_rules": 4,
+    "alcohol_drugs": 3,
+    "safety": 2
+  },
+  "proposals": [
+    {
+      "sequence": 1,
+      "scenario_id": "motorway_exit_deceleration",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Ralentissement dans la voie de décélération",
+      "references": [
+        "https://www.ecf.asso.fr/conseils/insertion-et-sortie-sur-lautoroute"
+      ],
+      "novelty_review": "Deceleration after entering exit lane, distinct from existing deadline for selecting the exit lane.",
+      "scenario": "Driver POV already fully inside ONE motorway exit deceleration lane curving gently right; two main lanes continue straight left, separated from exit by thick dashed white line transitioning to hatched gore farther ahead. Empty dry road daylight; learner not crossing markings, no readable signs.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV already fully inside ONE motorway exit deceleration lane curving gently right; two main lanes continue straight left, separated from exit by thick dashed white line transitioning to hatched gore farther ahead. Empty dry road daylight; learner not crossing markings, no readable signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_motorway_exit_deceleration",
+        "category_slug": "motorways",
+        "correct_answer": "a",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Je suis déjà engagé dans la voie de décélération. Comment préparer le virage de sortie ?",
+            "answer_a": "Je ralentis progressivement dans cette voie.",
+            "answer_b": "J’attends d’être dans le virage pour freiner.",
+            "answer_c": "Je conserve ma vitesse d’autoroute jusqu’au bout.",
+            "answer_d": "Je reviens sur l’autoroute pour ralentir.",
+            "explanation": "Une fois dans la voie de décélération, je réduis progressivement ma vitesse pour aborder la bretelle et son virage en sécurité, en respectant les limitations applicables."
+          },
+          "en": {
+            "question_text": "I am already in the deceleration lane. How should I prepare for the exit bend?",
+            "answer_a": "I slow down progressively in this lane.",
+            "answer_b": "I wait until I am in the bend to brake.",
+            "answer_c": "I maintain motorway speed to the end.",
+            "answer_d": "I return to the motorway to slow down.",
+            "explanation": "Once in the deceleration lane, I reduce speed progressively to negotiate the slip road and bend safely, while obeying the applicable limits."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/motorway_exit_deceleration/scene.jpg",
+      "image_sha256": "c71a05b0f23905749d81a91800a5f106be3cf375ef2ebb21a157b9247dd3d4e0",
+      "native_image_sha256": "02346d6132bf7a90a2465a521207716c07da810c0aec50e774e2d85a598c728c",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-654533be-4ef1-465a-ba5a-df86054020c8.png",
+      "visual_review": "Reviewed: learner already wholly in separate exit lane with visible right bend and gore. A only selects progressive slowing in the exit lane; FR/EN and four distinct choices align.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "b66c53b2db51bf43e2664569d1558e75caa5e11f7a0bd61cace36bd5321a644d",
+      "question_key": "situation_motorway_exit_deceleration",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 2,
+      "scenario_id": "motorway_toll_gap_green",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Séparation au télépéage",
+      "references": [
+        "https://www.vinci-autoroutes.com/fr/conseils/autoroute-mode-demploi/peage-autoroute/"
+      ],
+      "novelty_review": "Gap and individual green confirmation at toll barrier, distinct from payment symbol identification.",
+      "scenario": "Driver POV stationary before French toll barrier. Another ordinary car about 7 metres ahead is passing raised red-white barrier; small two-aspect light facing learner visibly RED at payment machine. Barrier remains raised after car. No readable speed or payment symbols, no huge labels.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV stationary before French toll barrier. Another ordinary car about 7 metres ahead is passing raised red-white barrier; small two-aspect light facing learner visibly RED at payment machine. Barrier remains raised after car. No readable speed or payment symbols, no huge labels. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_motorway_toll_gap_green",
+        "category_slug": "motorways",
+        "correct_answer": "b",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Au télépéage, la barrière est encore levée pour la voiture devant et mon feu est rouge. Puis-je la suivre immédiatement ?",
+            "answer_a": "Oui, tant que la barrière reste levée.",
+            "answer_b": "Non, je garde l’écart et j’attends le feu vert pour mon passage.",
+            "answer_c": "Oui, si je colle son pare-chocs.",
+            "answer_d": "Oui, en allumant mes feux de détresse.",
+            "explanation": "Une barrière levée ne suffit pas à autoriser mon passage. Je conserve la distance demandée au péage et j’attends la validation par le feu vert, même si la voiture précédente vient de passer."
+          },
+          "en": {
+            "question_text": "At the electronic toll, the barrier is still raised for the car ahead and my light is red. May I follow immediately?",
+            "answer_a": "Yes, while the barrier stays raised.",
+            "answer_b": "No, I keep my distance and wait for a green light for my passage.",
+            "answer_c": "Yes, if I stay close to its bumper.",
+            "answer_d": "Yes, with my hazard lights on.",
+            "explanation": "A raised barrier alone does not authorise my passage. I maintain the required toll-lane gap and wait for green confirmation, even if the preceding car has just passed."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/motorway_toll_gap_green/scene.jpg",
+      "image_sha256": "8a12b01e36b321423fe9580eef665a477614c8a8df4fd5861d499464d101630f",
+      "native_image_sha256": "343e18ac85513247c1fb2befb30d0dc0873a783f4ed17104dfea1c8a98478814",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-66f6312e-8ae6-43f8-9f17-6a161e7363e5.png",
+      "visual_review": "Reviewed: raised barrier, preceding car leaving, learner-facing red light clearly visible, adequate gap. B only requires own green confirmation and preserved gap; both languages and four options checked.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "e91ef0f71132569df5b0e032fadbb07c8169338cb3b03cc9531689086f8b6e3c",
+      "question_key": "situation_motorway_toll_gap_green",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 3,
+      "scenario_id": "motorway_freeflow_pay_72h",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Paiement différé du péage en flux libre",
+      "references": [
+        "https://www.autoroutes.sanef.com/fr/assistance/flux-libre/delai-pour-payer"
+      ],
+      "novelty_review": "Payment deadline after barrier-free passage, absent from existing payment-method sign questions.",
+      "scenario": "French motorway driver POV approaching open-road toll gantry with small cameras above two clear lanes, no booths and no barriers. Bright daylight ordinary cars at safe distances, central guardrail. Minimal overhead panel text only 'PÉAGE' and 'FLUX LIBRE', no hours, no answers.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. French motorway driver POV approaching open-road toll gantry with small cameras above two clear lanes, no booths and no barriers. Bright daylight ordinary cars at safe distances, central guardrail. Minimal overhead panel text only 'PÉAGE' and 'FLUX LIBRE', no hours, no answers. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_motorway_freeflow_pay_72h",
+        "category_slug": "motorways",
+        "correct_answer": "c",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Je viens d’emprunter le péage en flux libre Sanef, sans badge ni paiement automatique. Dans quel délai dois-je régler mon passage ?",
+            "answer_a": "Uniquement à la fin du mois.",
+            "answer_b": "Seulement après réception d’une amende.",
+            "answer_c": "Dans les 72 heures suivant le passage.",
+            "answer_d": "Aucun paiement n’est dû puisqu’il n’y a pas de barrière.",
+            "explanation": "Sans paiement automatique, le péage en flux libre Sanef doit être réglé dans les 72 heures. Je paie par un moyen officiel disponible, après m’être arrêté en sécurité si j’utilise un téléphone."
+          },
+          "en": {
+            "question_text": "I have used a Sanef free-flow toll without a tag or automatic payment. When must I pay?",
+            "answer_a": "Only at the end of the month.",
+            "answer_b": "Only after receiving a fine.",
+            "answer_c": "Within 72 hours of passing.",
+            "answer_d": "No payment is due because there is no barrier.",
+            "explanation": "Without automatic payment, a Sanef free-flow toll must be paid within 72 hours. I use an official payment method and stop safely before using a phone."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/motorway_freeflow_pay_72h/scene.jpg",
+      "image_sha256": "bdff5cba88bcf399de45a184ca8529791939b61c1758eef5fee97434413d6a35",
+      "native_image_sha256": "1fdf97484f8a41cca27f8dbe7e2f0854178b589afc9ba515d2054ad26e866916",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-6572f0d0-a5e0-4a21-81cc-b95071376273.png",
+      "visual_review": "Corrected image reviewed: open-road toll gantry labelled PEAGE FLUX LIBRE, no physical barrier, geographic A8/Nice/Cannes sign removed to avoid conflict with Sanef question. C alone gives 72 hours, FR/EN source-specific wording and four options checked.",
+      "reviewed_on": "2026-09-16",
+      "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/motorway_freeflow_pay_72h/edit-prompt.md",
+      "reviewed_sha256": "4b6ec228bcc5de2d8d7aa66d639f03a55a28410f56e79774a6e44bbafff7c4bb",
+      "question_key": "situation_motorway_freeflow_pay_72h",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 4,
+      "scenario_id": "motorway_sos_location",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Localisation par la borne d’appel",
+      "references": [
+        "https://www.autoroutes.fr/fr/que-faire-en-cas-de-panne.htm"
+      ],
+      "novelty_review": "Emergency-call point locates breakdown automatically, distinct from evacuation and approved recovery rules.",
+      "scenario": "Eye-level photo from safe grass BEHIND motorway crash barrier. Ordinary car with hazard lights safely stopped beyond barrier on hard shoulder in background. Foreground orange French emergency call column showing only 'SOS', speaker grille and one call button; high-visibility vest adult stands entirely behind barrier beside it. No injury.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Eye-level photo from safe grass BEHIND motorway crash barrier. Ordinary car with hazard lights safely stopped beyond barrier on hard shoulder in background. Foreground orange French emergency call column showing only 'SOS', speaker grille and one call button; high-visibility vest adult stands entirely behind barrier beside it. No injury. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_motorway_sos_location",
+        "category_slug": "motorways",
+        "correct_answer": "d",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Après une panne, je suis à l’abri et une borne SOS est accessible sans danger. Quel est son principal avantage pour l’alerte ?",
+            "answer_a": "Elle répare automatiquement la voiture.",
+            "answer_b": "Elle réserve une voie pour mon véhicule.",
+            "answer_c": "Elle dispense de rester à l’abri.",
+            "answer_d": "Elle relie au service autoroutier qui peut localiser la borne.",
+            "explanation": "La borne d’appel met en relation avec le service de surveillance de l’autoroute et permet de situer l’appel. Je la rejoins seulement par un chemin sûr derrière la glissière, sans traverser les voies."
+          },
+          "en": {
+            "question_text": "After a breakdown, I am safe and can reach an SOS call point without danger. What is its main advantage?",
+            "answer_a": "It automatically repairs the car.",
+            "answer_b": "It reserves a lane for my vehicle.",
+            "answer_c": "It removes the need to stay protected.",
+            "answer_d": "It connects to motorway control, which can locate the call point.",
+            "explanation": "The call point connects to motorway control and identifies the call location. I reach it only by a safe route behind the barrier, without crossing traffic lanes."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/motorway_sos_location/scene.jpg",
+      "image_sha256": "ae67154ca407788c5b88d484b8513169d37523c9276fb68ddb25c6f39572fd9e",
+      "native_image_sha256": "0a6dbc894d30a7ee8cd56b8bdeaa46487c692e22bcb1e8e47cd8ec489fd58126",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-12eeef40-3321-435f-a947-df415128361c.png",
+      "visual_review": "Reviewed: ordinary car stopped beyond guardrail with amber hazards; adult wearing vest fully behind barrier using orange SOS call point. D only identifies contact/location benefit; safe-access qualification and four choices checked in FR/EN.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "13305aef0bc9de0629fbaf1937a8ab88e6c0191638b817a36a6f69fe0fae1df3",
+      "question_key": "situation_motorway_sos_location",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 5,
+      "scenario_id": "motorway_toll_intercom_problem",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Incident au terminal de péage",
+      "references": [
+        "https://www.vinci-autoroutes.com/fr/conseils/securite/regles-securite-peage-autoroute/"
+      ],
+      "novelty_review": "Safe assistance when payment terminal fails, distinct from choosing payment lane or barrier validation.",
+      "scenario": "Close driver POV stopped at French toll payment terminal on LEFT beside driver window, red-white barrier DOWN across lane ahead, red toll light. Terminal has card slot, speaker grille and prominent round intercom button with small handset icon. No error text needed. No person walking between toll lanes.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Close driver POV stopped at French toll payment terminal on LEFT beside driver window, red-white barrier DOWN across lane ahead, red toll light. Terminal has card slot, speaker grille and prominent round intercom button with small handset icon. No error text needed. No person walking between toll lanes. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_motorway_toll_intercom_problem",
+        "category_slug": "motorways",
+        "correct_answer": "a",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Le terminal de péage ne fonctionne pas et la barrière reste fermée. Que dois-je faire ?",
+            "answer_a": "Utiliser l’interphone et attendre les consignes dans le véhicule.",
+            "answer_b": "Reculer dans la file pour changer de voie.",
+            "answer_c": "Descendre et traverser les voies jusqu’à une cabine.",
+            "answer_d": "Pousser la barrière avec la voiture.",
+            "explanation": "J’allume les feux de détresse si nécessaire pour prévenir les autres et j’utilise l’interphone côté conducteur. Un agent peut m’aider ; je ne recule pas dans la file et je ne traverse pas les voies à pied."
+          },
+          "en": {
+            "question_text": "The toll terminal is not working and the barrier stays closed. What should I do?",
+            "answer_a": "Use the intercom and wait for instructions in the vehicle.",
+            "answer_b": "Reverse through the queue to change lanes.",
+            "answer_c": "Get out and cross the lanes to a booth.",
+            "answer_d": "Push the barrier with the car.",
+            "explanation": "I use hazard lights if necessary to warn others and contact assistance through the driver's-side intercom. I do not reverse through the queue or walk across toll lanes."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/motorway_toll_intercom_problem/scene.jpg",
+      "image_sha256": "ab06f8abc1a2e20ffe69de21a3d566e5d197b1e505eb7f7b7fb069c9b42791f9",
+      "native_image_sha256": "49ae185e272ca2047ea57c02ccbed90bec7db20bacdc23c2f95a4023c525f8d5",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-56f3e416-71fb-411f-928e-b37cc7126aa5.png",
+      "visual_review": "Reviewed: stopped learner at closed toll barrier, red light and driver's-side intercom clearly shown. A alone requests safe assistance inside vehicle; four choices and explanations checked in FR/EN.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "0e46d486fa3064f44018bd19d3c25c70759f4042b20b6f9e47601e5efce48a12",
+      "question_key": "situation_motorway_toll_intercom_problem",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 6,
+      "scenario_id": "motorway_help_merge_occupied_left",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Faciliter une insertion sans écart dangereux",
+      "references": [
+        "https://www.ecf.asso.fr/conseils/insertion-et-sortie-sur-lautoroute"
+      ],
+      "novelty_review": "Main-road driver's optional help versus unsafe lane change; existing entry question is from joining vehicle.",
+      "scenario": "Driver POV in RIGHT motorway through lane. A grey car approaches on acceleration lane to right, still safely several car lengths ahead. A dark car is alongside on LEFT passing lane, visible through left edge of windscreen and side window, no collision, clear dashed separators, daylight dry roadway no extra signs.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV in RIGHT motorway through lane. A grey car approaches on acceleration lane to right, still safely several car lengths ahead. A dark car is alongside on LEFT passing lane, visible through left edge of windscreen and side window, no collision, clear dashed separators, daylight dry roadway no extra signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_motorway_help_merge_occupied_left",
+        "category_slug": "motorways",
+        "correct_answer": "b",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Une voiture s’insère à droite, mais un véhicule me dépasse à gauche. Dois-je me déporter à gauche pour l’aider ?",
+            "answer_a": "Oui, le véhicule de gauche doit s’écarter.",
+            "answer_b": "Non, je garde ma voie et j’adapte mon allure sans manœuvre brusque.",
+            "answer_c": "Oui, mon clignotant me donne la priorité.",
+            "answer_d": "Je dois m’arrêter immédiatement sur la voie.",
+            "explanation": "Je peux faciliter une insertion seulement sans gêner les autres. Ici, la voie gauche est occupée : je n’y fais pas d’écart et je reste prévisible, en adaptant mon allure si nécessaire."
+          },
+          "en": {
+            "question_text": "A car is joining on my right, but another vehicle is overtaking on my left. Must I move left to help?",
+            "answer_a": "Yes, the vehicle on the left must move away.",
+            "answer_b": "No, I hold my lane and adjust speed without sudden manoeuvres.",
+            "answer_c": "Yes, my indicator gives me priority.",
+            "answer_d": "I must stop immediately in my lane.",
+            "explanation": "I may help a vehicle merge only without obstructing others. Here the left lane is occupied, so I do not swerve into it and remain predictable, adjusting speed if necessary."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/motorway_help_merge_occupied_left/scene.jpg",
+      "image_sha256": "67a340ae50d333cd9d4bf8eb7f83aa7553efdf6cf0f9660ab7d0941e2791dc80",
+      "native_image_sha256": "863deac1c325160f14617d71344b037fae8b81f9439376edf700cc0701cf5597",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-611a25a2-e7a8-4b02-b20b-36a35e603f2b.png",
+      "visual_review": "Corrected image reviewed: dark SUV alongside left, grey car in adjacent right joining lane signalling left; exit curve and extra through-lane geometry removed. B only holds lane and adjusts predictably rather than moving into occupied left lane. FR/EN wording and four choices checked.",
+      "reviewed_on": "2026-09-16",
+      "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/motorway_help_merge_occupied_left/edit-prompt.md",
+      "reviewed_sha256": "90ef687e910eec0aff38e1e158d5f57767ff37a7e539cf6dc6690299b238e47b",
+      "question_key": "situation_motorway_help_merge_occupied_left",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 7,
+      "scenario_id": "speed_two_same_direction_90",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Deux voies dans mon sens hors agglomération",
+      "references": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042240048"
+      ],
+      "novelty_review": "Non-probationary dry-weather limit on an undivided 2+1 section, absent from 80 default and divided-road 110 questions.",
+      "scenario": "Driver POV on rightmost lane of rural French 2+1 road: two same-direction lanes (ours plus passing lane to left), broken white divider; far-left opposing lane separated from passing lane by SOLID white line. Distant oncoming car far left and distant car ahead right. Dry clear daylight no physical central divider. Small roadside red-circle speed sign '90' on right, exact digits.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV on rightmost lane of rural French 2+1 road: two same-direction lanes (ours plus passing lane to left), broken white divider; far-left opposing lane separated from passing lane by SOLID white line. Distant oncoming car far left and distant car ahead right. Dry clear daylight no physical central divider. Small roadside red-circle speed sign '90' on right, exact digits. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_speed_two_same_direction_90",
+        "category_slug": "speed_limits",
+        "correct_answer": "c",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Hors agglomération, cette section comporte deux voies dans mon sens, sans terre-plein central, avec une limite à 90. Par temps sec, hors permis probatoire, quelle vitesse maximale s’applique ?",
+            "answer_a": "80 km/h dans tous les cas.",
+            "answer_b": "110 km/h.",
+            "answer_c": "90 km/h.",
+            "answer_d": "130 km/h.",
+            "explanation": "Sur cette section à deux voies affectées à mon sens, la limite indiquée est de 90 km/h. L’absence de terre-plein central ne permet pas de la confondre avec une route à chaussées séparées limitée en général à 110."
+          },
+          "en": {
+            "question_text": "Outside a built-up area, this section has two lanes in my direction, no central reservation, and a 90 limit. In dry weather, with a full non-probationary licence, what is the maximum?",
+            "answer_a": "80 km/h in every case.",
+            "answer_b": "110 km/h.",
+            "answer_c": "90 km/h.",
+            "answer_d": "130 km/h.",
+            "explanation": "On this section with two lanes assigned to my direction, the indicated limit is 90 km/h. With no central reservation, it is not a divided road normally limited to 110."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/speed_two_same_direction_90/scene.jpg",
+      "image_sha256": "9cf493fc5b659657f4ecba5a1b47bf6a5b35562b1b49574470a22c0c14642817",
+      "native_image_sha256": "47efe834a735a013d4a86d3e994481442a1ff3cc309406fc8dd1d50eb03a534b",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-df183b12-a882-4319-9292-4b6ec841653f.png",
+      "visual_review": "Reviewed: rural undivided 2+1 roadway, learner and preceding car in right lane, dashed lane divider left and solid opposing separation beyond, 90 sign accurate. C only 90 under stated dry non-probationary conditions; four bilingual options checked.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "4478f3d023edf3f7d9641e7100e49482610b3a0db8a682af48f899bfafc41b6d",
+      "question_key": "situation_speed_two_same_direction_90",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 8,
+      "scenario_id": "speed_rain_posted_90_80",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Pluie sur une route ordinaire limitée à 90",
+      "references": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042240048"
+      ],
+      "novelty_review": "Rain reduction on an ordinary undivided 90 road, distinct from probationary reduction and motorway rain.",
+      "scenario": "Driver POV rural French TWO-lane undivided road, one lane each direction, wet road with visible rain streaks on windscreen and working wiper at lower edge, good visibility much greater than 50m. Red-rimmed circular white sign with black '90' on right. Daylight no other hazards.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV rural French TWO-lane undivided road, one lane each direction, wet road with visible rain streaks on windscreen and working wiper at lower edge, good visibility much greater than 50m. Red-rimmed circular white sign with black '90' on right. Daylight no other hazards. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_speed_rain_posted_90_80",
+        "category_slug": "speed_limits",
+        "correct_answer": "d",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Il pleut sur cette route à double sens sans séparateur central, normalement limitée à 90 km/h. Quelle limite maximale dois-je respecter ?",
+            "answer_a": "90 km/h car le panneau ne change pas.",
+            "answer_b": "100 km/h.",
+            "answer_c": "50 km/h dès la première goutte, quelle que soit la visibilité.",
+            "answer_d": "80 km/h.",
+            "explanation": "Sous la pluie, la vitesse maximale sur cette route ordinaire est de 80 km/h. Je roule encore moins vite si l’adhérence, la visibilité ou la circulation l’exigent."
+          },
+          "en": {
+            "question_text": "It is raining on this undivided two-way road normally limited to 90 km/h. What maximum applies?",
+            "answer_a": "90 km/h because the sign has not changed.",
+            "answer_b": "100 km/h.",
+            "answer_c": "50 km/h from the first drop, regardless of visibility.",
+            "answer_d": "80 km/h.",
+            "explanation": "In rain, the maximum on this ordinary road is 80 km/h. I drive more slowly if grip, visibility or traffic require it."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/speed_rain_posted_90_80/scene.jpg",
+      "image_sha256": "9e04bfad49d18deb2d6567c4d30853d4a999e50a6ebea6e7718c665c0a262598",
+      "native_image_sha256": "5faf93b299e5415e9b34ed495cc740292d6f3a8a9c40e3feac240320935b03e0",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-9db8bce1-e1b2-40f7-b9b1-0546bbc65be1.png",
+      "visual_review": "Reviewed: visible rain and wiper, wet undivided ordinary road with 90 sign and visibility well over 50 m. D alone selects rain maximum 80, explanation retains lower safe speed when needed. FR/EN and four choices checked.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "0bb974aa24b82274aed5b4827ddd0aff8ef3e2f8393bed5557589548de57712b",
+      "question_key": "situation_speed_rain_posted_90_80",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 9,
+      "scenario_id": "speed_carpark_walking_pace",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Allure dans un parc de stationnement",
+      "references": [
+        "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177129/"
+      ],
+      "novelty_review": "Walking pace inside a ground-level parking area, not pedestrian-area authorised access already covered.",
+      "scenario": "Driver POV in supermarket outdoor ground-level car park, narrow aisle between parked passenger cars, adult pushing shopping trolley across aisle 15 metres ahead with ample stopping distance, daytime. Clearly off carriageway in parking lot. No road signs, no speed numbers, no brand names.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV in supermarket outdoor ground-level car park, narrow aisle between parked passenger cars, adult pushing shopping trolley across aisle 15 metres ahead with ample stopping distance, daytime. Clearly off carriageway in parking lot. No road signs, no speed numbers, no brand names. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_speed_carpark_walking_pace",
+        "category_slug": "speed_limits",
+        "correct_answer": "a",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Je circule dans ce parc de stationnement aménagé au sol. Quelle allure dois-je adopter ?",
+            "answer_a": "L’allure du pas, en restant attentif aux piétons.",
+            "answer_b": "50 km/h puisqu’il est en ville.",
+            "answer_c": "30 km/h obligatoirement même près des piétons.",
+            "answer_d": "La même allure que sur la route d’accès.",
+            "explanation": "Dans un parc de stationnement aménagé sur un terre-plein, je circule à l’allure du pas et prends les précautions nécessaires pour ne pas mettre les piétons en danger."
+          },
+          "en": {
+            "question_text": "I am driving through this ground-level car park. What pace should I use?",
+            "answer_a": "Walking pace, remaining alert to pedestrians.",
+            "answer_b": "50 km/h because it is in town.",
+            "answer_c": "Exactly 30 km/h even near pedestrians.",
+            "answer_d": "The same speed as on the access road.",
+            "explanation": "In a ground-level parking area, I drive at walking pace and take precautions to avoid endangering pedestrians."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/speed_carpark_walking_pace/scene.jpg",
+      "image_sha256": "8b366945a48256bfe1b1d0a7dbdb157f646d745236fcadfae1d03e8252c5dcf7",
+      "native_image_sha256": "b00999d5b20f492cf9a3eacf638724d5a5d1ace0953e429372e9a587fbdd398b",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-7001cb57-835e-414c-8fc0-a06803fc731f.png",
+      "visual_review": "Reviewed: ground-level shopping car park with marked bays and pedestrian/trolley in aisle at safe distance. A only selects walking pace; FR/EN state car-park setting and four options checked.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "2f068c200274247d9b7fb56a27188e5ce7aa850df292f319f01a32c49bf374e9",
+      "question_key": "situation_speed_carpark_walking_pace",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 10,
+      "scenario_id": "speed_night_dipped_visibility",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Vitesse adaptée à la portée des feux",
+      "references": [
+        "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177129/"
+      ],
+      "novelty_review": "Adapting speed to dipped-beam visibility, distinct from switching high beams for oncoming traffic.",
+      "scenario": "Driver POV on dark unlit rural French road at night with DIPPED headlights illuminating short near stretch and sharp lower beam horizon, road farther ahead dark. Right-hand lane, no oncoming vehicle, no glare, no signs or speedometer visible. Clear weather, dry asphalt, realistic darkness with readable near road.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV on dark unlit rural French road at night with DIPPED headlights illuminating short near stretch and sharp lower beam horizon, road farther ahead dark. Right-hand lane, no oncoming vehicle, no glare, no signs or speedometer visible. Clear weather, dry asphalt, realistic darkness with readable near road. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_speed_night_dipped_visibility",
+        "category_slug": "speed_limits",
+        "correct_answer": "b",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "De nuit, mes feux de croisement n’éclairent qu’une portion limitée de la route. Que dois-je faire avec ma vitesse ?",
+            "answer_a": "Garder forcément la vitesse maximale autorisée.",
+            "answer_b": "La réduire pour tenir compte de la distance visible.",
+            "answer_c": "Accélérer pour passer moins de temps dans l’obscurité.",
+            "answer_d": "Me fier uniquement aux feux du véhicule très loin devant.",
+            "explanation": "Une limite autorisée n’est pas une vitesse à atteindre. De nuit, notamment en feux de croisement, j’adapte mon allure à ce que je peux réellement voir et aux obstacles prévisibles."
+          },
+          "en": {
+            "question_text": "At night, my dipped headlights illuminate only a limited stretch of road. What should I do with my speed?",
+            "answer_a": "Always maintain the maximum permitted speed.",
+            "answer_b": "Reduce it to account for the visible distance.",
+            "answer_c": "Accelerate to spend less time in darkness.",
+            "answer_d": "Rely only on the lights of a vehicle far ahead.",
+            "explanation": "A speed limit is not a target. At night, particularly on dipped headlights, I adapt speed to what I can actually see and to foreseeable obstacles."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/speed_night_dipped_visibility/scene.jpg",
+      "image_sha256": "241383dc8740951dd43784c97a01b8083505f584ac617be8d940597aa03a5be1",
+      "native_image_sha256": "3eaa06c62053b546759cd95f7bbe39b8a711fb999d26ed20328fdca10e4cc29f",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-0ceeba27-6653-486e-be05-dc93fa892667.png",
+      "visual_review": "Reviewed: dark unlit rural road with limited dipped-headlamp illuminated area, no distracting oncoming conflict. B only adjusts speed to visibility; question supplies dipped-beam fact, no unsafe absolute numerical speed. Four bilingual choices checked.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "317078a25626066f2115a93bdf9e9ba7cbe7c2bef6688dac7e0f08c90898dbec",
+      "question_key": "situation_speed_night_dipped_visibility",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 11,
+      "scenario_id": "speed_unjustified_slow_sightseeing",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Lenteur anormale sans raison valable",
+      "references": [
+        "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177129/"
+      ],
+      "novelty_review": "Unjustified obstruction by very slow sightseeing, separate from left motorway lane 80 minimum.",
+      "scenario": "Driver POV on dry wide clear French rural two-way road, countryside scenic valley, perfectly good visibility, no hazards. Main view empty ahead, large central rearview mirror clearly shows queue of three cars behind learner at safe gaps. No speed labels or signs.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV on dry wide clear French rural two-way road, countryside scenic valley, perfectly good visibility, no hazards. Main view empty ahead, large central rearview mirror clearly shows queue of three cars behind learner at safe gaps. No speed labels or signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_speed_unjustified_slow_sightseeing",
+        "category_slug": "speed_limits",
+        "correct_answer": "c",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Sans difficulté ni danger particulier, je roule très lentement pour admirer le paysage et je retiens une file. Est-ce adapté ?",
+            "answer_a": "Oui, rouler le plus lentement possible est toujours plus sûr.",
+            "answer_b": "Oui, si j’allume mes feux de détresse.",
+            "answer_c": "Non, je ne dois pas gêner sans raison valable ; je m’arrête dans un lieu autorisé pour regarder.",
+            "answer_d": "Non, je dois dépasser immédiatement la limite autorisée.",
+            "explanation": "Il est interdit de gêner la circulation par une vitesse anormalement réduite sans raison valable. Je retrouve une allure adaptée dans la limite autorisée ou je stationne en sécurité pour profiter du paysage."
+          },
+          "en": {
+            "question_text": "With no particular hazard or difficulty, I drive very slowly to admire the scenery and hold up a queue. Is that appropriate?",
+            "answer_a": "Yes, driving as slowly as possible is always safer.",
+            "answer_b": "Yes, if I use hazard lights.",
+            "answer_c": "No, I must not obstruct without good reason; I stop somewhere permitted to look.",
+            "answer_d": "No, I must immediately exceed the speed limit.",
+            "explanation": "Driving abnormally slowly without good reason must not obstruct normal traffic. I resume an appropriate speed within the limit or park safely to enjoy the scenery."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/speed_unjustified_slow_sightseeing/scene.jpg",
+      "image_sha256": "7b58d2c75063e411e7476f7fa9a91cc3bad2fbeaff9f3e008fa3bd4de4b53203",
+      "native_image_sha256": "026d22f0f8e623e998677a3ce77a06326e3cdf8b78e6440ce8850cf250a3ca6c",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-17279112-a47a-4a08-924e-8e39ff4a097d.png",
+      "visual_review": "Queue visible in rear-view mirror on clear rural road. Removed misleading 70 km/h display; question explicitly establishes unjustifiably very slow sightseeing.",
+      "reviewed_on": "2026-09-16",
+      "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/speed_unjustified_slow_sightseeing/edit-prompt.md",
+      "reviewed_sha256": "5999ce39ff94ebe6704a070d1feeeba01875d0221c392e053cdc74a68210bd90",
+      "question_key": "situation_speed_unjustified_slow_sightseeing",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 12,
+      "scenario_id": "parking_eight_days_abusive",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Stationnement prolongé sur voie publique",
+      "references": [
+        "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000006842300"
+      ],
+      "novelty_review": "Uninterrupted duration beyond seven days, not location or payment restrictions.",
+      "scenario": "Natural exterior editorial photograph of ordinary compact passenger car correctly parked in a marked curbside public street space in calm French residential town, few fallen leaves on windscreen and under tyres suggesting unused car. No abandoned damage, no text dates or signs, daylight.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Natural exterior editorial photograph of ordinary compact passenger car correctly parked in a marked curbside public street space in calm French residential town, few fallen leaves on windscreen and under tyres suggesting unused car. No abandoned damage, no text dates or signs, daylight. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_parking_eight_days_abusive",
+        "category_slug": "parking_stopping",
+        "correct_answer": "d",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Ma voiture reste au même endroit sur la voie publique pendant huit jours consécutifs, sans règle locale plus stricte. Est-ce autorisé ?",
+            "answer_a": "Oui, tant que la place est gratuite.",
+            "answer_b": "Oui, si les pneus touchent toujours le trottoir.",
+            "answer_c": "Oui, si je viens regarder la voiture chaque jour sans la déplacer.",
+            "answer_d": "Non, ce stationnement est abusif.",
+            "explanation": "Au même endroit sur la voie publique, un stationnement ininterrompu de plus de sept jours est abusif. Une autorité locale peut fixer une durée encore plus courte."
+          },
+          "en": {
+            "question_text": "My car stays in the same public-street space for eight consecutive days, with no stricter local rule. Is that allowed?",
+            "answer_a": "Yes, as long as the space is free.",
+            "answer_b": "Yes, if the tyres keep touching the kerb.",
+            "answer_c": "Yes, if I check the car every day without moving it.",
+            "answer_d": "No, this is excessive-duration parking.",
+            "explanation": "Uninterrupted parking at the same point on the public road for more than seven days is excessive. A local authority may set an even shorter duration."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/parking_eight_days_abusive/scene.jpg",
+      "image_sha256": "14943c9733d7baf35863dd07b1ec5a832968da4a998fded0f3677f482ee614b2",
+      "native_image_sha256": "2b513bf8aedb5f96de6e942f64d091dacfed61fd333a474677055ba46447e7f9",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-f6e5f404-28ad-4486-95f0-bc24d234b022.png",
+      "visual_review": "Residential curbside parking scene; continuous eight-day duration and absence of stricter local duration are supplied explicitly in the question.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "92fe74a896ef218dad3d18f26b3b33894ebee161e3a1c076f7921ef68169a338",
+      "question_key": "situation_parking_eight_days_abusive",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 13,
+      "scenario_id": "parking_secure_before_leaving",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Immobilisation avant de quitter le véhicule",
+      "references": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842291"
+      ],
+      "novelty_review": "Securing a parked car against unintended movement, absent from parking-position questions.",
+      "scenario": "Close realistic photograph from front passenger seat in safely parked MANUAL passenger car on mild slope in lawful marked parking bay. Driver's right hand about to raise visible conventional handbrake lever, gear lever visible, car stationary. External street through windows, no traffic conflict, no labels or arrows.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Close realistic photograph from front passenger seat in safely parked MANUAL passenger car on mild slope in lawful marked parking bay. Driver's right hand about to raise visible conventional handbrake lever, gear lever visible, car stationary. External street through windows, no traffic conflict, no labels or arrows. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_parking_secure_before_leaving",
+        "category_slug": "parking_stopping",
+        "correct_answer": "a",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Avant de laisser ma voiture stationnée dans cette pente, quelle précaution est indispensable ?",
+            "answer_a": "M’assurer qu’elle est correctement immobilisée et ne peut partir seule.",
+            "answer_b": "Laisser le moteur tourner pour la retenir.",
+            "answer_c": "Compter seulement sur les feux de détresse.",
+            "answer_d": "Laisser la porte ouverte pour prévenir les autres.",
+            "explanation": "Avant de m’éloigner, je prends les précautions évitant un accident en mon absence. Je serre le frein de stationnement et applique les consignes d’immobilisation prévues pour mon véhicule."
+          },
+          "en": {
+            "question_text": "Before leaving my car parked on this slope, what precaution is essential?",
+            "answer_a": "Make sure it is properly secured and cannot roll away.",
+            "answer_b": "Leave the engine running to hold it.",
+            "answer_c": "Rely only on hazard lights.",
+            "answer_d": "Leave the door open to warn others.",
+            "explanation": "Before walking away, I take precautions to prevent an accident in my absence. I apply the parking brake and follow the securing instructions for my vehicle."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/parking_secure_before_leaving/scene.jpg",
+      "image_sha256": "bfa1dbe14d67de5b13da1ea58f12c26cc505a7270c211ea365e9048682b9c655",
+      "native_image_sha256": "9f726b667f792a8457db54ed4c349116e39004b5f6b7c5b800582319a1986c5c",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-9df03c43-4b49-4298-8c57-ab2826d07928.png",
+      "visual_review": "Stationary manual car on a slope, hand on conventional handbrake, gear lever visible; supports securing vehicle before leaving.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "b2afc8103f7df9d23d2b543aa353c5895b5b00c89e0a5275618184e71217004f",
+      "question_key": "situation_parking_secure_before_leaving",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 14,
+      "scenario_id": "parking_loading_is_stop",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Différence entre arrêt et stationnement",
+      "references": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045650507"
+      ],
+      "novelty_review": "Legal definition of momentary unloading with driver nearby, not permission at prohibited places.",
+      "scenario": "Exterior daytime scene ordinary passenger hatchback lawfully pulled into marked roadside layby in French town. Boot open, one adult driver immediately beside boot lifting ONE suitcase onto sidewalk, clear pedestrian route, no delivery van, no hazard or restriction sign.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Exterior daytime scene ordinary passenger hatchback lawfully pulled into marked roadside layby in French town. Boot open, one adult driver immediately beside boot lifting ONE suitcase onto sidewalk, clear pedestrian route, no delivery van, no hazard or restriction sign. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_parking_loading_is_stop",
+        "category_slug": "parking_stopping",
+        "correct_answer": "b",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Je m’immobilise seulement le temps de sortir cette valise, en restant près de la voiture pour la déplacer. Comment qualifier cette immobilisation ?",
+            "answer_a": "Toujours un stationnement, même pendant une seconde.",
+            "answer_b": "Un arrêt, si elle dure uniquement le temps du déchargement.",
+            "answer_c": "Une panne, puisque le coffre est ouvert.",
+            "answer_d": "Un arrêt autorisé partout sans exception.",
+            "explanation": "Le déchargement momentané avec le conducteur aux commandes ou à proximité pour déplacer le véhicule correspond à un arrêt. Cela ne permet pas de s’arrêter là où l’arrêt est interdit."
+          },
+          "en": {
+            "question_text": "I stop only long enough to unload this suitcase and stay beside the car ready to move it. How is this classified?",
+            "answer_a": "Always parking, even for one second.",
+            "answer_b": "Stopping, if it lasts only for the unloading.",
+            "answer_c": "A breakdown because the boot is open.",
+            "answer_d": "Stopping that is permitted everywhere without exception.",
+            "explanation": "Momentary unloading with the driver at the controls or nearby and able to move the car counts as stopping. This does not allow stopping where it is prohibited."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/parking_loading_is_stop/scene.jpg",
+      "image_sha256": "e1994598d06fc29ad8030069eca0919ef50e535a5bc49ad9fdf1c94c69ea23cd",
+      "native_image_sha256": "213841828fc78219afc85b3ea27cd0cb76d0d7ef65dae4ea232ca0e3ea9ad9a8",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-a26b1471-4409-46e9-bbc5-2ab403d96493.png",
+      "visual_review": "Driver remains immediately beside open boot unloading one suitcase in a marked roadside bay, with clear pedestrian passage.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "87eec3e646c1458f9b08e41944fec499fa0a7dbf68c2a2081fa12ee97bf37d77",
+      "question_key": "situation_parking_loading_is_stop",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 15,
+      "scenario_id": "parking_meeting_zone_designated_only",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Emplacements dans une zone de rencontre",
+      "references": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039278148/"
+      ],
+      "novelty_review": "Parking only in designated areas within a meeting zone, distinct from its 20 km/h speed limit.",
+      "scenario": "Driver POV already inside French shared-space street in old town, level cobbled paving, no curb, pedestrians safely along building side. One marked parking bay at left occupied, an UNMARKED open patch at right near bench not a parking bay. No entry signs in frame, no painted misleading P.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV already inside French shared-space street in old town, level cobbled paving, no curb, pedestrians safely along building side. One marked parking bay at left occupied, an UNMARKED open patch at right near bench not a parking bay. No entry signs in frame, no painted misleading P. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_parking_meeting_zone_designated_only",
+        "category_slug": "parking_stopping",
+        "correct_answer": "c",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Dans cette zone de rencontre, aucun emplacement n’est aménagé à l’endroit libre à droite. Puis-je y stationner ?",
+            "answer_a": "Oui, si je laisse un mètre aux piétons.",
+            "answer_b": "Oui, pendant moins de sept jours.",
+            "answer_c": "Non, le stationnement doit se faire sur un emplacement aménagé.",
+            "answer_d": "Oui, car la limitation à 20 autorise le stationnement partout.",
+            "explanation": "Dans une zone de rencontre, stationner hors des emplacements aménagés est gênant. Un espace libre ne devient pas une place de stationnement du seul fait qu’une voiture peut y tenir."
+          },
+          "en": {
+            "question_text": "In this meeting zone, the open space on the right is not a designated parking place. May I park there?",
+            "answer_a": "Yes, if I leave one metre for pedestrians.",
+            "answer_b": "Yes, for fewer than seven days.",
+            "answer_c": "No, parking must be in a designated space.",
+            "answer_d": "Yes, because the 20 limit allows parking everywhere.",
+            "explanation": "In a meeting zone, parking outside designated spaces is obstructive. An empty area does not become a parking place simply because a car fits there."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/parking_meeting_zone_designated_only/scene.jpg",
+      "image_sha256": "6379f8fa1902c5bf7bf02d5b94b5d87a37eca2743c47fb2a4a8e27ba2108a3cb",
+      "native_image_sha256": "f85bcb7f69d95fede00fd2b5aa930d41bea2e91991240cc92d6080412097d5a8",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-02f58cfd-536b-4105-ba99-437f7d74ce12.png",
+      "visual_review": "Shared-space street has occupied marked bay and unmarked open area; question explicitly establishes zone de rencontre.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "9ed9d85eb606881741b2e1a257aeecd12e8b5dc5cef19b65fb4924980df3fbc5",
+      "question_key": "situation_parking_meeting_zone_designated_only",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 16,
+      "scenario_id": "parking_blocks_parked_exit",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Dégagement d’un autre véhicule",
+      "references": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039278148/"
+      ],
+      "novelty_review": "Blocking a parked car's exit in parking lot, distinct from driveway and double-parking on street.",
+      "scenario": "A red passenger car positioned across a blue car’s parking-space exit would prevent it from leaving.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Clear elevated three-quarter realistic photo of small outdoor PUBLIC parking lot. Blue ordinary car parked correctly nose-in at bay, a red ordinary car stopped transversely immediately across rear exit of blue bay blocking it. Empty aisle beyond, no road or curbside double-parking, no people or text. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_parking_blocks_parked_exit",
+        "category_slug": "parking_stopping",
+        "correct_answer": "d",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Je veux laisser ma voiture en travers de la sortie de cette place, ce qui bloquera la voiture garée. Puis-je le faire quelques minutes ?",
+            "answer_a": "Oui, si je laisse mon numéro de téléphone.",
+            "answer_b": "Oui, en gardant les feux de détresse.",
+            "answer_c": "Oui, si son conducteur est absent.",
+            "answer_d": "Non, je ne dois pas empêcher son dégagement.",
+            "explanation": "L’arrêt ou le stationnement qui empêche l’accès à un autre véhicule ou son dégagement est gênant. Une courte durée ou un numéro de téléphone ne supprime pas cette gêne."
+          },
+          "en": {
+            "question_text": "I want to leave my car across the exit of this parking space, blocking the parked car. May I do so for a few minutes?",
+            "answer_a": "Yes, if I leave my phone number.",
+            "answer_b": "Yes, with hazard lights on.",
+            "answer_c": "Yes, if its driver is absent.",
+            "answer_d": "No, I must not prevent it from leaving.",
+            "explanation": "Stopping or parking in a way that prevents access to another vehicle or blocks its exit is obstructive. A short duration or leaving a phone number does not remove the obstruction."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/parking_blocks_parked_exit/scene.jpg",
+      "image_sha256": "3eb761160ca462dba8ab36604f553f998391cb8f10591345c4ca45024f20d872",
+      "native_image_sha256": "6c22fd5ebe552691860b2a3c61f1529d65c52c57927ab7dd6b5bd96f3399c1c6",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-654ce896-c0a1-4944-a494-c4901d21e7a6.png",
+      "visual_review": "Red car blocks blue car's only bay exit in a public lot. Blue car is reversed into bay, which does not affect the obstruction rule.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "fb24714eddbf56c4bd83e40d06fd245a4a319084f17bd1ae8b99ae6d99727b51",
+      "question_key": "situation_parking_blocks_parked_exit",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 17,
+      "scenario_id": "overtake_too_little_speed_difference",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Écart de vitesse insuffisant",
+      "references": [
+        "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000006842214"
+      ],
+      "novelty_review": "Relative speed makes passing too prolonged, distinct from visibility or return gap.",
+      "scenario": "Driver POV straight French rural two-way road with broken centre line; white car well ahead in our right lane at similar speed. Long clear view, no oncoming traffic. Dry daylight, no signs or speedometer.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV straight French rural two-way road with broken centre line; white car well ahead in our right lane at similar speed. Long clear view, no oncoming traffic. Dry daylight, no signs or speedometer. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_overtake_too_little_speed_difference",
+        "category_slug": "overtaking",
+        "correct_answer": "a",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "La voiture devant roule presque à ma vitesse. Même à la limite autorisée, mon dépassement serait très long. Que faire ?",
+            "answer_a": "Renoncer et conserver une distance suffisante.",
+            "answer_b": "Dépasser car la route est droite.",
+            "answer_c": "Dépasser la limite pour gagner du temps.",
+            "answer_d": "Coller la voiture avant de me déporter.",
+            "explanation": "Il faut un écart de vitesse permettant un dépassement suffisamment bref. Si cet écart est trop faible dans la limite autorisée, je reste derrière à bonne distance."
+          },
+          "en": {
+            "question_text": "The car ahead travels almost as fast as me. Even at the speed limit, overtaking would take a long time. What should I do?",
+            "answer_a": "Abandon the manoeuvre and keep a safe gap.",
+            "answer_b": "Overtake because the road is straight.",
+            "answer_c": "Exceed the limit to save time.",
+            "answer_d": "Tailgate before pulling out.",
+            "explanation": "Overtaking requires enough relative speed for a sufficiently brief manoeuvre. If that difference is too small within the limit, I stay behind at a safe distance."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/overtake_too_little_speed_difference/scene.jpg",
+      "image_sha256": "b8dfa3849314afa0ed30b7e826febcd25641a669a2200e4fd8ed2d632cb426c8",
+      "native_image_sha256": "003e11505f503b4217e0e6d12092597d9301d3bd33d2895ce8c60dc71562290c",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-ac21a728-261f-4857-9784-e38d2fa027e7.png",
+      "visual_review": "Clear rural two-way road with lead car; speed difference is stated in question because still photography cannot establish relative speeds.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "6e3130e1bd7f16cbe524d7d34a411caec460472581730c7568216b80d2966910",
+      "question_key": "situation_overtake_too_little_speed_difference",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 18,
+      "scenario_id": "overtake_no_speed_limit_exception",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Limitation pendant le dépassement",
+      "references": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042240048",
+        "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000006842214"
+      ],
+      "novelty_review": "No temporary speeding allowance to pass, distinct from posted-limit identification.",
+      "scenario": "Driver POV French rural straight two-way road, clear view and broken centre line. Dark car ahead in right lane. Learner still behind. Red-rim circular white sign with black '80' on right. Dry daylight, no other signs.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV French rural straight two-way road, clear view and broken centre line. Dark car ahead in right lane. Learner still behind. Red-rim circular white sign with black '80' on right. Dry daylight, no other signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_overtake_no_speed_limit_exception",
+        "category_slug": "overtaking",
+        "correct_answer": "b",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Pour dépasser sur cette route limitée à 80 km/h, puis-je monter brièvement à 90 ?",
+            "answer_a": "Oui, pendant dix secondes.",
+            "answer_b": "Non, la limite reste applicable pendant le dépassement.",
+            "answer_c": "Oui, si personne n’arrive en face.",
+            "answer_d": "Oui, dès que mon clignotant est allumé.",
+            "explanation": "Dépasser ne permet pas de dépasser la vitesse maximale. Si la manœuvre ne peut pas être réalisée en sécurité tout en respectant 80 km/h, je ne l’entreprends pas."
+          },
+          "en": {
+            "question_text": "To overtake on this road limited to 80 km/h, may I briefly reach 90?",
+            "answer_a": "Yes, for ten seconds.",
+            "answer_b": "No, the limit still applies while overtaking.",
+            "answer_c": "Yes, if nobody is coming the other way.",
+            "answer_d": "Yes, once my indicator is on.",
+            "explanation": "Overtaking does not authorise exceeding the speed limit. If the manoeuvre cannot be completed safely within 80 km/h, I do not start it."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/overtake_no_speed_limit_exception/scene.jpg",
+      "image_sha256": "861786a181f070ce32e7653b633441552f6d9ceca36e5ad0fef3456d1acdefa5",
+      "native_image_sha256": "1b9d8e6c6854bad13cc7f2cc480ade0b83ccd2b08def1873caafe2b3a447a3a4",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-a6824f34-7cc1-43a0-a384-9d52ca4a4011.png",
+      "visual_review": "Clear 80 km/h red-ring sign and vehicle ahead on two-way road. No visual exception to posted speed limit.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "256d13661c3c7a570cade139329d6f6df7797c6511529c5718255cdafedeaa1a",
+      "question_key": "situation_overtake_no_speed_limit_exception",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 19,
+      "scenario_id": "overtake_middle_lane_hog_no_right",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Voiture au milieu et dépassement à droite",
+      "references": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842219"
+      ],
+      "novelty_review": "Free-flow passing on right despite another driver's poor position, distinct from congestion exception.",
+      "scenario": "Driver POV RIGHTMOST lane of THREE-lane divided French motorway, very light traffic. Blue car ahead in MIDDLE lane, right lane ahead empty, leftmost passing lane empty. Clearly three lanes, central guardrail far left. Daylight no signs.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV RIGHTMOST lane of THREE-lane divided French motorway, very light traffic. Blue car ahead in MIDDLE lane, right lane ahead empty, leftmost passing lane empty. Clearly three lanes, central guardrail far left. Daylight no signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_overtake_middle_lane_hog_no_right",
+        "category_slug": "overtaking",
+        "correct_answer": "c",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "La circulation est fluide et cette voiture reste au milieu. Puis-je la dépasser en restant à sa droite ?",
+            "answer_a": "Oui, puisque la voie de droite est libre.",
+            "answer_b": "Oui, si je ne change pas de voie.",
+            "answer_c": "Non, son mauvais placement n’autorise pas le dépassement à droite.",
+            "answer_d": "Oui, après un appel de phares.",
+            "explanation": "En circulation fluide, le dépassement s’effectue normalement par la gauche. Le maintien injustifié d’un véhicule au milieu ne crée pas d’exception ; je prépare une manœuvre autorisée seulement si elle est sûre."
+          },
+          "en": {
+            "question_text": "Traffic is flowing freely and this car stays in the middle lane. May I pass it on its right?",
+            "answer_a": "Yes, because the right lane is empty.",
+            "answer_b": "Yes, if I do not change lanes.",
+            "answer_c": "No, its poor position does not authorise passing on the right.",
+            "answer_d": "Yes, after flashing my headlights.",
+            "explanation": "In free-flowing traffic, overtaking is normally on the left. A vehicle unnecessarily staying in the middle does not create an exception; I prepare a permitted manoeuvre only if it is safe."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/overtake_middle_lane_hog_no_right/scene.jpg",
+      "image_sha256": "be6e5117d821e24ae1118f6cdc698f64b527d7a47158d3bf5918b2db2a0f26f0",
+      "native_image_sha256": "88fa944f95e518882c62c1ad97039a954a97e44a257be03d77ae43e68d4fcb51",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-39d71776-3044-4d21-89f6-ec7fa95cf680.png",
+      "visual_review": "Corrected viewer to rightmost lane; blue car clearly ahead-left in middle lane, three travel lanes and solid shoulder boundary.",
+      "reviewed_on": "2026-09-16",
+      "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/overtake_middle_lane_hog_no_right/edit-prompt.md",
+      "reviewed_sha256": "e94fcde822083f9567e2047db01a45e7a6a27175cad6bdc47a58713a78c40be6",
+      "question_key": "situation_overtake_middle_lane_hog_no_right",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 20,
+      "scenario_id": "overtake_three_lane_no_far_left",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Voie extrême gauche en double sens",
+      "references": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842224"
+      ],
+      "novelty_review": "Far-left lane prohibited when passing on three-lane two-way road; unlike C29c learner has two lanes.",
+      "scenario": "Driver POV right lane of French THREE-lane undivided rural road. Two same-direction lanes at right with broken divider, one opposing lane far left separated by solid white line. Grey car ahead in right lane, dark car overtaking it in CENTRE lane, opposing far-left lane empty. Exactly three lanes. No signs.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV right lane of French THREE-lane undivided rural road. Two same-direction lanes at right with broken divider, one opposing lane far left separated by solid white line. Grey car ahead in right lane, dark car overtaking it in CENTRE lane, opposing far-left lane empty. Exactly three lanes. No signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_overtake_three_lane_no_far_left",
+        "category_slug": "overtaking",
+        "correct_answer": "d",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Sur cette chaussée à double sens à trois voies, la voie centrale est occupée par un dépassement. Puis-je utiliser la voie tout à gauche pour dépasser à mon tour ?",
+            "answer_a": "Oui, si elle paraît libre.",
+            "answer_b": "Oui, si les deux voitures roulent lentement.",
+            "answer_c": "Oui, si je termine avant le prochain virage.",
+            "answer_d": "Non, la voie située le plus à gauche m’est interdite pour dépasser.",
+            "explanation": "Sur une chaussée à double sens comportant plus de deux voies, un dépassement ne doit pas utiliser la voie située le plus à gauche. Je patiente sans franchir la séparation vers le sens opposé."
+          },
+          "en": {
+            "question_text": "On this three-lane two-way road, the middle lane is occupied by an overtaking car. May I use the far-left lane to overtake as well?",
+            "answer_a": "Yes, if it looks empty.",
+            "answer_b": "Yes, if the two cars are slow.",
+            "answer_c": "Yes, if I finish before the next bend.",
+            "answer_d": "No, I must not use the far-left lane for overtaking.",
+            "explanation": "On a two-way carriageway with more than two lanes, overtaking must not use the lane farthest to the left. I wait without crossing into opposing traffic."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/overtake_three_lane_no_far_left/scene.jpg",
+      "image_sha256": "ffda8511271f2b167f9981e3180bb594f89d982e859e5d47617007389e1a2cb3",
+      "native_image_sha256": "8b3e4406fd4576a74e4fd0a227944322809ded0f4d5d24dcb25fc2836154b284",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-d4c0876d-4179-471e-a803-f62ae5cfc801.png",
+      "visual_review": "Corrected opposing side to one lane without internal divider; two same-direction lanes, passing car in centre, solid separation to opposing lane.",
+      "reviewed_on": "2026-09-16",
+      "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/overtake_three_lane_no_far_left/edit-prompt.md",
+      "reviewed_sha256": "6428b5afc4bb802a0b224f63be08656afaf1032d5eae90bad4e6bc613e4d8c38",
+      "question_key": "situation_overtake_three_lane_no_far_left",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 21,
+      "scenario_id": "overtake_tram_left_one_way",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Tramway dans une rue à sens unique",
+      "references": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842219"
+      ],
+      "novelty_review": "One-way exception allowing tram pass on left, distinct from general right-side rule.",
+      "scenario": "Driver POV broad ONE-WAY French urban street, TWO same-direction lanes with forward arrows painted in both. Moving modern tram ahead in RIGHT lane on embedded rails; learner behind in left lane. No platform, no passengers boarding, no pedestrians, no signs.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV broad ONE-WAY French urban street, TWO same-direction lanes with forward arrows painted in both. Moving modern tram ahead in RIGHT lane on embedded rails; learner behind in left lane. No platform, no passengers boarding, no pedestrians, no signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_overtake_tram_left_one_way",
+        "category_slug": "overtaking",
+        "correct_answer": "a",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Cette rue est à sens unique et le tramway roule sans desservir un arrêt. Si tout est sûr, puis-je le dépasser par la gauche ?",
+            "answer_a": "Oui, le sens unique permet cette exception.",
+            "answer_b": "Non, un tramway ne peut jamais être dépassé à gauche.",
+            "answer_c": "Oui, mais uniquement sur le trottoir.",
+            "answer_d": "Non, il faut attendre qu’il s’arrête.",
+            "explanation": "Le tramway se dépasse normalement par la droite, mais le dépassement par la gauche est permis sur une chaussée à sens unique. Le marquage, la vitesse et la sécurité des voyageurs restent à respecter."
+          },
+          "en": {
+            "question_text": "This is a one-way street and the tram is moving without serving a stop. If it is safe, may I overtake on its left?",
+            "answer_a": "Yes, the one-way street allows this exception.",
+            "answer_b": "No, a tram may never be passed on the left.",
+            "answer_c": "Yes, but only using the pavement.",
+            "answer_d": "No, I must wait for it to stop.",
+            "explanation": "A tram is normally passed on the right, but passing on the left is allowed on a one-way carriageway. Markings, speed limits and passenger safety still apply."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/overtake_tram_left_one_way/scene.jpg",
+      "image_sha256": "4c4a1c581a0ef99ddeed158b3b295628e6903eb39f0f48df2381200be8530cee",
+      "native_image_sha256": "ebbab2942a8ffecb60a45b9ef924b6e46cc4b7b595948b47562d593cbbe14ab9",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-5246917f-414b-42be-9de3-ebabd9d11f93.png",
+      "visual_review": "Removed separate raised tram reservation. Flush rails on one-way carriageway, forward arrows and red rear tram lamps; no stop or boarding passengers.",
+      "reviewed_on": "2026-09-16",
+      "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/overtake_tram_left_one_way/edit-prompt.md",
+      "reviewed_sha256": "7ac2b9fae384292e4ad1b3c6db2698a8243acb3955f15b7300ce109ab80d027a",
+      "question_key": "situation_overtake_tram_left_one_way",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 22,
+      "scenario_id": "priority_obstacle_my_lane_wait",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Obstacle de mon côté",
+      "references": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842211",
+        "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000006842214"
+      ],
+      "novelty_review": "Oncoming conflict around obstacle without priority signs or slope.",
+      "scenario": "Driver POV level narrow French TWO-WAY residential street without centre markings. Parked white van occupies OUR RIGHT lane ahead; learner safely behind. Red oncoming car approaches in its clear lane on LEFT of image. Too narrow to pass van and oncoming car together. No junction or signs.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV level narrow French TWO-WAY residential street without centre markings. Parked white van occupies OUR RIGHT lane ahead; learner safely behind. Red oncoming car approaches in its clear lane on LEFT of image. Too narrow to pass van and oncoming car together. No junction or signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_priority_obstacle_my_lane_wait",
+        "category_slug": "priority_rules",
+        "correct_answer": "b",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "La camionnette bloque mon côté et une voiture arrive en face. Que faire avant de la contourner ?",
+            "answer_a": "M’engager car l’obstacle me donne la priorité.",
+            "answer_b": "Attendre derrière l’obstacle pour laisser passer la voiture en face.",
+            "answer_c": "Forcer la voiture à monter sur le trottoir.",
+            "answer_d": "Contourner immédiatement en klaxonnant.",
+            "explanation": "Je ne peux pas empiéter sur la partie de chaussée utilisée par le véhicule en face en le gênant. J’attends derrière l’obstacle, puis je le contourne lorsque le passage est libre et sûr."
+          },
+          "en": {
+            "question_text": "The van blocks my side and a car is approaching. What should I do before going around it?",
+            "answer_a": "Proceed because the obstruction gives me priority.",
+            "answer_b": "Wait behind the obstruction for the oncoming car to pass.",
+            "answer_c": "Force the car onto the pavement.",
+            "answer_d": "Go around immediately while sounding the horn.",
+            "explanation": "I must not obstruct the oncoming vehicle by moving into its part of the road. I wait behind the obstruction, then pass when the way is clear and safe."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/priority_obstacle_my_lane_wait/scene.jpg",
+      "image_sha256": "a1c8d8a0b690b2bfa5ba5a9fcf8423884c21f86bdb8fcadaf1f925179aec9d1b",
+      "native_image_sha256": "b0ad3e589ac237bc82af52ca13f8c4f7f7143dc17858ee736e8cfafd677ddd6a",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-8b9445cf-249b-4621-ae21-992752473ec9.png",
+      "visual_review": "White van blocks viewer's right side, red car approaches in clear opposing side on narrow level street; no simultaneous safe passage.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "7e528a8a984d0ada58a9e753b4fea7a5b6977b4e9397700fc5c32e0b55ae4465",
+      "question_key": "situation_priority_obstacle_my_lane_wait",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 23,
+      "scenario_id": "priority_uphill_near_refuge_reverse",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Place d’évitement près du véhicule montant",
+      "references": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842213"
+      ],
+      "novelty_review": "Exception to downhill reversing between two ordinary cars when uphill driver has easier refuge.",
+      "scenario": "Exterior elevated three-quarter photo of narrow steep French mountain road climbing foreground left to background right. Two ordinary cars face each other stopped 12m apart. Blue UPHILL car nearer foreground has empty broad paved passing bay immediately BEHIND it on its right. Red downhill car uphill far away has no refuge. Clear slope and bay, no trailers or signs.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Exterior elevated three-quarter photo of narrow steep French mountain road climbing foreground left to background right. Two ordinary cars face each other stopped 12m apart. Blue UPHILL car nearer foreground has empty broad paved passing bay immediately BEHIND it on its right. Red downhill car uphill far away has no refuge. Clear slope and bay, no trailers or signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_priority_uphill_near_refuge_reverse",
+        "category_slug": "priority_rules",
+        "correct_answer": "c",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Deux voitures seules ne peuvent pas se croiser. Je monte, mais une place d’évitement est juste derrière moi et reculer y est manifestement plus facile. Qui doit reculer ?",
+            "answer_a": "Toujours la voiture qui descend, sans exception.",
+            "answer_b": "Aucune : nous devons forcer le passage.",
+            "answer_c": "Moi, vers la place d’évitement, après mes contrôles.",
+            "answer_d": "La voiture la plus récente.",
+            "explanation": "Entre véhicules de même catégorie, le descendant recule normalement. L’exception s’applique si la marche arrière est manifestement plus facile pour le montant, notamment près d’une place d’évitement."
+          },
+          "en": {
+            "question_text": "Two passenger cars without trailers cannot pass. I am going uphill, but a passing place is just behind me and reversing there is clearly easier. Who should reverse?",
+            "answer_a": "Always the downhill car, without exception.",
+            "answer_b": "Neither: we must squeeze through.",
+            "answer_c": "I should reverse into the passing place after checking.",
+            "answer_d": "The newer car.",
+            "explanation": "Between vehicles of the same category, the downhill driver normally reverses. The exception applies when reversing is clearly easier for the uphill driver, particularly near a passing place."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/priority_uphill_near_refuge_reverse/scene.jpg",
+      "image_sha256": "0209ad716c3eb9a41630cd92dcbb5a2705376492398207cbdc40bbaaa34ba20a",
+      "native_image_sha256": "18acdcb9285a4fee2bf1e68c84062ba088c17e0dee635676994279aad6d8a447",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-6e2a8848-e51f-4c77-ab7a-e704413eb8bb.png",
+      "visual_review": "Narrow uphill road, two ordinary cars facing each other, broad refuge immediately behind blue uphill car. Refuge appears on left, immaterial because question specifies no side.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "c7d43554e9867d8d032006df917029704bf0cc609816591d215d855a38b96854",
+      "question_key": "situation_priority_uphill_near_refuge_reverse",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 24,
+      "scenario_id": "priority_rural_bus_no_automatic_priority",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Départ d’un autocar hors agglomération",
+      "references": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842128"
+      ],
+      "novelty_review": "Limits of urban bus departure facilitation outside town, no specialist operation.",
+      "scenario": "Driver POV rural French two-way road surrounded by fields OUTSIDE town. Coach stopped in separate layby on RIGHT, amber left indicator lit, wheels entirely in layby. Learner approaching safely, no pedestrians. Simple small bus-stop post, no other signs.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV rural French two-way road surrounded by fields OUTSIDE town. Coach stopped in separate layby on RIGHT, amber left indicator lit, wheels entirely in layby. Learner approaching safely, no pedestrians. Simple small bus-stop post, no other signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_priority_rural_bus_no_automatic_priority",
+        "category_slug": "priority_rules",
+        "correct_answer": "d",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Hors agglomération, cet autocar veut quitter son arrêt. Son clignotant lui donne-t-il automatiquement la priorité ?",
+            "answer_a": "Oui, les autocars sont toujours prioritaires.",
+            "answer_b": "Oui, un clignotant donne priorité à tout véhicule.",
+            "answer_c": "Non, je dois accélérer pour l’empêcher de sortir.",
+            "answer_d": "Non, mais je reste prêt à ralentir pour éviter tout danger.",
+            "explanation": "L’obligation particulière de faciliter le départ d’un transport en commun d’un arrêt signalé s’applique en agglomération. Ici, le clignotant annonce une intention, pas une priorité automatique ; je reste prudent."
+          },
+          "en": {
+            "question_text": "Outside a built-up area, this coach wants to leave its stop. Does its indicator automatically give it priority?",
+            "answer_a": "Yes, coaches always have priority.",
+            "answer_b": "Yes, an indicator gives every vehicle priority.",
+            "answer_c": "No, I must accelerate to prevent it leaving.",
+            "answer_d": "No, but I remain ready to slow down to avoid danger.",
+            "explanation": "The special duty to facilitate a bus leaving a signed stop applies in built-up areas. Here the indicator announces an intention, not automatic priority; I remain cautious."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/priority_rural_bus_no_automatic_priority/scene.jpg",
+      "image_sha256": "99cc1569bc01d2bdf465a6887c92f2bda31177390838a01eb2e4673516994828",
+      "native_image_sha256": "08915b44de33ae48abeee0c6b9a4dea24afaea0efa8eae7e1aee82d37b44ca04",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-5904efcb-9a6e-45b7-9e80-1b6f97f4b354.png",
+      "visual_review": "Coach wholly in rural layby with left amber indicator. Replaced inaccurate bus pictogram by neutral ARRÊT timetable post; outside built-up area explicit in question.",
+      "reviewed_on": "2026-09-16",
+      "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/priority_rural_bus_no_automatic_priority/edit-prompt.md",
+      "reviewed_sha256": "312ce3127384a5aa887ee990f45f233cbdf090d18c74771d4a4ad73237c9fc8b",
+      "question_key": "situation_priority_rural_bus_no_automatic_priority",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 25,
+      "scenario_id": "priority_rail_exit_blocked_wait",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Passage à niveau sans sortie libre",
+      "references": [
+        "https://www.securite-routiere.gouv.fr/sites/default/files/2024-10/depliant_les_passages_a_niveaux.pdf"
+      ],
+      "novelty_review": "Queue beyond crossing blocks safe clearance, distinct from train or red signal.",
+      "scenario": "Driver POV stopped WELL BEFORE railway crossing with rails visible across road ahead. Both red-white half barriers fully RAISED, lights dark. Stopped queue in our right lane just beyond far rail leaves NO room to clear tracks. Opposing lane empty. No train, daylight.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV stopped WELL BEFORE railway crossing with rails visible across road ahead. Both red-white half barriers fully RAISED, lights dark. Stopped queue in our right lane just beyond far rail leaves NO room to clear tracks. Opposing lane empty. No train, daylight. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_priority_rail_exit_blocked_wait",
+        "category_slug": "priority_rules",
+        "correct_answer": "a",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Les barrières sont levées, mais la file arrêtée m’empêcherait de dégager les rails. Puis-je avancer sur le passage à niveau ?",
+            "answer_a": "Non, j’attends avant les rails qu’une place suffisante se libère.",
+            "answer_b": "Oui, puisque les barrières sont levées.",
+            "answer_c": "Oui, si aucun train n’est visible.",
+            "answer_d": "Oui, en m’arrêtant seulement sur un rail.",
+            "explanation": "Je n’aborde un passage à niveau que si je peux le dégager complètement. Des barrières ouvertes ne garantissent pas que la circulation au-delà me laissera sortir ; je garde les rails libres."
+          },
+          "en": {
+            "question_text": "The barriers are raised, but the stopped queue would prevent me clearing the tracks. May I move onto the crossing?",
+            "answer_a": "No, I wait before the tracks until enough space is available.",
+            "answer_b": "Yes, because the barriers are raised.",
+            "answer_c": "Yes, if no train is visible.",
+            "answer_d": "Yes, if I stop on only one rail.",
+            "explanation": "I enter a level crossing only if I can clear it completely. Open barriers do not guarantee that traffic beyond will let me leave, so I keep the tracks clear."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/priority_rail_exit_blocked_wait/scene.jpg",
+      "image_sha256": "0f1911665200c4848b3260fc384324067fe5d012c3a025da16e8fb17dd47fab9",
+      "native_image_sha256": "7c9fdf3657d52ad788843c0b2256a72598140e4ec0752160b2594d4dc9f5910d",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-10d3f00c-91bc-4356-85f2-3b5adc7897b9.png",
+      "visual_review": "Corrected two-lane alignment and queue location: grey car immediately beyond far rail leaves no room to clear crossing; barriers raised, signal lamps dark.",
+      "reviewed_on": "2026-09-16",
+      "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/priority_rail_exit_blocked_wait/edit-prompt.md",
+      "reviewed_sha256": "01edf0324babad29aa847a919435d30c500b4aca24fbe9918fbbe58a7ee974da",
+      "question_key": "situation_priority_rail_exit_blocked_wait",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 26,
+      "scenario_id": "alcohol_cbd_legal_sale_not_driving",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "CBD et conduite après usage de THC",
+      "references": [
+        "https://www.courdecassation.fr/decision/6492974417c95e05dbf9ded3"
+      ],
+      "novelty_review": "Legal purchase is no exemption to proven THC use while driving.",
+      "scenario": "Editorial still-life in safely parked car engine off: plain unbranded bottle and cardboard pack on passenger seat, only text 'CBD', keys alongside. No joint, no driver, no THC percentage or claims.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Editorial still-life in safely parked car engine off: plain unbranded bottle and cardboard pack on passenger seat, only text 'CBD', keys alongside. No joint, no driver, no THC percentage or claims. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_alcohol_cbd_legal_sale_not_driving",
+        "category_slug": "alcohol_drugs",
+        "correct_answer": "b",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Un produit au CBD a été acheté légalement. Cela exclut-il une infraction si l’analyse établit une conduite après usage de THC ?",
+            "answer_a": "Oui, une facture autorise à conduire.",
+            "answer_b": "Non, la vente légale n’écarte pas cette infraction.",
+            "answer_c": "Oui, si le conducteur ne ressent aucun effet.",
+            "answer_d": "Oui, pour un trajet de moins de dix minutes.",
+            "explanation": "La vente légale de certains produits au CBD ne constitue pas une exception à l’interdiction de conduire après usage de THC, substance classée comme stupéfiant. Le ressenti ne suffit pas non plus."
+          },
+          "en": {
+            "question_text": "A CBD product was bought legally. Does that rule out an offence if testing establishes driving after THC use?",
+            "answer_a": "Yes, a receipt authorises driving.",
+            "answer_b": "No, legal sale does not rule out this offence.",
+            "answer_c": "Yes, if the driver feels no effect.",
+            "answer_d": "Yes, for a trip of less than ten minutes.",
+            "explanation": "Legal sale of certain CBD products does not create an exception to the prohibition on driving after use of THC, a controlled drug. Subjective feelings are not enough either."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/alcohol_cbd_legal_sale_not_driving/scene.jpg",
+      "image_sha256": "a662eb9c0f63b68f8a63d4f72977a09caeec3a92a727858b71b52ef1814f6013",
+      "native_image_sha256": "90c85a2a1ffda910a28de930b875a8a92055d24b9f3bfccd196416e1855e0bb9",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-306ff9ea-4fc7-4d83-80ad-ae34689b0e94.png",
+      "visual_review": "Unbranded CBD bottle and pack with keys in stationary car; removed unrelated inaccurate roadside signage. No THC amount or legal driving claim shown.",
+      "reviewed_on": "2026-09-16",
+      "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/alcohol_cbd_legal_sale_not_driving/edit-prompt.md",
+      "reviewed_sha256": "b658ef0a26bf0bd8be506807dd363aabf745d346e09b354a830058db6ea60d0a",
+      "question_key": "situation_alcohol_cbd_legal_sale_not_driving",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 27,
+      "scenario_id": "alcohol_expired_self_test_unreliable",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Éthylotest périmé",
+      "references": [
+        "https://entreprendre.service-public.gouv.fr/vosdroits/F22386"
+      ],
+      "novelty_review": "Expired self-test cannot reassure, distinct from threshold and elimination questions.",
+      "scenario": "Close photo of hand holding unopened generic disposable breath-test foil packet beside car keys on kitchen table. Clear exact simple package labels 'ÉTHYLOTEST' and 'EXP 05/2025' only. No test results, no brands or pass/fail graphics. Parked car visible outside.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Close photo of hand holding unopened generic disposable breath-test foil packet beside car keys on kitchen table. Clear exact simple package labels 'ÉTHYLOTEST' and 'EXP 05/2025' only. No test results, no brands or pass/fail graphics. Parked car visible outside. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_alcohol_expired_self_test_unreliable",
+        "category_slug": "alcohol_drugs",
+        "correct_answer": "c",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "La date de validité de cet éthylotest est dépassée. Puis-je me fier à un résultat négatif pour conduire après avoir bu ?",
+            "answer_a": "Oui, un emballage fermé garantit sa fiabilité.",
+            "answer_b": "Oui, en soufflant deux fois plus fort.",
+            "answer_c": "Non, je ne me rassure pas avec un test périmé.",
+            "answer_d": "Oui, si je conserve l’emballage comme preuve.",
+            "explanation": "Je vérifie la validité et respecte la notice d’un éthylotest. Un test périmé ne donne pas une conclusion fiable ; en cas de doute après avoir bu, je ne conduis pas et choisis une autre solution."
+          },
+          "en": {
+            "question_text": "This breath test is expired. May I rely on a negative result to drive after drinking?",
+            "answer_a": "Yes, sealed packaging guarantees reliability.",
+            "answer_b": "Yes, by blowing twice as hard.",
+            "answer_c": "No, an expired test must not reassure me.",
+            "answer_d": "Yes, if I keep the packaging as proof.",
+            "explanation": "I check test validity and follow the instructions. An expired test does not give a reliable conclusion; if in doubt after drinking, I do not drive and choose another option."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/alcohol_expired_self_test_unreliable/scene.jpg",
+      "image_sha256": "5c57028bfb06fa52878718672eba20353b6c2cc57dacf747267bc5f4864fce55",
+      "native_image_sha256": "cdb01232162ab660c4776d7f83246b2515734c03b29d1b70f7f59e066dae6c66",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-2d63d26d-dcbf-4b35-9668-9e246c2313d3.png",
+      "visual_review": "Readable ÉTHYLOTEST and EXP 05/2025 on sealed packet; question explicitly says expired, so does not depend on device date.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "c0b51526d86be2049e307abe8e946b8ddff8b74e38aad9dca66ab2d24954f9fc",
+      "question_key": "situation_alcohol_expired_self_test_unreliable",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 28,
+      "scenario_id": "medicine_no_self_dose_change_drive",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Ne pas modifier seul le traitement",
+      "references": [
+        "https://www.ameli.fr/assure/sante/medicaments/effets-indesirables-et-interactions-lies-aux-medicaments/comprendre-risques-lies-medicaments-conduite-vehicule"
+      ],
+      "novelty_review": "Skipping or changing prescribed doses to drive, distinct from warning labels or interactions.",
+      "scenario": "Natural photo at home before journey: ordinary adult at table with weekly pill organizer, generic blister pack and car keys, hand hesitating over pills. Prescription out of focus, no readable details. Car parked outside, no alcohol or branded medicine.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Natural photo at home before journey: ordinary adult at table with weekly pill organizer, generic blister pack and car keys, hand hesitating over pills. Prescription out of focus, no readable details. Car parked outside, no alcohol or branded medicine. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_medicine_no_self_dose_change_drive",
+        "category_slug": "alcohol_drugs",
+        "correct_answer": "d",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Mon traitement peut gêner la conduite. Puis-je sauter moi-même une dose pour prendre le volant ?",
+            "answer_a": "Oui, sauter une prise garantit une conduite sûre.",
+            "answer_b": "Oui, si je double la dose le soir.",
+            "answer_c": "Oui, pour un trajet court.",
+            "answer_d": "Non, je demande un avis médical sans modifier seul le traitement.",
+            "explanation": "Modifier seul la dose ou les horaires peut aussi présenter un risque. Je demande au médecin ou au pharmacien les précautions à prendre pour la conduite, sans improviser une adaptation du traitement."
+          },
+          "en": {
+            "question_text": "My treatment may affect driving. May I skip a dose on my own so I can drive?",
+            "answer_a": "Yes, missing a dose guarantees safe driving.",
+            "answer_b": "Yes, if I double the dose that evening.",
+            "answer_c": "Yes, for a short trip.",
+            "answer_d": "No, I seek medical advice without changing treatment myself.",
+            "explanation": "Changing doses or timing on my own can also create risks. I ask a doctor or pharmacist about driving precautions without improvising changes to treatment."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/medicine_no_self_dose_change_drive/scene.jpg",
+      "image_sha256": "c59cf28b7244efc1325f0968cdf2d6f6830999d9dbf02b29e1aa5dcd7bce95b2",
+      "native_image_sha256": "bcd6686efea5f87219cd2a35c516ec883727cf3150d3084493214d62a640a58b",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-9002e949-7cfc-4a1d-93d8-db768042ef23.png",
+      "visual_review": "Medication organizer, generic blister pack and keys at home before travel. No specific drug, dosage recommendation or driving claim.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "acf090c751cf35fc663582741e38524b1a1e6055cafaebb73cb1e9bb7d6eca27",
+      "question_key": "situation_medicine_no_self_dose_change_drive",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 29,
+      "scenario_id": "safety_aquaplaning_smooth_release",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Réaction à l’aquaplanage",
+      "references": [
+        "https://www.vinci-autoroutes.com/fr/conseils/securite/conduite-pluie-autoroute/"
+      ],
+      "novelty_review": "Response after water-related grip loss, distinct from preventive rain gap.",
+      "scenario": "Driver POV straight wet French divided road in heavy rain with shallow sheet of standing water across learner lane. Distant car far ahead throws gentle spray. Hands keep steering wheel straight. No imminent collision or dramatic drift, realistic rain.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV straight wet French divided road in heavy rain with shallow sheet of standing water across learner lane. Distant car far ahead throws gentle spray. Hands keep steering wheel straight. No imminent collision or dramatic drift, realistic rain. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_safety_aquaplaning_smooth_release",
+        "category_slug": "safety",
+        "correct_answer": "a",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "La direction devient soudain très légère sur cette nappe d’eau : je soupçonne un aquaplanage. Quelle réaction est adaptée ?",
+            "answer_a": "Relâcher doucement l’accélérateur et éviter les gestes brusques.",
+            "answer_b": "Freiner brutalement en braquant fortement.",
+            "answer_c": "Accélérer pour traverser l’eau plus vite.",
+            "answer_d": "Tirer le frein de stationnement.",
+            "explanation": "Lors d’un aquaplanage, les pneus perdent leur contact normal avec la route. Je relève progressivement le pied, garde une direction stable et évite le freinage et les coups de volant brusques pour retrouver l’adhérence."
+          },
+          "en": {
+            "question_text": "The steering suddenly feels very light on this sheet of water: I suspect aquaplaning. What should I do?",
+            "answer_a": "Ease off the accelerator gently and avoid sudden inputs.",
+            "answer_b": "Brake hard while turning sharply.",
+            "answer_c": "Accelerate to cross the water faster.",
+            "answer_d": "Apply the parking brake.",
+            "explanation": "During aquaplaning, tyres lose normal contact with the road. I ease off, keep steering steady and avoid abrupt braking or steering while grip returns."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/safety_aquaplaning_smooth_release/scene.jpg",
+      "image_sha256": "e25f9a3363482b2402c872e41e39d762864cd70f67be2fd50a26ef6b755727e9",
+      "native_image_sha256": "6deb7b21f436d4ff7ff51fe01854a1ca4bc67d358b2ffa5752804ebba1d7b93b",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-c6a1d39a-b97a-4e57-8f24-3c8c28fcfa3a.png",
+      "visual_review": "Rain and standing water visible, hands keep wheel steady; removed invented route sign and numeric speed display. Light steering symptom explicitly supplied by question.",
+      "reviewed_on": "2026-09-16",
+      "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/safety_aquaplaning_smooth_release/edit-prompt.md",
+      "reviewed_sha256": "009e23851096c50c3203c977aff60844449d7e841b509412d1f8d85466864f2f",
+      "question_key": "situation_safety_aquaplaning_smooth_release",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    },
+    {
+      "sequence": 30,
+      "scenario_id": "safety_head_restraint_neck_protection",
+      "scope": "ordinary_passenger_car",
+      "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+      "learning_objective": "Rôle de l’appuie-tête",
+      "references": [
+        "https://www.tcs.ch/fr/tests-conseils/brochures-publications/education-routiere-securite/appuis-tete.php"
+      ],
+      "novelty_review": "Head restraint protects neck during impact, absent from belts/child seats.",
+      "scenario": "Close SIDE VIEW photo adult driver upright in stationary car, belt fastened, head restraint close behind head with top near top of head. Hand adjusting its height while stopped. Daylight neutral scene, no diagrams or text, no reclining or crash.",
+      "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Close SIDE VIEW photo adult driver upright in stationary car, belt fastened, head restraint close behind head with top near top of head. Hand adjusting its height while stopped. Daylight neutral scene, no diagrams or text, no reclining or crash. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+      "question": {
+        "key": "situation_safety_head_restraint_neck_protection",
+        "category_slug": "safety",
+        "correct_answer": "b",
+        "difficulty": "medium",
+        "translations": {
+          "fr": {
+            "question_text": "Pourquoi régler correctement l’appuie-tête avant de partir ?",
+            "answer_a": "Uniquement pour dormir plus confortablement.",
+            "answer_b": "Pour limiter les mouvements de la tête et les blessures à la nuque lors d’un choc.",
+            "answer_c": "Pour remplacer la ceinture de sécurité.",
+            "answer_d": "Pour réduire la distance de freinage.",
+            "explanation": "L’appuie-tête est un équipement de sécurité : bien réglé, il aide à limiter le mouvement de la tête par rapport au buste et le risque de traumatisme cervical. Il complète la ceinture sans la remplacer."
+          },
+          "en": {
+            "question_text": "Why adjust the head restraint correctly before setting off?",
+            "answer_a": "Only to sleep more comfortably.",
+            "answer_b": "To limit head movement and neck injury in an impact.",
+            "answer_c": "To replace the seat belt.",
+            "answer_d": "To shorten braking distance.",
+            "explanation": "Correctly adjusted, the head restraint helps limit head movement relative to the torso and the risk of neck injury. It complements the seat belt rather than replacing it."
+          }
+        }
+      },
+      "state": "imported",
+      "generation_method": "built-in image_gen",
+      "image_path": "assets-source/balanced-batch-2026-09-16/safety_head_restraint_neck_protection/scene.jpg",
+      "image_sha256": "d4086342a7c1a16e593082181701c20a07f309be1d929093134150c83c237861",
+      "native_image_sha256": "db892ad07d73b651f1d75b88fae14e63115853f3210548cee4fe8f97eab27fbd",
+      "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-c5dcf3cb-688e-4ad6-9dc9-b44c35ec5cc9.png",
+      "visual_review": "Belted upright driver adjusts head restraint while stationary; restraint close behind head and top at least level with head.",
+      "reviewed_on": "2026-09-16",
+      "reviewed_sha256": "6b5f87c12fb0ad8a18ade8782003fc2433967ec43dd31ba37256aaa5b935d635",
+      "question_key": "situation_safety_head_restraint_neck_protection",
+      "imported_content_version": 88,
+      "imported_on": "2026-09-16"
+    }
+  ],
+  "questions_after": 378,
+  "content_version_after": 88,
+  "imported_on": "2026-09-16",
+  "verification": {
+    "content_version": 88,
+    "active_questions": 378,
+    "new_questions_verified": 30,
+    "translations_verified": 60,
+    "new_images_verified": 30,
+    "category_counts": {
+      "alcohol_drugs": 36,
+      "motorways": 27,
+      "overtaking": 34,
+      "parking_stopping": 33,
+      "priority_rules": 37,
+      "road_signs": 116,
+      "safety": 62,
+      "speed_limits": 33
+    },
+    "python_tests_passed": 27,
+    "ios_tests_passed": 26,
+    "registry_verified": true,
+    "reimport": "already_imported, no writes or version bump",
+    "previous_questions_unchanged": 348,
+    "git_diff_check": "passed",
+    "git_commit_or_push": false
+  }
+}

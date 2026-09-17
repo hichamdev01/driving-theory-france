@@ -1,0 +1,49 @@
+{
+  "sequence": 13,
+  "scenario_id": "parking_secure_before_leaving",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Immobilisation avant de quitter le véhicule",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842291"
+  ],
+  "novelty_review": "Securing a parked car against unintended movement, absent from parking-position questions.",
+  "scenario": "Close realistic photograph from front passenger seat in safely parked MANUAL passenger car on mild slope in lawful marked parking bay. Driver's right hand about to raise visible conventional handbrake lever, gear lever visible, car stationary. External street through windows, no traffic conflict, no labels or arrows.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Close realistic photograph from front passenger seat in safely parked MANUAL passenger car on mild slope in lawful marked parking bay. Driver's right hand about to raise visible conventional handbrake lever, gear lever visible, car stationary. External street through windows, no traffic conflict, no labels or arrows. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_parking_secure_before_leaving",
+    "category_slug": "parking_stopping",
+    "correct_answer": "a",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Avant de laisser ma voiture stationnée dans cette pente, quelle précaution est indispensable ?",
+        "answer_a": "M’assurer qu’elle est correctement immobilisée et ne peut partir seule.",
+        "answer_b": "Laisser le moteur tourner pour la retenir.",
+        "answer_c": "Compter seulement sur les feux de détresse.",
+        "answer_d": "Laisser la porte ouverte pour prévenir les autres.",
+        "explanation": "Avant de m’éloigner, je prends les précautions évitant un accident en mon absence. Je serre le frein de stationnement et applique les consignes d’immobilisation prévues pour mon véhicule."
+      },
+      "en": {
+        "question_text": "Before leaving my car parked on this slope, what precaution is essential?",
+        "answer_a": "Make sure it is properly secured and cannot roll away.",
+        "answer_b": "Leave the engine running to hold it.",
+        "answer_c": "Rely only on hazard lights.",
+        "answer_d": "Leave the door open to warn others.",
+        "explanation": "Before walking away, I take precautions to prevent an accident in my absence. I apply the parking brake and follow the securing instructions for my vehicle."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/parking_secure_before_leaving/scene.jpg",
+  "image_sha256": "bfa1dbe14d67de5b13da1ea58f12c26cc505a7270c211ea365e9048682b9c655",
+  "native_image_sha256": "9f726b667f792a8457db54ed4c349116e39004b5f6b7c5b800582319a1986c5c",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-9df03c43-4b49-4298-8c57-ab2826d07928.png",
+  "visual_review": "Stationary manual car on a slope, hand on conventional handbrake, gear lever visible; supports securing vehicle before leaving.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "b2afc8103f7df9d23d2b543aa353c5895b5b00c89e0a5275618184e71217004f",
+  "question_key": "situation_parking_secure_before_leaving",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

@@ -1,0 +1,36 @@
+{
+  "code": "B15",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Driver of an ordinary passenger car yields to another ordinary car; no specialist vehicle operation.",
+  "scenario_id": "yield_oncoming_before_single_lane_bridge_b15",
+  "scenario": "Before entering a single-car-width bridge, B15 faces the learner and an oncoming car approaches the far end. The learner waits outside the bridge.",
+  "novelty_review": "Compared existing situation_priority_oncoming and situation_priority_c18_bridge: those teach C18 priority and an already-engaged vehicle. This teaches B15 yielding before entry, without relying on the other vehicle already occupying the bridge. No B15 question/draft exists in the fresh registry.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Create one wide landscape scene-only French driving-theory photograph, preferably 2048 by 1152. View from driver eye level in an ordinary left-hand-drive passenger car. Small steering rim/dashboard at bottom. Rural France in neutral daylight. Camera car is BEFORE entry to a short, clearly SINGLE-CAR-WIDTH stone bridge over a stream, with low stone parapets. Both ends visible. One ordinary blue passenger car faces us, approaching or just entering the FAR end of the bridge; it has not yet reached us. Road normally two-way, narrows at bridge. No room for two cars to pass on bridge. On OUR right verge BEFORE the bridge stands a prominent authentic French B15 sign: ROUND white disc with thick RED border, BLACK arrow on LEFT pointing DOWN, RED arrow on RIGHT pointing UP. Precisely copy the pictogram from the supplied reference, which is a SIGN-ONLY identity reference, not a scene to edit. Sign on metal pole, natural scale and perspective, no supplementary plates. Learner must yield here to the oncoming car before entering. Show safe waiting space before the bridge. Right-hand traffic, road geometry coherent, realistic French rural scenery, ordinary photographic contrast. No other visible signs, no C18 blue-square sign, no traffic lights, no text, no answers, no labels, no quiz panel, no watermarks, no dramatic effects. Entire scene is the app quiz photograph; the app renders question text separately.",
+  "question": {
+    "key": "situation_b15_yield_oncoming_bridge",
+    "category_slug": "priority_rules",
+    "correct_answer": "b",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Cette voiture arrive en face du pont étroit. Avec ce panneau, que dois-je faire avant de m’engager ?",
+        "answer_a": "Passer en premier, car ma voie reste ouverte.",
+        "answer_b": "Attendre avant le pont pour laisser passer la voiture venant en face.",
+        "answer_c": "M’engager et demander à l’autre conducteur de reculer.",
+        "answer_d": "Klaxonner puis traverser sans attendre.",
+        "explanation": "Le panneau B15 m’impose de céder le passage à la circulation venant en sens inverse. Comme le pont ne permet pas de se croiser, je ralentis et j’attends avant le passage étroit pour laisser passer la voiture. Je ne m’engage que lorsque la voie est libre."
+      },
+      "en": {
+        "question_text": "This car is approaching from the opposite end of the narrow bridge. With this sign, what must I do before entering?",
+        "answer_a": "Go first because my lane is still open.",
+        "answer_b": "Wait before the bridge to let the oncoming car pass.",
+        "answer_c": "Enter and ask the other driver to reverse.",
+        "answer_d": "Sound my horn and cross without waiting.",
+        "explanation": "Sign B15 requires me to give way to oncoming traffic. Since the bridge is too narrow for the cars to pass each other, I slow down and wait before the narrow section to let the other car through. I enter only when the way is clear."
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "sequence": 25,
+  "scenario_id": "priority_rail_exit_blocked_wait",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Passage à niveau sans sortie libre",
+  "references": [
+    "https://www.securite-routiere.gouv.fr/sites/default/files/2024-10/depliant_les_passages_a_niveaux.pdf"
+  ],
+  "novelty_review": "Queue beyond crossing blocks safe clearance, distinct from train or red signal.",
+  "scenario": "Driver POV stopped WELL BEFORE railway crossing with rails visible across road ahead. Both red-white half barriers fully RAISED, lights dark. Stopped queue in our right lane just beyond far rail leaves NO room to clear tracks. Opposing lane empty. No train, daylight.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV stopped WELL BEFORE railway crossing with rails visible across road ahead. Both red-white half barriers fully RAISED, lights dark. Stopped queue in our right lane just beyond far rail leaves NO room to clear tracks. Opposing lane empty. No train, daylight. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_priority_rail_exit_blocked_wait",
+    "category_slug": "priority_rules",
+    "correct_answer": "a",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Les barrières sont levées, mais la file arrêtée m’empêcherait de dégager les rails. Puis-je avancer sur le passage à niveau ?",
+        "answer_a": "Non, j’attends avant les rails qu’une place suffisante se libère.",
+        "answer_b": "Oui, puisque les barrières sont levées.",
+        "answer_c": "Oui, si aucun train n’est visible.",
+        "answer_d": "Oui, en m’arrêtant seulement sur un rail.",
+        "explanation": "Je n’aborde un passage à niveau que si je peux le dégager complètement. Des barrières ouvertes ne garantissent pas que la circulation au-delà me laissera sortir ; je garde les rails libres."
+      },
+      "en": {
+        "question_text": "The barriers are raised, but the stopped queue would prevent me clearing the tracks. May I move onto the crossing?",
+        "answer_a": "No, I wait before the tracks until enough space is available.",
+        "answer_b": "Yes, because the barriers are raised.",
+        "answer_c": "Yes, if no train is visible.",
+        "answer_d": "Yes, if I stop on only one rail.",
+        "explanation": "I enter a level crossing only if I can clear it completely. Open barriers do not guarantee that traffic beyond will let me leave, so I keep the tracks clear."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/priority_rail_exit_blocked_wait/scene.jpg",
+  "image_sha256": "0f1911665200c4848b3260fc384324067fe5d012c3a025da16e8fb17dd47fab9",
+  "native_image_sha256": "7c9fdf3657d52ad788843c0b2256a72598140e4ec0752160b2594d4dc9f5910d",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-10d3f00c-91bc-4356-85f2-3b5adc7897b9.png",
+  "visual_review": "Corrected two-lane alignment and queue location: grey car immediately beyond far rail leaves no room to clear crossing; barriers raised, signal lamps dark.",
+  "reviewed_on": "2026-09-16",
+  "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/priority_rail_exit_blocked_wait/edit-prompt.md",
+  "reviewed_sha256": "01edf0324babad29aa847a919435d30c500b4aca24fbe9918fbbe58a7ee974da",
+  "question_key": "situation_priority_rail_exit_blocked_wait",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

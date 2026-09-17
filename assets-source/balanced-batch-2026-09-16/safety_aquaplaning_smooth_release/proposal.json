@@ -1,0 +1,50 @@
+{
+  "sequence": 29,
+  "scenario_id": "safety_aquaplaning_smooth_release",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Réaction à l’aquaplanage",
+  "references": [
+    "https://www.vinci-autoroutes.com/fr/conseils/securite/conduite-pluie-autoroute/"
+  ],
+  "novelty_review": "Response after water-related grip loss, distinct from preventive rain gap.",
+  "scenario": "Driver POV straight wet French divided road in heavy rain with shallow sheet of standing water across learner lane. Distant car far ahead throws gentle spray. Hands keep steering wheel straight. No imminent collision or dramatic drift, realistic rain.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV straight wet French divided road in heavy rain with shallow sheet of standing water across learner lane. Distant car far ahead throws gentle spray. Hands keep steering wheel straight. No imminent collision or dramatic drift, realistic rain. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_safety_aquaplaning_smooth_release",
+    "category_slug": "safety",
+    "correct_answer": "a",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "La direction devient soudain très légère sur cette nappe d’eau : je soupçonne un aquaplanage. Quelle réaction est adaptée ?",
+        "answer_a": "Relâcher doucement l’accélérateur et éviter les gestes brusques.",
+        "answer_b": "Freiner brutalement en braquant fortement.",
+        "answer_c": "Accélérer pour traverser l’eau plus vite.",
+        "answer_d": "Tirer le frein de stationnement.",
+        "explanation": "Lors d’un aquaplanage, les pneus perdent leur contact normal avec la route. Je relève progressivement le pied, garde une direction stable et évite le freinage et les coups de volant brusques pour retrouver l’adhérence."
+      },
+      "en": {
+        "question_text": "The steering suddenly feels very light on this sheet of water: I suspect aquaplaning. What should I do?",
+        "answer_a": "Ease off the accelerator gently and avoid sudden inputs.",
+        "answer_b": "Brake hard while turning sharply.",
+        "answer_c": "Accelerate to cross the water faster.",
+        "answer_d": "Apply the parking brake.",
+        "explanation": "During aquaplaning, tyres lose normal contact with the road. I ease off, keep steering steady and avoid abrupt braking or steering while grip returns."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/safety_aquaplaning_smooth_release/scene.jpg",
+  "image_sha256": "e25f9a3363482b2402c872e41e39d762864cd70f67be2fd50a26ef6b755727e9",
+  "native_image_sha256": "6deb7b21f436d4ff7ff51fe01854a1ca4bc67d358b2ffa5752804ebba1d7b93b",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-c6a1d39a-b97a-4e57-8f24-3c8c28fcfa3a.png",
+  "visual_review": "Rain and standing water visible, hands keep wheel steady; removed invented route sign and numeric speed display. Light steering symptom explicitly supplied by question.",
+  "reviewed_on": "2026-09-16",
+  "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/safety_aquaplaning_smooth_release/edit-prompt.md",
+  "reviewed_sha256": "009e23851096c50c3203c977aff60844449d7e841b509412d1f8d85466864f2f",
+  "question_key": "situation_safety_aquaplaning_smooth_release",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

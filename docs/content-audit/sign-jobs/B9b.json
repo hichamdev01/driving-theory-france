@@ -1,0 +1,49 @@
+{
+  "id": "B9b",
+  "code": "B9b",
+  "state": "imported",
+  "created_on": "2026-09-16",
+  "proposal": {
+    "code": "B9b",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Learner drives an ordinary passenger car; the question concerns the car driver’s lighting, access, route interpretation or parking decision, not operating another vehicle type.",
+    "scenario_id": "b9b_car_interpretation",
+    "scenario": "Ordinary car before entrance to French urban underpass approach road, daylight, wide clear carriageway. Prominent circular WHITE sign RED rim and BLACK BICYCLE outline ONLY as reference B9b. No diagonal red slash, no car or motorcycle symbols. No exception plate, no other restriction signs, no bicycle on roadway.",
+    "novelty_review": "Passenger-car interpretation of bicycle-specific prohibition, avoiding old excluded question about operating a cycle.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B quiz photograph, wide landscape preferably 2048x1152. View from ordinary LEFT-HAND-DRIVE passenger car, dashboard rim along bottom, right-hand traffic. Natural daylight and realistic proportions. Input image is only a sign pictogram REFERENCE, not a scene to edit. Reproduce its exact shape, colours, arrows and specified inscription on a prominent readable sign. Ordinary car before entrance to French urban underpass approach road, daylight, wide clear carriageway. Prominent circular WHITE sign RED rim and BLACK BICYCLE outline ONLY as reference B9b. No diagonal red slash, no car or motorcycle symbols. No exception plate, no other restriction signs, no bicycle on roadway. No question, answer choices, answer hints, quiz layout, watermark or unrelated signs. Preserve safe approach distance and clear road geometry.",
+    "question": {
+      "key": "situation_b9b_car_interpretation",
+      "category_slug": "road_signs",
+      "correct_answer": "c",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Je conduis une voiture particulière. Ce panneau, à lui seul, m’interdit-il l’accès ?",
+          "answer_a": "Oui, il interdit tous les véhicules.",
+          "answer_b": "Oui, sauf si je roule au pas.",
+          "answer_c": "Non, il ne vise pas les voitures particulières.",
+          "answer_d": "Oui, mais seulement la nuit.",
+          "explanation": "Le panneau B9b vise notamment les cycles, ainsi que les engins auxquels cette interdiction est étendue. Il ne désigne pas les voitures particulières ; je respecte néanmoins toute autre signalisation et reste attentif aux usagers."
+        },
+        "en": {
+          "question_text": "I am driving a passenger car. Does this sign by itself prohibit my entry?",
+          "answer_a": "Yes, it prohibits all vehicles.",
+          "answer_b": "Yes, unless I drive at walking pace.",
+          "answer_c": "No, it does not apply to passenger cars.",
+          "answer_d": "Yes, but only at night.",
+          "explanation": "Sign B9b applies to cycles and the other devices covered by that prohibition. It does not designate passenger cars; I still obey any other signs and remain alert to other road users."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/B9b/scene.jpg",
+  "image_sha256": "ecc394a91d450b9192b3ff0f0a21f50dd7d65fa8c218fec08c28410c820ba20c",
+  "review_note": "Actual image reviewed: circular red-rimmed white sign with black bicycle, no other restriction symbol. Car approaching underpass. C only answers whether this sign alone prohibits a passenger car; both languages avoid instructing cycle operation or claiming blanket permission.",
+  "reviewed_sha256": "7395abb9017b0f40c1b55c3a17f4e5ab66ef9afc4c0c5c852f870f702be05369",
+  "question_key": "situation_b9b_car_interpretation",
+  "imported_content_version": 80,
+  "imported_on": "2026-09-16"
+}

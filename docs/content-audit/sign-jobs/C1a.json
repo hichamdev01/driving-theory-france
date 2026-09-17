@@ -1,0 +1,49 @@
+{
+  "id": "C1a",
+  "code": "C1a",
+  "state": "imported",
+  "created_on": "2026-09-16",
+  "proposal": {
+    "code": "C1a",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Learner drives an ordinary passenger car; the question concerns the car driver’s lighting, access, route interpretation or parking decision, not operating another vehicle type.",
+    "scenario_id": "c1a_car_interpretation",
+    "scenario": "Ordinary car approaching entrance to small French village off-street parking area, clearly marked empty parking bays to right. Large SQUARE BLUE sign with a single WHITE capital P, exactly reference C1a. No meter, parking-disc logo, disabled badge, fees, hours, arrows, or other signs. Learner still on access road.",
+    "novelty_review": "Generic parking-place indication without inferring free/unlimited parking, distinct from paid C1c and disc-controlled C1b.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B quiz photograph, wide landscape preferably 2048x1152. View from ordinary LEFT-HAND-DRIVE passenger car, dashboard rim along bottom, right-hand traffic. Natural daylight and realistic proportions. Input image is only a sign pictogram REFERENCE, not a scene to edit. Reproduce its exact shape, colours, arrows and specified inscription on a prominent readable sign. Ordinary car approaching entrance to small French village off-street parking area, clearly marked empty parking bays to right. Large SQUARE BLUE sign with a single WHITE capital P, exactly reference C1a. No meter, parking-disc logo, disabled badge, fees, hours, arrows, or other signs. Learner still on access road. No question, answer choices, answer hints, quiz layout, watermark or unrelated signs. Preserve safe approach distance and clear road geometry.",
+    "question": {
+      "key": "situation_c1a_car_interpretation",
+      "category_slug": "parking_stopping",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Quelle information ce panneau donne-t-il à lui seul ?",
+          "answer_a": "Le stationnement est forcément gratuit et illimité.",
+          "answer_b": "Un lieu est aménagé pour le stationnement.",
+          "answer_c": "L’emplacement est réservé aux taxis.",
+          "answer_d": "Je dois m’arrêter immédiatement sur la chaussée.",
+          "explanation": "Le panneau C1a indique un lieu aménagé pour le stationnement. Avant de laisser ma voiture, je vérifie les conditions affichées et les éventuelles réservations ; le seul « P » ne garantit pas un stationnement gratuit et sans limite."
+        },
+        "en": {
+          "question_text": "What does this sign tell me by itself?",
+          "answer_a": "Parking is necessarily free and unlimited.",
+          "answer_b": "A parking area is provided.",
+          "answer_c": "The space is reserved for taxis.",
+          "answer_d": "I must stop immediately on the carriageway.",
+          "explanation": "Sign C1a identifies a parking area. Before leaving my car, I check the displayed conditions and any reserved spaces; the letter P alone does not guarantee free, unlimited parking."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/C1a/scene.jpg",
+  "image_sha256": "9b5c73b4621a0c38bd4abd0d3872b7bc5928c6e7a3c9bda2c68e081b3c281d7a",
+  "review_note": "Actual image reviewed: square blue sign with only white P at off-street village parking area with marked bays, no tariff, time or reserved-user symbol. B only identifies a parking area; both languages warn against inferring free and unlimited parking. Four distinct choices.",
+  "reviewed_sha256": "ec3e5a2f9a4142135cb415d1bf554f6a8b6344a04d3ea3e434e53c227c130b96",
+  "question_key": "situation_c1a_car_interpretation",
+  "imported_content_version": 87,
+  "imported_on": "2026-09-16"
+}

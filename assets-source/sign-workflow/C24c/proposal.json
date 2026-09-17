@@ -1,0 +1,36 @@
+{
+  "code": "C24c",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives an ordinary passenger car; the question concerns the car driver’s lighting, access, route interpretation or parking decision, not operating another vehicle type.",
+  "scenario_id": "c24c_car_interpretation",
+  "scenario": "Ordinary car approaching French rural junction with side road to RIGHT, main road straight. Prominent BLUE SQUARE C24c sign on near right: WHITE main vertical line UP arrow and WHITE horizontal branch arrow RIGHT; on right branch a small RED-bordered WHITE triangle with BLACK fence/barrier symbol for level crossing with barriers, faithfully reference. Side road and distant railway crossing raised barriers visible at far right, no train, no flashing lights.",
+  "novelty_review": "Locating a warned hazard specifically on the side road before turning, distinct from an A7 sign at a railway crossing on current road.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B quiz photograph, wide landscape preferably 2048x1152. View from ordinary LEFT-HAND-DRIVE passenger car, dashboard rim along bottom, right-hand traffic. Natural daylight and realistic proportions. Input image is only a sign pictogram REFERENCE, not a scene to edit. Reproduce its exact shape, colours, arrows and specified inscription on a prominent readable sign. Ordinary car approaching French rural junction with side road to RIGHT, main road straight. Prominent BLUE SQUARE C24c sign on near right: WHITE main vertical line UP arrow and WHITE horizontal branch arrow RIGHT; on right branch a small RED-bordered WHITE triangle with BLACK fence/barrier symbol for level crossing with barriers, faithfully reference. Side road and distant railway crossing raised barriers visible at far right, no train, no flashing lights. No question, answer choices, answer hints, quiz layout, watermark or unrelated signs. Preserve safe approach distance and clear road geometry.",
+  "question": {
+    "key": "situation_c24c_car_interpretation",
+    "category_slug": "road_signs",
+    "correct_answer": "d",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Où se trouve le passage à niveau annoncé par le petit triangle ?",
+        "answer_a": "Sur toutes les voies du carrefour.",
+        "answer_b": "Obligatoirement sur la route continuant tout droit.",
+        "answer_c": "Sur la route que je viens de quitter.",
+        "answer_d": "Sur la route qui part à droite.",
+        "explanation": "Ce panneau C24c décrit une condition particulière sur la route embranchée. Le symbole du passage à niveau est placé sur la branche droite : si je tourne de ce côté, j’anticipe ce danger et respecte la signalisation rencontrée."
+      },
+      "en": {
+        "question_text": "Where is the level crossing shown by the small triangle?",
+        "answer_a": "On every road at the junction.",
+        "answer_b": "Necessarily on the road continuing straight ahead.",
+        "answer_c": "On the road I have just left.",
+        "answer_d": "On the road branching to the right.",
+        "explanation": "This C24c sign describes a particular condition on the side road. The level-crossing symbol appears on the right-hand branch: if I turn that way, I anticipate the hazard and obey the signs and signals there."
+      }
+    }
+  }
+}

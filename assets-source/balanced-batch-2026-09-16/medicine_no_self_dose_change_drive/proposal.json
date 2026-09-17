@@ -1,0 +1,49 @@
+{
+  "sequence": 28,
+  "scenario_id": "medicine_no_self_dose_change_drive",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Ne pas modifier seul le traitement",
+  "references": [
+    "https://www.ameli.fr/assure/sante/medicaments/effets-indesirables-et-interactions-lies-aux-medicaments/comprendre-risques-lies-medicaments-conduite-vehicule"
+  ],
+  "novelty_review": "Skipping or changing prescribed doses to drive, distinct from warning labels or interactions.",
+  "scenario": "Natural photo at home before journey: ordinary adult at table with weekly pill organizer, generic blister pack and car keys, hand hesitating over pills. Prescription out of focus, no readable details. Car parked outside, no alcohol or branded medicine.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Natural photo at home before journey: ordinary adult at table with weekly pill organizer, generic blister pack and car keys, hand hesitating over pills. Prescription out of focus, no readable details. Car parked outside, no alcohol or branded medicine. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_medicine_no_self_dose_change_drive",
+    "category_slug": "alcohol_drugs",
+    "correct_answer": "d",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Mon traitement peut gêner la conduite. Puis-je sauter moi-même une dose pour prendre le volant ?",
+        "answer_a": "Oui, sauter une prise garantit une conduite sûre.",
+        "answer_b": "Oui, si je double la dose le soir.",
+        "answer_c": "Oui, pour un trajet court.",
+        "answer_d": "Non, je demande un avis médical sans modifier seul le traitement.",
+        "explanation": "Modifier seul la dose ou les horaires peut aussi présenter un risque. Je demande au médecin ou au pharmacien les précautions à prendre pour la conduite, sans improviser une adaptation du traitement."
+      },
+      "en": {
+        "question_text": "My treatment may affect driving. May I skip a dose on my own so I can drive?",
+        "answer_a": "Yes, missing a dose guarantees safe driving.",
+        "answer_b": "Yes, if I double the dose that evening.",
+        "answer_c": "Yes, for a short trip.",
+        "answer_d": "No, I seek medical advice without changing treatment myself.",
+        "explanation": "Changing doses or timing on my own can also create risks. I ask a doctor or pharmacist about driving precautions without improvising changes to treatment."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/medicine_no_self_dose_change_drive/scene.jpg",
+  "image_sha256": "c59cf28b7244efc1325f0968cdf2d6f6830999d9dbf02b29e1aa5dcd7bce95b2",
+  "native_image_sha256": "bcd6686efea5f87219cd2a35c516ec883727cf3150d3084493214d62a640a58b",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-9002e949-7cfc-4a1d-93d8-db768042ef23.png",
+  "visual_review": "Medication organizer, generic blister pack and keys at home before travel. No specific drug, dosage recommendation or driving claim.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "acf090c751cf35fc663582741e38524b1a1e6055cafaebb73cb1e9bb7d6eca27",
+  "question_key": "situation_medicine_no_self_dose_change_drive",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

@@ -1,0 +1,36 @@
+{
+  "code": "C30",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+  "scenario_id": "c30_car_scenario",
+  "scenario": "Car in RIGHT of two same-direction lanes of a French undivided rural THREE-LANE road: one opposing lane far left, two our-way lanes to right. Left of our two lanes tapers into our right lane ahead. Prominent SQUARE BLUE sign on right: one DOWN white arrow at LEFT, one UP white arrow at RIGHT, middle white branch merges diagonally RIGHT into upward arrow exactly reference. No vehicles overtaking, no central barrier.",
+  "novelty_review": "End of three-lane overtaking section with oncoming traffic, distinct from divided-carriageway C28 lane reduction.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. Car in RIGHT of two same-direction lanes of a French undivided rural THREE-LANE road: one opposing lane far left, two our-way lanes to right. Left of our two lanes tapers into our right lane ahead. Prominent SQUARE BLUE sign on right: one DOWN white arrow at LEFT, one UP white arrow at RIGHT, middle white branch merges diagonally RIGHT into upward arrow exactly reference. No vehicles overtaking, no central barrier. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+  "question": {
+    "key": "situation_c30_car_scenario",
+    "category_slug": "road_signs",
+    "correct_answer": "c",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Que signifie ce panneau sur cette route à trois voies ?",
+        "answer_a": "La fin de toute limitation de vitesse.",
+        "answer_b": "Le début d’une autoroute.",
+        "answer_c": "La fin du créneau de dépassement.",
+        "answer_d": "L’obligation de rouler sur la voie de gauche.",
+        "explanation": "Le panneau C30 marque la fin d’un créneau de dépassement à trois voies affectées. Je n’entame pas un dépassement que je ne pourrais pas terminer avant le rabattement et je respecte la séparation avec la circulation venant en face."
+      },
+      "en": {
+        "question_text": "What does this sign mean on this three-lane road?",
+        "answer_a": "The end of every speed limit.",
+        "answer_b": "The start of a motorway.",
+        "answer_c": "The end of the overtaking section.",
+        "answer_d": "An obligation to use the left-hand lane.",
+        "explanation": "Sign C30 marks the end of an overtaking section on a road with three assigned lanes. I do not begin an overtake I could not finish before the merge, and I respect the separation from oncoming traffic."
+      }
+    }
+  }
+}

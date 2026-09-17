@@ -1,0 +1,49 @@
+{
+  "id": "B44",
+  "code": "B44",
+  "state": "imported",
+  "created_on": "2026-09-16",
+  "proposal": {
+    "code": "B44",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+    "scenario_id": "b44_car_scenario",
+    "scenario": "Ordinary car on mountain road after snow-covered section, mostly clear dark asphalt with snow on verges and mountains. Prominent ROUND BLUE sign with WHITE tyre and snow-chain pattern crossed by RED diagonal rising lower-left to upper-right, matching B44. No other signs or stopping car, clear safe carriageway.",
+    "novelty_review": "End of signed snow-chain obligation, distinct from B26 equipment requirement at entry.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. Ordinary car on mountain road after snow-covered section, mostly clear dark asphalt with snow on verges and mountains. Prominent ROUND BLUE sign with WHITE tyre and snow-chain pattern crossed by RED diagonal rising lower-left to upper-right, matching B44. No other signs or stopping car, clear safe carriageway. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+    "question": {
+      "key": "situation_b44_car_scenario",
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Quelle obligation prend fin à ce panneau ?",
+          "answer_a": "L’obligation de porter la ceinture.",
+          "answer_b": "L’obligation d’utiliser les chaînes à neige signalée auparavant.",
+          "answer_c": "L’obligation de respecter les limitations de vitesse.",
+          "answer_d": "L’obligation de tenir ma droite.",
+          "explanation": "Le panneau B44 met fin à l’obligation d’utiliser les chaînes à neige précédemment signalée. Je reste attentif à l’adhérence et, si je dois modifier mon équipement, je m’arrête dans un endroit sûr sans gêner la circulation."
+        },
+        "en": {
+          "question_text": "Which requirement ends at this sign?",
+          "answer_a": "The requirement to wear a seat belt.",
+          "answer_b": "The previously signed requirement to use snow chains.",
+          "answer_c": "The requirement to obey speed limits.",
+          "answer_d": "The requirement to keep right.",
+          "explanation": "Sign B44 ends the previously signed requirement to use snow chains. I still consider road grip and, if I need to change equipment, stop in a safe place without obstructing traffic."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/B44/scene.jpg",
+  "image_sha256": "9ffe3774c9fcfc3d6affa1d0ce6d4a53699dd646b3a50758b95346a7c4e3f2d8",
+  "review_note": "Actual image reviewed: round blue chained tyre with ascending red cancellation slash, clear asphalt with snow on verges. B only ends signed chain requirement; explanations retain grip awareness and safe equipment-changing location.",
+  "reviewed_sha256": "1d910a67d2eee8c876bf08bd7234120dbe66afceb9681aac4425afcd97a40873",
+  "question_key": "situation_b44_car_scenario",
+  "imported_content_version": 63,
+  "imported_on": "2026-09-16"
+}

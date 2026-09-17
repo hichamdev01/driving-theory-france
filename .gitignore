@@ -50,3 +50,6 @@ fastlane/test_output
 # Editor
 .vscode/
 .idea/
+
+# Generated content-authoring cards and OCR working reports
+tmp/content-authoring/

@@ -1,0 +1,3 @@
+# B45 — accepted viewpoint correction
+
+Correct this scene for a French passenger-car driving quiz. Move camera/learner car clearly ONE FULL LANE LEFT, into the ordinary general-traffic lane behind the dark car. The red bus lane must lie wholly to the RIGHT of our car, with its left boundary visible on the RIGHT side of the frame, not beneath our viewpoint. Keep the correct round blue white-bus sign crossed by ascending red bar on far-right roadside. Keep same natural daylight, avenue and end of bus-lane zone. Beyond sign bus lane becomes ordinary lane. Do not add any text, signs or quiz overlay.

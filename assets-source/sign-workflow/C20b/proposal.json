@@ -1,0 +1,36 @@
+{
+  "code": "C20b",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+  "scenario_id": "c20b_car_scenario",
+  "scenario": "Ordinary French car approaching a perpendicular dedicated BUS road crossing a suburban street. Prominent BLUE SQUARE sign with WHITE upright triangle containing BLACK BUS SIDE silhouette, matching C20b reference. Empty bus crossing visible ahead, no rails, no bus stop shelter, no other signs. No bus actively crossing, no priority claim.",
+  "novelty_review": "Crossing a dedicated regular bus route, distinct from bus-lane use, bus stop or tram crossing.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. Ordinary French car approaching a perpendicular dedicated BUS road crossing a suburban street. Prominent BLUE SQUARE sign with WHITE upright triangle containing BLACK BUS SIDE silhouette, matching C20b reference. Empty bus crossing visible ahead, no rails, no bus stop shelter, no other signs. No bus actively crossing, no priority claim. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+  "question": {
+    "key": "situation_c20b_car_scenario",
+    "category_slug": "road_signs",
+    "correct_answer": "c",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Quel aménagement ce panneau signale-t-il ?",
+        "answer_a": "Une place de stationnement pour ma voiture.",
+        "answer_b": "Un arrêt de bus où je peux attendre.",
+        "answer_c": "La traversée d’une voie de transports en commun réguliers.",
+        "answer_d": "Une voie de tramway parallèle à ma route.",
+        "explanation": "Le panneau C20b indique la traversée d’une voie utilisée par des transports en commun réguliers. Je surveille les véhicules susceptibles de la traverser et respecte la signalisation de priorité présente sur les lieux."
+      },
+      "en": {
+        "question_text": "What does this sign identify?",
+        "answer_a": "A parking space for my car.",
+        "answer_b": "A bus stop where I may wait.",
+        "answer_c": "A crossing of a route used by regular public transport.",
+        "answer_d": "A tram lane running parallel to my road.",
+        "explanation": "Sign C20b identifies a crossing of a route used by regular public transport. I watch for vehicles that may cross and follow the priority signs and signals at the location."
+      }
+    }
+  }
+}

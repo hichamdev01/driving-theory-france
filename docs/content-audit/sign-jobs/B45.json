@@ -1,0 +1,49 @@
+{
+  "id": "B45",
+  "code": "B45",
+  "state": "imported",
+  "created_on": "2026-09-16",
+  "proposal": {
+    "code": "B45",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+    "scenario_id": "b45_car_scenario",
+    "scenario": "French town avenue, learner in ordinary car lane to left of a bus lane. At point where bus lane restriction ends, right-side round BLUE sign with WHITE BUS crossed by ascending RED diagonal as reference. Beyond sign ordinary white broken lane separator, no BUS lettering past sign. No bus stop, intersection or other signs.",
+    "novelty_review": "End of bus-lane reservation, distinct from C6 entry prohibition and bus stop marking.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. French town avenue, learner in ordinary car lane to left of a bus lane. At point where bus lane restriction ends, right-side round BLUE sign with WHITE BUS crossed by ascending RED diagonal as reference. Beyond sign ordinary white broken lane separator, no BUS lettering past sign. No bus stop, intersection or other signs. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+    "question": {
+      "key": "situation_b45_car_scenario",
+      "category_slug": "road_signs",
+      "correct_answer": "c",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Que signifie le panneau barré placé au bord de cette voie ?",
+          "answer_a": "Le début d’une voie réservée aux autobus.",
+          "answer_b": "L’interdiction de dépasser tous les véhicules.",
+          "answer_c": "La fin de la voie réservée aux transports en commun réguliers.",
+          "answer_d": "L’obligation de m’arrêter pour laisser monter des passagers.",
+          "explanation": "Le panneau B45 marque la fin de la voie réservée aux services réguliers de transport en commun et de la limitation de vitesse qui lui est associée. Un changement de voie reste soumis aux contrôles et aux règles habituelles."
+        },
+        "en": {
+          "question_text": "What does the crossed-out sign beside this lane mean?",
+          "answer_a": "The start of a bus-only lane.",
+          "answer_b": "A ban on overtaking all vehicles.",
+          "answer_c": "The end of the lane reserved for regular public transport services.",
+          "answer_d": "I must stop to pick up passengers.",
+          "explanation": "Sign B45 ends the lane reserved for regular public transport services and its associated speed limit. Any lane change still requires the usual checks and compliance with traffic rules."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/B45/scene.jpg",
+  "image_sha256": "3c79e9ff5e56af7188407d3207ada3c7f981367f432af7933e87bcb2c7632675",
+  "review_note": "Actual corrected image reviewed: learner viewpoint moved left of bus-lane boundary into general traffic. Round blue white bus with ascending red cancellation bar preserved; no BUS marking beyond sign. C only identifies end of reservation, with usual lane-change checks in both languages. Initial ambiguous viewpoint rejected.",
+  "reviewed_sha256": "9bbf391ae81fed977fb3b09d3ac6cb1a63ba0d431d3c81755d29634d30291b4a",
+  "question_key": "situation_b45_car_scenario",
+  "imported_content_version": 64,
+  "imported_on": "2026-09-16"
+}

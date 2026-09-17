@@ -1,0 +1,36 @@
+{
+  "code": "B17",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives an ordinary passenger car. This sign affects that car driver directly; no specialist vehicle operation is taught.",
+  "scenario_id": "b17_minimum_gap_70m",
+  "scenario": "Rural open two-way road with fields, normal car roughly 90 metres ahead in our lane, clear visibility. On our right verge a ROUND WHITE sign with thick RED rim, black text \"70 m\", two small black car silhouettes facing each other beneath the number, exactly matching the reference B17. No measurements or arrows drawn on the road.",
+  "novelty_review": "Numeric prescribed minimum spacing instead of the existing general two-second following rule; no B17-linked situation exists.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B quiz photo, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, a small portion of dashboard/steering rim along bottom, right-hand traffic. Natural daylight, realistic scale and perspective, neutral exposure, no cinematic grading. The supplied image is ONLY a verified sign pictogram reference, not a scene to edit: reproduce its exact shape, colours, symbol and inscriptions on one realistic roadside sign. Rural open two-way road with fields, normal car roughly 90 metres ahead in our lane, clear visibility. On our right verge a ROUND WHITE sign with thick RED rim, black text \"70 m\", two small black car silhouettes facing each other beneath the number, exactly matching the reference B17. No measurements or arrows drawn on the road. No quiz panel, no question text, no answer choices, no answer hints, no watermark, no unrelated signage. All text mentioned above belongs only on the physical sign. Keep the scene focused on one learning objective, with enough space to respond safely.",
+  "question": {
+    "key": "situation_b17_minimum_gap_70m",
+    "category_slug": "road_signs",
+    "correct_answer": "c",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Quel intervalle minimal ce panneau m’impose-t-il avec le véhicule qui me précède ?",
+        "answer_a": "7 mètres.",
+        "answer_b": "30 mètres.",
+        "answer_c": "70 mètres au minimum.",
+        "answer_d": "Aucun intervalle si la chaussée est sèche.",
+        "explanation": "Le panneau B17 impose un intervalle au moins égal à la valeur indiquée, ici 70 m. Je garde donc au minimum cette distance avec le véhicule devant moi et je l’augmente si la vitesse, la météo ou la visibilité l’exigent."
+      },
+      "en": {
+        "question_text": "What minimum gap does this sign require between my car and the vehicle ahead?",
+        "answer_a": "7 metres.",
+        "answer_b": "30 metres.",
+        "answer_c": "At least 70 metres.",
+        "answer_d": "No gap if the road is dry.",
+        "explanation": "Sign B17 requires a gap at least as large as the displayed distance, here 70 m. I therefore keep at least this distance from the vehicle ahead and increase it when speed, weather or visibility require more."
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "code": "C29a",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+  "scenario_id": "c29a_car_scenario",
+  "scenario": "Ordinary car on French rural two-way road approaching distant start of divided overtaking section with central separation visible far ahead. Prominent SQUARE BLUE sign on right with FOUR white vertical arrows: TWO on LEFT pointing DOWN toward viewer, TWO on RIGHT pointing UP away. Exact supplied C29a reference; car stays right, no immediate overtaking, no other signs.",
+  "novelty_review": "Advance notice of divided overtaking section and meaning of opposite-facing arrows, distinct from existing no-overtaking and motorway-entry questions.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. Ordinary car on French rural two-way road approaching distant start of divided overtaking section with central separation visible far ahead. Prominent SQUARE BLUE sign on right with FOUR white vertical arrows: TWO on LEFT pointing DOWN toward viewer, TWO on RIGHT pointing UP away. Exact supplied C29a reference; car stays right, no immediate overtaking, no other signs. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+  "question": {
+    "key": "situation_c29a_car_scenario",
+    "category_slug": "road_signs",
+    "correct_answer": "b",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Que m’annonce ce panneau avant l’aménagement visible plus loin ?",
+        "answer_a": "Une route entièrement à sens unique.",
+        "answer_b": "Un créneau de dépassement ou une section à chaussées séparées.",
+        "answer_c": "L’obligation de dépasser le prochain véhicule.",
+        "answer_d": "Une interdiction de circuler en voiture.",
+        "explanation": "Le panneau C29a présignale un créneau de dépassement ou une section à chaussées séparées. Les flèches opposées représentent les deux sens de circulation ; je reste à droite et n’entreprends un dépassement que si les conditions le permettent."
+      },
+      "en": {
+        "question_text": "What does this sign announce before the road layout farther ahead?",
+        "answer_a": "A road that is entirely one-way.",
+        "answer_b": "An overtaking section or a divided-road section.",
+        "answer_c": "An obligation to overtake the next vehicle.",
+        "answer_d": "A prohibition on driving a car.",
+        "explanation": "Sign C29a gives advance notice of an overtaking section or a divided-road section. Opposing arrows represent the two traffic directions; I keep right and overtake only when conditions permit."
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "B49",
+  "code": "B49",
+  "state": "imported",
+  "created_on": "2026-09-16",
+  "proposal": {
+    "code": "B49",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Learner drives an ordinary passenger car; the question concerns the car driver’s lighting, access, route interpretation or parking decision, not operating another vehicle type.",
+    "scenario_id": "b49_car_interpretation",
+    "scenario": "Ordinary car on French countryside road leaving a shaded wooded area in daylight. Prominent ROUND BLUE sign on right with exact WHITE text on four centered lines: FIN / D’ALLUMAGE / DES / FEUX, as supplied B49 reference. NO red diagonal, no speed number, no tunnel or motorway icons. Road continues safely.",
+    "novelty_review": "End of a written lighting obligation while conditions can still require lights, distinct from tunnel exit C112.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B quiz photograph, wide landscape preferably 2048x1152. View from ordinary LEFT-HAND-DRIVE passenger car, dashboard rim along bottom, right-hand traffic. Natural daylight and realistic proportions. Input image is only a sign pictogram REFERENCE, not a scene to edit. Reproduce its exact shape, colours, arrows and specified inscription on a prominent readable sign. Ordinary car on French countryside road leaving a shaded wooded area in daylight. Prominent ROUND BLUE sign on right with exact WHITE text on four centered lines: FIN / D’ALLUMAGE / DES / FEUX, as supplied B49 reference. NO red diagonal, no speed number, no tunnel or motorway icons. Road continues safely. No question, answer choices, answer hints, quiz layout, watermark or unrelated signs. Preserve safe approach distance and clear road geometry.",
+    "question": {
+      "key": "situation_b49_car_interpretation",
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Que signifie l’inscription « FIN D’ALLUMAGE DES FEUX » ?",
+          "answer_a": "Je dois couper mes feux quelles que soient les conditions.",
+          "answer_b": "L’obligation locale d’allumage précédemment signalée prend fin.",
+          "answer_c": "Je dois allumer les feux de détresse.",
+          "answer_d": "Toutes les règles d’éclairage cessent de s’appliquer.",
+          "explanation": "Le panneau B49 met fin à l’obligation locale indiquée. Les règles générales d’éclairage restent applicables : si la visibilité ou les conditions l’exigent, je conserve les feux nécessaires."
+        },
+        "en": {
+          "question_text": "What does the wording “FIN D’ALLUMAGE DES FEUX” mean?",
+          "answer_a": "I must switch off my lights whatever the conditions.",
+          "answer_b": "The previously signed local requirement to use lights ends.",
+          "answer_c": "I must switch on the hazard warning lights.",
+          "answer_d": "All lighting rules cease to apply.",
+          "explanation": "Sign B49 ends the indicated local requirement. General lighting rules still apply: if visibility or conditions require lighting, I keep the necessary lights on."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/B49/scene.jpg",
+  "image_sha256": "e3595124561d655a66059b7a4bce00dad63fc97b40617d2e8c543985202b14d8",
+  "review_note": "Actual image reviewed: round blue text-only FIN D’ALLUMAGE DES FEUX matches reference, visible in daytime at woodland exit. B only ends local obligation; both explanations retain lighting required by conditions, no command to switch off unconditionally.",
+  "reviewed_sha256": "0dc3dcce8c84b185a0c93aaed7ba14069ebd29b4ba53800d1a7c83f6e98383ad",
+  "question_key": "situation_b49_car_interpretation",
+  "imported_content_version": 79,
+  "imported_on": "2026-09-16"
+}

@@ -1,0 +1,36 @@
+{
+  "code": "B21d1",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+  "scenario_id": "b21d1_car_scenario",
+  "scenario": "Approach to ordinary suburban four-way intersection in France, visible straight continuation and right and left branches. Round blue sign on right before junction has a WHITE vertical upward arrow with a second arrow branching horizontally RIGHT, matching reference. No other directional signs, no traffic signals, car remains well before junction.",
+  "novelty_review": "Two permitted directions including straight, not existing single mandatory straight or single turn.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. Approach to ordinary suburban four-way intersection in France, visible straight continuation and right and left branches. Round blue sign on right before junction has a WHITE vertical upward arrow with a second arrow branching horizontally RIGHT, matching reference. No other directional signs, no traffic signals, car remains well before junction. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+  "question": {
+    "key": "situation_b21d1_car_scenario",
+    "category_slug": "road_signs",
+    "correct_answer": "b",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Quelles directions ce panneau autorise-t-il à la prochaine intersection ?",
+        "answer_a": "Tout droit ou à gauche.",
+        "answer_b": "Tout droit ou à droite.",
+        "answer_c": "Uniquement à droite.",
+        "answer_d": "À droite ou à gauche.",
+        "explanation": "Le panneau B21d1 permet de continuer tout droit ou de tourner à droite à la prochaine intersection. Tourner à gauche ne fait pas partie des directions indiquées ; je prépare la manœuvre choisie sans oublier la priorité."
+      },
+      "en": {
+        "question_text": "Which directions does this sign permit at the next intersection?",
+        "answer_a": "Straight ahead or left.",
+        "answer_b": "Straight ahead or right.",
+        "answer_c": "Right only.",
+        "answer_d": "Right or left.",
+        "explanation": "Sign B21d1 permits continuing straight ahead or turning right at the next intersection. A left turn is not among the indicated directions; I prepare my chosen manoeuvre while observing priority rules."
+      }
+    }
+  }
+}

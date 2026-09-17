@@ -1,0 +1,36 @@
+{
+  "code": "B43",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives an ordinary passenger car. This sign affects that car driver directly; no specialist vehicle operation is taught.",
+  "scenario_id": "b43_end_minimum_30",
+  "scenario": "Normal French road leaving a short smoothly graded controlled stretch and continuing into open countryside, light traffic with no immediate hazards or junction. On right verge ROUND BLUE sign bearing WHITE number \"30\" crossed by thick RED DIAGONAL rising bottom-left to top-right, exactly B43. It must be circular, not square, and has no red circular perimeter. No other signs, no speed text overlays.",
+  "novelty_review": "Existing B25 asks whether driving below a minimum is allowed before its end. This asks what the explicit end-of-minimum sign cancels, unlike B33 maximum-speed cancellation.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B quiz photo, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, a small portion of dashboard/steering rim along bottom, right-hand traffic. Natural daylight, realistic scale and perspective, neutral exposure, no cinematic grading. The supplied image is ONLY a verified sign pictogram reference, not a scene to edit: reproduce its exact shape, colours, symbol and inscriptions on one realistic roadside sign. Normal French road leaving a short smoothly graded controlled stretch and continuing into open countryside, light traffic with no immediate hazards or junction. On right verge ROUND BLUE sign bearing WHITE number \"30\" crossed by thick RED DIAGONAL rising bottom-left to top-right, exactly B43. It must be circular, not square, and has no red circular perimeter. No other signs, no speed text overlays. No quiz panel, no question text, no answer choices, no answer hints, no watermark, no unrelated signage. All text mentioned above belongs only on the physical sign. Keep the scene focused on one learning objective, with enough space to respond safely.",
+  "question": {
+    "key": "situation_b43_end_minimum_30",
+    "category_slug": "speed_limits",
+    "correct_answer": "d",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Quelle obligation prend fin à partir de ce panneau ?",
+        "answer_a": "L’obligation de rester sous 30 km/h.",
+        "answer_b": "L’obligation de céder le passage.",
+        "answer_c": "L’interdiction de dépasser.",
+        "answer_d": "L’obligation de circuler à au moins 30 km/h.",
+        "explanation": "Le panneau B43 met fin à la vitesse minimale obligatoire indiquée, ici 30 km/h. Il ne crée pas une nouvelle limitation maximale et ne signifie pas que toute allure convient : je respecte les autres règles et adapte ma vitesse à la situation."
+      },
+      "en": {
+        "question_text": "Which requirement ends from this sign onwards?",
+        "answer_a": "The requirement to stay below 30 km/h.",
+        "answer_b": "The requirement to give way.",
+        "answer_c": "The prohibition on overtaking.",
+        "answer_d": "The requirement to travel at at least 30 km/h.",
+        "explanation": "Sign B43 ends the indicated mandatory minimum speed, here 30 km/h. It does not introduce a new maximum speed or mean that any speed is suitable: I obey the other rules and adapt my speed to the situation."
+      }
+    }
+  }
+}

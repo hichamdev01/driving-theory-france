@@ -1,0 +1,24 @@
+{
+  "content_version": 88,
+  "active_questions": 378,
+  "new_questions_verified": 30,
+  "translations_verified": 60,
+  "new_images_verified": 30,
+  "category_counts": {
+    "alcohol_drugs": 36,
+    "motorways": 27,
+    "overtaking": 34,
+    "parking_stopping": 33,
+    "priority_rules": 37,
+    "road_signs": 116,
+    "safety": 62,
+    "speed_limits": 33
+  },
+  "python_tests_passed": 27,
+  "ios_tests_passed": 26,
+  "registry_verified": true,
+  "reimport": "already_imported, no writes or version bump",
+  "previous_questions_unchanged": 348,
+  "git_diff_check": "passed",
+  "git_commit_or_push": false
+}

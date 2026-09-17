@@ -1,0 +1,49 @@
+{
+  "sequence": 17,
+  "scenario_id": "overtake_too_little_speed_difference",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Écart de vitesse insuffisant",
+  "references": [
+    "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000006842214"
+  ],
+  "novelty_review": "Relative speed makes passing too prolonged, distinct from visibility or return gap.",
+  "scenario": "Driver POV straight French rural two-way road with broken centre line; white car well ahead in our right lane at similar speed. Long clear view, no oncoming traffic. Dry daylight, no signs or speedometer.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV straight French rural two-way road with broken centre line; white car well ahead in our right lane at similar speed. Long clear view, no oncoming traffic. Dry daylight, no signs or speedometer. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_overtake_too_little_speed_difference",
+    "category_slug": "overtaking",
+    "correct_answer": "a",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "La voiture devant roule presque à ma vitesse. Même à la limite autorisée, mon dépassement serait très long. Que faire ?",
+        "answer_a": "Renoncer et conserver une distance suffisante.",
+        "answer_b": "Dépasser car la route est droite.",
+        "answer_c": "Dépasser la limite pour gagner du temps.",
+        "answer_d": "Coller la voiture avant de me déporter.",
+        "explanation": "Il faut un écart de vitesse permettant un dépassement suffisamment bref. Si cet écart est trop faible dans la limite autorisée, je reste derrière à bonne distance."
+      },
+      "en": {
+        "question_text": "The car ahead travels almost as fast as me. Even at the speed limit, overtaking would take a long time. What should I do?",
+        "answer_a": "Abandon the manoeuvre and keep a safe gap.",
+        "answer_b": "Overtake because the road is straight.",
+        "answer_c": "Exceed the limit to save time.",
+        "answer_d": "Tailgate before pulling out.",
+        "explanation": "Overtaking requires enough relative speed for a sufficiently brief manoeuvre. If that difference is too small within the limit, I stay behind at a safe distance."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/overtake_too_little_speed_difference/scene.jpg",
+  "image_sha256": "b8dfa3849314afa0ed30b7e826febcd25641a669a2200e4fd8ed2d632cb426c8",
+  "native_image_sha256": "003e11505f503b4217e0e6d12092597d9301d3bd33d2895ce8c60dc71562290c",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-ac21a728-261f-4857-9784-e38d2fa027e7.png",
+  "visual_review": "Clear rural two-way road with lead car; speed difference is stated in question because still photography cannot establish relative speeds.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "6e3130e1bd7f16cbe524d7d34a411caec460472581730c7568216b80d2966910",
+  "question_key": "situation_overtake_too_little_speed_difference",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

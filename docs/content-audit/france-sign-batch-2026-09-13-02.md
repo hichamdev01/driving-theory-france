@@ -1,0 +1,20 @@
+# French car-sign batch 2 — 13 September 2026
+
+Ten images generated with the built-in image-generation tool and visually reviewed against sign references. Each image has its own French and English question, four distinct answer choices, one correct answer and an explanation. All 308 previous questions are unchanged; the pack now contains 318 questions at content version 57.
+
+| Code | Category | Image | Prompt | Question and options | Review receipt |
+| --- | --- | --- | --- | --- | --- |
+| B7b | road_signs | [Image](../../TheoryPrep/Resources/Content/france/images/situation_b7b_car_sign_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/B7b/prompt.md) | [Question](../../assets-source/sign-workflow/B7b/proposal.json) | [Receipt](sign-jobs/B7b.json) |
+| B21a1 | road_signs | [Image](../../TheoryPrep/Resources/Content/france/images/situation_b21a1_car_sign_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/B21a1/prompt.md) | [Question](../../assets-source/sign-workflow/B21a1/proposal.json) | [Receipt](sign-jobs/B21a1.json) |
+| B22b | road_signs | [Image](../../TheoryPrep/Resources/Content/france/images/situation_b22b_car_sign_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/B22b/prompt.md) | [Question](../../assets-source/sign-workflow/B22b/proposal.json) | [Receipt](sign-jobs/B22b.json) |
+| C1c | parking_stopping | [Image](../../TheoryPrep/Resources/Content/france/images/situation_c1c_car_sign_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/C1c/prompt.md) | [Question](../../assets-source/sign-workflow/C1c/proposal.json) | [Receipt](sign-jobs/C1c.json) |
+| C108 | road_signs | [Image](../../TheoryPrep/Resources/Content/france/images/situation_c108_car_sign_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/C108/prompt.md) | [Question](../../assets-source/sign-workflow/C108/proposal.json) | [Receipt](sign-jobs/C108.json) |
+| C9 | parking_stopping | [Image](../../TheoryPrep/Resources/Content/france/images/situation_c9_car_sign_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/C9/prompt.md) | [Question](../../assets-source/sign-workflow/C9/proposal.json) | [Receipt](sign-jobs/C9.json) |
+| C62 | motorways | [Image](../../TheoryPrep/Resources/Content/france/images/situation_c62_car_sign_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/C62/prompt.md) | [Question](../../assets-source/sign-workflow/C62/proposal.json) | [Receipt](sign-jobs/C62.json) |
+| B35 | road_signs | [Image](../../TheoryPrep/Resources/Content/france/images/situation_b35_car_sign_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/B35/prompt.md) | [Question](../../assets-source/sign-workflow/B35/proposal.json) | [Receipt](sign-jobs/B35.json) |
+| C64d | motorways | [Image](../../TheoryPrep/Resources/Content/france/images/situation_c64d_car_sign_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/C64d/prompt.md) | [Question](../../assets-source/sign-workflow/C64d/proposal.json) | [Receipt](sign-jobs/C64d.json) |
+| B4 | road_signs | [Image](../../TheoryPrep/Resources/Content/france/images/situation_b4_car_sign_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/B4/prompt.md) | [Question](../../assets-source/sign-workflow/B4/proposal.json) | [Receipt](sign-jobs/B4.json) |
+
+Every receipt binds the reviewed proposal and image by hash. Retrying all ten imports returned `already_imported` without changing the content pack or version. Source references and review notes are retained in the source audit.
+
+Validation: all 27 Python workflow/registry tests and all 26 iOS simulator tests passed. Registry verification and `git diff --check` passed. Installed and launched the tested build; read-only SQLite checks confirmed version 57, 318 active questions, and all ten additions exactly once in their expected categories. Both language records, all four options, correct answer and explanation match each reviewed proposal. No commit or push performed.

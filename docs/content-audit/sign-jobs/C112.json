@@ -1,0 +1,49 @@
+{
+  "id": "C112",
+  "code": "C112",
+  "state": "imported",
+  "created_on": "2026-09-13",
+  "proposal": {
+    "code": "C112",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Learner drives an ordinary passenger car. This sign affects that car driver directly; no specialist vehicle operation is taught.",
+    "scenario_id": "c112_tunnel_exit",
+    "scenario": "Passenger-car driver view at the very end of a short French two-way road tunnel, heading out into natural daylight and green countryside. Small part of tunnel ceiling/top edge and side wall still frames the viewpoint; clear road continues OUT ahead. On our right just OUTSIDE the exit a BLUE SQUARE sign with WHITE TUNNEL ARCH pictogram crossed by a RED DIAGONAL rising bottom-left to top-right, precisely C112 from supplied reference. The icon is a rounded masonry tunnel arch, never a motorway overpass symbol. No other signs, no text overlay, realistic daylight exposure.",
+    "novelty_review": "Existing C111 teaches tunnel entry and dipped headlights; C208 teaches end of motorway. This is a dedicated C112 tunnel-exit interpretation with continuing ordinary driving rules.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B quiz photo, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, a small portion of dashboard/steering rim along bottom, right-hand traffic. Natural daylight, realistic scale and perspective, neutral exposure, no cinematic grading. The supplied image is ONLY a verified sign pictogram reference, not a scene to edit: reproduce its exact shape, colours, symbol and inscriptions on one realistic roadside sign. Passenger-car driver view at the very end of a short French two-way road tunnel, heading out into natural daylight and green countryside. Small part of tunnel ceiling/top edge and side wall still frames the viewpoint; clear road continues OUT ahead. On our right just OUTSIDE the exit a BLUE SQUARE sign with WHITE TUNNEL ARCH pictogram crossed by a RED DIAGONAL rising bottom-left to top-right, precisely C112 from supplied reference. The icon is a rounded masonry tunnel arch, never a motorway overpass symbol. No other signs, no text overlay, realistic daylight exposure. No quiz panel, no question text, no answer choices, no answer hints, no watermark, no unrelated signage. All text mentioned above belongs only on the physical sign. Keep the scene focused on one learning objective, with enough space to respond safely.",
+    "question": {
+      "key": "situation_c112_tunnel_exit",
+      "category_slug": "safety",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Quelle indication donne ce panneau à la sortie de l’ouvrage ?",
+          "answer_a": "La fin du tunnel et des prescriptions propres à son entrée.",
+          "answer_b": "Le début d’une autoroute.",
+          "answer_c": "L’entrée d’un nouveau tunnel.",
+          "answer_d": "L’interdiction de circuler en voiture.",
+          "explanation": "Le panneau C112 signale la sortie du tunnel et la fin des prescriptions liées au panneau d’entrée C111. Les autres règles restent applicables : je garde une allure adaptée et utilise l’éclairage nécessaire aux conditions rencontrées à l’extérieur."
+        },
+        "en": {
+          "question_text": "What does this sign indicate as I leave the structure?",
+          "answer_a": "The end of the tunnel and of the requirements associated with its entrance.",
+          "answer_b": "The start of a motorway.",
+          "answer_c": "Entry to another tunnel.",
+          "answer_d": "A prohibition on driving a car.",
+          "explanation": "Sign C112 marks the tunnel exit and the end of the requirements associated with entry sign C111. Other rules still apply: I keep an appropriate speed and use the lights needed for the conditions outside."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/C112/scene.jpg",
+  "image_sha256": "e809d68208e3084c90109825a29859cc9efc201ab7e9e942e35bdaacf4f77bfd",
+  "review_note": "Actual image reviewed: square blue tunnel arch crossed by ascending red bar placed at a real tunnel exit into daylight. No motorway-end symbol. Both languages identify the end of tunnel-specific requirements while preserving other speed and lighting obligations; answer A only.",
+  "reviewed_sha256": "3818ad44daf3884ebed850c7ee41b6252b340cdd2ddc245d7c0f12f90b5452b3",
+  "question_key": "situation_c112_tunnel_exit",
+  "imported_content_version": 47,
+  "imported_on": "2026-09-13"
+}

@@ -1,0 +1,49 @@
+{
+  "sequence": 4,
+  "scenario_id": "motorway_sos_location",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Localisation par la borne d’appel",
+  "references": [
+    "https://www.autoroutes.fr/fr/que-faire-en-cas-de-panne.htm"
+  ],
+  "novelty_review": "Emergency-call point locates breakdown automatically, distinct from evacuation and approved recovery rules.",
+  "scenario": "Eye-level photo from safe grass BEHIND motorway crash barrier. Ordinary car with hazard lights safely stopped beyond barrier on hard shoulder in background. Foreground orange French emergency call column showing only 'SOS', speaker grille and one call button; high-visibility vest adult stands entirely behind barrier beside it. No injury.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Eye-level photo from safe grass BEHIND motorway crash barrier. Ordinary car with hazard lights safely stopped beyond barrier on hard shoulder in background. Foreground orange French emergency call column showing only 'SOS', speaker grille and one call button; high-visibility vest adult stands entirely behind barrier beside it. No injury. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_motorway_sos_location",
+    "category_slug": "motorways",
+    "correct_answer": "d",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Après une panne, je suis à l’abri et une borne SOS est accessible sans danger. Quel est son principal avantage pour l’alerte ?",
+        "answer_a": "Elle répare automatiquement la voiture.",
+        "answer_b": "Elle réserve une voie pour mon véhicule.",
+        "answer_c": "Elle dispense de rester à l’abri.",
+        "answer_d": "Elle relie au service autoroutier qui peut localiser la borne.",
+        "explanation": "La borne d’appel met en relation avec le service de surveillance de l’autoroute et permet de situer l’appel. Je la rejoins seulement par un chemin sûr derrière la glissière, sans traverser les voies."
+      },
+      "en": {
+        "question_text": "After a breakdown, I am safe and can reach an SOS call point without danger. What is its main advantage?",
+        "answer_a": "It automatically repairs the car.",
+        "answer_b": "It reserves a lane for my vehicle.",
+        "answer_c": "It removes the need to stay protected.",
+        "answer_d": "It connects to motorway control, which can locate the call point.",
+        "explanation": "The call point connects to motorway control and identifies the call location. I reach it only by a safe route behind the barrier, without crossing traffic lanes."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/motorway_sos_location/scene.jpg",
+  "image_sha256": "ae67154ca407788c5b88d484b8513169d37523c9276fb68ddb25c6f39572fd9e",
+  "native_image_sha256": "0a6dbc894d30a7ee8cd56b8bdeaa46487c692e22bcb1e8e47cd8ec489fd58126",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-12eeef40-3321-435f-a947-df415128361c.png",
+  "visual_review": "Reviewed: ordinary car stopped beyond guardrail with amber hazards; adult wearing vest fully behind barrier using orange SOS call point. D only identifies contact/location benefit; safe-access qualification and four choices checked in FR/EN.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "13305aef0bc9de0629fbaf1937a8ab88e6c0191638b817a36a6f69fe0fae1df3",
+  "question_key": "situation_motorway_sos_location",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

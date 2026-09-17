@@ -1,0 +1,36 @@
+{
+  "code": "SR4",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+  "scenario_id": "sr4_car_scenario",
+  "scenario": "Ordinary car on French motorway, rightmost lane, guardrails, light daylight traffic. Prominent HORIZONTAL RECTANGULAR roadside sign dark grey background pale border with EXACT white centered text on three lines: pour votre sécurité / autoroute sous / vidéoprotection. Match supplied SR4 reference. No camera/radar pictogram and no speed number, no other readable signs.",
+  "novelty_review": "Road-operator video protection for safety/traffic management, distinct from automatic speed radar sign.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. Ordinary car on French motorway, rightmost lane, guardrails, light daylight traffic. Prominent HORIZONTAL RECTANGULAR roadside sign dark grey background pale border with EXACT white centered text on three lines: pour votre sécurité / autoroute sous / vidéoprotection. Match supplied SR4 reference. No camera/radar pictogram and no speed number, no other readable signs. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+  "question": {
+    "key": "situation_sr4_car_scenario",
+    "category_slug": "road_signs",
+    "correct_answer": "d",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Quelle information ce panneau donne-t-il ?",
+        "answer_a": "Une limitation de vitesse à 50 km/h.",
+        "answer_b": "Une voie réservée au covoiturage.",
+        "answer_c": "L’obligation d’installer une caméra dans ma voiture.",
+        "answer_d": "La présence d’une zone sous vidéoprotection.",
+        "explanation": "Le panneau SR4 annonce une zone placée sous vidéoprotection par le gestionnaire de la route pour la sécurité et la gestion du trafic. Il ne remplace pas les limitations de vitesse ni les autres règles que je dois respecter."
+      },
+      "en": {
+        "question_text": "What information does this sign give?",
+        "answer_a": "A 50 km/h speed limit.",
+        "answer_b": "A lane reserved for carpooling.",
+        "answer_c": "An obligation to install a camera in my car.",
+        "answer_d": "The presence of a zone covered by video protection.",
+        "explanation": "Sign SR4 announces road-operator video protection for safety and traffic management. It does not replace speed limits or the other rules I must follow."
+      }
+    }
+  }
+}

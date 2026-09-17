@@ -1,0 +1,50 @@
+{
+  "sequence": 11,
+  "scenario_id": "speed_unjustified_slow_sightseeing",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Lenteur anormale sans raison valable",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177129/"
+  ],
+  "novelty_review": "Unjustified obstruction by very slow sightseeing, separate from left motorway lane 80 minimum.",
+  "scenario": "Driver POV on dry wide clear French rural two-way road, countryside scenic valley, perfectly good visibility, no hazards. Main view empty ahead, large central rearview mirror clearly shows queue of three cars behind learner at safe gaps. No speed labels or signs.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV on dry wide clear French rural two-way road, countryside scenic valley, perfectly good visibility, no hazards. Main view empty ahead, large central rearview mirror clearly shows queue of three cars behind learner at safe gaps. No speed labels or signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_speed_unjustified_slow_sightseeing",
+    "category_slug": "speed_limits",
+    "correct_answer": "c",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Sans difficulté ni danger particulier, je roule très lentement pour admirer le paysage et je retiens une file. Est-ce adapté ?",
+        "answer_a": "Oui, rouler le plus lentement possible est toujours plus sûr.",
+        "answer_b": "Oui, si j’allume mes feux de détresse.",
+        "answer_c": "Non, je ne dois pas gêner sans raison valable ; je m’arrête dans un lieu autorisé pour regarder.",
+        "answer_d": "Non, je dois dépasser immédiatement la limite autorisée.",
+        "explanation": "Il est interdit de gêner la circulation par une vitesse anormalement réduite sans raison valable. Je retrouve une allure adaptée dans la limite autorisée ou je stationne en sécurité pour profiter du paysage."
+      },
+      "en": {
+        "question_text": "With no particular hazard or difficulty, I drive very slowly to admire the scenery and hold up a queue. Is that appropriate?",
+        "answer_a": "Yes, driving as slowly as possible is always safer.",
+        "answer_b": "Yes, if I use hazard lights.",
+        "answer_c": "No, I must not obstruct without good reason; I stop somewhere permitted to look.",
+        "answer_d": "No, I must immediately exceed the speed limit.",
+        "explanation": "Driving abnormally slowly without good reason must not obstruct normal traffic. I resume an appropriate speed within the limit or park safely to enjoy the scenery."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/speed_unjustified_slow_sightseeing/scene.jpg",
+  "image_sha256": "7b58d2c75063e411e7476f7fa9a91cc3bad2fbeaff9f3e008fa3bd4de4b53203",
+  "native_image_sha256": "026d22f0f8e623e998677a3ce77a06326e3cdf8b78e6440ce8850cf250a3ca6c",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-17279112-a47a-4a08-924e-8e39ff4a097d.png",
+  "visual_review": "Queue visible in rear-view mirror on clear rural road. Removed misleading 70 km/h display; question explicitly establishes unjustifiably very slow sightseeing.",
+  "reviewed_on": "2026-09-16",
+  "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/speed_unjustified_slow_sightseeing/edit-prompt.md",
+  "reviewed_sha256": "5999ce39ff94ebe6704a070d1feeeba01875d0221c392e053cdc74a68210bd90",
+  "question_key": "situation_speed_unjustified_slow_sightseeing",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

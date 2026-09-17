@@ -1,0 +1,49 @@
+{
+  "sequence": 5,
+  "scenario_id": "motorway_toll_intercom_problem",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Incident au terminal de péage",
+  "references": [
+    "https://www.vinci-autoroutes.com/fr/conseils/securite/regles-securite-peage-autoroute/"
+  ],
+  "novelty_review": "Safe assistance when payment terminal fails, distinct from choosing payment lane or barrier validation.",
+  "scenario": "Close driver POV stopped at French toll payment terminal on LEFT beside driver window, red-white barrier DOWN across lane ahead, red toll light. Terminal has card slot, speaker grille and prominent round intercom button with small handset icon. No error text needed. No person walking between toll lanes.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Close driver POV stopped at French toll payment terminal on LEFT beside driver window, red-white barrier DOWN across lane ahead, red toll light. Terminal has card slot, speaker grille and prominent round intercom button with small handset icon. No error text needed. No person walking between toll lanes. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_motorway_toll_intercom_problem",
+    "category_slug": "motorways",
+    "correct_answer": "a",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Le terminal de péage ne fonctionne pas et la barrière reste fermée. Que dois-je faire ?",
+        "answer_a": "Utiliser l’interphone et attendre les consignes dans le véhicule.",
+        "answer_b": "Reculer dans la file pour changer de voie.",
+        "answer_c": "Descendre et traverser les voies jusqu’à une cabine.",
+        "answer_d": "Pousser la barrière avec la voiture.",
+        "explanation": "J’allume les feux de détresse si nécessaire pour prévenir les autres et j’utilise l’interphone côté conducteur. Un agent peut m’aider ; je ne recule pas dans la file et je ne traverse pas les voies à pied."
+      },
+      "en": {
+        "question_text": "The toll terminal is not working and the barrier stays closed. What should I do?",
+        "answer_a": "Use the intercom and wait for instructions in the vehicle.",
+        "answer_b": "Reverse through the queue to change lanes.",
+        "answer_c": "Get out and cross the lanes to a booth.",
+        "answer_d": "Push the barrier with the car.",
+        "explanation": "I use hazard lights if necessary to warn others and contact assistance through the driver's-side intercom. I do not reverse through the queue or walk across toll lanes."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/motorway_toll_intercom_problem/scene.jpg",
+  "image_sha256": "ab06f8abc1a2e20ffe69de21a3d566e5d197b1e505eb7f7b7fb069c9b42791f9",
+  "native_image_sha256": "49ae185e272ca2047ea57c02ccbed90bec7db20bacdc23c2f95a4023c525f8d5",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-56f3e416-71fb-411f-928e-b37cc7126aa5.png",
+  "visual_review": "Reviewed: stopped learner at closed toll barrier, red light and driver's-side intercom clearly shown. A alone requests safe assistance inside vehicle; four choices and explanations checked in FR/EN.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "0e46d486fa3064f44018bd19d3c25c70759f4042b20b6f9e47601e5efce48a12",
+  "question_key": "situation_motorway_toll_intercom_problem",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

@@ -1,0 +1,49 @@
+{
+  "sequence": 30,
+  "scenario_id": "safety_head_restraint_neck_protection",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Rôle de l’appuie-tête",
+  "references": [
+    "https://www.tcs.ch/fr/tests-conseils/brochures-publications/education-routiere-securite/appuis-tete.php"
+  ],
+  "novelty_review": "Head restraint protects neck during impact, absent from belts/child seats.",
+  "scenario": "Close SIDE VIEW photo adult driver upright in stationary car, belt fastened, head restraint close behind head with top near top of head. Hand adjusting its height while stopped. Daylight neutral scene, no diagrams or text, no reclining or crash.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Close SIDE VIEW photo adult driver upright in stationary car, belt fastened, head restraint close behind head with top near top of head. Hand adjusting its height while stopped. Daylight neutral scene, no diagrams or text, no reclining or crash. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_safety_head_restraint_neck_protection",
+    "category_slug": "safety",
+    "correct_answer": "b",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Pourquoi régler correctement l’appuie-tête avant de partir ?",
+        "answer_a": "Uniquement pour dormir plus confortablement.",
+        "answer_b": "Pour limiter les mouvements de la tête et les blessures à la nuque lors d’un choc.",
+        "answer_c": "Pour remplacer la ceinture de sécurité.",
+        "answer_d": "Pour réduire la distance de freinage.",
+        "explanation": "L’appuie-tête est un équipement de sécurité : bien réglé, il aide à limiter le mouvement de la tête par rapport au buste et le risque de traumatisme cervical. Il complète la ceinture sans la remplacer."
+      },
+      "en": {
+        "question_text": "Why adjust the head restraint correctly before setting off?",
+        "answer_a": "Only to sleep more comfortably.",
+        "answer_b": "To limit head movement and neck injury in an impact.",
+        "answer_c": "To replace the seat belt.",
+        "answer_d": "To shorten braking distance.",
+        "explanation": "Correctly adjusted, the head restraint helps limit head movement relative to the torso and the risk of neck injury. It complements the seat belt rather than replacing it."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/safety_head_restraint_neck_protection/scene.jpg",
+  "image_sha256": "d4086342a7c1a16e593082181701c20a07f309be1d929093134150c83c237861",
+  "native_image_sha256": "db892ad07d73b651f1d75b88fae14e63115853f3210548cee4fe8f97eab27fbd",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-c5dcf3cb-688e-4ad6-9dc9-b44c35ec5cc9.png",
+  "visual_review": "Belted upright driver adjusts head restraint while stationary; restraint close behind head and top at least level with head.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "6b5f87c12fb0ad8a18ade8782003fc2433967ec43dd31ba37256aaa5b935d635",
+  "question_key": "situation_safety_head_restraint_neck_protection",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

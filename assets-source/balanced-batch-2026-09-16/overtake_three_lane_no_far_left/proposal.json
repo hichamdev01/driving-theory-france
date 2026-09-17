@@ -1,0 +1,50 @@
+{
+  "sequence": 20,
+  "scenario_id": "overtake_three_lane_no_far_left",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Voie extrême gauche en double sens",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842224"
+  ],
+  "novelty_review": "Far-left lane prohibited when passing on three-lane two-way road; unlike C29c learner has two lanes.",
+  "scenario": "Driver POV right lane of French THREE-lane undivided rural road. Two same-direction lanes at right with broken divider, one opposing lane far left separated by solid white line. Grey car ahead in right lane, dark car overtaking it in CENTRE lane, opposing far-left lane empty. Exactly three lanes. No signs.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV right lane of French THREE-lane undivided rural road. Two same-direction lanes at right with broken divider, one opposing lane far left separated by solid white line. Grey car ahead in right lane, dark car overtaking it in CENTRE lane, opposing far-left lane empty. Exactly three lanes. No signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_overtake_three_lane_no_far_left",
+    "category_slug": "overtaking",
+    "correct_answer": "d",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Sur cette chaussée à double sens à trois voies, la voie centrale est occupée par un dépassement. Puis-je utiliser la voie tout à gauche pour dépasser à mon tour ?",
+        "answer_a": "Oui, si elle paraît libre.",
+        "answer_b": "Oui, si les deux voitures roulent lentement.",
+        "answer_c": "Oui, si je termine avant le prochain virage.",
+        "answer_d": "Non, la voie située le plus à gauche m’est interdite pour dépasser.",
+        "explanation": "Sur une chaussée à double sens comportant plus de deux voies, un dépassement ne doit pas utiliser la voie située le plus à gauche. Je patiente sans franchir la séparation vers le sens opposé."
+      },
+      "en": {
+        "question_text": "On this three-lane two-way road, the middle lane is occupied by an overtaking car. May I use the far-left lane to overtake as well?",
+        "answer_a": "Yes, if it looks empty.",
+        "answer_b": "Yes, if the two cars are slow.",
+        "answer_c": "Yes, if I finish before the next bend.",
+        "answer_d": "No, I must not use the far-left lane for overtaking.",
+        "explanation": "On a two-way carriageway with more than two lanes, overtaking must not use the lane farthest to the left. I wait without crossing into opposing traffic."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/overtake_three_lane_no_far_left/scene.jpg",
+  "image_sha256": "ffda8511271f2b167f9981e3180bb594f89d982e859e5d47617007389e1a2cb3",
+  "native_image_sha256": "8b3e4406fd4576a74e4fd0a227944322809ded0f4d5d24dcb25fc2836154b284",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-d4c0876d-4179-471e-a803-f62ae5cfc801.png",
+  "visual_review": "Corrected opposing side to one lane without internal divider; two same-direction lanes, passing car in centre, solid separation to opposing lane.",
+  "reviewed_on": "2026-09-16",
+  "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/overtake_three_lane_no_far_left/edit-prompt.md",
+  "reviewed_sha256": "6428b5afc4bb802a0b224f63be08656afaf1032d5eae90bad4e6bc613e4d8c38",
+  "question_key": "situation_overtake_three_lane_no_far_left",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

@@ -1,0 +1,50 @@
+{
+  "sequence": 22,
+  "scenario_id": "priority_obstacle_my_lane_wait",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Obstacle de mon côté",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842211",
+    "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000006842214"
+  ],
+  "novelty_review": "Oncoming conflict around obstacle without priority signs or slope.",
+  "scenario": "Driver POV level narrow French TWO-WAY residential street without centre markings. Parked white van occupies OUR RIGHT lane ahead; learner safely behind. Red oncoming car approaches in its clear lane on LEFT of image. Too narrow to pass van and oncoming car together. No junction or signs.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV level narrow French TWO-WAY residential street without centre markings. Parked white van occupies OUR RIGHT lane ahead; learner safely behind. Red oncoming car approaches in its clear lane on LEFT of image. Too narrow to pass van and oncoming car together. No junction or signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_priority_obstacle_my_lane_wait",
+    "category_slug": "priority_rules",
+    "correct_answer": "b",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "La camionnette bloque mon côté et une voiture arrive en face. Que faire avant de la contourner ?",
+        "answer_a": "M’engager car l’obstacle me donne la priorité.",
+        "answer_b": "Attendre derrière l’obstacle pour laisser passer la voiture en face.",
+        "answer_c": "Forcer la voiture à monter sur le trottoir.",
+        "answer_d": "Contourner immédiatement en klaxonnant.",
+        "explanation": "Je ne peux pas empiéter sur la partie de chaussée utilisée par le véhicule en face en le gênant. J’attends derrière l’obstacle, puis je le contourne lorsque le passage est libre et sûr."
+      },
+      "en": {
+        "question_text": "The van blocks my side and a car is approaching. What should I do before going around it?",
+        "answer_a": "Proceed because the obstruction gives me priority.",
+        "answer_b": "Wait behind the obstruction for the oncoming car to pass.",
+        "answer_c": "Force the car onto the pavement.",
+        "answer_d": "Go around immediately while sounding the horn.",
+        "explanation": "I must not obstruct the oncoming vehicle by moving into its part of the road. I wait behind the obstruction, then pass when the way is clear and safe."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/priority_obstacle_my_lane_wait/scene.jpg",
+  "image_sha256": "a1c8d8a0b690b2bfa5ba5a9fcf8423884c21f86bdb8fcadaf1f925179aec9d1b",
+  "native_image_sha256": "b0ad3e589ac237bc82af52ca13f8c4f7f7143dc17858ee736e8cfafd677ddd6a",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-8b9445cf-249b-4621-ae21-992752473ec9.png",
+  "visual_review": "White van blocks viewer's right side, red car approaches in clear opposing side on narrow level street; no simultaneous safe passage.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "7e528a8a984d0ada58a9e753b4fea7a5b6977b4e9397700fc5c32e0b55ae4465",
+  "question_key": "situation_priority_obstacle_my_lane_wait",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

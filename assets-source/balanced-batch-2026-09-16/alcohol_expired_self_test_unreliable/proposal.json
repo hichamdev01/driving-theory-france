@@ -1,0 +1,49 @@
+{
+  "sequence": 27,
+  "scenario_id": "alcohol_expired_self_test_unreliable",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Éthylotest périmé",
+  "references": [
+    "https://entreprendre.service-public.gouv.fr/vosdroits/F22386"
+  ],
+  "novelty_review": "Expired self-test cannot reassure, distinct from threshold and elimination questions.",
+  "scenario": "Close photo of hand holding unopened generic disposable breath-test foil packet beside car keys on kitchen table. Clear exact simple package labels 'ÉTHYLOTEST' and 'EXP 05/2025' only. No test results, no brands or pass/fail graphics. Parked car visible outside.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Close photo of hand holding unopened generic disposable breath-test foil packet beside car keys on kitchen table. Clear exact simple package labels 'ÉTHYLOTEST' and 'EXP 05/2025' only. No test results, no brands or pass/fail graphics. Parked car visible outside. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_alcohol_expired_self_test_unreliable",
+    "category_slug": "alcohol_drugs",
+    "correct_answer": "c",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "La date de validité de cet éthylotest est dépassée. Puis-je me fier à un résultat négatif pour conduire après avoir bu ?",
+        "answer_a": "Oui, un emballage fermé garantit sa fiabilité.",
+        "answer_b": "Oui, en soufflant deux fois plus fort.",
+        "answer_c": "Non, je ne me rassure pas avec un test périmé.",
+        "answer_d": "Oui, si je conserve l’emballage comme preuve.",
+        "explanation": "Je vérifie la validité et respecte la notice d’un éthylotest. Un test périmé ne donne pas une conclusion fiable ; en cas de doute après avoir bu, je ne conduis pas et choisis une autre solution."
+      },
+      "en": {
+        "question_text": "This breath test is expired. May I rely on a negative result to drive after drinking?",
+        "answer_a": "Yes, sealed packaging guarantees reliability.",
+        "answer_b": "Yes, by blowing twice as hard.",
+        "answer_c": "No, an expired test must not reassure me.",
+        "answer_d": "Yes, if I keep the packaging as proof.",
+        "explanation": "I check test validity and follow the instructions. An expired test does not give a reliable conclusion; if in doubt after drinking, I do not drive and choose another option."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/alcohol_expired_self_test_unreliable/scene.jpg",
+  "image_sha256": "5c57028bfb06fa52878718672eba20353b6c2cc57dacf747267bc5f4864fce55",
+  "native_image_sha256": "cdb01232162ab660c4776d7f83246b2515734c03b29d1b70f7f59e066dae6c66",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-2d63d26d-dcbf-4b35-9668-9e246c2313d3.png",
+  "visual_review": "Readable ÉTHYLOTEST and EXP 05/2025 on sealed packet; question explicitly says expired, so does not depend on device date.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "c0b51526d86be2049e307abe8e946b8ddff8b74e38aad9dca66ab2d24954f9fc",
+  "question_key": "situation_alcohol_expired_self_test_unreliable",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

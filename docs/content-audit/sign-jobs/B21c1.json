@@ -1,0 +1,49 @@
+{
+  "id": "B21c1",
+  "code": "B21c1",
+  "state": "imported",
+  "created_on": "2026-09-16",
+  "proposal": {
+    "code": "B21c1",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+    "scenario_id": "b21c1_car_scenario",
+    "scenario": "Approaching a four-way French village junction from an ordinary car. Prominent round BLUE sign on right BEFORE junction with WHITE arrow rising then curving 90 degrees RIGHT (B21c1), exactly reference. Junction and right-hand street clearly visible beyond sign. No immediate driveway before sign, no other signs.",
+    "novelty_review": "Turn right at the next intersection, distinct from existing B21-1 turning before the sign and B21a1 passing an island.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. Approaching a four-way French village junction from an ordinary car. Prominent round BLUE sign on right BEFORE junction with WHITE arrow rising then curving 90 degrees RIGHT (B21c1), exactly reference. Junction and right-hand street clearly visible beyond sign. No immediate driveway before sign, no other signs. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+    "question": {
+      "key": "situation_b21c1_car_scenario",
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "À quel endroit ce panneau m’impose-t-il de tourner à droite ?",
+          "answer_a": "À la prochaine intersection.",
+          "answer_b": "Immédiatement avant le panneau.",
+          "answer_c": "À n’importe quelle intersection de mon choix.",
+          "answer_d": "Seulement si une voiture arrive en face.",
+          "explanation": "Le panneau B21c1 impose de tourner à droite à la prochaine intersection. Je prépare ce changement de direction et respecte les règles de priorité ; le panneau ne me donne pas la priorité."
+        },
+        "en": {
+          "question_text": "Where does this sign require me to turn right?",
+          "answer_a": "At the next intersection.",
+          "answer_b": "Immediately before the sign.",
+          "answer_c": "At any intersection I choose.",
+          "answer_d": "Only if a car is approaching from the opposite direction.",
+          "explanation": "Sign B21c1 requires a right turn at the next intersection. I prepare for the turn and observe the applicable priority rules; this sign does not give me priority."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/B21c1/scene.jpg",
+  "image_sha256": "5312027104b58266e10059c6822ea4505a7614c0ce2857f7938e99afa5a9eb00",
+  "review_note": "Actual image reviewed: round blue rising-then-right white arrow before visible junction, not straight horizontal B21-1 arrow. Right turn lies beyond sign. A alone is correct in both languages; priority is not implied.",
+  "reviewed_sha256": "a25cb930a876f7fe076b31e130161d692ca331ae10dd41fa6f446182182bd922",
+  "question_key": "situation_b21c1_car_scenario",
+  "imported_content_version": 58,
+  "imported_on": "2026-09-16"
+}

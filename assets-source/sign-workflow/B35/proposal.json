@@ -1,0 +1,36 @@
+{
+  "code": "B35",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner is driving an ordinary passenger car; this question teaches that driver’s own access, direction, parking or interpretation decision, not specialist-vehicle operation.",
+  "scenario_id": "b35_car_sign_interpretation",
+  "scenario": "Quiet rural road passing away from scattered houses, clear daylight no emergency. Prominent round WHITE sign thin BLACK rim, BLACK horn symbol crossed by ascending BLACK cancellation bar, precisely supplied reference. No red colour or blue background on sign. No pedestrians or other signs.",
+  "novelty_review": "End of locally signed horn prohibition, distinct from B16 prohibition and urban gratuitous horn use.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Create ONE realistic scene-only French permis-B quiz photo, wide landscape preferably 2048x1152. Ordinary LEFT-HAND-DRIVE passenger car viewpoint, small dashboard rim at bottom, right-hand traffic, natural daylight, realistic road geometry. Input image is a verified sign pictogram REFERENCE ONLY, not a scene to edit. Reproduce sign shape, colours and symbols faithfully. Quiet rural road passing away from scattered houses, clear daylight no emergency. Prominent round WHITE sign thin BLACK rim, BLACK horn symbol crossed by ascending BLACK cancellation bar, precisely supplied reference. No red colour or blue background on sign. No pedestrians or other signs. No question text, answer options, quiz panels, watermark or answer hints. The only text is the specified physical sign inscription. Keep the key sign large and legible, with safe approach distance.",
+  "question": {
+    "key": "situation_b35_car_sign_interpretation",
+    "category_slug": "road_signs",
+    "correct_answer": "d",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Que signifie ce panneau ?",
+        "answer_a": "Je dois klaxonner immédiatement.",
+        "answer_b": "L’usage de l’avertisseur sonore devient interdit.",
+        "answer_c": "Toutes les interdictions prennent fin.",
+        "answer_d": "L’interdiction de l’avertisseur sonore précédemment signalée prend fin.",
+        "explanation": "Le panneau B35 met fin à l’interdiction de l’avertisseur sonore précédemment signalée. Il ne demande pas de klaxonner : les règles générales d’usage de l’avertisseur restent applicables."
+      },
+      "en": {
+        "question_text": "What does this sign mean?",
+        "answer_a": "I must sound the horn immediately.",
+        "answer_b": "Horn use becomes prohibited.",
+        "answer_c": "All prohibitions end.",
+        "answer_d": "The previously signed prohibition on horn use ends.",
+        "explanation": "Sign B35 ends the previously signed prohibition on horn use. It does not tell me to sound the horn; the general rules governing horn use still apply."
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "code": "B21a1",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner is driving an ordinary passenger car; this question teaches that driver’s own access, direction, parking or interpretation decision, not specialist-vehicle operation.",
+  "scenario_id": "b21a1_car_sign_interpretation",
+  "scenario": "Approach to a small raised central traffic island on a quiet French street. On the near nose of the island a round blue sign with a thick white arrow pointing diagonally DOWN RIGHT. Clear usable roadway passes to the RIGHT of the island, with ample space for our car, no intersection or turning side streets. Camera remains well before island.",
+  "novelty_review": "Passing on the indicated side of an island, distinct from turning right before a sign or going straight at a junction.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Create ONE realistic scene-only French permis-B quiz photo, wide landscape preferably 2048x1152. Ordinary LEFT-HAND-DRIVE passenger car viewpoint, small dashboard rim at bottom, right-hand traffic, natural daylight, realistic road geometry. Input image is a verified sign pictogram REFERENCE ONLY, not a scene to edit. Reproduce sign shape, colours and symbols faithfully. Approach to a small raised central traffic island on a quiet French street. On the near nose of the island a round blue sign with a thick white arrow pointing diagonally DOWN RIGHT. Clear usable roadway passes to the RIGHT of the island, with ample space for our car, no intersection or turning side streets. Camera remains well before island. No question text, answer options, quiz panels, watermark or answer hints. The only text is the specified physical sign inscription. Keep the key sign large and legible, with safe approach distance.",
+  "question": {
+    "key": "situation_b21a1_car_sign_interpretation",
+    "category_slug": "road_signs",
+    "correct_answer": "c",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "De quel côté dois-je contourner cet îlot ?",
+        "answer_a": "Par la gauche.",
+        "answer_b": "Du côté que je préfère.",
+        "answer_c": "Par la droite.",
+        "answer_d": "Je dois faire demi-tour.",
+        "explanation": "Le panneau B21a1 impose le contournement par la droite. Je ralentis si nécessaire et passe à droite de l’îlot en conservant une distance suffisante avec le bord de la chaussée."
+      },
+      "en": {
+        "question_text": "On which side must I pass this traffic island?",
+        "answer_a": "On the left.",
+        "answer_b": "On either side I prefer.",
+        "answer_c": "On the right.",
+        "answer_d": "I must turn around.",
+        "explanation": "Sign B21a1 requires passing the island on the right. I slow down if necessary and keep enough clearance from the kerb while following the indicated route."
+      }
+    }
+  }
+}

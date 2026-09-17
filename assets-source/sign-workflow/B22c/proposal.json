@@ -1,0 +1,36 @@
+{
+  "code": "B22c",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+  "scenario_id": "b22c_car_scenario",
+  "scenario": "Country lane alongside entrance to a broad bridle path near a riding school, no readable buildings. Round BLUE sign with a WHITE horse AND rider silhouette beside path entrance, matching reference. Learner ordinary car remains on road outside path. No horses immediately near car, no other signage.",
+  "novelty_review": "Stopping a car on a path reserved to riders, distinct from warning of crossing horses or passing a rider.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. Country lane alongside entrance to a broad bridle path near a riding school, no readable buildings. Round BLUE sign with a WHITE horse AND rider silhouette beside path entrance, matching reference. Learner ordinary car remains on road outside path. No horses immediately near car, no other signage. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+  "question": {
+    "key": "situation_b22c_car_scenario",
+    "category_slug": "road_signs",
+    "correct_answer": "d",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Puis-je m’arrêter en voiture sur ce chemin pour attendre quelqu’un ?",
+        "answer_a": "Oui, si je reste au volant.",
+        "answer_b": "Oui, si aucun cheval n’est visible.",
+        "answer_c": "Oui, avec les feux de détresse.",
+        "answer_d": "Non, ce chemin est réservé aux cavaliers.",
+        "explanation": "Le panneau B22c indique un chemin obligatoire pour les cavaliers et réservé à ceux-ci. Les voitures ne peuvent ni l’emprunter ni s’y arrêter ; j’attends dans un emplacement autorisé en dehors de ce chemin."
+      },
+      "en": {
+        "question_text": "May I stop my car on this path to wait for someone?",
+        "answer_a": "Yes, if I stay at the wheel.",
+        "answer_b": "Yes, if no horse is visible.",
+        "answer_c": "Yes, with hazard lights on.",
+        "answer_d": "No, this path is reserved for horse riders.",
+        "explanation": "Sign B22c marks a compulsory path reserved for horse riders. Cars may neither use it nor stop on it; I wait in a permitted location outside the path."
+      }
+    }
+  }
+}

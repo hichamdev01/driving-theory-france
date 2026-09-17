@@ -1,0 +1,50 @@
+{
+  "sequence": 21,
+  "scenario_id": "overtake_tram_left_one_way",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Tramway dans une rue à sens unique",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842219"
+  ],
+  "novelty_review": "One-way exception allowing tram pass on left, distinct from general right-side rule.",
+  "scenario": "Driver POV broad ONE-WAY French urban street, TWO same-direction lanes with forward arrows painted in both. Moving modern tram ahead in RIGHT lane on embedded rails; learner behind in left lane. No platform, no passengers boarding, no pedestrians, no signs.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV broad ONE-WAY French urban street, TWO same-direction lanes with forward arrows painted in both. Moving modern tram ahead in RIGHT lane on embedded rails; learner behind in left lane. No platform, no passengers boarding, no pedestrians, no signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_overtake_tram_left_one_way",
+    "category_slug": "overtaking",
+    "correct_answer": "a",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Cette rue est à sens unique et le tramway roule sans desservir un arrêt. Si tout est sûr, puis-je le dépasser par la gauche ?",
+        "answer_a": "Oui, le sens unique permet cette exception.",
+        "answer_b": "Non, un tramway ne peut jamais être dépassé à gauche.",
+        "answer_c": "Oui, mais uniquement sur le trottoir.",
+        "answer_d": "Non, il faut attendre qu’il s’arrête.",
+        "explanation": "Le tramway se dépasse normalement par la droite, mais le dépassement par la gauche est permis sur une chaussée à sens unique. Le marquage, la vitesse et la sécurité des voyageurs restent à respecter."
+      },
+      "en": {
+        "question_text": "This is a one-way street and the tram is moving without serving a stop. If it is safe, may I overtake on its left?",
+        "answer_a": "Yes, the one-way street allows this exception.",
+        "answer_b": "No, a tram may never be passed on the left.",
+        "answer_c": "Yes, but only using the pavement.",
+        "answer_d": "No, I must wait for it to stop.",
+        "explanation": "A tram is normally passed on the right, but passing on the left is allowed on a one-way carriageway. Markings, speed limits and passenger safety still apply."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/overtake_tram_left_one_way/scene.jpg",
+  "image_sha256": "4c4a1c581a0ef99ddeed158b3b295628e6903eb39f0f48df2381200be8530cee",
+  "native_image_sha256": "ebbab2942a8ffecb60a45b9ef924b6e46cc4b7b595948b47562d593cbbe14ab9",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-5246917f-414b-42be-9de3-ebabd9d11f93.png",
+  "visual_review": "Removed separate raised tram reservation. Flush rails on one-way carriageway, forward arrows and red rear tram lamps; no stop or boarding passengers.",
+  "reviewed_on": "2026-09-16",
+  "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/overtake_tram_left_one_way/edit-prompt.md",
+  "reviewed_sha256": "7ac2b9fae384292e4ad1b3c6db2698a8243acb3955f15b7300ce109ab80d027a",
+  "question_key": "situation_overtake_tram_left_one_way",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

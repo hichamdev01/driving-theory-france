@@ -1,0 +1,3 @@
+# C114 — cycle-path endpoint correction
+
+Correct the physical cycle-path ending in this French driving quiz photograph. Keep the correct C114 blue square white bicycle with ascending red cancellation slash, natural lighting, car viewpoint in road and residential setting. Put the sign exactly at the END of the right-side cycle path: at its pole the separator kerb ends and the cycle path tapers gently left into the general road. Beyond this point there must be NO continuing red cycle path: replace that farther path with ordinary grass verge and sidewalk separated from the road. Remove the cyclist so the road layout and sign are unambiguous. Keep sign large and readable. No text overlays or extra signs.

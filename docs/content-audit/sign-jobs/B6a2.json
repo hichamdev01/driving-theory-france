@@ -1,0 +1,49 @@
+{
+  "id": "B6a2",
+  "code": "B6a2",
+  "state": "imported",
+  "created_on": "2026-09-13",
+  "proposal": {
+    "code": "B6a2",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Learner drives an ordinary passenger car. This sign affects that car driver directly; no specialist vehicle operation is taught.",
+    "scenario_id": "b6a2_no_parking_first_half_month",
+    "scenario": "French residential two-way street in daylight with a continuous ordinary kerb on the right and a safe empty roadside area beyond the sign, no crosswalk, no junction nearby, no painted parking bays or yellow lines. On the right a ROUND BLUE sign with RED rim and one RED DIAGONAL from upper-left to lower-right; small WHITE characters \"1.15\" in upper-right blue quadrant, exactly the B6a2 reference. No 16.31 inscription, no extra date overlay or supplementary signs.",
+    "novelty_review": "The first half-month parking prohibition is absent from current question targets. Distinct from B6a1 allowing a brief passenger dropoff; tests parking on day 10, away from changeover times.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B quiz photo, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, a small portion of dashboard/steering rim along bottom, right-hand traffic. Natural daylight, realistic scale and perspective, neutral exposure, no cinematic grading. The supplied image is ONLY a verified sign pictogram reference, not a scene to edit: reproduce its exact shape, colours, symbol and inscriptions on one realistic roadside sign. French residential two-way street in daylight with a continuous ordinary kerb on the right and a safe empty roadside area beyond the sign, no crosswalk, no junction nearby, no painted parking bays or yellow lines. On the right a ROUND BLUE sign with RED rim and one RED DIAGONAL from upper-left to lower-right; small WHITE characters \"1.15\" in upper-right blue quadrant, exactly the B6a2 reference. No 16.31 inscription, no extra date overlay or supplementary signs. No quiz panel, no question text, no answer choices, no answer hints, no watermark, no unrelated signage. All text mentioned above belongs only on the physical sign. Keep the scene focused on one learning objective, with enough space to respond safely.",
+    "question": {
+      "key": "situation_b6a2_no_parking_first_half_month",
+      "category_slug": "parking_stopping",
+      "correct_answer": "c",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Nous sommes le 10 du mois. Puis-je stationner du côté de ce panneau, juste après celui-ci ?",
+          "answer_a": "Oui, car l’interdiction ne commence que le 16.",
+          "answer_b": "Oui, si je reste moins de dix minutes.",
+          "answer_c": "Non, le stationnement y est interdit du 1er au 15.",
+          "answer_d": "Oui, si je laisse mes feux de détresse.",
+          "explanation": "Le panneau B6a2 interdit le stationnement du côté où il est implanté du 1er au 15 du mois. Le 10 fait partie de cette période : je cherche un emplacement autorisé. Une courte durée ou les feux de détresse ne créent pas d’exception."
+        },
+        "en": {
+          "question_text": "It is the 10th of the month. May I park on the side where this sign stands, just beyond it?",
+          "answer_a": "Yes, because the prohibition only begins on the 16th.",
+          "answer_b": "Yes, if I stay for less than ten minutes.",
+          "answer_c": "No, parking there is prohibited from the 1st to the 15th.",
+          "answer_d": "Yes, if I leave my hazard lights on.",
+          "explanation": "Sign B6a2 prohibits parking on its side of the road from the 1st to the 15th of the month. The 10th falls within that period, so I look for an authorised place. A short stay or hazard lights creates no exception."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/B6a2/scene.jpg",
+  "image_sha256": "a34ff75ee324cbe2dc410934398afb3827691458ccc4442515a51201ac21985a",
+  "review_note": "Actual image reviewed: round blue B6a2 with red rim/descending bar and legible 1.15 in upper quadrant. Kerb beyond sign visible with no conflicting parking sign. Question explicitly uses day 10, not changeover time; answer C only in both languages.",
+  "reviewed_sha256": "62a2e60cb6292773396910b89f551f836d39e08f72954cfa70c206be1129d4a5",
+  "question_key": "situation_b6a2_no_parking_first_half_month",
+  "imported_content_version": 42,
+  "imported_on": "2026-09-13"
+}
