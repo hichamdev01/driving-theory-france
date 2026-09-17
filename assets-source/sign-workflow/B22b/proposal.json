@@ -1,0 +1,36 @@
+{
+  "code": "B22b",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner is driving an ordinary passenger car; this question teaches that driver’s own access, direction, parking or interpretation decision, not specialist-vehicle operation.",
+  "scenario_id": "b22b_car_sign_interpretation",
+  "scenario": "View from car stopped on ordinary residential street beside entrance of a separate broad pedestrian path through a park. Round BLUE sign with WHITE adult and child pedestrian figures at path entrance. Path branches from road, learner car remains on roadway outside path; no zebra crossing, no bollard obstruction, no other signs.",
+  "novelty_review": "Reserved pedestrian path inaccessible to car even briefly, distinct from B54 pedestrian area with delivery exceptions.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Create ONE realistic scene-only French permis-B quiz photo, wide landscape preferably 2048x1152. Ordinary LEFT-HAND-DRIVE passenger car viewpoint, small dashboard rim at bottom, right-hand traffic, natural daylight, realistic road geometry. Input image is a verified sign pictogram REFERENCE ONLY, not a scene to edit. Reproduce sign shape, colours and symbols faithfully. View from car stopped on ordinary residential street beside entrance of a separate broad pedestrian path through a park. Round BLUE sign with WHITE adult and child pedestrian figures at path entrance. Path branches from road, learner car remains on roadway outside path; no zebra crossing, no bollard obstruction, no other signs. No question text, answer options, quiz panels, watermark or answer hints. The only text is the specified physical sign inscription. Keep the key sign large and legible, with safe approach distance.",
+  "question": {
+    "key": "situation_b22b_car_sign_interpretation",
+    "category_slug": "road_signs",
+    "correct_answer": "a",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Puis-je emprunter ce chemin en voiture pour rejoindre plus vite la rue suivante ?",
+        "answer_a": "Non, ce chemin est réservé aux piétons.",
+        "answer_b": "Oui, si je roule au pas.",
+        "answer_c": "Oui, si je laisse la priorité aux piétons.",
+        "answer_d": "Oui, si le chemin est momentanément vide.",
+        "explanation": "Le panneau B22b indique un chemin obligatoire pour les piétons et réservé à ceux-ci. Je ne peux ni y circuler ni m’y arrêter avec ma voiture ; je reste sur une voie autorisée."
+      },
+      "en": {
+        "question_text": "May I drive along this path as a shortcut to the next street?",
+        "answer_a": "No, this path is reserved for pedestrians.",
+        "answer_b": "Yes, if I drive at walking pace.",
+        "answer_c": "Yes, if I give pedestrians priority.",
+        "answer_d": "Yes, if the path is temporarily empty.",
+        "explanation": "Sign B22b marks a compulsory pedestrian path reserved for pedestrians. I may neither drive nor stop my car on it; I use a road open to cars."
+      }
+    }
+  }
+}

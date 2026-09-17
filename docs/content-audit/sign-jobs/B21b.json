@@ -1,0 +1,49 @@
+{
+  "id": "B21b",
+  "code": "B21b",
+  "state": "imported",
+  "created_on": "2026-09-13",
+  "proposal": {
+    "code": "B21b",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Learner drives an ordinary passenger car. This sign affects that car driver directly; no specialist vehicle operation is taught.",
+    "scenario_id": "b21b_straight_at_junction",
+    "scenario": "Quiet French suburban four-way intersection visible ahead, our road clearly continues straight across and side streets branch both left and right. Normal passenger car viewpoint before the junction. On our right before the junction, ROUND BLUE mandatory direction sign with ONE WHITE VERTICAL ARROW POINTING UP (straight ahead), precisely B21b. No other signs or traffic lights. Roads clear, safe markings and perspective.",
+    "novelty_review": "Existing B21-1 teaches turning right before a sign; this distinct target is straight ahead at the next intersection, and does not grant priority.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B quiz photo, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, a small portion of dashboard/steering rim along bottom, right-hand traffic. Natural daylight, realistic scale and perspective, neutral exposure, no cinematic grading. The supplied image is ONLY a verified sign pictogram reference, not a scene to edit: reproduce its exact shape, colours, symbol and inscriptions on one realistic roadside sign. Quiet French suburban four-way intersection visible ahead, our road clearly continues straight across and side streets branch both left and right. Normal passenger car viewpoint before the junction. On our right before the junction, ROUND BLUE mandatory direction sign with ONE WHITE VERTICAL ARROW POINTING UP (straight ahead), precisely B21b. No other signs or traffic lights. Roads clear, safe markings and perspective. No quiz panel, no question text, no answer choices, no answer hints, no watermark, no unrelated signage. All text mentioned above belongs only on the physical sign. Keep the scene focused on one learning objective, with enough space to respond safely.",
+    "question": {
+      "key": "situation_b21b_straight_at_junction",
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "À la prochaine intersection, quelle direction ce panneau m’impose-t-il ?",
+          "answer_a": "Continuer tout droit en respectant les règles de priorité.",
+          "answer_b": "Tourner à droite.",
+          "answer_c": "Tourner à gauche.",
+          "answer_d": "Choisir librement ma direction.",
+          "explanation": "Le panneau B21b impose de continuer tout droit à la prochaine intersection. Il ne me donne pas la priorité : je contrôle les autres usagers et j’applique les règles de priorité avant de franchir le carrefour."
+        },
+        "en": {
+          "question_text": "Which direction does this sign require at the next junction?",
+          "answer_a": "Continue straight ahead while obeying priority rules.",
+          "answer_b": "Turn right.",
+          "answer_c": "Turn left.",
+          "answer_d": "Choose any direction.",
+          "explanation": "Sign B21b requires me to continue straight ahead at the next junction. It does not give me priority: I check for other road users and obey the applicable priority rules before crossing."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/B21b/scene.jpg",
+  "image_sha256": "37db7085d8f30b027f6cc2fea2d565b000e3ae51ffaf457bc6e7533830d3dc8f",
+  "review_note": "Actual image reviewed: round blue sign with one white upward arrow, situated before a junction whose road continues straight. Distinct from square C12. Both languages require straight ahead without claiming priority; answer A only.",
+  "reviewed_sha256": "782d86dac90f444f003b81afd567a82dfd0eb72a8faf4fa4fa3571581702d277",
+  "question_key": "situation_b21b_straight_at_junction",
+  "imported_content_version": 39,
+  "imported_on": "2026-09-13"
+}

@@ -1,0 +1,36 @@
+{
+  "code": "C28",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+  "scenario_id": "c28_car_scenario",
+  "scenario": "Car in rightmost lane of a broad French DIVIDED arterial carriageway, same-direction traffic only on our side with barrier on far left. Three through lanes, with a fourth far-left lane beginning to taper out in distance. On right LARGE BLUE SQUARE sign faithfully matching reference: three vertical UP arrowheads, additional leftmost lower lane line bends RIGHT into left through arrow. No opposite arrows, no extra numbers. No car mid-merge.",
+  "novelty_review": "Reduction of lanes on divided carriageway, distinct from generic road narrowing and from three-lane two-way overtaking section end.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. Car in rightmost lane of a broad French DIVIDED arterial carriageway, same-direction traffic only on our side with barrier on far left. Three through lanes, with a fourth far-left lane beginning to taper out in distance. On right LARGE BLUE SQUARE sign faithfully matching reference: three vertical UP arrowheads, additional leftmost lower lane line bends RIGHT into left through arrow. No opposite arrows, no extra numbers. No car mid-merge. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+  "question": {
+    "key": "situation_c28_car_scenario",
+    "category_slug": "road_signs",
+    "correct_answer": "a",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Quelle évolution des voies ce panneau annonce-t-il ?",
+        "answer_a": "La voie la plus à gauche disparaît et se rabat vers la droite.",
+        "answer_b": "La voie de droite devient réservée aux autobus.",
+        "answer_c": "Toutes les voies deviennent à double sens.",
+        "answer_d": "Une voie supplémentaire s’ouvre à gauche.",
+        "explanation": "Le panneau C28 annonce une réduction du nombre de voies. Ici, la branche située à gauche rejoint celle de droite : les conducteurs de la voie supprimée doivent anticiper leur rabattement sans forcer le passage."
+      },
+      "en": {
+        "question_text": "What change to the lanes does this sign announce?",
+        "answer_a": "The far-left lane ends and merges to the right.",
+        "answer_b": "The right-hand lane becomes bus-only.",
+        "answer_c": "All lanes become two-way.",
+        "answer_d": "An extra lane opens on the left.",
+        "explanation": "Sign C28 announces a reduction in the number of lanes. Here the left-hand branch joins the one to its right: drivers in the ending lane must prepare to merge without forcing their way in."
+      }
+    }
+  }
+}

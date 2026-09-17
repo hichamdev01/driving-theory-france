@@ -1,0 +1,49 @@
+{
+  "id": "C1c",
+  "code": "C1c",
+  "state": "imported",
+  "created_on": "2026-09-13",
+  "proposal": {
+    "code": "C1c",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Learner is driving an ordinary passenger car; this question teaches that driver’s own access, direction, parking or interpretation decision, not specialist-vehicle operation.",
+    "scenario_id": "c1c_car_sign_interpretation",
+    "scenario": "French town parking area entrance, empty marked car bays and a small parking payment machine farther back. Prominent SQUARE BLUE P sign with white parking-meter symbol in lower right, faithfully matching reference. No tariff, hours or supplementary sign text visible.",
+    "novelty_review": "Paid parking indication distinct from C1b free disc parking; do not invent hours or tariffs.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Create ONE realistic scene-only French permis-B quiz photo, wide landscape preferably 2048x1152. Ordinary LEFT-HAND-DRIVE passenger car viewpoint, small dashboard rim at bottom, right-hand traffic, natural daylight, realistic road geometry. Input image is a verified sign pictogram REFERENCE ONLY, not a scene to edit. Reproduce sign shape, colours and symbols faithfully. French town parking area entrance, empty marked car bays and a small parking payment machine farther back. Prominent SQUARE BLUE P sign with white parking-meter symbol in lower right, faithfully matching reference. No tariff, hours or supplementary sign text visible. No question text, answer options, quiz panels, watermark or answer hints. The only text is the specified physical sign inscription. Keep the key sign large and legible, with safe approach distance.",
+    "question": {
+      "key": "situation_c1c_car_sign_interpretation",
+      "category_slug": "parking_stopping",
+      "correct_answer": "d",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Que m’indique ce panneau sur le stationnement proposé ?",
+          "answer_a": "Il est gratuit et sans limite de durée.",
+          "answer_b": "Il est réservé aux taxis.",
+          "answer_c": "Il est interdit à toutes les voitures.",
+          "answer_d": "Il s’agit d’un stationnement payant.",
+          "explanation": "Le panneau C1c indique un lieu de stationnement payant. Avant de laisser ma voiture, je consulte les horaires, tarifs et modalités affichés sur place, puis je respecte les conditions applicables."
+        },
+        "en": {
+          "question_text": "What does this sign tell me about the parking provided?",
+          "answer_a": "It is free with no time limit.",
+          "answer_b": "It is reserved for taxis.",
+          "answer_c": "It is prohibited for all cars.",
+          "answer_d": "It is a paid parking area.",
+          "explanation": "Sign C1c indicates paid parking. Before leaving my car, I check the hours, prices and payment arrangements displayed locally and comply with the applicable conditions."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/C1c/scene.jpg",
+  "image_sha256": "aa1f7d53c7e13b3cf6c2c5875cf7807c957aa9dae9adc8dd190146c00814fa17",
+  "review_note": "Reviewed actual image: blue square P with white parking-meter icon, empty marked bays and payment machine. Not a parking-disc emblem. No invented tariff or hours; both languages explain paid parking and checking local conditions, D only.",
+  "reviewed_sha256": "d3b0d2bc8c593d2f4a7af6455fca0f762397bfaed638c4c47948cd017f67e7a7",
+  "question_key": "situation_c1c_car_sign_interpretation",
+  "imported_content_version": 51,
+  "imported_on": "2026-09-13"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "B55",
+  "code": "B55",
+  "state": "imported",
+  "created_on": "2026-09-16",
+  "proposal": {
+    "code": "B55",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+    "scenario_id": "b55_car_scenario",
+    "scenario": "Ordinary car, authorised to be in a pedestrian area, now approaching EXIT from paved pedestrian-area street towards ordinary roadway. On right SQUARE BLUE sign with WHITE adult and child pedestrian figures crossed by ascending RED diagonal matching B55. No 20 symbol, no priority sign, no conflicting signs. No pedestrians in immediate car path.",
+    "novelty_review": "Exit identification for authorised car leaving pedestrian area, distinct from entering B54 under delivery exception.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. Ordinary car, authorised to be in a pedestrian area, now approaching EXIT from paved pedestrian-area street towards ordinary roadway. On right SQUARE BLUE sign with WHITE adult and child pedestrian figures crossed by ascending RED diagonal matching B55. No 20 symbol, no priority sign, no conflicting signs. No pedestrians in immediate car path. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+    "question": {
+      "key": "situation_b55_car_scenario",
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Je quitte cette aire où ma voiture était autorisée. Que m’indique le panneau ?",
+          "answer_a": "La sortie de l’aire piétonne.",
+          "answer_b": "L’interdiction de circuler à pied dans toute la ville.",
+          "answer_c": "Le début d’une zone de rencontre.",
+          "answer_d": "La priorité absolue pour ma voiture.",
+          "explanation": "Le panneau B55 indique la sortie d’une aire piétonne. Il ne donne aucune priorité particulière : à la reprise de la circulation ordinaire, je continue à surveiller les piétons et à respecter les règles applicables."
+        },
+        "en": {
+          "question_text": "I am leaving this area where my car was authorised. What does the sign indicate?",
+          "answer_a": "The end of the pedestrian area.",
+          "answer_b": "A ban on walking throughout the town.",
+          "answer_c": "The start of a shared zone.",
+          "answer_d": "Absolute priority for my car.",
+          "explanation": "Sign B55 marks the end of a pedestrian area. It gives no special priority: when returning to ordinary traffic, I continue watching for pedestrians and following the applicable rules."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/B55/scene.jpg",
+  "image_sha256": "e8b8524d6c69e33ed66249b1ea7076f2e6f70042a01a2dd5056684ea8d0ac699",
+  "review_note": "Actual image reviewed: square blue adult/child crossed by ascending red slash, at paved pedestrian-area exit into road. Four options per language; A only. Question explicitly establishes car was authorised inside; explanation grants no priority.",
+  "reviewed_sha256": "a33e019056f7e6b994de869f9f555b97fc244e926a86b6313ae76b843a30ff59",
+  "question_key": "situation_b55_car_scenario",
+  "imported_content_version": 66,
+  "imported_on": "2026-09-16"
+}

@@ -1,0 +1,36 @@
+{
+  "code": "B53",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+  "scenario_id": "b53_car_scenario",
+  "scenario": "Car leaving a small French shared urban zone into ordinary street. Prominent SQUARE BLUE sign with white pedestrian and car symbols and grey-ringed 20 symbol, all crossed by ascending RED diagonal, matching B53 reference. Foreground paving transitions to ordinary asphalt beyond. No extra speed signs, no pedestrians in road.",
+  "novelty_review": "Exit from zone de rencontre without inventing replacement speed, distinct from B52 entry and B51 end of zone30.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. Car leaving a small French shared urban zone into ordinary street. Prominent SQUARE BLUE sign with white pedestrian and car symbols and grey-ringed 20 symbol, all crossed by ascending RED diagonal, matching B53 reference. Foreground paving transitions to ordinary asphalt beyond. No extra speed signs, no pedestrians in road. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+  "question": {
+    "key": "situation_b53_car_scenario",
+    "category_slug": "speed_limits",
+    "correct_answer": "d",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Quel changement ce panneau annonce-t-il ?",
+        "answer_a": "Le début d’une zone limitée à 20 km/h.",
+        "answer_b": "Le début d’une aire piétonne.",
+        "answer_c": "La suppression de toutes les limitations de vitesse.",
+        "answer_d": "La sortie d’une zone de rencontre.",
+        "explanation": "Le panneau B53 indique la sortie de la zone de rencontre. Le régime propre à cette zone prend fin ; j’adapte ma vitesse à la voie suivante et à sa signalisation, sans en déduire une vitesse illimitée."
+      },
+      "en": {
+        "question_text": "What change does this sign indicate?",
+        "answer_a": "The start of a zone limited to 20 km/h.",
+        "answer_b": "The start of a pedestrian area.",
+        "answer_c": "The removal of all speed limits.",
+        "answer_d": "The end of a shared zone (zone de rencontre).",
+        "explanation": "Sign B53 indicates the end of the shared zone. Its special rules end; I adapt my speed to the next road and its signs rather than assuming there is no speed limit."
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "sequence": 7,
+  "scenario_id": "speed_two_same_direction_90",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Deux voies dans mon sens hors agglomération",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042240048"
+  ],
+  "novelty_review": "Non-probationary dry-weather limit on an undivided 2+1 section, absent from 80 default and divided-road 110 questions.",
+  "scenario": "Driver POV on rightmost lane of rural French 2+1 road: two same-direction lanes (ours plus passing lane to left), broken white divider; far-left opposing lane separated from passing lane by SOLID white line. Distant oncoming car far left and distant car ahead right. Dry clear daylight no physical central divider. Small roadside red-circle speed sign '90' on right, exact digits.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV on rightmost lane of rural French 2+1 road: two same-direction lanes (ours plus passing lane to left), broken white divider; far-left opposing lane separated from passing lane by SOLID white line. Distant oncoming car far left and distant car ahead right. Dry clear daylight no physical central divider. Small roadside red-circle speed sign '90' on right, exact digits. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_speed_two_same_direction_90",
+    "category_slug": "speed_limits",
+    "correct_answer": "c",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Hors agglomération, cette section comporte deux voies dans mon sens, sans terre-plein central, avec une limite à 90. Par temps sec, hors permis probatoire, quelle vitesse maximale s’applique ?",
+        "answer_a": "80 km/h dans tous les cas.",
+        "answer_b": "110 km/h.",
+        "answer_c": "90 km/h.",
+        "answer_d": "130 km/h.",
+        "explanation": "Sur cette section à deux voies affectées à mon sens, la limite indiquée est de 90 km/h. L’absence de terre-plein central ne permet pas de la confondre avec une route à chaussées séparées limitée en général à 110."
+      },
+      "en": {
+        "question_text": "Outside a built-up area, this section has two lanes in my direction, no central reservation, and a 90 limit. In dry weather, with a full non-probationary licence, what is the maximum?",
+        "answer_a": "80 km/h in every case.",
+        "answer_b": "110 km/h.",
+        "answer_c": "90 km/h.",
+        "answer_d": "130 km/h.",
+        "explanation": "On this section with two lanes assigned to my direction, the indicated limit is 90 km/h. With no central reservation, it is not a divided road normally limited to 110."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/speed_two_same_direction_90/scene.jpg",
+  "image_sha256": "9cf493fc5b659657f4ecba5a1b47bf6a5b35562b1b49574470a22c0c14642817",
+  "native_image_sha256": "47efe834a735a013d4a86d3e994481442a1ff3cc309406fc8dd1d50eb03a534b",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-df183b12-a882-4319-9292-4b6ec841653f.png",
+  "visual_review": "Reviewed: rural undivided 2+1 roadway, learner and preceding car in right lane, dashed lane divider left and solid opposing separation beyond, 90 sign accurate. C only 90 under stated dry non-probationary conditions; four bilingual options checked.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "4478f3d023edf3f7d9641e7100e49482610b3a0db8a682af48f899bfafc41b6d",
+  "question_key": "situation_speed_two_same_direction_90",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

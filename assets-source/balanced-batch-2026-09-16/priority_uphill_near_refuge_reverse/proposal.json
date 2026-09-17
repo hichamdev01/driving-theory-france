@@ -1,0 +1,49 @@
+{
+  "sequence": 23,
+  "scenario_id": "priority_uphill_near_refuge_reverse",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Place d’évitement près du véhicule montant",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842213"
+  ],
+  "novelty_review": "Exception to downhill reversing between two ordinary cars when uphill driver has easier refuge.",
+  "scenario": "Exterior elevated three-quarter photo of narrow steep French mountain road climbing foreground left to background right. Two ordinary cars face each other stopped 12m apart. Blue UPHILL car nearer foreground has empty broad paved passing bay immediately BEHIND it on its right. Red downhill car uphill far away has no refuge. Clear slope and bay, no trailers or signs.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Exterior elevated three-quarter photo of narrow steep French mountain road climbing foreground left to background right. Two ordinary cars face each other stopped 12m apart. Blue UPHILL car nearer foreground has empty broad paved passing bay immediately BEHIND it on its right. Red downhill car uphill far away has no refuge. Clear slope and bay, no trailers or signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_priority_uphill_near_refuge_reverse",
+    "category_slug": "priority_rules",
+    "correct_answer": "c",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Deux voitures seules ne peuvent pas se croiser. Je monte, mais une place d’évitement est juste derrière moi et reculer y est manifestement plus facile. Qui doit reculer ?",
+        "answer_a": "Toujours la voiture qui descend, sans exception.",
+        "answer_b": "Aucune : nous devons forcer le passage.",
+        "answer_c": "Moi, vers la place d’évitement, après mes contrôles.",
+        "answer_d": "La voiture la plus récente.",
+        "explanation": "Entre véhicules de même catégorie, le descendant recule normalement. L’exception s’applique si la marche arrière est manifestement plus facile pour le montant, notamment près d’une place d’évitement."
+      },
+      "en": {
+        "question_text": "Two passenger cars without trailers cannot pass. I am going uphill, but a passing place is just behind me and reversing there is clearly easier. Who should reverse?",
+        "answer_a": "Always the downhill car, without exception.",
+        "answer_b": "Neither: we must squeeze through.",
+        "answer_c": "I should reverse into the passing place after checking.",
+        "answer_d": "The newer car.",
+        "explanation": "Between vehicles of the same category, the downhill driver normally reverses. The exception applies when reversing is clearly easier for the uphill driver, particularly near a passing place."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/priority_uphill_near_refuge_reverse/scene.jpg",
+  "image_sha256": "0209ad716c3eb9a41630cd92dcbb5a2705376492398207cbdc40bbaaa34ba20a",
+  "native_image_sha256": "18acdcb9285a4fee2bf1e68c84062ba088c17e0dee635676994279aad6d8a447",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-6e2a8848-e51f-4c77-ab7a-e704413eb8bb.png",
+  "visual_review": "Narrow uphill road, two ordinary cars facing each other, broad refuge immediately behind blue uphill car. Refuge appears on left, immaterial because question specifies no side.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "c7d43554e9867d8d032006df917029704bf0cc609816591d215d855a38b96854",
+  "question_key": "situation_priority_uphill_near_refuge_reverse",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

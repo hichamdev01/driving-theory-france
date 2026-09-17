@@ -1,0 +1,36 @@
+{
+  "code": "B27b",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+  "scenario_id": "b27b_car_scenario",
+  "scenario": "French urban avenue, ordinary traffic road with a separate paved tram lane on right, rails and overhead catenary. Prominent ROUND BLUE sign with WHITE tram silhouette and overhead wire symbol on the entrance of the parallel reserved lane. Learner remains on general road, tram lane empty. No crossing rails through car lane, no bus symbols.",
+  "novelty_review": "Driving along a tram-only lane to avoid traffic, distinct from crossing tracks and tram passenger stops.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. French urban avenue, ordinary traffic road with a separate paved tram lane on right, rails and overhead catenary. Prominent ROUND BLUE sign with WHITE tram silhouette and overhead wire symbol on the entrance of the parallel reserved lane. Learner remains on general road, tram lane empty. No crossing rails through car lane, no bus symbols. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+  "question": {
+    "key": "situation_b27b_car_scenario",
+    "category_slug": "road_signs",
+    "correct_answer": "a",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Cette voie est vide. Puis-je la prendre en voiture pour éviter la circulation ?",
+        "answer_a": "Non, elle est réservée aux tramways.",
+        "answer_b": "Oui, jusqu’à l’arrivée d’un tramway.",
+        "answer_c": "Oui, si je roule sur les rails.",
+        "answer_d": "Oui, avec les feux de détresse.",
+        "explanation": "Le panneau B27b désigne une voie réservée aux tramways. Son absence momentanée ne permet pas d’y circuler en voiture ; je reste sur la voie ouverte à la circulation générale."
+      },
+      "en": {
+        "question_text": "This lane is empty. May I use it in my car to avoid traffic?",
+        "answer_a": "No, it is reserved for trams.",
+        "answer_b": "Yes, until a tram arrives.",
+        "answer_c": "Yes, if I drive on the rails.",
+        "answer_d": "Yes, with hazard lights on.",
+        "explanation": "Sign B27b identifies a lane reserved for trams. A temporary absence of trams does not permit cars to use it; I stay on the road open to general traffic."
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "C51a",
+  "code": "C51a",
+  "state": "imported",
+  "created_on": "2026-09-16",
+  "proposal": {
+    "code": "C51a",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+    "scenario_id": "c51a_car_scenario",
+    "scenario": "Ordinary car on French divided expressway in daylight, rightmost lane, light traffic. Prominent square BLUE roadside sign with exact WHITE uppercase text on three centered lines: SECTION / À VITESSE / RÉGULÉE. Faithful supplied reference, crisp accents. No numerical speed sign, no unreadable electronic boards, no additional text.",
+    "novelty_review": "Announcement of speed-regulated section, no invented numerical limit or confusion with automatic speed enforcement.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. Ordinary car on French divided expressway in daylight, rightmost lane, light traffic. Prominent square BLUE roadside sign with exact WHITE uppercase text on three centered lines: SECTION / À VITESSE / RÉGULÉE. Faithful supplied reference, crisp accents. No numerical speed sign, no unreadable electronic boards, no additional text. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+    "question": {
+      "key": "situation_c51a_car_scenario",
+      "category_slug": "road_signs",
+      "correct_answer": "d",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Que dois-je comprendre à la lecture de ce panneau ?",
+          "answer_a": "La vitesse devient libre.",
+          "answer_b": "Je dois obligatoirement rouler à 130 km/h.",
+          "answer_c": "Le régulateur de vitesse de ma voiture devient obligatoire.",
+          "answer_d": "J’approche d’une section où la vitesse est régulée.",
+          "explanation": "Le panneau C51a annonce le début d’une section à vitesse régulée. Il ne fixe pas lui-même une valeur chiffrée : je surveille et respecte les limitations affichées sur la section, ainsi que les conditions de circulation."
+        },
+        "en": {
+          "question_text": "What should I understand from this sign?",
+          "answer_a": "There is no speed limit.",
+          "answer_b": "I must drive at 130 km/h.",
+          "answer_c": "My car’s cruise control becomes compulsory.",
+          "answer_d": "I am approaching a section with regulated speeds.",
+          "explanation": "Sign C51a announces a speed-regulated section. It does not itself specify a numerical limit: I watch for and obey the speed limits displayed along the section and adapt to traffic conditions."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/C51a/scene.jpg",
+  "image_sha256": "d97f93684c9bba8b0693c8e37141f1b0debba6de7cf5db87df190595a0996162",
+  "review_note": "Actual image reviewed: blue sign accurately spells SECTION / À VITESSE / RÉGULÉE, no numeric limit. D alone identifies announced regulated-speed section; both explanations distinguish road regulation from mandatory in-car cruise control.",
+  "reviewed_sha256": "513e6ffc9e185ce914178f660987c6da9681ef6c72f7ab854ca71def9ff17755",
+  "question_key": "situation_c51a_car_scenario",
+  "imported_content_version": 73,
+  "imported_on": "2026-09-16"
+}

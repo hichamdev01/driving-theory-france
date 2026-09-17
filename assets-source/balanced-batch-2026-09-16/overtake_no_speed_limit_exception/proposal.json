@@ -1,0 +1,50 @@
+{
+  "sequence": 18,
+  "scenario_id": "overtake_no_speed_limit_exception",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Limitation pendant le dépassement",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042240048",
+    "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000006842214"
+  ],
+  "novelty_review": "No temporary speeding allowance to pass, distinct from posted-limit identification.",
+  "scenario": "Driver POV French rural straight two-way road, clear view and broken centre line. Dark car ahead in right lane. Learner still behind. Red-rim circular white sign with black '80' on right. Dry daylight, no other signs.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV French rural straight two-way road, clear view and broken centre line. Dark car ahead in right lane. Learner still behind. Red-rim circular white sign with black '80' on right. Dry daylight, no other signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_overtake_no_speed_limit_exception",
+    "category_slug": "overtaking",
+    "correct_answer": "b",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Pour dépasser sur cette route limitée à 80 km/h, puis-je monter brièvement à 90 ?",
+        "answer_a": "Oui, pendant dix secondes.",
+        "answer_b": "Non, la limite reste applicable pendant le dépassement.",
+        "answer_c": "Oui, si personne n’arrive en face.",
+        "answer_d": "Oui, dès que mon clignotant est allumé.",
+        "explanation": "Dépasser ne permet pas de dépasser la vitesse maximale. Si la manœuvre ne peut pas être réalisée en sécurité tout en respectant 80 km/h, je ne l’entreprends pas."
+      },
+      "en": {
+        "question_text": "To overtake on this road limited to 80 km/h, may I briefly reach 90?",
+        "answer_a": "Yes, for ten seconds.",
+        "answer_b": "No, the limit still applies while overtaking.",
+        "answer_c": "Yes, if nobody is coming the other way.",
+        "answer_d": "Yes, once my indicator is on.",
+        "explanation": "Overtaking does not authorise exceeding the speed limit. If the manoeuvre cannot be completed safely within 80 km/h, I do not start it."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/overtake_no_speed_limit_exception/scene.jpg",
+  "image_sha256": "861786a181f070ce32e7653b633441552f6d9ceca36e5ad0fef3456d1acdefa5",
+  "native_image_sha256": "1b9d8e6c6854bad13cc7f2cc480ade0b83ccd2b08def1873caafe2b3a447a3a4",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-a6824f34-7cc1-43a0-a384-9d52ca4a4011.png",
+  "visual_review": "Clear 80 km/h red-ring sign and vehicle ahead on two-way road. No visual exception to posted speed limit.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "256d13661c3c7a570cade139329d6f6df7797c6511529c5718255cdafedeaa1a",
+  "question_key": "situation_overtake_no_speed_limit_exception",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

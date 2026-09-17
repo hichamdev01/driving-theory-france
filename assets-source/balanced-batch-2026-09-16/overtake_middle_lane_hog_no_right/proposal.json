@@ -1,0 +1,50 @@
+{
+  "sequence": 19,
+  "scenario_id": "overtake_middle_lane_hog_no_right",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Voiture au milieu et dépassement à droite",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842219"
+  ],
+  "novelty_review": "Free-flow passing on right despite another driver's poor position, distinct from congestion exception.",
+  "scenario": "Driver POV RIGHTMOST lane of THREE-lane divided French motorway, very light traffic. Blue car ahead in MIDDLE lane, right lane ahead empty, leftmost passing lane empty. Clearly three lanes, central guardrail far left. Daylight no signs.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV RIGHTMOST lane of THREE-lane divided French motorway, very light traffic. Blue car ahead in MIDDLE lane, right lane ahead empty, leftmost passing lane empty. Clearly three lanes, central guardrail far left. Daylight no signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_overtake_middle_lane_hog_no_right",
+    "category_slug": "overtaking",
+    "correct_answer": "c",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "La circulation est fluide et cette voiture reste au milieu. Puis-je la dépasser en restant à sa droite ?",
+        "answer_a": "Oui, puisque la voie de droite est libre.",
+        "answer_b": "Oui, si je ne change pas de voie.",
+        "answer_c": "Non, son mauvais placement n’autorise pas le dépassement à droite.",
+        "answer_d": "Oui, après un appel de phares.",
+        "explanation": "En circulation fluide, le dépassement s’effectue normalement par la gauche. Le maintien injustifié d’un véhicule au milieu ne crée pas d’exception ; je prépare une manœuvre autorisée seulement si elle est sûre."
+      },
+      "en": {
+        "question_text": "Traffic is flowing freely and this car stays in the middle lane. May I pass it on its right?",
+        "answer_a": "Yes, because the right lane is empty.",
+        "answer_b": "Yes, if I do not change lanes.",
+        "answer_c": "No, its poor position does not authorise passing on the right.",
+        "answer_d": "Yes, after flashing my headlights.",
+        "explanation": "In free-flowing traffic, overtaking is normally on the left. A vehicle unnecessarily staying in the middle does not create an exception; I prepare a permitted manoeuvre only if it is safe."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/overtake_middle_lane_hog_no_right/scene.jpg",
+  "image_sha256": "be6e5117d821e24ae1118f6cdc698f64b527d7a47158d3bf5918b2db2a0f26f0",
+  "native_image_sha256": "88fa944f95e518882c62c1ad97039a954a97e44a257be03d77ae43e68d4fcb51",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-39d71776-3044-4d21-89f6-ec7fa95cf680.png",
+  "visual_review": "Corrected viewer to rightmost lane; blue car clearly ahead-left in middle lane, three travel lanes and solid shoulder boundary.",
+  "reviewed_on": "2026-09-16",
+  "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/overtake_middle_lane_hog_no_right/edit-prompt.md",
+  "reviewed_sha256": "e94fcde822083f9567e2047db01a45e7a6a27175cad6bdc47a58713a78c40be6",
+  "question_key": "situation_overtake_middle_lane_hog_no_right",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

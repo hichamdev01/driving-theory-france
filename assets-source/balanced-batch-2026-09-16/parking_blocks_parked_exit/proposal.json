@@ -1,0 +1,49 @@
+{
+  "sequence": 16,
+  "scenario_id": "parking_blocks_parked_exit",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Dégagement d’un autre véhicule",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039278148/"
+  ],
+  "novelty_review": "Blocking a parked car's exit in parking lot, distinct from driveway and double-parking on street.",
+  "scenario": "A red passenger car positioned across a blue car’s parking-space exit would prevent it from leaving.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Clear elevated three-quarter realistic photo of small outdoor PUBLIC parking lot. Blue ordinary car parked correctly nose-in at bay, a red ordinary car stopped transversely immediately across rear exit of blue bay blocking it. Empty aisle beyond, no road or curbside double-parking, no people or text. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_parking_blocks_parked_exit",
+    "category_slug": "parking_stopping",
+    "correct_answer": "d",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Je veux laisser ma voiture en travers de la sortie de cette place, ce qui bloquera la voiture garée. Puis-je le faire quelques minutes ?",
+        "answer_a": "Oui, si je laisse mon numéro de téléphone.",
+        "answer_b": "Oui, en gardant les feux de détresse.",
+        "answer_c": "Oui, si son conducteur est absent.",
+        "answer_d": "Non, je ne dois pas empêcher son dégagement.",
+        "explanation": "L’arrêt ou le stationnement qui empêche l’accès à un autre véhicule ou son dégagement est gênant. Une courte durée ou un numéro de téléphone ne supprime pas cette gêne."
+      },
+      "en": {
+        "question_text": "I want to leave my car across the exit of this parking space, blocking the parked car. May I do so for a few minutes?",
+        "answer_a": "Yes, if I leave my phone number.",
+        "answer_b": "Yes, with hazard lights on.",
+        "answer_c": "Yes, if its driver is absent.",
+        "answer_d": "No, I must not prevent it from leaving.",
+        "explanation": "Stopping or parking in a way that prevents access to another vehicle or blocks its exit is obstructive. A short duration or leaving a phone number does not remove the obstruction."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/parking_blocks_parked_exit/scene.jpg",
+  "image_sha256": "3eb761160ca462dba8ab36604f553f998391cb8f10591345c4ca45024f20d872",
+  "native_image_sha256": "6c22fd5ebe552691860b2a3c61f1529d65c52c57927ab7dd6b5bd96f3399c1c6",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-654ce896-c0a1-4944-a494-c4901d21e7a6.png",
+  "visual_review": "Red car blocks blue car's only bay exit in a public lot. Blue car is reversed into bay, which does not affect the obstruction rule.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "fb24714eddbf56c4bd83e40d06fd245a4a319084f17bd1ae8b99ae6d99727b51",
+  "question_key": "situation_parking_blocks_parked_exit",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

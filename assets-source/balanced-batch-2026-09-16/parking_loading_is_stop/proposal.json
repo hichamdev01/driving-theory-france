@@ -1,0 +1,49 @@
+{
+  "sequence": 14,
+  "scenario_id": "parking_loading_is_stop",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Différence entre arrêt et stationnement",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045650507"
+  ],
+  "novelty_review": "Legal definition of momentary unloading with driver nearby, not permission at prohibited places.",
+  "scenario": "Exterior daytime scene ordinary passenger hatchback lawfully pulled into marked roadside layby in French town. Boot open, one adult driver immediately beside boot lifting ONE suitcase onto sidewalk, clear pedestrian route, no delivery van, no hazard or restriction sign.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Exterior daytime scene ordinary passenger hatchback lawfully pulled into marked roadside layby in French town. Boot open, one adult driver immediately beside boot lifting ONE suitcase onto sidewalk, clear pedestrian route, no delivery van, no hazard or restriction sign. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_parking_loading_is_stop",
+    "category_slug": "parking_stopping",
+    "correct_answer": "b",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Je m’immobilise seulement le temps de sortir cette valise, en restant près de la voiture pour la déplacer. Comment qualifier cette immobilisation ?",
+        "answer_a": "Toujours un stationnement, même pendant une seconde.",
+        "answer_b": "Un arrêt, si elle dure uniquement le temps du déchargement.",
+        "answer_c": "Une panne, puisque le coffre est ouvert.",
+        "answer_d": "Un arrêt autorisé partout sans exception.",
+        "explanation": "Le déchargement momentané avec le conducteur aux commandes ou à proximité pour déplacer le véhicule correspond à un arrêt. Cela ne permet pas de s’arrêter là où l’arrêt est interdit."
+      },
+      "en": {
+        "question_text": "I stop only long enough to unload this suitcase and stay beside the car ready to move it. How is this classified?",
+        "answer_a": "Always parking, even for one second.",
+        "answer_b": "Stopping, if it lasts only for the unloading.",
+        "answer_c": "A breakdown because the boot is open.",
+        "answer_d": "Stopping that is permitted everywhere without exception.",
+        "explanation": "Momentary unloading with the driver at the controls or nearby and able to move the car counts as stopping. This does not allow stopping where it is prohibited."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/parking_loading_is_stop/scene.jpg",
+  "image_sha256": "e1994598d06fc29ad8030069eca0919ef50e535a5bc49ad9fdf1c94c69ea23cd",
+  "native_image_sha256": "213841828fc78219afc85b3ea27cd0cb76d0d7ef65dae4ea232ca0e3ea9ad9a8",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-a26b1471-4409-46e9-bbc5-2ab403d96493.png",
+  "visual_review": "Driver remains immediately beside open boot unloading one suitcase in a marked roadside bay, with clear pedestrian passage.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "87eec3e646c1458f9b08e41944fec499fa0a7dbf68c2a2081fa12ee97bf37d77",
+  "question_key": "situation_parking_loading_is_stop",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

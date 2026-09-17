@@ -1,0 +1,49 @@
+{
+  "id": "B4",
+  "code": "B4",
+  "state": "imported",
+  "created_on": "2026-09-13",
+  "proposal": {
+    "code": "B4",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Learner is driving an ordinary passenger car; this question teaches that driver’s own access, direction, parking or interpretation decision, not specialist-vehicle operation.",
+    "scenario_id": "b4_car_sign_interpretation",
+    "scenario": "Approach to small active French-Swiss road customs control post in daylight. No vehicle ahead. Prominent circular WHITE sign red border, exact black word DOUANE above thick black horizontal bar and ZOLL below, as reference. Small inspection booth and raised barrier farther ahead. No other signs or readable building text. Learner remains before customs stop point.",
+    "novelty_review": "Compulsory customs stop even clear road and raised barrier, distinct from intersection STOP and toll payment.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Create ONE realistic scene-only French permis-B quiz photo, wide landscape preferably 2048x1152. Ordinary LEFT-HAND-DRIVE passenger car viewpoint, small dashboard rim at bottom, right-hand traffic, natural daylight, realistic road geometry. Input image is a verified sign pictogram REFERENCE ONLY, not a scene to edit. Reproduce sign shape, colours and symbols faithfully. Approach to small active French-Swiss road customs control post in daylight. No vehicle ahead. Prominent circular WHITE sign red border, exact black word DOUANE above thick black horizontal bar and ZOLL below, as reference. Small inspection booth and raised barrier farther ahead. No other signs or readable building text. Learner remains before customs stop point. No question text, answer options, quiz panels, watermark or answer hints. The only text is the specified physical sign inscription. Keep the key sign large and legible, with safe approach distance.",
+    "question": {
+      "key": "situation_b4_car_sign_interpretation",
+      "category_slug": "road_signs",
+      "correct_answer": "c",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "La barrière est levée et personne ne me précède. Que m’impose ce panneau ?",
+          "answer_a": "Passer sans ralentir.",
+          "answer_b": "M’arrêter uniquement si je transporte des marchandises.",
+          "answer_c": "Marquer l’arrêt au poste de douane.",
+          "answer_d": "Faire obligatoirement demi-tour.",
+          "explanation": "Le panneau B4 impose l’arrêt au poste de douane. Même si la barrière est levée, je marque l’arrêt au point prévu et respecte les consignes du contrôle avant de poursuivre."
+        },
+        "en": {
+          "question_text": "The barrier is raised and there is no vehicle ahead. What does this sign require?",
+          "answer_a": "Continue without slowing down.",
+          "answer_b": "Stop only if I am carrying goods.",
+          "answer_c": "Stop at the customs post.",
+          "answer_d": "Make a compulsory U-turn.",
+          "explanation": "Sign B4 requires a stop at the customs post. Even with a raised barrier, I stop at the designated point and follow the control instructions before continuing."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/B4/scene.jpg",
+  "image_sha256": "5b2b0cf987020721041d7d486603cc39782776c25eb960479f008a4b3a84c6bb",
+  "review_note": "Reviewed actual image: round red border, DOUANE and ZOLL spelled correctly with black horizontal bar, customs booth and raised barrier ahead. Clear approach matches question; raised barrier does not negate sign. Four choices in each language, C only requires customs stop.",
+  "reviewed_sha256": "4b8654069d754ce37611c62e64b85c605611405600e8279e2df63d595c051adc",
+  "question_key": "situation_b4_car_sign_interpretation",
+  "imported_content_version": 57,
+  "imported_on": "2026-09-13"
+}

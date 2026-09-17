@@ -2156,11 +2156,11 @@
       "color": "#1E5AA8",
       "translations": {
         "en": {
-          "name": "Special traffic conditions on the centre lane",
+          "name": "C24a — Special traffic conditions on the centre lane",
           "meaning": "Special traffic conditions on the centre lane"
         },
         "fr": {
-          "name": "Conditions particulières de circulation sur la voie centrale",
+          "name": "C24a — Conditions particulières de circulation sur la voie centrale",
           "meaning": "Conditions particulières de circulation sur la voie centrale"
         }
       }
@@ -2172,11 +2172,11 @@
       "color": "#1E5AA8",
       "translations": {
         "en": {
-          "name": "Special lane speed limits",
+          "name": "C24a — Special lane speed limits",
           "meaning": "Special lane speed limits"
         },
         "fr": {
-          "name": "Conditions particulières de circulation par voie en terme de limitation de vitesse",
+          "name": "C24a — Conditions particulières de circulation par voie en terme de limitation de vitesse",
           "meaning": "Conditions particulières de circulation par voie en terme de limitation de vitesse"
         }
       }
@@ -2188,11 +2188,11 @@
       "color": "#1E5AA8",
       "translations": {
         "en": {
-          "name": "Two-way cycle traffic",
+          "name": "C24a — Two-way cycle traffic",
           "meaning": "Two-way cycle traffic"
         },
         "fr": {
-          "name": "Chaussée à double sens. Sens opposé réservé aux cycles",
+          "name": "C24a — Chaussée à double sens. Sens opposé réservé aux cycles",
           "meaning": "Chaussée à double sens. Sens opposé réservé aux cycles"
         }
       }
@@ -2204,11 +2204,11 @@
       "color": "#1E5AA8",
       "translations": {
         "en": {
-          "name": "Two-way road with opposing bus lane",
+          "name": "C24a — Two-way road with opposing bus lane",
           "meaning": "Two-way road with opposing bus lane"
         },
         "fr": {
-          "name": "Chaussée à double sens. Sens opposé réservé aux bus",
+          "name": "C24a — Chaussée à double sens. Sens opposé réservé aux bus",
           "meaning": "Chaussée à double sens. Sens opposé réservé aux bus"
         }
       }
@@ -2220,11 +2220,11 @@
       "color": "#1E5AA8",
       "translations": {
         "en": {
-          "name": "Three lanes in this direction",
+          "name": "C24a — Three lanes in this direction",
           "meaning": "Three lanes in this direction"
         },
         "fr": {
-          "name": "Conditions particulières de circulation : trois voies de circulation dans ce sens",
+          "name": "C24a — Conditions particulières de circulation : trois voies de circulation dans ce sens",
           "meaning": "Conditions particulières de circulation : trois voies de circulation dans ce sens"
         }
       }
@@ -2236,11 +2236,11 @@
       "color": "#1E5AA8",
       "translations": {
         "en": {
-          "name": "Lane direction indication",
+          "name": "C24b — Lane direction indication",
           "meaning": "Lane direction indication"
         },
         "fr": {
-          "name": "Signalisation par voie",
+          "name": "C24b — Signalisation par voie",
           "meaning": "Signalisation par voie"
         }
       }
@@ -2252,11 +2252,11 @@
       "color": "#1E5AA8",
       "translations": {
         "en": {
-          "name": "Assigned lanes",
+          "name": "C24b — Assigned lanes",
           "meaning": "Assigned lanes"
         },
         "fr": {
-          "name": "Voies affectées",
+          "name": "C24b — Voies affectées",
           "meaning": "Voies affectées"
         }
       }
@@ -2268,11 +2268,11 @@
       "color": "#1E5AA8",
       "translations": {
         "en": {
-          "name": "Special traffic conditions by lane",
+          "name": "C24c — Special traffic conditions by lane",
           "meaning": "Special traffic conditions by lane"
         },
         "fr": {
-          "name": "Conditions particulières de circulation sur la route ou la voie embranchée",
+          "name": "C24c — Conditions particulières de circulation sur la route ou la voie embranchée",
           "meaning": "Conditions particulières de circulation sur la route ou la voie embranchée"
         }
       }
@@ -2284,11 +2284,11 @@
       "color": "#1E5AA8",
       "translations": {
         "en": {
-          "name": "Contraflow cycle lane",
+          "name": "C24c — Contraflow cycle lane",
           "meaning": "Contraflow cycle lane"
         },
         "fr": {
-          "name": "La voie de circulation en sens inverse est réservée aux cyclistes",
+          "name": "C24c — La voie de circulation en sens inverse est réservée aux cyclistes",
           "meaning": "La voie de circulation en sens inverse est réservée aux cyclistes"
         }
       }

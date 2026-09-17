@@ -1,0 +1,50 @@
+{
+  "sequence": 26,
+  "scenario_id": "alcohol_cbd_legal_sale_not_driving",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "CBD et conduite après usage de THC",
+  "references": [
+    "https://www.courdecassation.fr/decision/6492974417c95e05dbf9ded3"
+  ],
+  "novelty_review": "Legal purchase is no exemption to proven THC use while driving.",
+  "scenario": "Editorial still-life in safely parked car engine off: plain unbranded bottle and cardboard pack on passenger seat, only text 'CBD', keys alongside. No joint, no driver, no THC percentage or claims.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Editorial still-life in safely parked car engine off: plain unbranded bottle and cardboard pack on passenger seat, only text 'CBD', keys alongside. No joint, no driver, no THC percentage or claims. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_alcohol_cbd_legal_sale_not_driving",
+    "category_slug": "alcohol_drugs",
+    "correct_answer": "b",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Un produit au CBD a été acheté légalement. Cela exclut-il une infraction si l’analyse établit une conduite après usage de THC ?",
+        "answer_a": "Oui, une facture autorise à conduire.",
+        "answer_b": "Non, la vente légale n’écarte pas cette infraction.",
+        "answer_c": "Oui, si le conducteur ne ressent aucun effet.",
+        "answer_d": "Oui, pour un trajet de moins de dix minutes.",
+        "explanation": "La vente légale de certains produits au CBD ne constitue pas une exception à l’interdiction de conduire après usage de THC, substance classée comme stupéfiant. Le ressenti ne suffit pas non plus."
+      },
+      "en": {
+        "question_text": "A CBD product was bought legally. Does that rule out an offence if testing establishes driving after THC use?",
+        "answer_a": "Yes, a receipt authorises driving.",
+        "answer_b": "No, legal sale does not rule out this offence.",
+        "answer_c": "Yes, if the driver feels no effect.",
+        "answer_d": "Yes, for a trip of less than ten minutes.",
+        "explanation": "Legal sale of certain CBD products does not create an exception to the prohibition on driving after use of THC, a controlled drug. Subjective feelings are not enough either."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/alcohol_cbd_legal_sale_not_driving/scene.jpg",
+  "image_sha256": "a662eb9c0f63b68f8a63d4f72977a09caeec3a92a727858b71b52ef1814f6013",
+  "native_image_sha256": "90c85a2a1ffda910a28de930b875a8a92055d24b9f3bfccd196416e1855e0bb9",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-306ff9ea-4fc7-4d83-80ad-ae34689b0e94.png",
+  "visual_review": "Unbranded CBD bottle and pack with keys in stationary car; removed unrelated inaccurate roadside signage. No THC amount or legal driving claim shown.",
+  "reviewed_on": "2026-09-16",
+  "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/alcohol_cbd_legal_sale_not_driving/edit-prompt.md",
+  "reviewed_sha256": "b658ef0a26bf0bd8be506807dd363aabf745d346e09b354a830058db6ea60d0a",
+  "question_key": "situation_alcohol_cbd_legal_sale_not_driving",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

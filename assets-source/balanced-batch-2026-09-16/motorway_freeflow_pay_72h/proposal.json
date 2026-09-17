@@ -1,0 +1,50 @@
+{
+  "sequence": 3,
+  "scenario_id": "motorway_freeflow_pay_72h",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Paiement différé du péage en flux libre",
+  "references": [
+    "https://www.autoroutes.sanef.com/fr/assistance/flux-libre/delai-pour-payer"
+  ],
+  "novelty_review": "Payment deadline after barrier-free passage, absent from existing payment-method sign questions.",
+  "scenario": "French motorway driver POV approaching open-road toll gantry with small cameras above two clear lanes, no booths and no barriers. Bright daylight ordinary cars at safe distances, central guardrail. Minimal overhead panel text only 'PÉAGE' and 'FLUX LIBRE', no hours, no answers.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. French motorway driver POV approaching open-road toll gantry with small cameras above two clear lanes, no booths and no barriers. Bright daylight ordinary cars at safe distances, central guardrail. Minimal overhead panel text only 'PÉAGE' and 'FLUX LIBRE', no hours, no answers. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_motorway_freeflow_pay_72h",
+    "category_slug": "motorways",
+    "correct_answer": "c",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Je viens d’emprunter le péage en flux libre Sanef, sans badge ni paiement automatique. Dans quel délai dois-je régler mon passage ?",
+        "answer_a": "Uniquement à la fin du mois.",
+        "answer_b": "Seulement après réception d’une amende.",
+        "answer_c": "Dans les 72 heures suivant le passage.",
+        "answer_d": "Aucun paiement n’est dû puisqu’il n’y a pas de barrière.",
+        "explanation": "Sans paiement automatique, le péage en flux libre Sanef doit être réglé dans les 72 heures. Je paie par un moyen officiel disponible, après m’être arrêté en sécurité si j’utilise un téléphone."
+      },
+      "en": {
+        "question_text": "I have used a Sanef free-flow toll without a tag or automatic payment. When must I pay?",
+        "answer_a": "Only at the end of the month.",
+        "answer_b": "Only after receiving a fine.",
+        "answer_c": "Within 72 hours of passing.",
+        "answer_d": "No payment is due because there is no barrier.",
+        "explanation": "Without automatic payment, a Sanef free-flow toll must be paid within 72 hours. I use an official payment method and stop safely before using a phone."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/motorway_freeflow_pay_72h/scene.jpg",
+  "image_sha256": "bdff5cba88bcf399de45a184ca8529791939b61c1758eef5fee97434413d6a35",
+  "native_image_sha256": "1fdf97484f8a41cca27f8dbe7e2f0854178b589afc9ba515d2054ad26e866916",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-6572f0d0-a5e0-4a21-81cc-b95071376273.png",
+  "visual_review": "Corrected image reviewed: open-road toll gantry labelled PEAGE FLUX LIBRE, no physical barrier, geographic A8/Nice/Cannes sign removed to avoid conflict with Sanef question. C alone gives 72 hours, FR/EN source-specific wording and four options checked.",
+  "reviewed_on": "2026-09-16",
+  "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/motorway_freeflow_pay_72h/edit-prompt.md",
+  "reviewed_sha256": "4b6ec228bcc5de2d8d7aa66d639f03a55a28410f56e79774a6e44bbafff7c4bb",
+  "question_key": "situation_motorway_freeflow_pay_72h",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

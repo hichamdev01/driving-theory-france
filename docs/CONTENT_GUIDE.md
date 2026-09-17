@@ -59,7 +59,22 @@ Every country pack must use exactly these `category_slug` values (translated nam
 
 ## Instructions for whatever AI/researcher builds the content
 
-> "Research the official driving theory test for `<country>`. Produce a JSON file matching the schema in CONTENT_GUIDE.md exactly (same field names, same category slugs). Use only verified, current facts (speed limits, blood alcohol limits, exam question count/time limit/passing score) — cite where you're not fully certain rather than guessing. Write natural, accurate explanations for every question, not just 'because that's the rule.' Provide translations for every language listed in `languages`, including English."
+TheoryPrep targets the ordinary passenger-car licence (French category B), not
+the specialist theory or operation of other vehicle classes. Every question
+must either put the learner in control of a normal passenger car or test a
+general road rule directly applicable to that driver.
+
+- Do not ask the learner to operate a bicycle, motorcycle, moped, EDPM,
+  pedestrian, tractor, licence-free microcar, bus/coach, HGV, dangerous-goods
+  vehicle, camping-car, or specialist trailer combination.
+- Vehicle-class-specific speeds, equipment, access restrictions, dimensions,
+  loads, and operating rules are out of scope.
+- Other road users may appear as hazards or traffic participants when the
+  answer tests what the passenger-car driver must observe, anticipate, yield
+  to, or do safely. For example, safely passing a cyclist or staying out of a
+  turning truck's blind spot remains in scope.
+
+> "Research the official passenger-car driving theory test for `<country>`. Produce a JSON file matching the schema in CONTENT_GUIDE.md exactly (same field names, same category slugs). Keep every question within ordinary passenger-car licence scope; other vehicle classes may appear only as road users the car driver must interact with safely. Use only verified, current facts (speed limits, blood alcohol limits, exam question count/time limit/passing score) — cite where you're not fully certain rather than guessing. Write natural, accurate explanations for every question, not just 'because that's the rule.' Provide translations for every language listed in `languages`, including English."
 
 ## Adding a new country to the app once you have the JSON
 

@@ -1,0 +1,49 @@
+{
+  "id": "C4b",
+  "code": "C4b",
+  "state": "imported",
+  "created_on": "2026-09-13",
+  "proposal": {
+    "code": "C4b",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Learner drives an ordinary passenger car. This sign affects that car driver directly; no specialist vehicle operation is taught.",
+    "scenario_id": "c4b_end_advisory_70",
+    "scenario": "Ordinary two-way countryside road emerging from a broad gentle bend into a clear straight section, no motorway, no tunnel, no junction. On right verge a SQUARE BLUE sign with WHITE number \"70\" crossed by a thick RED DIAGONAL rising from bottom-left to top-right, precisely C4b. Blue square must remain square, not a red-bordered white circular speed limit. No other signs or numerical overlays.",
+    "novelty_review": "Complements existing C4a advisory-speed recognition by identifying its end; distinguishes end of advice from end of a mandatory maximum, with no new speed entitlement.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B quiz photo, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, a small portion of dashboard/steering rim along bottom, right-hand traffic. Natural daylight, realistic scale and perspective, neutral exposure, no cinematic grading. The supplied image is ONLY a verified sign pictogram reference, not a scene to edit: reproduce its exact shape, colours, symbol and inscriptions on one realistic roadside sign. Ordinary two-way countryside road emerging from a broad gentle bend into a clear straight section, no motorway, no tunnel, no junction. On right verge a SQUARE BLUE sign with WHITE number \"70\" crossed by a thick RED DIAGONAL rising from bottom-left to top-right, precisely C4b. Blue square must remain square, not a red-bordered white circular speed limit. No other signs or numerical overlays. No quiz panel, no question text, no answer choices, no answer hints, no watermark, no unrelated signage. All text mentioned above belongs only on the physical sign. Keep the scene focused on one learning objective, with enough space to respond safely.",
+    "question": {
+      "key": "situation_c4b_end_advisory_70",
+      "category_slug": "speed_limits",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Que signifie ce panneau carré bleu barré ?",
+          "answer_a": "La fin de la vitesse conseillée à 70 km/h.",
+          "answer_b": "Une vitesse minimale obligatoire de 70 km/h.",
+          "answer_c": "Une interdiction de dépasser 70 km/h.",
+          "answer_d": "L’obligation d’accélérer immédiatement.",
+          "explanation": "Le panneau C4b met fin à la vitesse conseillée indiquée, ici 70 km/h. Il ne supprime pas les limitations de vitesse applicables et ne m’ordonne pas d’accélérer : je continue à adapter mon allure aux conditions de circulation."
+        },
+        "en": {
+          "question_text": "What does this crossed-out blue square sign mean?",
+          "answer_a": "The end of the advised speed of 70 km/h.",
+          "answer_b": "A mandatory minimum speed of 70 km/h.",
+          "answer_c": "A prohibition on exceeding 70 km/h.",
+          "answer_d": "An obligation to accelerate immediately.",
+          "explanation": "Sign C4b ends the indicated advised speed, here 70 km/h. It does not cancel applicable speed limits or require acceleration: I continue to adapt my speed to traffic and road conditions."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/C4b/scene.jpg",
+  "image_sha256": "f2f49b3446923677190ece5ec279dcae1f49a8faa06cc4e2e0f60a56dcb168b8",
+  "review_note": "Actual image reviewed: square blue 70 with red ascending cancellation bar; not circular B33 or B43. Gentle rural curve does not justify automatic acceleration, which the explanation explicitly rejects. End of advisory speed is the only correct answer A in both languages.",
+  "reviewed_sha256": "8e614f1873fefc8325e25a2c929863342402e8fc18843c7c01813a95288a28bc",
+  "question_key": "situation_c4b_end_advisory_70",
+  "imported_content_version": 43,
+  "imported_on": "2026-09-13"
+}

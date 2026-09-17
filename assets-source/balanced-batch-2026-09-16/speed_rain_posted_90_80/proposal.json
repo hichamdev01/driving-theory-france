@@ -1,0 +1,49 @@
+{
+  "sequence": 8,
+  "scenario_id": "speed_rain_posted_90_80",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Pluie sur une route ordinaire limitée à 90",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042240048"
+  ],
+  "novelty_review": "Rain reduction on an ordinary undivided 90 road, distinct from probationary reduction and motorway rain.",
+  "scenario": "Driver POV rural French TWO-lane undivided road, one lane each direction, wet road with visible rain streaks on windscreen and working wiper at lower edge, good visibility much greater than 50m. Red-rimmed circular white sign with black '90' on right. Daylight no other hazards.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV rural French TWO-lane undivided road, one lane each direction, wet road with visible rain streaks on windscreen and working wiper at lower edge, good visibility much greater than 50m. Red-rimmed circular white sign with black '90' on right. Daylight no other hazards. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_speed_rain_posted_90_80",
+    "category_slug": "speed_limits",
+    "correct_answer": "d",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Il pleut sur cette route à double sens sans séparateur central, normalement limitée à 90 km/h. Quelle limite maximale dois-je respecter ?",
+        "answer_a": "90 km/h car le panneau ne change pas.",
+        "answer_b": "100 km/h.",
+        "answer_c": "50 km/h dès la première goutte, quelle que soit la visibilité.",
+        "answer_d": "80 km/h.",
+        "explanation": "Sous la pluie, la vitesse maximale sur cette route ordinaire est de 80 km/h. Je roule encore moins vite si l’adhérence, la visibilité ou la circulation l’exigent."
+      },
+      "en": {
+        "question_text": "It is raining on this undivided two-way road normally limited to 90 km/h. What maximum applies?",
+        "answer_a": "90 km/h because the sign has not changed.",
+        "answer_b": "100 km/h.",
+        "answer_c": "50 km/h from the first drop, regardless of visibility.",
+        "answer_d": "80 km/h.",
+        "explanation": "In rain, the maximum on this ordinary road is 80 km/h. I drive more slowly if grip, visibility or traffic require it."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/speed_rain_posted_90_80/scene.jpg",
+  "image_sha256": "9e04bfad49d18deb2d6567c4d30853d4a999e50a6ebea6e7718c665c0a262598",
+  "native_image_sha256": "5faf93b299e5415e9b34ed495cc740292d6f3a8a9c40e3feac240320935b03e0",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-9db8bce1-e1b2-40f7-b9b1-0546bbc65be1.png",
+  "visual_review": "Reviewed: visible rain and wiper, wet undivided ordinary road with 90 sign and visibility well over 50 m. D alone selects rain maximum 80, explanation retains lower safe speed when needed. FR/EN and four choices checked.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "0bb974aa24b82274aed5b4827ddd0aff8ef3e2f8393bed5557589548de57712b",
+  "question_key": "situation_speed_rain_posted_90_80",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

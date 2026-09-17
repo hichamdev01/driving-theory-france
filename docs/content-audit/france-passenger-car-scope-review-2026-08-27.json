@@ -1,0 +1,53 @@
+{
+  "review_date": "2026-08-27",
+  "reviewed_question_count": 309,
+  "removed_question_count": 32,
+  "remaining_question_count": 277,
+  "policy": "Keep questions for an ordinary passenger-car learner. Other road users may appear only when the tested decision belongs to the passenger-car driver.",
+  "removed_keys_by_reason": {
+    "non_car_or_vulnerable_road_user_operation": [
+      "safety_edpm_age_speed",
+      "situation_motorway_moped_prohibited",
+      "situation_child_cyclist_helmet_unfastened",
+      "situation_cyclist_night_high_visibility_vest",
+      "situation_motorcycle_helmet_unfastened",
+      "situation_motorcycle_passenger_no_gloves",
+      "situation_no_pedestrians_b9a",
+      "situation_motorcycle_interfiles_stopped_30",
+      "situation_cycles_prohibited_b9b",
+      "situation_cyclist_m12_red_yield",
+      "situation_motorway_bicycle_prohibited",
+      "situation_edpm_passenger_prohibited",
+      "situation_cyclists_two_abreast_at_dusk",
+      "situation_motorcycle_daytime_light_required",
+      "situation_bicycle_night_rear_light_required"
+    ],
+    "heavy_public_transport_or_dangerous_goods_operation": [
+      "situation_weight_limit_3_5t",
+      "situation_heavy_combination_motorway_90",
+      "situation_heavy_articulated_over12_rural_60",
+      "situation_motorway_heavy_following_50m",
+      "situation_axle_load_b13a",
+      "situation_heavy_7_5t_rural_80",
+      "situation_dangerous_goods_over12_motorway_80",
+      "situation_dangerous_goods_access_b18c",
+      "situation_coach_over10t_motorway_100",
+      "situation_bus_standing_passengers_70",
+      "situation_dangerous_goods_10t_motorway_90"
+    ],
+    "specialist_vehicle_or_combination_operation": [
+      "situation_long_combination_two_right_lanes",
+      "situation_motorway_tractor_prohibited",
+      "situation_narrow_road_long_vehicle_yields_car",
+      "situation_motorway_microcar_prohibited",
+      "situation_rear_load_overhang_3_4m",
+      "situation_motorway_multiple_trailers_prohibited"
+    ]
+  },
+  "retained_examples": [
+    "A car driver yielding to a cyclist at an intersection",
+    "A car driver leaving safe clearance while overtaking a cyclist or moped",
+    "A car driver avoiding a turning truck's blind spot",
+    "A car driver yielding to a bus or tram when required"
+  ]
+}

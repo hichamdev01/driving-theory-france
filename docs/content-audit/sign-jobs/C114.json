@@ -1,0 +1,49 @@
+{
+  "id": "C114",
+  "code": "C114",
+  "state": "imported",
+  "created_on": "2026-09-16",
+  "proposal": {
+    "code": "C114",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Learner drives an ordinary passenger car; the question concerns the car driver’s lighting, access, route interpretation or parking decision, not operating another vehicle type.",
+    "scenario_id": "c114_car_interpretation",
+    "scenario": "Ordinary car on French suburban street, separate cycle path at RIGHT approaches its end and joins edge of general road farther ahead. Square BLUE roadside sign at end of cycle path, WHITE bicycle crossed by ascending RED diagonal as reference C114. One small distant cyclist remains on path approaching its end, not already in front of learner. No other signs.",
+    "novelty_review": "Recognising end of cycling facility and anticipating cyclists rejoining, distinct from C113/B22a entry or general overtaking clearance.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B quiz photograph, wide landscape preferably 2048x1152. View from ordinary LEFT-HAND-DRIVE passenger car, dashboard rim along bottom, right-hand traffic. Natural daylight and realistic proportions. Input image is only a sign pictogram REFERENCE, not a scene to edit. Reproduce its exact shape, colours, arrows and specified inscription on a prominent readable sign. Ordinary car on French suburban street, separate cycle path at RIGHT approaches its end and joins edge of general road farther ahead. Square BLUE roadside sign at end of cycle path, WHITE bicycle crossed by ascending RED diagonal as reference C114. One small distant cyclist remains on path approaching its end, not already in front of learner. No other signs. No question, answer choices, answer hints, quiz layout, watermark or unrelated signs. Preserve safe approach distance and clear road geometry.",
+    "question": {
+      "key": "situation_c114_car_interpretation",
+      "category_slug": "road_signs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Que m’indique ce panneau placé à la fin de l’aménagement cyclable ?",
+          "answer_a": "La fin de la piste ou bande cyclable conseillée.",
+          "answer_b": "L’interdiction des vélos sur toutes les routes suivantes.",
+          "answer_c": "La fin de toutes les limitations de vitesse.",
+          "answer_d": "L’obligation pour ma voiture de circuler sur la piste.",
+          "explanation": "Le panneau C114 marque la fin de l’aménagement signalé par C113. Je surveille les cyclistes qui peuvent rejoindre la chaussée et adapte mon allure, sans supposer que les vélos sont désormais interdits."
+        },
+        "en": {
+          "question_text": "What does this sign at the end of the cycle facility indicate?",
+          "answer_a": "The end of the recommended cycle path or lane.",
+          "answer_b": "A ban on bicycles on every road beyond it.",
+          "answer_c": "The end of all speed limits.",
+          "answer_d": "My car must move onto the cycle path.",
+          "explanation": "Sign C114 ends the facility indicated by C113. I watch for cyclists who may rejoin the carriageway and adapt my speed, without assuming bicycles are now prohibited."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/C114/scene.jpg",
+  "image_sha256": "8a12e2be3fc901f774af4cc1ea5e256504f4b350bee808226402cd857c93e8e7",
+  "review_note": "Corrected image reviewed: square blue white bicycle with ascending red cancellation bar at taper of cycle facility into road, continued separated path removed and cyclist removed. A only identifies end of advised cycle facility; explanations anticipate possible cyclists without inventing a current conflict. Original ambiguous continued path rejected.",
+  "reviewed_sha256": "e2f93ed1f0f7541b747c0f223ab0753dc44c92681748a426dca97bed582fba90",
+  "question_key": "situation_c114_car_interpretation",
+  "imported_content_version": 82,
+  "imported_on": "2026-09-16"
+}

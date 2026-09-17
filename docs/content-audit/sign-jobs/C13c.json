@@ -1,0 +1,49 @@
+{
+  "id": "C13c",
+  "code": "C13c",
+  "state": "imported",
+  "created_on": "2026-09-13",
+  "proposal": {
+    "code": "C13c",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Learner drives an ordinary passenger car. This sign affects that car driver directly; no specialist vehicle operation is taught.",
+    "scenario_id": "c13c_dead_end_pedestrian_exit",
+    "scenario": "Passenger-car view entering a quiet French residential cul-de-sac. Straight ahead in distance the carriageway ends at low bollards, beyond which a narrow pedestrian path visibly continues through greenery; no usable through road for a car. On right verge a BLUE rectangular sign with WHITE vertical dead-end stem capped by RED horizontal block, and above the red block ONE WHITE WALKING PERSON pictogram, precisely C13c. No bicycle pictogram, no extra signs, no text.",
+    "novelty_review": "Existing C13a says a car may enter a dead-end street to reach an address. This distinct situation asks whether a pedestrian-only outlet makes it a through route for the car; it does not.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B quiz photo, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, a small portion of dashboard/steering rim along bottom, right-hand traffic. Natural daylight, realistic scale and perspective, neutral exposure, no cinematic grading. The supplied image is ONLY a verified sign pictogram reference, not a scene to edit: reproduce its exact shape, colours, symbol and inscriptions on one realistic roadside sign. Passenger-car view entering a quiet French residential cul-de-sac. Straight ahead in distance the carriageway ends at low bollards, beyond which a narrow pedestrian path visibly continues through greenery; no usable through road for a car. On right verge a BLUE rectangular sign with WHITE vertical dead-end stem capped by RED horizontal block, and above the red block ONE WHITE WALKING PERSON pictogram, precisely C13c. No bicycle pictogram, no extra signs, no text. No quiz panel, no question text, no answer choices, no answer hints, no watermark, no unrelated signage. All text mentioned above belongs only on the physical sign. Keep the scene focused on one learning objective, with enough space to respond safely.",
+    "question": {
+      "key": "situation_c13c_dead_end_pedestrian_exit",
+      "category_slug": "road_signs",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "L’issue indiquée au fond de cette impasse me permet-elle de rejoindre la rue suivante avec ma voiture ?",
+          "answer_a": "Oui, si je roule à l’allure du pas.",
+          "answer_b": "Non, l’issue annoncée est destinée aux piétons.",
+          "answer_c": "Oui, puisque la rue n’est pas totalement fermée.",
+          "answer_d": "Oui, si aucun piéton n’est présent.",
+          "explanation": "Le panneau C13c annonce une impasse comportant une issue pour les piétons. Cette issue ne constitue pas un passage pour ma voiture. Je peux rejoindre une adresse accessible dans l’impasse, mais je ne prévois pas de la traverser en voiture."
+        },
+        "en": {
+          "question_text": "Does the exit indicated at the end of this cul-de-sac let me reach the next street in my car?",
+          "answer_a": "Yes, if I drive at walking pace.",
+          "answer_b": "No, the indicated exit is for pedestrians.",
+          "answer_c": "Yes, because the street is not completely closed.",
+          "answer_d": "Yes, if there are no pedestrians present.",
+          "explanation": "Sign C13c indicates a dead end with a pedestrian outlet. That outlet is not a passage for my car. I may reach an accessible address within the cul-de-sac, but I must not plan to drive through it."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/C13c/scene.jpg",
+  "image_sha256": "87305eddad62b0aae11ed800d89cf26f31660e4f2f91a7aa0f0afc85cc8b3baf",
+  "review_note": "Actual image reviewed: square blue dead-end sign with red cap and white pedestrian symbol, no bicycle symbol. Bollards end the car route while a pedestrian path continues. This does not prohibit entering by car; the car cannot drive through. Answer B only in both languages.",
+  "reviewed_sha256": "d588def64df7a82a8968497b617639c8d570cb37fef64c55f88caae20b077843",
+  "question_key": "situation_c13c_dead_end_pedestrian_exit",
+  "imported_content_version": 45,
+  "imported_on": "2026-09-13"
+}

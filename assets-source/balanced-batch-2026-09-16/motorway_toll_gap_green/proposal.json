@@ -1,0 +1,49 @@
+{
+  "sequence": 2,
+  "scenario_id": "motorway_toll_gap_green",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Séparation au télépéage",
+  "references": [
+    "https://www.vinci-autoroutes.com/fr/conseils/autoroute-mode-demploi/peage-autoroute/"
+  ],
+  "novelty_review": "Gap and individual green confirmation at toll barrier, distinct from payment symbol identification.",
+  "scenario": "Driver POV stationary before French toll barrier. Another ordinary car about 7 metres ahead is passing raised red-white barrier; small two-aspect light facing learner visibly RED at payment machine. Barrier remains raised after car. No readable speed or payment symbols, no huge labels.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV stationary before French toll barrier. Another ordinary car about 7 metres ahead is passing raised red-white barrier; small two-aspect light facing learner visibly RED at payment machine. Barrier remains raised after car. No readable speed or payment symbols, no huge labels. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_motorway_toll_gap_green",
+    "category_slug": "motorways",
+    "correct_answer": "b",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Au télépéage, la barrière est encore levée pour la voiture devant et mon feu est rouge. Puis-je la suivre immédiatement ?",
+        "answer_a": "Oui, tant que la barrière reste levée.",
+        "answer_b": "Non, je garde l’écart et j’attends le feu vert pour mon passage.",
+        "answer_c": "Oui, si je colle son pare-chocs.",
+        "answer_d": "Oui, en allumant mes feux de détresse.",
+        "explanation": "Une barrière levée ne suffit pas à autoriser mon passage. Je conserve la distance demandée au péage et j’attends la validation par le feu vert, même si la voiture précédente vient de passer."
+      },
+      "en": {
+        "question_text": "At the electronic toll, the barrier is still raised for the car ahead and my light is red. May I follow immediately?",
+        "answer_a": "Yes, while the barrier stays raised.",
+        "answer_b": "No, I keep my distance and wait for a green light for my passage.",
+        "answer_c": "Yes, if I stay close to its bumper.",
+        "answer_d": "Yes, with my hazard lights on.",
+        "explanation": "A raised barrier alone does not authorise my passage. I maintain the required toll-lane gap and wait for green confirmation, even if the preceding car has just passed."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/motorway_toll_gap_green/scene.jpg",
+  "image_sha256": "8a12b01e36b321423fe9580eef665a477614c8a8df4fd5861d499464d101630f",
+  "native_image_sha256": "343e18ac85513247c1fb2befb30d0dc0873a783f4ed17104dfea1c8a98478814",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-66f6312e-8ae6-43f8-9f17-6a161e7363e5.png",
+  "visual_review": "Reviewed: raised barrier, preceding car leaving, learner-facing red light clearly visible, adequate gap. B only requires own green confirmation and preserved gap; both languages and four options checked.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "e91ef0f71132569df5b0e032fadbb07c8169338cb3b03cc9531689086f8b6e3c",
+  "question_key": "situation_motorway_toll_gap_green",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

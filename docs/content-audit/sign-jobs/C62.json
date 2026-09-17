@@ -1,0 +1,49 @@
+{
+  "id": "C62",
+  "code": "C62",
+  "state": "imported",
+  "created_on": "2026-09-13",
+  "proposal": {
+    "code": "C62",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Learner is driving an ordinary passenger car; this question teaches that driver’s own access, direction, parking or interpretation decision, not specialist-vehicle operation.",
+    "scenario_id": "c62_car_sign_interpretation",
+    "scenario": "Approach to French motorway entry ticket plaza, one simple passenger-car lane with ticket dispenser on driver left ahead and closed barrier beyond. Prominent blue square sign on right BEFORE dispenser, white stylised ticket dispenser and car icon and exact word Ticket matching reference. No CB or orange t signs, no payment coins or unrelated readable text.",
+    "novelty_review": "Ticket collection at entry, distinct from payment by bank card or subscription at toll.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Create ONE realistic scene-only French permis-B quiz photo, wide landscape preferably 2048x1152. Ordinary LEFT-HAND-DRIVE passenger car viewpoint, small dashboard rim at bottom, right-hand traffic, natural daylight, realistic road geometry. Input image is a verified sign pictogram REFERENCE ONLY, not a scene to edit. Reproduce sign shape, colours and symbols faithfully. Approach to French motorway entry ticket plaza, one simple passenger-car lane with ticket dispenser on driver left ahead and closed barrier beyond. Prominent blue square sign on right BEFORE dispenser, white stylised ticket dispenser and car icon and exact word Ticket matching reference. No CB or orange t signs, no payment coins or unrelated readable text. No question text, answer options, quiz panels, watermark or answer hints. The only text is the specified physical sign inscription. Keep the key sign large and legible, with safe approach distance.",
+    "question": {
+      "key": "situation_c62_car_sign_interpretation",
+      "category_slug": "motorways",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Que dois-je me préparer à faire à la borne annoncée ?",
+          "answer_a": "Prendre un ticket de péage.",
+          "answer_b": "Présenter un disque de stationnement.",
+          "answer_c": "Faire contrôler la pression des pneus.",
+          "answer_d": "Acheter du carburant.",
+          "explanation": "Le panneau C62 annonce une borne de retrait de ticket de péage. Je ralentis, m’arrête à la borne pour retirer le ticket selon ses indications et le conserve pour la suite du trajet."
+        },
+        "en": {
+          "question_text": "What should I prepare to do at the announced machine?",
+          "answer_a": "Collect a toll ticket.",
+          "answer_b": "Present a parking disc.",
+          "answer_c": "Have my tyre pressures checked.",
+          "answer_d": "Buy fuel.",
+          "explanation": "Sign C62 announces a toll-ticket dispenser. I slow down, stop at the machine to collect the ticket as instructed and keep it for the rest of the journey."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/C62/scene.jpg",
+  "image_sha256": "47d3c2cffe3d0037cbd0886692e112411e424d216351906ff669e029d2980e8a",
+  "review_note": "Reviewed actual image: square blue dispenser/car pictogram and legible Ticket text, dispenser to driver left and closed barrier ahead. Image coherently teaches ticket collection rather than payment. A only, four options and explanation in French and English.",
+  "reviewed_sha256": "56ddc801d0fe237f783f9f8642f7a7ee5f39fbe1c6b438889a5f4c8e1e58b4cc",
+  "question_key": "situation_c62_car_sign_interpretation",
+  "imported_content_version": 54,
+  "imported_on": "2026-09-13"
+}

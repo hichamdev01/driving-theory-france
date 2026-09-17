@@ -1,0 +1,49 @@
+{
+  "sequence": 9,
+  "scenario_id": "speed_carpark_walking_pace",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Allure dans un parc de stationnement",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177129/"
+  ],
+  "novelty_review": "Walking pace inside a ground-level parking area, not pedestrian-area authorised access already covered.",
+  "scenario": "Driver POV in supermarket outdoor ground-level car park, narrow aisle between parked passenger cars, adult pushing shopping trolley across aisle 15 metres ahead with ample stopping distance, daytime. Clearly off carriageway in parking lot. No road signs, no speed numbers, no brand names.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV in supermarket outdoor ground-level car park, narrow aisle between parked passenger cars, adult pushing shopping trolley across aisle 15 metres ahead with ample stopping distance, daytime. Clearly off carriageway in parking lot. No road signs, no speed numbers, no brand names. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_speed_carpark_walking_pace",
+    "category_slug": "speed_limits",
+    "correct_answer": "a",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Je circule dans ce parc de stationnement aménagé au sol. Quelle allure dois-je adopter ?",
+        "answer_a": "L’allure du pas, en restant attentif aux piétons.",
+        "answer_b": "50 km/h puisqu’il est en ville.",
+        "answer_c": "30 km/h obligatoirement même près des piétons.",
+        "answer_d": "La même allure que sur la route d’accès.",
+        "explanation": "Dans un parc de stationnement aménagé sur un terre-plein, je circule à l’allure du pas et prends les précautions nécessaires pour ne pas mettre les piétons en danger."
+      },
+      "en": {
+        "question_text": "I am driving through this ground-level car park. What pace should I use?",
+        "answer_a": "Walking pace, remaining alert to pedestrians.",
+        "answer_b": "50 km/h because it is in town.",
+        "answer_c": "Exactly 30 km/h even near pedestrians.",
+        "answer_d": "The same speed as on the access road.",
+        "explanation": "In a ground-level parking area, I drive at walking pace and take precautions to avoid endangering pedestrians."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/speed_carpark_walking_pace/scene.jpg",
+  "image_sha256": "8b366945a48256bfe1b1d0a7dbdb157f646d745236fcadfae1d03e8252c5dcf7",
+  "native_image_sha256": "b00999d5b20f492cf9a3eacf638724d5a5d1ace0953e429372e9a587fbdd398b",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-7001cb57-835e-414c-8fc0-a06803fc731f.png",
+  "visual_review": "Reviewed: ground-level shopping car park with marked bays and pedestrian/trolley in aisle at safe distance. A only selects walking pace; FR/EN state car-park setting and four options checked.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "2f068c200274247d9b7fb56a27188e5ce7aa850df292f319f01a32c49bf374e9",
+  "question_key": "situation_speed_carpark_walking_pace",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

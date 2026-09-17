@@ -1,0 +1,22 @@
+# French car-sign batch — 16 September 2026 (second batch today)
+
+Ten new images generated with the built-in image-generation tool and visually reviewed against sign references. Every image has a French and English question, four distinct choices, one correct answer and an explanation. All 338 previous questions are unchanged; the pack now contains 348 questions at content version 87.
+
+| Code | Category | Image | Prompt | Question and options | Review receipt |
+| --- | --- | --- | --- | --- | --- |
+| B29 | road_signs | [Image](../../TheoryPrep/Resources/Content/france/images/situation_b29_car_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/B29/prompt.md) | [Question](../../assets-source/sign-workflow/B29/proposal.json) | [Receipt](sign-jobs/B29.json) |
+| B49 | road_signs | [Image](../../TheoryPrep/Resources/Content/france/images/situation_b49_car_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/B49/prompt.md) | [Question](../../assets-source/sign-workflow/B49/proposal.json) | [Receipt](sign-jobs/B49.json) |
+| B9b | road_signs | [Image](../../TheoryPrep/Resources/Content/france/images/situation_b9b_car_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/B9b/prompt.md) | [Question](../../assets-source/sign-workflow/B9b/proposal.json) | [Receipt](sign-jobs/B9b.json) |
+| C113 | road_signs | [Image](../../TheoryPrep/Resources/Content/france/images/situation_c113_car_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/C113/prompt.md) | [Question](../../assets-source/sign-workflow/C113/proposal.json) | [Receipt](sign-jobs/C113.json) |
+| C114 | road_signs | [Image](../../TheoryPrep/Resources/Content/france/images/situation_c114_car_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/C114/prompt.md) | [Question](../../assets-source/sign-workflow/C114/proposal.json) | [Receipt](sign-jobs/C114.json) |
+| C24a | road_signs | [Image](../../TheoryPrep/Resources/Content/france/images/situation_c24a_car_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/C24a/prompt.md) | [Question](../../assets-source/sign-workflow/C24a/proposal.json) | [Receipt](sign-jobs/C24a.json) |
+| C24b | road_signs | [Image](../../TheoryPrep/Resources/Content/france/images/situation_c24b_car_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/C24b/prompt.md) | [Question](../../assets-source/sign-workflow/C24b/proposal.json) | [Receipt](sign-jobs/C24b.json) |
+| C24c | road_signs | [Image](../../TheoryPrep/Resources/Content/france/images/situation_c24c_car_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/C24c/prompt.md) | [Question](../../assets-source/sign-workflow/C24c/proposal.json) | [Receipt](sign-jobs/C24c.json) |
+| C29c | road_signs | [Image](../../TheoryPrep/Resources/Content/france/images/situation_c29c_car_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/C29c/prompt.md) | [Question](../../assets-source/sign-workflow/C29c/proposal.json) | [Receipt](sign-jobs/C29c.json) |
+| C1a | parking_stopping | [Image](../../TheoryPrep/Resources/Content/france/images/situation_c1a_car_interpretation.jpg) | [Prompt](../../assets-source/sign-workflow/C1a/prompt.md) | [Question](../../assets-source/sign-workflow/C1a/proposal.json) | [Receipt](sign-jobs/C1a.json) |
+
+Two images were corrected before import: the C114 cycle facility now visibly tapers back to the road, and C24b now has exactly one left-branch lane and one straight-ahead lane. The [C114 edit prompt](../../assets-source/sign-workflow/C114/edit-prompt.md) and [C24b edit prompt](../../assets-source/sign-workflow/C24b/edit-prompt.md) are retained.
+
+Every receipt binds the reviewed proposal and image by hash. Retrying all ten imports returned `already_imported` without changing the content pack or version. Source references and specific visual review notes are retained in the source audit. Nine questions are in `road_signs`; C1a is in `parking_stopping`. B9b is framed exclusively as a passenger-car access question.
+
+Validation: all 27 Python workflow/registry tests and all 26 iOS simulator tests passed. Registry verification and `git diff --check` passed. Installed and launched the tested build; read-only SQLite checks confirmed content version 87 and 348 active questions. All ten additions occur exactly once in their expected categories. All ten bundled image files match the reviewed assets byte for byte. Both languages, all four choices, correct answer and explanation match the reviewed proposals. No commit or push performed.

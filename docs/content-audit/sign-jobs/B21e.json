@@ -1,0 +1,49 @@
+{
+  "id": "B21e",
+  "code": "B21e",
+  "state": "imported",
+  "created_on": "2026-09-16",
+  "proposal": {
+    "code": "B21e",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+    "scenario_id": "b21e_car_scenario",
+    "scenario": "Ordinary French town four-way intersection with a visible street continuing straight beyond. Sign on right before intersection: ROUND BLUE, white vertical stem splitting to left and right arrowheads, NO upward arrowhead, matching B21e reference. No barrier closing straight street and no other signs. Learner car remains safely before intersection.",
+    "novelty_review": "Choice between left and right excluding straight, distinct from B21d1 straight-or-right.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. Ordinary French town four-way intersection with a visible street continuing straight beyond. Sign on right before intersection: ROUND BLUE, white vertical stem splitting to left and right arrowheads, NO upward arrowhead, matching B21e reference. No barrier closing straight street and no other signs. Learner car remains safely before intersection. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+    "question": {
+      "key": "situation_b21e_car_scenario",
+      "category_slug": "road_signs",
+      "correct_answer": "c",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Puis-je continuer tout droit à la prochaine intersection ?",
+          "answer_a": "Oui, si personne n’arrive.",
+          "answer_b": "Oui, car les flèches sont seulement conseillées.",
+          "answer_c": "Non, je dois tourner à droite ou à gauche.",
+          "answer_d": "Oui, si je ralentis.",
+          "explanation": "Le panneau B21e impose de tourner à droite ou à gauche à la prochaine intersection. Il exclut la direction tout droit, même si la rue continue ; je choisis une direction autorisée en respectant les priorités."
+        },
+        "en": {
+          "question_text": "May I continue straight ahead at the next intersection?",
+          "answer_a": "Yes, if nobody is approaching.",
+          "answer_b": "Yes, because the arrows are only advice.",
+          "answer_c": "No, I must turn right or left.",
+          "answer_d": "Yes, if I slow down.",
+          "explanation": "Sign B21e requires turning right or left at the next intersection. Straight ahead is excluded even if the street continues; I choose an allowed direction and observe priority rules."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/B21e/scene.jpg",
+  "image_sha256": "5c2a001bc0b5cf9d0f5b76b30ac709d3fef8f244d462fdcee7249f9df4e2e546",
+  "review_note": "Actual image reviewed: round blue white left/right split with no upward arrow, before intersection with straight road still physically present. C alone excludes straight travel; four distinct choices in French and English.",
+  "reviewed_sha256": "5466990cfffea00eb8e2192b7575b88f70c614c5db5a5cff999c25ef24ed69c1",
+  "question_key": "situation_b21e_car_scenario",
+  "imported_content_version": 60,
+  "imported_on": "2026-09-16"
+}

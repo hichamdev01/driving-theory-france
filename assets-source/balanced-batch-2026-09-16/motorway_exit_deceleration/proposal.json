@@ -1,0 +1,49 @@
+{
+  "sequence": 1,
+  "scenario_id": "motorway_exit_deceleration",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Ralentissement dans la voie de décélération",
+  "references": [
+    "https://www.ecf.asso.fr/conseils/insertion-et-sortie-sur-lautoroute"
+  ],
+  "novelty_review": "Deceleration after entering exit lane, distinct from existing deadline for selecting the exit lane.",
+  "scenario": "Driver POV already fully inside ONE motorway exit deceleration lane curving gently right; two main lanes continue straight left, separated from exit by thick dashed white line transitioning to hatched gore farther ahead. Empty dry road daylight; learner not crossing markings, no readable signs.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV already fully inside ONE motorway exit deceleration lane curving gently right; two main lanes continue straight left, separated from exit by thick dashed white line transitioning to hatched gore farther ahead. Empty dry road daylight; learner not crossing markings, no readable signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_motorway_exit_deceleration",
+    "category_slug": "motorways",
+    "correct_answer": "a",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Je suis déjà engagé dans la voie de décélération. Comment préparer le virage de sortie ?",
+        "answer_a": "Je ralentis progressivement dans cette voie.",
+        "answer_b": "J’attends d’être dans le virage pour freiner.",
+        "answer_c": "Je conserve ma vitesse d’autoroute jusqu’au bout.",
+        "answer_d": "Je reviens sur l’autoroute pour ralentir.",
+        "explanation": "Une fois dans la voie de décélération, je réduis progressivement ma vitesse pour aborder la bretelle et son virage en sécurité, en respectant les limitations applicables."
+      },
+      "en": {
+        "question_text": "I am already in the deceleration lane. How should I prepare for the exit bend?",
+        "answer_a": "I slow down progressively in this lane.",
+        "answer_b": "I wait until I am in the bend to brake.",
+        "answer_c": "I maintain motorway speed to the end.",
+        "answer_d": "I return to the motorway to slow down.",
+        "explanation": "Once in the deceleration lane, I reduce speed progressively to negotiate the slip road and bend safely, while obeying the applicable limits."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/motorway_exit_deceleration/scene.jpg",
+  "image_sha256": "c71a05b0f23905749d81a91800a5f106be3cf375ef2ebb21a157b9247dd3d4e0",
+  "native_image_sha256": "02346d6132bf7a90a2465a521207716c07da810c0aec50e774e2d85a598c728c",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-654533be-4ef1-465a-ba5a-df86054020c8.png",
+  "visual_review": "Reviewed: learner already wholly in separate exit lane with visible right bend and gore. A only selects progressive slowing in the exit lane; FR/EN and four distinct choices align.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "b66c53b2db51bf43e2664569d1558e75caa5e11f7a0bd61cace36bd5321a644d",
+  "question_key": "situation_motorway_exit_deceleration",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

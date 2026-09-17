@@ -1,0 +1,49 @@
+{
+  "sequence": 10,
+  "scenario_id": "speed_night_dipped_visibility",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Vitesse adaptée à la portée des feux",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177129/"
+  ],
+  "novelty_review": "Adapting speed to dipped-beam visibility, distinct from switching high beams for oncoming traffic.",
+  "scenario": "Driver POV on dark unlit rural French road at night with DIPPED headlights illuminating short near stretch and sharp lower beam horizon, road farther ahead dark. Right-hand lane, no oncoming vehicle, no glare, no signs or speedometer visible. Clear weather, dry asphalt, realistic darkness with readable near road.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV on dark unlit rural French road at night with DIPPED headlights illuminating short near stretch and sharp lower beam horizon, road farther ahead dark. Right-hand lane, no oncoming vehicle, no glare, no signs or speedometer visible. Clear weather, dry asphalt, realistic darkness with readable near road. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_speed_night_dipped_visibility",
+    "category_slug": "speed_limits",
+    "correct_answer": "b",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "De nuit, mes feux de croisement n’éclairent qu’une portion limitée de la route. Que dois-je faire avec ma vitesse ?",
+        "answer_a": "Garder forcément la vitesse maximale autorisée.",
+        "answer_b": "La réduire pour tenir compte de la distance visible.",
+        "answer_c": "Accélérer pour passer moins de temps dans l’obscurité.",
+        "answer_d": "Me fier uniquement aux feux du véhicule très loin devant.",
+        "explanation": "Une limite autorisée n’est pas une vitesse à atteindre. De nuit, notamment en feux de croisement, j’adapte mon allure à ce que je peux réellement voir et aux obstacles prévisibles."
+      },
+      "en": {
+        "question_text": "At night, my dipped headlights illuminate only a limited stretch of road. What should I do with my speed?",
+        "answer_a": "Always maintain the maximum permitted speed.",
+        "answer_b": "Reduce it to account for the visible distance.",
+        "answer_c": "Accelerate to spend less time in darkness.",
+        "answer_d": "Rely only on the lights of a vehicle far ahead.",
+        "explanation": "A speed limit is not a target. At night, particularly on dipped headlights, I adapt speed to what I can actually see and to foreseeable obstacles."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/speed_night_dipped_visibility/scene.jpg",
+  "image_sha256": "241383dc8740951dd43784c97a01b8083505f584ac617be8d940597aa03a5be1",
+  "native_image_sha256": "3eaa06c62053b546759cd95f7bbe39b8a711fb999d26ed20328fdca10e4cc29f",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-0ceeba27-6653-486e-be05-dc93fa892667.png",
+  "visual_review": "Reviewed: dark unlit rural road with limited dipped-headlamp illuminated area, no distracting oncoming conflict. B only adjusts speed to visibility; question supplies dipped-beam fact, no unsafe absolute numerical speed. Four bilingual choices checked.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "317078a25626066f2115a93bdf9e9ba7cbe7c2bef6688dac7e0f08c90898dbec",
+  "question_key": "situation_speed_night_dipped_visibility",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

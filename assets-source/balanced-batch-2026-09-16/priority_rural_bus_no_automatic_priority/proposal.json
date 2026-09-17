@@ -1,0 +1,50 @@
+{
+  "sequence": 24,
+  "scenario_id": "priority_rural_bus_no_automatic_priority",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Départ d’un autocar hors agglomération",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842128"
+  ],
+  "novelty_review": "Limits of urban bus departure facilitation outside town, no specialist operation.",
+  "scenario": "Driver POV rural French two-way road surrounded by fields OUTSIDE town. Coach stopped in separate layby on RIGHT, amber left indicator lit, wheels entirely in layby. Learner approaching safely, no pedestrians. Simple small bus-stop post, no other signs.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV rural French two-way road surrounded by fields OUTSIDE town. Coach stopped in separate layby on RIGHT, amber left indicator lit, wheels entirely in layby. Learner approaching safely, no pedestrians. Simple small bus-stop post, no other signs. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_priority_rural_bus_no_automatic_priority",
+    "category_slug": "priority_rules",
+    "correct_answer": "d",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Hors agglomération, cet autocar veut quitter son arrêt. Son clignotant lui donne-t-il automatiquement la priorité ?",
+        "answer_a": "Oui, les autocars sont toujours prioritaires.",
+        "answer_b": "Oui, un clignotant donne priorité à tout véhicule.",
+        "answer_c": "Non, je dois accélérer pour l’empêcher de sortir.",
+        "answer_d": "Non, mais je reste prêt à ralentir pour éviter tout danger.",
+        "explanation": "L’obligation particulière de faciliter le départ d’un transport en commun d’un arrêt signalé s’applique en agglomération. Ici, le clignotant annonce une intention, pas une priorité automatique ; je reste prudent."
+      },
+      "en": {
+        "question_text": "Outside a built-up area, this coach wants to leave its stop. Does its indicator automatically give it priority?",
+        "answer_a": "Yes, coaches always have priority.",
+        "answer_b": "Yes, an indicator gives every vehicle priority.",
+        "answer_c": "No, I must accelerate to prevent it leaving.",
+        "answer_d": "No, but I remain ready to slow down to avoid danger.",
+        "explanation": "The special duty to facilitate a bus leaving a signed stop applies in built-up areas. Here the indicator announces an intention, not automatic priority; I remain cautious."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/priority_rural_bus_no_automatic_priority/scene.jpg",
+  "image_sha256": "99cc1569bc01d2bdf465a6887c92f2bda31177390838a01eb2e4673516994828",
+  "native_image_sha256": "08915b44de33ae48abeee0c6b9a4dea24afaea0efa8eae7e1aee82d37b44ca04",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-5904efcb-9a6e-45b7-9e80-1b6f97f4b354.png",
+  "visual_review": "Coach wholly in rural layby with left amber indicator. Replaced inaccurate bus pictogram by neutral ARRÊT timetable post; outside built-up area explicit in question.",
+  "reviewed_on": "2026-09-16",
+  "edit_prompt_path": "assets-source/balanced-batch-2026-09-16/priority_rural_bus_no_automatic_priority/edit-prompt.md",
+  "reviewed_sha256": "312ce3127384a5aa887ee990f45f233cbdf090d18c74771d4a4ad73237c9fc8b",
+  "question_key": "situation_priority_rural_bus_no_automatic_priority",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

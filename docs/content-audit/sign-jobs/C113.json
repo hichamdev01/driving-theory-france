@@ -1,0 +1,49 @@
+{
+  "id": "C113",
+  "code": "C113",
+  "state": "imported",
+  "created_on": "2026-09-16",
+  "proposal": {
+    "code": "C113",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Learner drives an ordinary passenger car; the question concerns the car driver’s lighting, access, route interpretation or parking decision, not operating another vehicle type.",
+    "scenario_id": "c113_car_interpretation",
+    "scenario": "Car on ordinary French residential road alongside beginning of separate paved cycle path at right. Prominent SQUARE BLUE sign with WHITE BICYCLE matching C113 reference, no red border or slash. Clear square corners distinct from round cycle sign. Learner stays on road, path empty, no pedestrian or exception plates.",
+    "novelty_review": "Car driver must not mistake advisory square cycling sign as allowing cars, distinct from round B22a mandatory cycle-path sign.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B quiz photograph, wide landscape preferably 2048x1152. View from ordinary LEFT-HAND-DRIVE passenger car, dashboard rim along bottom, right-hand traffic. Natural daylight and realistic proportions. Input image is only a sign pictogram REFERENCE, not a scene to edit. Reproduce its exact shape, colours, arrows and specified inscription on a prominent readable sign. Car on ordinary French residential road alongside beginning of separate paved cycle path at right. Prominent SQUARE BLUE sign with WHITE BICYCLE matching C113 reference, no red border or slash. Clear square corners distinct from round cycle sign. Learner stays on road, path empty, no pedestrian or exception plates. No question, answer choices, answer hints, quiz layout, watermark or unrelated signs. Preserve safe approach distance and clear road geometry.",
+    "question": {
+      "key": "situation_c113_car_interpretation",
+      "category_slug": "road_signs",
+      "correct_answer": "d",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Le panneau est carré. Cela m’autorise-t-il à emprunter cette piste en voiture ?",
+          "answer_a": "Oui, car un carré ne peut jamais limiter l’accès.",
+          "answer_b": "Oui, si aucun vélo n’arrive.",
+          "answer_c": "Oui, pour une courte distance.",
+          "answer_d": "Non, cette piste reste réservée aux usagers autorisés, pas aux voitures.",
+          "explanation": "Le panneau C113 indique une piste ou bande cyclable conseillée aux cycles et réservée aux usagers autorisés. Son caractère conseillé pour les cyclistes ne permet pas aux voitures d’y circuler ni de s’y arrêter."
+        },
+        "en": {
+          "question_text": "The sign is square. Does that allow me to drive my car along this cycle path?",
+          "answer_a": "Yes, because a square sign can never restrict access.",
+          "answer_b": "Yes, if no bicycle is coming.",
+          "answer_c": "Yes, for a short distance.",
+          "answer_d": "No, the path remains reserved for authorised users, not cars.",
+          "explanation": "Sign C113 identifies a cycle facility recommended for cyclists and reserved for authorised users. Being advisory for cyclists does not allow cars to drive or stop on it."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/C113/scene.jpg",
+  "image_sha256": "5d103244c90613a1e8da1a50d30fb7bb754b91182cb5481a035c4b89e9be428b",
+  "review_note": "Actual image reviewed: square blue white bicycle beside separate paved cycle path, learner remains on road. D only distinguishes recommended use for cyclists from car access; four distinct options and matching explanation in both languages.",
+  "reviewed_sha256": "6be40fa5fc7d52f56482467de603253ab6473928e0c226dd334c8a8e3ad75620",
+  "question_key": "situation_c113_car_interpretation",
+  "imported_content_version": 81,
+  "imported_on": "2026-09-16"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "C8",
+  "code": "C8",
+  "state": "imported",
+  "created_on": "2026-09-16",
+  "proposal": {
+    "code": "C8",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+    "scenario_id": "c8_car_scenario",
+    "scenario": "Ordinary car on French road with guardrails, dedicated short paved emergency stopping bay recessed on RIGHT. Prominent square BLUE sign with WHITE diagram of main lane and right-hand recess beside dashed vertical white line, exactly C8 reference. Empty bay ahead, no picnic facilities, no P parking sign, no phone signs, no other text.",
+    "novelty_review": "Designated emergency bay versus choosing to stop to use phone; distinct from general motorway shoulder breakdown and tunnel stop.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. Ordinary car on French road with guardrails, dedicated short paved emergency stopping bay recessed on RIGHT. Prominent square BLUE sign with WHITE diagram of main lane and right-hand recess beside dashed vertical white line, exactly C8 reference. Empty bay ahead, no picnic facilities, no P parking sign, no phone signs, no other text. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+    "question": {
+      "key": "situation_c8_car_scenario",
+      "category_slug": "road_signs",
+      "correct_answer": "c",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Puis-je utiliser cet emplacement pour passer un appel sans situation d’urgence ?",
+          "answer_a": "Oui, car il est vide.",
+          "answer_b": "Oui, si je reste au volant.",
+          "answer_c": "Non, il est réservé aux arrêts d’urgence.",
+          "answer_d": "Oui, pendant moins de deux minutes.",
+          "explanation": "Le panneau C8 signale un emplacement d’arrêt d’urgence. Un appel de convenance ne justifie pas son utilisation ; je poursuis jusqu’à une aire ou un emplacement où l’arrêt est autorisé."
+        },
+        "en": {
+          "question_text": "May I use this bay for a non-emergency phone call?",
+          "answer_a": "Yes, because it is empty.",
+          "answer_b": "Yes, if I remain at the wheel.",
+          "answer_c": "No, it is reserved for emergency stops.",
+          "answer_d": "Yes, for less than two minutes.",
+          "explanation": "Sign C8 identifies an emergency stopping bay. A routine phone call does not justify using it; I continue to an area or location where stopping is permitted."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/C8/scene.jpg",
+  "image_sha256": "5e51dc491a8f3f79e654b095766a994e23390b10e9f270f68e8370ba7a34e791",
+  "review_note": "Actual image reviewed: blue square white dashed route/recess diagram beside distinct empty paved emergency bay on right. C only rejects a non-emergency call stop; neither explanation treats bay as ordinary parking.",
+  "reviewed_sha256": "d2dc986d7a5f3474ba8cded5c3c87ade55ad447ff121ec3aa9d5b91b0a1af39d",
+  "question_key": "situation_c8_car_scenario",
+  "imported_content_version": 76,
+  "imported_on": "2026-09-16"
+}

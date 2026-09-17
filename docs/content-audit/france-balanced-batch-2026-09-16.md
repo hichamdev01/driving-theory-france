@@ -1,0 +1,88 @@
+# French passenger-car batch — 30 balanced scenarios, 16 September 2026
+
+Thirty scene images generated using the built-in image-generation tool, visually reviewed and integrated into the native app. Each has a French and English question, four distinct options, one correct answer and an explanation. The bank increased from 348 to 378 questions at content version 88; all previous questions are unchanged.
+
+The allocation strengthens smaller categories. Road signs already accounted for 116 questions, so this batch adds general driving situations across the other seven categories. These are ordinary passenger-car learning objectives; buses and trams appear only as other road users.
+
+| Category | Before | Added | After |
+| --- | ---: | ---: | ---: |
+| road_signs | 116 | 0 | 116 |
+| priority_rules | 33 | 4 | 37 |
+| overtaking | 29 | 5 | 34 |
+| speed_limits | 28 | 5 | 33 |
+| safety | 60 | 2 | 62 |
+| parking_stopping | 28 | 5 | 33 |
+| motorways | 21 | 6 | 27 |
+| alcohol_drugs | 33 | 3 | 36 |
+
+## Reviewed scenes and questions
+
+| # | Scenario | Category | Image | Prompt | Question, sources and receipt |
+| --- | --- | --- | --- | --- | --- |
+| 1 | motorway_exit_deceleration | motorways | [Image](../../TheoryPrep/Resources/Content/france/images/situation_motorway_exit_deceleration.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/motorway_exit_deceleration/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/motorway_exit_deceleration/proposal.json) |
+| 2 | motorway_toll_gap_green | motorways | [Image](../../TheoryPrep/Resources/Content/france/images/situation_motorway_toll_gap_green.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/motorway_toll_gap_green/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/motorway_toll_gap_green/proposal.json) |
+| 3 | motorway_freeflow_pay_72h | motorways | [Image](../../TheoryPrep/Resources/Content/france/images/situation_motorway_freeflow_pay_72h.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/motorway_freeflow_pay_72h/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/motorway_freeflow_pay_72h/proposal.json) |
+| 4 | motorway_sos_location | motorways | [Image](../../TheoryPrep/Resources/Content/france/images/situation_motorway_sos_location.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/motorway_sos_location/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/motorway_sos_location/proposal.json) |
+| 5 | motorway_toll_intercom_problem | motorways | [Image](../../TheoryPrep/Resources/Content/france/images/situation_motorway_toll_intercom_problem.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/motorway_toll_intercom_problem/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/motorway_toll_intercom_problem/proposal.json) |
+| 6 | motorway_help_merge_occupied_left | motorways | [Image](../../TheoryPrep/Resources/Content/france/images/situation_motorway_help_merge_occupied_left.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/motorway_help_merge_occupied_left/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/motorway_help_merge_occupied_left/proposal.json) |
+| 7 | speed_two_same_direction_90 | speed_limits | [Image](../../TheoryPrep/Resources/Content/france/images/situation_speed_two_same_direction_90.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/speed_two_same_direction_90/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/speed_two_same_direction_90/proposal.json) |
+| 8 | speed_rain_posted_90_80 | speed_limits | [Image](../../TheoryPrep/Resources/Content/france/images/situation_speed_rain_posted_90_80.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/speed_rain_posted_90_80/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/speed_rain_posted_90_80/proposal.json) |
+| 9 | speed_carpark_walking_pace | speed_limits | [Image](../../TheoryPrep/Resources/Content/france/images/situation_speed_carpark_walking_pace.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/speed_carpark_walking_pace/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/speed_carpark_walking_pace/proposal.json) |
+| 10 | speed_night_dipped_visibility | speed_limits | [Image](../../TheoryPrep/Resources/Content/france/images/situation_speed_night_dipped_visibility.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/speed_night_dipped_visibility/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/speed_night_dipped_visibility/proposal.json) |
+| 11 | speed_unjustified_slow_sightseeing | speed_limits | [Image](../../TheoryPrep/Resources/Content/france/images/situation_speed_unjustified_slow_sightseeing.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/speed_unjustified_slow_sightseeing/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/speed_unjustified_slow_sightseeing/proposal.json) |
+| 12 | parking_eight_days_abusive | parking_stopping | [Image](../../TheoryPrep/Resources/Content/france/images/situation_parking_eight_days_abusive.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/parking_eight_days_abusive/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/parking_eight_days_abusive/proposal.json) |
+| 13 | parking_secure_before_leaving | parking_stopping | [Image](../../TheoryPrep/Resources/Content/france/images/situation_parking_secure_before_leaving.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/parking_secure_before_leaving/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/parking_secure_before_leaving/proposal.json) |
+| 14 | parking_loading_is_stop | parking_stopping | [Image](../../TheoryPrep/Resources/Content/france/images/situation_parking_loading_is_stop.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/parking_loading_is_stop/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/parking_loading_is_stop/proposal.json) |
+| 15 | parking_meeting_zone_designated_only | parking_stopping | [Image](../../TheoryPrep/Resources/Content/france/images/situation_parking_meeting_zone_designated_only.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/parking_meeting_zone_designated_only/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/parking_meeting_zone_designated_only/proposal.json) |
+| 16 | parking_blocks_parked_exit | parking_stopping | [Image](../../TheoryPrep/Resources/Content/france/images/situation_parking_blocks_parked_exit.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/parking_blocks_parked_exit/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/parking_blocks_parked_exit/proposal.json) |
+| 17 | overtake_too_little_speed_difference | overtaking | [Image](../../TheoryPrep/Resources/Content/france/images/situation_overtake_too_little_speed_difference.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/overtake_too_little_speed_difference/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/overtake_too_little_speed_difference/proposal.json) |
+| 18 | overtake_no_speed_limit_exception | overtaking | [Image](../../TheoryPrep/Resources/Content/france/images/situation_overtake_no_speed_limit_exception.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/overtake_no_speed_limit_exception/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/overtake_no_speed_limit_exception/proposal.json) |
+| 19 | overtake_middle_lane_hog_no_right | overtaking | [Image](../../TheoryPrep/Resources/Content/france/images/situation_overtake_middle_lane_hog_no_right.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/overtake_middle_lane_hog_no_right/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/overtake_middle_lane_hog_no_right/proposal.json) |
+| 20 | overtake_three_lane_no_far_left | overtaking | [Image](../../TheoryPrep/Resources/Content/france/images/situation_overtake_three_lane_no_far_left.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/overtake_three_lane_no_far_left/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/overtake_three_lane_no_far_left/proposal.json) |
+| 21 | overtake_tram_left_one_way | overtaking | [Image](../../TheoryPrep/Resources/Content/france/images/situation_overtake_tram_left_one_way.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/overtake_tram_left_one_way/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/overtake_tram_left_one_way/proposal.json) |
+| 22 | priority_obstacle_my_lane_wait | priority_rules | [Image](../../TheoryPrep/Resources/Content/france/images/situation_priority_obstacle_my_lane_wait.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/priority_obstacle_my_lane_wait/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/priority_obstacle_my_lane_wait/proposal.json) |
+| 23 | priority_uphill_near_refuge_reverse | priority_rules | [Image](../../TheoryPrep/Resources/Content/france/images/situation_priority_uphill_near_refuge_reverse.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/priority_uphill_near_refuge_reverse/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/priority_uphill_near_refuge_reverse/proposal.json) |
+| 24 | priority_rural_bus_no_automatic_priority | priority_rules | [Image](../../TheoryPrep/Resources/Content/france/images/situation_priority_rural_bus_no_automatic_priority.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/priority_rural_bus_no_automatic_priority/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/priority_rural_bus_no_automatic_priority/proposal.json) |
+| 25 | priority_rail_exit_blocked_wait | priority_rules | [Image](../../TheoryPrep/Resources/Content/france/images/situation_priority_rail_exit_blocked_wait.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/priority_rail_exit_blocked_wait/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/priority_rail_exit_blocked_wait/proposal.json) |
+| 26 | alcohol_cbd_legal_sale_not_driving | alcohol_drugs | [Image](../../TheoryPrep/Resources/Content/france/images/situation_alcohol_cbd_legal_sale_not_driving.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/alcohol_cbd_legal_sale_not_driving/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/alcohol_cbd_legal_sale_not_driving/proposal.json) |
+| 27 | alcohol_expired_self_test_unreliable | alcohol_drugs | [Image](../../TheoryPrep/Resources/Content/france/images/situation_alcohol_expired_self_test_unreliable.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/alcohol_expired_self_test_unreliable/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/alcohol_expired_self_test_unreliable/proposal.json) |
+| 28 | medicine_no_self_dose_change_drive | alcohol_drugs | [Image](../../TheoryPrep/Resources/Content/france/images/situation_medicine_no_self_dose_change_drive.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/medicine_no_self_dose_change_drive/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/medicine_no_self_dose_change_drive/proposal.json) |
+| 29 | safety_aquaplaning_smooth_release | safety | [Image](../../TheoryPrep/Resources/Content/france/images/situation_safety_aquaplaning_smooth_release.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/safety_aquaplaning_smooth_release/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/safety_aquaplaning_smooth_release/proposal.json) |
+| 30 | safety_head_restraint_neck_protection | safety | [Image](../../TheoryPrep/Resources/Content/france/images/situation_safety_head_restraint_neck_protection.jpg) | [Prompt](../../assets-source/balanced-batch-2026-09-16/safety_head_restraint_neck_protection/prompt.md) | [Receipt](../../assets-source/balanced-batch-2026-09-16/safety_head_restraint_neck_protection/proposal.json) |
+
+## Review and duplicate protection
+
+Existing questions were compared before authoring; each proposal records its learning objective, novelty rationale and source URLs. Exact question content, language-specific question text, image hashes and stable keys were checked for duplicates. All 30 receipts bind the reviewed question and asset with hashes. A second import returned `already_imported` without writing or changing the version.
+
+General-rule questions are recorded as `no_sign_target` in the sign registry. The three visible B14 speed signs are contextual references. This does not claim 30 new sign codes or bypass the duplicate guard for new sign-code jobs.
+
+Visual checks covered road geometry, right-hand traffic, vehicle positions, relevant signs/labels, and agreement with the question and correct answer. Facts that cannot be inferred from a still image—such as parking duration, relative speed, legal context or steering feel—are explicitly stated in the question. All four options and both explanations were reviewed. These checks are recorded content review, not external certification.
+
+Targeted corrections are retained beside the initial prompts:
+- [motorway_freeflow_pay_72h](../../assets-source/balanced-batch-2026-09-16/motorway_freeflow_pay_72h/edit-prompt.md): Corrected image reviewed: open-road toll gantry labelled PEAGE FLUX LIBRE, no physical barrier, geographic A8/Nice/Cannes sign removed to avoid conflict with Sanef question. C alone gives 72 hours, FR/EN source-specific wording and four options checked.
+- [motorway_help_merge_occupied_left](../../assets-source/balanced-batch-2026-09-16/motorway_help_merge_occupied_left/edit-prompt.md): Corrected image reviewed: dark SUV alongside left, grey car in adjacent right joining lane signalling left; exit curve and extra through-lane geometry removed. B only holds lane and adjusts predictably rather than moving into occupied left lane. FR/EN wording and four choices checked.
+- [speed_unjustified_slow_sightseeing](../../assets-source/balanced-batch-2026-09-16/speed_unjustified_slow_sightseeing/edit-prompt.md): Queue visible in rear-view mirror on clear rural road. Removed misleading 70 km/h display; question explicitly establishes unjustifiably very slow sightseeing.
+- [overtake_middle_lane_hog_no_right](../../assets-source/balanced-batch-2026-09-16/overtake_middle_lane_hog_no_right/edit-prompt.md): Corrected viewer to rightmost lane; blue car clearly ahead-left in middle lane, three travel lanes and solid shoulder boundary.
+- [overtake_three_lane_no_far_left](../../assets-source/balanced-batch-2026-09-16/overtake_three_lane_no_far_left/edit-prompt.md): Corrected opposing side to one lane without internal divider; two same-direction lanes, passing car in centre, solid separation to opposing lane.
+- [overtake_tram_left_one_way](../../assets-source/balanced-batch-2026-09-16/overtake_tram_left_one_way/edit-prompt.md): Removed separate raised tram reservation. Flush rails on one-way carriageway, forward arrows and red rear tram lamps; no stop or boarding passengers.
+- [priority_rural_bus_no_automatic_priority](../../assets-source/balanced-batch-2026-09-16/priority_rural_bus_no_automatic_priority/edit-prompt.md): Coach wholly in rural layby with left amber indicator. Replaced inaccurate bus pictogram by neutral ARRÊT timetable post; outside built-up area explicit in question.
+- [priority_rail_exit_blocked_wait](../../assets-source/balanced-batch-2026-09-16/priority_rail_exit_blocked_wait/edit-prompt.md): Corrected two-lane alignment and queue location: grey car immediately beyond far rail leaves no room to clear crossing; barriers raised, signal lamps dark.
+- [alcohol_cbd_legal_sale_not_driving](../../assets-source/balanced-batch-2026-09-16/alcohol_cbd_legal_sale_not_driving/edit-prompt.md): Unbranded CBD bottle and pack with keys in stationary car; removed unrelated inaccurate roadside signage. No THC amount or legal driving claim shown.
+- [safety_aquaplaning_smooth_release](../../assets-source/balanced-batch-2026-09-16/safety_aquaplaning_smooth_release/edit-prompt.md): Rain and standing water visible, hands keep wheel steady; removed invented route sign and numeric speed display. Light steering symptom explicitly supplied by question.
+
+The parking-obstruction question was also worded around the blocked bay exit, so the answer is independent of whether the blue car faces into or out of its space.
+
+Legal and safety references are retained per question in the receipts and [source audit](france-question-sources.jsonl). They include Légifrance, Sécurité routière, Sanef, motorway operators, Cour de cassation, Service-Public, Assurance Maladie, ECF and TCS.
+
+## Verification
+
+- All 27 Python registry/workflow tests passed.
+- All 26 native iOS simulator tests passed.
+- Registry verification and `git diff --check` passed.
+- Existing 348 questions and all other content-pack sections match the pre-batch snapshot.
+- Installed and launched the tested simulator build; read-only SQLite checks confirmed version 88 and 378 active questions.
+- Each new question occurs exactly once in its intended category; all 60 translations, four options, correct answers and explanations match the reviewed proposals.
+- All 30 bundled image files match the reviewed JPEG assets byte for byte; SQLite integrity check returned `ok`.
+- No Git commit or push was performed.
+
+[Machine-readable verification](../../assets-source/balanced-batch-2026-09-16/verification.json) · [Batch manifest](../../assets-source/balanced-batch-2026-09-16/manifest.json)

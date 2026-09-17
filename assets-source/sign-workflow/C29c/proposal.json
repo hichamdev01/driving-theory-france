@@ -1,0 +1,36 @@
+{
+  "code": "C29c",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives an ordinary passenger car; the question concerns the car driver’s lighting, access, route interpretation or parking decision, not operating another vehicle type.",
+  "scenario_id": "c29c_car_interpretation",
+  "scenario": "Ordinary car on RIGHTMOST sole our-direction lane of French rural THREE-LANE undivided road. TWO opposing lanes on LEFT, separated from our lane by solid white center line, broken white divider between two opposing lanes. One distant oncoming car in far-left lane, middle opposing lane empty. Prominent BLUE SQUARE sign on right with TWO WHITE DOWN arrows at left and center and ONE WHITE UP arrow at right, exactly C29c reference. No taper or extra signs.",
+  "novelty_review": "Middle lane belongs to oncoming traffic when learner has only one lane, distinct from C29a advance layout and C30 ending a passing section.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B quiz photograph, wide landscape preferably 2048x1152. View from ordinary LEFT-HAND-DRIVE passenger car, dashboard rim along bottom, right-hand traffic. Natural daylight and realistic proportions. Input image is only a sign pictogram REFERENCE, not a scene to edit. Reproduce its exact shape, colours, arrows and specified inscription on a prominent readable sign. Ordinary car on RIGHTMOST sole our-direction lane of French rural THREE-LANE undivided road. TWO opposing lanes on LEFT, separated from our lane by solid white center line, broken white divider between two opposing lanes. One distant oncoming car in far-left lane, middle opposing lane empty. Prominent BLUE SQUARE sign on right with TWO WHITE DOWN arrows at left and center and ONE WHITE UP arrow at right, exactly C29c reference. No taper or extra signs. No question, answer choices, answer hints, quiz layout, watermark or unrelated signs. Preserve safe approach distance and clear road geometry.",
+  "question": {
+    "key": "situation_c29c_car_interpretation",
+    "category_slug": "road_signs",
+    "correct_answer": "a",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "La voie centrale est libre. Puis-je l’utiliser pour dépasser ?",
+        "answer_a": "Non, elle est affectée au sens inverse.",
+        "answer_b": "Oui, si le dépassement est rapide.",
+        "answer_c": "Oui, si je mets le clignotant.",
+        "answer_d": "Oui, car toute voie centrale est partagée.",
+        "explanation": "Le panneau C29c indique ici une voie dans mon sens et deux voies en sens inverse. La voie centrale appartient au sens opposé ; son absence momentanée de véhicules ne m’autorise pas à l’emprunter."
+      },
+      "en": {
+        "question_text": "The middle lane is empty. May I use it to overtake?",
+        "answer_a": "No, it is assigned to oncoming traffic.",
+        "answer_b": "Yes, if I overtake quickly.",
+        "answer_c": "Yes, if I use my indicator.",
+        "answer_d": "Yes, because every middle lane is shared.",
+        "explanation": "Here sign C29c indicates one lane in my direction and two in the opposite direction. The middle lane belongs to oncoming traffic; being temporarily empty does not allow me to use it."
+      }
+    }
+  }
+}

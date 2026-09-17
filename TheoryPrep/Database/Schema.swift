@@ -1,7 +1,7 @@
 import Foundation
 
 enum Schema {
-    static let contentVersion: Int64 = 24
+    static let contentVersion: Int64 = 88
 
     static let createTablesSQL = """
     CREATE TABLE IF NOT EXISTS countries (

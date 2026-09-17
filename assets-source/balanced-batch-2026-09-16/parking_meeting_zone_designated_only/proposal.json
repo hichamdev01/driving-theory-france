@@ -1,0 +1,49 @@
+{
+  "sequence": 15,
+  "scenario_id": "parking_meeting_zone_designated_only",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Learner drives or prepares an ordinary passenger car; other vehicle classes only appear as traffic participants.",
+  "learning_objective": "Emplacements dans une zone de rencontre",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039278148/"
+  ],
+  "novelty_review": "Parking only in designated areas within a meeting zone, distinct from its 20 km/h speed limit.",
+  "scenario": "Driver POV already inside French shared-space street in old town, level cobbled paving, no curb, pedestrians safely along building side. One marked parking bay at left occupied, an UNMARKED open patch at right near bench not a parking bay. No entry signs in frame, no painted misleading P.",
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only educational photograph for an ordinary passenger-car French Code de la Route quiz. Landscape 16:9, preferably 2048x1152. Realistic contemporary France, right-hand traffic, left-hand-drive ordinary passenger cars. Driver POV already inside French shared-space street in old town, level cobbled paving, no curb, pedestrians safely along building side. One marked parking bay at left occupied, an UNMARKED open patch at right near bench not a parking bay. No entry signs in frame, no painted misleading P. No question, options, answer hints, checkmarks, teaching arrows, infographic layout, watermarks or unrelated text. Preserve clear safe road geometry and natural proportions.",
+  "question": {
+    "key": "situation_parking_meeting_zone_designated_only",
+    "category_slug": "parking_stopping",
+    "correct_answer": "c",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Dans cette zone de rencontre, aucun emplacement n’est aménagé à l’endroit libre à droite. Puis-je y stationner ?",
+        "answer_a": "Oui, si je laisse un mètre aux piétons.",
+        "answer_b": "Oui, pendant moins de sept jours.",
+        "answer_c": "Non, le stationnement doit se faire sur un emplacement aménagé.",
+        "answer_d": "Oui, car la limitation à 20 autorise le stationnement partout.",
+        "explanation": "Dans une zone de rencontre, stationner hors des emplacements aménagés est gênant. Un espace libre ne devient pas une place de stationnement du seul fait qu’une voiture peut y tenir."
+      },
+      "en": {
+        "question_text": "In this meeting zone, the open space on the right is not a designated parking place. May I park there?",
+        "answer_a": "Yes, if I leave one metre for pedestrians.",
+        "answer_b": "Yes, for fewer than seven days.",
+        "answer_c": "No, parking must be in a designated space.",
+        "answer_d": "Yes, because the 20 limit allows parking everywhere.",
+        "explanation": "In a meeting zone, parking outside designated spaces is obstructive. An empty area does not become a parking place simply because a car fits there."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "image_path": "assets-source/balanced-batch-2026-09-16/parking_meeting_zone_designated_only/scene.jpg",
+  "image_sha256": "6379f8fa1902c5bf7bf02d5b94b5d87a37eca2743c47fb2a4a8e27ba2108a3cb",
+  "native_image_sha256": "f85bcb7f69d95fede00fd2b5aa930d41bea2e91991240cc92d6080412097d5a8",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-02f58cfd-536b-4105-ba99-437f7d74ce12.png",
+  "visual_review": "Shared-space street has occupied marked bay and unmarked open area; question explicitly establishes zone de rencontre.",
+  "reviewed_on": "2026-09-16",
+  "reviewed_sha256": "9ed9d85eb606881741b2e1a257aeecd12e8b5dc5cef19b65fb4924980df3fbc5",
+  "question_key": "situation_parking_meeting_zone_designated_only",
+  "imported_content_version": 88,
+  "imported_on": "2026-09-16"
+}

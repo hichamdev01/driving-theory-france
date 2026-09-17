@@ -1,0 +1,49 @@
+{
+  "id": "C64d",
+  "code": "C64d",
+  "state": "imported",
+  "created_on": "2026-09-13",
+  "proposal": {
+    "code": "C64d",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Learner is driving an ordinary passenger car; this question teaches that driver’s own access, direction, parking or interpretation decision, not specialist-vehicle operation.",
+    "scenario_id": "c64d_car_sign_interpretation",
+    "scenario": "French motorway toll plaza seen from ordinary car well before committing to a lane. Large square BLUE framed BLACK inset sign with single ORANGE lowercase stylised t faithfully as reference on right and above corresponding toll lane. No CB logo or cash symbols. Closed barrier ahead, no speed value displayed. Simple realistic passenger-car lane geometry.",
+    "novelty_review": "Subscription toll-lane eligibility with no badge, distinct from C64b preparing a bank card.",
+    "references": [
+      "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Create ONE realistic scene-only French permis-B quiz photo, wide landscape preferably 2048x1152. Ordinary LEFT-HAND-DRIVE passenger car viewpoint, small dashboard rim at bottom, right-hand traffic, natural daylight, realistic road geometry. Input image is a verified sign pictogram REFERENCE ONLY, not a scene to edit. Reproduce sign shape, colours and symbols faithfully. French motorway toll plaza seen from ordinary car well before committing to a lane. Large square BLUE framed BLACK inset sign with single ORANGE lowercase stylised t faithfully as reference on right and above corresponding toll lane. No CB logo or cash symbols. Closed barrier ahead, no speed value displayed. Simple realistic passenger-car lane geometry. No question text, answer options, quiz panels, watermark or answer hints. The only text is the specified physical sign inscription. Keep the key sign large and legible, with safe approach distance.",
+    "question": {
+      "key": "situation_c64d_car_sign_interpretation",
+      "category_slug": "motorways",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Je n’ai pas d’abonnement ni de badge de télépéage. Dois-je choisir cette voie signalée uniquement par ce symbole ?",
+          "answer_a": "Oui, car toutes les voies acceptent forcément les espèces.",
+          "answer_b": "Non, je choisis une voie compatible avec mon moyen de paiement.",
+          "answer_c": "Oui, le symbole indique un passage gratuit.",
+          "answer_d": "Oui, en suivant de très près la voiture précédente.",
+          "explanation": "Le panneau C64d indique le paiement automatique par abonnement télépéage. Sans équipement compatible, je choisis une autre voie avant de m’engager et je garde mes distances à l’approche des barrières."
+        },
+        "en": {
+          "question_text": "I have no electronic toll subscription or transponder. Should I choose a lane marked only with this symbol?",
+          "answer_a": "Yes, because every lane must accept cash.",
+          "answer_b": "No, I choose a lane compatible with my payment method.",
+          "answer_c": "Yes, the symbol indicates free passage.",
+          "answer_d": "Yes, by following the preceding car very closely.",
+          "explanation": "Sign C64d indicates automatic payment by electronic toll subscription. Without compatible equipment, I choose another lane before entering and keep a safe distance near the barriers."
+        }
+      }
+    }
+  },
+  "image_path": "assets-source/sign-workflow/C64d/scene.jpg",
+  "image_sha256": "31fc0ee9701f7dc4b8a4dd3bbb7eec7647fb1239ad5bb76ace03e7144a6630db",
+  "review_note": "Reviewed actual image: orange stylised t on black inset with blue square frame above right toll lane, no card or cash symbol on that lane. Car remains on approach; barrier closed. Adjacent lane arrows do not alter subscription requirement. Four options per language, B only.",
+  "reviewed_sha256": "a72109ca4a317764bd521ae4d298ab2f130ca50106ae932a7e3ec696fd7a8a23",
+  "question_key": "situation_c64d_car_sign_interpretation",
+  "imported_content_version": 56,
+  "imported_on": "2026-09-13"
+}

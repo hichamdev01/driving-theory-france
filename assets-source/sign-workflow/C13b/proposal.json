@@ -1,0 +1,36 @@
+{
+  "code": "C13b",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives an ordinary passenger car. The teaching point concerns that car driver’s route, road-sign interpretation or conduct; no specialist vehicle operation is taught.",
+  "scenario_id": "c13b_car_scenario",
+  "scenario": "Car approaching a small French residential intersection with side street on RIGHT and main road continuing straight. Prominent SQUARE BLUE sign on near right verge: WHITE main vertical road line with a horizontal branch to RIGHT ending at a RED cap, exact reference C13b. Right branch residential street visibly ends farther away at hedge; main road continues. No other signs.",
+  "novelty_review": "Advance sign locates dead end on a side street before choosing route, distinct from C13a at dead-end entrance.",
+  "references": [
+    "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf"
+  ],
+  "image_prompt": "Use case: photorealistic-natural. Generate ONE scene-only French permis-B driving quiz photograph, wide landscape preferably 2048x1152. View from an ordinary LEFT-HAND-DRIVE passenger car, small dashboard rim at bottom, right-hand traffic. Natural realistic daylight and scale. Input image is ONLY the official sign pictogram reference, not a scene to edit. Reproduce its exact shape, colours, symbol directions and specified text on a realistic prominent sign. Car approaching a small French residential intersection with side street on RIGHT and main road continuing straight. Prominent SQUARE BLUE sign on near right verge: WHITE main vertical road line with a horizontal branch to RIGHT ending at a RED cap, exact reference C13b. Right branch residential street visibly ends farther away at hedge; main road continues. No other signs. No quiz panel, question text, answer options, watermark or answer hints. Sign must be readable. Preserve safe approach distance and plausible traffic geometry.",
+  "question": {
+    "key": "situation_c13b_car_scenario",
+    "category_slug": "road_signs",
+    "correct_answer": "b",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "D’après ce panneau, quelle voie est sans issue ?",
+        "answer_a": "La route suivie tout droit.",
+        "answer_b": "La rue qui part à droite.",
+        "answer_c": "Toutes les rues du quartier.",
+        "answer_d": "La rue située derrière moi.",
+        "explanation": "Le panneau C13b présignale une impasse. Sur ce schéma, la branche de droite se termine par la barre rouge : cette rue ne permet pas de traverser le quartier, contrairement à la route qui continue tout droit."
+      },
+      "en": {
+        "question_text": "According to this sign, which road is a dead end?",
+        "answer_a": "The road continuing straight ahead.",
+        "answer_b": "The street branching to the right.",
+        "answer_c": "Every street in the neighbourhood.",
+        "answer_d": "The street behind me.",
+        "explanation": "Sign C13b gives advance warning of a dead end. Here the right-hand branch ends at the red bar: that street provides no through route, while the main road continues straight ahead."
+      }
+    }
+  }
+}
