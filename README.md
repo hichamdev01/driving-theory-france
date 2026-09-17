@@ -5,6 +5,13 @@ test ("Code de la route"), studying in English or French. Built local-first:
 all content and progress live in an on-device SQLite database, no backend
 required.
 
+## Documentation
+
+Start with the [documentation index](docs/README.md). The
+[image and question generation workflow](docs/SIGN_WORKFLOW.md) covers choosing
+scenarios, avoiding duplicates, generating and reviewing images, and importing
+questions into the app.
+
 ## Tech stack
 
 - **Swift + SwiftUI**, targeting iOS 17+.
