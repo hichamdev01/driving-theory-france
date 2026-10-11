@@ -1,0 +1,60 @@
+{
+  "scenario_id": "wrong_fuel_discovered_before_start",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Ordinary category-B passenger-car driver knowledge; other users appear only to interpret the road environment.",
+  "learning_objective": "Avoid starting after a fuel mix-up; arrange professional draining/assistance.",
+  "topic": "vehicle.misfuelling",
+  "scenario": "Diesel passenger car mistakenly filled with petrol; driver notices before restarting. Type and mistake explicitly stated, no reliance on nozzle colours.",
+  "novelty_review": "Entire438-bank search for carburant/diesel/gazole/refuel/wrongfuel found only unrelated downhill and toll items. No current question tests misfuelling or avoiding circulating contaminated fuel. Different from oil-pressure urgent stop and coolant hot-cap precautions.",
+  "primary_codes": [],
+  "context_codes": [],
+  "question": {
+    "key": "situation_wrong_fuel_discovered_before_start",
+    "category_slug": "safety",
+    "difficulty": "medium",
+    "correct_answers": [
+      "b"
+    ],
+    "translations": {
+      "fr": {
+        "question_text": "Je viens de mettre de l’essence dans le réservoir de ma voiture diesel, sans avoir redémarré. Que dois-je faire ?",
+        "answer_a": "Démarrer pour vérifier si le moteur accepte le mélange.",
+        "answer_b": "Ne pas démarrer et faire organiser une intervention professionnelle.",
+        "answer_c": "Compléter avec du gazole puis repartir sans avis.",
+        "answer_d": "Rouler vite pour consommer le mélange plus rapidement.",
+        "explanation": "Je ne démarre pas : le mauvais carburant risque d’endommager le circuit et le moteur. Je préviens la station et fais organiser l’assistance et la vidange nécessaires, sans improviser une dilution."
+      },
+      "en": {
+        "question_text": "I have just put petrol into my diesel car’s tank and have not restarted it. What should I do?",
+        "answer_a": "Start it to check whether the engine accepts the mixture.",
+        "answer_b": "Do not start it; arrange professional assistance.",
+        "answer_c": "Add diesel and leave without seeking advice.",
+        "answer_d": "Drive fast to use up the mixture sooner.",
+        "explanation": "I do not start the engine: the wrong fuel can damage the fuel system and engine. I inform the station and arrange the necessary assistance and draining, without improvising a dilution."
+      }
+    }
+  },
+  "option_rationale": {
+    "fr": {
+      "a": "Démarrer peut faire circuler le carburant inadapté.",
+      "b": "Une prise en charge professionnelle évite d’aggraver les dégâts.",
+      "c": "Ajouter le bon carburant ne garantit pas la sécurité du mélange.",
+      "d": "La vitesse ne supprime pas le carburant inadapté et aggrave les risques."
+    },
+    "en": {
+      "a": "Starting can circulate the wrong fuel.",
+      "b": "Professional intervention avoids worsening damage.",
+      "c": "Adding correct fuel does not guarantee a safe mixture.",
+      "d": "Speed does not fix the fuel and adds risk."
+    }
+  },
+  "image_prompt": "Create ONE original photorealistic landscape16:9 scene1672x941. French passenger-car theory illustration, scene only, no quiz text, labels, brand or answer highlight. Tight close-up of an ordinary dark-red hatchback fuel-filler flap OPEN on rear quarter, plain black threaded cap tethered and resting in its holder inside flap, filler neck clearly visible with no nozzle inserted. Car stationary in clean petrol-station forecourt. Soft background shows only plain lower silver pump casing, no display, hose label, prices, brand or text. Crop excludes registration plate, tyre writing and dashboard. No people, flames, spilled liquid or smoke. Natural daylight, realistic hinges, cap, filler neck and tether. The question establishes wrong fuel and diesel engine; never infer fuel type from colours or add a made-up label.",
+  "sources": [
+    {
+      "url": "https://public.servicebox.peugeot.com/APddb/modeles/208.p2/eGuide_p21_ed01-19/pdfs/9999_9999_287_fr-FR.pdf",
+      "kind": "manufacturer",
+      "checked_on": "2026-10-10",
+      "supports": "Original Peugeot208 guide printedp145: incompatible fuel requires tank draining before engine start. General wrong-fuel no-start precaution, no model-specific nozzle assumption."
+    }
+  ]
+}

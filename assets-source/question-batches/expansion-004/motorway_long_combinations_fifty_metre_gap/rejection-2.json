@@ -1,0 +1,6 @@
+{
+  "result": "reject",
+  "proposal_sha256": "52ad0072c4fc112881ddeccbecade0c7ce4f5423235acc9d110a01e0b5e5e2e8",
+  "image_sha256": "5b80fe5d220d7d41eaa0c615f7ea28f7a438ec4410a8df58212b672cd2adca68",
+  "notes": "Towing connection and lane geometry now correct, but visible rear plates are blank rather than plausible registered vehicles. Add correctly formatted distinct French registrations without changing geometry."
+}

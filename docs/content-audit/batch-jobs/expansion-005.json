@@ -1,0 +1,1981 @@
+{
+  "schema_version": 1,
+  "id": "expansion-005",
+  "state": "verified",
+  "created_on": "2026-10-10",
+  "target": 1000,
+  "questions_before": 428,
+  "pack_before_sha256": "560f27f01e00d7639622e8b0db41da3cd7ffbe9978f37104ee7e0fb4bd8b815d",
+  "items": [
+    {
+      "proposal": {
+        "scenario_id": "loaded_car_exceeds_own_ptac",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+        "learning_objective": "Compare actual loaded car mass with its own authorised mass, not the B-licence ceiling.",
+        "topic": "vehicle.loading_ptac",
+        "scenario": "Car PTAC1900kg measured2000kg including occupants,luggage,fuel. No road mass-restriction sign.",
+        "novelty_review": "B13 compares PTAC with a road access threshold; roof load tests secure attachment. This tests overloading the vehicle itself despite being under3.5t.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_loaded_car_exceeds_own_ptac",
+          "category_slug": "safety",
+          "difficulty": "medium",
+          "correct_answers": [
+            "b"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Ma voiture a un PTAC de 1 900 kg. Prête à partir, elle pèse 2 000 kg, occupants et bagages compris. Puis-je rouler ainsi ?",
+              "answer_a": "Oui, puisque je reste sous 3,5 tonnes.",
+              "answer_b": "Non, je dois réduire la charge avant de partir.",
+              "answer_c": "Oui, si les bagages sont bien attachés.",
+              "answer_d": "Oui, en augmentant la pression des pneus.",
+              "explanation": "Le poids réel de la voiture chargée ne doit pas dépasser son propre PTAC. Ici, 2 000 kg dépasse 1 900 kg : ni le permis B, ni l’arrimage, ni le gonflage ne rendent cette surcharge autorisée."
+            },
+            "en": {
+              "question_text": "My car has a maximum authorised mass of 1,900 kg. Ready to leave, it weighs 2,000 kg including occupants and luggage. May I drive it like this?",
+              "answer_a": "Yes, because it remains below 3.5 tonnes.",
+              "answer_b": "No; I must reduce the load before leaving.",
+              "answer_c": "Yes, if the luggage is securely fastened.",
+              "answer_d": "Yes, by increasing tyre pressure.",
+              "explanation": "The actual mass of the loaded car must not exceed its own maximum authorised mass. Here, 2,000 kg exceeds 1,900 kg; licence entitlement, secure luggage or tyre pressure cannot authorise that overload."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Le plafond du permis ne remplace pas le PTAC du véhicule.",
+            "b": "La masse réelle excède son PTAC.",
+            "c": "L’arrimage ne réduit pas la masse.",
+            "d": "Le gonflage ne modifie pas le PTAC."
+          },
+          "en": {
+            "a": "The licence ceiling does not replace the car limit.",
+            "b": "Actual mass exceeds authorised mass.",
+            "c": "Securing luggage does not reduce mass.",
+            "d": "Pressure does not change authorised mass."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Close rear-side view into the open boot of a stationary ordinary dark-blue hatchback in a private driveway. Three plain compact suitcases lie flat and low below the parcel-shelf level, secured by a realistic black luggage net attached to four cargo anchor points. Empty folded picnic blanket alongside. No people, no objects above seatback, no plate visible, no road signs or written labels. Rear seatbacks upright, tailgate held by two struts, tail-lamp intact at crop edge. The image illustrates loaded luggage only; exact measured total mass is supplied by the question, not inferred from suspension sag.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032401231/",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "R312-2 prohibits actual vehicle mass exceeding its authorised loaded mass; current article read."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_b13_ptac_not_actual_mass",
+          "similarity": 0.28,
+          "question_fr": "Ma voiture sans remorque a un PTAC de 2 300 kg, mais pèse aujourd’hui 1 700 kg. Puis-je franchir ce panneau ?"
+        },
+        {
+          "key": "situation_trailer_ptra_over3500_motorway90",
+          "similarity": 0.17,
+          "question_fr": "Ma voiture (PTAC 2 500 kg, PTRA 4 500 kg) tracte une remorque de PTAC 750 kg. Sur autoroute sèche, avec bonne visibilité et sans limite plus basse, mon maximum est :"
+        },
+        {
+          "key": "situation_height_limit_3_5m",
+          "similarity": 0.142,
+          "question_fr": "Pour vérifier que ma voiture équipée d’un coffre de toit peut passer, quelle hauteur dois-je comparer à 3,5 m ?"
+        },
+        {
+          "key": "situation_height_limit_2_8m",
+          "similarity": 0.131,
+          "question_fr": "Que vous annonce ce panneau ?"
+        },
+        {
+          "key": "situation_long_caravan_snow_overtaking_prohibited",
+          "similarity": 0.122,
+          "question_fr": "Je tracte une caravane : longueur totale 8 m, somme des PTAC 3 200 kg. Une voie de la chaussée est partiellement enneigée. Puis-je dépasser une voiture ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-005/loaded_car_exceeds_own_ptac/scene-1.jpg",
+          "image_sha256": "6bc93da44798cb505d9cef65c85390d60a680a914fb394d9ff0f1f62700ccd57",
+          "prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Close rear-side view into the open boot of a stationary ordinary dark-blue hatchback in a private driveway. Three plain compact suitcases lie flat and low below the parcel-shelf level, secured by a realistic black luggage net attached to four cargo anchor points. Empty folded picnic blanket alongside. No people, no objects above seatback, no plate visible, no road signs or written labels. Rear seatbacks upright, tailgate held by two struts, tail-lamp intact at crop edge. The image illustrates loaded luggage only; exact measured total mass is supplied by the question, not inferred from suspension sag.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "8b18d1e4335a7ee548c3b08219870747df0566770a852c223aaac4898a594917",
+            "image_sha256": "6bc93da44798cb505d9cef65c85390d60a680a914fb394d9ff0f1f62700ccd57",
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+            "compared_question_keys": [
+              "situation_b13_ptac_not_actual_mass",
+              "situation_trailer_ptra_over3500_motorway90",
+              "situation_height_limit_3_5m",
+              "situation_height_limit_2_8m",
+              "situation_long_caravan_snow_overtaking_prohibited"
+            ],
+            "checks": {
+              "signs_and_text": "No signs, plates, captions or readable labels.",
+              "road_geometry": "Private driveway, no live traffic lane or ambiguous road restriction.",
+              "vehicles_and_people": "Stationary blue hatchback, plausible tailgate struts, seatbacks and lamps; no people.",
+              "dashboard_and_equipment": "Three cases low below seatbacks, net clipped at four visible anchors; soft folded blanket alongside.",
+              "phone_size": "Boot and net remain recognisable; mass values supplied explicitly in both stems.",
+              "official_rule": "Sources actually read during authoring: R312-2 prohibits actual vehicle mass exceeding its authorised loaded mass; current article read.",
+              "novelty": "Own vehicle maximum laden mass versus actual load, distinct from B13 road access and trailer speed. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+              "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. Stationary blue hatchback, plausible tailgate struts, seatbacks and lamps; no people. Three cases low below seatbacks, net clipped at four visible anchors; soft folded blanket alongside.",
+              "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Boot and net remain recognisable; mass values supplied explicitly in both stems.",
+              "all_four_options": "Correct B. A: The licence ceiling does not replace the car limit.; B: Actual mass exceeds authorised mass.; C: Securing luggage does not reduce mass.; D: Pressure does not change authorised mass."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-005/loaded_car_exceeds_own_ptac/scene-1.jpg",
+      "image_sha256": "6bc93da44798cb505d9cef65c85390d60a680a914fb394d9ff0f1f62700ccd57",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "8b18d1e4335a7ee548c3b08219870747df0566770a852c223aaac4898a594917",
+        "image_sha256": "6bc93da44798cb505d9cef65c85390d60a680a914fb394d9ff0f1f62700ccd57",
+        "result": "pass",
+        "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+        "compared_question_keys": [
+          "situation_b13_ptac_not_actual_mass",
+          "situation_trailer_ptra_over3500_motorway90",
+          "situation_height_limit_3_5m",
+          "situation_height_limit_2_8m",
+          "situation_long_caravan_snow_overtaking_prohibited"
+        ],
+        "checks": {
+          "signs_and_text": "No signs, plates, captions or readable labels.",
+          "road_geometry": "Private driveway, no live traffic lane or ambiguous road restriction.",
+          "vehicles_and_people": "Stationary blue hatchback, plausible tailgate struts, seatbacks and lamps; no people.",
+          "dashboard_and_equipment": "Three cases low below seatbacks, net clipped at four visible anchors; soft folded blanket alongside.",
+          "phone_size": "Boot and net remain recognisable; mass values supplied explicitly in both stems.",
+          "official_rule": "Sources actually read during authoring: R312-2 prohibits actual vehicle mass exceeding its authorised loaded mass; current article read.",
+          "novelty": "Own vehicle maximum laden mass versus actual load, distinct from B13 road access and trailer speed. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+          "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. Stationary blue hatchback, plausible tailgate struts, seatbacks and lamps; no people. Three cases low below seatbacks, net clipped at four visible anchors; soft folded blanket alongside.",
+          "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Boot and net remain recognisable; mass values supplied explicitly in both stems.",
+          "all_four_options": "Correct B. A: The licence ceiling does not replace the car limit.; B: Actual mass exceeds authorised mass.; C: Securing luggage does not reduce mass.; D: Pressure does not change authorised mass."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "8d04906246575a70c8eb0802ea8d54209fd525828be4950e0b62e191369c2eca"
+    },
+    {
+      "proposal": {
+        "scenario_id": "licence_0106_contact_lenses",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+        "learning_objective": "Recognise that licence code01.06 allows the required correction using glasses OR contact lenses.",
+        "topic": "driver.vision_restriction",
+        "scenario": "CategoryB licence explicitly01.06; driver wears prescribed contact lenses giving required correction.",
+        "novelty_review": "EAD scope is covered; no current item tests the optical-code choice. This asks whether appropriate contacts meet01.06, not generic licence restrictions or medicine-blurred vision.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_licence_0106_contact_lenses",
+          "category_slug": "safety",
+          "difficulty": "medium",
+          "correct_answers": [
+            "c"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Mon permis B porte le code 01.06. Je porte mes lentilles de contact correctrices adaptées. Est-ce que je respecte cette restriction de vision sans lunettes ?",
+              "answer_a": "Non, les lunettes sont toujours obligatoires en plus.",
+              "answer_b": "Oui, seulement de jour.",
+              "answer_c": "Oui, ce code autorise lunettes ou lentilles de contact.",
+              "answer_d": "Non, ce code interdit toute lentille de contact.",
+              "explanation": "Le code 01.06 prévoit une correction par lunettes ou lentilles de contact. Des lentilles adaptées permettent donc de respecter cette mention ; je conserve la correction nécessaire pendant toute la conduite."
+            },
+            "en": {
+              "question_text": "My category-B licence shows code 01.06. I am wearing my suitable corrective contact lenses. Do I meet this vision restriction without glasses?",
+              "answer_a": "No; glasses must always be worn as well.",
+              "answer_b": "Yes, but only in daylight.",
+              "answer_c": "Yes; this code allows glasses or contact lenses.",
+              "answer_d": "No; this code prohibits all contact lenses.",
+              "explanation": "Code 01.06 allows correction with glasses or contact lenses. Suitable corrective lenses therefore meet this restriction; I must retain the necessary correction throughout the drive."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "01.06 ne demande pas les deux équipements ensemble.",
+            "b": "Aucune condition de jour ne figure dans ce code.",
+            "c": "Le code prévoit bien lunettes ou lentilles.",
+            "d": "Les lentilles sont expressément permises."
+          },
+          "en": {
+            "a": "Both are not required together.",
+            "b": "This code does not specify daylight only.",
+            "c": "Glasses or lenses are permitted.",
+            "d": "Contacts are expressly allowed."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Original close photograph before departure: a plain open contact-lens case with two clean shallow wells on a bathroom counter, with folded ordinary clear-lens prescription spectacles alongside. One open opaque white case cap and one blue cap beside their matching wells, no written L/R or brand. Clean soft daylight, no person or eye procedure, no medicines, licence card, personal document, mirror or tiny text. Realistic spectacles with two lenses and two folded temples. This is context for optical correction; the exact licence code and lenses already worn are stated in the question.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/codes/section_lc/JORFTEXT000025803494/JORFSCTA000025803549/2026-04-01",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "AnnexeI code01.06 explicitly means glasses or contact lenses; distinguished from01.01 and01.02."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_ead_restriction_borrowed_car",
+          "similarity": 0.123,
+          "question_fr": "Mon permis B impose actuellement un éthylotest antidémarrage (EAD). Je suis sobre. Puis-je conduire la voiture prêtée par un ami si elle n’a pas d’EAD ?"
+        },
+        {
+          "key": "situation_probationary_one_glass_risk",
+          "similarity": 0.114,
+          "question_fr": "J'ai un permis probatoire et on me propose un seul verre avant de conduire. Quelle décision est sûre ?"
+        },
+        {
+          "key": "danger_sign_double_bend_left",
+          "similarity": 0.107,
+          "question_fr": "Que vous annonce ce panneau ?"
+        },
+        {
+          "key": "situation_dynamic_speed_limit_over_fixed",
+          "similarity": 0.105,
+          "question_fr": "Le panneau fixe indique 110, mais le panneau lumineux affiche 70. Quelle limite s'applique ici ?"
+        },
+        {
+          "key": "situation_high_beams_oncoming_dip",
+          "similarity": 0.096,
+          "question_fr": "De nuit, une voiture arrive en face sur cette route non éclairée. Que dois-je faire avec mes feux de route ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-005/licence_0106_contact_lenses/scene-1.jpg",
+          "image_sha256": "066453af1555387817db88745dc7b22ec5ee5b7adb38fbafdc0d60d4c65cd0b2",
+          "prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Original close photograph before departure: a plain open contact-lens case with two clean shallow wells on a bathroom counter, with folded ordinary clear-lens prescription spectacles alongside. One open opaque white case cap and one blue cap beside their matching wells, no written L/R or brand. Clean soft daylight, no person or eye procedure, no medicines, licence card, personal document, mirror or tiny text. Realistic spectacles with two lenses and two folded temples. This is context for optical correction; the exact licence code and lenses already worn are stated in the question.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "2949cee95d5129a9cb052da8868612262335b6420abe8d11904725f9d4bd1e67",
+            "image_sha256": "066453af1555387817db88745dc7b22ec5ee5b7adb38fbafdc0d60d4c65cd0b2",
+            "result": "reject",
+            "notes": "Unintelligible tiny pseudo-lettering on the inner spectacle temple. Remove it rather than retain generated unreadable text.",
+            "recorded_on": "2026-10-10"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-005/licence_0106_contact_lenses/scene-2.jpg",
+          "image_sha256": "ac5f0d223184bbd853d6c16b7307e9dde4935c25714c5283446610b482e68880",
+          "prompt": "Edit only the supplied original photograph. Remove every tiny white character, number and pseudo-letter from both folded spectacle temples; leave clean dark tortoiseshell material with realistic reflections. Preserve the two lenses, two folded temples, two open contact-lens case wells, white and blue caps, counter, bathroom, composition and daylight exactly. No new text or symbols. Output landscape 16:9 at least1672x941.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "2949cee95d5129a9cb052da8868612262335b6420abe8d11904725f9d4bd1e67",
+            "image_sha256": "ac5f0d223184bbd853d6c16b7307e9dde4935c25714c5283446610b482e68880",
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+            "compared_question_keys": [
+              "situation_ead_restriction_borrowed_car",
+              "situation_probationary_one_glass_risk",
+              "danger_sign_double_bend_left",
+              "situation_dynamic_speed_limit_over_fixed",
+              "situation_high_beams_oncoming_dip"
+            ],
+            "checks": {
+              "signs_and_text": "No signs or text; corrected spectacle temples are plain.",
+              "road_geometry": "Indoor bathroom counter; no driving geometry asserted.",
+              "vehicles_and_people": "No people or vehicle movement; no unsafe eye procedure illustrated.",
+              "dashboard_and_equipment": "Two spectacle lenses, two folded temples, two case wells and separate matching caps; coherent reflections.",
+              "phone_size": "Glasses and open case remain clear; licence code and lenses being worn supplied by wording.",
+              "official_rule": "Sources actually read during authoring: AnnexeI code01.06 explicitly means glasses or contact lenses; distinguished from01.01 and01.02.",
+              "novelty": "Vision restriction alternatives 01.06, distinct from EAD equipment and probationary alcohol. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+              "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No people or vehicle movement; no unsafe eye procedure illustrated. Two spectacle lenses, two folded temples, two case wells and separate matching caps; coherent reflections.",
+              "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Glasses and open case remain clear; licence code and lenses being worn supplied by wording.",
+              "all_four_options": "Correct C. A: Both are not required together.; B: This code does not specify daylight only.; C: Glasses or lenses are permitted.; D: Contacts are expressly allowed."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-005/licence_0106_contact_lenses/scene-2.jpg",
+      "image_sha256": "ac5f0d223184bbd853d6c16b7307e9dde4935c25714c5283446610b482e68880",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "2949cee95d5129a9cb052da8868612262335b6420abe8d11904725f9d4bd1e67",
+        "image_sha256": "ac5f0d223184bbd853d6c16b7307e9dde4935c25714c5283446610b482e68880",
+        "result": "pass",
+        "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+        "compared_question_keys": [
+          "situation_ead_restriction_borrowed_car",
+          "situation_probationary_one_glass_risk",
+          "danger_sign_double_bend_left",
+          "situation_dynamic_speed_limit_over_fixed",
+          "situation_high_beams_oncoming_dip"
+        ],
+        "checks": {
+          "signs_and_text": "No signs or text; corrected spectacle temples are plain.",
+          "road_geometry": "Indoor bathroom counter; no driving geometry asserted.",
+          "vehicles_and_people": "No people or vehicle movement; no unsafe eye procedure illustrated.",
+          "dashboard_and_equipment": "Two spectacle lenses, two folded temples, two case wells and separate matching caps; coherent reflections.",
+          "phone_size": "Glasses and open case remain clear; licence code and lenses being worn supplied by wording.",
+          "official_rule": "Sources actually read during authoring: AnnexeI code01.06 explicitly means glasses or contact lenses; distinguished from01.01 and01.02.",
+          "novelty": "Vision restriction alternatives 01.06, distinct from EAD equipment and probationary alcohol. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+          "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No people or vehicle movement; no unsafe eye procedure illustrated. Two spectacle lenses, two folded temples, two case wells and separate matching caps; coherent reflections.",
+          "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Glasses and open case remain clear; licence code and lenses being worn supplied by wording.",
+          "all_four_options": "Correct C. A: Both are not required together.; B: This code does not specify daylight only.; C: Glasses or lenses are permitted.; D: Contacts are expressly allowed."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "6be0caea01d5e21938deaca7fdd9969ac0e081f121573b4c8fa1089245a56bfe"
+    },
+    {
+      "proposal": {
+        "scenario_id": "abs_warning_stays_on_without_red_brake",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+        "learning_objective": "Distinguish ABS failure from normal activation and complete braking loss.",
+        "topic": "vehicle.abs_failure",
+        "scenario": "After self-test, amberABS stays lit while driving; no red brake/STOP warning, no abnormal pedal. Prompt asks meanings/actions matching manual.",
+        "novelty_review": "Existing ABS pedal pulsation concerns successful emergency activation. This is a persistent fault warning and loss of anti-lock protection, not pumping technique.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_abs_warning_stays_on_without_red_brake",
+          "category_slug": "safety",
+          "difficulty": "medium",
+          "correct_answers": [
+            "a",
+            "d"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Après l’autotest, le voyant ABS reste allumé en roulant, sans alerte rouge de freinage ni anomalie de pédale. Quelles affirmations sont exactes ?",
+              "answer_a": "L’antiblocage peut être indisponible, même si le freinage classique fonctionne.",
+              "answer_b": "Ce voyant prouve que l’ABS protège normalement les roues.",
+              "answer_c": "Je peux ignorer ce défaut jusqu’au prochain contrôle technique.",
+              "answer_d": "Je fais contrôler rapidement le système et conduis avec prudence.",
+              "explanation": "Ce voyant persistant signale un défaut de l’antiblocage, et non son fonctionnement normal. Le freinage peut rester assuré sans ABS ; je suis la notice et fais contrôler rapidement. Une alerte rouge de freinage imposerait une réaction plus urgente."
+            },
+            "en": {
+              "question_text": "After the self-test, the ABS warning stays on while driving, with no red brake warning or abnormal pedal feel. Which statements are correct?",
+              "answer_a": "Anti-lock protection may be unavailable even though conventional braking works.",
+              "answer_b": "This warning proves that ABS is protecting the wheels normally.",
+              "answer_c": "I may ignore the fault until the next roadworthiness test.",
+              "answer_d": "I arrange a prompt system check and drive cautiously.",
+              "explanation": "A persistent ABS warning indicates an anti-lock fault rather than normal operation. Conventional braking may remain available without ABS; I follow the manual and arrange a prompt check. A red brake warning would require a more urgent response."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Freinage classique possible sans antiblocage.",
+            "b": "Un voyant persistant après autotest signale un défaut.",
+            "c": "Le défaut ne doit pas attendre le contrôle périodique.",
+            "d": "Contrôle rapide et prudence suivant la notice."
+          },
+          "en": {
+            "a": "Conventional brakes may work without anti-lock.",
+            "b": "Persistent warning after self-test indicates a fault.",
+            "c": "Do not postpone the fault to periodic inspection.",
+            "d": "Prompt inspection and caution follow the manual."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Tight close-up of a real black car instrument-cluster warning-light strip behind clear glass. One AMBER illuminated standard ABS telltale: exact uppercase letters ABS inside a thin amber circle, with curved amber brackets outside left and right. Symbol sharp and large at centre. Surrounding panel black and unlit, no other lit warnings, no red STOP or brake light, no gauge numerals or text. A small curved edge of dashboard housing at bottom makes it clearly physical equipment, not a floating graphic. Photorealistic glass reflections subtle, entire background dark matte. Only actual ABS symbol is readable. Whether warning persists after self-test is explicitly supplied by the stem.",
+        "sources": [
+          {
+            "url": "https://www.user-manual.renault.com/fr/la-conduite/dispositifs-de-correction-et-dassistance-la-conduite-20",
+            "kind": "manufacturer",
+            "checked_on": "2026-10-10",
+            "supports": "RenaultKoleos ABS fault leaves braking withoutABS; cautious prompt workshop visit. Simultaneous red brake warning indicates grave braking problem, excluded here."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_abs_emergency_pedal_pulsation",
+          "similarity": 0.301,
+          "question_fr": "Lors d’un freinage d’urgence, l’ABS de ma voiture entre en action et la pédale vibre. Quelles affirmations sont exactes ?"
+        },
+        {
+          "key": "situation_safety_oil_pressure_stop_engine",
+          "similarity": 0.187,
+          "question_fr": "En roulant, le témoin rouge de pression d’huile reste allumé avec l’alerte STOP. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_cmi_parking_card_passenger",
+          "similarity": 0.154,
+          "question_fr": "Je transporte une personne titulaire d’une CMI « stationnement » valide. Pour stationner avec elle, quelles affirmations sont exactes ?"
+        },
+        {
+          "key": "situation_motorway_blowout_initial_control",
+          "similarity": 0.121,
+          "question_fr": "Sur cette autoroute, un pneu éclate brusquement alors que je roule. Quelle est ma première réaction ?"
+        },
+        {
+          "key": "situation_emergency_vehicle_without_special_signals",
+          "similarity": 0.117,
+          "question_fr": "Le feu est rouge. Une ambulance attend derrière moi sans feu bleu ni sirène. Dois-je franchir la ligne d'arrêt pour la laisser passer ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-005/abs_warning_stays_on_without_red_brake/scene-1.jpg",
+          "image_sha256": "6178c31893099ad0f539bbbed53e33331a806483ee0ab505339f3a81b407c296",
+          "prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Tight close-up of a real black car instrument-cluster warning-light strip behind clear glass. One AMBER illuminated standard ABS telltale: exact uppercase letters ABS inside a thin amber circle, with curved amber brackets outside left and right. Symbol sharp and large at centre. Surrounding panel black and unlit, no other lit warnings, no red STOP or brake light, no gauge numerals or text. A small curved edge of dashboard housing at bottom makes it clearly physical equipment, not a floating graphic. Photorealistic glass reflections subtle, entire background dark matte. Only actual ABS symbol is readable. Whether warning persists after self-test is explicitly supplied by the stem.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "cd7e247c74391949528b97cb7596f53e3965229a9c2f49f02fac4d8195896bf2",
+            "image_sha256": "6178c31893099ad0f539bbbed53e33331a806483ee0ab505339f3a81b407c296",
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+            "compared_question_keys": [
+              "situation_abs_emergency_pedal_pulsation",
+              "situation_safety_oil_pressure_stop_engine",
+              "situation_cmi_parking_card_passenger",
+              "situation_motorway_blowout_initial_control",
+              "situation_emergency_vehicle_without_special_signals"
+            ],
+            "checks": {
+              "signs_and_text": "Amber ABS inside circle and curved brackets; no red warning. Cropped peripheral gauge edge is not a question clue.",
+              "road_geometry": "Interior close-up; no road layout or speed can be inferred.",
+              "vehicles_and_people": "No people, vehicles or actions shown.",
+              "dashboard_and_equipment": "Physical glass-covered black cluster, amber ABS lit, surrounding display dark; no contradictory brake warning.",
+              "phone_size": "ABS is clear at390px; persistence after self-test and absent red alert stated in both languages.",
+              "official_rule": "Sources actually read during authoring: RenaultKoleos ABS fault leaves braking withoutABS; cautious prompt workshop visit. Simultaneous red brake warning indicates grave braking problem, excluded here.",
+              "novelty": "Persistent fault after self-test, distinct from normal emergency ABS pedal pulsation and urgent red oil warning. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+              "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No people, vehicles or actions shown. Physical glass-covered black cluster, amber ABS lit, surrounding display dark; no contradictory brake warning.",
+              "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. ABS is clear at390px; persistence after self-test and absent red alert stated in both languages.",
+              "all_four_options": "Correct A,D. A: Conventional brakes may work without anti-lock.; B: Persistent warning after self-test indicates a fault.; C: Do not postpone the fault to periodic inspection.; D: Prompt inspection and caution follow the manual."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-005/abs_warning_stays_on_without_red_brake/scene-1.jpg",
+      "image_sha256": "6178c31893099ad0f539bbbed53e33331a806483ee0ab505339f3a81b407c296",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "cd7e247c74391949528b97cb7596f53e3965229a9c2f49f02fac4d8195896bf2",
+        "image_sha256": "6178c31893099ad0f539bbbed53e33331a806483ee0ab505339f3a81b407c296",
+        "result": "pass",
+        "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+        "compared_question_keys": [
+          "situation_abs_emergency_pedal_pulsation",
+          "situation_safety_oil_pressure_stop_engine",
+          "situation_cmi_parking_card_passenger",
+          "situation_motorway_blowout_initial_control",
+          "situation_emergency_vehicle_without_special_signals"
+        ],
+        "checks": {
+          "signs_and_text": "Amber ABS inside circle and curved brackets; no red warning. Cropped peripheral gauge edge is not a question clue.",
+          "road_geometry": "Interior close-up; no road layout or speed can be inferred.",
+          "vehicles_and_people": "No people, vehicles or actions shown.",
+          "dashboard_and_equipment": "Physical glass-covered black cluster, amber ABS lit, surrounding display dark; no contradictory brake warning.",
+          "phone_size": "ABS is clear at390px; persistence after self-test and absent red alert stated in both languages.",
+          "official_rule": "Sources actually read during authoring: RenaultKoleos ABS fault leaves braking withoutABS; cautious prompt workshop visit. Simultaneous red brake warning indicates grave braking problem, excluded here.",
+          "novelty": "Persistent fault after self-test, distinct from normal emergency ABS pedal pulsation and urgent red oil warning. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+          "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No people, vehicles or actions shown. Physical glass-covered black cluster, amber ABS lit, surrounding display dark; no contradictory brake warning.",
+          "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. ABS is clear at390px; persistence after self-test and absent red alert stated in both languages.",
+          "all_four_options": "Correct A,D. A: Conventional brakes may work without anti-lock.; B: Persistent warning after self-test indicates a fault.; C: Do not postpone the fault to periodic inspection.; D: Prompt inspection and caution follow the manual."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "75d5699e05f23c69439f7311085c76b03a0ef228efc19e11092d6c220c7b42d6"
+    },
+    {
+      "proposal": {
+        "scenario_id": "mountain_winter_ms_without_3pmsf",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+        "learning_objective": "Recognise that M+S alone no longer substitutes for chains/socks in regulated winter mountain zones.",
+        "topic": "equipment.winter_tyre_certification",
+        "scenario": "January in a signposted regulated mountain zone. All four tyresM+S only,no3PMSF,nochains/socks.",
+        "novelty_review": "Existing B26 tests fitting carried chains on snow with summer tyres. This tests seasonal zone equipment eligibility and insufficientM+S certification, not when to fit chains.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_mountain_winter_ms_without_3pmsf",
+          "category_slug": "safety",
+          "difficulty": "medium",
+          "correct_answers": [
+            "d"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "En janvier, dans une zone de montagne soumise à l’obligation hivernale, mes quatre pneus portent seulement M+S, sans 3PMSF. Je n’ai ni chaînes ni chaussettes. Suis-je correctement équipé ?",
+              "answer_a": "Oui, M+S suffit encore à lui seul.",
+              "answer_b": "Oui, si la route est sèche aujourd’hui.",
+              "answer_c": "Oui, si je reste dans la zone moins d’une heure.",
+              "answer_d": "Non, cette configuration ne satisfait pas l’obligation.",
+              "explanation": "Depuis novembre 2024, des pneus M+S seuls ne remplacent plus les dispositifs antidérapants amovibles dans ces zones. Il faut quatre pneus hiver conformes, marqués 3PMSF, ou détenir des chaînes ou chaussettes adaptées pour au moins deux roues motrices."
+            },
+            "en": {
+              "question_text": "In January, in a mountain zone subject to winter-equipment rules, all four tyres are marked only M+S, without 3PMSF. I have no chains or snow socks. Is my equipment compliant?",
+              "answer_a": "Yes; M+S alone is still enough.",
+              "answer_b": "Yes, if the road is dry today.",
+              "answer_c": "Yes, if I stay in the zone for less than an hour.",
+              "answer_d": "No; this equipment does not meet the requirement.",
+              "explanation": "Since November 2024, M+S-only tyres no longer replace removable anti-skid devices in these zones. I need four compliant 3PMSF winter tyres or suitable chains or snow socks for at least two driven wheels."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "L’équivalence M+S seul a pris fin.",
+            "b": "La règle saisonnière ne dépend pas seulement de la météo du jour.",
+            "c": "Pas d’exception pour séjour bref.",
+            "d": "Il manque un équipement admis."
+          },
+          "en": {
+            "a": "M+S-only equivalence has ended.",
+            "b": "The seasonal requirement is not limited to snowy days.",
+            "c": "Short visits are not exempt.",
+            "d": "An accepted equipment option is missing."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Close realistic photograph of the upper sidewall of a healthy black passenger-car tyre fitted to a silver alloy wheel on a parked car, clean rubber. Clearly moulded raised black text M+S visible on the sidewall near upper centre, lit by soft raking daylight. No three-peak-mountain/snowflake symbol anywhere visible. Crop most other sidewall lettering out of frame rather than invent a full tyre specification. Tread undamaged, vehicle not jacked up, parked on dry asphalt. Soft background of a private garage, no other signs, numbers or people. Text in the question establishes all four tyres lack3PMSF; do not imply a partial photo proves the whole tyre certification.",
+        "sources": [
+          {
+            "url": "https://www.service-public.gouv.fr/particuliers/actualites/A14389",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "2025-26 winter guidance: only3PMSF tyres accepted instead of removable devices; other snow tyres require devices. No temporary weather exemption."
+          },
+          {
+            "url": "https://www.ecologie.gouv.fr/actualites/vrai-du-faux-circulation-cas-neige-verglas",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "January2026 government guidance confirms seasonalNov1–Mar31 regulated communes, four3PMSF tyres or chains/socks for two driven wheels."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_snow_chains_b26_fit",
+          "similarity": 0.222,
+          "question_fr": "La chaussée est enneigée et ce panneau B26 est implanté. Ma voiture a des pneus été et les chaînes sont dans le coffre. Que faire ?"
+        },
+        {
+          "key": "situation_long_caravan_snow_overtaking_prohibited",
+          "similarity": 0.137,
+          "question_fr": "Je tracte une caravane : longueur totale 8 m, somme des PTAC 3 200 kg. Une voie de la chaussée est partiellement enneigée. Puis-je dépasser une voiture ?"
+        },
+        {
+          "key": "situation_b44_car_scenario",
+          "similarity": 0.133,
+          "question_fr": "Quelle obligation prend fin à ce panneau ?"
+        },
+        {
+          "key": "situation_no_overtaking_basic",
+          "similarity": 0.101,
+          "question_fr": "Sous réserve des autres règles de dépassement, quelles manœuvres le panneau B3 autorise-t-il encore ?"
+        },
+        {
+          "key": "situation_insurance_fva_no_green_sticker",
+          "similarity": 0.1,
+          "question_fr": "Une voiture immatriculée en France n’a plus de vignette verte d’assurance sur le pare-brise. Cela prouve-t-il qu’elle n’est pas assurée ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-005/mountain_winter_ms_without_3pmsf/scene-1.jpg",
+          "image_sha256": "046785025e002bb20eb4e1248ec17510e9a0bef1a602f69741bc62b4785471cb",
+          "prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Close realistic photograph of the upper sidewall of a healthy black passenger-car tyre fitted to a silver alloy wheel on a parked car, clean rubber. Clearly moulded raised black text M+S visible on the sidewall near upper centre, lit by soft raking daylight. No three-peak-mountain/snowflake symbol anywhere visible. Crop most other sidewall lettering out of frame rather than invent a full tyre specification. Tread undamaged, vehicle not jacked up, parked on dry asphalt. Soft background of a private garage, no other signs, numbers or people. Text in the question establishes all four tyres lack3PMSF; do not imply a partial photo proves the whole tyre certification.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "3064b5d8f3526f60633fe6f5b2ebca84a41a3e8b5395844e8f3c349ecefdbc19",
+            "image_sha256": "046785025e002bb20eb4e1248ec17510e9a0bef1a602f69741bc62b4785471cb",
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+            "compared_question_keys": [
+              "situation_snow_chains_b26_fit",
+              "situation_long_caravan_snow_overtaking_prohibited",
+              "situation_b44_car_scenario",
+              "situation_no_overtaking_basic",
+              "situation_insurance_fva_no_green_sticker"
+            ],
+            "checks": {
+              "signs_and_text": "Raised M+S is legible; no 3PMSF symbol visible or invented full specification.",
+              "road_geometry": "Parked on dry surface; seasonal duty supplied in stem independent of actual snow.",
+              "vehicles_and_people": "Tyre fitted to parked car, sound tread, no jack or person.",
+              "dashboard_and_equipment": "Consistent tyre/rim/brake geometry, intact sidewall; partial view does not prove whole certification.",
+              "phone_size": "M+S remains readable at390px; all four tyres and absent chains/socks are explicit.",
+              "official_rule": "Sources actually read during authoring: 2025-26 winter guidance: only3PMSF tyres accepted instead of removable devices; other snow tyres require devices. No temporary weather exemption.; January2026 government guidance confirms seasonalNov1–Mar31 regulated communes, four3PMSF tyres or chains/socks for two driven wheels.",
+              "novelty": "Seasonal equipment qualification of M+S-only tyres, distinct from fitting chains at B26 or ending that signed requirement. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+              "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. Tyre fitted to parked car, sound tread, no jack or person. Consistent tyre/rim/brake geometry, intact sidewall; partial view does not prove whole certification.",
+              "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. M+S remains readable at390px; all four tyres and absent chains/socks are explicit.",
+              "all_four_options": "Correct D. A: M+S-only equivalence has ended.; B: The seasonal requirement is not limited to snowy days.; C: Short visits are not exempt.; D: An accepted equipment option is missing."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-005/mountain_winter_ms_without_3pmsf/scene-1.jpg",
+      "image_sha256": "046785025e002bb20eb4e1248ec17510e9a0bef1a602f69741bc62b4785471cb",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "3064b5d8f3526f60633fe6f5b2ebca84a41a3e8b5395844e8f3c349ecefdbc19",
+        "image_sha256": "046785025e002bb20eb4e1248ec17510e9a0bef1a602f69741bc62b4785471cb",
+        "result": "pass",
+        "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+        "compared_question_keys": [
+          "situation_snow_chains_b26_fit",
+          "situation_long_caravan_snow_overtaking_prohibited",
+          "situation_b44_car_scenario",
+          "situation_no_overtaking_basic",
+          "situation_insurance_fva_no_green_sticker"
+        ],
+        "checks": {
+          "signs_and_text": "Raised M+S is legible; no 3PMSF symbol visible or invented full specification.",
+          "road_geometry": "Parked on dry surface; seasonal duty supplied in stem independent of actual snow.",
+          "vehicles_and_people": "Tyre fitted to parked car, sound tread, no jack or person.",
+          "dashboard_and_equipment": "Consistent tyre/rim/brake geometry, intact sidewall; partial view does not prove whole certification.",
+          "phone_size": "M+S remains readable at390px; all four tyres and absent chains/socks are explicit.",
+          "official_rule": "Sources actually read during authoring: 2025-26 winter guidance: only3PMSF tyres accepted instead of removable devices; other snow tyres require devices. No temporary weather exemption.; January2026 government guidance confirms seasonalNov1–Mar31 regulated communes, four3PMSF tyres or chains/socks for two driven wheels.",
+          "novelty": "Seasonal equipment qualification of M+S-only tyres, distinct from fitting chains at B26 or ending that signed requirement. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+          "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. Tyre fitted to parked car, sound tread, no jack or person. Consistent tyre/rim/brake geometry, intact sidewall; partial view does not prove whole certification.",
+          "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. M+S remains readable at390px; all four tyres and absent chains/socks are explicit.",
+          "all_four_options": "Correct D. A: M+S-only equivalence has ended.; B: The seasonal requirement is not limited to snowy days.; C: Short visits are not exempt.; D: An accepted equipment option is missing."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "e22df3ddba759a0235f5cc9b2768dc691da154ca567e56c9db8833cd77ca6bed"
+    },
+    {
+      "proposal": {
+        "scenario_id": "yellow_continuous_kerb_no_stopping",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+        "learning_objective": "Identify no-stopping meaning of a continuous yellow kerb marking.",
+        "topic": "markings.continuous_yellow_kerb",
+        "scenario": "Single continuous yellow line painted on top of kerb, no parking bay or works, normal nonemergency dropoff.",
+        "novelty_review": "Broken yellow kerb covers parking-only prohibition. This distinct marking also forbids a brief ordinary passenger dropoff, unlike the broken pattern; no newB6d sign reused.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_yellow_continuous_kerb_no_stopping",
+          "category_slug": "parking_stopping",
+          "difficulty": "medium",
+          "correct_answers": [
+            "a"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Cette ligne jaune continue longe la bordure du trottoir. Puis-je m’y arrêter juste pour laisser descendre un passager, sans urgence ?",
+              "answer_a": "Non, elle interdit aussi l’arrêt.",
+              "answer_b": "Oui, si je reste au volant.",
+              "answer_c": "Oui, pendant moins d’une minute.",
+              "answer_d": "Oui, car seule la nuit est concernée.",
+              "explanation": "Une ligne jaune continue sur la bordure indique une interdiction d’arrêt, donc aussi de stationnement. Un bref dépôt de passager reste un arrêt et n’est pas autorisé ici ; la ligne discontinue aurait une autre portée."
+            },
+            "en": {
+              "question_text": "A continuous yellow line runs along this kerb. May I stop there briefly to let a passenger out, with no emergency?",
+              "answer_a": "No; it also prohibits stopping.",
+              "answer_b": "Yes, if I stay at the wheel.",
+              "answer_c": "Yes, for less than a minute.",
+              "answer_d": "Yes, because it applies only at night.",
+              "explanation": "A continuous yellow kerb line prohibits stopping as well as parking. A brief passenger drop-off is still a stop and is not permitted here; a broken yellow line would have a different meaning."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "L’interdiction vise l’arrêt aussi.",
+            "b": "Rester présent ne lève pas l’interdiction.",
+            "c": "La brièveté ne crée pas d’exception.",
+            "d": "Aucun horaire de nuit seulement."
+          },
+          "en": {
+            "a": "Stopping is prohibited too.",
+            "b": "Remaining present is no exemption.",
+            "c": "Brief duration does not allow it.",
+            "d": "No night-only qualification is shown."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Quiet ordinary French urban street, eye-level oblique view along the RIGHT curb. A single neat uninterrupted YELLOW stripe is painted on the TOP HORIZONTAL surface of the stone kerb for the entire visible street frontage, clearly continuous not dashed. Plain grey asphalt to left, unobstructed pale pavement to right, neutral buildings and a closed garden wall. No parking bays, no zigzags, no cones/roadworks, no signs, people, vehicles, driveways or crossings. Yellow stripe large and continuous at390px width, natural daylight, no unnatural high saturation.",
+        "sources": [
+          {
+            "url": "https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_7epartie_vc_20250404.pdf",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Current availableIISR7 Article118-2B,p47 and tablep10: continuous yellow kerb marking for prohibited stopping; broken for parking. Read cached officialPDF downloaded earlier."
+          },
+          {
+            "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000031285676",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "2015modification Article8 introduced current118-2B wording, confirmed in2025consolidation."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_yellow_broken_kerb_parking_only",
+          "similarity": 0.356,
+          "question_fr": "Que signifie, à elle seule, cette ligne jaune discontinue sur la bordure du trottoir ?"
+        },
+        {
+          "key": "situation_no_stopping_b6d",
+          "similarity": 0.327,
+          "question_fr": "Puis-je m'arrêter après ce panneau pour laisser descendre un passager ?"
+        },
+        {
+          "key": "situation_no_parking",
+          "similarity": 0.305,
+          "question_fr": "Face à ce panneau, puis-je m'arrêter quelques instants pour laisser descendre un passager ?"
+        },
+        {
+          "key": "situation_no_motor_vehicles",
+          "similarity": 0.254,
+          "question_fr": "Avec ma voiture, puis-je m'engager dans cette rue pour déposer un passager ?"
+        },
+        {
+          "key": "situation_bus_stop_marking_no_stop",
+          "similarity": 0.215,
+          "question_fr": "Puis-je m'arrêter sur ce zigzag jaune d'arrêt d'autobus pour déposer rapidement un passager ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-005/yellow_continuous_kerb_no_stopping/scene-1.jpg",
+          "image_sha256": "bbb133c5d0cd490b472179b5510554137ccf79de20ccc624aeee5056d894087c",
+          "prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Quiet ordinary French urban street, eye-level oblique view along the RIGHT curb. A single neat uninterrupted YELLOW stripe is painted on the TOP HORIZONTAL surface of the stone kerb for the entire visible street frontage, clearly continuous not dashed. Plain grey asphalt to left, unobstructed pale pavement to right, neutral buildings and a closed garden wall. No parking bays, no zigzags, no cones/roadworks, no signs, people, vehicles, driveways or crossings. Yellow stripe large and continuous at390px width, natural daylight, no unnatural high saturation.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "8f4b62272d4e0c861a6996ec412483be60a73b15fea630949d4a70bb6f8f0ce2",
+            "image_sha256": "bbb133c5d0cd490b472179b5510554137ccf79de20ccc624aeee5056d894087c",
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+            "compared_question_keys": [
+              "situation_yellow_broken_kerb_parking_only",
+              "situation_no_stopping_b6d",
+              "situation_no_parking",
+              "situation_no_motor_vehicles",
+              "situation_bus_stop_marking_no_stop"
+            ],
+            "checks": {
+              "signs_and_text": "One continuous yellow stripe across kerb top, no gaps beyond stone joints; no extra signs or symbols.",
+              "road_geometry": "Urban kerb and pavement continuous; no bays, crossing, driveway or temporary works.",
+              "vehicles_and_people": "No pedestrians or vehicles whose position could add an exception.",
+              "dashboard_and_equipment": "No dashboard or other equipment in frame.",
+              "phone_size": "Continuity and yellow colour unmistakable at390px; no passenger movement needed for hypothetical question.",
+              "official_rule": "Sources actually read during authoring: Current availableIISR7 Article118-2B,p47 and tablep10: continuous yellow kerb marking for prohibited stopping; broken for parking. Read cached officialPDF downloaded earlier.; 2015modification Article8 introduced current118-2B wording, confirmed in2025consolidation.",
+              "novelty": "Continuous yellow kerb recognition supplies a different controlling marking from broken yellow or B6d. Its no-stop meaning is the point, not a scenery-only B6d repeat. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+              "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No pedestrians or vehicles whose position could add an exception. No dashboard or other equipment in frame.",
+              "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Continuity and yellow colour unmistakable at390px; no passenger movement needed for hypothetical question.",
+              "all_four_options": "Correct A. A: Stopping is prohibited too.; B: Remaining present is no exemption.; C: Brief duration does not allow it.; D: No night-only qualification is shown."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-005/yellow_continuous_kerb_no_stopping/scene-1.jpg",
+      "image_sha256": "bbb133c5d0cd490b472179b5510554137ccf79de20ccc624aeee5056d894087c",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "8f4b62272d4e0c861a6996ec412483be60a73b15fea630949d4a70bb6f8f0ce2",
+        "image_sha256": "bbb133c5d0cd490b472179b5510554137ccf79de20ccc624aeee5056d894087c",
+        "result": "pass",
+        "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+        "compared_question_keys": [
+          "situation_yellow_broken_kerb_parking_only",
+          "situation_no_stopping_b6d",
+          "situation_no_parking",
+          "situation_no_motor_vehicles",
+          "situation_bus_stop_marking_no_stop"
+        ],
+        "checks": {
+          "signs_and_text": "One continuous yellow stripe across kerb top, no gaps beyond stone joints; no extra signs or symbols.",
+          "road_geometry": "Urban kerb and pavement continuous; no bays, crossing, driveway or temporary works.",
+          "vehicles_and_people": "No pedestrians or vehicles whose position could add an exception.",
+          "dashboard_and_equipment": "No dashboard or other equipment in frame.",
+          "phone_size": "Continuity and yellow colour unmistakable at390px; no passenger movement needed for hypothetical question.",
+          "official_rule": "Sources actually read during authoring: Current availableIISR7 Article118-2B,p47 and tablep10: continuous yellow kerb marking for prohibited stopping; broken for parking. Read cached officialPDF downloaded earlier.; 2015modification Article8 introduced current118-2B wording, confirmed in2025consolidation.",
+          "novelty": "Continuous yellow kerb recognition supplies a different controlling marking from broken yellow or B6d. Its no-stop meaning is the point, not a scenery-only B6d repeat. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+          "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No pedestrians or vehicles whose position could add an exception. No dashboard or other equipment in frame.",
+          "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Continuity and yellow colour unmistakable at390px; no passenger movement needed for hypothetical question.",
+          "all_four_options": "Correct A. A: Stopping is prohibited too.; B: Remaining present is no exemption.; C: Brief duration does not allow it.; D: No night-only qualification is shown."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "ba4ac9d7c3ad59e41a345a3d6c66721bdfa57aa4ca2a463c48745f3a6eefe5f4"
+    },
+    {
+      "proposal": {
+        "scenario_id": "speed_narrows_useful_visual_field",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+        "learning_objective": "Understand that speed concentrates useful vision ahead and reduces peripheral hazard detection.",
+        "topic": "speed.peripheral_observation",
+        "scenario": "Increasing speed on an open road; question about useful visual field, not measured optical angle or exact speed visible.",
+        "novelty_review": "Existing speed questions cover limits, stopping distance and adaptation to specific hazards. None tests speed’s narrowing of useful peripheral observation.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_speed_narrows_useful_visual_field",
+          "category_slug": "speed_limits",
+          "difficulty": "medium",
+          "correct_answers": [
+            "c"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Quand ma vitesse augmente fortement, mon champ de vision utile tend à se rétrécir. Quelle conséquence dois-je anticiper ?",
+              "answer_a": "Je repère mieux les dangers sur les côtés.",
+              "answer_b": "Mes rétroviseurs suppriment tous les angles morts.",
+              "answer_c": "Je risque de repérer plus tard un danger sur le côté.",
+              "answer_d": "Je n’ai plus besoin de regarder loin devant.",
+              "explanation": "À grande vitesse, l’attention visuelle se concentre davantage vers l’avant et les informations périphériques sont moins bien perçues. Réduire l’allure aide à observer les côtés et laisse davantage de temps pour réagir."
+            },
+            "en": {
+              "question_text": "As my speed rises substantially, my useful field of vision tends to narrow. What consequence should I expect?",
+              "answer_a": "I detect hazards at the sides better.",
+              "answer_b": "My mirrors eliminate every blind spot.",
+              "answer_c": "I may notice a hazard at the side later.",
+              "answer_d": "I no longer need to look well ahead.",
+              "explanation": "At high speed, visual attention becomes more concentrated ahead and peripheral information is less readily noticed. Reducing speed helps observation at the sides and gives more time to respond."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "La perception périphérique diminue au contraire.",
+            "b": "La vitesse ne supprime aucun angle mort.",
+            "c": "Les informations latérales risquent d’être détectées plus tard.",
+            "d": "L’anticipation loin devant demeure nécessaire."
+          },
+          "en": {
+            "a": "Peripheral perception instead decreases.",
+            "b": "Speed does not eliminate blind spots.",
+            "c": "Lateral information may be detected later.",
+            "d": "Looking ahead remains necessary."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Original wide natural daylight road photograph from a car travelling on the RIGHT of a quiet straight French two-way rural road. White broken centreline left of camera lane, grassy verges, roadside trees and open fields on both sides, clear horizon. No other vehicles, people, signs, intersections or readable text, no dashboard. Crisp normal photographic focus across scene: DO NOT draw tunnel-vision masks, vignette, blur cones, shaded field-of-view graphics or speed annotations. This is neutral road context; the question describes a general perceptual effect, not a speed inferred from the image.",
+        "sources": [
+          {
+            "url": "https://www.securite-routiere.gouv.fr/sites/default/files/2021-07/depliant-la_vue-v3.pdf",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Sécurité routière, La vue (July 2015 leaflet, still hosted on official site), page 2, Voir large: speed narrows the useful visual field; mirrors leave blind spots checked by a brief head turn. Actual PDF downloaded and read; no numerical angle claim used."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_bus_passengers_alighting_slow",
+          "similarity": 0.12,
+          "question_fr": "Des voyageurs descendent de ce bus arrêté et peuvent traverser devant lui. Comment adapter mon allure ?"
+        },
+        {
+          "key": "situation_occluded_pedestrian_hazard",
+          "similarity": 0.113,
+          "question_fr": "Une camionnette masque le trottoir et une partie du passage piéton. Quelle action est la plus sûre ?"
+        },
+        {
+          "key": "situation_frosted_windscreen_clear_before_drive",
+          "similarity": 0.112,
+          "question_fr": "Je n'ai gratté qu'une petite ouverture dans ce pare-brise givré. Puis-je partir ainsi ?"
+        },
+        {
+          "key": "safety_eco_driving_anticipation",
+          "similarity": 0.102,
+          "question_fr": "Quel style de conduite améliore généralement la sécurité tout en réduisant la consommation d’énergie ?"
+        },
+        {
+          "key": "situation_slippery_rain",
+          "similarity": 0.099,
+          "question_fr": "Par temps de pluie, face à ce panneau, quelle attitude dois-je adopter ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-005/speed_narrows_useful_visual_field/scene-1.jpg",
+          "image_sha256": "f40486d87b739db1473f5df37c4d5f6adf7c03e68652bc742354fb3c1ca0e483",
+          "prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Original wide natural daylight road photograph from a car travelling on the RIGHT of a quiet straight French two-way rural road. White broken centreline left of camera lane, grassy verges, roadside trees and open fields on both sides, clear horizon. No other vehicles, people, signs, intersections or readable text, no dashboard. Crisp normal photographic focus across scene: DO NOT draw tunnel-vision masks, vignette, blur cones, shaded field-of-view graphics or speed annotations. This is neutral road context; the question describes a general perceptual effect, not a speed inferred from the image.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "30e2fd267d8811b357b0fcd9b77313c646c17666d3e1b20d363c9b942b53ca24",
+            "image_sha256": "f40486d87b739db1473f5df37c4d5f6adf7c03e68652bc742354fb3c1ca0e483",
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+            "compared_question_keys": [
+              "situation_bus_passengers_alighting_slow",
+              "situation_occluded_pedestrian_hazard",
+              "situation_frosted_windscreen_clear_before_drive",
+              "safety_eco_driving_anticipation",
+              "situation_slippery_rain"
+            ],
+            "checks": {
+              "signs_and_text": "White broken centreline only; no signs, numbers or artificial field-of-view overlay.",
+              "road_geometry": "Straight two-way rural road, camera right of centreline, verges and perspective coherent.",
+              "vehicles_and_people": "No other vehicles or people; no hidden hazard asserted by image.",
+              "dashboard_and_equipment": "No dashboard or speed display; no numeric speed inferred.",
+              "phone_size": "Ordinary wide road context remains clear; question states the perceptual effect without pretending still image measures speed.",
+              "official_rule": "Sources actually read during authoring: Sécurité routière, La vue (July 2015 leaflet, still hosted on official site), page 2, Voir large: speed narrows the useful visual field; mirrors leave blind spots checked by a brief head turn. Actual PDF downloaded and read; no numerical angle claim used.",
+              "novelty": "Useful peripheral attention narrowing as speed rises, distinct from physical obstruction/frost, bus visibility and eco-driving. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+              "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No other vehicles or people; no hidden hazard asserted by image. No dashboard or speed display; no numeric speed inferred.",
+              "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Ordinary wide road context remains clear; question states the perceptual effect without pretending still image measures speed.",
+              "all_four_options": "Correct C. A: Peripheral perception instead decreases.; B: Speed does not eliminate blind spots.; C: Lateral information may be detected later.; D: Looking ahead remains necessary."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-005/speed_narrows_useful_visual_field/scene-1.jpg",
+      "image_sha256": "f40486d87b739db1473f5df37c4d5f6adf7c03e68652bc742354fb3c1ca0e483",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "30e2fd267d8811b357b0fcd9b77313c646c17666d3e1b20d363c9b942b53ca24",
+        "image_sha256": "f40486d87b739db1473f5df37c4d5f6adf7c03e68652bc742354fb3c1ca0e483",
+        "result": "pass",
+        "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+        "compared_question_keys": [
+          "situation_bus_passengers_alighting_slow",
+          "situation_occluded_pedestrian_hazard",
+          "situation_frosted_windscreen_clear_before_drive",
+          "safety_eco_driving_anticipation",
+          "situation_slippery_rain"
+        ],
+        "checks": {
+          "signs_and_text": "White broken centreline only; no signs, numbers or artificial field-of-view overlay.",
+          "road_geometry": "Straight two-way rural road, camera right of centreline, verges and perspective coherent.",
+          "vehicles_and_people": "No other vehicles or people; no hidden hazard asserted by image.",
+          "dashboard_and_equipment": "No dashboard or speed display; no numeric speed inferred.",
+          "phone_size": "Ordinary wide road context remains clear; question states the perceptual effect without pretending still image measures speed.",
+          "official_rule": "Sources actually read during authoring: Sécurité routière, La vue (July 2015 leaflet, still hosted on official site), page 2, Voir large: speed narrows the useful visual field; mirrors leave blind spots checked by a brief head turn. Actual PDF downloaded and read; no numerical angle claim used.",
+          "novelty": "Useful peripheral attention narrowing as speed rises, distinct from physical obstruction/frost, bus visibility and eco-driving. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+          "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No other vehicles or people; no hidden hazard asserted by image. No dashboard or speed display; no numeric speed inferred.",
+          "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Ordinary wide road context remains clear; question states the perceptual effect without pretending still image measures speed.",
+          "all_four_options": "Correct C. A: Peripheral perception instead decreases.; B: Speed does not eliminate blind spots.; C: Lateral information may be detected later.; D: Looking ahead remains necessary."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "f16a1d189b268b933c6c8159928edc871a96f27631ba1cb832eb83f8a711f70e"
+    },
+    {
+      "proposal": {
+        "scenario_id": "engine_oil_level_measurement_conditions",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Routine maintenance check by a category-B car driver.",
+        "learning_objective": "Choose reliable conditions for a routine dipstick engine-oil-level reading.",
+        "topic": "vehicle.oil_level_measurement",
+        "scenario": "Routine pre-trip oil check with a dipstick; select level ground, stopped engine and manufacturer wait, not a running or sloping vehicle.",
+        "novelty_review": "Whole-bank oil/jauge search finds only urgent red oil-pressure warning. This teaches obtaining a reliable routine level measurement, not responding to pressure failure, opening a hot coolant cap, or checking tyre pressure.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_engine_oil_level_measurement_conditions",
+          "category_slug": "safety",
+          "difficulty": "medium",
+          "correct_answers": [
+            "b"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Avant un trajet, je veux vérifier le niveau d’huile moteur avec la jauge. Dans quelles conditions obtenir une lecture fiable ?",
+              "answer_a": "Moteur en marche, quelle que soit la pente.",
+              "answer_b": "Sur sol horizontal, moteur arrêté, après le délai indiqué dans la notice.",
+              "answer_c": "Sur une forte pente, dès la coupure du moteur.",
+              "answer_d": "Uniquement après avoir rempli jusqu’au-dessus du maximum.",
+              "explanation": "Le sol horizontal et le délai après l’arrêt permettent à l’huile de se répartir correctement dans le carter. Je suis la notice, essuie la jauge puis la remets complètement avant la lecture, sans dépasser le niveau maximal."
+            },
+            "en": {
+              "question_text": "Before a trip, I want to check the engine-oil level with the dipstick. Which conditions give a reliable reading?",
+              "answer_a": "With the engine running, on any slope.",
+              "answer_b": "On level ground, with the engine stopped, after the wait specified in the manual.",
+              "answer_c": "On a steep slope, immediately after switching off.",
+              "answer_d": "Only after filling above the maximum mark.",
+              "explanation": "Level ground and the wait after stopping let the oil settle correctly in the sump. I follow the manual, wipe the dipstick and fully reinsert it before reading, and never exceed the maximum level."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Le moteur en marche et la pente faussent la lecture.",
+            "b": "Le sol et le délai adaptés rendent la mesure fiable.",
+            "c": "La pente et une lecture trop précoce faussent la mesure.",
+            "d": "Un excès d’huile risque d’endommager le moteur."
+          },
+          "en": {
+            "a": "A running engine and slope distort the reading.",
+            "b": "Level ground and the specified wait support an accurate reading.",
+            "c": "A slope and immediate reading can distort the result.",
+            "d": "Overfilling risks engine damage."
+          }
+        },
+        "image_prompt": "Create one original photorealistic landscape16:9 photograph at least1672x941 for a French car theory question. A single ordinary car engine-oil dipstick rests diagonally on a clean folded white lint-free cloth on a dark workshop bench. The dipstick has one orange plastic ring handle connected to a long thin flat metal strip, and a small crosshatched measuring area between two shallow notches near the opposite end. Whole dipstick fits the frame. Plain realistic metal, no letters, numbers, oil brand, bottles, people, hands, engine or other tools. Soft natural daylight. The photo illustrates the tool; question asks measurement conditions, not a displayed oil reading. No question, answer, labels, captions, watermark or highlights.",
+        "sources": [
+          {
+            "url": "https://www.user-manual.renault.com/fr/acc%C3%A8s-moteur-niveaux/huile-moteur",
+            "kind": "manufacturer",
+            "checked_on": "2026-10-10",
+            "supports": "Original Renault Clio5 manual, engine-oil-level section: horizontal ground after prolonged engine stop; wipe dipstick, fully reinsert then read; never exceed maximum. Question defers precise waiting interval to vehicle manual."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-005/engine_oil_level_measurement_conditions/scene-1.jpg",
+          "image_sha256": "b2834da716aa4d4a7bce98d8f479b551ce1210ba471d3c7414a5cadbc511dd7d",
+          "prompt": "Create one original photorealistic landscape16:9 photograph at least1672x941 for a French car theory question. A single ordinary car engine-oil dipstick rests diagonally on a clean folded white lint-free cloth on a dark workshop bench. The dipstick has one orange plastic ring handle connected to a long thin flat metal strip, and a small crosshatched measuring area between two shallow notches near the opposite end. Whole dipstick fits the frame. Plain realistic metal, no letters, numbers, oil brand, bottles, people, hands, engine or other tools. Soft natural daylight. The photo illustrates the tool; question asks measurement conditions, not a displayed oil reading. No question, answer, labels, captions, watermark or highlights.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "20820ef790cdbbc0d6b341855663cfba2d11e4f6f998aa933429858dd027aaab",
+            "image_sha256": "b2834da716aa4d4a7bce98d8f479b551ce1210ba471d3c7414a5cadbc511dd7d",
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+            "compared_question_keys": [
+              "situation_safety_oil_pressure_stop_engine",
+              "situation_alcohol_expired_self_test_unreliable",
+              "situation_coolant_hot_cap_wait",
+              "situation_speed_carpark_walking_pace",
+              "situation_abs_warning_stays_on_without_red_brake"
+            ],
+            "checks": {
+              "signs_and_text": "No letters, numbers or captions on the dipstick or bench.",
+              "road_geometry": "Workbench context; level-ground condition is an answer, not inferred from image.",
+              "vehicles_and_people": "No person handling hot machinery and no vehicle shown.",
+              "dashboard_and_equipment": "One orange ring handle, attached thin metal strip with measuring zone between paired notches; whole dipstick in frame.",
+              "phone_size": "Dipstick and clean cloth recognisable at390px; notches are context, no oil-level reading required.",
+              "official_rule": "Sources actually read during authoring: Original Renault Clio5 manual, engine-oil-level section: horizontal ground after prolonged engine stop; wipe dipstick, fully reinsert then read; never exceed maximum. Question defers precise waiting interval to vehicle manual.",
+              "novelty": "Whole-bank oil/jauge search finds only urgent red oil-pressure warning. This teaches obtaining a reliable routine level measurement, not responding to pressure failure, opening a hot coolant cap, or checking tyre pressure. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+              "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No person handling hot machinery and no vehicle shown. One orange ring handle, attached thin metal strip with measuring zone between paired notches; whole dipstick in frame.",
+              "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Dipstick and clean cloth recognisable at390px; notches are context, no oil-level reading required.",
+              "all_four_options": "Correct B. A: A running engine and slope distort the reading.; B: Level ground and the specified wait support an accurate reading.; C: A slope and immediate reading can distort the result.; D: Overfilling risks engine damage."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "nearest_questions": [
+        {
+          "key": "situation_safety_oil_pressure_stop_engine",
+          "similarity": 0.163,
+          "question_fr": "En roulant, le témoin rouge de pression d’huile reste allumé avec l’alerte STOP. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_alcohol_expired_self_test_unreliable",
+          "similarity": 0.132,
+          "question_fr": "La date de validité de cet éthylotest est dépassée. Puis-je me fier à un résultat négatif pour conduire après avoir bu ?"
+        },
+        {
+          "key": "situation_coolant_hot_cap_wait",
+          "similarity": 0.12,
+          "question_fr": "Après un trajet, ma voiture est garée, contact coupé, mais le moteur est encore chaud. Pour contrôler le liquide de refroidissement, je dois :"
+        },
+        {
+          "key": "situation_speed_carpark_walking_pace",
+          "similarity": 0.118,
+          "question_fr": "Je circule dans ce parc de stationnement aménagé au sol. Quelle allure dois-je adopter ?"
+        },
+        {
+          "key": "situation_abs_warning_stays_on_without_red_brake",
+          "similarity": 0.103,
+          "question_fr": "Après l’autotest, le voyant ABS reste allumé en roulant, sans alerte rouge de freinage ni anomalie de pédale. Quelles affirmations sont exactes ?"
+        }
+      ],
+      "replacements": [
+        {
+          "reason": "Focus the same learning objective on the last return arrow; singular wording matches the close scene. Preserve prior failed attempts.",
+          "previous": {
+            "proposal": {
+              "scenario_id": "overtake_return_arrows_before_solid",
+              "scope": "ordinary_passenger_car",
+              "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+              "learning_objective": "Recognise return arrows along an announcement line as warning of an upcoming continuous centreline.",
+              "topic": "markings.return_before_solid",
+              "scenario": "Two-way rural road; return arrows straddle centre announcement line, upcoming solid line. Driver has not started overtaking.",
+              "novelty_review": "C28 announces lane reduction on three lanes; mixed/solidline scenarios concern existing line. This tests anticipation from curved return arrows on a two-lane road before the solid begins.",
+              "primary_codes": [],
+              "context_codes": [],
+              "question": {
+                "key": "situation_overtake_return_arrows_before_solid",
+                "category_slug": "overtaking",
+                "difficulty": "medium",
+                "correct_answers": [
+                  "b"
+                ],
+                "translations": {
+                  "fr": {
+                    "question_text": "Sur cette route à deux voies et à double sens, ces flèches de rabattement accompagnent la ligne d’annonce. Que m’indiquent-elles avant un dépassement ?",
+                    "answer_a": "Que je dispose d’une voie supplémentaire pour dépasser.",
+                    "answer_b": "Qu’une ligne continue approche et que je dois rester ou revenir à droite avant elle.",
+                    "answer_c": "Que je dois obligatoirement tourner à droite au prochain carrefour.",
+                    "answer_d": "Que la route devient à sens unique.",
+                    "explanation": "Sur une route à deux voies, les flèches de rabattement accompagnent l’annonce d’une ligne continue. Elles ne créent pas de voie de dépassement : j’anticipe le retour à droite avant cette ligne et ne commence pas une manœuvre qui ne pourrait y être terminée en sécurité."
+                  },
+                  "en": {
+                    "question_text": "On this two-lane, two-way road, return arrows accompany the warning centreline. What do they tell me before overtaking?",
+                    "answer_a": "An extra overtaking lane is available.",
+                    "answer_b": "A solid line is approaching; I must stay or return to the right before it.",
+                    "answer_c": "I must turn right at the next junction.",
+                    "answer_d": "The road is becoming one-way.",
+                    "explanation": "On a two-lane road, return arrows accompany the warning of a solid centreline. They do not create an overtaking lane: I anticipate returning right before that line and do not start a manoeuvre that cannot finish safely in time."
+                  }
+                }
+              },
+              "option_rationale": {
+                "fr": {
+                  "a": "Aucune voie ajoutée.",
+                  "b": "Annonce de la ligne continue et rabattement.",
+                  "c": "Ce ne sont pas des flèches directionnelles de carrefour.",
+                  "d": "Les sens ne changent pas."
+                },
+                "en": {
+                  "a": "No extra lane is created.",
+                  "b": "They warn of the solid line and return.",
+                  "c": "They are not junction turn arrows.",
+                  "d": "Traffic directions do not change."
+                }
+              },
+              "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Photorealistic forward driver-eye view from the RIGHT lane of a French rural TWO-LANE TWO-WAY road. Exactly one lane each way, no extra lane. At the centreline on our LEFT, white long-dash short-gap T3 announcement marks (painted segments about3times gap length) run toward a gentle distant right bend, where the centreline becomes solid. Show THREE standard French white elongated curved return arrows staggered toward the bend, STRADDLING the centre announcement line, heads pointing forward and slightly RIGHT into our lane. Nearest arrow has a long thin gently curved shaft and an elongated narrow triangular head, NOT a90-degree turn arrow and not a short broad US lane-arrow. Perspective consistent, arrows spaced far apart with several dashed segments between, distant ones smaller. Grassy verges, no road edge lines required, no people, vehicles, signs or text. No graphic overlay. Reference shape is IISR7 annexB1, six-metre-long slender painted arrow; correct paint physically on asphalt.",
+              "sources": [
+                {
+                  "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/",
+                  "kind": "official",
+                  "checked_on": "2026-10-10",
+                  "supports": "Article8 describes curved return arrows directing users to indicated lanes and warning of continuouslines."
+                },
+                {
+                  "url": "https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_7epartie_vc_20250404.pdf",
+                  "kind": "official",
+                  "checked_on": "2026-10-10",
+                  "supports": "IISR7Article115-3B,p21-22: two-lane road arrowsstraddleannouncementline,3arrows; AnnexB1p61shape visually inspected."
+                }
+              ]
+            },
+            "state": "rejected",
+            "nearest_questions": [
+              {
+                "key": "situation_two_way_traffic",
+                "similarity": 0.186,
+                "question_fr": "Que m’annonce le panneau A18 ?"
+              },
+              {
+                "key": "situation_overtake_no_speed_limit_exception",
+                "similarity": 0.175,
+                "question_fr": "Pour dépasser sur cette route limitée à 80 km/h, puis-je monter brièvement à 90 ?"
+              },
+              {
+                "key": "situation_c29a_car_scenario",
+                "similarity": 0.168,
+                "question_fr": "Que m’annonce ce panneau avant l’aménagement visible plus loin ?"
+              },
+              {
+                "key": "situation_priority_road_intersection_overtake",
+                "similarity": 0.166,
+                "question_fr": "Je circule sur une route prioritaire et les routes latérales ont un STOP. L'intersection interdit-elle à elle seule tout dépassement ?"
+              },
+              {
+                "key": "situation_mixed_line_broken_my_side",
+                "similarity": 0.152,
+                "question_fr": "La ligne discontinue est de mon côté et longe une ligne continue. Puis-je franchir l'ensemble pour dépasser si toutes les autres conditions sont sûres ?"
+              }
+            ],
+            "history": [
+              {
+                "image_path": "assets-source/question-batches/expansion-005/overtake_return_arrows_before_solid/scene-1.jpg",
+                "image_sha256": "2642a0f0eb1cb12afc37987872592bdcdcce59c2bdb8fd1770f52d5f63e03254",
+                "prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Photorealistic forward driver-eye view from the RIGHT lane of a French rural TWO-LANE TWO-WAY road. Exactly one lane each way, no extra lane. At the centreline on our LEFT, white long-dash short-gap T3 announcement marks (painted segments about3times gap length) run toward a gentle distant right bend, where the centreline becomes solid. Show THREE standard French white elongated curved return arrows staggered toward the bend, STRADDLING the centre announcement line, heads pointing forward and slightly RIGHT into our lane. Nearest arrow has a long thin gently curved shaft and an elongated narrow triangular head, NOT a90-degree turn arrow and not a short broad US lane-arrow. Perspective consistent, arrows spaced far apart with several dashed segments between, distant ones smaller. Grassy verges, no road edge lines required, no people, vehicles, signs or text. No graphic overlay. Reference shape is IISR7 annexB1, six-metre-long slender painted arrow; correct paint physically on asphalt.\n",
+                "created_on": "2026-10-10",
+                "review": {
+                  "proposal_sha256": "035f5ae223f720212756247b518591efe51162005483420b7c0d662bc5af87a1",
+                  "image_sha256": "2642a0f0eb1cb12afc37987872592bdcdcce59c2bdb8fd1770f52d5f63e03254",
+                  "result": "reject",
+                  "notes": "Return arrows too short and broad, incorrectly compact spacing with only one short dash between. Does not match IISR B1 slender six-metre shape or long-dash warning line arrangement.",
+                  "recorded_on": "2026-10-10"
+                }
+              },
+              {
+                "image_path": "assets-source/question-batches/expansion-005/overtake_return_arrows_before_solid/scene-2.jpg",
+                "image_sha256": "c51ca5b6a4c2204893ae30c81da6aab624212be5195fc552bee3bf2220a4333c",
+                "prompt": "Edit the original road photograph (image1); image2 is the official technical shape reference ONLY. Replace all three road arrows with the EXACT slender elongated French flèche de rabattement silhouette from image2: long subtly curved thin shaft and very long narrow asymmetrical spearhead, forward slightly right; do not copy any annotation or diagram background. On the asphalt each arrow is6metres long; lane width3.5m. Space arrows widely apart along the centreline: approximately50m then40m, with many3m-long dashes and1.33m gaps between. Extend the straight approach as needed for this realistic spacing before the distant solid line and right bend. Exactly one lane each direction. Camera in right lane, arrows straddle centreline, nearest large lowerleft, next two far smaller. Preserve daylight, countryside, realistic perspective; no vehicles, signs, captions or graphic overlays. Landscape16:9 at least1672x941.\n",
+                "created_on": "2026-10-10",
+                "review": {
+                  "proposal_sha256": "035f5ae223f720212756247b518591efe51162005483420b7c0d662bc5af87a1",
+                  "image_sha256": "c51ca5b6a4c2204893ae30c81da6aab624212be5195fc552bee3bf2220a4333c",
+                  "result": "reject",
+                  "notes": "Second image has four arrow-like shapes and still compact spacing. Cannot approve a nonstandard whole sequence.",
+                  "recorded_on": "2026-10-10"
+                }
+              }
+            ],
+            "image_path": "assets-source/question-batches/expansion-005/overtake_return_arrows_before_solid/scene-2.jpg",
+            "image_sha256": "c51ca5b6a4c2204893ae30c81da6aab624212be5195fc552bee3bf2220a4333c",
+            "dimensions": [
+              1672,
+              941
+            ],
+            "review": {
+              "proposal_sha256": "035f5ae223f720212756247b518591efe51162005483420b7c0d662bc5af87a1",
+              "image_sha256": "c51ca5b6a4c2204893ae30c81da6aab624212be5195fc552bee3bf2220a4333c",
+              "result": "reject",
+              "notes": "Second image has four arrow-like shapes and still compact spacing. Cannot approve a nonstandard whole sequence.",
+              "recorded_on": "2026-10-10"
+            }
+          }
+        },
+        {
+          "reason": "Three failed arrow corrections; replace with researched routine oil-level measurement objective.",
+          "previous": {
+            "proposal": {
+              "scenario_id": "overtake_return_arrows_before_solid",
+              "scope": "ordinary_passenger_car",
+              "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+              "learning_objective": "Recognise return arrows along an announcement line as warning of an upcoming continuous centreline.",
+              "topic": "markings.return_before_solid",
+              "scenario": "Two-way rural road; return arrows straddle centre announcement line, upcoming solid line. Driver has not started overtaking.",
+              "novelty_review": "C28 announces lane reduction on three lanes; mixed/solidline scenarios concern existing line. This tests anticipation from curved return arrows on a two-lane road before the solid begins.",
+              "primary_codes": [],
+              "context_codes": [],
+              "question": {
+                "key": "situation_overtake_return_arrows_before_solid",
+                "category_slug": "overtaking",
+                "difficulty": "medium",
+                "correct_answers": [
+                  "b"
+                ],
+                "translations": {
+                  "fr": {
+                    "question_text": "Sur cette route à deux voies et à double sens, cette flèche de rabattement accompagne la ligne d’annonce. Que m’indique-t-elle avant un dépassement ?",
+                    "answer_a": "Que je dispose d’une voie supplémentaire pour dépasser.",
+                    "answer_b": "Qu’une ligne continue approche et que je dois rester ou revenir à droite avant elle.",
+                    "answer_c": "Que je dois obligatoirement tourner à droite au prochain carrefour.",
+                    "answer_d": "Que la route devient à sens unique.",
+                    "explanation": "Sur une route à deux voies, les flèches de rabattement accompagnent l’annonce d’une ligne continue. Elles ne créent pas de voie de dépassement : j’anticipe le retour à droite avant cette ligne et ne commence pas une manœuvre qui ne pourrait y être terminée en sécurité."
+                  },
+                  "en": {
+                    "question_text": "On this two-lane, two-way road, this return arrow accompanies the warning centreline. What does it tell me before overtaking?",
+                    "answer_a": "An extra overtaking lane is available.",
+                    "answer_b": "A solid line is approaching; I must stay or return to the right before it.",
+                    "answer_c": "I must turn right at the next junction.",
+                    "answer_d": "The road is becoming one-way.",
+                    "explanation": "On a two-lane road, return arrows accompany the warning of a solid centreline. They do not create an overtaking lane: I anticipate returning right before that line and do not start a manoeuvre that cannot finish safely in time."
+                  }
+                }
+              },
+              "option_rationale": {
+                "fr": {
+                  "a": "Aucune voie ajoutée.",
+                  "b": "Annonce de la ligne continue et rabattement.",
+                  "c": "Ce ne sont pas des flèches directionnelles de carrefour.",
+                  "d": "Les sens ne changent pas."
+                },
+                "en": {
+                  "a": "No extra lane is created.",
+                  "b": "They warn of the solid line and return.",
+                  "c": "They are not junction turn arrows.",
+                  "d": "Traffic directions do not change."
+                }
+              },
+              "image_prompt": "Original photorealistic landscape scene of the LAST French return arrow in a sequence, camera close enough that previous arrows behind the camera are outside frame. One standard six-metre slender white curved arrow straddles the T3 centreline, points forward slightly right, with 30 metres of T3 long dashes then a solid line. One lane each direction, camera in right lane, countryside and no vehicles or signs. IISR B1 silhouette, not a turn arrow. No text, captions or overlays.",
+              "sources": [
+                {
+                  "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/",
+                  "kind": "official",
+                  "checked_on": "2026-10-10",
+                  "supports": "Article8 describes curved return arrows directing users to indicated lanes and warning of continuouslines."
+                },
+                {
+                  "url": "https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_7epartie_vc_20250404.pdf",
+                  "kind": "official",
+                  "checked_on": "2026-10-10",
+                  "supports": "IISR7Article115-3B,p21-22: two-lane road arrowsstraddleannouncementline,3arrows; AnnexB1p61shape visually inspected."
+                }
+              ]
+            },
+            "state": "rejected",
+            "history": [
+              {
+                "image_path": "assets-source/question-batches/expansion-005/overtake_return_arrows_before_solid/scene-1.jpg",
+                "image_sha256": "2642a0f0eb1cb12afc37987872592bdcdcce59c2bdb8fd1770f52d5f63e03254",
+                "prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Photorealistic forward driver-eye view from the RIGHT lane of a French rural TWO-LANE TWO-WAY road. Exactly one lane each way, no extra lane. At the centreline on our LEFT, white long-dash short-gap T3 announcement marks (painted segments about3times gap length) run toward a gentle distant right bend, where the centreline becomes solid. Show THREE standard French white elongated curved return arrows staggered toward the bend, STRADDLING the centre announcement line, heads pointing forward and slightly RIGHT into our lane. Nearest arrow has a long thin gently curved shaft and an elongated narrow triangular head, NOT a90-degree turn arrow and not a short broad US lane-arrow. Perspective consistent, arrows spaced far apart with several dashed segments between, distant ones smaller. Grassy verges, no road edge lines required, no people, vehicles, signs or text. No graphic overlay. Reference shape is IISR7 annexB1, six-metre-long slender painted arrow; correct paint physically on asphalt.\n",
+                "created_on": "2026-10-10",
+                "review": {
+                  "proposal_sha256": "035f5ae223f720212756247b518591efe51162005483420b7c0d662bc5af87a1",
+                  "image_sha256": "2642a0f0eb1cb12afc37987872592bdcdcce59c2bdb8fd1770f52d5f63e03254",
+                  "result": "reject",
+                  "notes": "Return arrows too short and broad, incorrectly compact spacing with only one short dash between. Does not match IISR B1 slender six-metre shape or long-dash warning line arrangement.",
+                  "recorded_on": "2026-10-10"
+                }
+              },
+              {
+                "image_path": "assets-source/question-batches/expansion-005/overtake_return_arrows_before_solid/scene-2.jpg",
+                "image_sha256": "c51ca5b6a4c2204893ae30c81da6aab624212be5195fc552bee3bf2220a4333c",
+                "prompt": "Edit the original road photograph (image1); image2 is the official technical shape reference ONLY. Replace all three road arrows with the EXACT slender elongated French flèche de rabattement silhouette from image2: long subtly curved thin shaft and very long narrow asymmetrical spearhead, forward slightly right; do not copy any annotation or diagram background. On the asphalt each arrow is6metres long; lane width3.5m. Space arrows widely apart along the centreline: approximately50m then40m, with many3m-long dashes and1.33m gaps between. Extend the straight approach as needed for this realistic spacing before the distant solid line and right bend. Exactly one lane each direction. Camera in right lane, arrows straddle centreline, nearest large lowerleft, next two far smaller. Preserve daylight, countryside, realistic perspective; no vehicles, signs, captions or graphic overlays. Landscape16:9 at least1672x941.\n",
+                "created_on": "2026-10-10",
+                "review": {
+                  "proposal_sha256": "035f5ae223f720212756247b518591efe51162005483420b7c0d662bc5af87a1",
+                  "image_sha256": "c51ca5b6a4c2204893ae30c81da6aab624212be5195fc552bee3bf2220a4333c",
+                  "result": "reject",
+                  "notes": "Second image has four arrow-like shapes and still compact spacing. Cannot approve a nonstandard whole sequence.",
+                  "recorded_on": "2026-10-10"
+                }
+              },
+              {
+                "image_path": "assets-source/question-batches/expansion-005/overtake_return_arrows_before_solid/scene-3.jpg",
+                "image_sha256": "da1ab5f8ed7e344b59332359589dd9bb56d9d741dd1264631f7740f4a5ff1476",
+                "prompt": "Edit image1 using image2 solely as the French arrow shape reference. Reframe as a close forward driver-eye photograph of ONLY THE LAST return arrow; all earlier arrows are behind the camera, outside the frame. Remove every other arrow in the distance and replace those locations with ordinary T3 long painted dashes (3m paint,1.33m gap), for thirty metres before the solid centreline at the bend. Exactly ONE arrow visible, six metres long straddling centreline, matching image2 long thin gently curved shaft and slender long asymmetrical spearhead pointing forward slightly right. It must not look like a short broad turn arrow. Camera in right lane, one lane each direction. Keep countryside, natural daylight and physical road perspective, no cars/signs/captions. Landscape16:9 at least1672x941.\n",
+                "created_on": "2026-10-10",
+                "review": {
+                  "proposal_sha256": "0952c6955366595076f23eb7fd0e1abcca0f07546e948af6fbc00a3c3ff42429",
+                  "image_sha256": "da1ab5f8ed7e344b59332359589dd9bb56d9d741dd1264631f7740f4a5ff1476",
+                  "result": "reject",
+                  "notes": "Third candidate has a virtually straight arrow along the centreline, not a right-directed curved return arrow. Solid line starts directly beyond it; requested approach geometry not achieved.",
+                  "recorded_on": "2026-10-10"
+                }
+              },
+              {
+                "image_path": "assets-source/question-batches/expansion-005/overtake_return_arrows_before_solid/scene-4.jpg",
+                "image_sha256": "3152ab4876c4fd31fc5bf423a660875a504b68c1bc7387f1c21386f43c841320",
+                "prompt": "Rebuild this road image around a MUCH CLOSER elevated oblique view DOWN onto the last six-metre French right-return arrow, using the exact arrow silhouette shown in image2. Show only a ten-metre length of asphalt near the camera: road continues beyond TOP of crop, no horizon, no visible distant solid line or other arrows (outside frame). Arrow exactly follows image2 proportions: slender curved shaft starting slightly left of centreline, gradually bends right, very long narrow spearhead tip right of centreline, NOT a straight arrow. White paint realistically on asphalt, 6m length compared with3.5m lane width. Centreline T3 dashes3m long with1.33m gaps; arrow straddles their axis with paint not overlapping it. Grey asphalt one lane each side; narrow grassy verges at left and right image edges. No text, dimensions, diagram labels, signs, people or vehicles. Original photographic texture and daylight, landscape16:9 at least1672x941. Image2 is shape reference only, not a background to reproduce.\n",
+                "created_on": "2026-10-10",
+                "review": {
+                  "proposal_sha256": "0952c6955366595076f23eb7fd0e1abcca0f07546e948af6fbc00a3c3ff42429",
+                  "image_sha256": "3152ab4876c4fd31fc5bf423a660875a504b68c1bc7387f1c21386f43c841320",
+                  "result": "reject",
+                  "notes": "Final correction has the better arrow silhouette but the line dashes are far too short relative to the six-metre arrow and do not form the required T3 announcement line. Three corrections exhausted; replace objective.",
+                  "recorded_on": "2026-10-10"
+                }
+              }
+            ],
+            "nearest_questions": [
+              {
+                "key": "situation_two_way_traffic",
+                "similarity": 0.181,
+                "question_fr": "Que m’annonce le panneau A18 ?"
+              },
+              {
+                "key": "situation_overtake_no_speed_limit_exception",
+                "similarity": 0.171,
+                "question_fr": "Pour dépasser sur cette route limitée à 80 km/h, puis-je monter brièvement à 90 ?"
+              },
+              {
+                "key": "situation_c29a_car_scenario",
+                "similarity": 0.163,
+                "question_fr": "Que m’annonce ce panneau avant l’aménagement visible plus loin ?"
+              },
+              {
+                "key": "situation_priority_road_intersection_overtake",
+                "similarity": 0.158,
+                "question_fr": "Je circule sur une route prioritaire et les routes latérales ont un STOP. L'intersection interdit-elle à elle seule tout dépassement ?"
+              },
+              {
+                "key": "situation_mixed_line_broken_my_side",
+                "similarity": 0.15,
+                "question_fr": "La ligne discontinue est de mon côté et longe une ligne continue. Puis-je franchir l'ensemble pour dépasser si toutes les autres conditions sont sûres ?"
+              }
+            ],
+            "image_path": "assets-source/question-batches/expansion-005/overtake_return_arrows_before_solid/scene-4.jpg",
+            "image_sha256": "3152ab4876c4fd31fc5bf423a660875a504b68c1bc7387f1c21386f43c841320",
+            "dimensions": [
+              1672,
+              941
+            ],
+            "review": {
+              "proposal_sha256": "0952c6955366595076f23eb7fd0e1abcca0f07546e948af6fbc00a3c3ff42429",
+              "image_sha256": "3152ab4876c4fd31fc5bf423a660875a504b68c1bc7387f1c21386f43c841320",
+              "result": "reject",
+              "notes": "Final correction has the better arrow silhouette but the line dashes are far too short relative to the six-metre arrow and do not form the required T3 announcement line. Three corrections exhausted; replace objective.",
+              "recorded_on": "2026-10-10"
+            }
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-005/engine_oil_level_measurement_conditions/scene-1.jpg",
+      "image_sha256": "b2834da716aa4d4a7bce98d8f479b551ce1210ba471d3c7414a5cadbc511dd7d",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "20820ef790cdbbc0d6b341855663cfba2d11e4f6f998aa933429858dd027aaab",
+        "image_sha256": "b2834da716aa4d4a7bce98d8f479b551ce1210ba471d3c7414a5cadbc511dd7d",
+        "result": "pass",
+        "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+        "compared_question_keys": [
+          "situation_safety_oil_pressure_stop_engine",
+          "situation_alcohol_expired_self_test_unreliable",
+          "situation_coolant_hot_cap_wait",
+          "situation_speed_carpark_walking_pace",
+          "situation_abs_warning_stays_on_without_red_brake"
+        ],
+        "checks": {
+          "signs_and_text": "No letters, numbers or captions on the dipstick or bench.",
+          "road_geometry": "Workbench context; level-ground condition is an answer, not inferred from image.",
+          "vehicles_and_people": "No person handling hot machinery and no vehicle shown.",
+          "dashboard_and_equipment": "One orange ring handle, attached thin metal strip with measuring zone between paired notches; whole dipstick in frame.",
+          "phone_size": "Dipstick and clean cloth recognisable at390px; notches are context, no oil-level reading required.",
+          "official_rule": "Sources actually read during authoring: Original Renault Clio5 manual, engine-oil-level section: horizontal ground after prolonged engine stop; wipe dipstick, fully reinsert then read; never exceed maximum. Question defers precise waiting interval to vehicle manual.",
+          "novelty": "Whole-bank oil/jauge search finds only urgent red oil-pressure warning. This teaches obtaining a reliable routine level measurement, not responding to pressure failure, opening a hot coolant cap, or checking tyre pressure. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+          "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No person handling hot machinery and no vehicle shown. One orange ring handle, attached thin metal strip with measuring zone between paired notches; whole dipstick in frame.",
+          "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Dipstick and clean cloth recognisable at390px; notches are context, no oil-level reading required.",
+          "all_four_options": "Correct B. A: A running engine and slope distort the reading.; B: Level ground and the specified wait support an accurate reading.; C: A slope and immediate reading can distort the result.; D: Overfilling risks engine damage."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "6fe728fac894129e0c7d4a6e086137e827d197813ef9d239d49d7ffaf327123a"
+    },
+    {
+      "proposal": {
+        "scenario_id": "blind_spot_monitor_not_clearance_guarantee",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+        "learning_objective": "Keep direct checks despite an unlit blind-spot warning before changing lane to overtake.",
+        "topic": "assistance.blind_spot_limits",
+        "scenario": "Blind-spot aid fitted; indicator unlit. Before pulling left, no claim that absenceoflightprovesallclear.",
+        "novelty_review": "Earlier rear-caralreadyovertaking has a visible vehicle; signalbeforemoving assumescheckscomplete. This tests reliabilitylimits of an electronic non-warning and retained observation.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_blind_spot_monitor_not_clearance_guarantee",
+          "category_slug": "overtaking",
+          "difficulty": "medium",
+          "correct_answers": [
+            "b",
+            "d"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Avant de me déporter à gauche pour dépasser, le témoin d’angle mort reste éteint. Que dois-je retenir ?",
+              "answer_a": "L’absence d’alerte garantit que personne ne se trouve à gauche.",
+              "answer_b": "Je dois toujours contrôler les rétroviseurs et l’angle mort.",
+              "answer_c": "Le clignotant oblige les autres à me laisser passer.",
+              "answer_d": "Cette aide peut ne pas détecter certains usagers.",
+              "explanation": "L’avertisseur d’angle mort est une aide, pas une autorisation de changer de voie. Une absence d’alerte ne garantit pas une zone libre : je garde mes contrôles visuels et ne me déporte que lorsque la manœuvre est sûre."
+            },
+            "en": {
+              "question_text": "Before moving left to overtake, the blind-spot warning remains off. What should I remember?",
+              "answer_a": "An unlit warning guarantees that nobody is on my left.",
+              "answer_b": "I must still check my mirrors and blind spot.",
+              "answer_c": "My indicator forces other drivers to let me through.",
+              "answer_d": "This aid may fail to detect some road users.",
+              "explanation": "A blind-spot monitor is an aid, not permission to change lanes. No warning does not guarantee a clear area: I keep my visual checks and move over only when the manoeuvre is safe."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Les limites du système empêchent cette garantie.",
+            "b": "Les contrôles restent indispensables.",
+            "c": "Le clignotant ne donne pas priorité.",
+            "d": "Des situations ou objets peuvent ne pas être détectés."
+          },
+          "en": {
+            "a": "System limitations prevent that guarantee.",
+            "b": "Observation remains essential.",
+            "c": "Indicators do not grant priority.",
+            "d": "Some users or circumstances may not be detected."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Close natural photograph from inside a left-hand-drive car looking at its LEFT exterior rear-view mirror through the side window. Mirror fixed correctly to driver door, reflecting a coherent empty stretch of road receding behind and a small portion of the same car body at inner edge. On mirror glass a small factory-style blind-spot icon of two overlapping car outlines is present but DARK grey/unlit, no yellowglow, text, label or invented warning. No other vehicles in reflection or background, no dashboard. Question explicitly says warning unlit and requires checking an area outside mirror; image must NOT claim to show the complete blind spot. Bright daylight and normal straight road context, realistic windowframe, no hands.",
+        "sources": [
+          {
+            "url": "https://www.user-manual.renault.com/fr/content/xjk/driving/additional-driving-aid-functions/avertisseur-dangle-mort",
+            "kind": "manufacturer",
+            "checked_on": "2026-10-10",
+            "supports": "Original Renault Express manual: system only supplements vigilance, limitations/objects may not detected; indicatoroff meansno detection,notguaranteedclearzone."
+          },
+          {
+            "url": "https://www.securite-routiere.gouv.fr/sites/default/files/2021-07/depliant-la_vue-v3.pdf",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Sécurité routière, La vue (July 2015 leaflet, still hosted on official site), page 2, Voir large: speed narrows the useful visual field; mirrors leave blind spots checked by a brief head turn. Actual PDF downloaded and read; no numerical angle claim used."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_truck_right_turn_blind_spot",
+          "similarity": 0.21,
+          "question_fr": "Ce poids lourd devant moi signale à droite et se décale vers la gauche. Puis-je passer dans l'espace ouvert à sa droite ?"
+        },
+        {
+          "key": "safety_door_cyclist_check",
+          "similarity": 0.176,
+          "question_fr": "Avant d’ouvrir ma portière du côté de la circulation, que dois-je faire ?"
+        },
+        {
+          "key": "situation_overtake_signal_before_moving_left",
+          "similarity": 0.175,
+          "question_fr": "Les contrôles confirment que le dépassement est possible. Quand dois-je actionner le clignotant gauche ?"
+        },
+        {
+          "key": "situation_overtake_right_left_turner",
+          "similarity": 0.163,
+          "question_fr": "Cette voiture ralentit et signale qu'elle tourne à gauche. Si l'espace est suffisant et sûr, de quel côté puis-je la dépasser ?"
+        },
+        {
+          "key": "situation_parking_camera_requires_direct_checks",
+          "similarity": 0.163,
+          "question_fr": "Pour me garer en marche arrière, l’écran de la caméra semble dégagé. Puis-je regarder uniquement cet écran ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-005/blind_spot_monitor_not_clearance_guarantee/scene-1.jpg",
+          "image_sha256": "f3b01c3665361d6723ca1043fc0aefb9d208a964970dd862df74efcfec5f3d0d",
+          "prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Close natural photograph from inside a left-hand-drive car looking at its LEFT exterior rear-view mirror through the side window. Mirror fixed correctly to driver door, reflecting a coherent empty stretch of road receding behind and a small portion of the same car body at inner edge. On mirror glass a small factory-style blind-spot icon of two overlapping car outlines is present but DARK grey/unlit, no yellowglow, text, label or invented warning. No other vehicles in reflection or background, no dashboard. Question explicitly says warning unlit and requires checking an area outside mirror; image must NOT claim to show the complete blind spot. Bright daylight and normal straight road context, realistic windowframe, no hands.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "a5d6245e02988c8c18a97ebfca040b97a512fb81cfcf6398dc3bc038474751b3",
+            "image_sha256": "f3b01c3665361d6723ca1043fc0aefb9d208a964970dd862df74efcfec5f3d0d",
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+            "compared_question_keys": [
+              "situation_truck_right_turn_blind_spot",
+              "safety_door_cyclist_check",
+              "situation_overtake_signal_before_moving_left",
+              "situation_overtake_right_left_turner",
+              "situation_parking_camera_requires_direct_checks"
+            ],
+            "checks": {
+              "signs_and_text": "Dark unlit two-car blind-spot icon; no glowing alert or invented explanatory text.",
+              "road_geometry": "Left mirror on driver door, receding road reflected with car body at inner right edge; actual blind spot outside view.",
+              "vehicles_and_people": "No traffic appears in the mirror; this does not establish an empty blind spot.",
+              "dashboard_and_equipment": "Mirror mount, glass, door frame and body reflection plausible; factory-style sensor icon unlit.",
+              "phone_size": "Mirror and unlit icon discernible at390px; both stems explicitly establish no warning and require independent checks.",
+              "official_rule": "Sources actually read during authoring: Original Renault Express manual: system only supplements vigilance, limitations/objects may not detected; indicatoroff meansno detection,notguaranteedclearzone.; Sécurité routière, La vue (July 2015 leaflet, still hosted on official site), page 2, Voir large: speed narrows the useful visual field; mirrors leave blind spots checked by a brief head turn. Actual PDF downloaded and read; no numerical angle claim used.",
+              "novelty": "Negative blind-spot detector result does not certify a safe lane change, distinct from camera view coverage when reversing or timing an indicator after completed checks. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+              "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No traffic appears in the mirror; this does not establish an empty blind spot. Mirror mount, glass, door frame and body reflection plausible; factory-style sensor icon unlit.",
+              "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Mirror and unlit icon discernible at390px; both stems explicitly establish no warning and require independent checks.",
+              "all_four_options": "Correct B,D. A: System limitations prevent that guarantee.; B: Observation remains essential.; C: Indicators do not grant priority.; D: Some users or circumstances may not be detected."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-005/blind_spot_monitor_not_clearance_guarantee/scene-1.jpg",
+      "image_sha256": "f3b01c3665361d6723ca1043fc0aefb9d208a964970dd862df74efcfec5f3d0d",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "a5d6245e02988c8c18a97ebfca040b97a512fb81cfcf6398dc3bc038474751b3",
+        "image_sha256": "f3b01c3665361d6723ca1043fc0aefb9d208a964970dd862df74efcfec5f3d0d",
+        "result": "pass",
+        "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+        "compared_question_keys": [
+          "situation_truck_right_turn_blind_spot",
+          "safety_door_cyclist_check",
+          "situation_overtake_signal_before_moving_left",
+          "situation_overtake_right_left_turner",
+          "situation_parking_camera_requires_direct_checks"
+        ],
+        "checks": {
+          "signs_and_text": "Dark unlit two-car blind-spot icon; no glowing alert or invented explanatory text.",
+          "road_geometry": "Left mirror on driver door, receding road reflected with car body at inner right edge; actual blind spot outside view.",
+          "vehicles_and_people": "No traffic appears in the mirror; this does not establish an empty blind spot.",
+          "dashboard_and_equipment": "Mirror mount, glass, door frame and body reflection plausible; factory-style sensor icon unlit.",
+          "phone_size": "Mirror and unlit icon discernible at390px; both stems explicitly establish no warning and require independent checks.",
+          "official_rule": "Sources actually read during authoring: Original Renault Express manual: system only supplements vigilance, limitations/objects may not detected; indicatoroff meansno detection,notguaranteedclearzone.; Sécurité routière, La vue (July 2015 leaflet, still hosted on official site), page 2, Voir large: speed narrows the useful visual field; mirrors leave blind spots checked by a brief head turn. Actual PDF downloaded and read; no numerical angle claim used.",
+          "novelty": "Negative blind-spot detector result does not certify a safe lane change, distinct from camera view coverage when reversing or timing an indicator after completed checks. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+          "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No traffic appears in the mirror; this does not establish an empty blind spot. Mirror mount, glass, door frame and body reflection plausible; factory-style sensor icon unlit.",
+          "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Mirror and unlit icon discernible at390px; both stems explicitly establish no warning and require independent checks.",
+          "all_four_options": "Correct B,D. A: System limitations prevent that guarantee.; B: Observation remains essential.; C: Indicators do not grant priority.; D: Some users or circumstances may not be detected."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "80ddfc617fc7064874c6c266d329d78de9f8474a9ce7f607148d35ebc993ee49"
+    },
+    {
+      "proposal": {
+        "scenario_id": "tunnel_radio_safety_messages",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+        "learning_objective": "Understand why tuning the announced tunnel radio frequency supports safety.",
+        "topic": "tunnel.radio_instructions",
+        "scenario": "Before entering a motorway tunnel that retransmits an announced FM frequency; passenger setsradio. No universal107.7claim.",
+        "novelty_review": "Existing tunnelitems cover headlights,stoppinggap,fireexit. No question covers operator emergency messages through rebroadcastFM.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_tunnel_radio_safety_messages",
+          "category_slug": "motorways",
+          "difficulty": "medium",
+          "correct_answers": [
+            "a"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Avant ce tunnel autoroutier, une fréquence radio est annoncée. Mon passager la règle sur l’autoradio. Quel intérêt principal pour la sécurité ?",
+              "answer_a": "Pouvoir entendre les consignes diffusées par l’exploitant du tunnel.",
+              "answer_b": "Remplacer les feux de croisement par la radio.",
+              "answer_c": "Donner automatiquement ma position aux secours.",
+              "answer_d": "Obtenir la priorité sur les autres véhicules.",
+              "explanation": "Dans un tunnel équipé, la retransmission radio permet à l’exploitant de diffuser des messages de sécurité aux usagers. J’écoute les consignes sur la fréquence annoncée tout en restant attentif à la signalisation et à la circulation."
+            },
+            "en": {
+              "question_text": "Before this motorway tunnel, a radio frequency is announced. My passenger tunes the car radio to it. What is the main safety benefit?",
+              "answer_a": "Being able to hear instructions broadcast by the tunnel operator.",
+              "answer_b": "Replacing dipped headlights with the radio.",
+              "answer_c": "Automatically sending my location to emergency services.",
+              "answer_d": "Gaining priority over other vehicles.",
+              "explanation": "In an equipped tunnel, radio rebroadcasting lets the operator send safety messages to road users. I listen to the announced frequency while continuing to observe traffic and signs."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Le réseau permet les messages de sécurité.",
+            "b": "La radio ne remplace pas l’éclairage.",
+            "c": "Un récepteurFM ne transmet pas la position.",
+            "d": "Aucune priorité acquise."
+          },
+          "en": {
+            "a": "The network carries safety messages.",
+            "b": "Radio does not replace lighting.",
+            "c": "AnFMreceiver does not send location.",
+            "d": "No priority is granted."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Close realistic photograph of a generic built-in car FM radio at the centre of a dashboard, landscape composition. Small clear monochrome display reads exactly \"FM 107.7 MHz\"; two plain round black knobs and a neat row of blank physical preset buttons, no manufacturer logo or extra tiny labels. Natural reflections, neutral grey dashboard, no touchscreenmap, no phone, no people or hands. Exterior out of frame, no road signs. Radio is shown as contextual equipment; question establishes the announced frequency for THIS tunnel, not a universal frequency. Readable atphone size, no explanatory captions.",
+        "sources": [
+          {
+            "url": "https://www.cetu.developpement-durable.gouv.fr/IMG/pdf/CETU-Note_Info_24_2014_cle7c4a7e-1.pdf",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "CETUnote24pp3-5operatorcaninsertsecuritymessagesinrebroadcastFM; p10CE22announcesfrequencies. Appliesonlyequippedtunnel,notallfrequencies."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_motorway_tunnel_fire_evacuate",
+          "similarity": 0.156,
+          "question_fr": "Dans ce tunnel autoroutier, un véhicule brûle devant moi. Je suis arrêté en sécurité, moteur coupé. Que faire ensuite ?"
+        },
+        {
+          "key": "situation_motorway_sos_location",
+          "similarity": 0.119,
+          "question_fr": "Après une panne, je suis à l’abri et une borne SOS est accessible sans danger. Quel est son principal avantage pour l’alerte ?"
+        },
+        {
+          "key": "situation_rear_passenger_seatbelt",
+          "similarity": 0.118,
+          "question_fr": "Mon passager adulte à l'arrière ne veut pas boucler sa ceinture pour ce trajet très court. Puis-je démarrer ?"
+        },
+        {
+          "key": "situation_motorway_exit_lane_deadline",
+          "similarity": 0.116,
+          "question_fr": "La sortie que je veux prendre est annoncée. Quand dois-je avoir gagné la voie correspondante ?"
+        },
+        {
+          "key": "situation_b9b_car_interpretation",
+          "similarity": 0.113,
+          "question_fr": "Je conduis une voiture particulière. Ce panneau, à lui seul, m’interdit-il l’accès ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-005/tunnel_radio_safety_messages/scene-1.jpg",
+          "image_sha256": "d43f2facfdf2164fa0623db9942733ba46f58bb36d20a4cf3f6bd8b11f486530",
+          "prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Close realistic photograph of a generic built-in car FM radio at the centre of a dashboard, landscape composition. Small clear monochrome display reads exactly \"FM 107.7 MHz\"; two plain round black knobs and a neat row of blank physical preset buttons, no manufacturer logo or extra tiny labels. Natural reflections, neutral grey dashboard, no touchscreenmap, no phone, no people or hands. Exterior out of frame, no road signs. Radio is shown as contextual equipment; question establishes the announced frequency for THIS tunnel, not a universal frequency. Readable atphone size, no explanatory captions.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "a9224782bb7731178cd2c89d754d70c55dac951f9130eb44450a3fd0f2108a71",
+            "image_sha256": "d43f2facfdf2164fa0623db9942733ba46f58bb36d20a4cf3f6bd8b11f486530",
+            "result": "reject",
+            "notes": "Unrequested heater controls show duplicate fan number 1 and malformed airflow symbols. Reframe to exclude entire heater panel.",
+            "recorded_on": "2026-10-10"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-005/tunnel_radio_safety_messages/scene-2.jpg",
+          "image_sha256": "2d2ad1c92827019f5b5adb0bcfc626ccf39add099fa993ed0d2d444bc0d239dd",
+          "prompt": "Edit the supplied car radio photograph. Reframe as a closer landscape16:9 crop of just the radio and adjacent air vents, completely excluding the three heater dials below and all their symbols/numbers. Keep the entire two radio knobs, six preset buttons and display reading EXACTLY FM 107.7 MHz. Preserve realistic physical dashboard materials and lighting. Do not add any text or controls. At least1672x941.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "a9224782bb7731178cd2c89d754d70c55dac951f9130eb44450a3fd0f2108a71",
+            "image_sha256": "2d2ad1c92827019f5b5adb0bcfc626ccf39add099fa993ed0d2d444bc0d239dd",
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+            "compared_question_keys": [
+              "situation_motorway_tunnel_fire_evacuate",
+              "situation_motorway_sos_location",
+              "situation_rear_passenger_seatbelt",
+              "situation_motorway_exit_lane_deadline",
+              "situation_b9b_car_interpretation"
+            ],
+            "checks": {
+              "signs_and_text": "Exact display FM 107.7 MHz; six plain preset marks; no extra labels or faulty heater symbols after correction.",
+              "road_geometry": "Dashboard close-up; this tunnel and announced frequency established by stem.",
+              "vehicles_and_people": "No driver manipulating controls; passenger operation specified in both languages.",
+              "dashboard_and_equipment": "Two radio knobs, six buttons, coherent vents and surrounding physical trim; heater panel excluded.",
+              "phone_size": "Frequency legible at390px; no claim that107.7 works in every tunnel.",
+              "official_rule": "Sources actually read during authoring: CETUnote24pp3-5operatorcaninsertsecuritymessagesinrebroadcastFM; p10CE22announcesfrequencies. Appliesonlyequippedtunnel,notallfrequencies.",
+              "novelty": "Receiving tunnel operator radio messages, distinct from outgoing SOS location or evacuation after fire. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+              "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No driver manipulating controls; passenger operation specified in both languages. Two radio knobs, six buttons, coherent vents and surrounding physical trim; heater panel excluded.",
+              "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Frequency legible at390px; no claim that107.7 works in every tunnel.",
+              "all_four_options": "Correct A. A: The network carries safety messages.; B: Radio does not replace lighting.; C: AnFMreceiver does not send location.; D: No priority is granted."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-005/tunnel_radio_safety_messages/scene-2.jpg",
+      "image_sha256": "2d2ad1c92827019f5b5adb0bcfc626ccf39add099fa993ed0d2d444bc0d239dd",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "a9224782bb7731178cd2c89d754d70c55dac951f9130eb44450a3fd0f2108a71",
+        "image_sha256": "2d2ad1c92827019f5b5adb0bcfc626ccf39add099fa993ed0d2d444bc0d239dd",
+        "result": "pass",
+        "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+        "compared_question_keys": [
+          "situation_motorway_tunnel_fire_evacuate",
+          "situation_motorway_sos_location",
+          "situation_rear_passenger_seatbelt",
+          "situation_motorway_exit_lane_deadline",
+          "situation_b9b_car_interpretation"
+        ],
+        "checks": {
+          "signs_and_text": "Exact display FM 107.7 MHz; six plain preset marks; no extra labels or faulty heater symbols after correction.",
+          "road_geometry": "Dashboard close-up; this tunnel and announced frequency established by stem.",
+          "vehicles_and_people": "No driver manipulating controls; passenger operation specified in both languages.",
+          "dashboard_and_equipment": "Two radio knobs, six buttons, coherent vents and surrounding physical trim; heater panel excluded.",
+          "phone_size": "Frequency legible at390px; no claim that107.7 works in every tunnel.",
+          "official_rule": "Sources actually read during authoring: CETUnote24pp3-5operatorcaninsertsecuritymessagesinrebroadcastFM; p10CE22announcesfrequencies. Appliesonlyequippedtunnel,notallfrequencies.",
+          "novelty": "Receiving tunnel operator radio messages, distinct from outgoing SOS location or evacuation after fire. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+          "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No driver manipulating controls; passenger operation specified in both languages. Two radio knobs, six buttons, coherent vents and surrounding physical trim; heater panel excluded.",
+          "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Frequency legible at390px; no claim that107.7 works in every tunnel.",
+          "all_four_options": "Correct A. A: The network carries safety messages.; B: Radio does not replace lighting.; C: AnFMreceiver does not send location.; D: No priority is granted."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "3e491e720e9fd86e49f7f3c877b6226f9ead459cf4565c5c5bd7e2e431452e89"
+    },
+    {
+      "proposal": {
+        "scenario_id": "electric_car_finished_charging_leave_bay",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+        "learning_objective": "Leave a bay reserved for vehicles actively charging when the charging session ends.",
+        "topic": "parking.charging_duration",
+        "scenario": "Publicbay expresslyreservedforEVduringrecharge. DriverEVchargefinished,wantsleaveovernightwithoutcharging.",
+        "novelty_review": "OldEVbayitemasksaboutthermalcar. This tests that electricpropulsionalonedoesnotqualifyafterrechargeends, a distinct temporal eligibility condition.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_electric_car_finished_charging_leave_bay",
+          "category_slug": "parking_stopping",
+          "difficulty": "medium",
+          "correct_answers": [
+            "d"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Cet emplacement est réservé aux véhicules électriques pendant leur recharge. Ma recharge est terminée. Puis-je laisser ma voiture ici toute la nuit sans recharger ?",
+              "answer_a": "Oui, toute voiture électrique peut y rester.",
+              "answer_b": "Oui, si le câble reste branché sans recharge.",
+              "answer_c": "Oui, si je laisse un numéro de téléphone.",
+              "answer_d": "Non, je dois libérer la place après la recharge.",
+              "explanation": "La réservation vise les véhicules électriques pendant la durée de recharge de leurs accumulateurs. Une fois celle-ci terminée, rester branché ou laisser un numéro ne transforme pas l’emplacement en stationnement ordinaire."
+            },
+            "en": {
+              "question_text": "This bay is reserved for electric vehicles while charging. My charging session has finished. May I leave my car here all night without charging?",
+              "answer_a": "Yes; any electric car may remain here.",
+              "answer_b": "Yes, if the cable stays connected without charging.",
+              "answer_c": "Yes, if I leave a phone number.",
+              "answer_d": "No; I must free the bay after charging.",
+              "explanation": "The reservation applies to electric vehicles while their batteries are charging. Once charging has ended, keeping the cable connected or leaving a phone number does not turn the bay into ordinary parking."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "La motorisation ne suffit pas après la recharge.",
+            "b": "Un branchement inactif ne constitue pas une recharge.",
+            "c": "Un numéro de téléphone ne vaut pas autorisation.",
+            "d": "La durée de recharge conditionne la réservation."
+          },
+          "en": {
+            "a": "Electric propulsion alone is not enough after charging.",
+            "b": "An inactive connection is not charging.",
+            "c": "A phone number does not grant permission.",
+            "d": "The bay is reserved while charging."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Quiet modern French public parking area close view of the rear-quarter charging port of a plain white electric hatchback and a generic upright charging pedestal immediately beside it. One plausible thick charging cable runs from pedestal to car port, physically connected. Pedestal display blank/dark so it does not falsely show activecharging or a fabricatedstatus. Tight crop excludes front/rear registration plates and all parking signs/roadmarking symbols; pavedground, no otherpeople orcars, clean daylight. No Tesla/brand logos,text,questionorpercentage. The question explicitly supplies reservedbayrule and completedcharge; image is context only, not proof of an electrical state.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Article8EVparkingmarkingreservesbayduringbatteryrecharging; explicitreservationinquestion. Electricvehiclealoneafterchargeisnotsufficient."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_ev_charger_blocked_parking",
+          "similarity": 0.238,
+          "question_fr": "Ma voiture thermique peut-elle stationner ici devant la borne de recharge, même pour peu de temps ?"
+        },
+        {
+          "key": "situation_parking_blocks_parked_exit",
+          "similarity": 0.158,
+          "question_fr": "Je veux laisser ma voiture en travers de la sortie de cette place, ce qui bloquera la voiture garée. Puis-je le faire quelques minutes ?"
+        },
+        {
+          "key": "situation_disabled_bay_without_card",
+          "similarity": 0.136,
+          "question_fr": "Cette place réservée est libre, mais je ne possède pas de carte mobilité inclusion stationnement. Puis-je m'y garer ?"
+        },
+        {
+          "key": "situation_ev_charge_cable_cut_insulation",
+          "similarity": 0.135,
+          "question_fr": "Avant de brancher ma voiture électrique, je vois une coupure dans la gaine du câble de recharge. Que faire ?"
+        },
+        {
+          "key": "situation_c26a_car_scenario",
+          "similarity": 0.126,
+          "question_fr": "Que désigne la branche terminée par un damier sur ce panneau ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-005/electric_car_finished_charging_leave_bay/scene-1.jpg",
+          "image_sha256": "edbe2a4302f805eb796e7b5defaf096e2999569e15ed3e1a81115056cd218b9c",
+          "prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Quiet modern French public parking area close view of the rear-quarter charging port of a plain white electric hatchback and a generic upright charging pedestal immediately beside it. One plausible thick charging cable runs from pedestal to car port, physically connected. Pedestal display blank/dark so it does not falsely show activecharging or a fabricatedstatus. Tight crop excludes front/rear registration plates and all parking signs/roadmarking symbols; pavedground, no otherpeople orcars, clean daylight. No Tesla/brand logos,text,questionorpercentage. The question explicitly supplies reservedbayrule and completedcharge; image is context only, not proof of an electrical state.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "f34d47d4c22122435487dc5301e7f87490f900623a6a68428235a000901e24e0",
+            "image_sha256": "edbe2a4302f805eb796e7b5defaf096e2999569e15ed3e1a81115056cd218b9c",
+            "result": "reject",
+            "notes": "Tyre sidewalls contain tiny unreadable pseudo-lettering. Remove incidental invented lettering while retaining realistic rubber and connected charging equipment.",
+            "recorded_on": "2026-10-10"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-005/electric_car_finished_charging_leave_bay/scene-2.jpg",
+          "image_sha256": "8857a174c1083afde7133f97978bf61cade7cbd45869609cfbee166877ed3813",
+          "prompt": "Edit only the supplied photograph. Remove all tiny unreadable moulded letters and pseudo-numbers on BOTH visible tyre sidewalls and the tiny wheel-centre badge; replace only these incidental lettering areas with natural plain dark rubber / plain metal centre cap. Keep tread, wheel spokes, car geometry, white paint, connected charging cable and port, dark blank pedestal display, background and landscape16:9 composition unchanged. No added text, no logos. At least1672x941.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "f34d47d4c22122435487dc5301e7f87490f900623a6a68428235a000901e24e0",
+            "image_sha256": "8857a174c1083afde7133f97978bf61cade7cbd45869609cfbee166877ed3813",
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+            "compared_question_keys": [
+              "situation_ev_charger_blocked_parking",
+              "situation_parking_blocks_parked_exit",
+              "situation_disabled_bay_without_card",
+              "situation_ev_charge_cable_cut_insulation",
+              "situation_c26a_car_scenario"
+            ],
+            "checks": {
+              "signs_and_text": "Blank charger display; corrected tyre sidewalls and centre caps have no invented lettering; no sign or plate.",
+              "road_geometry": "Paved charging area; explicit reserved-while-charging condition in stem, no inference from absent signs.",
+              "vehicles_and_people": "White hatchback stationary, plausible lamps, panels, wheels and reflections; no people.",
+              "dashboard_and_equipment": "One cable joins pedestal socket and car inlet with plausible connector geometry and gentle loop; no active-charge indication.",
+              "phone_size": "Connected cable and charger clear at390px; completed charging is a stated fact, not inferred from dark screen.",
+              "official_rule": "Sources actually read during authoring: Article8EVparkingmarkingreservesbayduringbatteryrecharging; explicitreservationinquestion. Electricvehiclealoneafterchargeisnotsufficient.",
+              "novelty": "Electric-car reservation expires when charging ends, distinct from a combustion car never being eligible or damaged cable safety. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+              "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. White hatchback stationary, plausible lamps, panels, wheels and reflections; no people. One cable joins pedestal socket and car inlet with plausible connector geometry and gentle loop; no active-charge indication.",
+              "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Connected cable and charger clear at390px; completed charging is a stated fact, not inferred from dark screen.",
+              "all_four_options": "Correct D. A: Electric propulsion alone is not enough after charging.; B: An inactive connection is not charging.; C: A phone number does not grant permission.; D: The bay is reserved while charging."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-005/electric_car_finished_charging_leave_bay/scene-2.jpg",
+      "image_sha256": "8857a174c1083afde7133f97978bf61cade7cbd45869609cfbee166877ed3813",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "f34d47d4c22122435487dc5301e7f87490f900623a6a68428235a000901e24e0",
+        "image_sha256": "8857a174c1083afde7133f97978bf61cade7cbd45869609cfbee166877ed3813",
+        "result": "pass",
+        "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+        "compared_question_keys": [
+          "situation_ev_charger_blocked_parking",
+          "situation_parking_blocks_parked_exit",
+          "situation_disabled_bay_without_card",
+          "situation_ev_charge_cable_cut_insulation",
+          "situation_c26a_car_scenario"
+        ],
+        "checks": {
+          "signs_and_text": "Blank charger display; corrected tyre sidewalls and centre caps have no invented lettering; no sign or plate.",
+          "road_geometry": "Paved charging area; explicit reserved-while-charging condition in stem, no inference from absent signs.",
+          "vehicles_and_people": "White hatchback stationary, plausible lamps, panels, wheels and reflections; no people.",
+          "dashboard_and_equipment": "One cable joins pedestal socket and car inlet with plausible connector geometry and gentle loop; no active-charge indication.",
+          "phone_size": "Connected cable and charger clear at390px; completed charging is a stated fact, not inferred from dark screen.",
+          "official_rule": "Sources actually read during authoring: Article8EVparkingmarkingreservesbayduringbatteryrecharging; explicitreservationinquestion. Electricvehiclealoneafterchargeisnotsufficient.",
+          "novelty": "Electric-car reservation expires when charging ends, distinct from a combustion car never being eligible or damaged cable safety. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+          "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. White hatchback stationary, plausible lamps, panels, wheels and reflections; no people. One cable joins pedestal socket and car inlet with plausible connector geometry and gentle loop; no active-charge indication.",
+          "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Connected cable and charger clear at390px; completed charging is a stated fact, not inferred from dark screen.",
+          "all_four_options": "Correct D. A: Electric propulsion alone is not enough after charging.; B: An inactive connection is not charging.; C: A phone number does not grant permission.; D: The bay is reserved while charging."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "38563db5c300dd3a47904f088c8cfb46e5e011416c410b55b2f1186214742e32"
+    }
+  ],
+  "imported_on": "2026-10-10",
+  "content_version": 98,
+  "questions_after": 438,
+  "pack_after_sha256": "9049451b9f4ed6f641ed7c5e9ee62f63259102928441797e209064c235b350b3",
+  "verified_on": "2026-10-10",
+  "verification": {
+    "pack_sha256": "9049451b9f4ed6f641ed7c5e9ee62f63259102928441797e209064c235b350b3",
+    "content_version": 98,
+    "python_tests": {
+      "result": "pass",
+      "notes": "52 workflow and sign tests passed; duplicate blocking, exact approvals, recovery and safe retries covered.",
+      "path": "assets-source/question-batches/expansion-005/python-tests.log",
+      "sha256": "87ea989d377ec5ec96a5b145ec617dda742a6c57582a2c960a1a739f2005826f"
+    },
+    "ios_tests": {
+      "result": "pass",
+      "notes": "36 native tests passed, including bundled content, image decoding and multiple-answer checks.",
+      "path": "assets-source/question-batches/expansion-005/ios-tests.log",
+      "sha256": "d3f993d46bfbdbf940cefb7840964c7a4b16ef8f6853a0fefdb25e6e160f0c6a"
+    },
+    "sqlite_check": {
+      "result": "pass",
+      "notes": "438 active questions and409images; full translations and answer sets match pack, saved practice history unchanged.",
+      "path": "assets-source/question-batches/expansion-005/sqlite-after-ui.json",
+      "sha256": "7a9b26423874e1e085ca9e4d631da04c5703a4a1668577a8d1eb9f9fb1931cdf"
+    },
+    "simulator_review": {
+      "result": "pass",
+      "notes": "All ten FR scenes/questions answered correctly, both multiple sets complete; EN incomplete sets rejected and correction uses plural. Normal home restored.",
+      "path": "assets-source/question-batches/expansion-005/simulator-review.json",
+      "sha256": "4c4f43e050001ac6944f428bbf12c6e99ca370479f9d36c388234ed40fe2e299"
+    }
+  }
+}

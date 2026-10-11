@@ -2,7 +2,7 @@
 
 Audited 2026-09-13.
 
-378 bundled questions (349 with images), 180 active catalogue entries, 179 observed/candidate codes. 133 codes have primary question mappings.
+478 bundled questions (449 with images), 180 active catalogue entries, 180 observed/candidate codes. 138 codes have primary question mappings.
 
 Scope: the current bundled France pack, the catalogue merged as ContentLoader merges it, and registered local quiz-card drafts. This does not query installed-device SQLite or retired questions. The app imports this content into local SQLite; the registry does not modify it.
 
@@ -12,14 +12,14 @@ All question texts/answers/explanations were inventoried. Code mappings use the 
 
 | Category | Questions |
 | --- | ---: |
-| alcohol_drugs | 36 |
-| motorways | 27 |
-| overtaking | 34 |
-| parking_stopping | 33 |
-| priority_rules | 37 |
-| road_signs | 116 |
-| safety | 62 |
-| speed_limits | 33 |
+| alcohol_drugs | 48 |
+| motorways | 36 |
+| overtaking | 42 |
+| parking_stopping | 43 |
+| priority_rules | 46 |
+| road_signs | 123 |
+| safety | 96 |
+| speed_limits | 44 |
 
 ## Findings and holds
 
@@ -107,10 +107,10 @@ Existing category links come from question records. Suggested routes are authori
 | AK5 | covered | 1 | safety |
 | B0 | covered | 1 | road_signs |
 | B1 | covered | 1 | road_signs |
-| B10a | catalogue_only | 0 | road_signs |
+| B10a | covered | 1 | road_signs |
 | B11 | covered | 1 | road_signs |
 | B12 | covered | 2 | road_signs |
-| B13 | catalogue_only | 0 | road_signs |
+| B13 | covered | 1 | road_signs |
 | B13a | catalogue_only | 0 | road_signs |
 | B14 | covered | 5 | speed_limits |
 | B15 | covered | 1 | priority_rules |
@@ -162,12 +162,12 @@ Existing category links come from question records. Suggested routes are authori
 | B54 | covered | 1 | road_signs |
 | B55 | covered | 1 | road_signs |
 | B5a | catalogue_only | 0 | road_signs |
-| B5b | catalogue_only | 0 | road_signs |
+| B5b | covered | 1 | road_signs |
 | B6a1 | covered | 2 | parking_stopping |
 | B6a2 | covered | 1 | parking_stopping |
 | B6a3 | catalogue_only | 0 | parking_stopping |
 | B6d | covered | 1 | parking_stopping |
-| B7a | catalogue_only | 0 | road_signs |
+| B7a | covered | 1 | road_signs |
 | B7b | covered | 1 | road_signs |
 | B8 | covered | 1 | road_signs |
 | B9a | catalogue_only | 0 | road_signs |
@@ -191,7 +191,7 @@ Existing category links come from question records. Suggested routes are authori
 | C13a | covered | 1 | road_signs |
 | C13b | covered | 1 | road_signs |
 | C13c | covered | 1 | road_signs |
-| C13d | catalogue_only | 0 | road_signs |
+| C13d | covered | 1 | road_signs |
 | C18 | covered | 2 | priority_rules |
 | C1a | covered | 1 | parking_stopping |
 | C1b | covered | 1 | parking_stopping |
@@ -239,6 +239,7 @@ Existing category links come from question records. Suggested routes are authori
 | M9z | covered | 0 | road_signs |
 | R11j | no_question_mapping | 0 | priority_rules |
 | R11v | covered | 3 | priority_rules |
+| R16 | no_question_mapping | 0 | priority_rules |
 | R16td | covered | 1 | priority_rules |
 | R21a | covered | 1 | safety |
 | R21c | covered | 1 | safety |
@@ -251,5 +252,6 @@ Existing category links come from question records. Suggested routes are authori
 - [Cerema consolidated sign regulation](https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf) — Code identity reference; right-turn and motorway/tunnel distinctions, marker and temporary-sign definitions. Consulted 2026-09-12/13.
 - [Cerema illustrated sign catalogue, March 2024](https://equipementsdelaroute.cerema.fr/IMG/pdf/01-_panneaux_iisr_mars_2024_cle2191ef.pdf) — Visual nomenclature reference. Does not by itself define the passenger-car curriculum.
 - [Code de la route, front load overhang](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177086/2026-01-02) — Article R312-22: ordinary passenger-car front-load rule checked 2026-09-13.
+- [R16 directional anticipation signals, current IISR6](https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_6epartie_vc_20250904.pdf) — 2026-10-10: inspected figure6 p7 and article110-5; R16td horizontal right arrow positioned right of lower R11 lens. Added family R16 to registry to protect against repeated target. Rule crosschecked current1967article7.
 
 See [registry usage](../../scripts/SIGN_REGISTRY.md) for commands, review updates and limitations.

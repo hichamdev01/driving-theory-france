@@ -1,0 +1,26 @@
+[
+  [
+    "roundabout_left_lane_optional",
+    "Use case: precise-object-edit. Edit this French driving-theory photograph, preserving the landscape composition, green surroundings, empty roundabout and TWO circulating lanes. Correct road markings and yield signing only: keep exactly ONE thin dashed circular lane divider in the middle of the circulating ring. REMOVE the stray outer dashed arcs at the left and right junction mouths. Each of the four approaches has one inbound lane and one outbound lane around its splitter island: put a short transverse row of broad white give-way rectangles across ONLY its inbound lane, at the ring entrance. Put one standard red-bordered white inverted triangular yield sign on the RIGHT side of EACH inbound lane, facing approaching drivers (show back of sign where physically appropriate). The near bottom entry and its existing yield sign are already correctly positioned. Do not paint across exit lanes. No direction arrows, text, vehicles, pedestrians, overlay or highlighted correct path. Believable French right-hand traffic, counterclockwise circulation. Preserve 16:9 landscape and photographic realism."
+  ],
+  [
+    "caravan_tight_right_turn_left_swing",
+    "Use case: precise-object-edit. Change ONLY the caravan's rear reflectors in this photograph. Replace the two small red rectangular reflectors at the lower rear corners with TWO authentic red EQUILATERAL TRIANGULAR caravan reflectors, apex UP, mounted symmetrically, naturally scaled and perspectively correct. Leave rear light clusters separate and unchanged. Preserve the car, single-axle caravan, tow coupling, all road geometry, stone houses, lighting and composition exactly. No text, labels, highlighted areas, arrows or added people. Landscape 16:9 original driving-theory scene."
+  ],
+  [
+    "motorway_filtering_two_leftmost_lanes",
+    "Use case: precise-object-edit. Preserve this landscape French motorway photograph and all traffic geometry: exactly three same-direction lanes with orderly slow queues, cars facing away, opposite carriageway beyond LEFT barrier, no motorcycles, no signs. Correct ONLY white road paint to authentic French motorway markings. On the RIGHT boundary between rightmost traffic lane and empty hard shoulder, replace the continuous line with T4 long white segments: 39 metres painted then 13 metres unpainted, repeated with correct perspective; make at least one full unpainted gap clearly visible in the foreground/middle distance. The two lane divider lines within each carriageway should use realistically scaled short 3-metre paint segments with roughly 10-metre gaps. Keep all vehicles fully in their existing lanes. Keep left carriageway edge continuous. No overlays, text, additional lanes or markings. Landscape 16:9."
+  ],
+  [
+    "average_speed_camera_section",
+    "Use case: precise-object-edit. Edit only road paint: REMOVE ALL white centre-line markings from this rural road photograph, replacing them with seamless natural matching asphalt all the way to the horizon. The road should be a normal unmarked two-way rural road, with no painted edge lines either. Preserve the distant car driving on the right, road width and perspective, fields, sky, trees, and unobtrusive bottom edge of dashboard. No signs, cameras, new vehicles, overlays, labels, arrows, solution highlights or text. Preserve landscape 16:9."
+  ],
+  [
+    "passenger_feet_dashboard_airbag",
+    "Use case: precise-object-edit. Recompose this landscape photograph more tightly toward the front RIGHT passenger side so the central console, radio, climate controls, steering wheel and gear lever are COMPLETELY OUTSIDE the frame. Retain an anatomically plausible adult front passenger with visible three-point belt across chest, blue jeans and both white trainers resting on the passenger dashboard, car stationary on private driveway. Show passenger chest/belt on right, bent knees in lower middle, both feet and plain passenger-side dashboard at left/upper-middle, right door and window beyond. This is a safety-question setup depicting improper feet position, no injury. Plain dashboard with no readable labels or invented controls. Preserve realistic left-hand-drive car interior and daylight. Exactly one person. No extra limbs, text, captions, highlights or question/answers. Landscape 16:9, at least 1672x941."
+  ],
+  [
+    "ev_charging_no_extension_or_multisocket",
+    "Use case: precise-object-edit. Change ONLY the loose electrical plug on the floor of this garage photograph. Replace its incorrect three projecting pins with an authentic French-compatible CEE 7/7 domestic earthed plug: exactly TWO parallel round metal pins plus a recessed earth socket, never a third projecting pin. Keep plug disconnected lying on floor attached to the same extension-reel cable. Preserve reel and its four sockets, closed wall-socket cover, parked electric car with closed charging flap, dry garage, tools, bicycle, light and landscape composition. No new cable connection, no people, no highlights, no text. Preserve 16:9."
+  ]
+]

@@ -1,0 +1,27 @@
+{
+  "result": "pass",
+  "notes": "Replacement objective and exact final JPEG fully reviewed. No detected unresolved defects; approval does not claim infallibility.",
+  "proposal_sha256": "a33a74f60c3bbf5ad3ec17176cdfe969877f50b9ec6d9fb1d7da14555e67cdb7",
+  "image_sha256": "b4850da0b6a03ecfa1fe81f9ecd1343523dc6a35f233fceda858113a08ecdfb7",
+  "checks": {
+    "official_rule": "Interior Ministry pregnancy advice read directly: lap strap below abdomen as low as possible on pelvic bone; upper strap positioned normally. No claimed automatic medical exemption.",
+    "novelty": "Read all428 French stems across ALL categories, plus full seatbelt/child-seat explanations. Existing questions require wearing belts, protecting minors and disabling airbag for rear-facing child seats. None tests lap-strap position below a pregnant abdomen or retaining the shoulder strap across the chest. Stable key retained from withdrawn duplicate R16 item to preserve database identity; key wording is historical. Weighted nearest comparisons: bus passenger speed and rural parking are unrelated; general belts/child seating do not test pregnancy belt routing.",
+    "signs_and_text": "No road signs, supplementary plates, road markings or readable text. Gear area lettering removed. Red release button only on correct inboard buckle.",
+    "road_geometry": "Stationary private driveway/garden outside an open front-right passenger door; no traffic manoeuvre or claimed priority.",
+    "vehicles_and_people": "One fully clothed adult passenger; two anatomically plausible hands with five fingers, relaxed on thighs; seat and head restraint plausible. Rounded abdomen, hips and shoulders visible.",
+    "dashboard_and_equipment": "Standard three-point belt: diagonal flat webbing across shoulder/chest into partly obscured inboard buckle, low lap strap below abdomen across pelvis to outboard fixed anchor. Erroneous additional outboard red buckle in candidate1 removed. No extra restraint or malformed dial.",
+    "full_resolution": "Entire final1672x941 JPEG inspected at original resolution, including fingers, belt paths, anchors, inboard release, door hinges/latch/trim, seat, centre console and exterior. No detected unresolved defect.",
+    "phone_size": "390px preview inspected: low lap strap below abdomen and diagonal shoulder/chest path both remain distinguishable. No tiny text required.",
+    "french_and_english": "Both translations reviewed. Pregnant passenger without exemption; low strap below abdomen/pelvis and upper strap shoulder/chest convey equivalent meaning. No claim about driving while photographed.",
+    "all_four_options": "A and C correct in both languages. B crosses abdomen incorrectly; D removes chest restraint by putting shoulder strap behind back. Four distinct statements, no duplicate answer. Both explanations complete and over100characters."
+  },
+  "compared_question_keys": [
+    "situation_bus_passengers_alighting_slow",
+    "situation_rear_facing_child_active_airbag",
+    "safety_seat_belts_occupants",
+    "safety_child_under_ten",
+    "situation_rural_park_off_carriageway_right",
+    "situation_rear_passenger_seatbelt",
+    "situation_minor_passenger_unbelted_driver_duty"
+  ]
+}

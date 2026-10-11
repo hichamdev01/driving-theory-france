@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "bb2b0162c87aa194f7f56a910da61497bd841cf03c3b13e40c6440c425836864",
+  "image_sha256": "394ab4965873fbeef3b04d27e197ab51a0939b44009b6bf927cd3731f0bdcc8e",
+  "result": "pass",
+  "notes": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+  "compared_question_keys": [
+    "situation_first_technical_inspection_timing",
+    "situation_alcohol_expired_self_test_unreliable",
+    "situation_b13_ptac_not_actual_mass",
+    "situation_anaesthesia_discharge_no_driving",
+    "situation_speed_rain_posted_90_80"
+  ],
+  "checks": {
+    "signs_and_text": "No road signs or displayed inspection outcome. Small workshop labels and vehicle badge carry no necessary rule or date; R result is explicitly written in the question.",
+    "road_geometry": "Stationary vehicle in level workshop inspection bay with roller equipment and safe perspective; no road movement or public markings.",
+    "vehicles_and_people": "Gray compact car externally intact, wheels and lamps coherent, nobody inside or performing an implausible action. Critical defects may be hidden; none is diagnosed from appearance.",
+    "dashboard_and_equipment": "Roller stands, workshop cabinets and blank display plausible. No dashboard warning or computer result is fabricated as evidence.",
+    "phone_size": "Inspection-bay context and vehicle visible at 390px; outcome, yesterday's date and lack of repairs are in both stems.",
+    "french_and_english": "Both specify critical R yesterday, no repair or favourable reinspection and normal use today. Both separate one-day validity from the two-month reinspection deadline.",
+    "all_four_options": "D: validity limited to inspection day. A confuses reinspection deadline with permission to drive; B invents one week; C invents short-trip permission.",
+    "official_rule": "Sources read and checked 2026-10-11; research-and-selection.json records facts and limitations. Critical R result valid only inspection day; reinspection within2months does not extend critical-result circulation validity. Source: https://www.service-public.gouv.fr/particuliers/vosdroits/F2878",
+    "novelty": "Existing first-inspection item concerns fourth-anniversary schedule, not consequences of a critical failed inspection. All five saved nearest questions, including bilingual options/explanations, compared as recorded in research-and-selection.json; broader current bank screened.",
+    "full_resolution": "Inspected entire final staged JPEG 1672x941, plus 390px preview, against both translations and all four options. Rejected earlier candidates remain in history. No detected unresolved defect in this version."
+  }
+}

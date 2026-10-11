@@ -1,0 +1,26 @@
+[
+  {
+    "i": 1,
+    "prompt": "Edit only the supplied original photograph. Remove every tiny white character, number and pseudo-letter from both folded spectacle temples; leave clean dark tortoiseshell material with realistic reflections. Preserve the two lenses, two folded temples, two open contact-lens case wells, white and blue caps, counter, bathroom, composition and daylight exactly. No new text or symbols. Output landscape 16:9 at least1672x941.",
+    "id": "licence_0106_contact_lenses",
+    "path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-9fe696f3-c255-4e7e-8309-bbe357a031a6.png"
+  },
+  {
+    "i": 6,
+    "prompt": "Edit the original road photograph (image1); image2 is the official technical shape reference ONLY. Replace all three road arrows with the EXACT slender elongated French flèche de rabattement silhouette from image2: long subtly curved thin shaft and very long narrow asymmetrical spearhead, forward slightly right; do not copy any annotation or diagram background. On the asphalt each arrow is6metres long; lane width3.5m. Space arrows widely apart along the centreline: approximately50m then40m, with many3m-long dashes and1.33m gaps between. Extend the straight approach as needed for this realistic spacing before the distant solid line and right bend. Exactly one lane each direction. Camera in right lane, arrows straddle centreline, nearest large lowerleft, next two far smaller. Preserve daylight, countryside, realistic perspective; no vehicles, signs, captions or graphic overlays. Landscape16:9 at least1672x941.",
+    "id": "overtake_return_arrows_before_solid",
+    "path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-a9bc59f1-33f9-4e6f-8d59-c92cea9dda17.png"
+  },
+  {
+    "i": 8,
+    "prompt": "Edit the supplied car radio photograph. Reframe as a closer landscape16:9 crop of just the radio and adjacent air vents, completely excluding the three heater dials below and all their symbols/numbers. Keep the entire two radio knobs, six preset buttons and display reading EXACTLY FM 107.7 MHz. Preserve realistic physical dashboard materials and lighting. Do not add any text or controls. At least1672x941.",
+    "id": "tunnel_radio_safety_messages",
+    "path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-257b1143-0094-4384-b091-b2a70163788d.png"
+  },
+  {
+    "i": 9,
+    "prompt": "Edit only the supplied photograph. Remove all tiny unreadable moulded letters and pseudo-numbers on BOTH visible tyre sidewalls and the tiny wheel-centre badge; replace only these incidental lettering areas with natural plain dark rubber / plain metal centre cap. Keep tread, wheel spokes, car geometry, white paint, connected charging cable and port, dark blank pedestal display, background and landscape16:9 composition unchanged. No added text, no logos. At least1672x941.",
+    "id": "electric_car_finished_charging_leave_bay",
+    "path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-bb022200-cc05-41a6-849a-37c194c4903b.png"
+  }
+]

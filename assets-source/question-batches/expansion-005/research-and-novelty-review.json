@@ -1,0 +1,118 @@
+{
+  "checked_on": "2026-10-10",
+  "bank_count": 428,
+  "cross_category_search": "All bank text searched for PTAC, surcharge, 01.06, M+S, 3PMSF, vision, ABS, return arrows and charging completion; nearest full bilingual questions and answers read.",
+  "sources": "Authoring source reads retained in proposal records. Official vision PDF downloaded after web fetch 502; page 2 read.",
+  "items": [
+    {
+      "scenario_id": "loaded_car_exceeds_own_ptac",
+      "compared_question_keys": [
+        "situation_b13_ptac_not_actual_mass",
+        "situation_trailer_ptra_over3500_motorway90",
+        "situation_height_limit_3_5m",
+        "situation_height_limit_2_8m",
+        "situation_long_caravan_snow_overtaking_prohibited"
+      ],
+      "distinction": "Own vehicle maximum laden mass versus actual load, distinct from B13 road access and trailer speed."
+    },
+    {
+      "scenario_id": "licence_0106_contact_lenses",
+      "compared_question_keys": [
+        "situation_ead_restriction_borrowed_car",
+        "situation_probationary_one_glass_risk",
+        "danger_sign_double_bend_left",
+        "situation_dynamic_speed_limit_over_fixed",
+        "situation_high_beams_oncoming_dip"
+      ],
+      "distinction": "Vision restriction alternatives 01.06, distinct from EAD equipment and probationary alcohol."
+    },
+    {
+      "scenario_id": "abs_warning_stays_on_without_red_brake",
+      "compared_question_keys": [
+        "situation_abs_emergency_pedal_pulsation",
+        "situation_safety_oil_pressure_stop_engine",
+        "situation_cmi_parking_card_passenger",
+        "situation_motorway_blowout_initial_control",
+        "situation_emergency_vehicle_without_special_signals"
+      ],
+      "distinction": "Persistent fault after self-test, distinct from normal emergency ABS pedal pulsation and urgent red oil warning."
+    },
+    {
+      "scenario_id": "mountain_winter_ms_without_3pmsf",
+      "compared_question_keys": [
+        "situation_snow_chains_b26_fit",
+        "situation_long_caravan_snow_overtaking_prohibited",
+        "situation_b44_car_scenario",
+        "situation_no_overtaking_basic",
+        "situation_insurance_fva_no_green_sticker"
+      ],
+      "distinction": "Seasonal equipment qualification of M+S-only tyres, distinct from fitting chains at B26 or ending that signed requirement."
+    },
+    {
+      "scenario_id": "yellow_continuous_kerb_no_stopping",
+      "compared_question_keys": [
+        "situation_yellow_broken_kerb_parking_only",
+        "situation_no_stopping_b6d",
+        "situation_no_parking",
+        "situation_no_motor_vehicles",
+        "situation_bus_stop_marking_no_stop"
+      ],
+      "distinction": "Continuous yellow kerb recognition supplies a different controlling marking from broken yellow or B6d. Its no-stop meaning is the point, not a scenery-only B6d repeat."
+    },
+    {
+      "scenario_id": "speed_narrows_useful_visual_field",
+      "compared_question_keys": [
+        "situation_bus_passengers_alighting_slow",
+        "situation_occluded_pedestrian_hazard",
+        "situation_frosted_windscreen_clear_before_drive",
+        "safety_eco_driving_anticipation",
+        "situation_slippery_rain"
+      ],
+      "distinction": "Useful peripheral attention narrowing as speed rises, distinct from physical obstruction/frost, bus visibility and eco-driving."
+    },
+    {
+      "scenario_id": "overtake_return_arrows_before_solid",
+      "compared_question_keys": [
+        "situation_two_way_traffic",
+        "situation_overtake_no_speed_limit_exception",
+        "situation_c29a_car_scenario",
+        "situation_priority_road_intersection_overtake",
+        "situation_mixed_line_broken_my_side"
+      ],
+      "distinction": "Three curved return arrows on a two-lane warning centreline, distinct from extra lane C29a, mixed lines, speed exceptions or junction priority."
+    },
+    {
+      "scenario_id": "blind_spot_monitor_not_clearance_guarantee",
+      "compared_question_keys": [
+        "situation_truck_right_turn_blind_spot",
+        "safety_door_cyclist_check",
+        "situation_overtake_signal_before_moving_left",
+        "situation_overtake_right_left_turner",
+        "situation_parking_camera_requires_direct_checks"
+      ],
+      "distinction": "Negative blind-spot detector result does not certify a safe lane change, distinct from camera view coverage when reversing or timing an indicator after completed checks."
+    },
+    {
+      "scenario_id": "tunnel_radio_safety_messages",
+      "compared_question_keys": [
+        "situation_motorway_tunnel_fire_evacuate",
+        "situation_motorway_sos_location",
+        "situation_rear_passenger_seatbelt",
+        "situation_motorway_exit_lane_deadline",
+        "situation_b9b_car_interpretation"
+      ],
+      "distinction": "Receiving tunnel operator radio messages, distinct from outgoing SOS location or evacuation after fire."
+    },
+    {
+      "scenario_id": "electric_car_finished_charging_leave_bay",
+      "compared_question_keys": [
+        "situation_ev_charger_blocked_parking",
+        "situation_parking_blocks_parked_exit",
+        "situation_disabled_bay_without_card",
+        "situation_ev_charge_cable_cut_insulation",
+        "situation_c26a_car_scenario"
+      ],
+      "distinction": "Electric-car reservation expires when charging ends, distinct from a combustion car never being eligible or damaged cable safety."
+    }
+  ]
+}

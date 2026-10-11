@@ -31,16 +31,25 @@ final class Database {
     private var db: OpaquePointer?
     private let queue = DispatchQueue(label: "theoryprep.database")
 
-    private init() {
+    private convenience init() {
         let fileURL = try! FileManager.default
             .url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
             .appendingPathComponent("theory_prep.sqlite")
 
-        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
-            fatalError("Unable to open database at \(fileURL.path)")
+        self.init(path: fileURL.path)
+    }
+
+    /// Supports isolated in-memory databases for query regression tests.
+    init(path: String) {
+        if sqlite3_open(path, &db) != SQLITE_OK {
+            fatalError("Unable to open database at \(path)")
         }
         exec("PRAGMA journal_mode = WAL;")
         exec("PRAGMA foreign_keys = ON;")
+    }
+
+    deinit {
+        sqlite3_close(db)
     }
 
     @discardableResult

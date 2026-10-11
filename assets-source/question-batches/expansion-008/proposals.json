@@ -1,0 +1,624 @@
+[
+  {
+    "scenario_id": "one_way_left_turn_position",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car knowledge; no commercial-vehicle licence or professional qualification required.",
+    "learning_objective": "Position toward the left before a left turn from an ordinary one-way street.",
+    "topic": "one_way_left_turn_position",
+    "scenario": "One-way street expressly excludes counterflow cycle track and specialised marked lanes; only preparation position is asked.",
+    "novelty_review": "Existing questions concern yielding to oncoming traffic or cyclists and interpreting lane arrows; none asks left-side preparation on an unmarked one-way street.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_one_way_left_turn_position",
+      "category_slug": "priority_rules",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Cette rue est à sens unique, sans double sens cyclable ni voie spécialisée. Pour préparer un virage à gauche autorisé, où dois-je me placer après mes contrôles ?",
+          "answer_a": "Près du bord droit, comme pour tourner à droite.",
+          "answer_b": "À cheval sur le trottoir gauche.",
+          "answer_c": "Vers le bord gauche de la chaussée.",
+          "answer_d": "Au milieu, sans modifier ma position.",
+          "explanation": "Pour quitter une route par la gauche, je serre à gauche après avoir contrôlé et signalé ma manœuvre. Sur cette chaussée à sens unique sans aménagement particulier, je me rapproche du bord gauche sans monter sur le trottoir."
+        },
+        "en": {
+          "question_text": "This is a one-way street with no contraflow cycling or dedicated turn lane. After checking, where should I position for a permitted left turn?",
+          "answer_a": "Near the right edge, as for a right turn.",
+          "answer_b": "Partly on the left pavement.",
+          "answer_c": "Toward the left edge of the carriageway.",
+          "answer_d": "In the middle, without changing position.",
+          "explanation": "Before leaving a road to the left, I move toward the left after checking and signalling. On this one-way carriageway without special arrangements, I approach the left edge without mounting the pavement."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Le placement à droite ne prépare pas ce virage.",
+        "b": "Le trottoir n’est pas une voie.",
+        "c": "Placement prescrit pour tourner à gauche.",
+        "d": "Il faut se rapprocher à gauche."
+      },
+      "en": {
+        "a": "Right-edge positioning is inappropriate here.",
+        "b": "The pavement is not a lane.",
+        "c": "Required position before a left turn.",
+        "d": "Move toward the left before turning."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French passenger-car theory scene, 1672x941 or larger. No embedded quiz, answer, annotations, arrows, highlights, watermark or brand names. Realistic French road and vehicle geometry. Essential details legible at390px width. Windscreen view from a small car on a quiet French residential one-way street approaching a simple left side street. Unmarked asphalt about5m wide, regular pavements both sides, clear empty street. Camera still around centre before positioning. No road signs, cycle tracks, road markings, cars, pedestrians, dashboard displays or text; one-way status explicitly supplied in question. Modest cream houses, daylight, believable junction corners.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025541/",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "R415-4 I: move left before leaving road left; II opposite-direction median constraint does not arise in explicitly one-way case."
+      }
+    ]
+  },
+  {
+    "scenario_id": "wide_suv_narrow_crossing_yield",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car knowledge; no commercial-vehicle licence or professional qualification required.",
+    "learning_objective": "Apply the over-two-metre-width crossing rule to a passenger SUV.",
+    "topic": "wide_suv_narrow_crossing_yield",
+    "scenario": "SUV body width2.05m stated; flat road, insufficient width for safe easy crossing with smaller car; no signs assigning priority.",
+    "novelty_review": "Existing mountain questions use uphill/reversing rules; long-caravan item concerns facilitating overtaking. This is crossing with a wide ordinary passenger car on level ground.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_wide_suv_narrow_crossing_yield",
+      "category_slug": "priority_rules",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Mon SUV mesure 2,05 m de large, hors rétroviseurs. Sur cette route plane, le croisement avec la petite voiture est trop étroit pour être sûr. Je dois :",
+          "answer_a": "Ralentir et, au besoin, m’arrêter ou me ranger pour la laisser passer.",
+          "answer_b": "Passer d’abord parce que ma voiture est plus large.",
+          "answer_c": "Conserver mon allure en demandant à l’autre de monter sur l’accotement.",
+          "answer_d": "Appliquer automatiquement la priorité au véhicule qui monte.",
+          "explanation": "Lorsque le croisement n’est pas facile et sûr, un véhicule dont le gabarit dépasse 2 m de largeur doit faciliter le passage aux véhicules plus petits en ralentissant et, si nécessaire, en s’arrêtant ou en se rangeant. Ici, la route est plane."
+        },
+        "en": {
+          "question_text": "My SUV is 2.05 m wide, excluding mirrors. On this level road, there is too little room to pass the smaller oncoming car safely. I must:",
+          "answer_a": "Slow down and, if needed, stop or pull aside to let it pass.",
+          "answer_b": "Go first because my car is wider.",
+          "answer_c": "Maintain speed and make the other driver use the verge.",
+          "answer_d": "Automatically give priority to the uphill vehicle.",
+          "explanation": "Where oncoming vehicles cannot pass easily and safely, a vehicle wider than 2 m must facilitate passage for smaller vehicles by slowing and, if needed, stopping or pulling aside. This road is level, so uphill rules do not decide the issue."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Obligation liée au gabarit et au manque de place.",
+        "b": "La largeur ne donne pas la priorité.",
+        "c": "Il faut faciliter le passage sans imposer une manœuvre risquée.",
+        "d": "Il n’y a pas de pente."
+      },
+      "en": {
+        "a": "Width and restricted space trigger this duty.",
+        "b": "Being wider gives no priority.",
+        "c": "Facilitate passage without forcing a risky move.",
+        "d": "There is no slope."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French passenger-car theory scene, 1672x941 or larger. No embedded quiz, answer, annotations, arrows, highlights, watermark or brand names. Realistic French road and vehicle geometry. Essential details legible at390px width. Driver viewpoint from a wide SUV on a LEVEL narrow unmarked French country lane, with a small compact car approaching ahead. Clearly narrow3.2m tarmac between low grassy banks, a broad firm paved passing recess immediately to our right in foreground. Both vehicles keep right; oncoming small car is on image LEFT, still several car lengths away. No houses, signs, markings, people or instruments. Only thin SUV bonnet edge. Realistic small car front, plate too far to read without fake lettering. Daylight.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000034133009/",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "R414-2 first paragraph: width over2m or length over7m; insufficient safe crossing space; facilitate smaller vehicles."
+      }
+    ]
+  },
+  {
+    "scenario_id": "speed_time_gain_30km_110_130",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car knowledge; no commercial-vehicle licence or professional qualification required.",
+    "learning_objective": "Estimate the limited theoretical time saved over a short motorway distance.",
+    "topic": "speed_time_gain_30km_110_130",
+    "scenario": "Pure calculation:30km at constant110 versus130, no stops, dry permitted130 motorway with experienced driver; not a recommendation to accelerate.",
+    "novelty_review": "Existing numerical items cover stopping and reaction distances, not journey-time gains. Original values differ from source example.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_speed_time_gain_30km_110_130",
+      "category_slug": "speed_limits",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Sur 30 km d’autoroute, sans arrêt ni ralentissement, quel temps gagne-t-on environ en roulant constamment à 130 km/h plutôt qu’à 110 km/h ?",
+          "answer_a": "Environ 15 minutes.",
+          "answer_b": "Environ 10 minutes.",
+          "answer_c": "Environ 6 minutes.",
+          "answer_d": "Environ 2 minutes 30 secondes.",
+          "explanation": "Le trajet théorique dure environ 16 min 22 s à 110 km/h et 13 min 51 s à 130 km/h : le gain est proche de 2 min 30 s. Ce calcul n’autorise jamais à dépasser la limite applicable ni une allure adaptée aux conditions."
+        },
+        "en": {
+          "question_text": "Over 30 km of motorway without stops or slowdowns, roughly how much time is saved by travelling constantly at 130 km/h instead of 110 km/h?",
+          "answer_a": "About 15 minutes.",
+          "answer_b": "About 10 minutes.",
+          "answer_c": "About 6 minutes.",
+          "answer_d": "About 2 minutes 30 seconds.",
+          "explanation": "The theoretical journey takes about 16 min 22 sec at 110 km/h and 13 min 51 sec at 130 km/h, saving roughly 2 min 30 sec. This calculation never permits exceeding the applicable limit or a speed suited to the conditions."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Très supérieur au résultat.",
+        "b": "Très supérieur au résultat.",
+        "c": "Encore plus du double du gain.",
+        "d": "30/110×60−30/130×60 =2,517minutes."
+      },
+      "en": {
+        "a": "Far above the result.",
+        "b": "Far above the result.",
+        "c": "More than double the actual gain.",
+        "d": "30/110×60−30/130×60 =2.517minutes."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French passenger-car theory scene, 1672x941 or larger. No embedded quiz, answer, annotations, arrows, highlights, watermark or brand names. Realistic French road and vehicle geometry. Essential details legible at390px width. Original calm motorway travel illustration as a photorealistic still: close lateral view from passenger side window of a moving car, looking across the empty paved emergency shoulder toward a straight steel guardrail and distant green French fields. Frame excludes road traffic lanes, road markings, mirrors, instruments, signs and readable text. A thin window frame at lower edge establishes car viewpoint. Bright dry weather. No visible people. This is a contextual travel scene; calculation values appear only in app wording.",
+    "sources": [
+      {
+        "url": "https://www.securite-routiere.gouv.fr/sites/default/files/press-kits/3677-sric_dp_vitesse130_2006_07_06.pdf",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "Official speed education explains overestimated travel-time gains. Our original30km110/130 calculation is independently computed, not copied from their example."
+      }
+    ]
+  },
+  {
+    "scenario_id": "sign_reader_display_not_authority",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car knowledge; no commercial-vehicle licence or professional qualification required.",
+    "learning_objective": "Distinguish an assistance display from the actual applicable posted speed.",
+    "topic": "sign_reader_display_not_authority",
+    "scenario": "Driver approaching clearly applicable roadside70; dashboard sign-recognition icon still90, not speedometer; question explicitly identifies display function.",
+    "novelty_review": "Existing dynamic-versus-fixed item compares two authoritative road signs. This tests a fallible in-car assistance display and continuing driver responsibility, not sign-code identification.",
+    "primary_codes": [],
+    "context_codes": [
+      "B14"
+    ],
+    "question": {
+      "key": "situation_sign_reader_display_not_authority",
+      "category_slug": "speed_limits",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a",
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Le panneau routier impose 70 km/h à ma voiture, mais la reconnaissance des panneaux affiche encore 90 au tableau de bord. Quelles affirmations sont exactes ?",
+          "answer_a": "Je dois respecter 70 km/h dès le panneau.",
+          "answer_b": "L’affichage de la voiture m’autorise à rouler à 90 km/h.",
+          "answer_c": "Je reste responsable du respect de la limitation.",
+          "answer_d": "La caméra garantit que la valeur 90 est exacte.",
+          "explanation": "La reconnaissance des panneaux est une aide qui peut manquer ou mal interpréter une information. La valeur affichée dans la voiture ne remplace pas la signalisation applicable : je respecte 70 km/h et reste responsable de mon allure."
+        },
+        "en": {
+          "question_text": "The roadside sign imposes 70 km/h on my car, but sign recognition still displays 90 on the dashboard. Which statements are correct?",
+          "answer_a": "I must comply with 70 km/h from the sign.",
+          "answer_b": "The car display allows me to drive at 90 km/h.",
+          "answer_c": "I remain responsible for obeying the speed limit.",
+          "answer_d": "The camera guarantees that 90 is correct.",
+          "explanation": "Sign recognition is an aid that may miss or misread information. Its in-car display does not replace applicable road signs: I obey 70 km/h and remain responsible for my speed."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "La limite affichée sur la route s’applique.",
+        "b": "L’aide n’accorde aucune dérogation.",
+        "c": "La responsabilité reste au conducteur.",
+        "d": "La reconnaissance n’est pas infaillible."
+      },
+      "en": {
+        "a": "The roadside limit applies.",
+        "b": "Assistance provides no exemption.",
+        "c": "The driver remains responsible.",
+        "d": "Recognition is not infallible."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French passenger-car theory scene, 1672x941 or larger. No embedded quiz, answer, annotations, arrows, highlights, watermark or brand names. Realistic French road and vehicle geometry. Essential details legible at390px width. From passenger-car windscreen on quiet straight French rural road. One large correctly formed B14 roadside speed limit sign at RIGHT: circular white disk, red border, bold black70, no plate beneath. Close simple black dashboard display in lower left shows ONLY a small red-ring white sign-recognition icon90, no speedometer, numbers or other text. Both70 and90 must be easily legible even at phone size. Unmarked two-way asphalt, no other signs, traffic or people. Camera in right half of road. Daylight, realistic dashboard and windshield without impossible overlays.",
+    "sources": [
+      {
+        "url": "https://validation.securite-routiere.gouv.fr/chacun-son-mode-de-deplacement/dangers-de-la-route-en-voiture/equipement-de-la-voiture/adas",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "ADAS require permanent supervision; driver retains responsibility; sign recognition is an assistance function."
+      },
+      {
+        "url": "https://www.fordservicecontent.com/Ford_Content/Catalog/owner_information/CG3920frFRA-202209-20220923151021.pdf",
+        "kind": "manufacturer",
+        "checked_on": "2026-10-11",
+        "supports": "Manufacturer explains incorrect displayed signs can result from outdated maps or camera misrecognition."
+      }
+    ]
+  },
+  {
+    "scenario_id": "alcohol_drugs_combined_nine_points",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car knowledge; no commercial-vehicle licence or professional qualification required.",
+    "learning_objective": "Know the specific point deduction for combined drug use and prohibited alcohol.",
+    "topic": "alcohol_drugs_combined_nine_points",
+    "scenario": "Definitively established driving after drug use and under alcohol influence, blood alcohol0.80g/L, ordinary full12pointlicence; no other simultaneous offences.",
+    "novelty_review": "Existing combined-consumption item concerns crash risk; drug penalty item concerns imprisonment/fine, probation alcohol item6points. This tests the current specific combined9point deduction.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_alcohol_drugs_combined_nine_points",
+      "category_slug": "alcohol_drugs",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Avec un permis à 12 points, je suis sanctionné pour conduite après usage de stupéfiants et sous l’emprise de l’alcool (0,80 g/L de sang). Combien de points cette infraction combinée retire-t-elle ?",
+          "answer_a": "6 points.",
+          "answer_b": "9 points.",
+          "answer_c": "8 points au maximum dans tous les cas.",
+          "answer_d": "12 points automatiquement.",
+          "explanation": "La conduite après usage de stupéfiants sous l’emprise de l’alcool entraîne actuellement un retrait de 9 points. Cette règle particulière ne doit pas être confondue avec le retrait de 6 points pour les stupéfiants seuls ; d’autres sanctions sont également prévues."
+        },
+        "en": {
+          "question_text": "With a 12-point licence, I am penalised for driving after drug use and under the influence of alcohol (0.80 g/L of blood). How many points does this combined offence deduct?",
+          "answer_a": "6 points.",
+          "answer_b": "9 points.",
+          "answer_c": "A maximum of 8 in every case.",
+          "answer_d": "12 points automatically.",
+          "explanation": "Driving after drug use while also under the influence of alcohol currently carries a nine-point deduction. This specific rule differs from the six-point deduction for drug use alone; other penalties also apply."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Six concerne les stupéfiants seuls.",
+        "b": "Barème actuel pour le cumul indiqué.",
+        "c": "Exception spécifique au plafond général.",
+        "d": "Pas de retrait automatique de12pour ce seul délit."
+      },
+      "en": {
+        "a": "Six applies to drug use alone.",
+        "b": "Current deduction for this combination.",
+        "c": "There is a specific exception to the general cap.",
+        "d": "This offence alone does not automatically deduct12."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French passenger-car theory scene, 1672x941 or larger. No embedded quiz, answer, annotations, arrows, highlights, watermark or brand names. Realistic French road and vehicle geometry. Essential details legible at390px width. Original close scene on an outdoor cafe table beside a safely parked ordinary car: one partly filled small wine glass, a car key and a plain closed neutral document folder, no visible writing or drug paraphernalia. Side of parked car blurred in background, registration out of frame. No people or implied active driving. Evening soft daylight. The legally established alcohol and drug findings are explicitly stated in question, never represented as measurable from image.",
+    "sources": [
+      {
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31551",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "Current official table verified27Feb2026: drug driving6points; drug driving with alcohol influence9points. Read table directly."
+      }
+    ]
+  },
+  {
+    "scenario_id": "anaesthesia_discharge_no_driving",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car knowledge; no commercial-vehicle licence or professional qualification required.",
+    "learning_objective": "Do not confuse permission to leave after anaesthesia with fitness to drive.",
+    "topic": "anaesthesia_discharge_no_driving",
+    "scenario": "Patient discharged today after general anaesthesia for outpatient examination; specific24hno-driving instruction remains active; feeling alert does not override it.",
+    "novelty_review": "Existing medication questions cover warning levels, self-dose changes, OTC status and symptoms. This asks travel home after anaesthesia despite authorised discharge and subjective recovery.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_anaesthesia_discharge_no_driving",
+      "category_slug": "alcohol_drugs",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Je sors d’un examen sous anesthésie générale. L’équipe m’a demandé de ne pas conduire pendant 24 h, mais je me sens réveillé. Pour rentrer aujourd’hui, je dois :",
+          "answer_a": "Conduire si le trajet dure moins de dix minutes.",
+          "answer_b": "Boire un café puis prendre le volant.",
+          "answer_c": "Me faire raccompagner et respecter les consignes reçues.",
+          "answer_d": "Conduire puisque ma sortie a été autorisée.",
+          "explanation": "L’autorisation de quitter l’établissement ne signifie pas que les effets de l’anesthésie ont disparu pour la conduite. Je me fais raccompagner et respecte le délai et les autres consignes de l’équipe, même si je me sens bien réveillé."
+        },
+        "en": {
+          "question_text": "I am leaving after an examination under general anaesthesia. The team told me not to drive for 24 hours, but I feel awake. To get home today, I must:",
+          "answer_a": "Drive if the journey takes less than ten minutes.",
+          "answer_b": "Drink coffee and then drive.",
+          "answer_c": "Have someone take me home and follow the instructions.",
+          "answer_d": "Drive because I have been discharged.",
+          "explanation": "Permission to leave the facility does not mean the effects of anaesthesia relevant to driving have ended. I arrange to be taken home and follow the team’s waiting period and other instructions, even if I feel fully awake."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Un trajet court ne lève pas la consigne.",
+        "b": "Le café n’annule pas les effets.",
+        "c": "Retour accompagné et consignes respectées.",
+        "d": "La sortie ne valide pas l’aptitude à conduire."
+      },
+      "en": {
+        "a": "A short trip does not cancel the instruction.",
+        "b": "Coffee does not reverse the effects.",
+        "c": "Accompanied journey and instructions respected.",
+        "d": "Discharge is not driving clearance."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French passenger-car theory scene, 1672x941 or larger. No embedded quiz, answer, annotations, arrows, highlights, watermark or brand names. Realistic French road and vehicle geometry. Essential details legible at390px width. Photorealistic quiet healthcare entrance forecourt in France. Tight rear-side view of a parked ordinary car with front passenger door open on RIGHT side, empty passenger seat visible. A plain hospital-style glass entrance in background, no signage or logos or lettering. No patient, staff, instruments or driving depicted. Safe bay, no road lane or pavement obstruction; vehicle geometry and door hinge correct. Clinical appointment and driving restrictions supplied by question. Bright daylight.",
+    "sources": [
+      {
+        "url": "https://www.ameli.fr/assure/sante/examen/exploration/deroulement-endoscopie-digestive-haute",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "Current patient guidance: general-anaesthesia endoscopy requires no driving on examination day and accompaniment home.24hour period is explicit individual instruction in scenario, not universal clearance after24h."
+      }
+    ]
+  },
+  {
+    "scenario_id": "brake_fluid_below_min",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car knowledge; no commercial-vehicle licence or professional qualification required.",
+    "learning_objective": "Respond to a below-MIN brake reservoir without contaminating its hydraulic fluid.",
+    "topic": "brake_fluid_below_min",
+    "scenario": "Car level and parked before journey; identified brake-fluid reservoir belowMIN; no diagnostic certainty about cause.",
+    "novelty_review": "Existing oil-level, coolant-temperature andABSwarning questions concern different systems and decisions; no prior brake-fluid level/contamination objective.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_brake_fluid_below_min",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b",
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Avant le départ, voiture garée à plat, le liquide de frein est sous MIN. Quelles précautions sont correctes ?",
+          "answer_a": "Compléter avec de l’eau du robinet.",
+          "answer_b": "Faire contrôler rapidement le système par un professionnel.",
+          "answer_c": "Ignorer le niveau tant que la pédale semble normale.",
+          "answer_d": "N’utiliser que le liquide prescrit, sans le contaminer.",
+          "explanation": "Un niveau sous MIN peut compromettre le freinage et doit être contrôlé rapidement. Je demande conseil avant de partir : un simple appoint ne remplace pas la recherche de la cause. Le liquide doit respecter la prescription du constructeur, sans eau ni autre produit."
+        },
+        "en": {
+          "question_text": "Before departure, with the car parked level, the brake fluid is below MIN. Which precautions are correct?",
+          "answer_a": "Top it up with tap water.",
+          "answer_b": "Have the system checked promptly by a professional.",
+          "answer_c": "Ignore the level while the pedal feels normal.",
+          "answer_d": "Use only the specified fluid and avoid contamination.",
+          "explanation": "A level below MIN can affect braking and requires prompt inspection. I seek advice before departure: topping up alone does not replace identifying the cause. The fluid must meet the manufacturer’s specification, without water or other contaminants."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "L’eau contamine le liquide de frein.",
+        "b": "Le niveau anormal doit être contrôlé.",
+        "c": "Une pédale apparemment normale ne suffit pas.",
+        "d": "La compatibilité et la propreté sont essentielles."
+      },
+      "en": {
+        "a": "Water contaminates brake fluid.",
+        "b": "The abnormal level needs inspection.",
+        "c": "Normal pedal feel is not enough.",
+        "d": "Correct specification and cleanliness are essential."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French passenger-car theory scene, 1672x941 or larger. No embedded quiz, answer, annotations, arrows, highlights, watermark or brand names. Realistic French road and vehicle geometry. Essential details legible at390px width. Close detailed original photo under passenger-car bonnet: translucent rectangular brake-fluid reservoir fixed to metal master cylinder, black securely CLOSED cap, at rear of engine bay. Reservoir occupies central60percent of frame. Clearly printed MAX above upper moulded horizontal mark and MIN above lower mark; pale amber liquid with a level visibly BELOW the MIN line, no leak or hand. Only those two words visible, no other labels, warnings, logos, arrows or solution highlights. Black cap top angled away so no writing. Show plausible mounting, hoses and bulkhead. Camera level enough to read fluid. Soft natural light, no reflection hiding marks.",
+    "sources": [
+      {
+        "url": "https://www.fordservicecontent.com/Ford_Content/Catalog/owner_information/CG3851frFRA-202012-20201217102217.pdf",
+        "kind": "manufacturer",
+        "checked_on": "2026-10-11",
+        "supports": "Manufacturer: belowMINoraboveMAXrequires prompt inspection."
+      },
+      {
+        "url": "https://www.fordservicecontent.com/Ford_Content/Catalog/owner_information/CG4031frFRA-202407-20250623194449.pdf",
+        "kind": "manufacturer",
+        "checked_on": "2026-10-11",
+        "supports": "Manufacturer brake-fluid warnings: contamination water/petroleum can cause failure; use correct specification, level surface."
+      }
+    ]
+  },
+  {
+    "scenario_id": "flooded_road_do_not_enter",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car knowledge; no commercial-vehicle licence or professional qualification required.",
+    "learning_objective": "Refuse entry into a flooded road whose depth and condition are unknown.",
+    "topic": "flooded_road_do_not_enter",
+    "scenario": "Driver safely before immersed stretch; depth unknown, no barrier. Still image not used to estimate safe depth.",
+    "novelty_review": "Aquaplaning item tests reaction after tyre grip is lost on surfacewater. Newdecision is not entering an inundated road at all.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_flooded_road_do_not_enter",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "La route devant moi est inondée et je ne connais pas la profondeur de l’eau. Aucune barrière ne ferme le passage. Que faire ?",
+          "answer_a": "Ne pas m’engager et chercher un itinéraire sûr.",
+          "answer_b": "Traverser vite pour créer une vague devant la voiture.",
+          "answer_c": "Avancer jusqu’à ce que l’eau atteigne les portières.",
+          "answer_d": "Suivre un autre véhicule pour tester la profondeur.",
+          "explanation": "Je ne m’engage pas sur une route inondée, même sans barrière et même si l’eau semble peu profonde. Le courant et l’état de la chaussée peuvent être trompeurs ; je reste à l’écart et recherche un trajet sûr en suivant les informations officielles."
+        },
+        "en": {
+          "question_text": "The road ahead is flooded and I do not know the water depth. No barrier closes it. What should I do?",
+          "answer_a": "Stay out and find a safe route.",
+          "answer_b": "Cross quickly to create a wave in front of the car.",
+          "answer_c": "Advance until the water reaches the doors.",
+          "answer_d": "Follow another vehicle to test the depth.",
+          "explanation": "I do not enter a flooded road, even without a barrier or if the water appears shallow. The current and road condition can be deceptive; I stay clear and find a safe route using official information."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Évite l’exposition au courant et à la chaussée invisible.",
+        "b": "La vitesse n’assure pas le passage.",
+        "c": "Il serait trop tard pour un essai sûr.",
+        "d": "Un autre véhicule n’indique pas un passage sûr."
+      },
+      "en": {
+        "a": "Avoids unknown current and hidden road condition.",
+        "b": "Speed does not make crossing safe.",
+        "c": "That is not a safe way to assess depth.",
+        "d": "Another vehicle does not establish safety."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French passenger-car theory scene, 1672x941 or larger. No embedded quiz, answer, annotations, arrows, highlights, watermark or brand names. Realistic French road and vehicle geometry. Essential details legible at390px width. Windscreen viewpoint from a car safely stopped well BEFORE a flooded section of an unmarked flat rural French road. Visible dry tarmac foreground ends several metres ahead in broad opaque muddy water covering entire carriageway and adjoining low verges. Road can be seen emerging far beyond water. Overcast daylight after rain, fields and trees, no people, vehicles, signs, barriers, markings or instruments. Only thin bonnet edge, camera vehicle clearly not in water. No visual depth gauge or unrealistic giant waves.",
+    "sources": [
+      {
+        "url": "https://www.info.gouv.fr/actualite/orages-comment-se-proteger",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "Current official safety advice: never enter a flooded road even if apparent water level is low."
+      }
+    ]
+  },
+  {
+    "scenario_id": "child_never_alone_parked_heat",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car knowledge; no commercial-vehicle licence or professional qualification required.",
+    "learning_objective": "Do not leave a child alone in a parked car even briefly with windows ajar.",
+    "topic": "child_never_alone_parked_heat",
+    "scenario": "Adult considers five-minute errand during warmth; child asleep; no adult remains, windowsajar not protection.",
+    "novelty_review": "Existing childseat questions concern restraint, front-seat age and airbag orientation; this addresses heat risk during an unattended parked interval.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_child_never_alone_parked_heat",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Par temps chaud, mon enfant dort dans la voiture garée. Puis-je le laisser seul cinq minutes pour une course si j’entrouvre les vitres ?",
+          "answer_a": "Oui, si je garde la voiture à portée de vue.",
+          "answer_b": "Oui, parce que cinq minutes sont sans risque.",
+          "answer_c": "Oui, si la voiture est à l’ombre au départ.",
+          "answer_d": "Non, je ne le laisse pas seul dans la voiture.",
+          "explanation": "Un enfant ne doit pas rester seul dans une voiture stationnée, même brièvement et même avec les vitres entrouvertes. L’habitacle peut rapidement chauffer ; je l’emmène avec moi ou organise une surveillance adaptée par un adulte."
+        },
+        "en": {
+          "question_text": "In warm weather, my child is asleep in the parked car. May I leave them alone for a five-minute errand if I leave the windows slightly open?",
+          "answer_a": "Yes, if I can keep the car in sight.",
+          "answer_b": "Yes, because five minutes is risk-free.",
+          "answer_c": "Yes, if the car is initially in shade.",
+          "answer_d": "No, I do not leave the child alone in the car.",
+          "explanation": "A child must not be left alone in a parked car, even briefly and with windows ajar. The cabin can heat up quickly; I take the child with me or arrange appropriate supervision by an adult."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Voir la voiture ne supprime pas le danger.",
+        "b": "Aucune courte durée garantie sans risque.",
+        "c": "L’ombre n’est pas une garantie.",
+        "d": "Prévention correcte de l’exposition sans surveillance."
+      },
+      "en": {
+        "a": "Seeing the car does not remove the danger.",
+        "b": "No brief period is guaranteed safe.",
+        "c": "Shade is not a guarantee.",
+        "d": "Correct prevention of unattended exposure."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French passenger-car theory scene, 1672x941 or larger. No embedded quiz, answer, annotations, arrows, highlights, watermark or brand names. Realistic French road and vehicle geometry. Essential details legible at390px width. Original close exterior side photo of a safely parked passenger car in a quiet paved French parking bay on a sunny warm day. Rear side window slightly open at top, darker rear privacy glass prevents any view of occupants; child is mentioned only in question, do NOT render child anatomy or harness. Front window shut, no people visible. Frame focuses on window, door and roof, no plate or car logo. Soft sunlight and tree shadows. No text, signs, thermometer or solution indication.",
+    "sources": [
+      {
+        "url": "https://www.ameli.fr/assure/sante/themes/canicule-chaleur/canicule-chaleur/protection-specifique-personnes-risque",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "Current health advice explicitly prohibits leaving child alone in parked vehicle even briefly with windows open."
+      }
+    ]
+  },
+  {
+    "scenario_id": "truck_right_indicator_not_overtake_permission",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car knowledge; no commercial-vehicle licence or professional qualification required.",
+    "learning_objective": "Do not treat another driver’s right signal as an authorisation or guarantee to overtake.",
+    "topic": "truck_right_indicator_not_overtake_permission",
+    "scenario": "Truck ahead rightindicatorflashing stated, no hazardfromactualrightturnasked; ownpassingchecksstillrequired.",
+    "novelty_review": "Existing truckblindspot item forbids entering right-side space during wide turn. This asks whether another driver can certify our LEFT overtake with their signal; owncontrols cannot be delegated.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_truck_right_indicator_not_overtake_permission",
+      "category_slug": "overtaking",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Le camion devant moi met son clignotant droit. Ce signal garantit-il à lui seul que je peux le dépasser par la gauche ?",
+          "answer_a": "Oui, le conducteur du camion a vérifié à ma place.",
+          "answer_b": "Non, je dois vérifier moi-même toutes les conditions du dépassement.",
+          "answer_c": "Oui, même si la visibilité est insuffisante.",
+          "answer_d": "Oui, et je peux alors dépasser la vitesse autorisée.",
+          "explanation": "Le clignotant annonce une intention ; ce n’est pas une garantie de passage libre pour le véhicule qui suit. Avant de dépasser par la gauche, je dois moi-même contrôler la visibilité, les usagers, l’espace de retour et le respect des règles."
+        },
+        "en": {
+          "question_text": "The lorry ahead switches on its right indicator. Does this signal alone guarantee that I can overtake on the left?",
+          "answer_a": "Yes, the lorry driver has checked on my behalf.",
+          "answer_b": "No, I must check all overtaking conditions myself.",
+          "answer_c": "Yes, even if visibility is insufficient.",
+          "answer_d": "Yes, and I may then exceed the speed limit.",
+          "explanation": "An indicator communicates an intention; it is not a guarantee of a clear passing route for the following vehicle. Before overtaking on the left, I must check visibility, other road users, return space and compliance with the rules myself."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Mes contrôles ne se délèguent pas.",
+        "b": "La décision reste sous ma responsabilité.",
+        "c": "La visibilité suffisante reste nécessaire.",
+        "d": "Aucune exception de vitesse."
+      },
+      "en": {
+        "a": "My checks cannot be delegated.",
+        "b": "The decision remains my responsibility.",
+        "c": "Adequate visibility is still required.",
+        "d": "There is no speed exemption."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French passenger-car theory scene, 1672x941 or larger. No embedded quiz, answer, annotations, arrows, highlights, watermark or brand names. Realistic French road and vehicle geometry. Essential details legible at390px width. Original driver windscreen view behind a small generic rigid delivery lorry on a quiet straight unmarked French rural two-way road. Lorry keeps RIGHT and is fully in its lane. Its RIGHT REAR amber indicator on imageRIGHT is clearly illuminated; left amber lamp unlit. Other rear lights symmetrical red housings not braking. Simple white box body, two visible rear wheels, no logos or lettering. Rear registration small realistic French format AB-274-CD with blue bands. No cargo hazard labels or unreadable text. Road opposite side empty, grassverges, no road signs, dashboard or people. Proper following gap. The question states flashing, not inferred from still.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842127/",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "R412-10: direction signal communicates intention."
+      },
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842216/",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "R414-4I/II: overtaking driver must establish safety and return space. Inference: another driver’s signal cannot replace these checks."
+      }
+    ]
+  }
+]

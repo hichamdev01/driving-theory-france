@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+  "proposal_sha256": "f5fd45fbc60debd74ed6b1d8cd8b4c7b6ecb1228b1ab3d2f95c93b05d9025674",
+  "image_sha256": "c2f6aa5e26c08459eaf0ead5facf70fd9d2eccc9a4139490fb906a4287ddcbde",
+  "compared_question_keys": [
+    "situation_cmi_parking_card_passenger",
+    "situation_abs_emergency_pedal_pulsation",
+    "situation_left_turn_oncoming_yield",
+    "situation_overtaking_uncontrolled_intersection",
+    "situation_cocaine_false_confidence"
+  ],
+  "checks": {
+    "official_rule": "Checked 2026-10-10. Article7 R16: amber flashing arrow associated with R11 permits indicated direction despite red, cautiously while respecting others’ priority. IISR6 articles109-3 and110-5: R16 direction signal associated with R11, directional arrow and placement.",
+    "novelty": "Existing fixed amber, dark signal and green pedestrian turns do not test permission to cross an associated RED signal in the arrow direction without acquiring priority. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+    "signs_and_text": "R11 has top red lit, middle amber and lower green dark. Separate R16td horizontal right amber arrow at lower-right matches IISR6 figure6; no cycle pictogram, extra lamp or diagonal arrow.",
+    "road_geometry": "Pole at urban pavement edge; narrow background marking not an asserted stop position. Question explicitly places driver in right-turn lane.",
+    "vehicles_and_people": "No pedestrians or vehicles whose priority would be visually contradicted.",
+    "dashboard_and_equipment": "No car dashboard. Signal lenses, hoods, bracket and arrow orientation inspected against official-signal-reference.png.",
+    "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Pole at urban pavement edge; narrow background marking not an asserted stop position. Question explicitly places driver in right-turn lane. No pedestrians or vehicles whose priority would be visually contradicted.",
+    "phone_size": "Inspected saved390px phone-1.jpg. Red main signal and amber right arrow clearly distinct; flashing cannot be proved by still image and is explicitly stated in both translations.",
+    "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Driver is in a right-turn lane. Main R11 is red; separate R16 right arrow flashes. No still image is claimed to prove flashing.",
+    "all_four_options": "Correct set a,b. FR: {\"a\": \"Le mouvement indiqué est autorisé sous conditions.\", \"b\": \"Le devoir de céder le passage demeure.\", \"c\": \"L’autorisation ne concerne pas la direction tout droit.\", \"d\": \"Les piétons prioritaires restent prioritaires.\"} EN: {\"a\": \"The indicated movement is conditionally permitted.\", \"b\": \"The duty to give way remains.\", \"c\": \"Straight ahead is not authorised by a right arrow.\", \"d\": \"Pedestrian priority is not removed.\"}"
+  }
+}

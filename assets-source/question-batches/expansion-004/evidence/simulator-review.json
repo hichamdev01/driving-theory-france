@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "device": "iPhone 17 Pro / iOS26.5 / B49BFA96-2E2B-4EBD-BF84-0860E2C2FD3B",
+  "date": "2026-10-10",
+  "method": "Actual app via DEBUG ContentReviewKeys, canonical answer order, French. Each question image and heading visually inspected via CUA screenshot, every option and feedback read via accessibility; long questions scrolled. Screenshots are in conversation tool output, not separate saved files.",
+  "observed_in_order": [
+    "ead_restriction_borrowed_car: B correct; no progress write",
+    "ead_personal_breath_no_substitute: D correct; corrected handset image",
+    "motorway_long_combination_two_right_lanes: C correct; three clear lanes",
+    "motorway_long_combinations_fifty_metre_gap: A correct; entire long stem and options accessible by scrolling",
+    "r16_right_arrow_conditional_passage: multiple instruction; A only correctly scores Incorrect and displays A+B as correct",
+    "b10a_combination_total_length: C correct;7m legible",
+    "parked_engine_unnecessary_idling: B correct",
+    "night_overtake_warning_headlights: A correct; night scene legible",
+    "temporary_spare_wheel_speed_label: D correct;80km/h visible",
+    "signed_accident_report_no_front_changes: multiple instruction;B+D correctly scores Correct"
+  ],
+  "defect": "Resolved: incorrect multiple-answer feedback now selects the plural FR/EN label. No detected unresolved batch content defects.",
+  "other_observations": "Existing scrolled content can pass behind status bar; all questions/options/feedback remain accessible. No content mismatch or image-loading failure detected. Dismissed unrelated Apple-account verification using Not Now; no account changes.",
+  "repair_verified": "36 native tests passed after plural-label repair. Actual English incorrect signed-report set A+B+D shows The correct answers are; incorrect spare-wheel A shows singular The correct answer is; French R16 A-only shows Incorrect and Les bonnes réponses sont : A...B.... Correct complete English R16 A+B passed. Long English 50-metre question readable, A scores Correct. Normal English home restored,54 of428 explored."
+}

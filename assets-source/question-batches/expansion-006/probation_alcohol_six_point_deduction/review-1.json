@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "92375e1f2b26ee9efe322387da7b88cd404d93bddcea85836bb652aa0599e51e",
+  "image_sha256": "98db2ad682de48dfe3a59617c29eed74d925c05b870f4e9960ad8fdd11578cb2",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+  "compared_question_keys": [
+    "alcohol_probationary_limit",
+    "alcohol_general_limit",
+    "situation_breath_test_probationary_limit",
+    "situation_probationary_one_glass_risk",
+    "situation_breath_test_general_limit"
+  ],
+  "checks": {
+    "official_rule": "R234-1 I1 and IV: probation0.2 threshold; contravention six points. Current article read. Probationary licence initial balance6points.",
+    "novelty": "Existing questions test blood/breath thresholds and offence classification/max imprisonment. No current item asks the six-point deduction; no invented timing or recovery claim. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+    "signs_and_text": "Correct plain white novice disc with red A at left rear body; no red border or other text.",
+    "road_geometry": "Stationary-car closeup with hedge/kerb; no traffic or road markings.",
+    "vehicles_and_people": "Rear hatch/window, left mirror and lamp plausible; no occupant action claimed.",
+    "dashboard_and_equipment": "Rear wiper, defroster lines, head restraints and upper brake-light housing consistent. A disc does not hide lamp/window.",
+    "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. Correct plain white novice disc with red A at left rear body; no red border or other text. Rear wiper, defroster lines, head restraints and upper brake-light housing consistent. A disc does not hide lamp/window.",
+    "phone_size": "At390px A disc clear; numeric alcohol and sanction facts supplied in both stems.",
+    "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. Probationary car driver verified blood0.30g/L; ask point deduction alone, not instantaneous licence status.",
+    "all_four_options": "Correct set c. {'fr': {'a': 'Le seuil probatoire est inférieur.', 'b': 'Le retrait est de six points.', 'c': 'R234-1 IV prévoit six points.', 'd': 'Ni trois points ni condition d’accident.'}, 'en': {'a': 'The probationary threshold is lower.', 'b': 'The deduction is six points.', 'c': 'R234-1 IV specifies six points.', 'd': 'Neither three points nor a collision condition applies.'}}"
+  }
+}

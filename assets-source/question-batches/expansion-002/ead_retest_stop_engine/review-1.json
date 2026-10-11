@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "proposal_sha256": "45e267470e312337bf1ca2e6177197a2e58464c4e25a8c5cd7db5180806afe22",
+  "image_sha256": "6078a7d8960738d14627fc7ef0cf676f7722466a822df401c1304bb628de0da4",
+  "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+  "compared_question_keys": [
+    "situation_rear_passenger_seatbelt",
+    "situation_temporary_yellow_lane_shift",
+    "situation_garage_exit_sidewalk_pedestrian",
+    "situation_front_load_no_projection",
+    "situation_motorway_toll_intercom_problem"
+  ],
+  "checks": {
+    "official_rule": "Reviewed authoritative sources checked 2026-10-09: Updated 25 September 2026: repeat request 5–30 minutes after starting; 20-minute interval to perform it, with both vehicle and engine stopped. Only the stopped procedure is tested.",
+    "novelty": "The bank tests ordinary breath-test thresholds and refusals, not the procedure for a repeat interlock test during a journey. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+    "signs_and_text": "No signs or readable text; screen is neutral dark rather than a fabricated measurement.",
+    "road_geometry": "Close centre-console crop; no roadway or implied manoeuvre.",
+    "vehicles_and_people": "No hands or people shown blowing while driving. Device secured in cradle.",
+    "dashboard_and_equipment": "Plausible handset with mouthpiece, screen, button and attached coiled cable routed out of crop; normal gear lever and upholstery. Request timing is explicit in stem, not an inferred reading.",
+    "full_resolution": "Viewed exact staged scene-1.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No signs or readable text; screen is neutral dark rather than a fabricated measurement. Plausible handset with mouthpiece, screen, button and attached coiled cable routed out of crop; normal gear lever and upholstery. Request timing is explicit in stem, not an inferred reading.",
+    "phone_size": "Viewed phone-preview-1.jpg at 390 px. Handset, mouthpiece and wired mounting remain visible at 390 px; no screen reading needed.",
+    "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: An authorised installed alcohol ignition interlock requests a repeat test during a journey. The stated request must be handled according to its permitted interval, not by blowing while driving.",
+    "all_four_options": "Correct set b,d. FR: A: Incorrect : pas de souffle au volant en mouvement.; B: Correct : immobiliser en sécurité.; C: Incorrect : contrôle personnel du conducteur.; D: Correct : moteur également arrêté. EN: A: Incorrect: do not provide the sample while moving.; B: Correct: stop safely.; C: Incorrect: the driver must provide their own sample.; D: Correct: the engine must also be off."
+  }
+}

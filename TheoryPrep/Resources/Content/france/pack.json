@@ -9512,6 +9512,2704 @@
         }
       },
       "image_path": "france/situation_safety_head_restraint_neck_protection.jpg"
+    },
+    {
+      "key": "situation_motorway_wrongway_alert_no_overtake",
+      "category_slug": "motorways",
+      "correct_answer": "a",
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Un véhicule est signalé à contresens sur mon autoroute. Quelle conduite adopter ?",
+          "answer_a": "Je renonce à dépasser et rejoins la prochaine aire accessible en gardant mes distances.",
+          "answer_b": "Je dépasse rapidement pour quitter la zone.",
+          "answer_c": "Je m’arrête immédiatement sur la voie de droite.",
+          "answer_d": "Je me place sur la bande d’arrêt d’urgence pour continuer.",
+          "explanation": "Une alerte de contresens impose une grande prudence. Je ne dépasse pas, je conserve une distance suffisante et je m’arrête sur la prochaine aire accessible. La bande d’arrêt d’urgence ne sert ni à poursuivre le trajet ni à attendre cette alerte."
+        },
+        "en": {
+          "question_text": "A vehicle is reported travelling the wrong way on my motorway. What should I do?",
+          "answer_a": "Avoid overtaking and head to the next accessible rest area while keeping a safe gap.",
+          "answer_b": "Overtake quickly to leave the area.",
+          "answer_c": "Stop immediately in the right-hand traffic lane.",
+          "answer_d": "Continue driving along the emergency shoulder.",
+          "explanation": "A wrong-way alert calls for extra caution. Avoid overtaking, keep a safe gap and stop at the next accessible rest area. Do not use the emergency shoulder to continue driving or to wait out the alert."
+        }
+      },
+      "image_path": "france/situation_motorway_wrongway_alert_no_overtake.jpg"
+    },
+    {
+      "key": "situation_motorway_planned_break_two_hours",
+      "category_slug": "motorways",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Après environ deux heures de conduite sur autoroute, je me sens encore alerte. Quelle bonne habitude adopter ?",
+          "answer_a": "Attendre les premiers bâillements pour faire une pause.",
+          "answer_b": "Faire une pause d’environ 15 à 20 minutes sur une aire.",
+          "answer_c": "Continuer deux heures de plus en ouvrant la fenêtre.",
+          "answer_d": "Remplacer la pause par un café bu en roulant.",
+          "explanation": "Il est recommandé de prévoir une pause d’environ 15 à 20 minutes au moins toutes les deux heures, même sans fatigue ressentie. Si la somnolence apparaît plus tôt, je m’arrête dès que possible dans un lieu sûr."
+        },
+        "en": {
+          "question_text": "After about two hours of motorway driving, I still feel alert. What is a good habit?",
+          "answer_a": "Wait until I start yawning before taking a break.",
+          "answer_b": "Take a break of about 15 to 20 minutes at a rest area.",
+          "answer_c": "Drive for another two hours with the window open.",
+          "answer_d": "Replace the break with coffee while driving.",
+          "explanation": "Plan a break of about 15 to 20 minutes at least every two hours, even if you do not feel tired. If drowsiness appears sooner, stop as soon as possible in a safe place."
+        }
+      },
+      "image_path": "france/situation_motorway_planned_break_two_hours.jpg"
+    },
+    {
+      "key": "situation_speed_reaction_one_second_90",
+      "category_slug": "speed_limits",
+      "correct_answer": "c",
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "À 90 km/h, avec un temps de réaction d’une seconde, quelle distance est parcourue avant le début du freinage ?",
+          "answer_a": "Environ 9 mètres.",
+          "answer_b": "Environ 15 mètres.",
+          "answer_c": "Environ 25 mètres.",
+          "answer_d": "Environ 90 mètres.",
+          "explanation": "90 km/h correspondent à 25 mètres par seconde. Pendant une seconde de réaction, la voiture parcourt donc environ 25 mètres avant que le freinage commence. La distance de freinage s’ajoute ensuite."
+        },
+        "en": {
+          "question_text": "At 90 km/h, with a reaction time of one second, how far does the car travel before braking begins?",
+          "answer_a": "About 9 metres.",
+          "answer_b": "About 15 metres.",
+          "answer_c": "About 25 metres.",
+          "answer_d": "About 90 metres.",
+          "explanation": "90 km/h equals 25 metres per second. During a one-second reaction time, the car therefore travels about 25 metres before braking begins. The braking distance must then be added."
+        }
+      },
+      "image_path": "france/situation_speed_reaction_one_second_90.jpg"
+    },
+    {
+      "key": "situation_speed_double_braking_distance_quadruples",
+      "category_slug": "speed_limits",
+      "correct_answer": "d",
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "À adhérence et conditions de freinage identiques, si la vitesse double, la distance de freinage est approximativement :",
+          "answer_a": "Divisée par deux.",
+          "answer_b": "Inchangée.",
+          "answer_c": "Multipliée par deux.",
+          "answer_d": "Multipliée par quatre.",
+          "explanation": "Dans les mêmes conditions, la distance de freinage augmente approximativement avec le carré de la vitesse : doubler la vitesse la multiplie donc par quatre. Cela concerne le freinage, pas à lui seul toute la distance d’arrêt."
+        },
+        "en": {
+          "question_text": "With the same grip and braking conditions, if speed doubles, the braking distance is approximately:",
+          "answer_a": "Halved.",
+          "answer_b": "Unchanged.",
+          "answer_c": "Doubled.",
+          "answer_d": "Multiplied by four.",
+          "explanation": "Under the same conditions, braking distance increases approximately with the square of speed, so doubling speed multiplies it by four. This describes braking distance, not the whole stopping distance on its own."
+        }
+      },
+      "image_path": "france/situation_speed_double_braking_distance_quadruples.jpg"
+    },
+    {
+      "key": "situation_parking_camera_requires_direct_checks",
+      "category_slug": "parking_stopping",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Pour me garer en marche arrière, l’écran de la caméra semble dégagé. Puis-je regarder uniquement cet écran ?",
+          "answer_a": "Non, je contrôle aussi directement les alentours, les rétroviseurs et les angles morts.",
+          "answer_b": "Oui, la caméra couvre forcément tous les angles morts.",
+          "answer_c": "Oui, si je recule assez vite pour finir rapidement.",
+          "answer_d": "Oui, dès lors qu’aucun signal sonore ne retentit.",
+          "explanation": "La caméra de recul est une aide. Des obstacles ou des usagers peuvent rester hors de son champ. Je complète l’écran par les contrôles autour du véhicule et je manœuvre lentement, prêt à m’arrêter."
+        },
+        "en": {
+          "question_text": "The reversing-camera screen looks clear as I prepare to park. May I watch only that screen?",
+          "answer_a": "No, I also check the surroundings directly, the mirrors and blind spots.",
+          "answer_b": "Yes, the camera necessarily covers every blind spot.",
+          "answer_c": "Yes, if I reverse fast enough to finish quickly.",
+          "answer_d": "Yes, provided no warning sound is heard.",
+          "explanation": "A reversing camera is an aid. Obstacles or road users may remain outside its view. Supplement the screen with checks around the vehicle and manoeuvre slowly, ready to stop."
+        }
+      },
+      "image_path": "france/situation_parking_camera_requires_direct_checks.jpg"
+    },
+    {
+      "key": "situation_parking_disc_actual_arrival",
+      "category_slug": "parking_stopping",
+      "correct_answer": "b",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Je viens de me garer sur une place où le disque est obligatoire. Quelle heure dois-je y indiquer ?",
+          "answer_a": "L’heure à laquelle je pense revenir.",
+          "answer_b": "Mon heure réelle d’arrivée.",
+          "answer_c": "L’heure de fermeture des commerces.",
+          "answer_d": "L’heure d’arrivée augmentée de la durée autorisée.",
+          "explanation": "Le disque sert à contrôler la durée du stationnement à partir de l’arrivée. J’y indique mon heure réelle d’arrivée et je le place de façon lisible derrière le pare-brise. La durée maximale dépend de la réglementation locale."
+        },
+        "en": {
+          "question_text": "I have just parked in a bay where a parking disc is required. Which time should I set?",
+          "answer_a": "The time when I expect to return.",
+          "answer_b": "My actual arrival time.",
+          "answer_c": "The time when the shops close.",
+          "answer_d": "My arrival time plus the permitted duration.",
+          "explanation": "The disc allows the parking duration to be checked from arrival. Set the actual arrival time and display it clearly behind the windscreen. The maximum stay depends on the local rules."
+        }
+      },
+      "image_path": "france/situation_parking_disc_actual_arrival.jpg"
+    },
+    {
+      "key": "situation_overtake_signal_before_moving_left",
+      "category_slug": "overtaking",
+      "correct_answer": "c",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "Les contrôles confirment que le dépassement est possible. Quand dois-je actionner le clignotant gauche ?",
+          "answer_a": "Seulement lorsque je suis à côté de la voiture.",
+          "answer_b": "Après avoir franchi la ligne centrale.",
+          "answer_c": "Avant de me déporter, pour annoncer ma manœuvre.",
+          "answer_d": "Uniquement si un conducteur me suit.",
+          "explanation": "J’annonce mon intention avant de me déporter à gauche. Le clignotant informe les autres usagers ; il ne donne aucune priorité et ne remplace pas les contrôles de sécurité."
+        },
+        "en": {
+          "question_text": "My checks confirm that overtaking is safe. When should I use the left indicator?",
+          "answer_a": "Only when I am alongside the other car.",
+          "answer_b": "After crossing the centre line.",
+          "answer_c": "Before moving out, to signal my manoeuvre.",
+          "answer_d": "Only if another driver is behind me.",
+          "explanation": "Signal the intention before moving out to the left. The indicator informs other road users; it gives no priority and does not replace safety checks."
+        }
+      },
+      "image_path": "france/situation_overtake_signal_before_moving_left.jpg"
+    },
+    {
+      "key": "situation_priority_officer_over_green_light",
+      "category_slug": "priority_rules",
+      "correct_answer": "d",
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "L’agent maintient ses deux bras tendus horizontalement. Quels conducteurs son geste oblige-t-il à s’arrêter ?",
+          "answer_a": "Seulement ceux qui arrivent de sa gauche.",
+          "answer_b": "Seulement ceux qui arrivent de sa droite.",
+          "answer_c": "Uniquement ceux qui voient son visage.",
+          "answer_d": "Ceux qui arrivent face à lui ou dans son dos.",
+          "explanation": "Les bras tendus horizontalement imposent l’arrêt aux usagers venant des directions qui coupent l’axe des bras. Les conducteurs placés face à l’agent et ceux arrivant dans son dos doivent donc s’arrêter. Il faut observer sa position et son geste."
+        },
+        "en": {
+          "question_text": "The officer holds both arms out horizontally. Which approaching drivers does this signal require to stop?",
+          "answer_a": "Only drivers approaching from the officer’s left.",
+          "answer_b": "Only drivers approaching from the officer’s right.",
+          "answer_c": "Only drivers who can see the officer’s face.",
+          "answer_d": "Drivers approaching the officer from the front or from behind.",
+          "explanation": "Arms held horizontally stop road users approaching from directions that cross the line of the arms. Drivers facing the officer and those approaching from behind the officer must therefore stop. Observe both the officer’s position and gesture."
+        }
+      },
+      "image_path": "france/situation_priority_officer_over_green_light.jpg"
+    },
+    {
+      "key": "situation_alcohol_carrying_breathalyser_optional",
+      "category_slug": "alcohol_drugs",
+      "correct_answer": "a",
+      "difficulty": "easy",
+      "translations": {
+        "fr": {
+          "question_text": "En France, dois-je obligatoirement emporter un éthylotest de dépistage dans ma voiture particulière ?",
+          "answer_a": "Non, en avoir un à bord n’est pas obligatoire.",
+          "answer_b": "Oui, dans toute voiture sans exception.",
+          "answer_c": "Oui, mais seulement sur autoroute.",
+          "answer_d": "Oui, mais seulement avec un permis probatoire.",
+          "explanation": "La présence d’un éthylotest de dépistage dans une voiture n’est pas obligatoire. Cela ne change pas l’interdiction de conduire avec une alcoolémie atteignant le seuil applicable. Un autotest ne doit pas être confondu avec un dispositif antidémarrage imposé à certains conducteurs."
+        },
+        "en": {
+          "question_text": "In France, must I carry a self-test breathalyser in my private car?",
+          "answer_a": "No, carrying one is not compulsory.",
+          "answer_b": "Yes, in every car without exception.",
+          "answer_c": "Yes, but only on motorways.",
+          "answer_d": "Yes, but only with a probationary licence.",
+          "explanation": "Carrying a self-test breathalyser in a car is not compulsory. This does not change the ban on driving at or above the applicable alcohol threshold. A self-test is different from an alcohol ignition interlock imposed on certain drivers."
+        }
+      },
+      "image_path": "france/situation_alcohol_carrying_breathalyser_optional.jpg"
+    },
+    {
+      "key": "situation_safety_oil_pressure_stop_engine",
+      "category_slug": "safety",
+      "correct_answer": "b",
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "En roulant, le témoin rouge de pression d’huile reste allumé avec l’alerte STOP. Que dois-je faire ?",
+          "answer_a": "Continuer jusqu’à la prochaine révision.",
+          "answer_b": "M’arrêter dès que possible en sécurité, puis couper le moteur.",
+          "answer_c": "Accélérer pour rétablir la pression.",
+          "answer_d": "Laisser tourner le moteur longtemps à l’arrêt.",
+          "explanation": "Une alerte persistante de pression d’huile peut signaler une lubrification insuffisante. Je m’immobilise dès que les conditions le permettent en sécurité, puis je coupe le moteur et demande une assistance adaptée. Je ne poursuis pas le trajet."
+        },
+        "en": {
+          "question_text": "While driving, the red oil-pressure warning stays on with the STOP alert. What should I do?",
+          "answer_a": "Continue until the next scheduled service.",
+          "answer_b": "Stop safely as soon as possible, then switch off the engine.",
+          "answer_c": "Accelerate to restore the pressure.",
+          "answer_d": "Leave the engine idling for a long time.",
+          "explanation": "A persistent oil-pressure alert may indicate inadequate lubrication. Stop as soon as it is safe, then switch off the engine and seek appropriate assistance. Do not continue the journey."
+        }
+      },
+      "image_path": "france/situation_safety_oil_pressure_stop_engine.jpg"
+    },
+    {
+      "key": "situation_first_aid_conscious_waiting_care",
+      "category_slug": "safety",
+      "correct_answers": [
+        "a",
+        "c"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Les lieux sont sécurisés et les secours prévenus. Cette personne blessée est consciente, sans danger immédiat ni saignement important. En attendant, que puis-je faire ?",
+          "answer_a": "La couvrir sans la déplacer.",
+          "answer_b": "Lui donner de l’eau.",
+          "answer_c": "Rester près d’elle et la rassurer.",
+          "answer_d": "La faire marcher pour la réchauffer.",
+          "explanation": "Je la protège du froid et la rassure. Je ne lui donne rien à boire et ne la déplace pas inutilement."
+        },
+        "en": {
+          "question_text": "The scene is safe and help has been called. This injured person is conscious, with no immediate danger or major bleeding. While waiting, what can I do?",
+          "answer_a": "Cover them without moving them.",
+          "answer_b": "Give them water.",
+          "answer_c": "Stay nearby and reassure them.",
+          "answer_d": "Make them walk to warm up.",
+          "explanation": "I keep the conscious person warm and reassure them while waiting for help. I do not give them drinks or move them unnecessarily."
+        }
+      },
+      "image_path": "france/situation_first_aid_conscious_waiting_care.jpg"
+    },
+    {
+      "key": "situation_coolant_hot_cap_wait",
+      "category_slug": "safety",
+      "correct_answers": [
+        "b"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Après un trajet, ma voiture est garée, contact coupé, mais le moteur est encore chaud. Pour contrôler le liquide de refroidissement, je dois :",
+          "answer_a": "Dévisser immédiatement le bouchon.",
+          "answer_b": "Attendre le refroidissement et suivre la notice.",
+          "answer_c": "Ouvrir le bouchon en gardant le moteur en marche.",
+          "answer_d": "Percer le bouchon pour libérer la pression.",
+          "explanation": "Le circuit chaud peut provoquer des brûlures. Je n’ouvre pas le bouchon à chaud ; je respecte les consignes du constructeur."
+        },
+        "en": {
+          "question_text": "After a journey, my car is parked with the ignition off, but the engine is still hot. To check the coolant, I should:",
+          "answer_a": "Unscrew the cap immediately.",
+          "answer_b": "Wait for it to cool and follow the manual.",
+          "answer_c": "Open the cap with the engine running.",
+          "answer_d": "Pierce the cap to release pressure.",
+          "explanation": "A hot cooling system can cause burns. I do not open its cap while hot and follow the manufacturer’s instructions."
+        }
+      },
+      "image_path": "france/situation_coolant_hot_cap_wait.jpg"
+    },
+    {
+      "key": "situation_aac_accompanying_adult_alcohol",
+      "category_slug": "alcohol_drugs",
+      "correct_answers": [
+        "d"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "En conduite accompagnée, l’accompagnateur a 0,80 g/L d’alcool dans le sang. L’élève est sobre. L’accompagnateur peut-il assurer ce trajet ?",
+          "answer_a": "Oui, puisqu’il ne tient pas le volant.",
+          "answer_b": "Oui, si le trajet dure moins de dix minutes.",
+          "answer_c": "Oui, s’il ne présente aucun signe d’ivresse.",
+          "answer_d": "Non, les dispositions sur l’alcool s’appliquent aussi à lui.",
+          "explanation": "L’article L234-1 s’applique également à l’accompagnateur d’un élève conducteur. La place passager et l’absence de signes d’ivresse ne l’exemptent pas."
+        },
+        "en": {
+          "question_text": "During accompanied driving practice, the supervising adult has a blood alcohol level of 0.80 g/L. The learner is sober. May this adult supervise the trip?",
+          "answer_a": "Yes, because they are not steering.",
+          "answer_b": "Yes, if the trip lasts under ten minutes.",
+          "answer_c": "Yes, if they show no signs of drunkenness.",
+          "answer_d": "No, the alcohol provisions also apply to them.",
+          "explanation": "Article L234-1 also applies to an adult supervising a learner driver. Sitting in the passenger seat and appearing sober provide no exemption."
+        }
+      },
+      "image_path": "france/situation_aac_accompanying_adult_alcohol.jpg"
+    },
+    {
+      "key": "situation_otc_medicine_not_driving_guarantee",
+      "category_slug": "alcohol_drugs",
+      "correct_answers": [
+        "c"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "J’ai acheté un médicament sans ordonnance. Cela garantit-il qu’il est sans risque pour la conduite ?",
+          "answer_a": "Oui, tous les médicaments en vente libre sont compatibles.",
+          "answer_b": "Oui, si je ne prends qu’une seule dose.",
+          "answer_c": "Non, je vérifie la notice et demande conseil au pharmacien.",
+          "answer_d": "Oui, dès lors que le trajet est court.",
+          "explanation": "Un médicament sans ordonnance peut aussi altérer la conduite. Je vérifie ses précautions avant de prendre le volant."
+        },
+        "en": {
+          "question_text": "I bought a medicine without a prescription. Does that guarantee it is safe for driving?",
+          "answer_a": "Yes, all over-the-counter medicines are suitable.",
+          "answer_b": "Yes, if I take only one dose.",
+          "answer_c": "No, I check the leaflet and ask a pharmacist.",
+          "answer_d": "Yes, provided the trip is short.",
+          "explanation": "Non-prescription medicines can also affect driving. I check the precautions before getting behind the wheel."
+        }
+      },
+      "image_path": "france/situation_otc_medicine_not_driving_guarantee.jpg"
+    },
+    {
+      "key": "situation_limiter_no_braking_downhill",
+      "category_slug": "speed_limits",
+      "correct_answers": [
+        "a"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Dans cette descente, mon limiteur agit seulement sur le moteur, jamais sur les freins. Que dois-je savoir ?",
+          "answer_a": "La vitesse peut dépasser la consigne : je dois la maîtriser.",
+          "answer_b": "La consigne ne peut jamais être dépassée.",
+          "answer_c": "Le limiteur actionne forcément les freins.",
+          "answer_d": "Je peux cesser de surveiller la vitesse.",
+          "explanation": "Un limiteur sans action sur les freins peut être dépassé en forte descente. Je surveille ma vitesse et adapte ma conduite."
+        },
+        "en": {
+          "question_text": "On this descent, my limiter controls engine power only and never applies the brakes. What should I know?",
+          "answer_a": "Speed may exceed the setting: I must control it.",
+          "answer_b": "The set speed can never be exceeded.",
+          "answer_c": "The limiter necessarily applies the brakes.",
+          "answer_d": "I can stop monitoring my speed.",
+          "explanation": "A limiter without brake control may not hold the set speed on a steep descent. I monitor my speed and adjust my driving."
+        }
+      },
+      "image_path": "france/situation_limiter_no_braking_downhill.jpg"
+    },
+    {
+      "key": "situation_cmi_parking_card_passenger",
+      "category_slug": "parking_stopping",
+      "correct_answers": [
+        "b",
+        "d"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Je transporte une personne titulaire d’une CMI « stationnement » valide. Pour stationner avec elle, quelles affirmations sont exactes ?",
+          "answer_a": "La carte est utilisable seulement si son titulaire conduit.",
+          "answer_b": "Je peux l’utiliser pour ce déplacement avec son titulaire.",
+          "answer_c": "Je pourrai aussi l’utiliser seul pour mes courses personnelles.",
+          "answer_d": "Je dois la placer en évidence à l’intérieur, contre le pare-brise.",
+          "explanation": "Le droit est lié au titulaire, conducteur ou passager. La carte doit être visible et ne m’autorise pas à l’utiliser lors de mes déplacements sans lui."
+        },
+        "en": {
+          "question_text": "I am carrying someone with a valid CMI parking card. When parking with them, which statements are correct?",
+          "answer_a": "The card is usable only if its holder drives.",
+          "answer_b": "I may use it for this trip with its holder.",
+          "answer_c": "I may also use it alone for my own shopping.",
+          "answer_d": "I must display it clearly inside against the windscreen.",
+          "explanation": "The right belongs to the holder, whether driver or passenger. The card must be visible and does not entitle me to use it on trips without them."
+        }
+      },
+      "image_path": "france/situation_cmi_parking_card_passenger.jpg"
+    },
+    {
+      "key": "situation_amber_beacon_alone_no_priority",
+      "category_slug": "priority_rules",
+      "correct_answers": [
+        "b"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Ce véhicule d’entretien porte un gyrophare orange. Ce feu, à lui seul, lui donne-t-il la priorité au carrefour ?",
+          "answer_a": "Oui, sur tous les autres usagers.",
+          "answer_b": "Non, il signale un véhicule à remarquer avec prudence.",
+          "answer_c": "Oui, mais seulement en agglomération.",
+          "answer_d": "Oui, dès qu’il roule lentement.",
+          "explanation": "Le gyrophare orange avertit notamment de la présence d’un véhicule lent ou encombrant. À lui seul, il n’accorde pas la priorité ; je reste prudent et applique les règles du carrefour."
+        },
+        "en": {
+          "question_text": "This maintenance vehicle has an amber beacon. Does that light alone give it priority at the junction?",
+          "answer_a": "Yes, over every other road user.",
+          "answer_b": "No, it warns me to pay particular attention.",
+          "answer_c": "Yes, but only in built-up areas.",
+          "answer_d": "Yes, whenever it is moving slowly.",
+          "explanation": "An amber beacon warns of a vehicle that may be slow or bulky. By itself, it grants no priority; I remain cautious and follow the junction’s rules."
+        }
+      },
+      "image_path": "france/situation_amber_beacon_alone_no_priority.jpg"
+    },
+    {
+      "key": "situation_short_left_turn_lane_arrow",
+      "category_slug": "road_signs",
+      "correct_answers": [
+        "c"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Je suis dans cette courte voie spécialisée. Quelle direction indique la flèche peinte dans ma voie ?",
+          "answer_a": "Tout droit uniquement.",
+          "answer_b": "À droite uniquement.",
+          "answer_c": "À gauche uniquement.",
+          "answer_d": "Tout droit ou à gauche.",
+          "explanation": "La flèche directionnelle de cette voie indique seulement la gauche. Elle ne comporte pas de branche autorisant à continuer tout droit."
+        },
+        "en": {
+          "question_text": "I am in this short dedicated turn lane. Which direction does the arrow painted in my lane indicate?",
+          "answer_a": "Straight ahead only.",
+          "answer_b": "Right only.",
+          "answer_c": "Left only.",
+          "answer_d": "Straight ahead or left.",
+          "explanation": "This lane’s directional arrow points left only. Its single branch indicates a left turn; it has no additional branch permitting travel straight ahead."
+        }
+      },
+      "image_path": "france/situation_short_left_turn_lane_arrow.jpg"
+    },
+    {
+      "key": "situation_night_following_before_overtake_dipped",
+      "category_slug": "overtaking",
+      "correct_answers": [
+        "d"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "De nuit, je suis cette voiture sans avoir commencé à dépasser. Mes feux de route risqueraient d’éblouir son conducteur dans les rétroviseurs. Quel éclairage dois-je utiliser ?",
+          "answer_a": "Les feux de route puisqu’il n’y a personne en face.",
+          "answer_b": "Les feux de position seuls.",
+          "answer_c": "Aucun feu tant que je reste derrière elle.",
+          "answer_d": "Les feux de croisement.",
+          "explanation": "Avant de dépasser, je ne dois pas éblouir le conducteur que je suis. J’utilise les feux de croisement ; l’absence de véhicule en face ne suffit pas à justifier les feux de route."
+        },
+        "en": {
+          "question_text": "At night, I am following this car and have not started overtaking. Main beam would dazzle its driver through the mirrors. Which lights should I use?",
+          "answer_a": "Main beam because there is no oncoming traffic.",
+          "answer_b": "Sidelights alone.",
+          "answer_c": "No lights while I remain behind it.",
+          "answer_d": "Dipped headlights.",
+          "explanation": "Before overtaking, I must not dazzle the driver ahead. I use dipped headlights; an empty opposing lane alone does not justify main beam."
+        }
+      },
+      "image_path": "france/situation_night_following_before_overtake_dipped.jpg"
+    },
+    {
+      "key": "situation_motorway_blowout_initial_control",
+      "category_slug": "motorways",
+      "correct_answers": [
+        "a"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Sur cette autoroute, un pneu éclate brusquement alors que je roule. Quelle est ma première réaction ?",
+          "answer_a": "Tenir fermement le volant et éviter les gestes brusques.",
+          "answer_b": "Freiner immédiatement de toutes mes forces.",
+          "answer_c": "Donner un grand coup de volant vers la droite.",
+          "answer_d": "Serrer immédiatement le frein de stationnement.",
+          "explanation": "Je cherche d’abord à maintenir la trajectoire, sans freinage brutal ni écart soudain. Je ralentis ensuite progressivement pour rejoindre un endroit sûr."
+        },
+        "en": {
+          "question_text": "A tyre suddenly bursts while I am driving on this motorway. What is my first response?",
+          "answer_a": "Hold the wheel firmly and avoid abrupt inputs.",
+          "answer_b": "Brake as hard as possible immediately.",
+          "answer_c": "Swerve sharply to the right.",
+          "answer_d": "Apply the parking brake immediately.",
+          "explanation": "I first maintain the car’s direction without harsh braking or sudden steering. I then slow progressively to reach a safe place."
+        }
+      },
+      "image_path": "france/situation_motorway_blowout_initial_control.jpg"
+    },
+    {
+      "key": "situation_abs_emergency_pedal_pulsation",
+      "category_slug": "safety",
+      "correct_answers": [
+        "a",
+        "d"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Lors d’un freinage d’urgence, l’ABS de ma voiture entre en action et la pédale vibre. Quelles affirmations sont exactes ?",
+          "answer_a": "Je maintiens une forte pression continue sur le frein.",
+          "answer_b": "Je pompe sur la pédale pour aider l’ABS.",
+          "answer_c": "Je relâche le frein dès les premières vibrations.",
+          "answer_d": "Ces vibrations peuvent être normales lorsque l’ABS agit.",
+          "explanation": "L’ABS module le freinage pour éviter le blocage des roues. Je maintiens une pression forte et continue, sans pomper ; les pulsations de la pédale peuvent accompagner son fonctionnement."
+        },
+        "en": {
+          "question_text": "During emergency braking, my car’s ABS activates and the brake pedal pulses. Which statements are correct?",
+          "answer_a": "I maintain firm, continuous pressure on the brake.",
+          "answer_b": "I pump the pedal to help the ABS.",
+          "answer_c": "I release the brake as soon as it pulses.",
+          "answer_d": "Pulsation can be normal while ABS is working.",
+          "explanation": "ABS modulates braking to prevent wheel lock. I maintain firm, continuous pressure without pumping; pedal pulsation can be a normal part of ABS operation."
+        }
+      },
+      "image_path": "france/situation_abs_emergency_pedal_pulsation.jpg"
+    },
+    {
+      "key": "situation_ecall_accidental_connected_call",
+      "category_slug": "safety",
+      "correct_answers": [
+        "b"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Ma voiture est garée en sécurité. J’ai déclenché le bouton SOS par erreur et un opérateur me répond. Que faire ?",
+          "answer_a": "Quitter la voiture sans répondre.",
+          "answer_b": "Expliquer l’erreur à l’opérateur et suivre ses consignes.",
+          "answer_c": "Débrancher immédiatement la batterie.",
+          "answer_d": "Appuyer plusieurs fois sur SOS pour annuler.",
+          "explanation": "Je précise qu’il s’agit d’un déclenchement accidentel et qu’il n’y a pas d’urgence. Une fois la communication établie, je laisse l’opérateur gérer sa fin et je suis ses consignes."
+        },
+        "en": {
+          "question_text": "My car is safely parked. I pressed the SOS button accidentally and an operator has answered. What should I do?",
+          "answer_a": "Leave the car without answering.",
+          "answer_b": "Explain the mistake to the operator and follow their instructions.",
+          "answer_c": "Immediately disconnect the battery.",
+          "answer_d": "Press SOS repeatedly to cancel.",
+          "explanation": "I explain that the call was accidental and there is no emergency. Once connected, I let the operator manage the end of the call and follow their instructions."
+        }
+      },
+      "image_path": "france/situation_ecall_accidental_connected_call.jpg"
+    },
+    {
+      "key": "situation_ead_retest_stop_engine",
+      "category_slug": "alcohol_drugs",
+      "correct_answers": [
+        "b",
+        "d"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Mon éthylotest antidémarrage demande un nouveau souffle pendant le trajet. Avant de souffler, je dois :",
+          "answer_a": "Garder le volant d’une main et souffler en roulant.",
+          "answer_b": "M’arrêter dans un endroit sûr.",
+          "answer_c": "Demander à mon passager de souffler à ma place.",
+          "answer_d": "Arrêter aussi le moteur.",
+          "explanation": "Le contrôle demandé par l’EAD doit être réalisé véhicule et moteur arrêtés. Je rejoins un lieu sûr dans le délai prévu ; je ne souffle pas en conduisant et personne ne souffle à ma place."
+        },
+        "en": {
+          "question_text": "My alcohol ignition interlock requests another breath sample during a journey. Before providing it, I must:",
+          "answer_a": "Steer with one hand and blow while driving.",
+          "answer_b": "Stop in a safe place.",
+          "answer_c": "Ask my passenger to provide the sample for me.",
+          "answer_d": "Switch off the engine as well.",
+          "explanation": "The repeat interlock test must be performed with both the vehicle and engine stopped. I reach a safe place within the allowed time; I do not blow while driving or use someone else’s sample."
+        }
+      },
+      "image_path": "france/situation_ead_retest_stop_engine.jpg"
+    },
+    {
+      "key": "situation_medicine_blurred_vision_during_drive",
+      "category_slug": "alcohol_drugs",
+      "correct_answers": [
+        "c"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Après la prise d’un médicament, ma vision devient floue en roulant ; la notice mentionne cet effet possible. Que faire ?",
+          "answer_a": "Terminer le trajet si je suis près de chez moi.",
+          "answer_b": "Ouvrir la fenêtre et continuer.",
+          "answer_c": "M’arrêter en sécurité et demander un avis médical avant de reprendre.",
+          "answer_d": "Accélérer pour réduire le temps passé sur la route.",
+          "explanation": "Une vision altérée rend la conduite dangereuse. Je m’arrête dès que je peux le faire en sécurité et je demande un avis médical ; la proximité de l’arrivée ne permet pas de continuer."
+        },
+        "en": {
+          "question_text": "After taking a medicine, my vision becomes blurred while driving; its leaflet lists this possible effect. What should I do?",
+          "answer_a": "Finish the journey if I am close to home.",
+          "answer_b": "Open the window and continue.",
+          "answer_c": "Stop safely and seek medical advice before driving again.",
+          "answer_d": "Speed up to spend less time on the road.",
+          "explanation": "Impaired vision makes driving unsafe. I stop as soon as I can do so safely and seek medical advice; being close to my destination does not make continuing safe."
+        }
+      },
+      "image_path": "france/situation_medicine_blurred_vision_during_drive.jpg"
+    },
+    {
+      "key": "situation_moving_procession_do_not_cut",
+      "category_slug": "priority_rules",
+      "correct_answers": [
+        "d"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Un cortège organisé traverse cette rue et continue de défiler. Un espace se forme entre deux groupes. Puis-je passer au milieu ?",
+          "answer_a": "Oui, si ma voiture tient dans l’espace.",
+          "answer_b": "Oui, après un bref avertissement sonore.",
+          "answer_c": "Oui, puisque les participants sont à pied.",
+          "answer_d": "Non, je ne dois pas couper ce cortège en marche.",
+          "explanation": "Il est interdit de couper un cortège en marche. Je patiente jusqu’à son passage complet ; un intervalle entre deux groupes ne m’autorise pas à m’y insérer."
+        },
+        "en": {
+          "question_text": "An organised procession is crossing this street and is still moving. A gap opens between two groups. May I drive through it?",
+          "answer_a": "Yes, if my car fits in the gap.",
+          "answer_b": "Yes, after briefly sounding the horn.",
+          "answer_c": "Yes, because the participants are on foot.",
+          "answer_d": "No, I must not cut through a moving procession.",
+          "explanation": "Driving through a moving procession is prohibited. I wait until it has fully passed; a gap between two groups does not allow me to insert my car."
+        }
+      },
+      "image_path": "france/situation_moving_procession_do_not_cut.jpg"
+    },
+    {
+      "key": "situation_yellow_broken_kerb_parking_only",
+      "category_slug": "road_signs",
+      "correct_answers": [
+        "b"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Que signifie, à elle seule, cette ligne jaune discontinue sur la bordure du trottoir ?",
+          "answer_a": "Arrêt et stationnement interdits.",
+          "answer_b": "Stationnement interdit, sans interdire à elle seule l’arrêt.",
+          "answer_c": "Stationnement payant.",
+          "answer_d": "Emplacement réservé aux livraisons.",
+          "explanation": "La ligne jaune discontinue interdit le stationnement. Elle n’interdit pas à elle seule un arrêt, qui doit toutefois rester autorisé par les autres règles et ne pas gêner ni mettre en danger."
+        },
+        "en": {
+          "question_text": "What does this broken yellow line on the kerb mean on its own?",
+          "answer_a": "Both stopping and parking are prohibited.",
+          "answer_b": "Parking is prohibited; the line alone does not prohibit stopping.",
+          "answer_c": "Paid parking.",
+          "answer_d": "A space reserved for deliveries.",
+          "explanation": "A broken yellow line prohibits parking. On its own it does not prohibit stopping, which must still comply with other rules and cause neither obstruction nor danger."
+        }
+      },
+      "image_path": "france/situation_yellow_broken_kerb_parking_only.jpg"
+    },
+    {
+      "key": "situation_alternating_parking_change_evening",
+      "category_slug": "parking_stopping",
+      "correct_answers": [
+        "a"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Cette rue est soumise au stationnement alterné semi-mensuel. Le 15 du mois, sans horaire local différent, quand dois-je changer de côté ?",
+          "answer_a": "Entre 20 h 30 et 21 h.",
+          "answer_b": "À minuit exactement.",
+          "answer_c": "Entre 12 h et 12 h 30.",
+          "answer_d": "Le 16 après 9 h.",
+          "explanation": "Sauf règle locale différente, le changement de côté s’effectue entre 20 h 30 et 21 h le dernier jour de chaque période : le 15 et le dernier jour du mois."
+        },
+        "en": {
+          "question_text": "This street has fortnightly alternating parking. On the 15th, with no different local time specified, when must I change sides?",
+          "answer_a": "Between 8:30 pm and 9 pm.",
+          "answer_b": "At exactly midnight.",
+          "answer_c": "Between noon and 12:30 pm.",
+          "answer_d": "After 9 am on the 16th.",
+          "explanation": "Unless a different local rule applies, the side change takes place between 8:30 pm and 9 pm on the final day of each period: the 15th and the last day of the month."
+        }
+      },
+      "image_path": "france/situation_alternating_parking_change_evening.jpg"
+    },
+    {
+      "key": "situation_trailer_ptra_over3500_motorway90",
+      "category_slug": "speed_limits",
+      "correct_answers": [
+        "c"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Ma voiture (PTAC 2 500 kg, PTRA 4 500 kg) tracte une remorque de PTAC 750 kg. Sur autoroute sèche, avec bonne visibilité et sans limite plus basse, mon maximum est :",
+          "answer_a": "70 km/h.",
+          "answer_b": "80 km/h.",
+          "answer_c": "90 km/h.",
+          "answer_d": "130 km/h.",
+          "explanation": "Avec une remorque, le PTRA de cet ensemble dépasse 3,5 tonnes : sa vitesse est limitée à 90 km/h sur autoroute. La règle ne dépend pas seulement du poids réellement chargé."
+        },
+        "en": {
+          "question_text": "My car (maximum authorised vehicle weight 2,500 kg, authorised train weight 4,500 kg) tows a 750 kg maximum-weight trailer. On a dry motorway with good visibility and no lower limit, my maximum is:",
+          "answer_a": "70 km/h.",
+          "answer_b": "80 km/h.",
+          "answer_c": "90 km/h.",
+          "answer_d": "130 km/h.",
+          "explanation": "While towing, this combination has an authorised train weight above 3.5 tonnes, so its motorway limit is 90 km/h. The rule is not based only on its actual loaded weight."
+        }
+      },
+      "image_path": "france/situation_trailer_ptra_over3500_motorway90.jpg"
+    },
+    {
+      "key": "situation_long_caravan_facilitate_overtaking",
+      "category_slug": "overtaking",
+      "correct_answers": [
+        "d"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Mon ensemble voiture-caravane mesure 8 m. La route est trop étroite pour que la petite voiture derrière me dépasse facilement et sans danger. Je dois :",
+          "answer_a": "Garder exactement mon allure jusqu’à destination.",
+          "answer_b": "Accélérer pour qu’elle renonce.",
+          "answer_c": "Lui faire signe de passer dans le prochain virage aveugle.",
+          "answer_d": "Ralentir et, au besoin, m’arrêter ou me garer en sécurité pour la laisser passer.",
+          "explanation": "Un ensemble de plus de 7 m doit faciliter le passage des véhicules plus petits quand l’état ou les dimensions de la route empêchent un dépassement facile et sûr. Je ralentis et m’arrête ou me gare si nécessaire."
+        },
+        "en": {
+          "question_text": "My car-and-caravan combination is 8 m long. The road is too narrow for the smaller car behind to pass easily and safely. I must:",
+          "answer_a": "Keep exactly the same speed until my destination.",
+          "answer_b": "Accelerate to discourage it.",
+          "answer_c": "Wave it past at the next blind bend.",
+          "answer_d": "Slow down and, if necessary, stop or pull over safely to let it pass.",
+          "explanation": "A combination longer than 7 m must help smaller vehicles pass when the road prevents easy, safe overtaking. I reduce speed and stop or pull over if necessary."
+        }
+      },
+      "image_path": "france/situation_long_caravan_facilitate_overtaking.jpg"
+    },
+    {
+      "key": "situation_motorway_tunnel_fire_evacuate",
+      "category_slug": "motorways",
+      "correct_answers": [
+        "b"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Dans ce tunnel autoroutier, un véhicule brûle devant moi. Je suis arrêté en sécurité, moteur coupé. Que faire ensuite ?",
+          "answer_a": "Rester dans la voiture, vitres fermées, jusqu’aux pompiers.",
+          "answer_b": "Quitter la voiture prudemment et rejoindre à pied une issue de secours accessible.",
+          "answer_c": "Faire demi-tour dans le tunnel.",
+          "answer_d": "Traverser la fumée en voiture pour sortir plus vite.",
+          "explanation": "La voiture ne protège pas des fumées toxiques. Je quitte le véhicule en faisant attention à la circulation et j’évacue sans attendre les pompiers, en suivant la signalisation des issues de secours."
+        },
+        "en": {
+          "question_text": "In this motorway tunnel, a vehicle ahead is on fire. I have stopped safely and switched off the engine. What should I do next?",
+          "answer_a": "Stay in the car with the windows closed until firefighters arrive.",
+          "answer_b": "Leave the car carefully and walk to an accessible emergency exit.",
+          "answer_c": "Make a U-turn inside the tunnel.",
+          "answer_d": "Drive through the smoke to get out faster.",
+          "explanation": "The car does not protect me from toxic smoke. I leave while watching for traffic and evacuate without waiting for firefighters, following the emergency-exit signs."
+        }
+      },
+      "image_path": "france/situation_motorway_tunnel_fire_evacuate.jpg"
+    },
+    {
+      "key": "situation_tyre_sidewall_bulge_before_trip",
+      "category_slug": "safety",
+      "correct_answers": [
+        "c"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Avant de partir, je découvre cette hernie sur le flanc d’un pneu. Que faire ?",
+          "answer_a": "Rouler normalement si les sculptures sont profondes.",
+          "answer_b": "Dégonfler un peu le pneu pour effacer la bosse.",
+          "answer_c": "Ne pas partir avec ce pneu et faire organiser son remplacement.",
+          "answer_d": "Attendre que la bosse disparaisse après quelques kilomètres.",
+          "explanation": "Une hernie peut traduire une détérioration de la carcasse, avec risque de perte brutale de pression. Une bonne profondeur de sculpture ne compense pas ce défaut : je n’utilise plus ce pneu et fais organiser son remplacement."
+        },
+        "en": {
+          "question_text": "Before setting off, I notice this bulge in a tyre sidewall. What should I do?",
+          "answer_a": "Drive normally if the tread is deep.",
+          "answer_b": "Let some air out to flatten the bulge.",
+          "answer_c": "Do not set off on this tyre; arrange its replacement.",
+          "answer_d": "Wait for the bulge to disappear after a few kilometres.",
+          "explanation": "An outward bulge can indicate damage to the tyre structure and a risk of sudden pressure loss. Good tread depth does not make it safe: I stop using the tyre and arrange its replacement."
+        }
+      },
+      "image_path": "france/situation_tyre_sidewall_bulge_before_trip.jpg"
+    },
+    {
+      "key": "situation_ev_charge_cable_cut_insulation",
+      "category_slug": "safety",
+      "correct_answers": [
+        "b"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Avant de brancher ma voiture électrique, je vois une coupure dans la gaine du câble de recharge. Que faire ?",
+          "answer_a": "L’utiliser si la recharge démarre normalement.",
+          "answer_b": "Ne pas l’utiliser et demander son remplacement à un professionnel.",
+          "answer_c": "Recouvrir la coupure de ruban adhésif et recharger.",
+          "answer_d": "Le brancher seulement par temps sec.",
+          "explanation": "Un câble de recharge endommagé ne doit pas être utilisé. Je le garde débranché et m’adresse à un professionnel pour son remplacement ; du ruban adhésif ou un temps sec ne rendent pas cette réparation improvisée sûre."
+        },
+        "en": {
+          "question_text": "Before plugging in my electric car, I see a cut in the charging cable’s insulation. What should I do?",
+          "answer_a": "Use it if charging starts normally.",
+          "answer_b": "Do not use it; ask a professional to replace it.",
+          "answer_c": "Cover the cut with adhesive tape and charge.",
+          "answer_d": "Plug it in only in dry weather.",
+          "explanation": "A damaged charging cable must not be used. I keep it disconnected and arrange professional replacement; adhesive tape or dry weather does not make an improvised repair safe."
+        }
+      },
+      "image_path": "france/situation_ev_charge_cable_cut_insulation.jpg"
+    },
+    {
+      "key": "situation_windscreen_condensation_air_recirculation",
+      "category_slug": "safety",
+      "correct_answers": [
+        "a",
+        "d"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Je suis arrêté en sécurité : de la buée intérieure gêne la vue. Avec une ventilation à réglage manuel, quels choix aident à dégager le pare-brise ?",
+          "answer_a": "Diriger l’air vers le pare-brise avec le désembuage.",
+          "answer_b": "Maintenir le recyclage d’air en permanence.",
+          "answer_c": "Couper toute ventilation.",
+          "answer_d": "Revenir à l’admission d’air extérieur.",
+          "explanation": "Le désembuage dirige l’air vers les vitres. L’admission d’air extérieur évite d’entretenir l’humidité par un recyclage prolongé ; la climatisation peut aider selon les conditions. Je repars seulement avec une visibilité suffisante."
+        },
+        "en": {
+          "question_text": "I have stopped safely because condensation inside the windscreen obstructs my view. With manually adjusted ventilation, which settings help clear it?",
+          "answer_a": "Direct air at the windscreen using demisting.",
+          "answer_b": "Keep air recirculation on continuously.",
+          "answer_c": "Switch off all ventilation.",
+          "answer_d": "Select fresh outside air.",
+          "explanation": "Demisting directs air towards the glass. Fresh outside air avoids prolonged recirculation that can maintain humidity; air conditioning may also help in suitable conditions. I set off only when visibility is adequate."
+        }
+      },
+      "image_path": "france/situation_windscreen_condensation_air_recirculation.jpg"
+    },
+    {
+      "key": "situation_first_technical_inspection_timing",
+      "category_slug": "safety",
+      "correct_answers": [
+        "b",
+        "c"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Pour ma voiture particulière neuve à usage privé, hors cas particuliers, quelles règles s’appliquent au premier contrôle technique ?",
+          "answer_a": "Il se fait après le cinquième anniversaire.",
+          "answer_b": "Il se fait dans les six mois précédant le quatrième anniversaire de sa première mise en circulation.",
+          "answer_c": "Je dois prendre l’initiative du rendez-vous.",
+          "answer_d": "J’attends obligatoirement une convocation officielle.",
+          "explanation": "Le premier contrôle technique doit être réalisé pendant les six mois qui précèdent le quatrième anniversaire de la première mise en circulation. La démarche appartient au propriétaire : aucune convocation n’est envoyée."
+        },
+        "en": {
+          "question_text": "For my new privately used passenger car, with no special-use exceptions, which rules apply to its first roadworthiness inspection?",
+          "answer_a": "It takes place after its fifth anniversary.",
+          "answer_b": "It takes place during the six months before the fourth anniversary of first registration.",
+          "answer_c": "I must arrange the appointment myself.",
+          "answer_d": "I must wait for an official summons.",
+          "explanation": "The first inspection must take place during the six months before the fourth anniversary of the car’s first registration. The owner must arrange it; no official summons is sent."
+        }
+      },
+      "image_path": "france/situation_first_technical_inspection_timing.jpg"
+    },
+    {
+      "key": "situation_cruise_control_rain_deactivate",
+      "category_slug": "speed_limits",
+      "correct_answers": [
+        "a"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Mon régulateur de vitesse classique est activé. Une forte pluie commence et l’adhérence diminue. Que faire ?",
+          "answer_a": "Désactiver le régulateur et adapter moi-même ma vitesse.",
+          "answer_b": "Le laisser gérer l’adhérence à ma place.",
+          "answer_c": "Augmenter sa consigne pour sortir vite de la pluie.",
+          "answer_d": "Lâcher le volant puisque la vitesse est régulée.",
+          "explanation": "Le régulateur maintient une vitesse de consigne mais ne remplace pas l’évaluation de l’adhérence par le conducteur. Par mauvais temps, je le désactive et j’adapte progressivement ma vitesse et mes distances aux conditions."
+        },
+        "en": {
+          "question_text": "Conventional cruise control is active. Heavy rain starts and grip decreases. What should I do?",
+          "answer_a": "Deactivate cruise control and adjust my speed myself.",
+          "answer_b": "Let it manage tyre grip for me.",
+          "answer_c": "Increase its setting to get out of the rain quickly.",
+          "answer_d": "Let go of the wheel because speed is controlled.",
+          "explanation": "Cruise control maintains a set speed but does not replace the driver’s assessment of grip. In poor weather, I deactivate it and progressively adapt my speed and following distance to the conditions."
+        }
+      },
+      "image_path": "france/situation_cruise_control_rain_deactivate.jpg"
+    },
+    {
+      "key": "situation_rail_trapped_break_exit_barrier",
+      "category_slug": "priority_rules",
+      "correct_answers": [
+        "d"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Ma voiture est déjà coincée sur les rails entre les barrières. Elle peut encore avancer et la sortie est libre derrière la barrière abaissée. Que faire immédiatement ?",
+          "answer_a": "Attendre sur les rails que la barrière se relève.",
+          "answer_b": "Sortir pour soulever la barrière à la main.",
+          "answer_c": "Rester sur les rails pour téléphoner d’abord.",
+          "answer_d": "Avancer pour enfoncer la barrière cassable et dégager les rails.",
+          "explanation": "Je dégage immédiatement la voie ferrée, en enfonçant la barrière conçue pour être cassable si nécessaire. Une fois en sécurité, j’alerte la SNCF par le téléphone du passage à niveau ou le numéro indiqué. Cela n’autorise jamais à entrer sur un passage fermé."
+        },
+        "en": {
+          "question_text": "My car is already trapped on the tracks between the barriers. It can still move and the exit beyond the lowered barrier is clear. What should I do immediately?",
+          "answer_a": "Wait on the tracks for the barrier to rise.",
+          "answer_b": "Get out and lift the barrier by hand.",
+          "answer_c": "Stay on the tracks and telephone first.",
+          "answer_d": "Drive through the breakable barrier to clear the tracks.",
+          "explanation": "I clear the railway immediately, breaking through the barrier designed for that purpose if necessary. Once safe, I alert SNCF using the crossing telephone or displayed number. This never permits entering a closed crossing."
+        }
+      },
+      "image_path": "france/situation_rail_trapped_break_exit_barrier.jpg"
+    },
+    {
+      "key": "situation_cmi_parking_local_twelve_hour_limit",
+      "category_slug": "parking_stopping",
+      "correct_answers": [
+        "b"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Je transporte le titulaire d’une CMI stationnement et la carte est affichée. Ici, la commune fixe à 12 heures la durée maximale pour ses titulaires. Puis-je laisser la voiture 24 heures ?",
+          "answer_a": "Oui, la CMI annule toute limite de durée.",
+          "answer_b": "Non, je dois respecter la limite locale de 12 heures.",
+          "answer_c": "Oui, si la personne reste dans la voiture.",
+          "answer_d": "Oui, en affichant deux cartes CMI.",
+          "explanation": "La CMI stationnement permet le stationnement gratuit, mais l’autorité locale peut limiter sa durée sans descendre sous douze heures. Dans cette situation, je respecte donc le maximum de douze heures, même avec une carte valable."
+        },
+        "en": {
+          "question_text": "I am transporting a CMI parking-card holder and the card is displayed. Here, the municipality sets a 12-hour maximum for card holders. May I leave the car for 24 hours?",
+          "answer_a": "Yes, the card cancels every time limit.",
+          "answer_b": "No, I must observe the local 12-hour limit.",
+          "answer_c": "Yes, if the person stays in the car.",
+          "answer_d": "Yes, if I display two CMI cards.",
+          "explanation": "A CMI parking card gives free parking, but the local authority can impose a maximum stay of at least twelve hours. In this situation, I must respect the twelve-hour limit even with a valid card."
+        }
+      },
+      "image_path": "france/situation_cmi_parking_local_twelve_hour_limit.jpg"
+    },
+    {
+      "key": "situation_long_caravan_snow_overtaking_prohibited",
+      "category_slug": "overtaking",
+      "correct_answers": [
+        "c"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Je tracte une caravane : longueur totale 8 m, somme des PTAC 3 200 kg. Une voie de la chaussée est partiellement enneigée. Puis-je dépasser une voiture ?",
+          "answer_a": "Oui, puisque l’ensemble relève du permis B.",
+          "answer_b": "Oui, si la voiture roule lentement.",
+          "answer_c": "Non, le dépassement est interdit à mon ensemble de plus de 7 m.",
+          "answer_d": "Oui, si mes pneus sont adaptés à l’hiver.",
+          "explanation": "Quand au moins une voie est couverte de neige ou de verglas, même partiellement, le dépassement et le changement de file sont interdits aux ensembles de plus de sept mètres. Le permis B et les pneus hiver ne suppriment pas cette règle."
+        },
+        "en": {
+          "question_text": "I am towing a caravan: total length 8 m, combined maximum authorised masses 3,200 kg. One traffic lane is partly covered in snow. May I overtake a car?",
+          "answer_a": "Yes, because the combination is covered by category B.",
+          "answer_b": "Yes, if the car is slow.",
+          "answer_c": "No, overtaking is prohibited for my combination over 7 m long.",
+          "answer_d": "Yes, if I have suitable winter tyres.",
+          "explanation": "When at least one traffic lane is even partly covered in snow or ice, combinations longer than seven metres may not overtake or change lanes. Category-B entitlement and winter tyres do not remove this restriction."
+        }
+      },
+      "image_path": "france/situation_long_caravan_snow_overtaking_prohibited.jpg"
+    },
+    {
+      "key": "situation_b13_ptac_not_actual_mass",
+      "category_slug": "road_signs",
+      "correct_answers": [
+        "a"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Ma voiture sans remorque a un PTAC de 2 300 kg, mais pèse aujourd’hui 1 700 kg. Puis-je franchir ce panneau ?",
+          "answer_a": "Non, son PTAC dépasse les 2 tonnes indiquées.",
+          "answer_b": "Oui, son poids réel est inférieur à 2 tonnes.",
+          "answer_c": "Oui, car ce panneau ne concerne que les camions.",
+          "answer_d": "Oui, si je roule au pas.",
+          "explanation": "Le panneau B13 vise le poids total autorisé en charge, ou le poids total roulant autorisé pour un ensemble. Pour cette voiture seule, le PTAC de 2,3 tonnes dépasse la limite de 2 tonnes, même si son poids réel est inférieur."
+        },
+        "en": {
+          "question_text": "My car, without a trailer, has a maximum authorised mass (PTAC) of 2,300 kg but weighs 1,700 kg today. May I pass this sign?",
+          "answer_a": "No, its authorised mass exceeds the displayed 2 tonnes.",
+          "answer_b": "Yes, its actual mass is below 2 tonnes.",
+          "answer_c": "Yes, this sign applies only to lorries.",
+          "answer_d": "Yes, if I drive at walking pace.",
+          "explanation": "B13 refers to maximum authorised mass, or authorised train mass for a combination. For this untowed car, the 2.3-tonne PTAC exceeds the 2-tonne limit even though its actual mass is lower."
+        }
+      },
+      "image_path": "france/situation_b13_ptac_not_actual_mass.jpg"
+    },
+    {
+      "key": "situation_insurance_fva_no_green_sticker",
+      "category_slug": "safety",
+      "correct_answers": [
+        "d"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Une voiture immatriculée en France n’a plus de vignette verte d’assurance sur le pare-brise. Cela prouve-t-il qu’elle n’est pas assurée ?",
+          "answer_a": "Oui, la vignette reste obligatoire pour toute voiture.",
+          "answer_b": "Oui, sauf si elle a moins de quatre ans.",
+          "answer_c": "Non, car l’assurance automobile est devenue facultative.",
+          "answer_d": "Non, les forces de l’ordre vérifient notamment le Fichier des véhicules assurés.",
+          "explanation": "Depuis le 1er avril 2024, la vignette et la carte verte ne sont plus exigées pour les véhicules immatriculés en France. L’assurance reste obligatoire ; sa vérification repose notamment sur le Fichier des véhicules assurés (FVA)."
+        },
+        "en": {
+          "question_text": "A car registered in France has no green insurance sticker on its windscreen. Does this prove that it is uninsured?",
+          "answer_a": "Yes, every car must still display the sticker.",
+          "answer_b": "Yes, unless it is less than four years old.",
+          "answer_c": "No, because motor insurance is now optional.",
+          "answer_d": "No, the police can check the Insured Vehicles Register (FVA).",
+          "explanation": "Since 1 April 2024, the green sticker and insurance card are no longer required for vehicles registered in France. Insurance remains compulsory; checks rely in particular on the Insured Vehicles Register (FVA)."
+        }
+      },
+      "image_path": "france/situation_insurance_fva_no_green_sticker.jpg"
+    },
+    {
+      "key": "situation_ead_restriction_borrowed_car",
+      "category_slug": "alcohol_drugs",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Mon permis B impose actuellement un éthylotest antidémarrage (EAD). Je suis sobre. Puis-je conduire la voiture prêtée par un ami si elle n’a pas d’EAD ?",
+          "answer_a": "Oui, puisque je n’ai pas bu.",
+          "answer_b": "Non, la restriction s’applique aussi à cette voiture prêtée.",
+          "answer_c": "Oui, si mon ami m’accompagne.",
+          "answer_d": "Oui, pour un trajet inférieur à dix kilomètres.",
+          "explanation": "La restriction limite mon droit de conduire aux voitures équipées d’un EAD. Le prêt du véhicule, ma sobriété ou la présence de son propriétaire ne suppriment pas cette condition."
+        },
+        "en": {
+          "question_text": "My category-B licence currently requires an alcohol interlock (EAD). I am sober. May I drive a friend’s borrowed car if it has no EAD?",
+          "answer_a": "Yes, because I have not drunk alcohol.",
+          "answer_b": "No; the restriction also applies to this borrowed car.",
+          "answer_c": "Yes, if my friend travels with me.",
+          "answer_d": "Yes, for a journey of less than ten kilometres.",
+          "explanation": "The restriction limits my driving entitlement to cars equipped with an alcohol interlock. Borrowing the car, being sober or having its owner present does not remove that condition."
+        }
+      },
+      "image_path": "france/situation_ead_restriction_borrowed_car.jpg"
+    },
+    {
+      "key": "situation_ead_personal_breath_no_substitute",
+      "category_slug": "alcohol_drugs",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Ma voiture est obligatoirement équipée d’un EAD. Avant que je conduise, mon passager sobre propose de souffler à ma place pour permettre le démarrage. Puis-je accepter ?",
+          "answer_a": "Oui, si le résultat est négatif.",
+          "answer_b": "Oui, si le passager reste à mes côtés.",
+          "answer_c": "Oui, si je souffle moi-même au prochain contrôle.",
+          "answer_d": "Non, le souffle doit être celui du conducteur.",
+          "explanation": "L’EAD doit mesurer l’alcoolémie du conducteur avant le démarrage. Conduire après qu’un tiers a soufflé pour permettre de démarrer est interdit ; un nouveau souffle ultérieur ne régularise pas cette substitution."
+        },
+        "en": {
+          "question_text": "My car must be fitted with an alcohol interlock. Before I drive, my sober passenger offers to blow into it for me so the engine can start. May I accept?",
+          "answer_a": "Yes, if the result is negative.",
+          "answer_b": "Yes, if the passenger stays beside me.",
+          "answer_c": "Yes, if I blow into it myself at the next check.",
+          "answer_d": "No; the breath sample must come from the driver.",
+          "explanation": "The interlock must measure the driver’s alcohol level before starting. Driving after someone else has supplied the breath to enable starting is prohibited; a later personal test does not undo that substitution."
+        }
+      },
+      "image_path": "france/situation_ead_personal_breath_no_substitute.jpg"
+    },
+    {
+      "key": "situation_motorway_long_combination_two_right_lanes",
+      "category_slug": "motorways",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Sur cette autoroute à trois voies dans mon sens, mon ensemble voiture-caravane mesure 8 m (somme des PTAC : 3 200 kg). Puis-je utiliser la voie la plus à gauche pour dépasser ?",
+          "answer_a": "Oui, car l’ensemble est autorisé avec mon permis B.",
+          "answer_b": "Oui, si la voie est libre.",
+          "answer_c": "Non, je suis limité aux deux voies les plus à droite.",
+          "answer_d": "Oui, si je reste sous 90 km/h.",
+          "explanation": "Sur une chaussée à au moins trois voies de circulation générale dans un même sens, un ensemble de plus de 7 m utilise seulement les deux voies les plus à droite pour circuler et dépasser. La masse inférieure à 3,5 tonnes ne supprime pas cette règle de longueur."
+        },
+        "en": {
+          "question_text": "On this motorway with three lanes in my direction, my car and caravan are 8 m long (combined maximum authorised masses: 3,200 kg). May I use the leftmost lane to overtake?",
+          "answer_a": "Yes, because my category-B licence covers the combination.",
+          "answer_b": "Yes, if that lane is clear.",
+          "answer_c": "No; I am limited to the two rightmost lanes.",
+          "answer_d": "Yes, if I stay below 90 km/h.",
+          "explanation": "On a road with at least three general traffic lanes in the same direction, a combination longer than 7 m uses only the two rightmost lanes for normal driving and overtaking. Being below 3.5 tonnes does not remove this length-based rule."
+        }
+      },
+      "image_path": "france/situation_motorway_long_combination_two_right_lanes.jpg"
+    },
+    {
+      "key": "situation_motorway_long_combinations_fifty_metre_gap",
+      "category_slug": "motorways",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Hors agglomération, nos deux ensembles voiture-caravane mesurent chacun 8 m et roulent à la même vitesse de 70 km/h. Le mien totalise 3 200 kg de PTAC. Sans prescription plus stricte, quelle distance minimale dois-je garder derrière l’autre ?",
+          "answer_a": "Au moins 50 mètres.",
+          "answer_b": "Seulement la distance parcourue en une seconde.",
+          "answer_c": "20 mètres, puisque je conduis une voiture.",
+          "answer_d": "La longueur de ma caravane suffit.",
+          "explanation": "Quand deux véhicules ou ensembles de plus de 7 m se suivent à la même vitesse hors agglomération, l’écart est d’au moins 50 m. À 70 km/h, ce minimum est supérieur à la distance parcourue en deux secondes ; les circonstances peuvent demander davantage."
+        },
+        "en": {
+          "question_text": "Outside a built-up area, our two car-and-caravan combinations are each 8 m long and both travel at 70 km/h. Mine has combined maximum authorised masses of 3,200 kg. With no stricter requirement, what minimum gap must I leave behind the other?",
+          "answer_a": "At least 50 metres.",
+          "answer_b": "Only the distance travelled in one second.",
+          "answer_c": "20 metres, because I am driving a car.",
+          "answer_d": "The length of my caravan is enough.",
+          "explanation": "When two vehicles or combinations longer than 7 m follow at the same speed outside a built-up area, the gap must be at least 50 m. At 70 km/h this exceeds the distance travelled in two seconds; conditions may require an even larger gap."
+        }
+      },
+      "image_path": "france/situation_motorway_long_combinations_fifty_metre_gap.jpg"
+    },
+    {
+      "key": "situation_r16_right_arrow_conditional_passage",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a",
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Enceinte et sans dispense médicale, je m’installe comme passagère. Comment positionner correctement ma ceinture ?",
+          "answer_a": "La sangle basse sous le ventre, au plus bas sur le bassin.",
+          "answer_b": "La sangle basse au milieu du ventre.",
+          "answer_c": "La sangle diagonale sur l’épaule et le thorax.",
+          "answer_d": "La sangle diagonale derrière mon dos.",
+          "explanation": "Pendant la grossesse, la sangle basse doit passer sous le ventre, au plus bas sur les os du bassin. La partie diagonale reste sur l’épaule et le thorax : la placer derrière le dos supprime une partie de la protection."
+        },
+        "en": {
+          "question_text": "I am pregnant and have no medical exemption. I am getting into the passenger seat. How should I position my seat belt?",
+          "answer_a": "The lap strap below my abdomen, as low as possible on my pelvis.",
+          "answer_b": "The lap strap across the middle of my abdomen.",
+          "answer_c": "The diagonal strap over my shoulder and chest.",
+          "answer_d": "The diagonal strap behind my back.",
+          "explanation": "During pregnancy, the lap strap should pass below the abdomen, as low as possible over the pelvic bones. The diagonal strap stays over the shoulder and chest; putting it behind the back removes part of the protection."
+        }
+      },
+      "image_path": "france/situation_r16_right_arrow_conditional_passage.jpg"
+    },
+    {
+      "key": "situation_b10a_combination_total_length",
+      "category_slug": "road_signs",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Mon ensemble voiture-caravane mesure 8 m au total (somme des PTAC : 3 200 kg). Puis-je entrer sur la route signalée par ce panneau ?",
+          "answer_a": "Oui, car le dessin ne concerne que les camions.",
+          "answer_b": "Oui, si la voiture seule mesure moins de 7 m.",
+          "answer_c": "Non, la longueur totale de l’ensemble dépasse 7 m.",
+          "answer_d": "Oui, car l’ensemble pèse moins de 3,5 tonnes.",
+          "explanation": "Le panneau B10a limite la longueur des véhicules et des ensembles, pas seulement celle des camions. Les 8 m de l’ensemble dépassent les 7 m indiqués : je choisis un autre itinéraire."
+        },
+        "en": {
+          "question_text": "My car and caravan are 8 m long in total (combined maximum authorised masses: 3,200 kg). May I enter the road marked by this sign?",
+          "answer_a": "Yes, because the picture applies only to lorries.",
+          "answer_b": "Yes, if the car alone is shorter than 7 m.",
+          "answer_c": "No; the total combination length exceeds 7 m.",
+          "answer_d": "Yes, because the combination is below 3.5 tonnes.",
+          "explanation": "B10a restricts the length of vehicles and combinations, not just lorries. The combination’s 8 m length exceeds the displayed 7 m, so I must choose another route."
+        }
+      },
+      "image_path": "france/situation_b10a_combination_total_length.jpg"
+    },
+    {
+      "key": "situation_parked_engine_unnecessary_idling",
+      "category_slug": "parking_stopping",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Je stationne dix minutes en attendant un ami, par temps doux. Le moteur thermique est chaud et rien ne nécessite de le laisser tourner. Que dois-je faire ?",
+          "answer_a": "Le laisser au ralenti puisque je reste au volant.",
+          "answer_b": "Couper le moteur pendant cette attente.",
+          "answer_c": "Accélérer légèrement pour éviter l’encrassement.",
+          "answer_d": "Le laisser tourner si les vitres sont fermées.",
+          "explanation": "Un véhicule en stationnement doit avoir son moteur arrêté, sauf nécessité. Ici, rester au volant ne justifie pas le ralenti ; couper le moteur évite aussi une consommation et des émissions inutiles."
+        },
+        "en": {
+          "question_text": "I am parked for ten minutes waiting for a friend in mild weather. The combustion engine is warm and there is no need to keep it running. What must I do?",
+          "answer_a": "Leave it idling because I remain at the wheel.",
+          "answer_b": "Switch off the engine while waiting.",
+          "answer_c": "Rev it slightly to prevent deposits.",
+          "answer_d": "Keep it running if the windows are closed.",
+          "explanation": "A parked vehicle must have its engine stopped unless running it is necessary. Remaining at the wheel does not justify idling here; switching off also avoids needless fuel use and emissions."
+        }
+      },
+      "image_path": "france/situation_parked_engine_unnecessary_idling.jpg"
+    },
+    {
+      "key": "situation_night_overtake_warning_headlights",
+      "category_slug": "overtaking",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "De nuit, hors agglomération, je veux avertir le conducteur devant avant un dépassement autorisé et sûr. Sans nécessité absolue de klaxonner, quel avertissement utiliser ?",
+          "answer_a": "Un bref appel de phares, sans maintenir les feux de route.",
+          "answer_b": "Un long coup de klaxon.",
+          "answer_c": "Les feux de détresse en continu.",
+          "answer_d": "Les feux arrière de brouillard.",
+          "explanation": "De nuit, les avertissements se font par allumage intermittent des feux de croisement ou de route. Le klaxon est réservé à l’absolue nécessité ; un bref appel ne doit pas devenir un éclairage éblouissant maintenu."
+        },
+        "en": {
+          "question_text": "At night outside a built-up area, I want to warn the driver ahead before an otherwise lawful and safe overtake. With no absolute need to use the horn, which warning should I use?",
+          "answer_a": "A brief headlight flash, without keeping main beam on.",
+          "answer_b": "A long blast of the horn.",
+          "answer_c": "Continuous hazard warning lights.",
+          "answer_d": "Rear fog lights.",
+          "explanation": "At night, warnings are given by briefly flashing dipped or main beams. The horn is reserved for absolute necessity; a brief flash must not become sustained dazzling main-beam lighting."
+        }
+      },
+      "image_path": "france/situation_night_overtake_warning_headlights.jpg"
+    },
+    {
+      "key": "situation_temporary_spare_wheel_speed_label",
+      "category_slug": "speed_limits",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Une roue de secours temporaire portant la limite « 80 km/h » est montée sur ma voiture. Sur une route autorisée à 90 km/h par temps sec, quelle vitesse ne dois-je pas dépasser ?",
+          "answer_a": "90 km/h, comme les autres voitures.",
+          "answer_b": "100 km/h pendant quelques minutes.",
+          "answer_c": "Aucune limite particulière si le pneu est bien gonflé.",
+          "answer_d": "80 km/h, et moins si les conditions l’exigent.",
+          "explanation": "Je respecte la limite indiquée sur la roue de secours temporaire, même si la route autorise davantage. Cette roue reste une solution provisoire à remplacer rapidement ; les conditions peuvent imposer une vitesse encore plus faible."
+        },
+        "en": {
+          "question_text": "A temporary spare wheel marked “80 km/h” is fitted to my car. On a dry road with a 90 km/h limit, what speed must I not exceed?",
+          "answer_a": "90 km/h, like other cars.",
+          "answer_b": "100 km/h for a few minutes.",
+          "answer_c": "No special limit if the tyre is correctly inflated.",
+          "answer_d": "80 km/h, or less if conditions require it.",
+          "explanation": "I must respect the limit stated on the temporary spare even when the road allows more. The wheel is only a temporary solution and should be replaced promptly; conditions may require an even lower speed."
+        }
+      },
+      "image_path": "france/situation_temporary_spare_wheel_speed_label.jpg"
+    },
+    {
+      "key": "situation_signed_accident_report_no_front_changes",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b",
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Après un accident sans blessé, nous avons rempli et signé le recto du constat amiable papier. Chacun a son exemplaire. Que puis-je faire ensuite ?",
+          "answer_a": "Ajouter seul une nouvelle case cochée au recto.",
+          "answer_b": "Compléter individuellement le verso.",
+          "answer_c": "Modifier seul le croquis commun déjà signé.",
+          "answer_d": "Conserver le recto signé sans rien y ajouter.",
+          "explanation": "Après la signature des deux conducteurs, la partie commune au recto ne doit plus être modifiée. Chacun conserve son exemplaire et peut compléter ensuite son propre verso pour la déclaration à l’assureur."
+        },
+        "en": {
+          "question_text": "After a collision with no injuries, both drivers have completed and signed the front of the paper accident report. Each has a copy. What may I do next?",
+          "answer_a": "Tick an additional box on the front on my own.",
+          "answer_b": "Complete the reverse individually.",
+          "answer_c": "Alter the jointly signed sketch on my own.",
+          "answer_d": "Keep the signed front unchanged.",
+          "explanation": "Once both drivers have signed, the shared front of the report must not be changed. Each keeps a copy and may later complete their own reverse side for the declaration to their insurer."
+        }
+      },
+      "image_path": "france/situation_signed_accident_report_no_front_changes.jpg"
+    },
+    {
+      "key": "situation_loaded_car_exceeds_own_ptac",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Ma voiture a un PTAC de 1 900 kg. Prête à partir, elle pèse 2 000 kg, occupants et bagages compris. Puis-je rouler ainsi ?",
+          "answer_a": "Oui, puisque je reste sous 3,5 tonnes.",
+          "answer_b": "Non, je dois réduire la charge avant de partir.",
+          "answer_c": "Oui, si les bagages sont bien attachés.",
+          "answer_d": "Oui, en augmentant la pression des pneus.",
+          "explanation": "Le poids réel de la voiture chargée ne doit pas dépasser son propre PTAC. Ici, 2 000 kg dépasse 1 900 kg : ni le permis B, ni l’arrimage, ni le gonflage ne rendent cette surcharge autorisée."
+        },
+        "en": {
+          "question_text": "My car has a maximum authorised mass of 1,900 kg. Ready to leave, it weighs 2,000 kg including occupants and luggage. May I drive it like this?",
+          "answer_a": "Yes, because it remains below 3.5 tonnes.",
+          "answer_b": "No; I must reduce the load before leaving.",
+          "answer_c": "Yes, if the luggage is securely fastened.",
+          "answer_d": "Yes, by increasing tyre pressure.",
+          "explanation": "The actual mass of the loaded car must not exceed its own maximum authorised mass. Here, 2,000 kg exceeds 1,900 kg; licence entitlement, secure luggage or tyre pressure cannot authorise that overload."
+        }
+      },
+      "image_path": "france/situation_loaded_car_exceeds_own_ptac.jpg"
+    },
+    {
+      "key": "situation_licence_0106_contact_lenses",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Mon permis B porte le code 01.06. Je porte mes lentilles de contact correctrices adaptées. Est-ce que je respecte cette restriction de vision sans lunettes ?",
+          "answer_a": "Non, les lunettes sont toujours obligatoires en plus.",
+          "answer_b": "Oui, seulement de jour.",
+          "answer_c": "Oui, ce code autorise lunettes ou lentilles de contact.",
+          "answer_d": "Non, ce code interdit toute lentille de contact.",
+          "explanation": "Le code 01.06 prévoit une correction par lunettes ou lentilles de contact. Des lentilles adaptées permettent donc de respecter cette mention ; je conserve la correction nécessaire pendant toute la conduite."
+        },
+        "en": {
+          "question_text": "My category-B licence shows code 01.06. I am wearing my suitable corrective contact lenses. Do I meet this vision restriction without glasses?",
+          "answer_a": "No; glasses must always be worn as well.",
+          "answer_b": "Yes, but only in daylight.",
+          "answer_c": "Yes; this code allows glasses or contact lenses.",
+          "answer_d": "No; this code prohibits all contact lenses.",
+          "explanation": "Code 01.06 allows correction with glasses or contact lenses. Suitable corrective lenses therefore meet this restriction; I must retain the necessary correction throughout the drive."
+        }
+      },
+      "image_path": "france/situation_licence_0106_contact_lenses.jpg"
+    },
+    {
+      "key": "situation_abs_warning_stays_on_without_red_brake",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a",
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Après l’autotest, le voyant ABS reste allumé en roulant, sans alerte rouge de freinage ni anomalie de pédale. Quelles affirmations sont exactes ?",
+          "answer_a": "L’antiblocage peut être indisponible, même si le freinage classique fonctionne.",
+          "answer_b": "Ce voyant prouve que l’ABS protège normalement les roues.",
+          "answer_c": "Je peux ignorer ce défaut jusqu’au prochain contrôle technique.",
+          "answer_d": "Je fais contrôler rapidement le système et conduis avec prudence.",
+          "explanation": "Ce voyant persistant signale un défaut de l’antiblocage, et non son fonctionnement normal. Le freinage peut rester assuré sans ABS ; je suis la notice et fais contrôler rapidement. Une alerte rouge de freinage imposerait une réaction plus urgente."
+        },
+        "en": {
+          "question_text": "After the self-test, the ABS warning stays on while driving, with no red brake warning or abnormal pedal feel. Which statements are correct?",
+          "answer_a": "Anti-lock protection may be unavailable even though conventional braking works.",
+          "answer_b": "This warning proves that ABS is protecting the wheels normally.",
+          "answer_c": "I may ignore the fault until the next roadworthiness test.",
+          "answer_d": "I arrange a prompt system check and drive cautiously.",
+          "explanation": "A persistent ABS warning indicates an anti-lock fault rather than normal operation. Conventional braking may remain available without ABS; I follow the manual and arrange a prompt check. A red brake warning would require a more urgent response."
+        }
+      },
+      "image_path": "france/situation_abs_warning_stays_on_without_red_brake.jpg"
+    },
+    {
+      "key": "situation_mountain_winter_ms_without_3pmsf",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "En janvier, dans une zone de montagne soumise à l’obligation hivernale, mes quatre pneus portent seulement M+S, sans 3PMSF. Je n’ai ni chaînes ni chaussettes. Suis-je correctement équipé ?",
+          "answer_a": "Oui, M+S suffit encore à lui seul.",
+          "answer_b": "Oui, si la route est sèche aujourd’hui.",
+          "answer_c": "Oui, si je reste dans la zone moins d’une heure.",
+          "answer_d": "Non, cette configuration ne satisfait pas l’obligation.",
+          "explanation": "Depuis novembre 2024, des pneus M+S seuls ne remplacent plus les dispositifs antidérapants amovibles dans ces zones. Il faut quatre pneus hiver conformes, marqués 3PMSF, ou détenir des chaînes ou chaussettes adaptées pour au moins deux roues motrices."
+        },
+        "en": {
+          "question_text": "In January, in a mountain zone subject to winter-equipment rules, all four tyres are marked only M+S, without 3PMSF. I have no chains or snow socks. Is my equipment compliant?",
+          "answer_a": "Yes; M+S alone is still enough.",
+          "answer_b": "Yes, if the road is dry today.",
+          "answer_c": "Yes, if I stay in the zone for less than an hour.",
+          "answer_d": "No; this equipment does not meet the requirement.",
+          "explanation": "Since November 2024, M+S-only tyres no longer replace removable anti-skid devices in these zones. I need four compliant 3PMSF winter tyres or suitable chains or snow socks for at least two driven wheels."
+        }
+      },
+      "image_path": "france/situation_mountain_winter_ms_without_3pmsf.jpg"
+    },
+    {
+      "key": "situation_yellow_continuous_kerb_no_stopping",
+      "category_slug": "parking_stopping",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Cette ligne jaune continue longe la bordure du trottoir. Puis-je m’y arrêter juste pour laisser descendre un passager, sans urgence ?",
+          "answer_a": "Non, elle interdit aussi l’arrêt.",
+          "answer_b": "Oui, si je reste au volant.",
+          "answer_c": "Oui, pendant moins d’une minute.",
+          "answer_d": "Oui, car seule la nuit est concernée.",
+          "explanation": "Une ligne jaune continue sur la bordure indique une interdiction d’arrêt, donc aussi de stationnement. Un bref dépôt de passager reste un arrêt et n’est pas autorisé ici ; la ligne discontinue aurait une autre portée."
+        },
+        "en": {
+          "question_text": "A continuous yellow line runs along this kerb. May I stop there briefly to let a passenger out, with no emergency?",
+          "answer_a": "No; it also prohibits stopping.",
+          "answer_b": "Yes, if I stay at the wheel.",
+          "answer_c": "Yes, for less than a minute.",
+          "answer_d": "Yes, because it applies only at night.",
+          "explanation": "A continuous yellow kerb line prohibits stopping as well as parking. A brief passenger drop-off is still a stop and is not permitted here; a broken yellow line would have a different meaning."
+        }
+      },
+      "image_path": "france/situation_yellow_continuous_kerb_no_stopping.jpg"
+    },
+    {
+      "key": "situation_speed_narrows_useful_visual_field",
+      "category_slug": "speed_limits",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Quand ma vitesse augmente fortement, mon champ de vision utile tend à se rétrécir. Quelle conséquence dois-je anticiper ?",
+          "answer_a": "Je repère mieux les dangers sur les côtés.",
+          "answer_b": "Mes rétroviseurs suppriment tous les angles morts.",
+          "answer_c": "Je risque de repérer plus tard un danger sur le côté.",
+          "answer_d": "Je n’ai plus besoin de regarder loin devant.",
+          "explanation": "À grande vitesse, l’attention visuelle se concentre davantage vers l’avant et les informations périphériques sont moins bien perçues. Réduire l’allure aide à observer les côtés et laisse davantage de temps pour réagir."
+        },
+        "en": {
+          "question_text": "As my speed rises substantially, my useful field of vision tends to narrow. What consequence should I expect?",
+          "answer_a": "I detect hazards at the sides better.",
+          "answer_b": "My mirrors eliminate every blind spot.",
+          "answer_c": "I may notice a hazard at the side later.",
+          "answer_d": "I no longer need to look well ahead.",
+          "explanation": "At high speed, visual attention becomes more concentrated ahead and peripheral information is less readily noticed. Reducing speed helps observation at the sides and gives more time to respond."
+        }
+      },
+      "image_path": "france/situation_speed_narrows_useful_visual_field.jpg"
+    },
+    {
+      "key": "situation_engine_oil_level_measurement_conditions",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Avant un trajet, je veux vérifier le niveau d’huile moteur avec la jauge. Dans quelles conditions obtenir une lecture fiable ?",
+          "answer_a": "Moteur en marche, quelle que soit la pente.",
+          "answer_b": "Sur sol horizontal, moteur arrêté, après le délai indiqué dans la notice.",
+          "answer_c": "Sur une forte pente, dès la coupure du moteur.",
+          "answer_d": "Uniquement après avoir rempli jusqu’au-dessus du maximum.",
+          "explanation": "Le sol horizontal et le délai après l’arrêt permettent à l’huile de se répartir correctement dans le carter. Je suis la notice, essuie la jauge puis la remets complètement avant la lecture, sans dépasser le niveau maximal."
+        },
+        "en": {
+          "question_text": "Before a trip, I want to check the engine-oil level with the dipstick. Which conditions give a reliable reading?",
+          "answer_a": "With the engine running, on any slope.",
+          "answer_b": "On level ground, with the engine stopped, after the wait specified in the manual.",
+          "answer_c": "On a steep slope, immediately after switching off.",
+          "answer_d": "Only after filling above the maximum mark.",
+          "explanation": "Level ground and the wait after stopping let the oil settle correctly in the sump. I follow the manual, wipe the dipstick and fully reinsert it before reading, and never exceed the maximum level."
+        }
+      },
+      "image_path": "france/situation_engine_oil_level_measurement_conditions.jpg"
+    },
+    {
+      "key": "situation_blind_spot_monitor_not_clearance_guarantee",
+      "category_slug": "overtaking",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b",
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Avant de me déporter à gauche pour dépasser, le témoin d’angle mort reste éteint. Que dois-je retenir ?",
+          "answer_a": "L’absence d’alerte garantit que personne ne se trouve à gauche.",
+          "answer_b": "Je dois toujours contrôler les rétroviseurs et l’angle mort.",
+          "answer_c": "Le clignotant oblige les autres à me laisser passer.",
+          "answer_d": "Cette aide peut ne pas détecter certains usagers.",
+          "explanation": "L’avertisseur d’angle mort est une aide, pas une autorisation de changer de voie. Une absence d’alerte ne garantit pas une zone libre : je garde mes contrôles visuels et ne me déporte que lorsque la manœuvre est sûre."
+        },
+        "en": {
+          "question_text": "Before moving left to overtake, the blind-spot warning remains off. What should I remember?",
+          "answer_a": "An unlit warning guarantees that nobody is on my left.",
+          "answer_b": "I must still check my mirrors and blind spot.",
+          "answer_c": "My indicator forces other drivers to let me through.",
+          "answer_d": "This aid may fail to detect some road users.",
+          "explanation": "A blind-spot monitor is an aid, not permission to change lanes. No warning does not guarantee a clear area: I keep my visual checks and move over only when the manoeuvre is safe."
+        }
+      },
+      "image_path": "france/situation_blind_spot_monitor_not_clearance_guarantee.jpg"
+    },
+    {
+      "key": "situation_tunnel_radio_safety_messages",
+      "category_slug": "motorways",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Avant ce tunnel autoroutier, une fréquence radio est annoncée. Mon passager la règle sur l’autoradio. Quel intérêt principal pour la sécurité ?",
+          "answer_a": "Pouvoir entendre les consignes diffusées par l’exploitant du tunnel.",
+          "answer_b": "Remplacer les feux de croisement par la radio.",
+          "answer_c": "Donner automatiquement ma position aux secours.",
+          "answer_d": "Obtenir la priorité sur les autres véhicules.",
+          "explanation": "Dans un tunnel équipé, la retransmission radio permet à l’exploitant de diffuser des messages de sécurité aux usagers. J’écoute les consignes sur la fréquence annoncée tout en restant attentif à la signalisation et à la circulation."
+        },
+        "en": {
+          "question_text": "Before this motorway tunnel, a radio frequency is announced. My passenger tunes the car radio to it. What is the main safety benefit?",
+          "answer_a": "Being able to hear instructions broadcast by the tunnel operator.",
+          "answer_b": "Replacing dipped headlights with the radio.",
+          "answer_c": "Automatically sending my location to emergency services.",
+          "answer_d": "Gaining priority over other vehicles.",
+          "explanation": "In an equipped tunnel, radio rebroadcasting lets the operator send safety messages to road users. I listen to the announced frequency while continuing to observe traffic and signs."
+        }
+      },
+      "image_path": "france/situation_tunnel_radio_safety_messages.jpg"
+    },
+    {
+      "key": "situation_electric_car_finished_charging_leave_bay",
+      "category_slug": "parking_stopping",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Cet emplacement est réservé aux véhicules électriques pendant leur recharge. Ma recharge est terminée. Puis-je laisser ma voiture ici toute la nuit sans recharger ?",
+          "answer_a": "Oui, toute voiture électrique peut y rester.",
+          "answer_b": "Oui, si le câble reste branché sans recharge.",
+          "answer_c": "Oui, si je laisse un numéro de téléphone.",
+          "answer_d": "Non, je dois libérer la place après la recharge.",
+          "explanation": "La réservation vise les véhicules électriques pendant la durée de recharge de leurs accumulateurs. Une fois celle-ci terminée, rester branché ou laisser un numéro ne transforme pas l’emplacement en stationnement ordinaire."
+        },
+        "en": {
+          "question_text": "This bay is reserved for electric vehicles while charging. My charging session has finished. May I leave my car here all night without charging?",
+          "answer_a": "Yes; any electric car may remain here.",
+          "answer_b": "Yes, if the cable stays connected without charging.",
+          "answer_c": "Yes, if I leave a phone number.",
+          "answer_d": "No; I must free the bay after charging.",
+          "explanation": "The reservation applies to electric vehicles while their batteries are charging. Once charging has ended, keeping the cable connected or leaving a phone number does not turn the bay into ordinary parking."
+        }
+      },
+      "image_path": "france/situation_electric_car_finished_charging_leave_bay.jpg"
+    },
+    {
+      "key": "situation_b7a_mopeds_exception_not_all_motor",
+      "category_slug": "road_signs",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Quelle interdiction précise ce panneau indique-t-il ?",
+          "answer_a": "Accès interdit uniquement aux voitures particulières.",
+          "answer_b": "Accès interdit à tous les véhicules, même aux vélos.",
+          "answer_c": "Accès interdit aux véhicules à moteur, sauf aux cyclomoteurs.",
+          "answer_d": "Accès interdit seulement aux motocyclettes.",
+          "explanation": "Le panneau B7a interdit les véhicules à moteur à l’exception des cyclomoteurs. Ma voiture est concernée ; il ne faut pas le confondre avec B7b, qui inclut aussi les cyclomoteurs."
+        },
+        "en": {
+          "question_text": "What exact restriction does this sign indicate?",
+          "answer_a": "Access prohibited only to passenger cars.",
+          "answer_b": "Access prohibited to all vehicles, including bicycles.",
+          "answer_c": "Access prohibited to motor vehicles, except mopeds.",
+          "answer_d": "Access prohibited only to motorcycles.",
+          "explanation": "Sign B7a prohibits motor vehicles except mopeds. It applies to my car; it differs from B7b, whose restriction also includes mopeds."
+        }
+      },
+      "image_path": "france/situation_b7a_mopeds_exception_not_all_motor.jpg"
+    },
+    {
+      "key": "situation_c13d_dead_end_cycle_pedestrian_outlet",
+      "category_slug": "road_signs",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Cette rue reste une impasse pour ma voiture. Pour quels usagers le panneau indique-t-il une issue ?",
+          "answer_a": "Les piétons et les cyclistes.",
+          "answer_b": "Les piétons uniquement.",
+          "answer_c": "Les voitures électriques uniquement.",
+          "answer_d": "Tous les véhicules à deux roues, même les motos.",
+          "explanation": "Le panneau C13d indique une impasse comportant une issue pour les piétons et les cyclistes. Ces pictogrammes n’annoncent pas un passage pour les voitures ni une autorisation générale pour les deux-roues motorisés."
+        },
+        "en": {
+          "question_text": "This street remains a dead end for my car. For which users does the sign indicate an exit?",
+          "answer_a": "Pedestrians and cyclists.",
+          "answer_b": "Pedestrians only.",
+          "answer_c": "Electric cars only.",
+          "answer_d": "All two-wheelers, including motorcycles.",
+          "explanation": "Sign C13d indicates a dead end with an outlet for pedestrians and cyclists. These symbols do not indicate a through route for cars or general access for powered two-wheelers."
+        }
+      },
+      "image_path": "france/situation_c13d_dead_end_cycle_pedestrian_outlet.jpg"
+    },
+    {
+      "key": "situation_b5b_police_checkpoint_required_stop",
+      "category_slug": "road_signs",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "J’approche de ce contrôle, sans consigne contraire d’un agent. Que m’impose ce panneau ?",
+          "answer_a": "Ralentir seulement si je pense avoir commis une infraction.",
+          "answer_b": "Passer au pas si aucun véhicule ne me précède.",
+          "answer_c": "Klaxonner puis poursuivre.",
+          "answer_d": "M’arrêter au poste de police pour le contrôle.",
+          "explanation": "Le panneau B5b impose l’arrêt au poste de police. Je prépare mon arrêt et suis les consignes des agents ; l’absence d’infraction supposée ou de véhicule devant ne dispense pas de ce contrôle."
+        },
+        "en": {
+          "question_text": "I approach this checkpoint with no contrary instruction from an officer. What does this sign require?",
+          "answer_a": "Slow down only if I think I committed an offence.",
+          "answer_b": "Pass at walking pace if no vehicle is ahead.",
+          "answer_c": "Sound the horn and continue.",
+          "answer_d": "Stop at the police checkpoint for the check.",
+          "explanation": "Sign B5b requires a stop at the police checkpoint. I prepare to stop and follow officers’ instructions; believing I committed no offence or seeing no vehicle ahead does not exempt me."
+        }
+      },
+      "image_path": "france/situation_b5b_police_checkpoint_required_stop.jpg"
+    },
+    {
+      "key": "situation_alcohol_screening_then_evidential_measurement",
+      "category_slug": "alcohol_drugs",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Lors d’un contrôle, le dépistage par éthylotest est positif. À quoi sert ensuite l’éthylomètre utilisé par les forces de l’ordre ?",
+          "answer_a": "À faire baisser mon alcoolémie.",
+          "answer_b": "À mesurer précisément le taux d’alcool dans l’air expiré.",
+          "answer_c": "À dépister uniquement le cannabis.",
+          "answer_d": "À vérifier la validité de mon assurance.",
+          "explanation": "L’éthylotest sert au dépistage. L’éthylomètre permet ensuite la vérification par mesure du taux d’alcool dans l’air expiré ; les deux étapes ne doivent pas être confondues."
+        },
+        "en": {
+          "question_text": "At a roadside check, the alcohol screening test is positive. What is the purpose of the evidential breath instrument then used by the officers?",
+          "answer_a": "To lower my alcohol level.",
+          "answer_b": "To measure the alcohol concentration in exhaled breath accurately.",
+          "answer_c": "To screen only for cannabis.",
+          "answer_d": "To check whether my insurance is valid.",
+          "explanation": "A screening breath test detects possible alcohol impairment. The evidential breath instrument then measures the alcohol concentration in exhaled air; screening and verification are different stages."
+        }
+      },
+      "image_path": "france/situation_alcohol_screening_then_evidential_measurement.jpg"
+    },
+    {
+      "key": "situation_probation_alcohol_six_point_deduction",
+      "category_slug": "alcohol_drugs",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "En permis probatoire, je suis contrôlé au volant avec 0,30 g/L d’alcool dans le sang. Combien de points cette infraction retire-t-elle ?",
+          "answer_a": "Aucun, car le taux est inférieur à 0,5 g/L.",
+          "answer_b": "Un point.",
+          "answer_c": "Six points.",
+          "answer_d": "Trois points seulement si un accident a eu lieu.",
+          "explanation": "En période probatoire, le seuil est de 0,2 g/L. Cette contravention entraîne un retrait de six points, même sans accident : cela représente tout le capital initial du permis."
+        },
+        "en": {
+          "question_text": "While on a probationary licence, I am checked driving with 0.30 g/L of alcohol in my blood. How many points does this offence deduct?",
+          "answer_a": "None, because it is below 0.5 g/L.",
+          "answer_b": "One point.",
+          "answer_c": "Six points.",
+          "answer_d": "Three points, only if there was a collision.",
+          "explanation": "The probationary threshold is 0.2 g/L. This contravention deducts six points even without a collision, equivalent to the licence’s entire initial points balance."
+        }
+      },
+      "image_path": "france/situation_probation_alcohol_six_point_deduction.jpg"
+    },
+    {
+      "key": "situation_wrong_fuel_discovered_before_start",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Je viens de mettre de l’essence dans le réservoir de ma voiture diesel, sans avoir redémarré. Que dois-je faire ?",
+          "answer_a": "Démarrer pour vérifier si le moteur accepte le mélange.",
+          "answer_b": "Ne pas démarrer et faire organiser une intervention professionnelle.",
+          "answer_c": "Compléter avec du gazole puis repartir sans avis.",
+          "answer_d": "Rouler vite pour consommer le mélange plus rapidement.",
+          "explanation": "Je ne démarre pas : le mauvais carburant risque d’endommager le circuit et le moteur. Je préviens la station et fais organiser l’assistance et la vidange nécessaires, sans improviser une dilution."
+        },
+        "en": {
+          "question_text": "I have just put petrol into my diesel car’s tank and have not restarted it. What should I do?",
+          "answer_a": "Start it to check whether the engine accepts the mixture.",
+          "answer_b": "Do not start it; arrange professional assistance.",
+          "answer_c": "Add diesel and leave without seeking advice.",
+          "answer_d": "Drive fast to use up the mixture sooner.",
+          "explanation": "I do not start the engine: the wrong fuel can damage the fuel system and engine. I inform the station and arrange the necessary assistance and draining, without improvising a dilution."
+        }
+      },
+      "image_path": "france/situation_wrong_fuel_discovered_before_start.jpg"
+    },
+    {
+      "key": "situation_stopping_distance_reaction_plus_braking",
+      "category_slug": "speed_limits",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Dans cette situation, je parcours 14 m avant de commencer à freiner, puis 16 m pendant le freinage. Quelle est ma distance totale d’arrêt depuis la perception du danger ?",
+          "answer_a": "2 m.",
+          "answer_b": "14 m.",
+          "answer_c": "16 m.",
+          "answer_d": "30 m.",
+          "explanation": "La distance d’arrêt additionne la distance parcourue pendant la réaction et celle du freinage. Avec les valeurs données, 14 + 16 = 30 m ; ces distances ne sont pas universelles et changent selon les conditions."
+        },
+        "en": {
+          "question_text": "In this situation, I travel 14 m before starting to brake, then 16 m while braking. What is my total stopping distance from noticing the danger?",
+          "answer_a": "2 m.",
+          "answer_b": "14 m.",
+          "answer_c": "16 m.",
+          "answer_d": "30 m.",
+          "explanation": "Stopping distance adds the distance travelled during reaction to the braking distance. With the given values, 14 + 16 = 30 m; these are not universal distances and vary with conditions."
+        }
+      },
+      "image_path": "france/situation_stopping_distance_reaction_plus_braking.jpg"
+    },
+    {
+      "key": "situation_hot_tyre_pressure_do_not_bleed",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b",
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Après un long trajet, mes pneus chauds affichent une pression supérieure à la valeur conseillée à froid. Quelles précautions sont correctes ?",
+          "answer_a": "Les dégonfler aussitôt jusqu’à la valeur à froid.",
+          "answer_b": "Ne pas les dégonfler pour corriger cette hausse à chaud.",
+          "answer_c": "Les vider de moitié avant de repartir.",
+          "answer_d": "Recontrôler la pression à froid selon la notice.",
+          "explanation": "La pression augmente avec l’échauffement du pneu. Je ne dégonfle pas un pneu chaud pour le ramener à la valeur à froid : je risquerais un sous-gonflage après refroidissement. Je recontrôle à froid suivant les préconisations."
+        },
+        "en": {
+          "question_text": "After a long drive, my hot tyres show a pressure above the recommended cold value. Which precautions are correct?",
+          "answer_a": "Immediately bleed them down to the cold value.",
+          "answer_b": "Do not deflate them to correct this rise while hot.",
+          "answer_c": "Release half their air before setting off.",
+          "answer_d": "Recheck the pressure when cold, following the manual.",
+          "explanation": "Tyre pressure rises as the tyre heats up. Bleeding a hot tyre down to its cold reference can leave it underinflated after cooling. I recheck it cold according to the manufacturer’s guidance."
+        }
+      },
+      "image_path": "france/situation_hot_tyre_pressure_do_not_bleed.jpg"
+    },
+    {
+      "key": "situation_wiper_split_rubber_before_rain_trip",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Avant de partir sous la pluie, je constate que le caoutchouc d’un essuie-glace est fendu et qu’il laisse des traces. Le lave-glace est plein. Que faire ?",
+          "answer_a": "Ajouter de l’eau dans le réservoir déjà plein.",
+          "answer_b": "Compter sur une vitesse plus élevée pour chasser l’eau.",
+          "answer_c": "Remplacer le balai défectueux avant le trajet.",
+          "answer_d": "Désactiver les essuie-glaces pendant la pluie.",
+          "explanation": "Un balai détérioré ne garantit plus un essuyage correct. Le lave-glace ne répare pas le caoutchouc : je remplace le balai avant ce trajet pour conserver une vue nette sur la route."
+        },
+        "en": {
+          "question_text": "Before a rainy drive, I find that a wiper’s rubber edge is split and leaves streaks. The washer reservoir is full. What should I do?",
+          "answer_a": "Add water to the already full reservoir.",
+          "answer_b": "Rely on higher speed to clear the water.",
+          "answer_c": "Replace the faulty blade before the trip.",
+          "answer_d": "Switch the wipers off during the rain.",
+          "explanation": "A damaged blade no longer provides reliable wiping. Washer fluid cannot repair its rubber edge; I replace the blade before this journey to maintain a clear view of the road."
+        }
+      },
+      "image_path": "france/situation_wiper_split_rubber_before_rain_trip.jpg"
+    },
+    {
+      "key": "situation_accident_emergency_call_information",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a",
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Témoin d’un accident avec blessé, je suis à l’abri et en ligne avec le 112. Quelles actions sont adaptées ?",
+          "answer_a": "Donner le lieu précis et l’état apparent des victimes.",
+          "answer_b": "Raccrocher dès que j’ai dit « accident ».",
+          "answer_c": "Répondre aux questions et attendre l’autorisation de raccrocher.",
+          "answer_d": "Attendre de connaître le responsable avant de donner le lieu.",
+          "explanation": "Une localisation précise et les informations sur les victimes aident à envoyer les secours adaptés. Je réponds calmement, signale les dangers connus et ne termine pas l’appel avant les consignes de l’opérateur."
+        },
+        "en": {
+          "question_text": "I witnessed a collision with an injured person, am in a safe place and am speaking to 112. Which actions are appropriate?",
+          "answer_a": "Give the exact location and the victims’ apparent condition.",
+          "answer_b": "Hang up as soon as I have said “collision”.",
+          "answer_c": "Answer questions and wait for permission to hang up.",
+          "answer_d": "Wait to identify who was at fault before giving the location.",
+          "explanation": "An exact location and information about the victims help dispatch suitable assistance. I answer calmly, report known hazards and do not end the call before the operator’s instructions."
+        }
+      },
+      "image_path": "france/situation_accident_emergency_call_information.jpg"
+    },
+    {
+      "key": "situation_officer_vertical_arm_clear_entered_junction",
+      "category_slug": "priority_rules",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Je suis déjà engagé dans le carrefour et ma sortie est libre lorsque l’agent lève un bras verticalement. Que dois-je faire ?",
+          "answer_a": "M’arrêter immédiatement au milieu du carrefour.",
+          "answer_b": "Dégager prudemment le carrefour.",
+          "answer_c": "Reculer jusqu’à mon point d’entrée.",
+          "answer_d": "Attendre que tous les véhicules derrière moi passent.",
+          "explanation": "Ce geste impose normalement l’arrêt aux usagers qui approchent, mais pas à ceux déjà engagés dans l’intersection. Je la dégage prudemment sans immobiliser ma voiture au milieu, en restant attentif aux consignes de l’agent."
+        },
+        "en": {
+          "question_text": "I am already inside the junction and my exit is clear when the officer raises one arm vertically. What should I do?",
+          "answer_a": "Stop immediately in the middle of the junction.",
+          "answer_b": "Carefully clear the junction.",
+          "answer_c": "Reverse back to where I entered.",
+          "answer_d": "Wait for every vehicle behind me to pass.",
+          "explanation": "The raised arm normally stops approaching traffic, but does not require drivers already inside the intersection to stop there. I carefully clear it while remaining attentive to the officer’s instructions."
+        }
+      },
+      "image_path": "france/situation_officer_vertical_arm_clear_entered_junction.jpg"
+    },
+    {
+      "key": "situation_mixed_line_return_after_legal_overtake",
+      "category_slug": "overtaking",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "J’ai commencé ce dépassement du côté discontinu de la ligne mixte. Je peux maintenant me rabattre sans gêner, avant la fin des pointillés. Puis-je franchir la partie continue pour revenir à droite ?",
+          "answer_a": "Non, je dois rester à gauche jusqu’au prochain carrefour.",
+          "answer_b": "Non, je dois m’arrêter sur la voie opposée.",
+          "answer_c": "Oui, mais seulement si je dépasse la limitation de vitesse.",
+          "answer_d": "Oui, puisque les conditions de cette manœuvre sont respectées.",
+          "explanation": "Pour une ligne mixte, on considère le côté le plus proche au début de la manœuvre. Ayant commencé du côté discontinu, je peux revenir à droite en franchissant la partie continue, en sécurité et avant la fin de la ligne discontinue."
+        },
+        "en": {
+          "question_text": "I began overtaking from the broken-line side of this mixed marking. I can now return without obstructing anyone, before the broken line ends. May I cross its solid component to return right?",
+          "answer_a": "No, I must stay left until the next junction.",
+          "answer_b": "No, I must stop in the opposing lane.",
+          "answer_c": "Yes, but only if I exceed the speed limit.",
+          "answer_d": "Yes, because the conditions for this manoeuvre are met.",
+          "explanation": "For a mixed marking, the side nearest the vehicle at the start matters. Having started from the broken side, I may cross the solid component to return right safely, completing the manoeuvre before the broken line ends."
+        }
+      },
+      "image_path": "france/situation_mixed_line_return_after_legal_overtake.jpg"
+    },
+    {
+      "key": "situation_paid_parking_time_exceeded_fps",
+      "category_slug": "parking_stopping",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Ma voiture est sur une place payante autorisée, mais la durée réglée est dépassée et je n’ai aucune exemption. À quoi m’expose ce paiement insuffisant ?",
+          "answer_a": "À une simple tolérance automatique jusqu’au lendemain.",
+          "answer_b": "À un retrait automatique de six points.",
+          "answer_c": "À un forfait de post-stationnement (FPS).",
+          "answer_d": "À aucune conséquence si un ancien ticket reste visible.",
+          "explanation": "Le FPS peut être demandé en cas d’absence ou d’insuffisance de paiement du stationnement payant. Un ticket expiré ne couvre pas la durée supplémentaire ; ce dispositif se distingue des contraventions pour stationnement interdit."
+        },
+        "en": {
+          "question_text": "My car is in a permitted paid street-parking bay, but the paid time has expired and I have no exemption. What can this insufficient payment lead to?",
+          "answer_a": "Automatic grace until the next day.",
+          "answer_b": "An automatic six-point deduction.",
+          "answer_c": "A post-parking charge (FPS).",
+          "answer_d": "No consequence if an old ticket remains visible.",
+          "explanation": "An FPS can be charged when paid parking is unpaid or underpaid. An expired ticket does not cover the extra time; this system is separate from offences involving prohibited parking."
+        }
+      },
+      "image_path": "france/situation_paid_parking_time_exceeded_fps.jpg"
+    },
+    {
+      "key": "situation_cmi_barrier_carpark_fee_possible",
+      "category_slug": "parking_stopping",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "J’accompagne un titulaire de CMI stationnement. Ce parc possède des bornes d’entrée et de sortie utilisables depuis la voiture. Une redevance peut-elle malgré tout être demandée ?",
+          "answer_a": "Oui, cette exception à la gratuité est possible.",
+          "answer_b": "Non, tous les parcs sont toujours gratuits avec la carte.",
+          "answer_c": "Oui, mais seulement si la personne conduit elle-même.",
+          "answer_d": "Non, à condition de laisser tourner le moteur.",
+          "explanation": "La CMI stationnement permet en principe le stationnement gratuit. Une redevance peut toutefois être exigée dans les parcs équipés de bornes d’entrée et de sortie utilisables depuis le véhicule : je consulte les conditions du parc."
+        },
+        "en": {
+          "question_text": "I am accompanying a CMI parking-card holder. This car park has entry and exit terminals usable from inside the car. Can a fee still be charged?",
+          "answer_a": "Yes, this exception to free parking is possible.",
+          "answer_b": "No, every car park is always free with the card.",
+          "answer_c": "Yes, but only if the card holder is driving.",
+          "answer_d": "No, provided I leave the engine running.",
+          "explanation": "The CMI parking card generally provides free parking. However, car parks with entry and exit terminals usable from the vehicle may charge a fee; I check the car park’s conditions."
+        }
+      },
+      "image_path": "france/situation_cmi_barrier_carpark_fee_possible.jpg"
+    },
+    {
+      "key": "situation_conscious_motorcyclist_leave_helmet_for_rescuers",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Les lieux sont sécurisés et les secours prévenus. Ce motard est conscient, respire normalement et ne court aucun danger immédiat. Sans autre consigne des secours, dois-je lui enlever son casque ?",
+          "answer_a": "Oui, pour examiner systématiquement sa tête.",
+          "answer_b": "Oui, dès qu’il peut me parler.",
+          "answer_c": "Oui, en tirant rapidement vers le haut.",
+          "answer_d": "Non, je laisse les secours s’en charger.",
+          "explanation": "Dans cette situation sans détresse respiratoire ni danger immédiat, je n’enlève pas le casque et j’évite de mobiliser sa tête et son cou. Je rassure le blessé, surveille son état et suis les consignes des secours."
+        },
+        "en": {
+          "question_text": "The scene is safe and help has been called. This motorcyclist is conscious, breathing normally and in no immediate danger. Without another instruction from emergency services, should I remove their helmet?",
+          "answer_a": "Yes, to examine the head routinely.",
+          "answer_b": "Yes, as soon as they can speak to me.",
+          "answer_c": "Yes, by pulling it quickly upwards.",
+          "answer_d": "No, I leave that to the rescuers.",
+          "explanation": "With no breathing emergency or immediate danger in this situation, I do not remove the helmet or unnecessarily move the head and neck. I reassure the casualty, monitor their condition and follow emergency-service instructions."
+        }
+      },
+      "image_path": "france/situation_conscious_motorcyclist_leave_helmet_for_rescuers.jpg"
+    },
+    {
+      "key": "situation_motorway_stationary_queue_stay_inside",
+      "category_slug": "motorways",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Un bouchon immobilise la circulation sur autoroute, sans urgence ni consigne d’évacuation. Mon passager veut sortir se promener entre les voitures. Que lui dire ?",
+          "answer_a": "Il peut sortir, car l’arrêt des voitures transforme la route en zone piétonne.",
+          "answer_b": "De rester dans la voiture : le trafic peut reprendre soudainement.",
+          "answer_c": "De marcher uniquement sur la bande d’arrêt d’urgence.",
+          "answer_d": "De passer d’abord par-dessus la glissière centrale.",
+          "explanation": "Dans un bouchon ordinaire, les voies restent dangereuses et la circulation peut repartir. Les occupants restent dans le véhicule ; une panne, un incendie ou une consigne des secours serait une situation différente."
+        },
+        "en": {
+          "question_text": "A motorway queue is stationary, with no emergency or evacuation instruction. My passenger wants to walk between the cars. What should I say?",
+          "answer_a": "They may get out because stopped traffic makes it a pedestrian zone.",
+          "answer_b": "Stay inside the car: traffic may move again suddenly.",
+          "answer_c": "Walk only on the emergency lane.",
+          "answer_d": "Climb over the central barrier first.",
+          "explanation": "In an ordinary queue, the lanes remain dangerous and traffic can restart. Occupants stay in the vehicle; a breakdown, fire or emergency-service instruction would be a different situation."
+        }
+      },
+      "image_path": "france/situation_motorway_stationary_queue_stay_inside.jpg"
+    },
+    {
+      "key": "situation_driver_mat_secure_no_stacking",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a",
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Avant de partir, je vérifie le tapis côté conducteur. Quelles précautions sont correctes ?",
+          "answer_a": "Utiliser un tapis adapté et correctement fixé.",
+          "answer_b": "Superposer un second tapis pour mieux protéger le premier.",
+          "answer_c": "Vérifier qu’aucune pédale n’est gênée dans sa course.",
+          "answer_d": "Laisser le tapis libre pour pouvoir le pousser en roulant.",
+          "explanation": "Un tapis inadapté, mal fixé ou superposé peut bloquer une pédale. Avant le départ, je garde un seul tapis prévu pour le véhicule, fixé selon la notice, et je vérifie le libre mouvement des pédales."
+        },
+        "en": {
+          "question_text": "Before setting off I check the driver’s floor mat. Which precautions are correct?",
+          "answer_a": "Use a suitable mat secured correctly.",
+          "answer_b": "Stack another mat over it to protect the first one.",
+          "answer_c": "Check that every pedal can move freely.",
+          "answer_d": "Leave the mat loose so I can push it away while driving.",
+          "explanation": "An unsuitable, loose or stacked mat can obstruct a pedal. Before departure I use one mat designed for the vehicle, secure it as instructed and check that the pedals can move freely."
+        }
+      },
+      "image_path": "france/situation_driver_mat_secure_no_stacking.jpg"
+    },
+    {
+      "key": "situation_borrowed_car_seat_then_mirrors_before_departure",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b",
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Je prends une voiture conduite auparavant par une personne d’une taille différente. Avant de démarrer, que dois-je faire ?",
+          "answer_a": "Garder tous ses réglages puisqu’elle a pu conduire ainsi.",
+          "answer_b": "Adapter le siège et la position de conduite à ma morphologie.",
+          "answer_c": "Attendre d’être sur la route pour régler les rétroviseurs.",
+          "answer_d": "Régler les rétroviseurs depuis ma position de conduite.",
+          "explanation": "Les réglages du conducteur précédent ne me conviennent pas forcément. À l’arrêt, je m’installe pour maîtriser les commandes, puis je règle les rétroviseurs depuis cette position afin de surveiller correctement l’arrière et les côtés."
+        },
+        "en": {
+          "question_text": "I am taking a car previously driven by someone of a different height. What should I do before setting off?",
+          "answer_a": "Keep all their settings because they managed to drive with them.",
+          "answer_b": "Adjust the seat and driving position to fit me.",
+          "answer_c": "Wait until I am on the road to adjust the mirrors.",
+          "answer_d": "Adjust the mirrors from my driving position.",
+          "explanation": "The previous driver’s settings may not suit me. While stationary, I position myself to control the vehicle, then set the mirrors from that position so I can monitor behind and beside the car."
+        }
+      },
+      "image_path": "france/situation_borrowed_car_seat_then_mirrors_before_departure.jpg"
+    },
+    {
+      "key": "situation_empty_roof_box_remove_after_holiday",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Les vacances sont terminées et ce coffre de toit vide ne me sert plus. Pour limiter la consommation, quelle action est utile ?",
+          "answer_a": "Le garder, puisqu’un coffre vide n’a aucun effet.",
+          "answer_b": "L’ouvrir pendant les trajets.",
+          "answer_c": "Le démonter avec ses supports inutiles, selon la notice.",
+          "answer_d": "Ajouter du poids dedans pour stabiliser l’air.",
+          "explanation": "Même vide, un coffre de toit augmente la résistance à l’air et peut faire consommer davantage. Une fois inutile, je le démonte avec les accessoires amovibles concernés, à l’arrêt et en suivant la notice."
+        },
+        "en": {
+          "question_text": "The holiday is over and I no longer need this empty roof box. What helps limit fuel consumption?",
+          "answer_a": "Keep it because an empty box has no effect.",
+          "answer_b": "Leave it open while driving.",
+          "answer_c": "Remove it and its unused supports as instructed.",
+          "answer_d": "Add weight inside to stabilise the air.",
+          "explanation": "Even empty, a roof box increases aerodynamic drag and can raise fuel consumption. Once it is no longer needed, I remove it and the relevant removable accessories while parked, following the instructions."
+        }
+      },
+      "image_path": "france/situation_empty_roof_box_remove_after_holiday.jpg"
+    },
+    {
+      "key": "situation_ecall_automatic_serious_crash_location",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Ma voiture dispose de l’eCall 112. Quel est son rôle prévu si un choc grave est détecté et que les occupants ne peuvent pas téléphoner ?",
+          "answer_a": "Appeler automatiquement les secours et transmettre la localisation.",
+          "answer_b": "Réparer automatiquement les dégâts du véhicule.",
+          "answer_c": "Prévenir uniquement mon garagiste par courrier.",
+          "answer_d": "Attendre obligatoirement qu’un témoin appuie sur le bouton.",
+          "explanation": "L’eCall 112 est conçu pour déclencher automatiquement un appel après un accident grave et transmettre notamment la position du véhicule. Cette alerte peut aider les secours même si les occupants ne peuvent pas appeler eux-mêmes."
+        },
+        "en": {
+          "question_text": "My car has 112-based eCall. What is it designed to do if a serious crash is detected and the occupants cannot make a call?",
+          "answer_a": "Automatically call emergency services and transmit the location.",
+          "answer_b": "Automatically repair the vehicle’s damage.",
+          "answer_c": "Notify only my garage by post.",
+          "answer_d": "Always wait for a witness to press the button.",
+          "explanation": "112-based eCall is designed to trigger an automatic emergency call after a serious collision and transmit information including the vehicle’s location. It can alert help even when occupants cannot make the call themselves."
+        }
+      },
+      "image_path": "france/situation_ecall_automatic_serious_crash_location.jpg"
+    },
+    {
+      "key": "situation_one_way_left_turn_position",
+      "category_slug": "priority_rules",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Cette rue est à sens unique, sans double sens cyclable ni voie spécialisée. Pour préparer un virage à gauche autorisé, où dois-je me placer après mes contrôles ?",
+          "answer_a": "Près du bord droit, comme pour tourner à droite.",
+          "answer_b": "À cheval sur le trottoir gauche.",
+          "answer_c": "Vers le bord gauche de la chaussée.",
+          "answer_d": "Au milieu, sans modifier ma position.",
+          "explanation": "Pour quitter une route par la gauche, je serre à gauche après avoir contrôlé et signalé ma manœuvre. Sur cette chaussée à sens unique sans aménagement particulier, je me rapproche du bord gauche sans monter sur le trottoir."
+        },
+        "en": {
+          "question_text": "This is a one-way street with no contraflow cycling or dedicated turn lane. After checking, where should I position for a permitted left turn?",
+          "answer_a": "Near the right edge, as for a right turn.",
+          "answer_b": "Partly on the left pavement.",
+          "answer_c": "Toward the left edge of the carriageway.",
+          "answer_d": "In the middle, without changing position.",
+          "explanation": "Before leaving a road to the left, I move toward the left after checking and signalling. On this one-way carriageway without special arrangements, I approach the left edge without mounting the pavement."
+        }
+      },
+      "image_path": "france/situation_one_way_left_turn_position.jpg"
+    },
+    {
+      "key": "situation_wide_suv_narrow_crossing_yield",
+      "category_slug": "priority_rules",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Mon SUV mesure 2,05 m de large, hors rétroviseurs. Sur cette route plane, le croisement avec la petite voiture est trop étroit pour être sûr. Je dois :",
+          "answer_a": "Ralentir et, au besoin, m’arrêter ou me ranger pour la laisser passer.",
+          "answer_b": "Passer d’abord parce que ma voiture est plus large.",
+          "answer_c": "Conserver mon allure en demandant à l’autre de monter sur l’accotement.",
+          "answer_d": "Appliquer automatiquement la priorité au véhicule qui monte.",
+          "explanation": "Lorsque le croisement n’est pas facile et sûr, un véhicule dont le gabarit dépasse 2 m de largeur doit faciliter le passage aux véhicules plus petits en ralentissant et, si nécessaire, en s’arrêtant ou en se rangeant. Ici, la route est plane."
+        },
+        "en": {
+          "question_text": "My SUV is 2.05 m wide, excluding mirrors. On this level road, there is too little room to pass the smaller oncoming car safely. I must:",
+          "answer_a": "Slow down and, if needed, stop or pull aside to let it pass.",
+          "answer_b": "Go first because my car is wider.",
+          "answer_c": "Maintain speed and make the other driver use the verge.",
+          "answer_d": "Automatically give priority to the uphill vehicle.",
+          "explanation": "Where oncoming vehicles cannot pass easily and safely, a vehicle wider than 2 m must facilitate passage for smaller vehicles by slowing and, if needed, stopping or pulling aside. This road is level, so uphill rules do not decide the issue."
+        }
+      },
+      "image_path": "france/situation_wide_suv_narrow_crossing_yield.jpg"
+    },
+    {
+      "key": "situation_speed_time_gain_30km_110_130",
+      "category_slug": "speed_limits",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Sur 30 km d’autoroute, sans arrêt ni ralentissement, quel temps gagne-t-on environ en roulant constamment à 130 km/h plutôt qu’à 110 km/h ?",
+          "answer_a": "Environ 15 minutes.",
+          "answer_b": "Environ 10 minutes.",
+          "answer_c": "Environ 6 minutes.",
+          "answer_d": "Environ 2 minutes 30 secondes.",
+          "explanation": "Le trajet théorique dure environ 16 min 22 s à 110 km/h et 13 min 51 s à 130 km/h : le gain est proche de 2 min 30 s. Ce calcul n’autorise jamais à dépasser la limite applicable ni une allure adaptée aux conditions."
+        },
+        "en": {
+          "question_text": "Over 30 km of motorway without stops or slowdowns, roughly how much time is saved by travelling constantly at 130 km/h instead of 110 km/h?",
+          "answer_a": "About 15 minutes.",
+          "answer_b": "About 10 minutes.",
+          "answer_c": "About 6 minutes.",
+          "answer_d": "About 2 minutes 30 seconds.",
+          "explanation": "The theoretical journey takes about 16 min 22 sec at 110 km/h and 13 min 51 sec at 130 km/h, saving roughly 2 min 30 sec. This calculation never permits exceeding the applicable limit or a speed suited to the conditions."
+        }
+      },
+      "image_path": "france/situation_speed_time_gain_30km_110_130.jpg"
+    },
+    {
+      "key": "situation_sign_reader_display_not_authority",
+      "category_slug": "speed_limits",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a",
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Le panneau routier impose 70 km/h à ma voiture, mais la reconnaissance des panneaux affiche encore 90 au tableau de bord. Quelles affirmations sont exactes ?",
+          "answer_a": "Je dois respecter 70 km/h dès le panneau.",
+          "answer_b": "L’affichage de la voiture m’autorise à rouler à 90 km/h.",
+          "answer_c": "Je reste responsable du respect de la limitation.",
+          "answer_d": "La caméra garantit que la valeur 90 est exacte.",
+          "explanation": "La reconnaissance des panneaux est une aide qui peut manquer ou mal interpréter une information. La valeur affichée dans la voiture ne remplace pas la signalisation applicable : je respecte 70 km/h et reste responsable de mon allure."
+        },
+        "en": {
+          "question_text": "The roadside sign imposes 70 km/h on my car, but sign recognition still displays 90 on the dashboard. Which statements are correct?",
+          "answer_a": "I must comply with 70 km/h from the sign.",
+          "answer_b": "The car display allows me to drive at 90 km/h.",
+          "answer_c": "I remain responsible for obeying the speed limit.",
+          "answer_d": "The camera guarantees that 90 is correct.",
+          "explanation": "Sign recognition is an aid that may miss or misread information. Its in-car display does not replace applicable road signs: I obey 70 km/h and remain responsible for my speed."
+        }
+      },
+      "image_path": "france/situation_sign_reader_display_not_authority.jpg"
+    },
+    {
+      "key": "situation_alcohol_drugs_combined_nine_points",
+      "category_slug": "alcohol_drugs",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Avec un permis à 12 points, je suis sanctionné pour conduite après usage de stupéfiants et sous l’emprise de l’alcool (0,80 g/L de sang). Combien de points cette infraction combinée retire-t-elle ?",
+          "answer_a": "6 points.",
+          "answer_b": "9 points.",
+          "answer_c": "8 points au maximum dans tous les cas.",
+          "answer_d": "12 points automatiquement.",
+          "explanation": "La conduite après usage de stupéfiants sous l’emprise de l’alcool entraîne actuellement un retrait de 9 points. Cette règle particulière ne doit pas être confondue avec le retrait de 6 points pour les stupéfiants seuls ; d’autres sanctions sont également prévues."
+        },
+        "en": {
+          "question_text": "With a 12-point licence, I am penalised for driving after drug use and under the influence of alcohol (0.80 g/L of blood). How many points does this combined offence deduct?",
+          "answer_a": "6 points.",
+          "answer_b": "9 points.",
+          "answer_c": "A maximum of 8 in every case.",
+          "answer_d": "12 points automatically.",
+          "explanation": "Driving after drug use while also under the influence of alcohol currently carries a nine-point deduction. This specific rule differs from the six-point deduction for drug use alone; other penalties also apply."
+        }
+      },
+      "image_path": "france/situation_alcohol_drugs_combined_nine_points.jpg"
+    },
+    {
+      "key": "situation_anaesthesia_discharge_no_driving",
+      "category_slug": "alcohol_drugs",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Je sors d’un examen sous anesthésie générale. L’équipe m’a demandé de ne pas conduire pendant 24 h, mais je me sens réveillé. Pour rentrer aujourd’hui, je dois :",
+          "answer_a": "Conduire si le trajet dure moins de dix minutes.",
+          "answer_b": "Boire un café puis prendre le volant.",
+          "answer_c": "Me faire raccompagner et respecter les consignes reçues.",
+          "answer_d": "Conduire puisque ma sortie a été autorisée.",
+          "explanation": "L’autorisation de quitter l’établissement ne signifie pas que les effets de l’anesthésie ont disparu pour la conduite. Je me fais raccompagner et respecte le délai et les autres consignes de l’équipe, même si je me sens bien réveillé."
+        },
+        "en": {
+          "question_text": "I am leaving after an examination under general anaesthesia. The team told me not to drive for 24 hours, but I feel awake. To get home today, I must:",
+          "answer_a": "Drive if the journey takes less than ten minutes.",
+          "answer_b": "Drink coffee and then drive.",
+          "answer_c": "Have someone take me home and follow the instructions.",
+          "answer_d": "Drive because I have been discharged.",
+          "explanation": "Permission to leave the facility does not mean the effects of anaesthesia relevant to driving have ended. I arrange to be taken home and follow the team’s waiting period and other instructions, even if I feel fully awake."
+        }
+      },
+      "image_path": "france/situation_anaesthesia_discharge_no_driving.jpg"
+    },
+    {
+      "key": "situation_brake_fluid_below_min",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b",
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Avant le départ, voiture garée à plat, le liquide de frein est sous MIN. Quelles précautions sont correctes ?",
+          "answer_a": "Compléter avec de l’eau du robinet.",
+          "answer_b": "Faire contrôler rapidement le système par un professionnel.",
+          "answer_c": "Ignorer le niveau tant que la pédale semble normale.",
+          "answer_d": "N’utiliser que le liquide prescrit, sans le contaminer.",
+          "explanation": "Un niveau sous MIN peut compromettre le freinage et doit être contrôlé rapidement. Je demande conseil avant de partir : un simple appoint ne remplace pas la recherche de la cause. Le liquide doit respecter la prescription du constructeur, sans eau ni autre produit."
+        },
+        "en": {
+          "question_text": "Before departure, with the car parked level, the brake fluid is below MIN. Which precautions are correct?",
+          "answer_a": "Top it up with tap water.",
+          "answer_b": "Have the system checked promptly by a professional.",
+          "answer_c": "Ignore the level while the pedal feels normal.",
+          "answer_d": "Use only the specified fluid and avoid contamination.",
+          "explanation": "A level below MIN can affect braking and requires prompt inspection. I seek advice before departure: topping up alone does not replace identifying the cause. The fluid must meet the manufacturer’s specification, without water or other contaminants."
+        }
+      },
+      "image_path": "france/situation_brake_fluid_below_min.jpg"
+    },
+    {
+      "key": "situation_flooded_road_do_not_enter",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "La route devant moi est inondée et je ne connais pas la profondeur de l’eau. Aucune barrière ne ferme le passage. Que faire ?",
+          "answer_a": "Ne pas m’engager et chercher un itinéraire sûr.",
+          "answer_b": "Traverser vite pour créer une vague devant la voiture.",
+          "answer_c": "Avancer jusqu’à ce que l’eau atteigne les portières.",
+          "answer_d": "Suivre un autre véhicule pour tester la profondeur.",
+          "explanation": "Je ne m’engage pas sur une route inondée, même sans barrière et même si l’eau semble peu profonde. Le courant et l’état de la chaussée peuvent être trompeurs ; je reste à l’écart et recherche un trajet sûr en suivant les informations officielles."
+        },
+        "en": {
+          "question_text": "The road ahead is flooded and I do not know the water depth. No barrier closes it. What should I do?",
+          "answer_a": "Stay out and find a safe route.",
+          "answer_b": "Cross quickly to create a wave in front of the car.",
+          "answer_c": "Advance until the water reaches the doors.",
+          "answer_d": "Follow another vehicle to test the depth.",
+          "explanation": "I do not enter a flooded road, even without a barrier or if the water appears shallow. The current and road condition can be deceptive; I stay clear and find a safe route using official information."
+        }
+      },
+      "image_path": "france/situation_flooded_road_do_not_enter.jpg"
+    },
+    {
+      "key": "situation_child_never_alone_parked_heat",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Par temps chaud, mon enfant dort dans la voiture garée. Puis-je le laisser seul cinq minutes pour une course si j’entrouvre les vitres ?",
+          "answer_a": "Oui, si je garde la voiture à portée de vue.",
+          "answer_b": "Oui, parce que cinq minutes sont sans risque.",
+          "answer_c": "Oui, si la voiture est à l’ombre au départ.",
+          "answer_d": "Non, je ne le laisse pas seul dans la voiture.",
+          "explanation": "Un enfant ne doit pas rester seul dans une voiture stationnée, même brièvement et même avec les vitres entrouvertes. L’habitacle peut rapidement chauffer ; je l’emmène avec moi ou organise une surveillance adaptée par un adulte."
+        },
+        "en": {
+          "question_text": "In warm weather, my child is asleep in the parked car. May I leave them alone for a five-minute errand if I leave the windows slightly open?",
+          "answer_a": "Yes, if I can keep the car in sight.",
+          "answer_b": "Yes, because five minutes is risk-free.",
+          "answer_c": "Yes, if the car is initially in shade.",
+          "answer_d": "No, I do not leave the child alone in the car.",
+          "explanation": "A child must not be left alone in a parked car, even briefly and with windows ajar. The cabin can heat up quickly; I take the child with me or arrange appropriate supervision by an adult."
+        }
+      },
+      "image_path": "france/situation_child_never_alone_parked_heat.jpg"
+    },
+    {
+      "key": "situation_truck_right_indicator_not_overtake_permission",
+      "category_slug": "overtaking",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Le camion devant moi met son clignotant droit. Ce signal garantit-il à lui seul que je peux le dépasser par la gauche ?",
+          "answer_a": "Oui, le conducteur du camion a vérifié à ma place.",
+          "answer_b": "Non, je dois vérifier moi-même toutes les conditions du dépassement.",
+          "answer_c": "Oui, même si la visibilité est insuffisante.",
+          "answer_d": "Oui, et je peux alors dépasser la vitesse autorisée.",
+          "explanation": "Le clignotant annonce une intention ; ce n’est pas une garantie de passage libre pour le véhicule qui suit. Avant de dépasser par la gauche, je dois moi-même contrôler la visibilité, les usagers, l’espace de retour et le respect des règles."
+        },
+        "en": {
+          "question_text": "The lorry ahead switches on its right indicator. Does this signal alone guarantee that I can overtake on the left?",
+          "answer_a": "Yes, the lorry driver has checked on my behalf.",
+          "answer_b": "No, I must check all overtaking conditions myself.",
+          "answer_c": "Yes, even if visibility is insufficient.",
+          "answer_d": "Yes, and I may then exceed the speed limit.",
+          "explanation": "An indicator communicates an intention; it is not a guarantee of a clear passing route for the following vehicle. Before overtaking on the left, I must check visibility, other road users, return space and compliance with the rules myself."
+        }
+      },
+      "image_path": "france/situation_truck_right_indicator_not_overtake_permission.jpg"
+    },
+    {
+      "key": "situation_roundabout_left_lane_optional",
+      "category_slug": "priority_rules",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a",
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Je vais vers une sortie située à gauche de mon axe d’entrée dans ce giratoire à deux voies, sans affectation particulière. Quelles affirmations sont exactes ?",
+          "answer_a": "Je peux me placer sur la voie de gauche.",
+          "answer_b": "Je suis obligé de prendre la voie de gauche.",
+          "answer_c": "Je peux rester sur la voie de droite.",
+          "answer_d": "Je dois traverser l’îlot central.",
+          "explanation": "Pour une sortie située à gauche de mon axe d’entrée, je peux serrer à gauche dans un giratoire à plusieurs voies : c’est une possibilité, pas une obligation. En l’absence d’affectation particulière, rester à droite est permis."
+        },
+        "en": {
+          "question_text": "My exit is to the left of my approach direction on this two-lane roundabout, with no special lane allocation. Which statements are correct?",
+          "answer_a": "I may use the left-hand lane.",
+          "answer_b": "I must use the left-hand lane.",
+          "answer_c": "I may remain in the right-hand lane.",
+          "answer_d": "I must drive across the central island.",
+          "explanation": "For an exit to the left of my approach direction, I may use the left lane on a multi-lane roundabout; it is optional, not compulsory. With no special lane allocation, remaining in the right lane is permitted."
+        }
+      },
+      "image_path": "france/situation_roundabout_left_lane_optional.jpg"
+    },
+    {
+      "key": "situation_caravan_tight_right_turn_left_swing",
+      "category_slug": "priority_rules",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Avec ma voiture et sa caravane autorisée, ce virage à droite est impossible en restant à droite. Aucun marquage ne l’interdit. Puis-je utiliser la partie gauche pour manœuvrer ?",
+          "answer_a": "Oui, à vitesse normale sans autre contrôle.",
+          "answer_b": "Oui, à allure modérée, après m’être assuré de ne mettre personne en danger.",
+          "answer_c": "Non, cette possibilité est réservée aux autobus.",
+          "answer_d": "Oui, mon clignotant oblige les autres à s’arrêter.",
+          "explanation": "Quand le tracé du virage et les dimensions du véhicule empêchent de tenir la droite, une manœuvre par la partie gauche est possible. Elle exige une allure modérée et la vérification de l’absence de danger pour autrui."
+        },
+        "en": {
+          "question_text": "With my car and permitted caravan, this right turn cannot be made while keeping right. No marking prohibits it. May I use the left part of the road to manoeuvre?",
+          "answer_a": "Yes, at normal speed without further checks.",
+          "answer_b": "Yes, at moderate speed after making sure nobody is endangered.",
+          "answer_c": "No; only buses may do this.",
+          "answer_d": "Yes; my indicator forces everyone else to stop.",
+          "explanation": "When the bend and the vehicle’s dimensions make keeping right impossible, the left part of the road may be used for the manoeuvre. This requires moderate speed and checking that nobody else is endangered."
+        }
+      },
+      "image_path": "france/situation_caravan_tight_right_turn_left_swing.jpg"
+    },
+    {
+      "key": "situation_motorway_filtering_two_leftmost_lanes",
+      "category_slug": "motorways",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Sur cette autoroute sèche à trois voies, toutes les files roulent au pas. Comme automobiliste, où dois-je notamment anticiper les motos circulant légalement en inter-files ?",
+          "answer_a": "Sur le terre-plein central.",
+          "answer_b": "Uniquement sur la bande d’arrêt d’urgence.",
+          "answer_c": "Entre la voie de droite et la voie du milieu.",
+          "answer_d": "Entre les deux voies les plus à gauche.",
+          "explanation": "Lorsque les conditions réglementaires sont réunies, l’inter-files se pratique entre les deux files les plus à gauche de la chaussée. Je surveille cet espace et mes angles morts avant tout changement de voie."
+        },
+        "en": {
+          "question_text": "On this dry three-lane motorway, every lane is crawling in a continuous queue. As a car driver, where should I particularly anticipate motorcycles filtering legally?",
+          "answer_a": "On the central reservation.",
+          "answer_b": "Only on the hard shoulder.",
+          "answer_c": "Between the right and middle lanes.",
+          "answer_d": "Between the two leftmost lanes.",
+          "explanation": "When the legal conditions are met, filtering takes place between the two leftmost queues on the carriageway. I watch this space and check blind spots before changing lanes."
+        }
+      },
+      "image_path": "france/situation_motorway_filtering_two_leftmost_lanes.jpg"
+    },
+    {
+      "key": "situation_alcohol_accident_own_damage_exclusion",
+      "category_slug": "alcohol_drugs",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Je provoque un accident sous l’emprise de l’alcool. Mon contrat « tous risques » garantit-il forcément le remboursement des dégâts de ma propre voiture ?",
+          "answer_a": "Non, l’assureur peut refuser cette garantie.",
+          "answer_b": "Oui, dès que ma cotisation est payée.",
+          "answer_c": "Oui, si aucune autre voiture n’est abîmée.",
+          "answer_d": "Oui, si je déclare l’accident le jour même.",
+          "explanation": "Une assurance « tous risques » n’efface pas les exclusions liées à la conduite sous alcool. L’assureur peut refuser l’indemnisation de mes propres dommages ; payer la cotisation ou déclarer vite l’accident ne garantit pas cette couverture."
+        },
+        "en": {
+          "question_text": "I cause a crash while under the influence of alcohol. Does my comprehensive policy necessarily cover the damage to my own car?",
+          "answer_a": "No; the insurer may refuse this cover.",
+          "answer_b": "Yes, as long as my premium is paid.",
+          "answer_c": "Yes, if no other car is damaged.",
+          "answer_d": "Yes, if I report the crash that day.",
+          "explanation": "Comprehensive insurance does not remove exclusions relating to driving under alcohol. The insurer may refuse to cover my own damage; paying the premium or reporting promptly does not guarantee this protection."
+        }
+      },
+      "image_path": "france/situation_alcohol_accident_own_damage_exclusion.jpg"
+    },
+    {
+      "key": "situation_average_speed_camera_section",
+      "category_slug": "speed_limits",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Je circule sur une section contrôlée par un radar de vitesse moyenne, dit « radar tronçon ». Que mesure ce dispositif ?",
+          "answer_a": "Seulement ma vitesse au premier point.",
+          "answer_b": "Seulement ma vitesse au dernier point.",
+          "answer_c": "Ma vitesse moyenne sur la portion contrôlée.",
+          "answer_d": "Uniquement la vitesse du véhicule devant moi.",
+          "explanation": "Le radar tronçon détermine la vitesse moyenne sur une portion de route. Il ne se limite pas à une vitesse instantanée à une extrémité ; je respecte les limitations pendant tout le trajet."
+        },
+        "en": {
+          "question_text": "I am travelling on a section monitored by an average-speed camera system. What does it measure?",
+          "answer_a": "Only my speed at the first point.",
+          "answer_b": "Only my speed at the last point.",
+          "answer_c": "My average speed over the monitored section.",
+          "answer_d": "Only the speed of the vehicle ahead.",
+          "explanation": "An average-speed camera system determines average speed over a section of road. It is not limited to instantaneous speed at either end; I obey the limits throughout the journey."
+        }
+      },
+      "image_path": "france/situation_average_speed_camera_section.jpg"
+    },
+    {
+      "key": "situation_passenger_feet_dashboard_airbag",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Avant de partir, mon passager adulte a bouclé sa ceinture mais pose ses pieds sur la planche de bord. Que dois-je lui demander ?",
+          "answer_a": "De garder cette position si la ceinture est bouclée.",
+          "answer_b": "De remettre ses pieds au plancher et de s’asseoir correctement.",
+          "answer_c": "De croiser les jambes sur la planche de bord.",
+          "answer_d": "De désactiver l’airbag pour garder ses pieds en hauteur.",
+          "explanation": "La ceinture ne rend pas cette posture sûre : le déploiement de l’airbag peut provoquer de graves blessures si les jambes sont devant lui. Le passager remet ses pieds au plancher et reprend une position assise correcte avant le départ."
+        },
+        "en": {
+          "question_text": "Before departure, my adult passenger has fastened the seat belt but has both feet on the dashboard. What should I ask them to do?",
+          "answer_a": "Stay like that if the belt is fastened.",
+          "answer_b": "Put their feet on the floor and sit properly.",
+          "answer_c": "Cross their legs on the dashboard.",
+          "answer_d": "Disable the airbag to keep their feet raised.",
+          "explanation": "A fastened belt does not make this posture safe: airbag deployment can seriously injure legs placed in front of it. Before departure, the passenger puts both feet on the floor and resumes a proper seated position."
+        }
+      },
+      "image_path": "france/situation_passenger_feet_dashboard_airbag.jpg"
+    },
+    {
+      "key": "situation_technical_inspection_critical_next_day",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Hier, ma voiture a reçu un contrôle technique défavorable pour défaillance critique (R). Sans réparation ni contre-visite favorable, puis-je l’utiliser normalement aujourd’hui ?",
+          "answer_a": "Oui, pendant deux mois.",
+          "answer_b": "Oui, pendant une semaine.",
+          "answer_c": "Oui, si le trajet est court.",
+          "answer_d": "Non, la validité était limitée au jour du contrôle.",
+          "explanation": "Avec une défaillance critique, la validité du contrôle est limitée au jour où il est réalisé. Le délai de deux mois pour la contre-visite ne donne pas deux mois de circulation normale avec ce résultat."
+        },
+        "en": {
+          "question_text": "Yesterday my car failed its roadworthiness inspection with a critical defect (R). Without repair or a favourable reinspection, may I use it normally today?",
+          "answer_a": "Yes, for two months.",
+          "answer_b": "Yes, for one week.",
+          "answer_c": "Yes, if the trip is short.",
+          "answer_d": "No; validity ended on the day of the inspection.",
+          "explanation": "With a critical defect, the inspection is valid only on the day it is carried out. The two-month reinspection deadline does not grant two months of normal driving with that result."
+        }
+      },
+      "image_path": "france/situation_technical_inspection_critical_next_day.jpg"
+    },
+    {
+      "key": "situation_licence_b_750kg_trailer_over3500_sum",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Ma voiture a un PTAC de 3 000 kg et la remorque un PTAC de 750 kg. Les limites techniques de traction sont respectées. Quel permis suffit pour cet ensemble ?",
+          "answer_a": "Le permis B seul.",
+          "answer_b": "Le permis B avec la mention 96 obligatoirement.",
+          "answer_c": "Le permis BE obligatoirement.",
+          "answer_d": "Le permis C obligatoirement.",
+          "explanation": "Le permis B permet d’atteler une remorque de PTAC inférieur ou égal à 750 kg à une voiture relevant de cette catégorie. Ici, la somme de 3 750 kg n’impose pas à elle seule la mention 96, puisque la remorque ne dépasse pas 750 kg."
+        },
+        "en": {
+          "question_text": "My car has a maximum authorised mass of 3,000 kg and the trailer 750 kg. All technical towing limits are met. Which licence is sufficient for this combination?",
+          "answer_a": "Category B alone.",
+          "answer_b": "Category B with code 96 is compulsory.",
+          "answer_c": "Category BE is compulsory.",
+          "answer_d": "Category C is compulsory.",
+          "explanation": "Category B permits a trailer with a maximum authorised mass of no more than 750 kg behind a category B car. Here, the combined 3,750 kg does not itself require code 96 because the trailer does not exceed 750 kg."
+        }
+      },
+      "image_path": "france/situation_licence_b_750kg_trailer_over3500_sum.jpg"
+    },
+    {
+      "key": "situation_registration_address_change_one_month",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Je déménage en France et je suis propriétaire de ma voiture immatriculée à mon nom. Dans quel délai dois-je déclarer la nouvelle adresse pour sa carte grise ?",
+          "answer_a": "Une semaine.",
+          "answer_b": "Six mois.",
+          "answer_c": "Un mois.",
+          "answer_d": "Seulement lors de la vente de la voiture.",
+          "explanation": "Après un déménagement, le changement d’adresse du certificat d’immatriculation doit être effectué dans le mois. Cette formalité ne doit pas attendre une vente ni le prochain contrôle technique."
+        },
+        "en": {
+          "question_text": "I move home within France and own the car registered in my name. How long do I have to declare the new address for its registration certificate?",
+          "answer_a": "One week.",
+          "answer_b": "Six months.",
+          "answer_c": "One month.",
+          "answer_d": "Only when I sell the car.",
+          "explanation": "After moving home, the address on the vehicle registration certificate must be updated within one month. This formality must not wait until a sale or the next roadworthiness inspection."
+        }
+      },
+      "image_path": "france/situation_registration_address_change_one_month.jpg"
+    },
+    {
+      "key": "situation_ev_charging_no_extension_or_multisocket",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b",
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Pour recharger ma voiture électrique, son câble n’atteint pas la prise domestique. Quelles précautions sont correctes ?",
+          "answer_a": "Ajouter une rallonge domestique, même entièrement déroulée.",
+          "answer_b": "Ne pas intercaler de rallonge ni de multiprise.",
+          "answer_c": "Utiliser une multiprise neuve pour gagner de la longueur.",
+          "answer_d": "Faire vérifier la prise et son installation par un professionnel.",
+          "explanation": "La recharge ne doit pas passer par une rallonge ou une multiprise. Je prévois un point de branchement adapté et fais vérifier l’installation selon les prescriptions du constructeur ; un accessoire neuf ou déroulé ne remplace pas ces précautions."
+        },
+        "en": {
+          "question_text": "My electric car’s charging cable does not reach the household socket. Which precautions are correct?",
+          "answer_a": "Add a household extension lead, even fully unwound.",
+          "answer_b": "Do not insert an extension lead or a power strip.",
+          "answer_c": "Use a new power strip to gain extra length.",
+          "answer_d": "Have the socket and its installation checked by a professional.",
+          "explanation": "Charging must not use an extension lead or power strip. I arrange a suitable connection point and have the installation checked against the manufacturer’s requirements; new or unwound accessories do not replace these precautions."
+        }
+      },
+      "image_path": "france/situation_ev_charging_no_extension_or_multisocket.jpg"
     }
   ],
   "roadSigns": [

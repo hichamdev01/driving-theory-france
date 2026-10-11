@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+  "proposal_sha256": "78448827f8ba9431dda317f8cd7cc6a7dbff764c38120599a29f375fffb35db2",
+  "image_sha256": "16d3e60898b10ef6f82e35a5fca989decbb791db3ea2df1c5e22d4de5a905f6a",
+  "compared_question_keys": [
+    "situation_tram_crossing_without_signals",
+    "situation_unconscious_breathing_pls",
+    "situation_motorway_entry",
+    "situation_downhill_queue_reduce_speed",
+    "situation_rear_fog_lights_falling_snow"
+  ],
+  "checks": {
+    "official_rule": "Renault limiter manual checked 2026-10-09: set speed may be exceeded on a steep descent. Wording explicitly limits equipment to engine control with no braking.",
+    "signs_and_text": "No signs, numbers, warning plates, text or fake dashboard indicator. Solid white centre and edge lines; small reflectors do not form a conflicting lane.",
+    "road_geometry": "Two-way downhill rural road, one lane each way, right-hand camera lane. Rock face left and low wall right, consistent perspective and continuous road into valley.",
+    "vehicles_and_people": "No other vehicles or people, no implied collision or unsafe manoeuvre.",
+    "dashboard_and_equipment": "Only dashboard edge visible. Limiter capability is explicitly stated, not inferred from an absent display.",
+    "full_resolution": "Inspected final 1672x941 JPEG, road through bend, centre/edge lines, stone wall, foreground dash and distant surface; no unresolved defect.",
+    "phone_size": "390px preview clearly shows descent and right-hand lane without hiding a necessary clue.",
+    "french_and_english": "Both specify engine-only limiter with no automatic braking and ask its limitation downhill.",
+    "all_four_options": "A only. B promises impossible guarantee; C contradicts stated equipment; D removes necessary monitoring; A keeps driver responsible.",
+    "novelty": "Nearest tram, PLS, motorway entry and snow-fog-light questions are unrelated. Downhill queue requires anticipation of a visible obstruction. Here there is no queue: the specific misconception is whether a limiter lacking brake control guarantees the set speed."
+  }
+}

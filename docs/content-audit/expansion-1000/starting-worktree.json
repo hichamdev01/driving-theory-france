@@ -1,0 +1,21 @@
+{
+  "TheoryPrep.xcodeproj/project.pbxproj": "80cf779c13192e16d1b7d2ff47688911dd79b8c65fbdb6783dd5f1a3fc0b2548",
+  "TheoryPrep/Components/PrimaryButton.swift": "e2b9c3073cd3e31d0471849bf943a8ff9d21b6c10b9a839b3f6144a6c037c9f3",
+  "TheoryPrep/Database/Database.swift": "e1afa7400cb3783088eaf1dfb9ad37da36829d1f278e1b926adc982c3b991502",
+  "TheoryPrep/Database/Queries.swift": "84b78a441034b29b67cf98e144b513dc2e3093609555c7bb07ce9b4a67425248",
+  "TheoryPrep/Database/Schema.swift": "8db89adca0948d341fc1ebb712c5ecabfaa1a6043db4d6192f52b2fbb277c440",
+  "TheoryPrep/Localization/Strings.swift": "db4b74d5ed13b6340477d82a435894e2c4b7a8509c5584a536b34e7df49d4ee5",
+  "TheoryPrep/Models/Readiness.swift": "885bce694fe0640d1b72d35844cfd9ed5138b850df1b40090efafa4ebbf4acc0",
+  "TheoryPrep/Resources/Content/france/pack.json": "efb06f98bdffbb84aecc1c34d03edd4acfa1a7860f205b3e260bf732ccf1eaea",
+  "TheoryPrep/State/TabRouter.swift": "9568de6324d51809d9a6718ec3311fda6e1eac3215b37f723e5cf83913a044fd",
+  "TheoryPrep/Views/HomeView.swift": "c8ae53c9d937ccb550dec54cb1308077f97af26321aec7b5544f72b797fd0529",
+  "TheoryPrep/Views/PracticeView.swift": "15d1a80cc2382c56f5a5a95140194cbfff25c1c167be7e8a95efbf091c4dd7d0",
+  "TheoryPrep/Views/QuestionView.swift": "588a286b1fc4a21d2c58e8ed2788ee7b709ae543ea903325a824ca914fd307b8",
+  "TheoryPrepTests/ReadinessTests.swift": "88d8e291f1140efd26fd1d2b53896c3710db88b9d4f91bc3c32e95e333760be3",
+  "docs/content-audit/france-question-sources.jsonl": "b29a2dc8ec7283df710c6ad40bea3c5d952659e5ab00e98c601d6b1291c9d1dd",
+  "docs/content-audit/france-sign-audit.md": "5ffb95b58c8f6ef0e4cd65bcd478b1cb26cf47c44d1d33ab8dd696653114ca06",
+  "docs/content-audit/france-sign-registry.json": "8c58d5f3fe1758f264c798a7bd9cd8e1f82c12ff87d9f4622284dc4940167919",
+  "docs/content-audit/france-sign-review.json": "a557b713c8fb3caa31ae4cf3888f47df3dcb8765d13ba9a1b907c6aa7e973985",
+  "TheoryPrep/Components/HomeActionRow.swift": "3dd8a718cfb6e7ba0ee56a517adc6b2ec20ce957f60b23b065cc35e024dc3024",
+  "TheoryPrepTests/RandomPracticeTests.swift": "44fb59fc27dcb78bdfbbc5bbd94b7f912c79d0bf7984d2fab05b5a837cda53f6"
+}

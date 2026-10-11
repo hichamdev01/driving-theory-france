@@ -1,0 +1,28 @@
+{
+  "starting_count": 388,
+  "starting_images": 359,
+  "current_version": 91,
+  "reviewed_on": "2026-10-09",
+  "exact_duplicates": 0,
+  "pending_sign_jobs": 0,
+  "python_tests": 45,
+  "ios_tests_v89": 35,
+  "visual_recheck": "All ten September 21 items inspected; parking disc, reversing camera and officer-gesture scene corrected. Other seven remain accepted. Native/simulator recheck of current files remains pending.",
+  "corrections": {
+    "parking_disc_actual_arrival": "Full-resolution and 390px review: French C1a P symbol above HEURE D’ARRIVÉE, downward arrow, one dial window, 14/15/16 in order with five intermediate ten-minute marks per hour and half-hour differentiation; outward readable, left-hand-drive wheel correct from exterior viewpoint. No question depends on reading the displayed number. Corrected missing P, previous tick spacing, and steering placement against the 6 December 2007 order.",
+    "parking_camera_requires_direct_checks": "Full-resolution and 390px review: rear camera shows a clear bay with realistic converging guidelines; windshield view remains separate and plausible. Removed malformed peripheral numbered gauges by reframing around camera. Four options and both translations still require direct and mirror checks, not reliance on the camera alone."
+  },
+  "status": "verified",
+  "semantic_overlap_resolved": {
+    "situation_priority_officer_over_green_light": "Replaced the duplicated officer-versus-green-light objective with interpretation of the horizontal-arm gesture: both front and rear approaches stop. Inspected full image and 390px rendering: face-on officer with two level outstretched arms and natural hands, simple four-way junction, no conflicting lights/signs, clear opposite approach. Four options, D only, FR/EN explanations agree with Vienna Convention article 6(3)(b). Existing stable question key retained as a historical identifier."
+  },
+  "permission_request": "Resolved: renewed test request approved on 2026-10-09; both current native runs succeeded.",
+  "semantic_audit_status": "Open: A3a recognition/action pair identified as the same learning objective; see semantic-review-queue.json. Exact hashes alone do not establish uniqueness.",
+  "ios_tests_v91": 36,
+  "pack_sha256": "65c1b63fc7dfaee5118d0b0952c36db640f172bdcb633c3e2341c31d6a3176fc",
+  "verification_evidence": {
+    "baseline-ios-review-route.log": "c3dba2e7cd7142b52a55048cc0ba5ddb9f6639230ce3d8c27f09cbb20803183b",
+    "baseline-sqlite-after-review.json": "c64d78925694cd6598d536db45f1037ddc4ac0cbf3cee3ca71ff0eda8ccbde1c",
+    "baseline-simulator-review.json": "70a12357025e7e77213f6c31076a3981c6ef4b4879ad0ce336c709ece63b7a46"
+  }
+}

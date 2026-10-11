@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "proposal_sha256": "bbdd9a325791e73ef2fdce1a2b731ce2aa0e32d29ed26d9b23e6900ef98121c4",
+  "image_sha256": "68bb9ea6cfc64255814a1094a038be7dfa0d1b077f6bdeb2fa2769dee4f5e83a",
+  "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+  "compared_question_keys": [
+    "situation_motorway_breakdown_no_triangle",
+    "situation_motorway_friend_tow_offer",
+    "situation_night_unlit_roadside_position_lights",
+    "situation_overtake_too_little_speed_difference",
+    "situation_overtaking_uncontrolled_intersection"
+  ],
+  "checks": {
+    "official_rule": "Reviewed authoritative sources checked 2026-10-09: R413-8 limits combinations with PTRA above 3.5 tonnes to 90 km/h on motorways; passenger-car towing can fall within this rule. Ordinary B licence permits a trailer up to 750 kg PTAC, or a heavier trailer when the sum of vehicle and trailer PTAC does not exceed 3500 kg.",
+    "novelty": "Existing motorway dry/rain/probationary limits concern a solo car, not a category-B towing combination whose authorised train weight exceeds 3500 kg. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+    "signs_and_text": "No signs, labels, numeric weights or readable plate faces. Weights and road/weather conditions are stated explicitly.",
+    "road_geometry": "Flat private yard with consistent side-on perspective; image illustrates the combination before its motorway journey.",
+    "vehicles_and_people": "Car and small single-axle trailer aligned correctly, near wheels grounded, tight cover fastenings, amber side reflectors and red rear lamp orientation plausible.",
+    "dashboard_and_equipment": "Towball/coupler connection is continuous and cable routed with clearance, no disconnected drawbar or ground-dragging cable.",
+    "full_resolution": "Viewed exact staged scene-1.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No signs, labels, numeric weights or readable plate faces. Weights and road/weather conditions are stated explicitly. Towball/coupler connection is continuous and cable routed with clearance, no disconnected drawbar or ground-dragging cable.",
+    "phone_size": "Viewed phone-preview-1.jpg at 390 px. Car-trailer connection and small trailer clear at 390 px; no weight needs to be inferred from dimensions.",
+    "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: A car has PTAC 2500 kg and PTRA 4500 kg and tows a trailer with PTAC 750 kg. Ordinary category B covers this combination. Dry motorway, good visibility, no lower signed restriction; question tests PTRA rather than actual weight.",
+    "all_four_options": "Correct set c. FR: A: Incorrect : pas le maximum général dans ces conditions.; B: Incorrect : pas la limite autoroutière de cet ensemble.; C: Correct : PTRA supérieur à 3,5 tonnes avec remorque.; D: Incorrect : limite générale d’une voiture seule inapplicable ici. EN: A: Incorrect: not the general maximum in these conditions.; B: Incorrect: not this combination’s motorway limit.; C: Correct: towing with authorised train weight over 3.5 tonnes.; D: Incorrect: the usual solo-car limit does not apply here."
+  }
+}

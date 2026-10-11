@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+  "proposal_sha256": "c1cf5b048f4af799730287fe482aa855809286e2b337859c22d1a1742d1e2a8f",
+  "image_sha256": "409079d9aa6cbf2ee9d0d00e3e5fd02a3d2fb25ce82ed39219f12724f9b0f898",
+  "compared_question_keys": [
+    "situation_motorway_friend_tow_offer",
+    "situation_red_cross_lane_closed",
+    "situation_urban_cyclist_clearance_blocked",
+    "situation_parking_solid_line_insufficient_passage",
+    "situation_garage_exit_sidewalk_pedestrian"
+  ],
+  "checks": {
+    "official_rule": "Checked 2026-10-10. Article2, arrêté12November1963 in force: parked vehicles must have engine stopped except necessity, notably cold starts. Conditions exclude necessity.",
+    "novelty": "Existing securing parked car concerns runaway/theft on departure. This tests needless idling during parking while the driver stays, a pollution obligation. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+    "signs_and_text": "No traffic signs. Only white parking-bay lines; no meaningful instruction on distant/cropped plate.",
+    "road_geometry": "Car entirely inside a rectangular level parking bay, away from travel lane, no parking obstruction.",
+    "vehicles_and_people": "One driver seated normally with hands forward; closed doors, normally supported wheels, no person in path.",
+    "dashboard_and_equipment": "Engine state, warmth, ten-minute wait and lack of necessity supplied in text; no false smoke or tachometer claim.",
+    "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Car entirely inside a rectangular level parking bay, away from travel lane, no parking obstruction. One driver seated normally with hands forward; closed doors, normally supported wheels, no person in path.",
+    "phone_size": "Inspected saved390px phone-1.jpg. Parked position and waiting occupant are visible. Question does not require image to reveal idling.",
+    "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Driver waiting parked10min, enginewarm,mildweather,nomechanicalorhealthnecessity.",
+    "all_four_options": "Correct set b. FR: {\"a\": \"La présence au volant n’est pas une nécessité.\", \"b\": \"L’arrêté du12novembre1963art2 impose l’arrêt hors nécessité.\", \"c\": \"Accélérer accroît bruit et consommation sans nécessité.\", \"d\": \"Les vitres ne créent pas de dérogation.\"} EN: {\"a\": \"Being at the wheel is not a necessity.\", \"b\": \"Article2 requires the engine stopped unless necessary.\", \"c\": \"Revving needlessly adds consumption and noise.\", \"d\": \"Closed windows are no exemption.\"}"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+  "proposal_sha256": "bff0bac6a3144afc417b77e1785a539abc655bfb83b31529ffeb9ce3aab586dc",
+  "image_sha256": "ff5ee380e368d2cb3c8e2384583eefd1cdecac56043ece3ba71b5e2205af3403",
+  "compared_question_keys": [
+    "situation_tyre_tread_below_minimum",
+    "situation_exceptional_convoy_crossing",
+    "situation_motorway_toll_intercom_problem",
+    "situation_alcohol_sedating_medicine",
+    "situation_priority_right_ab1"
+  ],
+  "checks": {
+    "official_rule": "Checked 2026-10-10. Paper accident report: jointly complete and sign front, add nothing once signed, each retain copy; reverse may be completed later individually.",
+    "novelty": "Existing accident question covers immediate protect-alert-aid. This covers subsequent insurance paperwork integrity, not rescue. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+    "signs_and_text": "No signs or readable text. No invented insurance form or signature is displayed.",
+    "road_geometry": "Close bumper view in parking area, white bay lines, no unsafe roadside exchange.",
+    "vehicles_and_people": "Grey car minor bumper dent/scuff, intact lamp and reflector, second blue car parked behind; no injury or broken glass.",
+    "dashboard_and_equipment": "No controls or dashboard, no paperwork detail that conflicts with stated post-signature scenario.",
+    "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Close bumper view in parking area, white bay lines, no unsafe roadside exchange. Grey car minor bumper dent/scuff, intact lamp and reflector, second blue car parked behind; no injury or broken glass.",
+    "phone_size": "Inspected saved390px phone-1.jpg. Minor bumper damage remains visible; completed jointly signed report and separate copies are explicit in both stems.",
+    "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Material-only accident, safe location, both drivers have agreed and signed paper report front, each keptcopy.",
+    "all_four_options": "Correct set b,d. FR: {\"a\": \"Une case ajoutée modifierait le constat commun signé.\", \"b\": \"Le verso individuel peut être rempli plus tard.\", \"c\": \"Le croquis fait partie du recto commun signé.\", \"d\": \"Préserver le document commun signé.\"} EN: {\"a\": \"An extra tick changes the signed joint record.\", \"b\": \"The individual reverse can be completed later.\", \"c\": \"The sketch is part of the signed front.\", \"d\": \"Preserve the signed joint record.\"}"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "proposal_sha256": "11bc2e1f90544ed8c961c60ada7e37387d8a96e07ea8d8d0483be883a87dcd8b",
+  "image_sha256": "8fe2ff6608fcd12616ced817a91a1bec8b99f4db3696bca0f3504caded72613b",
+  "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+  "compared_question_keys": [
+    "danger_sign_temporary_warning",
+    "situation_fire_hydrant_parking",
+    "situation_c30_car_scenario",
+    "speed_motorway_rain",
+    "parking_on_pavement"
+  ],
+  "checks": {
+    "official_rule": "Reviewed authoritative sources checked 2026-10-09: IISR seventh part article 118-2B: broken yellow T-prime-2 marking prohibits parking, continuous yellow prohibits stopping. Kerb-top placement allowed; T-prime-2 is 0.5 m line/0.5 m gap, width 2u.",
+    "novelty": "Existing B6 sign questions concern vertical signs and the bus-stop yellow zigzag has different geometry and scope. The broken yellow kerb marking itself has not been tested. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+    "signs_and_text": "Broken yellow rectangles painted along horizontal top of kerb; no vertical sign, lettering, bus zigzag, loading label or continuous yellow line. Approximate equal segment/gap lengths and narrow 2u width consistent with T-prime-2.",
+    "road_geometry": "Kerb separates asphalt roadway at left from pavement at right, with coherent perspective and regular segment progression.",
+    "vehicles_and_people": "No vehicles or people, no obstruction introducing a second prohibition.",
+    "dashboard_and_equipment": "No dashboard or vehicle equipment present.",
+    "full_resolution": "Viewed exact staged scene-1.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. Broken yellow rectangles painted along horizontal top of kerb; no vertical sign, lettering, bus zigzag, loading label or continuous yellow line. Approximate equal segment/gap lengths and narrow 2u width consistent with T-prime-2. No dashboard or vehicle equipment present.",
+    "phone_size": "Viewed phone-preview-1.jpg at 390 px. Yellow segments and unpainted gaps remain distinct at 390 px; wording asks marking alone and preserves other stopping restrictions.",
+    "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: A broken yellow T-prime-2 line is painted along the top of the kerb. The question asks the meaning of that marking alone, not permission to stop despite other hazards.",
+    "all_four_options": "Correct set b. FR: A: Incorrect : correspond à la ligne jaune continue.; B: Correct : interdiction de stationnement seule portée du marquage.; C: Incorrect : pas un marquage de paiement.; D: Incorrect : aucune réservation de livraison exprimée. EN: A: Incorrect: that is the continuous yellow line.; B: Correct: this marking prohibits parking.; C: Incorrect: it does not indicate payment.; D: Incorrect: it does not designate deliveries."
+  }
+}

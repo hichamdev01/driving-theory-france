@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "proposal_sha256": "0bbd3378e9f6649212472fba86f3c81f6bf837931ad2cd5cb0a241268f240871",
+  "image_sha256": "488724571032647cea29c630536f4d09f67642a6b7b2b41c01d9eb6215d68559",
+  "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+  "compared_question_keys": [
+    "situation_traffic_lights_blocked",
+    "situation_hazard_lights_strong_slowdown",
+    "situation_officer_stop_over_green",
+    "situation_random_alcohol_check_no_infraction",
+    "situation_overtake_tram_left_one_way"
+  ],
+  "checks": {
+    "official_rule": "Reviewed authoritative sources checked 2026-10-09: R417-2: unless otherwise specified, side changes take place 20:30–21:00 on the last day of each fortnightly period.",
+    "novelty": "Existing B6a2 asks the forbidden side on the 10th; this tests the separate default time for changing sides at the boundary. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+    "signs_and_text": "No signs, house numbers, clocks, text or badge visible in corrected side view. Date and applicable alternating rule explicitly stated.",
+    "road_geometry": "Blue car parallel to kerb, tyres on asphalt, pavement unobstructed; no gate or driveway blocked. Side view does not purport to identify odd/even addresses.",
+    "vehicles_and_people": "Plausible side-profile car, normal wheels and lights, no occupant manoeuvre or missing visible plate recess. Plate faces naturally outside viewing angle.",
+    "dashboard_and_equipment": "No dashboard or clock readings. Street lighting supports neutral dusk setting without claiming a precise time.",
+    "full_resolution": "Viewed exact staged scene-2.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No signs, house numbers, clocks, text or badge visible in corrected side view. Date and applicable alternating rule explicitly stated. No dashboard or clock readings. Street lighting supports neutral dusk setting without claiming a precise time.",
+    "phone_size": "Viewed phone-preview-2.jpg at 390 px. Parked car and kerb clear at 390 px; exact changeover interval is a knowledge objective, not an image clock.",
+    "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: This street is subject to fortnightly alternating parking. It is the 15th and no different local changeover time applies. These conditions are stated; no sign recognition required.",
+    "all_four_options": "Correct set a. FR: A: Correct : créneau national par défaut.; B: Incorrect : le basculement ne se fait pas à minuit.; C: Incorrect : ce n’est pas le créneau prévu.; D: Incorrect : le changement aurait dû avoir lieu la veille. EN: A: Correct: the default national interval.; B: Incorrect: changeover is not at midnight.; C: Incorrect: this is not the specified interval.; D: Incorrect: it should have been done the previous evening."
+  }
+}

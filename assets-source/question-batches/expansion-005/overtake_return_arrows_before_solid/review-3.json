@@ -1,0 +1,6 @@
+{
+  "proposal_sha256": "0952c6955366595076f23eb7fd0e1abcca0f07546e948af6fbc00a3c3ff42429",
+  "image_sha256": "da1ab5f8ed7e344b59332359589dd9bb56d9d741dd1264631f7740f4a5ff1476",
+  "result": "reject",
+  "notes": "Third candidate has a virtually straight arrow along the centreline, not a right-directed curved return arrow. Solid line starts directly beyond it; requested approach geometry not achieved."
+}

@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+  "proposal_sha256": "4a1a05da7130196e44b3f4e17b6e8b765737996e344bc270fa1278605b0b8a4b",
+  "image_sha256": "8f80b315d23243afa113d15ded4c0087711e5bbb6adaca00abee140ad6b4313c",
+  "compared_question_keys": [
+    "situation_dirt_track_yields_all",
+    "situation_motorway_toll_intercom_problem",
+    "situation_blind_crest_no_overtake",
+    "situation_ev_charge_cable_cut_insulation",
+    "situation_rear_vehicle_already_overtaking"
+  ],
+  "checks": {
+    "official_rule": "Renault conventional cruise-control manual warns against use in rain/slippery conditions. Question supplies active conventional cruise control and reducing grip; advice is not an invented statutory speed limit.",
+    "signs_and_text": "Only white broken centre marking and continuous white edge lines; no speed sign or signal to misread.",
+    "road_geometry": "Camera in right lane of a straight two-way road; centre line at left, verges clear; no opposing-lane travel.",
+    "vehicles_and_people": "Empty road, no vehicles or people; rain visible without an invented crash.",
+    "dashboard_and_equipment": "Narrow dashboard edge only; no wrong speedometer/control symbol. Central wiped view clear, rain droplets around edges.",
+    "phone_size": "Rain and wet road visible at 390 pixels; no small instrument essential to answer.",
+    "french_and_english": "Conventional regulator/régulateur distinction maintained, not adaptive cruise or steering automation. A correct; B/C/D unsupported or dangerous.",
+    "novelty": "Rain speed limits and aquaplaning response are covered, but choosing to deactivate cruise control as conditions deteriorate is not. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+    "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. Empty road, no vehicles or people; rain visible without an invented crash. Narrow dashboard edge only; no wrong speedometer/control symbol. Central wiped view clear, rain droplets around edges.",
+    "all_four_options": "Correct set A. A: Resume direct control and adapt speed. B: The system cannot guarantee grip. C: Accelerating increases risk. D: Cruise control does not steer the car. Four distinct options in both languages."
+  }
+}

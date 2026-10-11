@@ -1,0 +1,6 @@
+{
+  "proposal_sha256": "5df4d391ed178720c2b90be6facebec51ece544556553f55350cc54719532ddc",
+  "image_sha256": "8e3e2a5709df8fe6cc371ce7f3c5b31db501d25ff858d172648c33a2108e4108",
+  "result": "reject",
+  "notes": "Second candidate rejected at full resolution and 390px: shoulder paint became short dashes comparable to ordinary lane dividers, not long T4 segments. This remains visibly inconsistent with the French motorway setting."
+}

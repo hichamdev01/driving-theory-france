@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "2b6086a1c34bbd88bbfb6396dcbb6c4b80e83c66721fb28e2fd71c154ffa6936",
+  "image_sha256": "f3e4c2b71095f68d7352d6d3f51875fd3e91c044ec60682d5c30d89f4d43fe11",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected at full resolution and390px. No detected unresolved defects.",
+  "compared_question_keys": [
+    "situation_accident_emergency_call_information",
+    "situation_motorway_friend_tow_offer",
+    "motorway_breakdown_safety",
+    "situation_motorway_sos_location",
+    "situation_motorway_breakdown_no_triangle"
+  ],
+  "checks": {
+    "official_rule": "Official example14: eCall serious collision automaticalert+geolocation. Used topic only; original questions/images, not historic2percentstat or old futureequipmentdate. CurrentYourEurope27Jan2026: automatic112seriouscrash and minimal locationdata; paragraphs471–475 read.",
+    "novelty": "Existing eCallitem concerns accidentalmanualbuttonpress and nothangingup. New objective automatictrigger when occupants cannotcall, including accidentlocation; officialexamtopic. Five nearest complete questions/options/explanations and whole-bank topic inventory reviewed.",
+    "signs_and_text": "Only readable text is correctly spelled SOS, white on red.",
+    "road_geometry": "Interior equipment closeup; no road layout.",
+    "vehicles_and_people": "No people, hands or wreck.",
+    "dashboard_and_equipment": "Closed transparent hinged cover over SOS button, two reading lamps, headliner and mirror mount plausible. eCall112 capability explicitly supplied.",
+    "full_resolution": "Exact1672x941 scene-1.jpg viewed at original resolution. Only readable text is correctly spelled SOS, white on red. Closed transparent hinged cover over SOS button, two reading lamps, headliner and mirror mount plausible. eCall112 capability explicitly supplied.",
+    "phone_size": "SOS legible at390px, protective cover and lamps distinct; automatic activation is knowledge tested.",
+    "french_and_english": "Same conditions, learning objective and correct answer set in both translations. Car explicitly equipped with functioning eCall112; occupants unable to call after severe detected collision, system operation asked.",
+    "all_four_options": "Correct set a. {'fr': {'a': 'Fonction d’alerte automatique du système.', 'b': 'Ce n’est pas un dispositif de réparation.', 'c': 'L’alerte vise les secours immédiatement.', 'd': 'Le déclenchement peut être automatique.'}, 'en': {'a': 'This is the automatic alert function.', 'b': 'It is not a repair device.', 'c': 'It alerts emergency services immediately.', 'd': 'It can activate automatically.'}}"
+  }
+}

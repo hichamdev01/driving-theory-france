@@ -1,0 +1,6 @@
+{
+  "result": "reject",
+  "notes": "Reject: visible paved emergency shoulder is delimited by continuous stripe. Current IISR 114-4B requires T4 in section courante; current 113-1B specifies 39m white/13m gap, not the old 20m/6m T-prime-3 pattern.",
+  "proposal_sha256": "6a544720e74e0c3cc497d58940ca8da5fb65ce4318d3f4b23039de09f4cacccb",
+  "image_sha256": "20e1ca664636c4739a7df19d7fd7969b1cf2090aad1fb57cab48227d30eb80ac"
+}

@@ -1,0 +1,1663 @@
+{
+  "schema_version": 1,
+  "id": "expansion-003",
+  "state": "verified",
+  "created_on": "2026-10-10",
+  "target": 1000,
+  "questions_before": 408,
+  "pack_before_sha256": "107dc3d308e592507a3ea975480bcc3ed37a5dcb98cf5f0041a6aa4df2ca15ea",
+  "items": [
+    {
+      "proposal": {
+        "scenario_id": "tyre_sidewall_bulge_before_trip",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; any towing example explicitly stays within a combined maximum authorised mass of 3500 kg.",
+        "learning_objective": "Recognise an outward tyre sidewall bulge as structural damage requiring withdrawal from use.",
+        "topic": "equipment.tyre_structural_damage",
+        "scenario": "Before departure in a private driveway, a visible outward bubble is present on the tyre sidewall. No journey has begun.",
+        "novelty_review": "Tread depth and cold pressure are covered; neither tests structural sidewall damage despite adequate tread.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_tyre_sidewall_bulge_before_trip",
+          "category_slug": "safety",
+          "correct_answers": [
+            "c"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Avant de partir, je découvre cette hernie sur le flanc d’un pneu. Que faire ?",
+              "answer_a": "Rouler normalement si les sculptures sont profondes.",
+              "answer_b": "Dégonfler un peu le pneu pour effacer la bosse.",
+              "answer_c": "Ne pas partir avec ce pneu et faire organiser son remplacement.",
+              "answer_d": "Attendre que la bosse disparaisse après quelques kilomètres.",
+              "explanation": "Une hernie peut traduire une détérioration de la carcasse, avec risque de perte brutale de pression. Une bonne profondeur de sculpture ne compense pas ce défaut : je n’utilise plus ce pneu et fais organiser son remplacement."
+            },
+            "en": {
+              "question_text": "Before setting off, I notice this bulge in a tyre sidewall. What should I do?",
+              "answer_a": "Drive normally if the tread is deep.",
+              "answer_b": "Let some air out to flatten the bulge.",
+              "answer_c": "Do not set off on this tyre; arrange its replacement.",
+              "answer_d": "Wait for the bulge to disappear after a few kilometres.",
+              "explanation": "An outward bulge can indicate damage to the tyre structure and a risk of sudden pressure loss. Good tread depth does not make it safe: I stop using the tyre and arrange its replacement."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "La sculpture ne répare pas la carcasse.",
+            "b": "Modifier la pression ne répare pas le dommage.",
+            "c": "Retirer du roulage le pneu endommagé.",
+            "d": "Le roulage expose à la rupture, pas à une guérison."
+          },
+          "en": {
+            "a": "Tread depth does not repair the structure.",
+            "b": "Changing pressure does not repair damage.",
+            "c": "Remove the damaged tyre from use.",
+            "d": "Driving risks failure; it cannot heal the tyre."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. Tight natural three-quarter close-up of one mounted black passenger-car tyre and plain silver wheel on a grey hatchback parked on a dry private gravel driveway. A single obvious smooth outward egg-shaped bulge, about 5 cm across, protrudes from the upper outer sidewall at the two-o’clock position; intact rubber over it, not an indentation and not in the tread. Normal tread elsewhere, bead properly seated, wheel round, five properly spaced wheel bolts. Frame contains only wheel, tyre, lower fender and ground; no plate, people, tools or roadside. No lettering required; avoid prominent brand text. Natural side lighting makes the bulge visible without graphic emphasis.",
+        "sources": [
+          {
+            "url": "https://www.michelin.fr/auto/conseils/changer-pneus/dommages-aux-flancs-des-pneus",
+            "kind": "manufacturer",
+            "checked_on": "2026-10-10",
+            "supports": "Outward sidewall bulges indicate structural damage and risk rapid pressure loss; distinct from normal slight radial tyre indentations."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_zone_30_continues_side_street",
+          "similarity": 0.508,
+          "question_fr": "J'ai franchi l'entrée d'une zone 30 puis je tourne dans cette rue sans nouveau panneau. Quelle limite demeure ?"
+        },
+        {
+          "key": "situation_priority_right_ab1",
+          "similarity": 0.477,
+          "question_fr": "À l'approche de cette intersection, le véhicule à droite s'engage. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_no_motor_vehicles",
+          "similarity": 0.466,
+          "question_fr": "Avec ma voiture, puis-je m'engager dans cette rue pour déposer un passager ?"
+        },
+        {
+          "key": "situation_green_turn_pedestrian_crossing",
+          "similarity": 0.464,
+          "question_fr": "Le feu est vert pour moi et je tourne à droite. Ce piéton traverse la rue dans laquelle je m'engage. Que faire ?"
+        },
+        {
+          "key": "situation_dirt_track_yields_all",
+          "similarity": 0.448,
+          "question_fr": "Je débouche de ce chemin de terre sur la route. Une voiture arrive de gauche et un cycliste de droite. Que faire ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-003/tyre_sidewall_bulge_before_trip/scene-1.jpg",
+          "image_sha256": "b20066458d2d5e3197616de6b7ce78de357a29e17c2717771981c3667aa46be5",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. Tight natural three-quarter close-up of one mounted black passenger-car tyre and plain silver wheel on a grey hatchback parked on a dry private gravel driveway. A single obvious smooth outward egg-shaped bulge, about 5 cm across, protrudes from the upper outer sidewall at the two-o’clock position; intact rubber over it, not an indentation and not in the tread. Normal tread elsewhere, bead properly seated, wheel round, five properly spaced wheel bolts. Frame contains only wheel, tyre, lower fender and ground; no plate, people, tools or roadside. No lettering required; avoid prominent brand text. Natural side lighting makes the bulge visible without graphic emphasis.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+            "proposal_sha256": "6291cf2b614f06215879f16739e5ea28135fd8e4e98332dd81ec5f0fd10e9c2e",
+            "image_sha256": "b20066458d2d5e3197616de6b7ce78de357a29e17c2717771981c3667aa46be5",
+            "compared_question_keys": [
+              "situation_zone_30_continues_side_street",
+              "situation_priority_right_ab1",
+              "situation_no_motor_vehicles",
+              "situation_green_turn_pedestrian_crossing",
+              "situation_dirt_track_yields_all"
+            ],
+            "checks": {
+              "official_rule": "Michelin distinguishes dangerous outward hernias from benign slight radial indentations. Before-departure wording avoids implying that driving to the workshop on the damaged tyre is safe.",
+              "signs_and_text": "No signs, text, plates or markings in the wheel close-up.",
+              "road_geometry": "Private gravel ground only; no traffic geometry or junction.",
+              "vehicles_and_people": "One plausible mounted wheel and fender, no people. Five bolts, valve stem, disc and caliper coherent.",
+              "dashboard_and_equipment": "Smooth outward upper-sidewall bulge clearly distinct from tread, bead and ordinary contact flattening. No dashboard.",
+              "phone_size": "Bulge remains conspicuous in the 390-pixel image; five bolts need not be counted to answer.",
+              "french_and_english": "FR hernie / EN sidewall bulge match. Both say before departure and replacement, without promising repair.",
+              "novelty": "Tread depth and cold pressure are covered; neither tests structural sidewall damage despite adequate tread. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+              "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. One plausible mounted wheel and fender, no people. Five bolts, valve stem, disc and caliper coherent. Smooth outward upper-sidewall bulge clearly distinct from tread, bead and ordinary contact flattening. No dashboard.",
+              "all_four_options": "Correct set C. A: Tread depth does not repair the structure. B: Changing pressure does not repair damage. C: Remove the damaged tyre from use. D: Driving risks failure; it cannot heal the tyre. Four distinct options in both languages."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-003/tyre_sidewall_bulge_before_trip/scene-1.jpg",
+      "image_sha256": "b20066458d2d5e3197616de6b7ce78de357a29e17c2717771981c3667aa46be5",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+        "proposal_sha256": "6291cf2b614f06215879f16739e5ea28135fd8e4e98332dd81ec5f0fd10e9c2e",
+        "image_sha256": "b20066458d2d5e3197616de6b7ce78de357a29e17c2717771981c3667aa46be5",
+        "compared_question_keys": [
+          "situation_zone_30_continues_side_street",
+          "situation_priority_right_ab1",
+          "situation_no_motor_vehicles",
+          "situation_green_turn_pedestrian_crossing",
+          "situation_dirt_track_yields_all"
+        ],
+        "checks": {
+          "official_rule": "Michelin distinguishes dangerous outward hernias from benign slight radial indentations. Before-departure wording avoids implying that driving to the workshop on the damaged tyre is safe.",
+          "signs_and_text": "No signs, text, plates or markings in the wheel close-up.",
+          "road_geometry": "Private gravel ground only; no traffic geometry or junction.",
+          "vehicles_and_people": "One plausible mounted wheel and fender, no people. Five bolts, valve stem, disc and caliper coherent.",
+          "dashboard_and_equipment": "Smooth outward upper-sidewall bulge clearly distinct from tread, bead and ordinary contact flattening. No dashboard.",
+          "phone_size": "Bulge remains conspicuous in the 390-pixel image; five bolts need not be counted to answer.",
+          "french_and_english": "FR hernie / EN sidewall bulge match. Both say before departure and replacement, without promising repair.",
+          "novelty": "Tread depth and cold pressure are covered; neither tests structural sidewall damage despite adequate tread. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+          "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. One plausible mounted wheel and fender, no people. Five bolts, valve stem, disc and caliper coherent. Smooth outward upper-sidewall bulge clearly distinct from tread, bead and ordinary contact flattening. No dashboard.",
+          "all_four_options": "Correct set C. A: Tread depth does not repair the structure. B: Changing pressure does not repair damage. C: Remove the damaged tyre from use. D: Driving risks failure; it cannot heal the tyre. Four distinct options in both languages."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "9d2cd9430065d259c4600bb46fc86c04453ab700bf236bd87084bb0c72fb00de"
+    },
+    {
+      "proposal": {
+        "scenario_id": "ev_charge_cable_cut_insulation",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; any towing example explicitly stays within a combined maximum authorised mass of 3500 kg.",
+        "learning_objective": "Reject a visibly damaged EV charging cable before connection.",
+        "topic": "equipment.ev_charging_damage",
+        "scenario": "A disconnected charging cable has a clear cut in its insulating sheath. It is not connected to a car or power source.",
+        "novelty_review": "Existing charging topic concerns obstructing a charging bay, not electrical equipment inspection.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_ev_charge_cable_cut_insulation",
+          "category_slug": "safety",
+          "correct_answers": [
+            "b"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Avant de brancher ma voiture électrique, je vois une coupure dans la gaine du câble de recharge. Que faire ?",
+              "answer_a": "L’utiliser si la recharge démarre normalement.",
+              "answer_b": "Ne pas l’utiliser et demander son remplacement à un professionnel.",
+              "answer_c": "Recouvrir la coupure de ruban adhésif et recharger.",
+              "answer_d": "Le brancher seulement par temps sec.",
+              "explanation": "Un câble de recharge endommagé ne doit pas être utilisé. Je le garde débranché et m’adresse à un professionnel pour son remplacement ; du ruban adhésif ou un temps sec ne rendent pas cette réparation improvisée sûre."
+            },
+            "en": {
+              "question_text": "Before plugging in my electric car, I see a cut in the charging cable’s insulation. What should I do?",
+              "answer_a": "Use it if charging starts normally.",
+              "answer_b": "Do not use it; ask a professional to replace it.",
+              "answer_c": "Cover the cut with adhesive tape and charge.",
+              "answer_d": "Plug it in only in dry weather.",
+              "explanation": "A damaged charging cable must not be used. I keep it disconnected and arrange professional replacement; adhesive tape or dry weather does not make an improvised repair safe."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Un démarrage normal ne garantit pas l’isolation.",
+            "b": "Éviter l’usage et faire remplacer.",
+            "c": "Réparation improvisée dangereuse.",
+            "d": "Le risque ne disparaît pas au sec."
+          },
+          "en": {
+            "a": "Starting normally does not prove sound insulation.",
+            "b": "Avoid use and arrange replacement.",
+            "c": "An improvised repair is unsafe.",
+            "d": "Dry weather does not remove the defect."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. Close photograph of a thick black EV charging cable lying unplugged on a clean dry garage floor. Near the centre a 3 cm longitudinal split in the outer black sheath clearly reveals coloured intact inner insulation, without sparks or smoke. The cable continues into a realistic bulky Type-2 charging handle at the right, seen from the side with a closed protective cap covering the contact face. The other cable end is outside the frame; no connection to electricity is visible. No person, tools, tape, wall socket or car dashboard. Damage is clear but not exaggerated; no labels or text.",
+        "sources": [
+          {
+            "url": "https://www.user-manual.renault.com/fr/v%C3%A9hicule-%C3%A9lectrique/charge-3",
+            "kind": "manufacturer",
+            "checked_on": "2026-10-10",
+            "supports": "Do not use a charging cable with cuts, corrosion or other damage; contact a brand representative for replacement."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_ev_charger_blocked_parking",
+          "similarity": 0.52,
+          "question_fr": "Ma voiture thermique peut-elle stationner ici devant la borne de recharge, même pour peu de temps ?"
+        },
+        {
+          "key": "situation_green_turn_pedestrian_crossing",
+          "similarity": 0.481,
+          "question_fr": "Le feu est vert pour moi et je tourne à droite. Ce piéton traverse la rue dans laquelle je m'engage. Que faire ?"
+        },
+        {
+          "key": "safety_door_cyclist_check",
+          "similarity": 0.46,
+          "question_fr": "Avant d’ouvrir ma portière du côté de la circulation, que dois-je faire ?"
+        },
+        {
+          "key": "situation_rear_vehicle_already_overtaking",
+          "similarity": 0.46,
+          "question_fr": "Je veux dépasser le camion, mais une voiture derrière moi a déjà commencé à me dépasser. Que faire ?"
+        },
+        {
+          "key": "situation_mountain_car_backs_for_caravan",
+          "similarity": 0.453,
+          "question_fr": "Le croisement est impossible entre ma voiture seule et l'ensemble voiture-caravane. Qui doit reculer ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-003/ev_charge_cable_cut_insulation/scene-1.jpg",
+          "image_sha256": "4b0e430b4b6c693201b3c446cc692a177cbaf0c3d48e40c1775f5a1aedc819ad",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. Close photograph of a thick black EV charging cable lying unplugged on a clean dry garage floor. Near the centre a 3 cm longitudinal split in the outer black sheath clearly reveals coloured intact inner insulation, without sparks or smoke. The cable continues into a realistic bulky Type-2 charging handle at the right, seen from the side with a closed protective cap covering the contact face. The other cable end is outside the frame; no connection to electricity is visible. No person, tools, tape, wall socket or car dashboard. Damage is clear but not exaggerated; no labels or text.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+            "proposal_sha256": "7872e9a4cdd9f9c93146f9f866f321bc3a5ce30bab2b40927280d2061c92a8c0",
+            "image_sha256": "4b0e430b4b6c693201b3c446cc692a177cbaf0c3d48e40c1775f5a1aedc819ad",
+            "compared_question_keys": [
+              "situation_ev_charger_blocked_parking",
+              "situation_green_turn_pedestrian_crossing",
+              "safety_door_cyclist_check",
+              "situation_rear_vehicle_already_overtaking",
+              "situation_mountain_car_backs_for_caravan"
+            ],
+            "checks": {
+              "official_rule": "Renault charging instructions explicitly prohibit use after a cable cut and require replacement. No unsupported instruction to touch conductors or improvise electrical repair.",
+              "signs_and_text": "No readable text or labels; capped connector prevents invented contact numbering.",
+              "road_geometry": "Dry garage floor, no road markings or wet electrical environment.",
+              "vehicles_and_people": "Background parked wheel/body plausible; no hands, people or exposed live sparks.",
+              "dashboard_and_equipment": "One continuous cable with visibly split sheath and intact coloured inner insulation; capped charging handle, strain relief and disconnected state coherent.",
+              "phone_size": "The cut and coloured insulation remain visible at 390 pixels; the stem also explicitly identifies the cut.",
+              "french_and_english": "Both translations concern a cut BEFORE plugging in; B is identical in meaning. Dry weather and tape distractors remain false.",
+              "novelty": "Existing charging topic concerns obstructing a charging bay, not electrical equipment inspection. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+              "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. Background parked wheel/body plausible; no hands, people or exposed live sparks. One continuous cable with visibly split sheath and intact coloured inner insulation; capped charging handle, strain relief and disconnected state coherent.",
+              "all_four_options": "Correct set B. A: Starting normally does not prove sound insulation. B: Avoid use and arrange replacement. C: An improvised repair is unsafe. D: Dry weather does not remove the defect. Four distinct options in both languages."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-003/ev_charge_cable_cut_insulation/scene-1.jpg",
+      "image_sha256": "4b0e430b4b6c693201b3c446cc692a177cbaf0c3d48e40c1775f5a1aedc819ad",
+      "dimensions": [
+        1672,
+        940
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+        "proposal_sha256": "7872e9a4cdd9f9c93146f9f866f321bc3a5ce30bab2b40927280d2061c92a8c0",
+        "image_sha256": "4b0e430b4b6c693201b3c446cc692a177cbaf0c3d48e40c1775f5a1aedc819ad",
+        "compared_question_keys": [
+          "situation_ev_charger_blocked_parking",
+          "situation_green_turn_pedestrian_crossing",
+          "safety_door_cyclist_check",
+          "situation_rear_vehicle_already_overtaking",
+          "situation_mountain_car_backs_for_caravan"
+        ],
+        "checks": {
+          "official_rule": "Renault charging instructions explicitly prohibit use after a cable cut and require replacement. No unsupported instruction to touch conductors or improvise electrical repair.",
+          "signs_and_text": "No readable text or labels; capped connector prevents invented contact numbering.",
+          "road_geometry": "Dry garage floor, no road markings or wet electrical environment.",
+          "vehicles_and_people": "Background parked wheel/body plausible; no hands, people or exposed live sparks.",
+          "dashboard_and_equipment": "One continuous cable with visibly split sheath and intact coloured inner insulation; capped charging handle, strain relief and disconnected state coherent.",
+          "phone_size": "The cut and coloured insulation remain visible at 390 pixels; the stem also explicitly identifies the cut.",
+          "french_and_english": "Both translations concern a cut BEFORE plugging in; B is identical in meaning. Dry weather and tape distractors remain false.",
+          "novelty": "Existing charging topic concerns obstructing a charging bay, not electrical equipment inspection. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+          "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. Background parked wheel/body plausible; no hands, people or exposed live sparks. One continuous cable with visibly split sheath and intact coloured inner insulation; capped charging handle, strain relief and disconnected state coherent.",
+          "all_four_options": "Correct set B. A: Starting normally does not prove sound insulation. B: Avoid use and arrange replacement. C: An improvised repair is unsafe. D: Dry weather does not remove the defect. Four distinct options in both languages."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "52bedbd0c2ac033b794288b542a4f0543683cf4e4595147ea9989403cc307e41"
+    },
+    {
+      "proposal": {
+        "scenario_id": "windscreen_condensation_air_recirculation",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; any towing example explicitly stays within a combined maximum authorised mass of 3500 kg.",
+        "learning_objective": "Use windscreen demisting and fresh air to clear internal condensation.",
+        "topic": "equipment.internal_condensation",
+        "scenario": "Car is safely stopped after internal condensation impaired the windscreen; manual climate controls have a windscreen demist function and selectable recirculation.",
+        "novelty_review": "Existing frost question tests clearing outside ice before departure. This tests ventilation settings for inside humidity, including stopping recirculation.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_windscreen_condensation_air_recirculation",
+          "category_slug": "safety",
+          "correct_answers": [
+            "a",
+            "d"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Je suis arrêté en sécurité : de la buée intérieure gêne la vue. Avec une ventilation à réglage manuel, quels choix aident à dégager le pare-brise ?",
+              "answer_a": "Diriger l’air vers le pare-brise avec le désembuage.",
+              "answer_b": "Maintenir le recyclage d’air en permanence.",
+              "answer_c": "Couper toute ventilation.",
+              "answer_d": "Revenir à l’admission d’air extérieur.",
+              "explanation": "Le désembuage dirige l’air vers les vitres. L’admission d’air extérieur évite d’entretenir l’humidité par un recyclage prolongé ; la climatisation peut aider selon les conditions. Je repars seulement avec une visibilité suffisante."
+            },
+            "en": {
+              "question_text": "I have stopped safely because condensation inside the windscreen obstructs my view. With manually adjusted ventilation, which settings help clear it?",
+              "answer_a": "Direct air at the windscreen using demisting.",
+              "answer_b": "Keep air recirculation on continuously.",
+              "answer_c": "Switch off all ventilation.",
+              "answer_d": "Select fresh outside air.",
+              "explanation": "Demisting directs air towards the glass. Fresh outside air avoids prolonged recirculation that can maintain humidity; air conditioning may also help in suitable conditions. I set off only when visibility is adequate."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Le flux doit atteindre le pare-brise.",
+            "b": "Le recyclage prolongé peut favoriser la buée.",
+            "c": "Couper le flux n’aide pas à évacuer l’humidité.",
+            "d": "L’air extérieur aide à renouveler l’air humide."
+          },
+          "en": {
+            "a": "Airflow should reach the windscreen.",
+            "b": "Prolonged recirculation can encourage misting.",
+            "c": "Stopping airflow does not clear moisture effectively.",
+            "d": "Fresh air replaces humid cabin air."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. Photograph from the front passenger seat of a stationary car on a private driveway, looking across the lower windscreen and dashboard top. Fine foggy condensation on the INSIDE of the windscreen, with a small naturally clearer patch; outside trees are softly obscured. No frost, ice, rain streaks or snowy scenery. A simple dark dashboard top with a long demister outlet immediately beneath the glass; centre controls, steering wheel, instruments and people are outside the frame. Natural cool daylight, no labels or symbols. Plausible windshield curvature and pillar, unobstructed vents.",
+        "sources": [
+          {
+            "url": "https://www.user-manual.renault.com/fr/a%C3%A9rateurs-chauffage-et-climatisation/air-conditionne-manuel-2",
+            "kind": "manufacturer",
+            "checked_on": "2026-10-10",
+            "supports": "Demisting directs airflow to the windscreen; prolonged recirculation can cause condensation; return to outside-air operation."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_motorway_exit_deceleration",
+          "similarity": 0.46,
+          "question_fr": "Je suis déjà engagé dans la voie de décélération. Comment préparer le virage de sortie ?"
+        },
+        {
+          "key": "situation_roundabout_inner_lane_yield_outer",
+          "similarity": 0.416,
+          "question_fr": "Je circule sur la voie intérieure du giratoire et je veux rejoindre la sortie. Une voiture est à ma droite sur la voie extérieure. Que faire ?"
+        },
+        {
+          "key": "situation_ecall_accidental_connected_call",
+          "similarity": 0.41,
+          "question_fr": "Ma voiture est garée en sécurité. J’ai déclenché le bouton SOS par erreur et un opérateur me répond. Que faire ?"
+        },
+        {
+          "key": "situation_motorway_friend_tow_offer",
+          "similarity": 0.398,
+          "question_fr": "Ma voiture est en panne sur autoroute et un ami propose de la remorquer avec une sangle. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_fatigue_medicine_effects_amplified",
+          "similarity": 0.397,
+          "question_fr": "Après une nuit très courte, je suis fatigué et mon traitement peut réduire la vigilance. Quelle décision est correcte avant ce trajet ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-003/windscreen_condensation_air_recirculation/scene-1.jpg",
+          "image_sha256": "fec5dea24101c66b244206ffd2f925fa357e7dfca60969d9a8bf192a0dda43cf",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. Photograph from the front passenger seat of a stationary car on a private driveway, looking across the lower windscreen and dashboard top. Fine foggy condensation on the INSIDE of the windscreen, with a small naturally clearer patch; outside trees are softly obscured. No frost, ice, rain streaks or snowy scenery. A simple dark dashboard top with a long demister outlet immediately beneath the glass; centre controls, steering wheel, instruments and people are outside the frame. Natural cool daylight, no labels or symbols. Plausible windshield curvature and pillar, unobstructed vents.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+            "proposal_sha256": "65e3bc7fbbd2c73bb615ba763f098d3f244c9636ef1be0b5784dd7cead950985",
+            "image_sha256": "fec5dea24101c66b244206ffd2f925fa357e7dfca60969d9a8bf192a0dda43cf",
+            "compared_question_keys": [
+              "situation_motorway_exit_deceleration",
+              "situation_roundabout_inner_lane_yield_outer",
+              "situation_ecall_accidental_connected_call",
+              "situation_motorway_friend_tow_offer",
+              "situation_fatigue_medicine_effects_amplified"
+            ],
+            "checks": {
+              "official_rule": "Renault manual describes demist airflow and return to fresh air; prolonged recirculation can encourage fogging. No claim AC operates at every temperature.",
+              "signs_and_text": "No signs, symbols or text shown; question asks function rather than identifying an unseen button.",
+              "road_geometry": "Private driveway with closed gate; no implication that the car is being driven with obstructed vision.",
+              "vehicles_and_people": "No occupants, moving vehicles or pedestrians. Trees and house beyond glass.",
+              "dashboard_and_equipment": "Fine interior moisture and clear patch, unobstructed demister slot, plausible pillar and dashboard. No ice or wiper streaks suggesting another task.",
+              "phone_size": "The misted glass and obstructed right-side view remain obvious at phone size.",
+              "french_and_english": "FR/EN explicitly stopped safely, manual ventilation, inside condensation. Two distinct correct actions A and D; not a frost-scraping repeat.",
+              "novelty": "Existing frost question tests clearing outside ice before departure. This tests ventilation settings for inside humidity, including stopping recirculation. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+              "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. No occupants, moving vehicles or pedestrians. Trees and house beyond glass. Fine interior moisture and clear patch, unobstructed demister slot, plausible pillar and dashboard. No ice or wiper streaks suggesting another task.",
+              "all_four_options": "Correct set A,D. A: Airflow should reach the windscreen. B: Prolonged recirculation can encourage misting. C: Stopping airflow does not clear moisture effectively. D: Fresh air replaces humid cabin air. Four distinct options in both languages."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-003/windscreen_condensation_air_recirculation/scene-1.jpg",
+      "image_sha256": "fec5dea24101c66b244206ffd2f925fa357e7dfca60969d9a8bf192a0dda43cf",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+        "proposal_sha256": "65e3bc7fbbd2c73bb615ba763f098d3f244c9636ef1be0b5784dd7cead950985",
+        "image_sha256": "fec5dea24101c66b244206ffd2f925fa357e7dfca60969d9a8bf192a0dda43cf",
+        "compared_question_keys": [
+          "situation_motorway_exit_deceleration",
+          "situation_roundabout_inner_lane_yield_outer",
+          "situation_ecall_accidental_connected_call",
+          "situation_motorway_friend_tow_offer",
+          "situation_fatigue_medicine_effects_amplified"
+        ],
+        "checks": {
+          "official_rule": "Renault manual describes demist airflow and return to fresh air; prolonged recirculation can encourage fogging. No claim AC operates at every temperature.",
+          "signs_and_text": "No signs, symbols or text shown; question asks function rather than identifying an unseen button.",
+          "road_geometry": "Private driveway with closed gate; no implication that the car is being driven with obstructed vision.",
+          "vehicles_and_people": "No occupants, moving vehicles or pedestrians. Trees and house beyond glass.",
+          "dashboard_and_equipment": "Fine interior moisture and clear patch, unobstructed demister slot, plausible pillar and dashboard. No ice or wiper streaks suggesting another task.",
+          "phone_size": "The misted glass and obstructed right-side view remain obvious at phone size.",
+          "french_and_english": "FR/EN explicitly stopped safely, manual ventilation, inside condensation. Two distinct correct actions A and D; not a frost-scraping repeat.",
+          "novelty": "Existing frost question tests clearing outside ice before departure. This tests ventilation settings for inside humidity, including stopping recirculation. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+          "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. No occupants, moving vehicles or pedestrians. Trees and house beyond glass. Fine interior moisture and clear patch, unobstructed demister slot, plausible pillar and dashboard. No ice or wiper streaks suggesting another task.",
+          "all_four_options": "Correct set A,D. A: Airflow should reach the windscreen. B: Prolonged recirculation can encourage misting. C: Stopping airflow does not clear moisture effectively. D: Fresh air replaces humid cabin air. Four distinct options in both languages."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "40560357b2230f4ba8b97111e91d3e6aee9d2425c912799f0e9b8cb4312479ff"
+    },
+    {
+      "proposal": {
+        "scenario_id": "first_technical_inspection_timing",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; any towing example explicitly stays within a combined maximum authorised mass of 3500 kg.",
+        "learning_objective": "Schedule the first ordinary-car roadworthiness inspection before the fourth anniversary without waiting for a summons.",
+        "topic": "responsibility.technical_inspection",
+        "scenario": "Ordinary privately used new passenger car, no taxi, ambulance or special-use exception. Question asks general timing, no date inferred from the illustration.",
+        "novelty_review": "No existing inspection-timing objective in bank or pending work; distinct from equipment maintenance checks.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_first_technical_inspection_timing",
+          "category_slug": "safety",
+          "correct_answers": [
+            "b",
+            "c"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Pour ma voiture particulière neuve à usage privé, hors cas particuliers, quelles règles s’appliquent au premier contrôle technique ?",
+              "answer_a": "Il se fait après le cinquième anniversaire.",
+              "answer_b": "Il se fait dans les six mois précédant le quatrième anniversaire de sa première mise en circulation.",
+              "answer_c": "Je dois prendre l’initiative du rendez-vous.",
+              "answer_d": "J’attends obligatoirement une convocation officielle.",
+              "explanation": "Le premier contrôle technique doit être réalisé pendant les six mois qui précèdent le quatrième anniversaire de la première mise en circulation. La démarche appartient au propriétaire : aucune convocation n’est envoyée."
+            },
+            "en": {
+              "question_text": "For my new privately used passenger car, with no special-use exceptions, which rules apply to its first roadworthiness inspection?",
+              "answer_a": "It takes place after its fifth anniversary.",
+              "answer_b": "It takes place during the six months before the fourth anniversary of first registration.",
+              "answer_c": "I must arrange the appointment myself.",
+              "answer_d": "I must wait for an official summons.",
+              "explanation": "The first inspection must take place during the six months before the fourth anniversary of the car’s first registration. The owner must arrange it; no official summons is sent."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "La cinquième année est trop tardive.",
+            "b": "Fenêtre réglementaire avant quatre ans.",
+            "c": "Démarche à l’initiative du propriétaire.",
+            "d": "Pas de convocation prévue."
+          },
+          "en": {
+            "a": "The fifth anniversary is too late.",
+            "b": "The statutory window precedes four years.",
+            "c": "The owner initiates the appointment.",
+            "d": "No summons is sent."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. Original natural photo inside a clean French vehicle inspection bay. A modern unbranded ordinary compact passenger car is seen in exact side profile, safely stationary with its front wheels seated in a recessed roller brake tester flush with the workshop floor and rear wheels on level floor. No lift, no person beneath the car, no moving parts. Plain workshop walls and soft overhead lighting; no readable screens, certificates, registration documents, signs or text. Front and rear plate faces are naturally out of sight in the exact side profile. Mechanically realistic car and roller bed, no brand badges.",
+        "sources": [
+          {
+            "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2878",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "First inspection in the six months preceding the fourth anniversary of first circulation; owner initiates and receives no summons."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_motorway_blowout_initial_control",
+          "similarity": 0.462,
+          "question_fr": "Sur cette autoroute, un pneu éclate brusquement alors que je roule. Quelle est ma première réaction ?"
+        },
+        {
+          "key": "situation_b9b_car_interpretation",
+          "similarity": 0.444,
+          "question_fr": "Je conduis une voiture particulière. Ce panneau, à lui seul, m’interdit-il l’accès ?"
+        },
+        {
+          "key": "speed_visibility_under_fifty",
+          "similarity": 0.421,
+          "question_fr": "La visibilité est inférieure à 50 mètres à cause du brouillard. Quelle vitesse maximale s’applique sur toutes les routes, autoroute comprise ?"
+        },
+        {
+          "key": "situation_motorway_end",
+          "similarity": 0.41,
+          "question_fr": "Après ce panneau, en l'absence d'autre indication, quelle règle s'applique ?"
+        },
+        {
+          "key": "situation_night_unlit_roadside_position_lights",
+          "similarity": 0.41,
+          "question_fr": "Je laisse ma voiture stationnée de nuit sur cette chaussée sans éclairage public. Quelle signalisation conserver ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-003/first_technical_inspection_timing/scene-1.jpg",
+          "image_sha256": "6dbccb5592f86fb41cb6ba49537abba00eb377d6701aff69bd572e6477246075",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. Original natural photo inside a clean French vehicle inspection bay. A modern unbranded ordinary compact passenger car is seen in exact side profile, safely stationary with its front wheels seated in a recessed roller brake tester flush with the workshop floor and rear wheels on level floor. No lift, no person beneath the car, no moving parts. Plain workshop walls and soft overhead lighting; no readable screens, certificates, registration documents, signs or text. Front and rear plate faces are naturally out of sight in the exact side profile. Mechanically realistic car and roller bed, no brand badges.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+            "proposal_sha256": "7afa6510f66f982ff6cf84fc1b6b73d175aee17ae83bcdf88a00579a112bb907",
+            "image_sha256": "6dbccb5592f86fb41cb6ba49537abba00eb377d6701aff69bd572e6477246075",
+            "compared_question_keys": [
+              "situation_motorway_blowout_initial_control",
+              "situation_b9b_car_interpretation",
+              "speed_visibility_under_fifty",
+              "situation_motorway_end",
+              "situation_night_unlit_roadside_position_lights"
+            ],
+            "checks": {
+              "official_rule": "Service Public F2878 specifies six months BEFORE fourth anniversary and no summons for an ordinary private car. Special-use exceptions excluded.",
+              "signs_and_text": "No traffic signs or date-bearing document; no hidden date needed to calculate. Small wheel-hub motifs and workshop casing are not presented as text or instructions.",
+              "road_geometry": "Level inspection-bay floor and recessed roller bed under front axle, rear wheels on floor; no unsafe raised car or open pit.",
+              "vehicles_and_people": "Ordinary closed hatchback in side view; wheels, body panels, mirrors and front/rear lamps coherent. No technician in danger.",
+              "dashboard_and_equipment": "Front tyre on roller bed, realistic shop monitor seen edge-on; no fabricated readable certificate or dashboard.",
+              "phone_size": "Car in inspection bay remains clear at 390 pixels; timing comes explicitly from the options.",
+              "french_and_english": "FR première mise en circulation and EN first registration used consistently; B/C are independent correct timing/initiative facts.",
+              "novelty": "No existing inspection-timing objective in bank or pending work; distinct from equipment maintenance checks. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+              "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. Ordinary closed hatchback in side view; wheels, body panels, mirrors and front/rear lamps coherent. No technician in danger. Front tyre on roller bed, realistic shop monitor seen edge-on; no fabricated readable certificate or dashboard.",
+              "all_four_options": "Correct set B,C. A: The fifth anniversary is too late. B: The statutory window precedes four years. C: The owner initiates the appointment. D: No summons is sent. Four distinct options in both languages."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-003/first_technical_inspection_timing/scene-1.jpg",
+      "image_sha256": "6dbccb5592f86fb41cb6ba49537abba00eb377d6701aff69bd572e6477246075",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+        "proposal_sha256": "7afa6510f66f982ff6cf84fc1b6b73d175aee17ae83bcdf88a00579a112bb907",
+        "image_sha256": "6dbccb5592f86fb41cb6ba49537abba00eb377d6701aff69bd572e6477246075",
+        "compared_question_keys": [
+          "situation_motorway_blowout_initial_control",
+          "situation_b9b_car_interpretation",
+          "speed_visibility_under_fifty",
+          "situation_motorway_end",
+          "situation_night_unlit_roadside_position_lights"
+        ],
+        "checks": {
+          "official_rule": "Service Public F2878 specifies six months BEFORE fourth anniversary and no summons for an ordinary private car. Special-use exceptions excluded.",
+          "signs_and_text": "No traffic signs or date-bearing document; no hidden date needed to calculate. Small wheel-hub motifs and workshop casing are not presented as text or instructions.",
+          "road_geometry": "Level inspection-bay floor and recessed roller bed under front axle, rear wheels on floor; no unsafe raised car or open pit.",
+          "vehicles_and_people": "Ordinary closed hatchback in side view; wheels, body panels, mirrors and front/rear lamps coherent. No technician in danger.",
+          "dashboard_and_equipment": "Front tyre on roller bed, realistic shop monitor seen edge-on; no fabricated readable certificate or dashboard.",
+          "phone_size": "Car in inspection bay remains clear at 390 pixels; timing comes explicitly from the options.",
+          "french_and_english": "FR première mise en circulation and EN first registration used consistently; B/C are independent correct timing/initiative facts.",
+          "novelty": "No existing inspection-timing objective in bank or pending work; distinct from equipment maintenance checks. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+          "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. Ordinary closed hatchback in side view; wheels, body panels, mirrors and front/rear lamps coherent. No technician in danger. Front tyre on roller bed, realistic shop monitor seen edge-on; no fabricated readable certificate or dashboard.",
+          "all_four_options": "Correct set B,C. A: The fifth anniversary is too late. B: The statutory window precedes four years. C: The owner initiates the appointment. D: No summons is sent. Four distinct options in both languages."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "8b181bc4f10e7eb9477bbe451acc8fa8698c0179b191385612bc9a04e64402ca"
+    },
+    {
+      "proposal": {
+        "scenario_id": "cruise_control_rain_deactivate",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; any towing example explicitly stays within a combined maximum authorised mass of 3500 kg.",
+        "learning_objective": "Stop using conventional cruise control when weather deteriorates and resume direct speed control.",
+        "topic": "equipment.cruise_control_bad_weather",
+        "scenario": "A conventional non-adaptive cruise control is active; heavy rain begins. Driver has not yet aquaplaned.",
+        "novelty_review": "Rain speed limits and aquaplaning response are covered, but choosing to deactivate cruise control as conditions deteriorate is not.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_cruise_control_rain_deactivate",
+          "category_slug": "speed_limits",
+          "correct_answers": [
+            "a"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Mon régulateur de vitesse classique est activé. Une forte pluie commence et l’adhérence diminue. Que faire ?",
+              "answer_a": "Désactiver le régulateur et adapter moi-même ma vitesse.",
+              "answer_b": "Le laisser gérer l’adhérence à ma place.",
+              "answer_c": "Augmenter sa consigne pour sortir vite de la pluie.",
+              "answer_d": "Lâcher le volant puisque la vitesse est régulée.",
+              "explanation": "Le régulateur maintient une vitesse de consigne mais ne remplace pas l’évaluation de l’adhérence par le conducteur. Par mauvais temps, je le désactive et j’adapte progressivement ma vitesse et mes distances aux conditions."
+            },
+            "en": {
+              "question_text": "Conventional cruise control is active. Heavy rain starts and grip decreases. What should I do?",
+              "answer_a": "Deactivate cruise control and adjust my speed myself.",
+              "answer_b": "Let it manage tyre grip for me.",
+              "answer_c": "Increase its setting to get out of the rain quickly.",
+              "answer_d": "Let go of the wheel because speed is controlled.",
+              "explanation": "Cruise control maintains a set speed but does not replace the driver’s assessment of grip. In poor weather, I deactivate it and progressively adapt my speed and following distance to the conditions."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Reprendre la gestion directe et adapter l’allure.",
+            "b": "Ce système ne garantit pas l’adhérence.",
+            "c": "Accélérer aggrave le risque.",
+            "d": "Le régulateur ne dirige pas la voiture."
+          },
+          "en": {
+            "a": "Resume direct control and adapt speed.",
+            "b": "The system cannot guarantee grip.",
+            "c": "Accelerating increases risk.",
+            "d": "Cruise control does not steer the car."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. Driver-eye view through the windscreen on a straight, ordinary French two-way rural road in heavy daytime rain. Car camera stays centred in its right lane. Correct thin white broken centre line with long gaps, continuous white edge lines, grassy verges. Wet asphalt and raindrops at the windscreen margins, central view cleared by wipers currently resting below the frame. No cars, people, junctions or signs. Show only a narrow dark dashboard edge, no instruments, controls, speed numbers or indicator lights. Enough forward visibility to see the straight road, natural rain and grey sky without flooding.",
+        "sources": [
+          {
+            "url": "https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-15",
+            "kind": "manufacturer",
+            "checked_on": "2026-10-10",
+            "supports": "Cruise control should not be used on slippery roads or in adverse weather including rain; the driver remains responsible."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_dirt_track_yields_all",
+          "similarity": 0.449,
+          "question_fr": "Je débouche de ce chemin de terre sur la route. Une voiture arrive de gauche et un cycliste de droite. Que faire ?"
+        },
+        {
+          "key": "situation_motorway_toll_intercom_problem",
+          "similarity": 0.447,
+          "question_fr": "Le terminal de péage ne fonctionne pas et la barrière reste fermée. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_blind_crest_no_overtake",
+          "similarity": 0.438,
+          "question_fr": "Le véhicule devant roule lentement et le sommet de la côte masque la route. Puis-je commencer à le dépasser ?"
+        },
+        {
+          "key": "situation_ev_charge_cable_cut_insulation",
+          "similarity": 0.423,
+          "question_fr": "Avant de brancher ma voiture électrique, je vois une coupure dans la gaine du câble de recharge. Que faire ?"
+        },
+        {
+          "key": "situation_rear_vehicle_already_overtaking",
+          "similarity": 0.42,
+          "question_fr": "Je veux dépasser le camion, mais une voiture derrière moi a déjà commencé à me dépasser. Que faire ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-003/cruise_control_rain_deactivate/scene-1.jpg",
+          "image_sha256": "8f80b315d23243afa113d15ded4c0087711e5bbb6adaca00abee140ad6b4313c",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. Driver-eye view through the windscreen on a straight, ordinary French two-way rural road in heavy daytime rain. Car camera stays centred in its right lane. Correct thin white broken centre line with long gaps, continuous white edge lines, grassy verges. Wet asphalt and raindrops at the windscreen margins, central view cleared by wipers currently resting below the frame. No cars, people, junctions or signs. Show only a narrow dark dashboard edge, no instruments, controls, speed numbers or indicator lights. Enough forward visibility to see the straight road, natural rain and grey sky without flooding.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+            "proposal_sha256": "4a1a05da7130196e44b3f4e17b6e8b765737996e344bc270fa1278605b0b8a4b",
+            "image_sha256": "8f80b315d23243afa113d15ded4c0087711e5bbb6adaca00abee140ad6b4313c",
+            "compared_question_keys": [
+              "situation_dirt_track_yields_all",
+              "situation_motorway_toll_intercom_problem",
+              "situation_blind_crest_no_overtake",
+              "situation_ev_charge_cable_cut_insulation",
+              "situation_rear_vehicle_already_overtaking"
+            ],
+            "checks": {
+              "official_rule": "Renault conventional cruise-control manual warns against use in rain/slippery conditions. Question supplies active conventional cruise control and reducing grip; advice is not an invented statutory speed limit.",
+              "signs_and_text": "Only white broken centre marking and continuous white edge lines; no speed sign or signal to misread.",
+              "road_geometry": "Camera in right lane of a straight two-way road; centre line at left, verges clear; no opposing-lane travel.",
+              "vehicles_and_people": "Empty road, no vehicles or people; rain visible without an invented crash.",
+              "dashboard_and_equipment": "Narrow dashboard edge only; no wrong speedometer/control symbol. Central wiped view clear, rain droplets around edges.",
+              "phone_size": "Rain and wet road visible at 390 pixels; no small instrument essential to answer.",
+              "french_and_english": "Conventional regulator/régulateur distinction maintained, not adaptive cruise or steering automation. A correct; B/C/D unsupported or dangerous.",
+              "novelty": "Rain speed limits and aquaplaning response are covered, but choosing to deactivate cruise control as conditions deteriorate is not. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+              "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. Empty road, no vehicles or people; rain visible without an invented crash. Narrow dashboard edge only; no wrong speedometer/control symbol. Central wiped view clear, rain droplets around edges.",
+              "all_four_options": "Correct set A. A: Resume direct control and adapt speed. B: The system cannot guarantee grip. C: Accelerating increases risk. D: Cruise control does not steer the car. Four distinct options in both languages."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-003/cruise_control_rain_deactivate/scene-1.jpg",
+      "image_sha256": "8f80b315d23243afa113d15ded4c0087711e5bbb6adaca00abee140ad6b4313c",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+        "proposal_sha256": "4a1a05da7130196e44b3f4e17b6e8b765737996e344bc270fa1278605b0b8a4b",
+        "image_sha256": "8f80b315d23243afa113d15ded4c0087711e5bbb6adaca00abee140ad6b4313c",
+        "compared_question_keys": [
+          "situation_dirt_track_yields_all",
+          "situation_motorway_toll_intercom_problem",
+          "situation_blind_crest_no_overtake",
+          "situation_ev_charge_cable_cut_insulation",
+          "situation_rear_vehicle_already_overtaking"
+        ],
+        "checks": {
+          "official_rule": "Renault conventional cruise-control manual warns against use in rain/slippery conditions. Question supplies active conventional cruise control and reducing grip; advice is not an invented statutory speed limit.",
+          "signs_and_text": "Only white broken centre marking and continuous white edge lines; no speed sign or signal to misread.",
+          "road_geometry": "Camera in right lane of a straight two-way road; centre line at left, verges clear; no opposing-lane travel.",
+          "vehicles_and_people": "Empty road, no vehicles or people; rain visible without an invented crash.",
+          "dashboard_and_equipment": "Narrow dashboard edge only; no wrong speedometer/control symbol. Central wiped view clear, rain droplets around edges.",
+          "phone_size": "Rain and wet road visible at 390 pixels; no small instrument essential to answer.",
+          "french_and_english": "Conventional regulator/régulateur distinction maintained, not adaptive cruise or steering automation. A correct; B/C/D unsupported or dangerous.",
+          "novelty": "Rain speed limits and aquaplaning response are covered, but choosing to deactivate cruise control as conditions deteriorate is not. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+          "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. Empty road, no vehicles or people; rain visible without an invented crash. Narrow dashboard edge only; no wrong speedometer/control symbol. Central wiped view clear, rain droplets around edges.",
+          "all_four_options": "Correct set A. A: Resume direct control and adapt speed. B: The system cannot guarantee grip. C: Accelerating increases risk. D: Cruise control does not steer the car. Four distinct options in both languages."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "165d3149ebc0746d04a399dfc113edbe908657b034993d5981ad0c21a5cf00ad"
+    },
+    {
+      "proposal": {
+        "scenario_id": "rail_trapped_break_exit_barrier",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; any towing example explicitly stays within a combined maximum authorised mass of 3500 kg.",
+        "learning_objective": "Escape a railway crossing by driving through its breakable exit barrier when the car can move.",
+        "topic": "rail_crossing.trapped_vehicle_escape",
+        "scenario": "The car is already trapped on the crossing, still able to move; route beyond the lowered exit barrier is clear. This is an emergency escape, never permission to enter against signals.",
+        "novelty_review": "Existing railway questions concern entry and train priority; this asks escape after the vehicle is already trapped between barriers.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_rail_trapped_break_exit_barrier",
+          "category_slug": "priority_rules",
+          "correct_answers": [
+            "d"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Ma voiture est déjà coincée sur les rails entre les barrières. Elle peut encore avancer et la sortie est libre derrière la barrière abaissée. Que faire immédiatement ?",
+              "answer_a": "Attendre sur les rails que la barrière se relève.",
+              "answer_b": "Sortir pour soulever la barrière à la main.",
+              "answer_c": "Rester sur les rails pour téléphoner d’abord.",
+              "answer_d": "Avancer pour enfoncer la barrière cassable et dégager les rails.",
+              "explanation": "Je dégage immédiatement la voie ferrée, en enfonçant la barrière conçue pour être cassable si nécessaire. Une fois en sécurité, j’alerte la SNCF par le téléphone du passage à niveau ou le numéro indiqué. Cela n’autorise jamais à entrer sur un passage fermé."
+            },
+            "en": {
+              "question_text": "My car is already trapped on the tracks between the barriers. It can still move and the exit beyond the lowered barrier is clear. What should I do immediately?",
+              "answer_a": "Wait on the tracks for the barrier to rise.",
+              "answer_b": "Get out and lift the barrier by hand.",
+              "answer_c": "Stay on the tracks and telephone first.",
+              "answer_d": "Drive through the breakable barrier to clear the tracks.",
+              "explanation": "I clear the railway immediately, breaking through the barrier designed for that purpose if necessary. Once safe, I alert SNCF using the crossing telephone or displayed number. This never permits entering a closed crossing."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Attendre maintient le danger de collision.",
+            "b": "Perte de temps sur les rails.",
+            "c": "Dégager est prioritaire avant l’alerte.",
+            "d": "Barrière cassable pour permettre l’évacuation du véhicule."
+          },
+          "en": {
+            "a": "Waiting retains the collision risk.",
+            "b": "This wastes time on the tracks.",
+            "c": "Clear the tracks before making the call.",
+            "d": "The breakable barrier allows the vehicle to escape."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. From inside an ordinary left-hand-drive car already on a French railway crossing, looking forward toward the EXIT. Tight lower windscreen view: narrow bonnet edge at bottom, one pair of steel rails embedded flush in rubber crossing panels runs horizontally across the immediate foreground beneath the camera car. Ahead at about one car length, the exit lane is blocked by a lowered white barrier arm with red rectangular bands, extending from a mechanism on the LEFT verge across our RIGHT-hand exit lane. The road beyond is entirely empty and straight, visibly clear. Only the back of a signal unit facing arriving opposing traffic, if any; no stop sign or signal face aimed at our camera on the exit side. No train, people, text, arrows or collision. Plain realistic two-lane crossing geometry, rural setting. We are inside the crossing, not waiting on its approach.",
+        "sources": [
+          {
+            "url": "https://www.bea-tt.developpement-durable.gouv.fr/rapport-d-enquete-sur-la-collision-entre-un-ter-et-a1080.html",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Official investigation of a light car trapped at an SAL4 crossing notes the breakable barrier arms and their escape purpose."
+          },
+          {
+            "url": "https://www.sncf-reseau.com/fr/securite-ferroviaire/prevenir-les-prises-de-risque-aux-passages-niveau",
+            "kind": "background",
+            "checked_on": "2026-10-10",
+            "supports": "Rail infrastructure operator guidance: a trapped movable vehicle should break through the barrier to clear the tracks, then alert; reviewed July 2026 page."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_motorway_friend_tow_offer",
+          "similarity": 0.448,
+          "question_fr": "Ma voiture est en panne sur autoroute et un ami propose de la remorquer avec une sangle. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_motorway_flat_tyre_approved_recovery",
+          "similarity": 0.413,
+          "question_fr": "Mon pneu est crevé sur la bande d'arrêt d'urgence. Une fois les occupants à l'abri derrière la glissière, que faire ?"
+        },
+        {
+          "key": "situation_unsecured_roof_load",
+          "similarity": 0.412,
+          "question_fr": "Ces planches peuvent encore bouger sur la galerie. Puis-je prendre la route ainsi ?"
+        },
+        {
+          "key": "situation_motorway_breakdown_no_triangle",
+          "similarity": 0.411,
+          "question_fr": "Ma voiture est en panne sur la bande d'arrêt d'urgence de l'autoroute. Dois-je marcher sur la chaussée pour poser le triangle ?"
+        },
+        {
+          "key": "situation_coolant_hot_cap_wait",
+          "similarity": 0.409,
+          "question_fr": "Après un trajet, ma voiture est garée, contact coupé, mais le moteur est encore chaud. Pour contrôler le liquide de refroidissement, je dois :"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-003/rail_trapped_break_exit_barrier/scene-1.jpg",
+          "image_sha256": "ffb7fadf1da9370dde04e90e6ad3b150aadae23823da4e6730aa827589da8d13",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. From inside an ordinary left-hand-drive car already on a French railway crossing, looking forward toward the EXIT. Tight lower windscreen view: narrow bonnet edge at bottom, one pair of steel rails embedded flush in rubber crossing panels runs horizontally across the immediate foreground beneath the camera car. Ahead at about one car length, the exit lane is blocked by a lowered white barrier arm with red rectangular bands, extending from a mechanism on the LEFT verge across our RIGHT-hand exit lane. The road beyond is entirely empty and straight, visibly clear. Only the back of a signal unit facing arriving opposing traffic, if any; no stop sign or signal face aimed at our camera on the exit side. No train, people, text, arrows or collision. Plain realistic two-lane crossing geometry, rural setting. We are inside the crossing, not waiting on its approach.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "reject",
+            "proposal_sha256": "a49c0107015d46c4cfc9543a70f47e4bc2bacc2f7b6e05435c59fb1b079a1356",
+            "image_sha256": "ffb7fadf1da9370dde04e90e6ad3b150aadae23823da4e6730aa827589da8d13",
+            "notes": "Rejected after full-resolution and phone inspection: full-road barrier/central camera and full-width transverse line make the crossing exit layout ambiguous; rails appear entirely ahead rather than clearly under a trapped car. Regenerate a neutral close-up of the barrier, with the emergency facts explicitly supplied by the wording.",
+            "recorded_on": "2026-10-10"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-003/rail_trapped_break_exit_barrier/scene-2.jpg",
+          "image_sha256": "b24fbd7c7b120ad4ccf43af72583ecfb29903ee4885173097be54b1c0f2b1301",
+          "prompt": "Use case: photorealistic-natural. Regenerate the railway-crossing illustration as one original realistic landscape 16:9 photograph, 1672x941. Tight neutral close-up of an intact French railway crossing barrier arm: a white rectangular lightweight arm with red rectangular reflective bands crossing the frame horizontally at mid height. Camera at the side of a crossing; only a short central section of the arm, not its hinge, ends or road-lane layout. Behind and BELOW the barrier arm, clearly separate in depth, one railway track of two parallel steel rails passes diagonally through dark rubber crossing panels, continuing into gravel ballast at the right edge. Natural sunlit rural setting, no cars, people, signals, signs, road markings, printed text, numbers, labels or highlights. The barrier arm is the main object, but do not highlight a break point or show damage. This is an illustrative close-up, not a driver's position diagram. The accompanying question explicitly states that a car is already trapped and its exit is clear; do not attempt to add that unseen car. Mechanically plausible arm and railway rails, no impossible junctions.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+            "proposal_sha256": "a49c0107015d46c4cfc9543a70f47e4bc2bacc2f7b6e05435c59fb1b079a1356",
+            "image_sha256": "b24fbd7c7b120ad4ccf43af72583ecfb29903ee4885173097be54b1c0f2b1301",
+            "compared_question_keys": [
+              "situation_motorway_friend_tow_offer",
+              "situation_motorway_flat_tyre_approved_recovery",
+              "situation_unsecured_roof_load",
+              "situation_motorway_breakdown_no_triangle",
+              "situation_coolant_hot_cap_wait"
+            ],
+            "checks": {
+              "official_rule": "SNCF Réseau rule 6 gives immediate escape through breakable barrier; official BEA-TT car case confirms SAL4 breakable arms. Question explicitly trapped, car movable, clear exit. Alert only after safety.",
+              "signs_and_text": "White rectangular barrier arm with red rectangular reflective bands, intact, no signs/words/signal faces. No highlighted solution point.",
+              "road_geometry": "Replacement is a neutral side close-up, not a driver diagram: two parallel rails through rubber panels into ballast, barrier above and separate. No ambiguous road stop line remains.",
+              "vehicles_and_people": "No vehicle or person depicted; movable trapped car and clear exit are explicitly stated in both stems rather than inferred.",
+              "dashboard_and_equipment": "Plausible lightweight barrier section and railway panel/rail relationship; no dashboard or invented controls.",
+              "phone_size": "Barrier and rails are clearly recognisable at 390 pixels; all emergency conditions supplied by wording.",
+              "french_and_english": "FR/EN agree on immediate action D and safe subsequent alert; explanation explicitly forbids entering a closed crossing, preventing generalisation.",
+              "novelty": "Existing railway questions concern entry and train priority; this asks escape after the vehicle is already trapped between barriers. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+              "full_resolution": "Inspected the entire final scene-2.jpg at original 1672x941 resolution and phone-2.jpg at 390 pixels. No vehicle or person depicted; movable trapped car and clear exit are explicitly stated in both stems rather than inferred. Plausible lightweight barrier section and railway panel/rail relationship; no dashboard or invented controls.",
+              "all_four_options": "Correct set D. A: Waiting retains the collision risk. B: This wastes time on the tracks. C: Clear the tracks before making the call. D: The breakable barrier allows the vehicle to escape. Four distinct options in both languages."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-003/rail_trapped_break_exit_barrier/scene-2.jpg",
+      "image_sha256": "b24fbd7c7b120ad4ccf43af72583ecfb29903ee4885173097be54b1c0f2b1301",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+        "proposal_sha256": "a49c0107015d46c4cfc9543a70f47e4bc2bacc2f7b6e05435c59fb1b079a1356",
+        "image_sha256": "b24fbd7c7b120ad4ccf43af72583ecfb29903ee4885173097be54b1c0f2b1301",
+        "compared_question_keys": [
+          "situation_motorway_friend_tow_offer",
+          "situation_motorway_flat_tyre_approved_recovery",
+          "situation_unsecured_roof_load",
+          "situation_motorway_breakdown_no_triangle",
+          "situation_coolant_hot_cap_wait"
+        ],
+        "checks": {
+          "official_rule": "SNCF Réseau rule 6 gives immediate escape through breakable barrier; official BEA-TT car case confirms SAL4 breakable arms. Question explicitly trapped, car movable, clear exit. Alert only after safety.",
+          "signs_and_text": "White rectangular barrier arm with red rectangular reflective bands, intact, no signs/words/signal faces. No highlighted solution point.",
+          "road_geometry": "Replacement is a neutral side close-up, not a driver diagram: two parallel rails through rubber panels into ballast, barrier above and separate. No ambiguous road stop line remains.",
+          "vehicles_and_people": "No vehicle or person depicted; movable trapped car and clear exit are explicitly stated in both stems rather than inferred.",
+          "dashboard_and_equipment": "Plausible lightweight barrier section and railway panel/rail relationship; no dashboard or invented controls.",
+          "phone_size": "Barrier and rails are clearly recognisable at 390 pixels; all emergency conditions supplied by wording.",
+          "french_and_english": "FR/EN agree on immediate action D and safe subsequent alert; explanation explicitly forbids entering a closed crossing, preventing generalisation.",
+          "novelty": "Existing railway questions concern entry and train priority; this asks escape after the vehicle is already trapped between barriers. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+          "full_resolution": "Inspected the entire final scene-2.jpg at original 1672x941 resolution and phone-2.jpg at 390 pixels. No vehicle or person depicted; movable trapped car and clear exit are explicitly stated in both stems rather than inferred. Plausible lightweight barrier section and railway panel/rail relationship; no dashboard or invented controls.",
+          "all_four_options": "Correct set D. A: Waiting retains the collision risk. B: This wastes time on the tracks. C: Clear the tracks before making the call. D: The breakable barrier allows the vehicle to escape. Four distinct options in both languages."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "9ee32c0c842724e6796b004fe76ad4264d77fe3f444a9a42d60983019a310e17"
+    },
+    {
+      "proposal": {
+        "scenario_id": "cmi_parking_local_twelve_hour_limit",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; any towing example explicitly stays within a combined maximum authorised mass of 3500 kg.",
+        "learning_objective": "Respect a lawful local maximum duration for CMI parking rather than assuming unlimited time everywhere.",
+        "topic": "parking.cmi_local_duration",
+        "scenario": "CMI parking holder is transported, card properly displayed, public on-street bay with a stated municipal twelve-hour maximum for CMI holders.",
+        "novelty_review": "Earlier CMI passenger question tests eligibility and card display, not the lawful local duration exception.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_cmi_parking_local_twelve_hour_limit",
+          "category_slug": "parking_stopping",
+          "correct_answers": [
+            "b"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Je transporte le titulaire d’une CMI stationnement et la carte est affichée. Ici, la commune fixe à 12 heures la durée maximale pour ses titulaires. Puis-je laisser la voiture 24 heures ?",
+              "answer_a": "Oui, la CMI annule toute limite de durée.",
+              "answer_b": "Non, je dois respecter la limite locale de 12 heures.",
+              "answer_c": "Oui, si la personne reste dans la voiture.",
+              "answer_d": "Oui, en affichant deux cartes CMI.",
+              "explanation": "La CMI stationnement permet le stationnement gratuit, mais l’autorité locale peut limiter sa durée sans descendre sous douze heures. Dans cette situation, je respecte donc le maximum de douze heures, même avec une carte valable."
+            },
+            "en": {
+              "question_text": "I am transporting a CMI parking-card holder and the card is displayed. Here, the municipality sets a 12-hour maximum for card holders. May I leave the car for 24 hours?",
+              "answer_a": "Yes, the card cancels every time limit.",
+              "answer_b": "No, I must observe the local 12-hour limit.",
+              "answer_c": "Yes, if the person stays in the car.",
+              "answer_d": "Yes, if I display two CMI cards.",
+              "explanation": "A CMI parking card gives free parking, but the local authority can impose a maximum stay of at least twelve hours. In this situation, I must respect the twelve-hour limit even with a valid card."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Une limite locale légale reste applicable.",
+            "b": "Respect du maximum de douze heures annoncé.",
+            "c": "La présence du titulaire n’étend pas le maximum.",
+            "d": "Deux cartes ne cumulent pas les durées."
+          },
+          "en": {
+            "a": "A lawful local limit still applies.",
+            "b": "Observe the stated twelve-hour maximum.",
+            "c": "Remaining inside does not extend the maximum.",
+            "d": "Two cards do not add their permitted durations."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. Quiet French public on-street parking illustration, exact side profile of an ordinary parked blue hatchback in a correctly sized parallel bay marked with thin white rectangular corners beside a plain kerb. Car faces right, doors closed, no occupants visible. Pavement clear, no driveway, hydrant, crossing, intersection, sign or parking meter in this close frame. Front and rear plate faces are naturally out of view in exact side profile. No disability symbols or cards visible; eligibility and local time limit are supplied in the question, not inferred from the image. Natural daylight and plain residential wall beyond the pavement.",
+        "sources": [
+          {
+            "url": "https://www.ecologie.gouv.fr/politiques-publiques/laccessibilite-du-stationnement",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Local authorities can impose maximum CMI parking durations, not shorter than twelve hours; applies also to reserved bays and blue zones."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_cmi_parking_card_passenger",
+          "similarity": 0.447,
+          "question_fr": "Je transporte une personne titulaire d’une CMI « stationnement » valide. Pour stationner avec elle, quelles affirmations sont exactes ?"
+        },
+        {
+          "key": "situation_overtaking_uncontrolled_intersection",
+          "similarity": 0.401,
+          "question_fr": "Je vais dépasser cette voiture à l'approche d'une intersection sans feu ni route prioritaire. Puis-je commencer la manœuvre ?"
+        },
+        {
+          "key": "situation_blind_crest_no_overtake",
+          "similarity": 0.396,
+          "question_fr": "Le véhicule devant roule lentement et le sommet de la côte masque la route. Puis-je commencer à le dépasser ?"
+        },
+        {
+          "key": "situation_parking_disc_actual_arrival",
+          "similarity": 0.39,
+          "question_fr": "Je viens de me garer sur une place où le disque est obligatoire. Quelle heure dois-je y indiquer ?"
+        },
+        {
+          "key": "situation_urban_horn_impatience",
+          "similarity": 0.39,
+          "question_fr": "En ville, le véhicule devant tarde à repartir au feu vert sans danger immédiat. Puis-je klaxonner par impatience ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-003/cmi_parking_local_twelve_hour_limit/scene-1.jpg",
+          "image_sha256": "1ecedfdceebb62482adeb3285c8b143dbbd0d95a816a67f65e561d87f38a36e0",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. Quiet French public on-street parking illustration, exact side profile of an ordinary parked blue hatchback in a correctly sized parallel bay marked with thin white rectangular corners beside a plain kerb. Car faces right, doors closed, no occupants visible. Pavement clear, no driveway, hydrant, crossing, intersection, sign or parking meter in this close frame. Front and rear plate faces are naturally out of view in exact side profile. No disability symbols or cards visible; eligibility and local time limit are supplied in the question, not inferred from the image. Natural daylight and plain residential wall beyond the pavement.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+            "proposal_sha256": "d2bf643fb054f5b29a798b57458853e4e881e843d53d7a82ff4d00578b7f13e7",
+            "image_sha256": "1ecedfdceebb62482adeb3285c8b143dbbd0d95a816a67f65e561d87f38a36e0",
+            "compared_question_keys": [
+              "situation_cmi_parking_card_passenger",
+              "situation_overtaking_uncontrolled_intersection",
+              "situation_blind_crest_no_overtake",
+              "situation_parking_disc_actual_arrival",
+              "situation_urban_horn_impatience"
+            ],
+            "checks": {
+              "official_rule": "Ecologie ministry FAQ confirms lawful CMI maximum cannot be under 12 hours. The stem states exactly 12 hours and on-street context; not a barrier-equipped private car park.",
+              "signs_and_text": "Only white parking-bay corners, no sign displaying a different duration; CMI eligibility/time supplied by wording.",
+              "road_geometry": "Car fully inside parallel bay beside kerb; pavement clear, no driveway, zebra or hydrant obstruction. Direction of street not asserted.",
+              "vehicles_and_people": "Closed blue hatchback in side view, no occupants visibly claimed; plate faces naturally outside view, not blank plates.",
+              "dashboard_and_equipment": "No card face or personal identity details generated; no dashboard instruments required.",
+              "phone_size": "Entire bay/car silhouette remains visible at 390 pixels; answer depends on stated municipal limit.",
+              "french_and_english": "Both languages require displayed CMI while transporting its holder; 24 exceeds stated 12. B correct, presence/two cards do not extend time.",
+              "novelty": "Earlier CMI passenger question tests eligibility and card display, not the lawful local duration exception. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+              "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. Closed blue hatchback in side view, no occupants visibly claimed; plate faces naturally outside view, not blank plates. No card face or personal identity details generated; no dashboard instruments required.",
+              "all_four_options": "Correct set B. A: A lawful local limit still applies. B: Observe the stated twelve-hour maximum. C: Remaining inside does not extend the maximum. D: Two cards do not add their permitted durations. Four distinct options in both languages."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-003/cmi_parking_local_twelve_hour_limit/scene-1.jpg",
+      "image_sha256": "1ecedfdceebb62482adeb3285c8b143dbbd0d95a816a67f65e561d87f38a36e0",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+        "proposal_sha256": "d2bf643fb054f5b29a798b57458853e4e881e843d53d7a82ff4d00578b7f13e7",
+        "image_sha256": "1ecedfdceebb62482adeb3285c8b143dbbd0d95a816a67f65e561d87f38a36e0",
+        "compared_question_keys": [
+          "situation_cmi_parking_card_passenger",
+          "situation_overtaking_uncontrolled_intersection",
+          "situation_blind_crest_no_overtake",
+          "situation_parking_disc_actual_arrival",
+          "situation_urban_horn_impatience"
+        ],
+        "checks": {
+          "official_rule": "Ecologie ministry FAQ confirms lawful CMI maximum cannot be under 12 hours. The stem states exactly 12 hours and on-street context; not a barrier-equipped private car park.",
+          "signs_and_text": "Only white parking-bay corners, no sign displaying a different duration; CMI eligibility/time supplied by wording.",
+          "road_geometry": "Car fully inside parallel bay beside kerb; pavement clear, no driveway, zebra or hydrant obstruction. Direction of street not asserted.",
+          "vehicles_and_people": "Closed blue hatchback in side view, no occupants visibly claimed; plate faces naturally outside view, not blank plates.",
+          "dashboard_and_equipment": "No card face or personal identity details generated; no dashboard instruments required.",
+          "phone_size": "Entire bay/car silhouette remains visible at 390 pixels; answer depends on stated municipal limit.",
+          "french_and_english": "Both languages require displayed CMI while transporting its holder; 24 exceeds stated 12. B correct, presence/two cards do not extend time.",
+          "novelty": "Earlier CMI passenger question tests eligibility and card display, not the lawful local duration exception. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+          "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. Closed blue hatchback in side view, no occupants visibly claimed; plate faces naturally outside view, not blank plates. No card face or personal identity details generated; no dashboard instruments required.",
+          "all_four_options": "Correct set B. A: A lawful local limit still applies. B: Observe the stated twelve-hour maximum. C: Remaining inside does not extend the maximum. D: Two cards do not add their permitted durations. Four distinct options in both languages."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "bd5ca8d7701312966b95f25091e0fd53b59778a423998fe62402ebbb11cf4160"
+    },
+    {
+      "proposal": {
+        "scenario_id": "long_caravan_snow_overtaking_prohibited",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; any towing example explicitly stays within a combined maximum authorised mass of 3500 kg.",
+        "learning_objective": "Apply the snow/ice overtaking restriction to a category-B combination longer than seven metres.",
+        "topic": "overtaking.long_combination_snow",
+        "scenario": "Car and caravan length 8 m, combined PTAC 3200 kg, permitted category-B combination. At least one traffic lane is partly snow-covered.",
+        "novelty_review": "Existing active-snowplough question concerns the vehicle being overtaken. This applies because of the learner combination length even with an ordinary car ahead; differs from last batch facilitating overtaking.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_long_caravan_snow_overtaking_prohibited",
+          "category_slug": "overtaking",
+          "correct_answers": [
+            "c"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Je tracte une caravane : longueur totale 8 m, somme des PTAC 3 200 kg. Une voie de la chaussée est partiellement enneigée. Puis-je dépasser une voiture ?",
+              "answer_a": "Oui, puisque l’ensemble relève du permis B.",
+              "answer_b": "Oui, si la voiture roule lentement.",
+              "answer_c": "Non, le dépassement est interdit à mon ensemble de plus de 7 m.",
+              "answer_d": "Oui, si mes pneus sont adaptés à l’hiver.",
+              "explanation": "Quand au moins une voie est couverte de neige ou de verglas, même partiellement, le dépassement et le changement de file sont interdits aux ensembles de plus de sept mètres. Le permis B et les pneus hiver ne suppriment pas cette règle."
+            },
+            "en": {
+              "question_text": "I am towing a caravan: total length 8 m, combined maximum authorised masses 3,200 kg. One traffic lane is partly covered in snow. May I overtake a car?",
+              "answer_a": "Yes, because the combination is covered by category B.",
+              "answer_b": "Yes, if the car is slow.",
+              "answer_c": "No, overtaking is prohibited for my combination over 7 m long.",
+              "answer_d": "Yes, if I have suitable winter tyres.",
+              "explanation": "When at least one traffic lane is even partly covered in snow or ice, combinations longer than seven metres may not overtake or change lanes. Category-B entitlement and winter tyres do not remove this restriction."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Catégorie de permis sans effet sur cette interdiction.",
+            "b": "Lenteur du véhicule ne crée pas d’exception.",
+            "c": "L’ensemble dépasse le seuil de sept mètres.",
+            "d": "Les pneus ne dispensent pas de respecter la règle."
+          },
+          "en": {
+            "a": "Licence category does not remove this restriction.",
+            "b": "A slow vehicle creates no exception.",
+            "c": "The combination exceeds seven metres.",
+            "d": "Tyres do not provide an exemption."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. Original winter roadside photo, exact side profile of a compact grey towing car correctly connected to one small white single-axle caravan, facing right. Entire combination visible on a quiet flat two-way French road; road lane farther from the camera has patches of snow while the near lane under the combination is mostly cleared and wet. White broken centre line partly visible where snow permits. Low snowbanks on verges, no signs, other vehicles or people. Mechanically correct A-frame coupling firmly connected to towball, safety cable, jockey wheel raised clear of road; caravan angular sloping front faces the car on right, flat rear on left with red tail lamps; white front marker lamps. Exact side profile naturally hides plate faces. No readable brand names or text. No visual claim of exact dimensions; length and weights supplied by question.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177131",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "R414-17 I1: where at least one lane is partly snow/ice covered, overtaking/lane change prohibited for combinations longer than 7 m. Current 10 October 2026 text."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_tram_stop_passengers_no_overtake",
+          "similarity": 0.465,
+          "question_fr": "Ce tramway est à l'arrêt et des voyageurs descendent directement sur la chaussée du côté où je pourrais le dépasser. Que faire ?"
+        },
+        {
+          "key": "situation_overtaking_active_snowplow",
+          "similarity": 0.462,
+          "question_fr": "Cet engin de service hivernal déneige la chaussée en action. Puis-je le dépasser ?"
+        },
+        {
+          "key": "situation_blind_crest_no_overtake",
+          "similarity": 0.437,
+          "question_fr": "Le véhicule devant roule lentement et le sommet de la côte masque la route. Puis-je commencer à le dépasser ?"
+        },
+        {
+          "key": "situation_frosted_windscreen_clear_before_drive",
+          "similarity": 0.426,
+          "question_fr": "Je n'ai gratté qu'une petite ouverture dans ce pare-brise givré. Puis-je partir ainsi ?"
+        },
+        {
+          "key": "situation_truck_right_turn_blind_spot",
+          "similarity": 0.424,
+          "question_fr": "Ce poids lourd devant moi signale à droite et se décale vers la gauche. Puis-je passer dans l'espace ouvert à sa droite ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-003/long_caravan_snow_overtaking_prohibited/scene-1.jpg",
+          "image_sha256": "2f6865e951cb93cb4943f28acf003bd1f5b8d9ba9c423b886fe3eda4154cef88",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. Original winter roadside photo, exact side profile of a compact grey towing car correctly connected to one small white single-axle caravan, facing right. Entire combination visible on a quiet flat two-way French road; road lane farther from the camera has patches of snow while the near lane under the combination is mostly cleared and wet. White broken centre line partly visible where snow permits. Low snowbanks on verges, no signs, other vehicles or people. Mechanically correct A-frame coupling firmly connected to towball, safety cable, jockey wheel raised clear of road; caravan angular sloping front faces the car on right, flat rear on left with red tail lamps; white front marker lamps. Exact side profile naturally hides plate faces. No readable brand names or text. No visual claim of exact dimensions; length and weights supplied by question.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "reject",
+            "proposal_sha256": "829beaf26a540872b84fbda24cba691343eae579dec8ffb438a9aee6090ca6c8",
+            "image_sha256": "2f6865e951cb93cb4943f28acf003bd1f5b8d9ba9c423b886fe3eda4154cef88",
+            "notes": "Rejected after full-resolution and phone inspection: both visible lanes appear cleared, snow chiefly on verges, so image does not show the stated partly covered lane. Combination also sits across the centre line from the camera, making its rightward travel direction inconsistent with ordinary right-hand traffic. Correct lane placement and show snow on a traffic lane.",
+            "recorded_on": "2026-10-10"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-003/long_caravan_snow_overtaking_prohibited/scene-2.jpg",
+          "image_sha256": "3da1b3af7cd385a5a203875bf0a9817ec1e8f11e6316b5b3964cb6fef5fffea8",
+          "prompt": "Edit this winter towing photograph. Preserve the exact mechanically plausible car and caravan, coupling, raised jockey wheel, lights, side view and landscape. Correct ROAD and vehicle lane relationship: the car faces right, so its combination must occupy the NEAR traffic lane closest to camera; place the white dashed centre line BEHIND the combination, between the vehicle and the distant field. The near lane under the vehicle stays mostly wet and cleared. The opposite traffic lane BEHIND that centre line must be clearly partly covered by large irregular sheets of compacted white snow extending across its driving surface, not only on the verge. Make the roadway wide enough for two normal lanes. No extra cars, people, signs or text. Preserve landscape16:9, photorealism, no labels or arrows. Remove any tiny brand lettering or badges from car and wheel hubs. The illustrated combination is an ordinary category-B car plus caravan, with dimensions and weights supplied in accompanying text.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "reject",
+            "proposal_sha256": "829beaf26a540872b84fbda24cba691343eae579dec8ffb438a9aee6090ca6c8",
+            "image_sha256": "3da1b3af7cd385a5a203875bf0a9817ec1e8f11e6316b5b3964cb6fef5fffea8",
+            "notes": "Correction removed the foreground centre line but still does not clearly establish a snowy traffic lane separate from the snowy field. At phone size the road remains apparently fully clear. Regenerate a forward road view that directly shows the snow-covered lane; combination length and mass remain explicitly supplied by both translations.",
+            "recorded_on": "2026-10-10"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-003/long_caravan_snow_overtaking_prohibited/scene-3.jpg",
+          "image_sha256": "e66c7e8eb551779ee1746802ae75f6d2243925be1b8432f9361414b5a4305484",
+          "prompt": "Use case: photorealistic-natural. Generate a new original scene for the same car-and-caravan winter overtaking question, landscape 16:9,1672x941. View forward through the windscreen of a passenger car on a straight flat French rural TWO-WAY road, ONE lane each direction. The camera car occupies its RIGHT-hand lane, with the broken WHITE centre line clearly to the left of our path. Our lane is mostly cleared dark wet asphalt. The opposing LEFT lane visibly has large irregular compacted white SNOW patches across its driving surface, extending from near foreground into the distance, with portions of asphalt and broken centre line visible. Snow is definitely ON that traffic lane, not only on verges. White snow covers fields on both sides, bare winter trees. No other vehicles, people, signs, junctions or roadside text. No instruments, steering wheel or mirrors, just a thin dark dashboard edge at bottom. The towing caravan is behind the camera and is NOT shown; exact combination length and permitted masses are explicitly stated in the question. Bright overcast winter daylight, adequate visibility, realistic lane widths and perspective. No answers, captions, arrows, dimensions or highlights.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+            "proposal_sha256": "829beaf26a540872b84fbda24cba691343eae579dec8ffb438a9aee6090ca6c8",
+            "image_sha256": "e66c7e8eb551779ee1746802ae75f6d2243925be1b8432f9361414b5a4305484",
+            "compared_question_keys": [
+              "situation_tram_stop_passengers_no_overtake",
+              "situation_overtaking_active_snowplow",
+              "situation_blind_crest_no_overtake",
+              "situation_frosted_windscreen_clear_before_drive",
+              "situation_truck_right_turn_blind_spot"
+            ],
+            "checks": {
+              "official_rule": "Current 10 October 2026 R414-17 I1 prohibits overtaking/lane changes for combinations over 7 m if any lane is partly snowy/icy. 8 m and combined PTAC 3200 kg stay within category B.",
+              "signs_and_text": "White dashed centre line and pale road edges; no contradictory sign/signal. Snow patches lie on asphalt, not solely beyond edge.",
+              "road_geometry": "Final scene 3 forward view has camera in clear right lane, snow across LEFT traffic lane, straight road and coherent perspective. Rejected side views retained.",
+              "vehicles_and_people": "No other vehicles or people; caravan behind camera is described explicitly rather than an inaccurate visible coupling or dimensions. Hypothetical passing question does not say a visible car is present.",
+              "dashboard_and_equipment": "Only dashboard edge; no gauges or indicators. Length and mass are stated rather than measured in image.",
+              "phone_size": "Snow on the opposing lane remains unmistakable at 390 pixels, resolving the rejected versions.",
+              "french_and_english": "Both stems 8m/3200kg/partly snow-covered lane. C correct; B entitlement, slow traffic and winter tyres are not exceptions. Distinct from active snowplough ban.",
+              "novelty": "Existing active-snowplough question concerns the vehicle being overtaken. This applies because of the learner combination length even with an ordinary car ahead; differs from last batch facilitating overtaking. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+              "full_resolution": "Inspected the entire final scene-3.jpg at original 1672x941 resolution and phone-3.jpg at 390 pixels. No other vehicles or people; caravan behind camera is described explicitly rather than an inaccurate visible coupling or dimensions. Hypothetical passing question does not say a visible car is present. Only dashboard edge; no gauges or indicators. Length and mass are stated rather than measured in image.",
+              "all_four_options": "Correct set C. A: Licence category does not remove this restriction. B: A slow vehicle creates no exception. C: The combination exceeds seven metres. D: Tyres do not provide an exemption. Four distinct options in both languages."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-003/long_caravan_snow_overtaking_prohibited/scene-3.jpg",
+      "image_sha256": "e66c7e8eb551779ee1746802ae75f6d2243925be1b8432f9361414b5a4305484",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+        "proposal_sha256": "829beaf26a540872b84fbda24cba691343eae579dec8ffb438a9aee6090ca6c8",
+        "image_sha256": "e66c7e8eb551779ee1746802ae75f6d2243925be1b8432f9361414b5a4305484",
+        "compared_question_keys": [
+          "situation_tram_stop_passengers_no_overtake",
+          "situation_overtaking_active_snowplow",
+          "situation_blind_crest_no_overtake",
+          "situation_frosted_windscreen_clear_before_drive",
+          "situation_truck_right_turn_blind_spot"
+        ],
+        "checks": {
+          "official_rule": "Current 10 October 2026 R414-17 I1 prohibits overtaking/lane changes for combinations over 7 m if any lane is partly snowy/icy. 8 m and combined PTAC 3200 kg stay within category B.",
+          "signs_and_text": "White dashed centre line and pale road edges; no contradictory sign/signal. Snow patches lie on asphalt, not solely beyond edge.",
+          "road_geometry": "Final scene 3 forward view has camera in clear right lane, snow across LEFT traffic lane, straight road and coherent perspective. Rejected side views retained.",
+          "vehicles_and_people": "No other vehicles or people; caravan behind camera is described explicitly rather than an inaccurate visible coupling or dimensions. Hypothetical passing question does not say a visible car is present.",
+          "dashboard_and_equipment": "Only dashboard edge; no gauges or indicators. Length and mass are stated rather than measured in image.",
+          "phone_size": "Snow on the opposing lane remains unmistakable at 390 pixels, resolving the rejected versions.",
+          "french_and_english": "Both stems 8m/3200kg/partly snow-covered lane. C correct; B entitlement, slow traffic and winter tyres are not exceptions. Distinct from active snowplough ban.",
+          "novelty": "Existing active-snowplough question concerns the vehicle being overtaken. This applies because of the learner combination length even with an ordinary car ahead; differs from last batch facilitating overtaking. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+          "full_resolution": "Inspected the entire final scene-3.jpg at original 1672x941 resolution and phone-3.jpg at 390 pixels. No other vehicles or people; caravan behind camera is described explicitly rather than an inaccurate visible coupling or dimensions. Hypothetical passing question does not say a visible car is present. Only dashboard edge; no gauges or indicators. Length and mass are stated rather than measured in image.",
+          "all_four_options": "Correct set C. A: Licence category does not remove this restriction. B: A slow vehicle creates no exception. C: The combination exceeds seven metres. D: Tyres do not provide an exemption. Four distinct options in both languages."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "c5ab6028e73d145aef3a0bf7c019439aa6c09f610c6d5acc6e6a60f7ec9ba6b1"
+    },
+    {
+      "proposal": {
+        "scenario_id": "b13_ptac_not_actual_mass",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; any towing example explicitly stays within a combined maximum authorised mass of 3500 kg.",
+        "learning_objective": "Interpret B13 using maximum authorised mass rather than the lighter actual load.",
+        "topic": "signs.b13_authorised_mass",
+        "scenario": "Untowed passenger car PTAC 2300 kg, actual mass today 1700 kg, approaching B13 2t. Ordinary category B.",
+        "novelty_review": "No B13 primary question or reservation. Width/height signs test actual dimensions; this specifically contrasts maximum authorised mass with actual mass.",
+        "primary_codes": [
+          "B13"
+        ],
+        "context_codes": [],
+        "question": {
+          "key": "situation_b13_ptac_not_actual_mass",
+          "category_slug": "road_signs",
+          "correct_answers": [
+            "a"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Ma voiture sans remorque a un PTAC de 2 300 kg, mais pèse aujourd’hui 1 700 kg. Puis-je franchir ce panneau ?",
+              "answer_a": "Non, son PTAC dépasse les 2 tonnes indiquées.",
+              "answer_b": "Oui, son poids réel est inférieur à 2 tonnes.",
+              "answer_c": "Oui, car ce panneau ne concerne que les camions.",
+              "answer_d": "Oui, si je roule au pas.",
+              "explanation": "Le panneau B13 vise le poids total autorisé en charge, ou le poids total roulant autorisé pour un ensemble. Pour cette voiture seule, le PTAC de 2,3 tonnes dépasse la limite de 2 tonnes, même si son poids réel est inférieur."
+            },
+            "en": {
+              "question_text": "My car, without a trailer, has a maximum authorised mass (PTAC) of 2,300 kg but weighs 1,700 kg today. May I pass this sign?",
+              "answer_a": "No, its authorised mass exceeds the displayed 2 tonnes.",
+              "answer_b": "Yes, its actual mass is below 2 tonnes.",
+              "answer_c": "Yes, this sign applies only to lorries.",
+              "answer_d": "Yes, if I drive at walking pace.",
+              "explanation": "B13 refers to maximum authorised mass, or authorised train mass for a combination. For this untowed car, the 2.3-tonne PTAC exceeds the 2-tonne limit even though its actual mass is lower."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Le PTAC dépasse la valeur autorisée.",
+            "b": "Ce n’est pas le poids réel qui est comparé ici.",
+            "c": "Aucune silhouette de camion : voitures également concernées.",
+            "d": "La vitesse ne change pas la masse autorisée."
+          },
+          "en": {
+            "a": "The authorised mass exceeds the limit.",
+            "b": "Actual mass is not the figure compared here.",
+            "c": "No lorry silhouette: passenger cars are also covered.",
+            "d": "Speed does not change authorised mass."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. Natural French rural roadside photograph viewed from a passenger car before a weight-restricted small paved road. Prominent authentic B13 sign on the RIGHT grassy verge: circular white face, thick red border, black text exactly \"2 t\" in its centre, with a space before lowercase t. No truck silhouette, no axle symbol, no arrows, no supplementary plate. Large enough to read at phone size. Narrow ordinary paved road continues gently into countryside behind it, no bridge visible, no centre markings needed, clear flat geometry. No other signs, cars, pedestrians, buildings with text or dashboard instruments. Sign dominates right third but is realistically sized and mounted.",
+        "sources": [
+          {
+            "url": "https://equipementsdelaroute.cerema.fr/IMG/pdf/arrete_du_24_novembre_1967_relatif_a_la_signalisation_des_routes_et_des_autoroutes_-_legifrance.pdf",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Article 4 B13: restriction applies to PTAC or PTRA exceeding the indicated value; consolidated 29 July 2026, page 14."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_motorway_help_merge_occupied_left",
+          "similarity": 0.432,
+          "question_fr": "Une voiture s’insère à droite, mais un véhicule me dépasse à gauche. Dois-je me déporter à gauche pour l’aider ?"
+        },
+        {
+          "key": "situation_parking_blocks_parked_exit",
+          "similarity": 0.43,
+          "question_fr": "Je veux laisser ma voiture en travers de la sortie de cette place, ce qui bloquera la voiture garée. Puis-je le faire quelques minutes ?"
+        },
+        {
+          "key": "situation_motorway_friend_tow_offer",
+          "similarity": 0.429,
+          "question_fr": "Ma voiture est en panne sur autoroute et un ami propose de la remorquer avec une sangle. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_overtake_too_little_speed_difference",
+          "similarity": 0.429,
+          "question_fr": "La voiture devant roule presque à ma vitesse. Même à la limite autorisée, mon dépassement serait très long. Que faire ?"
+        },
+        {
+          "key": "situation_height_limit_3_5m",
+          "similarity": 0.423,
+          "question_fr": "Pour vérifier que ma voiture équipée d’un coffre de toit peut passer, quelle hauteur dois-je comparer à 3,5 m ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-003/b13_ptac_not_actual_mass/scene-1.jpg",
+          "image_sha256": "77d4f4859c3376066ab625ce8c7a4914c53c6805e063fbd834b01cddb2a96af8",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. Natural French rural roadside photograph viewed from a passenger car before a weight-restricted small paved road. Prominent authentic B13 sign on the RIGHT grassy verge: circular white face, thick red border, black text exactly \"2 t\" in its centre, with a space before lowercase t. No truck silhouette, no axle symbol, no arrows, no supplementary plate. Large enough to read at phone size. Narrow ordinary paved road continues gently into countryside behind it, no bridge visible, no centre markings needed, clear flat geometry. No other signs, cars, pedestrians, buildings with text or dashboard instruments. Sign dominates right third but is realistically sized and mounted.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+            "proposal_sha256": "2be0cb20c8ee5a2523aaa3103708570f1c4eb32456755d9220ba3416756867c1",
+            "image_sha256": "77d4f4859c3376066ab625ce8c7a4914c53c6805e063fbd834b01cddb2a96af8",
+            "compared_question_keys": [
+              "situation_motorway_help_merge_occupied_left",
+              "situation_parking_blocks_parked_exit",
+              "situation_motorway_friend_tow_offer",
+              "situation_overtake_too_little_speed_difference",
+              "situation_height_limit_3_5m"
+            ],
+            "checks": {
+              "official_rule": "Consolidated official sign regulation p14 defines B13 by PTAC/PTRA, not actual mass. Untowed car PTAC2300 exceeds sign2000 even when actually1700.",
+              "signs_and_text": "One correct round white B13 face, red border, black 2 t, no truck/axle symbol or plate. Text legible at full and phone size.",
+              "road_geometry": "Right verge before restricted rural road, sensible sign height and facing direction; no conflicting junction/markings.",
+              "vehicles_and_people": "No other cars, people or animals; ordinary car assumed by stem.",
+              "dashboard_and_equipment": "No gauges; mass supplied in both languages, not inferred from pictured body size.",
+              "phone_size": "2 t is readable at 390 pixels; no fine print changes scope.",
+              "french_and_english": "FR PTAC and EN maximum authorised mass/PTAC correspond exactly; no trailer ambiguity. A correct; real mass/truck-only/slow-speed distractors false.",
+              "novelty": "No B13 primary question or reservation. Width/height signs test actual dimensions; this specifically contrasts maximum authorised mass with actual mass. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+              "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. No other cars, people or animals; ordinary car assumed by stem. No gauges; mass supplied in both languages, not inferred from pictured body size.",
+              "all_four_options": "Correct set A. A: The authorised mass exceeds the limit. B: Actual mass is not the figure compared here. C: No lorry silhouette: passenger cars are also covered. D: Speed does not change authorised mass. Four distinct options in both languages."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-003/b13_ptac_not_actual_mass/scene-1.jpg",
+      "image_sha256": "77d4f4859c3376066ab625ce8c7a4914c53c6805e063fbd834b01cddb2a96af8",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+        "proposal_sha256": "2be0cb20c8ee5a2523aaa3103708570f1c4eb32456755d9220ba3416756867c1",
+        "image_sha256": "77d4f4859c3376066ab625ce8c7a4914c53c6805e063fbd834b01cddb2a96af8",
+        "compared_question_keys": [
+          "situation_motorway_help_merge_occupied_left",
+          "situation_parking_blocks_parked_exit",
+          "situation_motorway_friend_tow_offer",
+          "situation_overtake_too_little_speed_difference",
+          "situation_height_limit_3_5m"
+        ],
+        "checks": {
+          "official_rule": "Consolidated official sign regulation p14 defines B13 by PTAC/PTRA, not actual mass. Untowed car PTAC2300 exceeds sign2000 even when actually1700.",
+          "signs_and_text": "One correct round white B13 face, red border, black 2 t, no truck/axle symbol or plate. Text legible at full and phone size.",
+          "road_geometry": "Right verge before restricted rural road, sensible sign height and facing direction; no conflicting junction/markings.",
+          "vehicles_and_people": "No other cars, people or animals; ordinary car assumed by stem.",
+          "dashboard_and_equipment": "No gauges; mass supplied in both languages, not inferred from pictured body size.",
+          "phone_size": "2 t is readable at 390 pixels; no fine print changes scope.",
+          "french_and_english": "FR PTAC and EN maximum authorised mass/PTAC correspond exactly; no trailer ambiguity. A correct; real mass/truck-only/slow-speed distractors false.",
+          "novelty": "No B13 primary question or reservation. Width/height signs test actual dimensions; this specifically contrasts maximum authorised mass with actual mass. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+          "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. No other cars, people or animals; ordinary car assumed by stem. No gauges; mass supplied in both languages, not inferred from pictured body size.",
+          "all_four_options": "Correct set A. A: The authorised mass exceeds the limit. B: Actual mass is not the figure compared here. C: No lorry silhouette: passenger cars are also covered. D: Speed does not change authorised mass. Four distinct options in both languages."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "52565c9c5a6b748050767a5da055370ac2541d264aae910425fcfa4ab5e8a6d3"
+    },
+    {
+      "proposal": {
+        "scenario_id": "insurance_fva_no_green_sticker",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car; any towing example explicitly stays within a combined maximum authorised mass of 3500 kg.",
+        "learning_objective": "Distinguish abolished insurance stickers from the continuing obligation to insure a French-registered car.",
+        "topic": "responsibility.insurance_fva",
+        "scenario": "Ordinary car registered in France driven in France; question asks whether an absent green insurance sticker proves it uninsured. No claim about actual coverage inferred visually.",
+        "novelty_review": "No FVA or insurance-proof question in bank or pending work. Distinct from technical inspection proof.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_insurance_fva_no_green_sticker",
+          "category_slug": "safety",
+          "correct_answers": [
+            "d"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Une voiture immatriculée en France n’a plus de vignette verte d’assurance sur le pare-brise. Cela prouve-t-il qu’elle n’est pas assurée ?",
+              "answer_a": "Oui, la vignette reste obligatoire pour toute voiture.",
+              "answer_b": "Oui, sauf si elle a moins de quatre ans.",
+              "answer_c": "Non, car l’assurance automobile est devenue facultative.",
+              "answer_d": "Non, les forces de l’ordre vérifient notamment le Fichier des véhicules assurés.",
+              "explanation": "Depuis le 1er avril 2024, la vignette et la carte verte ne sont plus exigées pour les véhicules immatriculés en France. L’assurance reste obligatoire ; sa vérification repose notamment sur le Fichier des véhicules assurés (FVA)."
+            },
+            "en": {
+              "question_text": "A car registered in France has no green insurance sticker on its windscreen. Does this prove that it is uninsured?",
+              "answer_a": "Yes, every car must still display the sticker.",
+              "answer_b": "Yes, unless it is less than four years old.",
+              "answer_c": "No, because motor insurance is now optional.",
+              "answer_d": "No, the police can check the Insured Vehicles Register (FVA).",
+              "explanation": "Since 1 April 2024, the green sticker and insurance card are no longer required for vehicles registered in France. Insurance remains compulsory; checks rely in particular on the Insured Vehicles Register (FVA)."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Vignette supprimée depuis avril 2024.",
+            "b": "L’âge n’est pas une exemption de l’assurance.",
+            "c": "Assurance toujours obligatoire.",
+            "d": "Absence de vignette ne prouve pas absence de contrat."
+          },
+          "en": {
+            "a": "The sticker requirement ended in April 2024.",
+            "b": "Age does not exempt a car from insurance.",
+            "c": "Insurance is still compulsory.",
+            "d": "No sticker does not prove there is no policy."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. Close exterior photograph of the lower passenger-side corner of a clean modern car windscreen in a private driveway, with a resting black wiper arm, rubber seal and small area of silver bonnet. The glass has no green insurance sticker or holder. No documents, plate, people, signs or readable text. Dark dashboard visible through glass without controls or indicators. Natural daylight, believable glass reflections and wiper mechanism. Neutral illustration only; do not add any approval ticks or insurance graphics.",
+        "sources": [
+          {
+            "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1362",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Green certificate/card abolished for registered vehicles from April 2024; insurance proof uses FVA, with temporary insurer document; insurance obligation remains."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_triangle_placement_personal_danger",
+          "similarity": 0.432,
+          "question_fr": "Hors autoroute, ma voiture est immobilisée après ce virage, mais marcher sur la chaussée pour poser le triangle me mettrait manifestement en danger. Dois-je le faire ?"
+        },
+        {
+          "key": "situation_urban_default_50",
+          "similarity": 0.426,
+          "question_fr": "Je circule en agglomération sur cette rue sans limitation particulière. Quelle est la vitesse maximale générale ?"
+        },
+        {
+          "key": "situation_night_unlit_roadside_position_lights",
+          "similarity": 0.416,
+          "question_fr": "Je laisse ma voiture stationnée de nuit sur cette chaussée sans éclairage public. Quelle signalisation conserver ?"
+        },
+        {
+          "key": "situation_no_motor_vehicles",
+          "similarity": 0.415,
+          "question_fr": "Avec ma voiture, puis-je m'engager dans cette rue pour déposer un passager ?"
+        },
+        {
+          "key": "situation_dual_carriageway_default_110",
+          "similarity": 0.412,
+          "question_fr": "Par temps sec, hors agglomération, sur cette route à deux chaussées séparées par un terre-plein central et sans autre limitation, quelle est la vitesse maximale ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-003/insurance_fva_no_green_sticker/scene-1.jpg",
+          "image_sha256": "6a5614a00d2388cbdd46661f4135278f26281a446abb47fa0a3e938c8dee8b2d",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph for a French passenger-car theory question, at least 1672x941. Scene only: no question, answer, caption, watermark, branding, arrows, highlighting or collage. Mechanically accurate vehicles, natural materials and French right-hand traffic. Keep important details clear at 390-pixel width. Close exterior photograph of the lower passenger-side corner of a clean modern car windscreen in a private driveway, with a resting black wiper arm, rubber seal and small area of silver bonnet. The glass has no green insurance sticker or holder. No documents, plate, people, signs or readable text. Dark dashboard visible through glass without controls or indicators. Natural daylight, believable glass reflections and wiper mechanism. Neutral illustration only; do not add any approval ticks or insurance graphics.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+            "proposal_sha256": "ffe6c5ed08fe435b8a732a7ffa2c0fcf7b663fb7fd7a140deb382af743ae9590",
+            "image_sha256": "6a5614a00d2388cbdd46661f4135278f26281a446abb47fa0a3e938c8dee8b2d",
+            "compared_question_keys": [
+              "situation_triangle_placement_personal_danger",
+              "situation_urban_default_50",
+              "situation_night_unlit_roadside_position_lights",
+              "situation_no_motor_vehicles",
+              "situation_dual_carriageway_default_110"
+            ],
+            "checks": {
+              "official_rule": "Service Public F1362 verified April2026: green sticker/card discontinued April2024 for French-registered vehicles; insurance remains compulsory and FVA verifies. No claim sticker absence establishes actual policy status.",
+              "signs_and_text": "No sticker or certificate, no readable text or sign in windshield close-up.",
+              "road_geometry": "Private-driveway illustration; no road-control geometry or parking claim.",
+              "vehicles_and_people": "Only part of ordinary passenger car exterior; no people, registration plate or privacy details.",
+              "dashboard_and_equipment": "Resting wiper, seal, dotted ceramic glass edge, bonnet and dashboard plausible. Missing insurance sticker is shown without claiming CT exemption.",
+              "phone_size": "Empty lower glass area and resting wiper remain clear at phone size; FVA facts in text.",
+              "french_and_english": "FR/EN both specify France registration and ask inference from absence. D is right; insurance-optional distractor C explicitly false.",
+              "novelty": "No FVA or insurance-proof question in bank or pending work. Distinct from technical inspection proof. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+              "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. Only part of ordinary passenger car exterior; no people, registration plate or privacy details. Resting wiper, seal, dotted ceramic glass edge, bonnet and dashboard plausible. Missing insurance sticker is shown without claiming CT exemption.",
+              "all_four_options": "Correct set D. A: The sticker requirement ended in April 2024. B: Age does not exempt a car from insurance. C: Insurance is still compulsory. D: No sticker does not prove there is no policy. Four distinct options in both languages."
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-003/insurance_fva_no_green_sticker/scene-1.jpg",
+      "image_sha256": "6a5614a00d2388cbdd46661f4135278f26281a446abb47fa0a3e938c8dee8b2d",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+        "proposal_sha256": "ffe6c5ed08fe435b8a732a7ffa2c0fcf7b663fb7fd7a140deb382af743ae9590",
+        "image_sha256": "6a5614a00d2388cbdd46661f4135278f26281a446abb47fa0a3e938c8dee8b2d",
+        "compared_question_keys": [
+          "situation_triangle_placement_personal_danger",
+          "situation_urban_default_50",
+          "situation_night_unlit_roadside_position_lights",
+          "situation_no_motor_vehicles",
+          "situation_dual_carriageway_default_110"
+        ],
+        "checks": {
+          "official_rule": "Service Public F1362 verified April2026: green sticker/card discontinued April2024 for French-registered vehicles; insurance remains compulsory and FVA verifies. No claim sticker absence establishes actual policy status.",
+          "signs_and_text": "No sticker or certificate, no readable text or sign in windshield close-up.",
+          "road_geometry": "Private-driveway illustration; no road-control geometry or parking claim.",
+          "vehicles_and_people": "Only part of ordinary passenger car exterior; no people, registration plate or privacy details.",
+          "dashboard_and_equipment": "Resting wiper, seal, dotted ceramic glass edge, bonnet and dashboard plausible. Missing insurance sticker is shown without claiming CT exemption.",
+          "phone_size": "Empty lower glass area and resting wiper remain clear at phone size; FVA facts in text.",
+          "french_and_english": "FR/EN both specify France registration and ask inference from absence. D is right; insurance-optional distractor C explicitly false.",
+          "novelty": "No FVA or insurance-proof question in bank or pending work. Distinct from technical inspection proof. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+          "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. Only part of ordinary passenger car exterior; no people, registration plate or privacy details. Resting wiper, seal, dotted ceramic glass edge, bonnet and dashboard plausible. Missing insurance sticker is shown without claiming CT exemption.",
+          "all_four_options": "Correct set D. A: The sticker requirement ended in April 2024. B: Age does not exempt a car from insurance. C: Insurance is still compulsory. D: No sticker does not prove there is no policy. Four distinct options in both languages."
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "c976b04a29c6cc8956df9a5e4a15c97147df6d4ddcc745c4d384b13d50ff7e3f"
+    }
+  ],
+  "imported_on": "2026-10-10",
+  "content_version": 95,
+  "questions_after": 418,
+  "pack_after_sha256": "017498fa2abe706993e999c2394bfcffeac900f751235fbd4e9970dc6dc5aedc",
+  "verified_on": "2026-10-10",
+  "verification": {
+    "pack_sha256": "017498fa2abe706993e999c2394bfcffeac900f751235fbd4e9970dc6dc5aedc",
+    "content_version": 95,
+    "python_tests": {
+      "result": "pass",
+      "notes": "47 workflow/content tests passed, including duplicates, multiple answers, stale reviews, interrupted import and safe retries.",
+      "path": "assets-source/question-batches/expansion-003/evidence/python-tests.log",
+      "sha256": "cbcde44bef686a81fc03592b5021f18a55a2a8d060502746d6b132c556a98ef2"
+    },
+    "ios_tests": {
+      "result": "pass",
+      "notes": "36 native tests passed, including bundled-image decoding, content integrity and progress-preserving seed updates.",
+      "path": "assets-source/question-batches/expansion-003/evidence/ios-tests.log",
+      "sha256": "a37e41bf9db9ca35fd92a714fbaec1ccef71e225e144f55daf793c06458faae0"
+    },
+    "sqlite_check": {
+      "result": "pass",
+      "notes": "All 418 active questions and both translations match content version 95; progress hash unchanged before and after UI review.",
+      "path": "assets-source/question-batches/expansion-003/evidence/sqlite-after-ui.json",
+      "sha256": "770b22f0014f15a9ab1901935f46ab095ee6519def72eaa97fe5c4557dfbe7f5"
+    },
+    "simulator_review": {
+      "result": "pass",
+      "notes": "All ten French images/questions reviewed in the app. Incomplete and extra-wrong multiple-answer sets rejected; complete sets accepted. English labels/long options checked.",
+      "path": "assets-source/question-batches/expansion-003/evidence/simulator-review.json",
+      "sha256": "154ec6bf6dcc9267648d0b7a0ec8b01cda858337b0ef4a3113f0d60164002495"
+    }
+  }
+}

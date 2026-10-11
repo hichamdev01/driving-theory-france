@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "2949cee95d5129a9cb052da8868612262335b6420abe8d11904725f9d4bd1e67",
+  "image_sha256": "ac5f0d223184bbd853d6c16b7307e9dde4935c25714c5283446610b482e68880",
+  "result": "pass",
+  "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+  "compared_question_keys": [
+    "situation_ead_restriction_borrowed_car",
+    "situation_probationary_one_glass_risk",
+    "danger_sign_double_bend_left",
+    "situation_dynamic_speed_limit_over_fixed",
+    "situation_high_beams_oncoming_dip"
+  ],
+  "checks": {
+    "signs_and_text": "No signs or text; corrected spectacle temples are plain.",
+    "road_geometry": "Indoor bathroom counter; no driving geometry asserted.",
+    "vehicles_and_people": "No people or vehicle movement; no unsafe eye procedure illustrated.",
+    "dashboard_and_equipment": "Two spectacle lenses, two folded temples, two case wells and separate matching caps; coherent reflections.",
+    "phone_size": "Glasses and open case remain clear; licence code and lenses being worn supplied by wording.",
+    "official_rule": "Sources actually read during authoring: AnnexeI code01.06 explicitly means glasses or contact lenses; distinguished from01.01 and01.02.",
+    "novelty": "Vision restriction alternatives 01.06, distinct from EAD equipment and probationary alcohol. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+    "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No people or vehicle movement; no unsafe eye procedure illustrated. Two spectacle lenses, two folded temples, two case wells and separate matching caps; coherent reflections.",
+    "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Glasses and open case remain clear; licence code and lenses being worn supplied by wording.",
+    "all_four_options": "Correct C. A: Both are not required together.; B: This code does not specify daylight only.; C: Glasses or lenses are permitted.; D: Contacts are expressly allowed."
+  }
+}

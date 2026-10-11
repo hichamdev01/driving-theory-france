@@ -1,5 +1,6 @@
 import Foundation
 import XCTest
+import UIKit
 @testable import TheoryPrep
 
 final class ContentIntegrityTests: XCTestCase {
@@ -222,7 +223,44 @@ final class ContentIntegrityTests: XCTestCase {
                 FileManager.default.fileExists(atPath: imageURL.path),
                 "Missing image for \(key): \(imagePath)"
             )
+            XCTAssertNotNil(UIImage(contentsOfFile: imageURL.path), "Undecodable image for \(key)")
+            XCTAssertNotNil(BundledImageLoader.uiImage(for: imagePath), "Missing bundled image for \(key)")
         }
+    }
+
+    func testSeededBankMatchesEveryBundledQuestionAndPreservesProgressOnUpdate() throws {
+        let db = Database(path: ":memory:")
+        Seeder.seedIfNeeded(db)
+        let packs = ContentLoader.loadAllPacks()
+        let pack = try XCTUnwrap(packs.first { $0.country.code == .FR })
+        let rows = db.query("SELECT id, question_key, image_path FROM questions WHERE active = 1 AND country_id IN (SELECT id FROM countries WHERE code = 'FR')") {
+            ($0.int64("id"), $0.text("question_key"), $0.textOrNil("image_path"))
+        }
+        XCTAssertEqual(rows.count, pack.questions.count)
+        XCTAssertEqual(Set(rows.map { $0.1 }), Set(pack.questions.compactMap(\.stableKey)))
+        for language in [LanguageCode.fr, .en] {
+            let displayed = Queries.getPracticeQuestions(db, .FR, language)
+            XCTAssertEqual(displayed.count, pack.questions.count)
+            for question in pack.questions {
+                let row = try XCTUnwrap(rows.first { $0.1 == question.stableKey })
+                let loaded = try XCTUnwrap(displayed.first { $0.id == row.0 })
+                XCTAssertEqual(loaded.correctAnswers, question.correctAnswers)
+                XCTAssertEqual(loaded.questionText, question.translations[language.rawValue]?.questionText)
+                XCTAssertEqual(row.2, question.imagePath)
+            }
+        }
+        let trackedID = try XCTUnwrap(rows.first?.0)
+        Queries.recordAnswer(db, trackedID, false, confidence: .sure)
+        let before = Queries.getReadinessReport(db, .FR, .fr)
+        db.run("UPDATE user_settings SET content_version = ? WHERE id = 1", [Schema.contentVersion - 1])
+        Seeder.seedIfNeeded(db)
+        let afterIDs = db.query("SELECT id FROM questions WHERE active = 1 AND country_id IN (SELECT id FROM countries WHERE code = 'FR')") { $0.int64("id") }
+        XCTAssertEqual(Set(afterIDs), Set(rows.map { $0.0 }))
+        XCTAssertEqual(Queries.getReadinessReport(db, .FR, .fr), before)
+        XCTAssertTrue(Queries.getMistakes(db, .FR, .fr).contains { $0.id == trackedID })
+        XCTAssertEqual(db.queryOne("SELECT content_version FROM user_settings WHERE id = 1") {
+            $0.int64("content_version")
+        }, Schema.contentVersion)
     }
 
     func testDisplayedAnswerOrderRoundTripsToCanonicalKeys() {

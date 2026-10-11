@@ -1,0 +1,51 @@
+{
+  "sequence": 1,
+  "scenario_id": "motorway_wrongway_alert_no_overtake",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives or prepares a normal passenger car; no specialist vehicle operating rules.",
+  "learning_objective": "React to a warning about another driver travelling the wrong way",
+  "references": [
+    "https://www.vinci-autoroutes.com/fr/conseils/autoroute-mode-demploi/dangers-contresens-autoroute/"
+  ],
+  "novelty_review": "Existing missed-exit questions concern the learner reversing. This tests protective action when another vehicle is reported travelling the wrong way.",
+  "scenario": "Driver-eye view from a left-hand-drive car correctly in the right lane of a two-lane French motorway, daylight. A grey hatchback travels well ahead in the same right lane; left lane is empty. Central barrier on far left, shoulder beyond solid right edge. Overhead electronic message board spanning the road clearly displays amber LED text on two lines: VEHICULE A CONTRESENS / PRUDENCE. No wrong-way vehicle is visible; this is an advance warning, not an imminent crash.",
+  "image_prompt": "Use case: photorealistic-natural. Create ONE realistic educational photograph for a French Code de la Route passenger-car question. Landscape 16:9, preferably 2048x1152. Contemporary France, natural photographic colours and exposure, physically plausible perspective. Driver-eye view from a left-hand-drive car correctly in the right lane of a two-lane French motorway, daylight. A grey hatchback travels well ahead in the same right lane; left lane is empty. Central barrier on far left, shoulder beyond solid right edge. Overhead electronic message board spanning the road clearly displays amber LED text on two lines: VEHICULE A CONTRESENS / PRUDENCE. No wrong-way vehicle is visible; this is an advance warning, not an imminent crash. No quiz panel, question text, answer choices, highlighted answer, watermark, instructional overlay, collage or invented road signs. Any cars use French-style plates with unreadable small characters. This is a scene photograph, not an infographic.",
+  "question": {
+    "key": "situation_motorway_wrongway_alert_no_overtake",
+    "category_slug": "motorways",
+    "correct_answer": "a",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "Un véhicule est signalé à contresens sur mon autoroute. Quelle conduite adopter ?",
+        "answer_a": "Je renonce à dépasser et rejoins la prochaine aire accessible en gardant mes distances.",
+        "answer_b": "Je dépasse rapidement pour quitter la zone.",
+        "answer_c": "Je m’arrête immédiatement sur la voie de droite.",
+        "answer_d": "Je me place sur la bande d’arrêt d’urgence pour continuer.",
+        "explanation": "Une alerte de contresens impose une grande prudence. Je ne dépasse pas, je conserve une distance suffisante et je m’arrête sur la prochaine aire accessible. La bande d’arrêt d’urgence ne sert ni à poursuivre le trajet ni à attendre cette alerte."
+      },
+      "en": {
+        "question_text": "A vehicle is reported travelling the wrong way on my motorway. What should I do?",
+        "answer_a": "Avoid overtaking and head to the next accessible rest area while keeping a safe gap.",
+        "answer_b": "Overtake quickly to leave the area.",
+        "answer_c": "Stop immediately in the right-hand traffic lane.",
+        "answer_d": "Continue driving along the emergency shoulder.",
+        "explanation": "A wrong-way alert calls for extra caution. Avoid overtaking, keep a safe gap and stop at the next accessible rest area. Do not use the emergency shoulder to continue driving or to wait out the alert."
+      }
+    }
+  },
+  "state": "imported",
+  "edit_prompt_path": "assets-source/balanced-batch-2026-09-21/motorway_wrongway_alert_no_overtake/edit-prompt.md",
+  "original_native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-352c94fa-360d-44ef-90b3-7bf3da19e926.png",
+  "generation_method": "built-in image_gen",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-eb2b385a-c301-4b98-9fb8-3f0091095389.png",
+  "native_image_sha256": "cd306b7c547431810d8dd8c177b535861a4e5552449c034a127dc0881caf99b7",
+  "image_path": "assets-source/balanced-batch-2026-09-21/motorway_wrongway_alert_no_overtake/scene.jpg",
+  "image_sha256": "913b0d0b6e2810688817e8434775bf54a861e9be1d8b5c3cdd4b3b0ae8a27663",
+  "visual_review": "Corrected scene reviewed: overhead VEHICULE A CONTRESENS / PRUDENCE is legible; learner in right travel lane, car ahead and empty left lane, no immediate collision. Removed incidental blue route marker. A alone follows operator guidance: no overtaking and use next accessible rest area. Both translations and all four options reviewed.",
+  "reviewed_on": "2026-09-21",
+  "reviewed_sha256": "85eb6efc7cbcd7c98faf34dad86c71a1279bb500c963475523da80e1804ae4f4",
+  "question_key": "situation_motorway_wrongway_alert_no_overtake",
+  "imported_content_version": 89,
+  "imported_on": "2026-09-21"
+}

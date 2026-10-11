@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "e55338cd10a3ffc9a470e1c1d2b04790a165cb2bfbd14671c6882015addfe6f9",
+  "image_sha256": "e42f5c4492ddeb5478ea917253c0c5453025ebecc8929d80cc47104b7fb27d67",
+  "result": "pass",
+  "notes": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+  "compared_question_keys": [
+    "situation_c51a_car_scenario",
+    "situation_speed_night_dipped_visibility",
+    "situation_sr4_car_scenario",
+    "situation_motorway_exit_deceleration",
+    "situation_coolant_hot_cap_wait"
+  ],
+  "checks": {
+    "signs_and_text": "No signs, signal lamps, camera labels or overlays. Second candidate has no road paint; no inaccurate painted pattern remains.",
+    "road_geometry": "Ordinary unmarked rural two-way road, car ahead on right, grass verges and fields, continuous coherent asphalt perspective.",
+    "vehicles_and_people": "One distant compact car seen from rear in the right half, no pedestrians or oncoming vehicle. No precise speed or camera location is visually asserted.",
+    "dashboard_and_equipment": "Only a dark curved bottom windscreen/dashboard edge, no controls, speed display or camera equipment to misidentify.",
+    "phone_size": "Road and vehicle stay readable at 390px. This is a contextual scene; the stem explicitly names the average-speed system rather than relying on tiny camera hardware.",
+    "french_and_english": "Both ask what an average-speed system measures over a controlled section; French explains radar tronçon. Explanations require speed-limit compliance throughout, without evasion advice.",
+    "all_four_options": "C measures own average speed over section. A/B incorrectly restrict measurement to one endpoint, D incorrectly says only the vehicle ahead. Distinct equivalent FR/EN options.",
+    "official_rule": "Sources read and checked 2026-10-11; research-and-selection.json records facts and limitations. Official2025 radar brochure describes radar tronçon as calculating average speed over a road section. Source: https://www.securite-routiere.gouv.fr/sites/default/files/2025-05/brochure_radars_print.pdf",
+    "novelty": "Bank has instantaneous limits, stopping distances and travel-time gains; no item teaches enforcement measurement averaged over a road section. All five saved nearest questions, including bilingual options/explanations, compared as recorded in research-and-selection.json; broader current bank screened.",
+    "full_resolution": "Inspected entire final staged JPEG 1672x941, plus 390px preview, against both translations and all four options. Rejected earlier candidates remain in history. No detected unresolved defect in this version."
+  }
+}

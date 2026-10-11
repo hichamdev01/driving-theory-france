@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "0135bc424157e2ba918fe0af3b146d6a71c2be44f4bd165796c99d41746fffa4",
+  "image_sha256": "c1d26b52c6550f6644d609bfd3265e3879960e7806f33e865e4158ba430b08ba",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected at original1672x941 and390px; no detected unresolved defects.",
+  "compared_question_keys": [
+    "situation_overtake_too_little_speed_difference",
+    "situation_overtaking_ungated_level_crossing",
+    "situation_train_approaching_ungated_crossing",
+    "situation_tyre_sidewall_bulge_before_trip",
+    "situation_ev_charger_blocked_parking"
+  ],
+  "checks": {
+    "official_rule": "Current official safety advice: never enter a flooded road even if apparent water level is low.",
+    "novelty": "Aquaplaning item tests reaction after tyre grip is lost on surfacewater. Newdecision is not entering an inundated road at all. Both translations/options/explanations of five nearest reviewed, with whole-category inventory.",
+    "signs_and_text": "No signs, barrier, text or water-level marker.",
+    "road_geometry": "Unmarked road completely submerged ahead; dry foreground with car remaining before water. Depth cannot be inferred and is explicitly unknown.",
+    "vehicles_and_people": "No other vehicles or people in water.",
+    "dashboard_and_equipment": "Only wet bonnet edge; no instruments.",
+    "full_resolution": "Exact scene-1.jpg1672x941 inspected. No signs, barrier, text or water-level marker. Only wet bonnet edge; no instruments.",
+    "phone_size": "Whole-width flooding and dry foreground visible at390px.",
+    "french_and_english": "Both translations match conditions and correct set. Driver safely before immersed stretch; depth unknown, no barrier. Still image not used to estimate safe depth.",
+    "all_four_options": "Correct set a. {\"fr\": {\"a\": \"Évite l’exposition au courant et à la chaussée invisible.\", \"b\": \"La vitesse n’assure pas le passage.\", \"c\": \"Il serait trop tard pour un essai sûr.\", \"d\": \"Un autre véhicule n’indique pas un passage sûr.\"}, \"en\": {\"a\": \"Avoids unknown current and hidden road condition.\", \"b\": \"Speed does not make crossing safe.\", \"c\": \"That is not a safe way to assess depth.\", \"d\": \"Another vehicle does not establish safety.\"}}"
+  }
+}

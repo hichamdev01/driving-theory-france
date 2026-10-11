@@ -1,0 +1,13 @@
+{
+  "proposal_sha256": "abc03f55fdf67a11d5b7f5ad16ebd68abf675a11423f8ebe6d7a6e9d82f5fbd6",
+  "image_sha256": "e14d8efa7c14373cccaef2d4b5e5df7b44925f52bfabb0e9cb9bcac3be1dc6a5",
+  "result": "reject",
+  "notes": "Reject: master-cylinder assembly and multiple oversized flexible hydraulic pipes look mechanically implausible. Reframe to genuine-looking reservoir closeup and only small hard hydraulic lines; strengthen visible gap belowMIN.",
+  "compared_question_keys": [
+    "situation_driver_mat_secure_no_stacking",
+    "situation_coolant_hot_cap_wait",
+    "situation_parking_secure_before_leaving",
+    "situation_medicine_level_one_notice",
+    "situation_otc_medicine_not_driving_guarantee"
+  ]
+}

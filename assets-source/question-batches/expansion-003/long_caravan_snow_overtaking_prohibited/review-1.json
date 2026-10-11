@@ -1,0 +1,6 @@
+{
+  "result": "reject",
+  "proposal_sha256": "829beaf26a540872b84fbda24cba691343eae579dec8ffb438a9aee6090ca6c8",
+  "image_sha256": "2f6865e951cb93cb4943f28acf003bd1f5b8d9ba9c423b886fe3eda4154cef88",
+  "notes": "Rejected after full-resolution and phone inspection: both visible lanes appear cleared, snow chiefly on verges, so image does not show the stated partly covered lane. Combination also sits across the centre line from the camera, making its rightward travel direction inconsistent with ordinary right-hand traffic. Correct lane placement and show snow on a traffic lane."
+}

@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "a7cb1fafcf6f535670174e863843baea3d01a2d8e8472c58eaaa17b34117a03c",
+  "image_sha256": "c6207d782d16bf9dcaea87236d5c930a0407d8f40e4a96182d0c72ca314474df",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected at original1672x941 and390px; no detected unresolved defects.",
+  "compared_question_keys": [
+    "situation_left_turn_two_way_cycle_track",
+    "situation_motorway_keep_right",
+    "situation_one_way_c12_follow_arrow",
+    "situation_overtake_tram_left_one_way",
+    "situation_short_left_turn_lane_arrow"
+  ],
+  "checks": {
+    "official_rule": "R415-4 I: move left before leaving road left; II opposite-direction median constraint does not arise in explicitly one-way case.",
+    "novelty": "Existing questions concern yielding to oncoming traffic or cyclists and interpreting lane arrows; none asks left-side preparation on an unmarked one-way street. Both translations/options/explanations of five nearest reviewed, with whole-category inventory.",
+    "signs_and_text": "No signs, signals, lettering, plates or painted arrows.",
+    "road_geometry": "Ordinary unmarked junction opening on left, sound kerb curves and continuous pavements; no cycle track or allocated lanes.",
+    "vehicles_and_people": "No road users present; own car remains before turn.",
+    "dashboard_and_equipment": "Only windscreen/dashboard edge with no instruments.",
+    "full_resolution": "Exact scene-1.jpg1672x941 inspected. No signs, signals, lettering, plates or painted arrows. Only windscreen/dashboard edge with no instruments.",
+    "phone_size": "Left junction and both road edges clear at390px.",
+    "french_and_english": "Both translations match conditions and correct set. One-way street expressly excludes counterflow cycle track and specialised marked lanes; only preparation position is asked.",
+    "all_four_options": "Correct set c. {\"fr\": {\"a\": \"Le placement à droite ne prépare pas ce virage.\", \"b\": \"Le trottoir n’est pas une voie.\", \"c\": \"Placement prescrit pour tourner à gauche.\", \"d\": \"Il faut se rapprocher à gauche.\"}, \"en\": {\"a\": \"Right-edge positioning is inappropriate here.\", \"b\": \"The pavement is not a lane.\", \"c\": \"Required position before a left turn.\", \"d\": \"Move toward the left before turning.\"}}"
+  }
+}

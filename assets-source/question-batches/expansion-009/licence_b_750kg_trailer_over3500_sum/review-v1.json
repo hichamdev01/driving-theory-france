@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "5f3bd83146bc0dd24fa391fb7a691be2464a8b2e0c73438eecef35636f5054e4",
+  "image_sha256": "6216dd9bb79920cde88d2ffa7266a7e6afbdc4da95c4e9284943ec3b5d95c9ac",
+  "result": "pass",
+  "notes": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+  "compared_question_keys": [
+    "situation_b13_ptac_not_actual_mass",
+    "situation_trailer_ptra_over3500_motorway90",
+    "situation_loaded_car_exceeds_own_ptac",
+    "situation_motorway_long_combination_two_right_lanes",
+    "situation_b10a_combination_total_length"
+  ],
+  "checks": {
+    "signs_and_text": "No signs, mass plates or textual claims in picture. No weight or entitlement is guessed from the pictured model.",
+    "road_geometry": "Level private gravel driveway, no lane, junction or road signal. Complete combination visible without road positioning ambiguity.",
+    "vehicles_and_people": "SUV attached to low-sided empty single-axle utility trailer; tyres, drawbar and coupling plausible. No people or moving load. Rear trailer face is turned away.",
+    "dashboard_and_equipment": "Towbar/drawbar, side amber markers, trailer wheels and small jockey wheel coherent for a stationary parked combination. No dashboard or licence document shown.",
+    "phone_size": "Car, small trailer and attachment remain distinct at 390px. Exact authorised masses and technical compliance are provided in the text.",
+    "french_and_english": "Both give car 3000kg, trailer 750kg authorised mass, not actual load, and all technical towing limits met. Both correctly sum 3750kg and retain the <=750kg trailer exception.",
+    "all_four_options": "A category B alone sufficient. B code96 and C BE are not compulsory for this 750kg trailer; D C is not required for this category B car. All four remain distinct in both languages.",
+    "official_rule": "Sources read and checked 2026-10-11; research-and-selection.json records facts and limitations. CategoryB vehicle at most3500kg may tow trailer PTAC≤750kg; code96 requires trailer>750kg and combinedPTAC>3500≤4250. Source: https://www.service-public.gouv.fr/particuliers/vosdroits/F2828",
+    "novelty": "Existing trailer items cover speed, vehicle length and overtaking restrictions; none tests licence entitlement based on trailer PTAC at750kg. All five saved nearest questions, including bilingual options/explanations, compared as recorded in research-and-selection.json; broader current bank screened.",
+    "full_resolution": "Inspected entire final staged JPEG 1672x941, plus 390px preview, against both translations and all four options. Rejected earlier candidates remain in history. No detected unresolved defect in this version."
+  }
+}

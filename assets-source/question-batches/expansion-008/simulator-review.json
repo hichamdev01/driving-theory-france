@@ -1,0 +1,133 @@
+{
+  "result": "pass",
+  "device": "iPhone17Pro iOS26.5",
+  "review_route": "Debug ContentReviewKeys; real question UI/scoring without saved progress writes",
+  "french": [
+    {
+      "question_key": "situation_one_way_left_turn_position",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "c"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_wide_suv_narrow_crossing_yield",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "a"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_speed_time_gain_30km_110_130",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "d"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_sign_reader_display_not_authority",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "a",
+        "c"
+      ],
+      "result": "Correct !",
+      "instruction": "multiple"
+    },
+    {
+      "question_key": "situation_alcohol_drugs_combined_nine_points",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "b"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_anaesthesia_discharge_no_driving",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "c"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_brake_fluid_below_min",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "b",
+        "d"
+      ],
+      "result": "Correct !",
+      "instruction": "multiple"
+    },
+    {
+      "question_key": "situation_flooded_road_do_not_enter",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "a"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_child_never_alone_parked_heat",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "d"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_truck_right_indicator_not_overtake_permission",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "b"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    }
+  ],
+  "english": [
+    {
+      "question_key": "situation_sign_reader_display_not_authority",
+      "selected": [
+        "a"
+      ],
+      "result": "Incorrect",
+      "correction": "The correct answers are: A and C",
+      "notes": "All four choices and complete plural correction/explanation visually inspected after scrolling."
+    },
+    {
+      "question_key": "situation_brake_fluid_below_min",
+      "selected": [
+        "b"
+      ],
+      "result": "Incorrect",
+      "correction": "The correct answers are: B and D",
+      "notes": "All four choices and complete plural correction/explanation visually inspected after scrolling."
+    }
+  ],
+  "normal_launch": "English home restored;54 of468 explored",
+  "progress_before": "35e5e3503c10891d92e69ab9fc0074f4358999baeafe7ed2d75992723533da75",
+  "progress_after": "35e5e3503c10891d92e69ab9fc0074f4358999baeafe7ed2d75992723533da75",
+  "notes": "No detected unresolved content/scoring defects. Existing scroll-under-status-bar behavior remains; all content accessible."
+}

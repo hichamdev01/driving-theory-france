@@ -20,6 +20,7 @@
 		54A7F145AF3EF8BE682BACAB /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F010D55BE4666893F41AEC /* QuestionView.swift */; };
 		5E6B7068D036679ACCB573C6 /* SelectLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669828E213ABCFD67761CB5 /* SelectLanguageView.swift */; };
 		607AB535B4AB11141ABC5723 /* ProgressScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F9E67C3087A216BB5CCB4 /* ProgressScreen.swift */; };
+		616CBC8AA1B20E6C86EFCE37 /* RandomPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6564ED29CE882B2A4F8AD26C /* RandomPracticeTests.swift */; };
 		62B4A9BCB7A106D89F96C4D5 /* ExamResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FE3B62285B3A0A3C8C5E0C /* ExamResultView.swift */; };
 		6524D04B61CF5FA042406BB6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E3B3A9A7BDAD085F20450D /* Theme.swift */; };
 		686A1EF4E3844948A1514D29 /* PracticeSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D330C5D35948B8F4294BC0DB /* PracticeSummaryView.swift */; };
@@ -32,6 +33,7 @@
 		A5CF9DD7A4D0E22A72455DD0 /* TheoryPrepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BB0B883328319E40E14CF8 /* TheoryPrepApp.swift */; };
 		A69ABEF69DD326331AF2657A /* LaneDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A394A675832F47E4C1DECE /* LaneDivider.swift */; };
 		A83288BC756AECBE1C478D5A /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD26BB04A4E3F299FDE397 /* Database.swift */; };
+		A90B68E03E07E67C12CED591 /* HomeActionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAF4C51C0A85AD9A614CE53 /* HomeActionRow.swift */; };
 		AA4C402DB3114AAC0BDFCE2F /* Seeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E39E4154557073037ED5C6 /* Seeder.swift */; };
 		AE63C87ADF8955BF894C5218 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA19CFC26DFDBDD461C97A /* Strings.swift */; };
 		AFF7924FE93A78DA0CC5DF66 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656BBCE258613896BA8EAD5 /* MainTabView.swift */; };
@@ -73,12 +75,14 @@
 		52013151F0A97DE15C5495E0 /* MistakesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MistakesView.swift; sourceTree = "<group>"; };
 		55E39E4154557073037ED5C6 /* Seeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seeder.swift; sourceTree = "<group>"; };
 		5F0BA843E9E47146E32D7579 /* TheoryPrep.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TheoryPrep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6564ED29CE882B2A4F8AD26C /* RandomPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPracticeTests.swift; sourceTree = "<group>"; };
 		65EA19CFC26DFDBDD461C97A /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		67788DCDE764862C3436679A /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		6C70A4E2141D690CB8E68EF6 /* RoadSignDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadSignDetailView.swift; sourceTree = "<group>"; };
 		6EECF5ACDE046F13B7823A85 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		71A72CD3EEEFDCAC80043D37 /* ExamRunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamRunView.swift; sourceTree = "<group>"; };
 		78FE3B62285B3A0A3C8C5E0C /* ExamResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamResultView.swift; sourceTree = "<group>"; };
+		7AAF4C51C0A85AD9A614CE53 /* HomeActionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeActionRow.swift; sourceTree = "<group>"; };
 		7BE13612F946D77A1A09C6DF /* Queries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queries.swift; sourceTree = "<group>"; };
 		7E9E8DC814FD882D66286806 /* ReadinessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadinessTests.swift; sourceTree = "<group>"; };
 		85F010D55BE4666893F41AEC /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 				892388349D5747B4F8551E8C /* BundledImage.swift */,
 				4CF0ED6FEFD03C596931CCF5 /* CardView.swift */,
 				1E36EC4405956737B9E96CF3 /* GaugeRing.swift */,
+				7AAF4C51C0A85AD9A614CE53 /* HomeActionRow.swift */,
 				95A394A675832F47E4C1DECE /* LaneDivider.swift */,
 				6EECF5ACDE046F13B7823A85 /* PrimaryButton.swift */,
 				BDFDA8B467ADC105AA5F0407 /* RoadSignBadge.swift */,
@@ -223,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				D03A28D7A91E4C554F119AE8 /* ContentIntegrityTests.swift */,
+				6564ED29CE882B2A4F8AD26C /* RandomPracticeTests.swift */,
 				7E9E8DC814FD882D66286806 /* ReadinessTests.swift */,
 			);
 			path = TheoryPrepTests;
@@ -341,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FDB94F209403471DF8A272E /* ContentIntegrityTests.swift in Sources */,
+				616CBC8AA1B20E6C86EFCE37 /* RandomPracticeTests.swift in Sources */,
 				BEB9EFDE8E63BFC30C7400F1 /* ReadinessTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +366,7 @@
 				62B4A9BCB7A106D89F96C4D5 /* ExamResultView.swift in Sources */,
 				95261F997E04D0B067838A5C /* ExamRunView.swift in Sources */,
 				CD8FD64459CF47EA35EA0702 /* GaugeRing.swift in Sources */,
+				A90B68E03E07E67C12CED591 /* HomeActionRow.swift in Sources */,
 				53EE2B11B23878D3137515AF /* HomeView.swift in Sources */,
 				A69ABEF69DD326331AF2657A /* LaneDivider.swift in Sources */,
 				AFF7924FE93A78DA0CC5DF66 /* MainTabView.swift in Sources */,

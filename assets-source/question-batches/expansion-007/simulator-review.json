@@ -1,0 +1,133 @@
+{
+  "result": "pass",
+  "device": "iPhone17Pro iOS26.5",
+  "review_route": "Debug ContentReviewKeys; real question UI/scoring without saved progress writes",
+  "french": [
+    {
+      "question_key": "situation_officer_vertical_arm_clear_entered_junction",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "b"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_mixed_line_return_after_legal_overtake",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "d"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_paid_parking_time_exceeded_fps",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "c"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_cmi_barrier_carpark_fee_possible",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "a"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_conscious_motorcyclist_leave_helmet_for_rescuers",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "d"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_motorway_stationary_queue_stay_inside",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "b"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_driver_mat_secure_no_stacking",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "a",
+        "c"
+      ],
+      "result": "Correct !",
+      "instruction": "multiple"
+    },
+    {
+      "question_key": "situation_borrowed_car_seat_then_mirrors_before_departure",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "b",
+        "d"
+      ],
+      "result": "Correct !",
+      "instruction": "multiple"
+    },
+    {
+      "question_key": "situation_empty_roof_box_remove_after_holiday",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "c"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_ecall_automatic_serious_crash_location",
+      "image": "Displayed and visually inspected",
+      "four_options": "Four distinct choices present, scrolling used as needed",
+      "selected": [
+        "a"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    }
+  ],
+  "english": [
+    {
+      "question_key": "situation_driver_mat_secure_no_stacking",
+      "selected": [
+        "a"
+      ],
+      "result": "Incorrect",
+      "correction": "The correct answers are: A and C",
+      "notes": "Full plural correction and explanation visually inspected after scrolling."
+    },
+    {
+      "question_key": "situation_borrowed_car_seat_then_mirrors_before_departure",
+      "selected": [
+        "b"
+      ],
+      "result": "Incorrect",
+      "correction": "The correct answers are: B and D",
+      "notes": "Full plural correction and explanation visually inspected after scrolling."
+    }
+  ],
+  "normal_launch": "English home restored;54 of458 explored",
+  "progress_before": "35e5e3503c10891d92e69ab9fc0074f4358999baeafe7ed2d75992723533da75",
+  "progress_after": "35e5e3503c10891d92e69ab9fc0074f4358999baeafe7ed2d75992723533da75",
+  "notes": "No detected unresolved content/scoring defects. CUA intermittently reported noWindowsAvailable after scrolling; fresh screenshots confirmed state and review continued. Existing scroll-under-status-bar behavior remains; content accessible."
+}

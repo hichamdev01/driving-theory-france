@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "8f41c0f7c8108dbcd4c19dac3b7a727f8e4b6ac8c6fd1ea38bbe729503efcd2d",
+  "image_sha256": "b0cb68b16bc6af6821ed1d19e06acc3081bea0f56f0349f98988ae555c1236cc",
+  "result": "pass",
+  "notes": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+  "compared_question_keys": [
+    "situation_rear_passenger_seatbelt",
+    "safety_seat_belts_occupants",
+    "situation_driver_mat_secure_no_stacking",
+    "situation_rear_facing_child_active_airbag",
+    "situation_minor_passenger_unbelted_driver_duty"
+  ],
+  "checks": {
+    "signs_and_text": "No traffic signs or readable text. The corrected tighter image excludes malformed console labels and gear pattern entirely.",
+    "road_geometry": "Private driveway visible through glass; stationary pre-departure situation. No public road junction or lane implication.",
+    "vehicles_and_people": "One adult passenger with two anatomically coherent bent legs and two shoes resting on passenger dashboard; hands rest naturally. No duplicated limbs or injuries.",
+    "dashboard_and_equipment": "Chest belt visible; both shoes on plain passenger-side dashboard near vent. Right door, mirror, glovebox and A-pillar coherent. Airbag not deployed, controls outside frame.",
+    "phone_size": "Both feet on dashboard and chest belt remain clear at 390px, with no reliance on tiny labels.",
+    "french_and_english": "Both say adult, belt fastened and before departure. Both explanations address severe airbag injury and restoring proper posture, with no invented claim that belt alone fixes the posture.",
+    "all_four_options": "B restores feet to floor and proper sitting. A relies on belt alone, C retains legs on dash and D proposes disabling airbag to keep unsafe posture; all three are rejected.",
+    "official_rule": "Sources read and checked 2026-10-11; research-and-selection.json records facts and limitations. Renault complementary restraint safety warning: feet must not be placed on dashboard or seat because deployment can cause serious injury; body parts kept away from dashboard. Source: https://www.user-manual.renault.com/sites/renault/files/GUI_NU_REN_XFKEV_1441_7_0_LHD-RHD_PRNT-fr-FR.pdf",
+    "novelty": "Existing belt, headrest and child-airbag questions do not cover adult limbs obstructing front passenger airbag deployment. All five saved nearest questions, including bilingual options/explanations, compared as recorded in research-and-selection.json; broader current bank screened.",
+    "full_resolution": "Inspected entire final staged JPEG 1672x941, plus 390px preview, against both translations and all four options. Rejected earlier candidates remain in history. No detected unresolved defect in this version."
+  }
+}

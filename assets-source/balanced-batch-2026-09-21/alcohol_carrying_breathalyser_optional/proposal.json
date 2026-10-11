@@ -1,0 +1,49 @@
+{
+  "sequence": 9,
+  "scenario_id": "alcohol_carrying_breathalyser_optional",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives or prepares a normal passenger car; no specialist vehicle operating rules.",
+  "learning_objective": "Distinguish a voluntary self-test from mandatory car equipment",
+  "references": [
+    "https://www.service-public.gouv.fr/particuliers/vosdroits/F19459"
+  ],
+  "novelty_review": "Existing breath-test questions concern thresholds, validity or police checks. This asks whether merely carrying a self-test in an ordinary private car is legally compulsory.",
+  "scenario": "Natural still-life photograph inside a safely parked ordinary passenger car. On the passenger seat are a small unbranded handheld breathalyser with blank unlit display and disposable mouthpiece, folded fluorescent safety vest, and closed plain red triangle-storage case. No alcohol bottles, no person using the device, no brand names, no certification markings, no readable test result. Sunlight through closed window, realistic materials.",
+  "image_prompt": "Use case: photorealistic-natural. Create ONE realistic educational photograph for a French Code de la Route passenger-car question. Landscape 16:9, preferably 2048x1152. Contemporary France, natural photographic colours and exposure, physically plausible perspective. Natural still-life photograph inside a safely parked ordinary passenger car. On the passenger seat are a small unbranded handheld breathalyser with blank unlit display and disposable mouthpiece, folded fluorescent safety vest, and closed plain red triangle-storage case. No alcohol bottles, no person using the device, no brand names, no certification markings, no readable test result. Sunlight through closed window, realistic materials. No quiz panel, question text, answer choices, highlighted answer, watermark, instructional overlay, collage or invented road signs. Any cars use French-style plates with unreadable small characters. This is a scene photograph, not an infographic.",
+  "question": {
+    "key": "situation_alcohol_carrying_breathalyser_optional",
+    "category_slug": "alcohol_drugs",
+    "correct_answer": "a",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "En France, dois-je obligatoirement emporter un éthylotest de dépistage dans ma voiture particulière ?",
+        "answer_a": "Non, en avoir un à bord n’est pas obligatoire.",
+        "answer_b": "Oui, dans toute voiture sans exception.",
+        "answer_c": "Oui, mais seulement sur autoroute.",
+        "answer_d": "Oui, mais seulement avec un permis probatoire.",
+        "explanation": "La présence d’un éthylotest de dépistage dans une voiture n’est pas obligatoire. Cela ne change pas l’interdiction de conduire avec une alcoolémie atteignant le seuil applicable. Un autotest ne doit pas être confondu avec un dispositif antidémarrage imposé à certains conducteurs."
+      },
+      "en": {
+        "question_text": "In France, must I carry a self-test breathalyser in my private car?",
+        "answer_a": "No, carrying one is not compulsory.",
+        "answer_b": "Yes, in every car without exception.",
+        "answer_c": "Yes, but only on motorways.",
+        "answer_d": "Yes, but only with a probationary licence.",
+        "explanation": "Carrying a self-test breathalyser in a car is not compulsory. This does not change the ban on driving at or above the applicable alcohol threshold. A self-test is different from an alcohol ignition interlock imposed on certain drivers."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-b2b2a6ae-1045-4f00-8a72-ba14e0969aa3.png",
+  "native_image_sha256": "8aad0ac85d8ded81f7e214996fddd70f12de80da9ef9c73973b05c2b8c23af20",
+  "image_path": "assets-source/balanced-batch-2026-09-21/alcohol_carrying_breathalyser_optional/scene.jpg",
+  "image_sha256": "555927e5214f282e36120a32b39c5ce4ffc64919569c4653576b1fd359f90d15",
+  "visual_review": "Reviewed unbranded handheld breathalyser with blank display, folded vest and triangle case on parked-car passenger seat. No inferred test result. A reflects current Service Public equipment guidance; bilingual explanation distinguishes optional self-test from mandated ignition interlock.",
+  "reviewed_on": "2026-09-21",
+  "reviewed_sha256": "6dc4b50f6a60dbaaeeed830289f09d1fd78cb645e521c6768cd261855039d075",
+  "question_key": "situation_alcohol_carrying_breathalyser_optional",
+  "imported_content_version": 89,
+  "imported_on": "2026-09-21"
+}

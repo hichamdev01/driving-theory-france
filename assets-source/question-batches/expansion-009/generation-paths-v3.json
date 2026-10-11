@@ -1,0 +1,12 @@
+[
+  {
+    "scenario": "roundabout_left_lane_optional",
+    "prompt": "Use case: precise-object-edit. Reframe this French roundabout photograph to a LOWER, MUCH CLOSER viewpoint at the near give-way line, looking across the near half of the roundabout. The planted tall central island must hide ALL far approaches; left and right side junctions must lie OUTSIDE the image. Show ONLY the near single entry lane with its correct inverted red-bordered white yield sign at right and transverse broad rectangular give-way dashes, plus the near ARC of the TWO circulating lanes, separated by ONE curved thin dashed divider. Camera facing slightly to the left, showing enough of the inner and outer circulating lanes to distinguish both. Do not show the full roundabout or other arms. Preserve natural photographic daylight, plausible French roadway surfaces, attractive greenery, no vehicles, no arrows, no text, no labels or highlights. 16:9 landscape at least 1672x941. The learning objective remains optional left lane for an exit beyond the left of the approach, with no special lane allocation.",
+    "path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-cbce9949-a4e5-4951-8243-909393231f5d.png"
+  },
+  {
+    "scenario": "motorway_filtering_two_leftmost_lanes",
+    "prompt": "Use case: precise-object-edit. Fix ONLY the RIGHTMOST white boundary of the pictured three-lane French motorway. It separates queued right-hand traffic from the empty paved shoulder. Make that boundary ONE very long continuous white segment starting at bottom-right edge and extending alongside the first SIX queued cars, then ONE gap as long as two cars, then another very long segment extending alongside the next six cars, then another gap. Continue to the horizon in perspective. This is a T4 hard-shoulder boundary: 39 metres paint /13 metres gap, not little dashes. Narrow the boundary to a realistic white road stripe, not broad blocks. Keep the two internal lane dividers and all cars, opposite traffic, barriers, landscape and camera perspective exactly unchanged. No new lanes, no extra markings, no motorcycles or text. 16:9 photograph.",
+    "path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-9c009032-c704-4147-b741-9fd3ea81222f.png"
+  }
+]

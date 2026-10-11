@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+  "proposal_sha256": "6291cf2b614f06215879f16739e5ea28135fd8e4e98332dd81ec5f0fd10e9c2e",
+  "image_sha256": "b20066458d2d5e3197616de6b7ce78de357a29e17c2717771981c3667aa46be5",
+  "compared_question_keys": [
+    "situation_zone_30_continues_side_street",
+    "situation_priority_right_ab1",
+    "situation_no_motor_vehicles",
+    "situation_green_turn_pedestrian_crossing",
+    "situation_dirt_track_yields_all"
+  ],
+  "checks": {
+    "official_rule": "Michelin distinguishes dangerous outward hernias from benign slight radial indentations. Before-departure wording avoids implying that driving to the workshop on the damaged tyre is safe.",
+    "signs_and_text": "No signs, text, plates or markings in the wheel close-up.",
+    "road_geometry": "Private gravel ground only; no traffic geometry or junction.",
+    "vehicles_and_people": "One plausible mounted wheel and fender, no people. Five bolts, valve stem, disc and caliper coherent.",
+    "dashboard_and_equipment": "Smooth outward upper-sidewall bulge clearly distinct from tread, bead and ordinary contact flattening. No dashboard.",
+    "phone_size": "Bulge remains conspicuous in the 390-pixel image; five bolts need not be counted to answer.",
+    "french_and_english": "FR hernie / EN sidewall bulge match. Both say before departure and replacement, without promising repair.",
+    "novelty": "Tread depth and cold pressure are covered; neither tests structural sidewall damage despite adequate tread. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+    "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. One plausible mounted wheel and fender, no people. Five bolts, valve stem, disc and caliper coherent. Smooth outward upper-sidewall bulge clearly distinct from tread, bead and ordinary contact flattening. No dashboard.",
+    "all_four_options": "Correct set C. A: Tread depth does not repair the structure. B: Changing pressure does not repair damage. C: Remove the damaged tyre from use. D: Driving risks failure; it cannot heal the tyre. Four distinct options in both languages."
+  }
+}

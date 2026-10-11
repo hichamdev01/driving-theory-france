@@ -1,0 +1,37 @@
+{
+  "questions": 478,
+  "illustrated": 449,
+  "multiple_answer": 24,
+  "categories": {
+    "road_signs": 123,
+    "priority_rules": 46,
+    "speed_limits": 44,
+    "parking_stopping": 43,
+    "overtaking": 42,
+    "motorways": 36,
+    "alcohol_drugs": 48,
+    "safety": 96
+  },
+  "remaining_to_1000": 522,
+  "unrelated_starting_files_changed": [],
+  "prepared_batch": "expansion-009",
+  "prepared_questions": 10,
+  "generated_expansion_images": 90,
+  "imported_expansion_questions": 90,
+  "python_tests": 59,
+  "permission_gate": "resolved",
+  "open_confirmed_semantic_overlap_groups": 18,
+  "baseline_validation": "verified",
+  "ios_tests": 36,
+  "current_batch": "expansion-009",
+  "current_batch_stage": "imported_awaiting_simulator_visual_review",
+  "content_version": 102,
+  "blocker": "User paused expansion during expansion-009 simulator review; resume review before further batches",
+  "legacy_replacement_workflow": "implemented_and_fixture_tested",
+  "goal_status": "paused_by_user",
+  "simulator_review_progress": {
+    "french_complete": 3,
+    "french_next": 4,
+    "english_multiple_answer_checks": "pending"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "result": "pass",
+  "reviewed_on": "2026-10-09",
+  "simulator": "iPhone 17 Pro, iOS 26.5",
+  "content_version": 91,
+  "pack_sha256": "65c1b63fc7dfaee5118d0b0952c36db640f172bdcb633c3e2341c31d6a3176fc",
+  "method": "Live Simulator via CUA. Inspected screenshots and accessibility trees of each listed question and submitted the stated answer. Development review uses production QuestionView with canonical choices and suppresses history writes.",
+  "items": {
+    "parking_disc_actual_arrival": "P symbol, arrival label and dial visible; B actual arrival scores correctly.",
+    "parking_camera_requires_direct_checks": "Camera image and bay clear; A direct/mirror checks scores correctly.",
+    "priority_officer_over_green_light": "Officer faces viewer, both arms clearly horizontal. D front and rear approaches scores correctly.",
+    "motorway_wrongway_alert_no_overtake": "Amber warning text readable, coherent carriageway; A no overtaking scores correctly.",
+    "motorway_planned_break_two_hours": "Rest area scene fits; B planned pause scores correctly.",
+    "speed_reaction_one_second_90": "Road scene visible, assumptions explicit; C 25 metres scores correctly.",
+    "speed_double_braking_distance_quadruples": "Closed driving area scene fits; D quadrupled distance scores correctly.",
+    "overtake_signal_before_moving_left": "Following before moving out; C signal before manoeuvre scores correctly.",
+    "alcohol_carrying_breathalyser_optional": "Breathalyser and equipment visible; A optional scores correctly.",
+    "safety_oil_pressure_stop_engine": "Red oil symbol and STOP readable; B safe stop then engine off scores correctly."
+  },
+  "multiple_answer_checks": {
+    "question_key": "situation_no_overtaking_basic",
+    "fr_partial_selection": "B alone: Incorrect, B and C shown as correct; multiple-answer instruction visible.",
+    "en_complete_selection": "B and C: Correct, multiple-answer instruction visible."
+  },
+  "progress_unchanged": true,
+  "progress_sha256": "35e5e3503c10891d92e69ab9fc0074f4358999baeafe7ed2d75992723533da75",
+  "limitations": "Existing semantic-review queue remains open for final bank uniqueness; visual approval does not guarantee undetectable errors."
+}

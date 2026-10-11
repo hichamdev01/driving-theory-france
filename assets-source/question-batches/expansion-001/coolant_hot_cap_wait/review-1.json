@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defects after actual full-size JPEG and 390px inspections; original wording/rationale reviewed against saved sources.",
+  "proposal_sha256": "40b0660b57c0bf4b6cf746d167355c623e3129effd2962cb11a345c624ac8b74",
+  "image_sha256": "80ed3ade7719e9bcb184cfe29d16a8e225bc1fa9a44ff38c20e5023c90c2a921",
+  "checks": {
+    "official_rule": "Renault original manual requires cold coolant check and warns against hot-circuit intervention. This is manufacturer safety guidance, not a claimed standalone statute.",
+    "novelty": "Opening a hot cooling system is absent from tyre and oil-pressure objectives; nearest lexical matches concern unrelated triangle, breaks, medication, overtaking and path-access decisions.",
+    "signs_and_text": "No road signs, plates, markings, signal or readable label governing the answer. No generated warning text requiring interpretation.",
+    "road_geometry": "Car safely in private driveway with coherent engine-bay/front-windscreen perspective, no traffic interaction.",
+    "vehicles_and_people": "Single ordinary car engine bay, no people or hands manipulating components. Hood support and stationary body plausible.",
+    "dashboard_and_equipment": "Closed expansion-reservoir cap, pink coolant, connected hoses and clamps, closed secondary filler; no opening, pouring, steam or leaks. Temperature is supplied in question, not inferred.",
+    "full_resolution": "Inspected final JPEG 1672x941 and reservoir/hoses/caps at full image size; no detected unresolved defect.",
+    "phone_size": "Viewed 390px resize: main reservoir and closed cap remain readily identifiable without tiny symbols.",
+    "french_and_english": "Both state parked after journey, ignition off, still-hot engine. B wait to cool and follow manual is equivalent.",
+    "all_four_options": "B is the only correct choice. A immediate unscrewing, C engine-running opening, D piercing cap are unsafe and distinct in both languages."
+  },
+  "compared_question_keys": [
+    "situation_triangle_placement_personal_danger",
+    "situation_motorway_planned_break_two_hours",
+    "situation_medicine_no_self_dose_change_drive",
+    "situation_overtaking_no_safe_return_gap",
+    "situation_b22c_car_scenario"
+  ]
+}

@@ -100,6 +100,16 @@ def canonical(registry, value):
 
 
 def assert_available(registry, code, own_job=None):
+    # A broad signal family must not evade an already covered named variant.
+    family = {'R16', 'R16td', 'R16tg'}
+    if code in family:
+        for related in family - {code}:
+            if related in registry['codes']:
+                entry = registry['codes'][related]
+                if any(entry.get(field) for field in ('question_keys', 'supplementary_question_keys',
+                        'context_question_keys', 'draft_ids', 'review_holds')) or any(
+                        j != own_job for j in entry.get('pending_job_ids', [])):
+                    raise ValueError(f'{code}: related signal {related} already covered/reserved')
     entry = registry['codes'][code]
     for field in ('question_keys', 'supplementary_question_keys', 'context_question_keys', 'draft_ids', 'review_holds'):
         if entry[field]:
@@ -108,6 +118,32 @@ def assert_available(registry, code, own_job=None):
         raise ValueError(f'{code}: another job already reserved this code')
     if entry['car_scope'] == 'excluded_from_car_generation':
         raise ValueError(f'{code}: outside passenger-car generation scope')
+
+
+def correct_answers(question):
+    answers = question.get('correct_answers', [question.get('correct_answer')])
+    if (not isinstance(answers, list) or not 1 <= len(answers) <= 3
+            or any(a not in ('a', 'b', 'c', 'd') for a in answers)
+            or len(set(answers)) != len(answers)):
+        raise ValueError('Expected one to three distinct correct answers from a/b/c/d')
+    if 'correct_answers' in question and 'correct_answer' in question:
+        raise ValueError('Use one answer representation, not both')
+    return sorted(answers)
+
+
+def validate_question(q, existing_key=None):
+    retained_key = q['key'] == existing_key and re.fullmatch(r'[a-z0-9_]+', q['key'])
+    if not retained_key and not re.fullmatch(r'situation_[a-z0-9_]+', q['key']):
+        raise ValueError('Invalid stable question key')
+    correct_answers(q)
+    if q['difficulty'] not in ('easy', 'medium', 'hard'):
+        raise ValueError('Invalid difficulty')
+    for lang in ('fr', 'en'):
+        for field in ('question_text', 'answer_a', 'answer_b', 'answer_c', 'answer_d', 'explanation'):
+            if not isinstance(q['translations'][lang][field], str) or not q['translations'][lang][field].strip():
+                raise ValueError(f'Missing translation: {lang}/{field}')
+        if len({q['translations'][lang]['answer_' + a].strip().casefold() for a in 'abcd'}) != 4:
+            raise ValueError('Answer choices must be distinct')
 
 
 def validate_proposal(registry, proposal):
@@ -124,20 +160,9 @@ def validate_proposal(registry, proposal):
     if not proposal['references'] or any(not url.startswith('https://') for url in proposal['references']):
         raise ValueError('Verified reference URLs are required')
     q = proposal['question']
-    if not re.fullmatch(r'situation_[a-z0-9_]+', q['key']):
-        raise ValueError('Invalid stable question key')
+    validate_question(q)
     if q['category_slug'] != registry['codes'][code]['suggested_category_slug']:
         raise ValueError('Category differs from the reviewed registry route')
-    if q.get('correct_answer') not in ('a', 'b', 'c', 'd') or 'correct_answers' in q:
-        raise ValueError('Pilot workflow requires exactly one correct answer')
-    if q['difficulty'] not in ('easy', 'medium', 'hard'):
-        raise ValueError('Invalid difficulty')
-    for lang in ('fr', 'en'):
-        for field in ('question_text', 'answer_a', 'answer_b', 'answer_c', 'answer_d', 'explanation'):
-            if not isinstance(q['translations'][lang][field], str) or not q['translations'][lang][field].strip():
-                raise ValueError(f'Missing translation: {lang}/{field}')
-        if len({q['translations'][lang]['answer_' + a].strip() for a in 'abcd'}) != 4:
-            raise ValueError('Answer choices must be distinct')
     return code
 
 
@@ -199,7 +224,7 @@ def import_question(root, code):
     target = r.image_file(q['image_path'])
     if (root / target).exists() or any(x['key'] == q['key'] for x in registry['questions']):
         raise ValueError('Question key or destination image already exists')
-    content = r.digest({'translations': q['translations'], 'correct_answers': [q['correct_answer']]})
+    content = r.digest({'translations': q['translations'], 'correct_answers': correct_answers(q)})
     if any(x['content_sha256'] == content or x['image_sha256'] == job['image_sha256'] for x in registry['questions']):
         raise ValueError('Exact question or scene image already exists')
     pack = r.read(root, r.CONTENT / 'pack.json')

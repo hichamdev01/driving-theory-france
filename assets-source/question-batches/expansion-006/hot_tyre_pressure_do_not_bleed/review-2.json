@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "6735028b1710039c95eda38e81d24d6df1a9268775eddb0a6ddebcb804eaa323",
+  "image_sha256": "ce258bf842f62663669914556afc3022c6677fdeb4c3443eafae003853c943c0",
+  "result": "pass",
+  "notes": "Entire exact replacement JPEG inspected at1672x941 and390px. No detected unresolved defects; previous rejected versions retained.",
+  "compared_question_keys": [
+    "situation_coolant_hot_cap_wait",
+    "safety_tyre_pressure",
+    "situation_abs_emergency_pedal_pulsation",
+    "situation_dynamic_speed_limit_over_fixed",
+    "situation_severe_bleeding_direct_pressure"
+  ],
+  "checks": {
+    "official_rule": "Original Michelin passenger-car guide: never deflate hot tyres; pressure rises with temperature; recheck and adjust cold. Full page read.",
+    "novelty": "Existing tyre-pressure question says measure cold. This tests concrete dangerous correction when hot reading is higher, including thermal expansion and later verification. Full five nearest questions/options/explanations inspected; whole-bank topic search performed.",
+    "signs_and_text": "All fake embossed sidewall writing removed. No signs, digits or labels; no pressure inferred from a hidden gauge.",
+    "road_geometry": "Wheel on flat service-area pavement beside pump base; no road manoeuvre.",
+    "vehicles_and_people": "No people; one intact tyre with coherent wheel arch and car body.",
+    "dashboard_and_equipment": "Five wheel bolts, brake disc/caliper, valve and attached hose plausible; tyre has normal tread and no bulge/crack.",
+    "full_resolution": "Viewed exact staged scene-2.jpg in full original resolution. All fake embossed sidewall writing removed. No signs, digits or labels; no pressure inferred from a hidden gauge. Five wheel bolts, brake disc/caliper, valve and attached hose plausible; tyre has normal tread and no bulge/crack.",
+    "phone_size": "At390px hose-to-valve connection and intact tyre clear; hot state and relative pressure explicitly stated.",
+    "french_and_english": "FR/EN both supply same facts and correct answer set. No image-dependent hidden measurement or invented universal equipment specification. After long driving, tyres hot and gauge above cold recommended pressure; no damage or other fault.",
+    "all_four_options": "Correct set b,d. {'fr': {'a': 'Risque de sous-gonflage une fois froid.', 'b': 'La hausse thermique ne doit pas être corrigée ainsi.', 'c': 'Cette perte d’air crée un danger.', 'd': 'Le contrôle à froid permet la comparaison prescrite.'}, 'en': {'a': 'It may be underinflated after cooling.', 'b': 'Do not correct the thermal rise this way.', 'c': 'Releasing that air is dangerous.', 'd': 'A cold check allows the specified comparison.'}}"
+  }
+}

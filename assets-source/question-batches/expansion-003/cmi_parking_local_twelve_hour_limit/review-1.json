@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+  "proposal_sha256": "d2bf643fb054f5b29a798b57458853e4e881e843d53d7a82ff4d00578b7f13e7",
+  "image_sha256": "1ecedfdceebb62482adeb3285c8b143dbbd0d95a816a67f65e561d87f38a36e0",
+  "compared_question_keys": [
+    "situation_cmi_parking_card_passenger",
+    "situation_overtaking_uncontrolled_intersection",
+    "situation_blind_crest_no_overtake",
+    "situation_parking_disc_actual_arrival",
+    "situation_urban_horn_impatience"
+  ],
+  "checks": {
+    "official_rule": "Ecologie ministry FAQ confirms lawful CMI maximum cannot be under 12 hours. The stem states exactly 12 hours and on-street context; not a barrier-equipped private car park.",
+    "signs_and_text": "Only white parking-bay corners, no sign displaying a different duration; CMI eligibility/time supplied by wording.",
+    "road_geometry": "Car fully inside parallel bay beside kerb; pavement clear, no driveway, zebra or hydrant obstruction. Direction of street not asserted.",
+    "vehicles_and_people": "Closed blue hatchback in side view, no occupants visibly claimed; plate faces naturally outside view, not blank plates.",
+    "dashboard_and_equipment": "No card face or personal identity details generated; no dashboard instruments required.",
+    "phone_size": "Entire bay/car silhouette remains visible at 390 pixels; answer depends on stated municipal limit.",
+    "french_and_english": "Both languages require displayed CMI while transporting its holder; 24 exceeds stated 12. B correct, presence/two cards do not extend time.",
+    "novelty": "Earlier CMI passenger question tests eligibility and card display, not the lawful local duration exception. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+    "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. Closed blue hatchback in side view, no occupants visibly claimed; plate faces naturally outside view, not blank plates. No card face or personal identity details generated; no dashboard instruments required.",
+    "all_four_options": "Correct set B. A: A lawful local limit still applies. B: Observe the stated twelve-hour maximum. C: Remaining inside does not extend the maximum. D: Two cards do not add their permitted durations. Four distinct options in both languages."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "proposal_sha256": "9cc9011e64448844e0b12d13686dbc788513fec4f227c9a69f732b94ef2a228b",
+  "image_sha256": "ee669a2137e64cca22a6fcd3cf3d4393ffad52fd4409a295c10ef1191a06984f",
+  "result": "reject",
+  "notes": "Reject: generated continuous white edge lines depart from specified unmarked ordinary French road and introduce unnecessary marking ambiguity. Remove both edge lines; keep70sign and90recognition display.",
+  "compared_question_keys": [
+    "situation_dynamic_speed_limit_over_fixed",
+    "situation_cmi_parking_card_passenger",
+    "situation_abs_emergency_pedal_pulsation",
+    "situation_abs_warning_stays_on_without_red_brake",
+    "situation_tramway_crossing"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "proposal_sha256": "8e047c1cc72012380a14c6e8ca3d8eef9b5714813495c8fd7fff044a81e5661e",
+  "image_sha256": "362a784065033ccd883e121923f2159dbd8f63f884bbf2ee73dc553407f02214",
+  "result": "reject",
+  "notes": "Reject: centreline stroke/gap ratios inconsistent for intended ordinary French separation. Neutral image does not require markings; remove line completely for an unmarked residential road.",
+  "compared_question_keys": [
+    "situation_speed_reaction_one_second_90",
+    "safety_tyre_pressure",
+    "situation_motorway_blowout_initial_control",
+    "situation_speed_double_braking_distance_quadruples",
+    "situation_fixed_amber_safe_stop"
+  ]
+}

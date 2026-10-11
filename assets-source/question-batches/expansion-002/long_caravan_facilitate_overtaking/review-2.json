@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "proposal_sha256": "bc969700b5270f95344d985f1fd0dcd1c67854ccf7627c6f80c47986d8bd798e",
+  "image_sha256": "2a89d3ff12cee2d9c562563364a83d4ac75d5c30e3ec6e7a39d429369dedd3fd",
+  "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+  "compared_question_keys": [
+    "situation_motorway_friend_tow_offer",
+    "situation_mountain_downhill_yields",
+    "situation_coolant_hot_cap_wait",
+    "situation_triangle_placement_personal_danger",
+    "situation_overtake_middle_lane_hog_no_right"
+  ],
+  "checks": {
+    "official_rule": "Reviewed authoritative sources checked 2026-10-09: R414-9: when road width/profile/condition prevents easy safe overtaking, a combination longer than 7 m must slow and if needed stop or pull over to let smaller vehicles pass. Ordinary B licence permits a trailer up to 750 kg PTAC, or a heavier trailer when the sum of vehicle and trailer PTAC does not exceed 3500 kg.",
+    "novelty": "Existing being-overtaken rule is do-not-accelerate; this adds a specific positive duty for combinations longer than seven metres when safe overtaking is obstructed by road width/profile. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+    "signs_and_text": "No readable signs or text. Faint old road paint fragments do not form a continuous separator or a different control.",
+    "road_geometry": "Corrected side view shows both vehicles facing left on the far/right-hand side of a narrow rural road. Lay-by from rejected image removed. Width-limited passing explicitly stated; no precise speed or distance is inferred.",
+    "vehicles_and_people": "Caravan now has sloping front toward towing car and red rear lamps only at the far rear; proper near-side wheel, windows and front coupler. Smaller car follows rather than overtakes. Its following gap is not a model distance and no speed is stated.",
+    "dashboard_and_equipment": "Drawbar and cable connected, small jockey wheel clear of ground; plate faces outside view, no visible blank recesses. No dashboard shown.",
+    "full_resolution": "Viewed exact staged scene-2.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No readable signs or text. Faint old road paint fragments do not form a continuous separator or a different control. Drawbar and cable connected, small jockey wheel clear of ground; plate faces outside view, no visible blank recesses. No dashboard shown.",
+    "phone_size": "Viewed phone-preview-2.jpg at 390 px. Combination and following smaller car remain distinct at 390 px; the stated 8 m length supplies the legal threshold.",
+    "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: Driver is towing a caravan; total length 8 metres, sum of PTAC 3200 kg, within ordinary B scope. Narrow road does not allow a following smaller car to pass with ease and safety.",
+    "all_four_options": "Correct set d. FR: A: Incorrect : une action pour faciliter le passage est requise.; B: Incorrect : accélérer aggrave la difficulté.; C: Incorrect : ne pas inciter à un dépassement sans visibilité.; D: Correct : obligation adaptée au gabarit et à la route. EN: A: Incorrect: action to facilitate passing is required.; B: Incorrect: accelerating makes passing harder.; C: Incorrect: do not encourage passing without visibility.; D: Correct: the duty depends on combination size and road conditions."
+  }
+}

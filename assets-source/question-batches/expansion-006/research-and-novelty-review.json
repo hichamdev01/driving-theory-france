@@ -1,0 +1,250 @@
+{
+  "checked_on": "2026-10-10",
+  "bank_count": 438,
+  "pack_sha256": "9049451b9f4ed6f641ed7c5e9ee62f63259102928441797e209064c235b350b3",
+  "research_background": {
+    "url": "https://www.ornikar.com/code/gratuit/test-examen-blanc",
+    "use": "Public exam topic/style reference only. All wording and scenes original."
+  },
+  "availability_notes": [
+    "Road-safety wiper-checklist and school-transport first-aid PDFs failed in browser; not used as sole authoritative evidence. Accessible R316-4 and Interior call guidance used instead.",
+    "ONISR2022 appendix contains historical sanction wording; only procedure read, current ServicePublic and R234-1 used for current law."
+  ],
+  "items": [
+    {
+      "scenario_id": "b7a_mopeds_exception_not_all_motor",
+      "proposal_sha256": "b8d571624747fa0b22a63996d26c7ef0f044943e54ca81fb95109343499d92a6",
+      "compared_question_keys": [
+        "situation_b7b_car_sign_interpretation",
+        "situation_no_overtaking_goods",
+        "situation_height_limit_2_8m",
+        "situation_bus_lane",
+        "situation_no_motor_vehicles"
+      ],
+      "novelty": "Existing B7b asks whether electric car is a motor vehicle; B0 all traffic. This tests the moped exception of a different protected sign code.",
+      "result": "distinct learning objective after cross-category inventory and nearest question/explanation review",
+      "sources": [
+        {
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/",
+          "kind": "official",
+          "checked_on": "2026-10-10",
+          "supports": "Article4 B7a: motor vehicles prohibited except mopeds; B7b all motor vehicles."
+        }
+      ]
+    },
+    {
+      "scenario_id": "c13d_dead_end_cycle_pedestrian_outlet",
+      "proposal_sha256": "0fd6500fc3bc4bb9e63ef9238f04601ad3cde7c355014373808fe3ade1a24b47",
+      "compared_question_keys": [
+        "situation_c13c_dead_end_pedestrian_exit",
+        "situation_c13b_car_scenario",
+        "situation_dead_end_c13a_access",
+        "situation_c113_car_interpretation",
+        "situation_b22b_car_sign_interpretation"
+      ],
+      "novelty": "C13a/b mean dead end and C13c only pedestrian outlet. C13d distinct code and bicycle outlet not tested; question tests both symbols rather than repeating car-no-through decision.",
+      "result": "distinct learning objective after cross-category inventory and nearest question/explanation review",
+      "sources": [
+        {
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/",
+          "kind": "official",
+          "checked_on": "2026-10-10",
+          "supports": "Article5 C13d: dead end with an outlet for pedestrians and cyclists."
+        }
+      ]
+    },
+    {
+      "scenario_id": "b5b_police_checkpoint_required_stop",
+      "proposal_sha256": "23f6b9a368a49ec51b3646e537a71b04c1467300a36fbaa5bafcb401b2255419",
+      "compared_question_keys": [
+        "situation_b4_car_sign_interpretation",
+        "situation_random_alcohol_check_no_infraction",
+        "situation_b21c1_car_scenario",
+        "situation_overtaking_uncontrolled_intersection",
+        "situation_b21b_straight_at_junction"
+      ],
+      "novelty": "B4 customs and C64 toll payment are different facilities; B5b unreserved. Tests compulsory stop at police control even without personal suspicion, not an ordinary STOP intersection.",
+      "result": "distinct learning objective after cross-category inventory and nearest question/explanation review",
+      "sources": [
+        {
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/",
+          "kind": "official",
+          "checked_on": "2026-10-10",
+          "supports": "Article4 B5b: arrêt au poste de police; original catalogue appearance inspected."
+        }
+      ]
+    },
+    {
+      "scenario_id": "alcohol_screening_then_evidential_measurement",
+      "proposal_sha256": "10001473c8318ec59be8c4da40d6cffc49ae6d9daa8e7a100fe8f7a8f350afb6",
+      "compared_question_keys": [
+        "situation_refuse_alcohol_verification_offence",
+        "situation_injury_collision_alcohol_verification",
+        "situation_refuse_drug_verification_offence",
+        "situation_breath_test_probationary_limit",
+        "situation_alcohol_0_40mg_offence"
+      ],
+      "novelty": "Existing refusal question tests illegality of refusing verification; quantitative tests ask thresholds. New objective is identifying why a second instrument is used after positive screening.",
+      "result": "distinct learning objective after cross-category inventory and nearest question/explanation review",
+      "sources": [
+        {
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2881",
+          "kind": "official",
+          "checked_on": "2026-10-10",
+          "supports": "Dépistage and vérification sections explicitly separate ethylotest screening from ethylomètre precise breath measurement; read current page."
+        }
+      ]
+    },
+    {
+      "scenario_id": "probation_alcohol_six_point_deduction",
+      "proposal_sha256": "92375e1f2b26ee9efe322387da7b88cd404d93bddcea85836bb652aa0599e51e",
+      "compared_question_keys": [
+        "alcohol_probationary_limit",
+        "alcohol_general_limit",
+        "situation_breath_test_probationary_limit",
+        "situation_probationary_one_glass_risk",
+        "situation_breath_test_general_limit"
+      ],
+      "novelty": "Existing questions test blood/breath thresholds and offence classification/max imprisonment. No current item asks the six-point deduction; no invented timing or recovery claim.",
+      "result": "distinct learning objective after cross-category inventory and nearest question/explanation review",
+      "sources": [
+        {
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038954545/",
+          "kind": "official",
+          "checked_on": "2026-10-10",
+          "supports": "R234-1 I1 and IV: probation0.2 threshold; contravention six points. Current article read."
+        },
+        {
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2390",
+          "kind": "official",
+          "checked_on": "2026-10-10",
+          "supports": "Probationary licence initial balance6points."
+        }
+      ]
+    },
+    {
+      "scenario_id": "red_light_empty_cycle_advanced_stop_box",
+      "proposal_sha256": "ebaeec658edaa07191eb7b5fc1f9e9727b54da17bea8031b4ff34cee116ea563",
+      "compared_question_keys": [
+        "situation_c113_car_interpretation",
+        "situation_red_flashing_level_crossing_stop",
+        "situation_emergency_vehicle_without_special_signals",
+        "situation_fixed_amber_safe_stop",
+        "situation_b27b_car_scenario"
+      ],
+      "novelty": "No sas/advanced-stop item in all438; STOPline, greenblockage and cycletrackturn priorities are different decisions. Applies even with no cyclist present.",
+      "result": "distinct learning objective after cross-category inventory and nearest question/explanation review",
+      "sources": [
+        {
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025544/",
+          "kind": "official",
+          "checked_on": "2026-10-10",
+          "supports": "R415-15 permits two separate stop lines for cycles/EDPM and other vehicles."
+        },
+        {
+          "url": "https://www.msr25.doubs.developpement-durable.gouv.fr/fiche-28-le-sas-a-velo-a744.html",
+          "kind": "official",
+          "checked_on": "2026-10-10",
+          "supports": "Sas rear line3–5m behind front, T2 15cm dashed lines; red signal cars stop behind rear line. Current permitted users crosschecked against R415-15, not old cyclomoteur wording."
+        }
+      ]
+    },
+    {
+      "scenario_id": "stopping_distance_reaction_plus_braking",
+      "proposal_sha256": "8e047c1cc72012380a14c6e8ca3d8eef9b5714813495c8fd7fff044a81e5661e",
+      "compared_question_keys": [
+        "situation_speed_reaction_one_second_90",
+        "safety_tyre_pressure",
+        "situation_motorway_blowout_initial_control",
+        "situation_speed_double_braking_distance_quadruples",
+        "situation_fixed_amber_safe_stop"
+      ],
+      "novelty": "Existing one-second90 question computes reaction travel, another speed doubling affects braking. This tests sum of the two stages and their different start/end definitions.",
+      "result": "distinct learning objective after cross-category inventory and nearest question/explanation review",
+      "sources": [
+        {
+          "url": "https://www.securite-routiere.gouv.fr/sites/default/files/press-kits/3728-distances_de_securite_23-06-03_2.pdf",
+          "kind": "official",
+          "checked_on": "2026-10-10",
+          "supports": "Page6 defines stopping distance as reaction distance plus braking distance. Use only stable definition, no historical crash statistics or universal numeric table."
+        }
+      ]
+    },
+    {
+      "scenario_id": "hot_tyre_pressure_do_not_bleed",
+      "proposal_sha256": "6735028b1710039c95eda38e81d24d6df1a9268775eddb0a6ddebcb804eaa323",
+      "compared_question_keys": [
+        "situation_coolant_hot_cap_wait",
+        "safety_tyre_pressure",
+        "situation_abs_emergency_pedal_pulsation",
+        "situation_dynamic_speed_limit_over_fixed",
+        "situation_severe_bleeding_direct_pressure"
+      ],
+      "novelty": "Existing tyre-pressure question says measure cold. This tests concrete dangerous correction when hot reading is higher, including thermal expansion and later verification.",
+      "result": "distinct learning objective after cross-category inventory and nearest question/explanation review",
+      "sources": [
+        {
+          "url": "https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus",
+          "kind": "manufacturer",
+          "checked_on": "2026-10-10",
+          "supports": "Original Michelin passenger-car guide: never deflate hot tyres; pressure rises with temperature; recheck and adjust cold. Full page read."
+        }
+      ]
+    },
+    {
+      "scenario_id": "wiper_split_rubber_before_rain_trip",
+      "proposal_sha256": "75863651741f8563d64282f44f2f4bbbf13152e8822ad0c3ede6a2c47f975904",
+      "compared_question_keys": [
+        "situation_ev_charge_cable_cut_insulation",
+        "situation_engine_oil_level_measurement_conditions",
+        "situation_wet_bend_below_posted_limit",
+        "situation_dual_carriageway_rain_100",
+        "situation_parking_solid_line_insufficient_passage"
+      ],
+      "novelty": "Other visibility questions concern interior condensation, frost removal, lighting. None tests worn wiper rubber despite adequate washer fluid.",
+      "result": "distinct learning objective after cross-category inventory and nearest question/explanation review",
+      "sources": [
+        {
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042266012/",
+          "kind": "official",
+          "checked_on": "2026-10-10",
+          "supports": "R316-4 requires sufficient effective windscreen wiping to see road distinctly; current article read. Wiper blade condition follows maintenance guidance."
+        }
+      ]
+    },
+    {
+      "scenario_id": "accident_emergency_call_information",
+      "proposal_sha256": "58c7b01714875ddeb34b32103dcd054fdd1b0146cd45302cf8a133ad55dd0b18",
+      "compared_question_keys": [
+        "safety_accident_first_actions",
+        "situation_motorway_sos_location",
+        "situation_ecall_accidental_connected_call",
+        "situation_signed_accident_report_no_front_changes",
+        "situation_safety_oil_pressure_stop_engine"
+      ],
+      "novelty": "Existing protect-alert-rescue sequence and SOSlocation advantage do not test verbal alert content or who ends the call. eCallaccidentmispress is false alarm, different objective.",
+      "result": "distinct learning objective after cross-category inventory and nearest question/explanation review",
+      "sources": [
+        {
+          "url": "https://www.interieur.gouv.fr/fr/Archives/Archives-de-la-rubrique-Ma-securite/Les-services-de-secours",
+          "kind": "official",
+          "checked_on": "2026-10-10",
+          "supports": "Interior emergency-call advice: precise address, reason/circumstances, casualty details, do not hang up first. Original page read; stable communication guidance."
+        }
+      ]
+    }
+  ],
+  "replacement_review": {
+    "scenario_id": "wrong_fuel_discovered_before_start",
+    "novelty": "Entire438-bank search for carburant/diesel/gazole/refuel/wrongfuel found only unrelated downhill and toll items. No current question tests misfuelling or avoiding circulating contaminated fuel. Different from oil-pressure urgent stop and coolant hot-cap precautions.",
+    "compared_question_keys": [
+      "situation_tyre_sidewall_bulge_before_trip",
+      "situation_coolant_hot_cap_wait",
+      "situation_dog_on_driver_lap_no_departure",
+      "situation_safety_oil_pressure_stop_engine",
+      "situation_parked_engine_unnecessary_idling"
+    ],
+    "source_access": "Peugeot official PDF opened; exact indexed excerpt of printed145 read. Subsequent PDF screenshot fetch timed out. No source image used.",
+    "result": "distinct"
+  }
+}

@@ -107,6 +107,25 @@ struct ReadinessReport: Hashable {
     /// Measured themes that are not yet solid — the actual work remaining.
     var belowBar: [ThemeReadiness] { measured.filter { $0.status != .solid } }
 
+    /// Offer a mixed introduction first. Once studying has begun, prioritise
+    /// known accuracy gaps, overdue revision, then the least-covered theme.
+    /// This chooses a next action without changing any readiness thresholds.
+    var recommendedTheme: ThemeReadiness? {
+        guard themes.contains(where: { $0.attempts > 0 }) else { return nil }
+        func priority(_ theme: ThemeReadiness) -> Int {
+            switch theme.status {
+            case .needsAccuracy: return 0
+            case .stale: return 1
+            default: return 2
+            }
+        }
+        return belowBar.min {
+            if priority($0) != priority($1) { return priority($0) < priority($1) }
+            if $0.coverage != $1.coverage { return $0.coverage < $1.coverage }
+            return $0.categoryId < $1.categoryId
+        }
+    }
+
     static let empty = ReadinessReport(themes: [], verdict: .noData, bankSize: 0, daysSinceLastStudied: nil)
 }
 

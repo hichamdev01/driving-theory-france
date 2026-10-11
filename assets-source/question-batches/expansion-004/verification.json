@@ -1,0 +1,28 @@
+{
+  "pack_sha256": "f6524510d4a9060d961299ca6aa48c7642546115bdc9585b93375a426342b53c",
+  "content_version": 96,
+  "python_tests": {
+    "result": "pass",
+    "notes": "47 workflow/content tests passed, including duplicate blocking, answer sets, stale approvals, interrupted import and safe retries.",
+    "path": "assets-source/question-batches/expansion-004/evidence/python-tests.log",
+    "sha256": "91170c0a8a82fd87896c5d0a438ff24c8e49d0d7e03aa1afb3975e3d8e26af37"
+  },
+  "ios_tests": {
+    "result": "pass",
+    "notes": "36 native tests passed after the plural-feedback repair, including content integrity, image decoding and progress preservation.",
+    "path": "assets-source/question-batches/expansion-004/evidence/ios-tests-plural-fix.log",
+    "sha256": "4b1182e93ab71613bad0ea8affa33a0dd901d6878e27cf8277b2437b1d0d0007"
+  },
+  "sqlite_check": {
+    "result": "pass",
+    "notes": "All428 questions match version96 and both translations; practice-history hash unchanged across all review sessions.",
+    "path": "assets-source/question-batches/expansion-004/evidence/sqlite-after-ui.json",
+    "sha256": "2bb413b3af9d4492654124e4f031af036a65180ee513d4b3fedbf924073d3117"
+  },
+  "simulator_review": {
+    "result": "pass",
+    "notes": "All ten French scenes/questions inspected; English multi-answer scoring, singular/plural feedback and long towing question checked. Partial and extra-wrong sets rejected.",
+    "path": "assets-source/question-batches/expansion-004/evidence/simulator-review.json",
+    "sha256": "059e746a4aac76e582b29714fe011726fbcfaceb91c3dca54a93b0c2bbf951b4"
+  }
+}

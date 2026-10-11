@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "42aa3dfacdd504abc11663305ea3eb011a11dbbf18eb4e41f88d81a944fef6fe",
+  "image_sha256": "9d4314b726b71d539f91b03fa0d8d31c61ff2e83e3119e3aed80a746a770cbec",
+  "result": "pass",
+  "notes": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+  "compared_question_keys": [
+    "situation_first_technical_inspection_timing",
+    "situation_technical_inspection_critical_next_day",
+    "situation_insurance_fva_no_green_sticker",
+    "situation_c13c_dead_end_pedestrian_exit",
+    "situation_motorway_freeflow_pay_72h"
+  ],
+  "checks": {
+    "signs_and_text": "Moving boxes are unlabelled, no address, registration document, road sign or invented readable text.",
+    "road_geometry": "Private gravel driveway beside house entrance; no public road lane, traffic signal or parking-rule implication.",
+    "vehicles_and_people": "Stationary hatchback with open boot, boxes inside and on porch. Wheels, lights, boot hinges and loading space plausible. No people; no claim car is travelling with unsecured load.",
+    "dashboard_and_equipment": "No controls or dashboard; open hatch and stationary loading objects coherent. No certificate displayed.",
+    "phone_size": "Home, boxes and open boot are clear at 390px. Deadline and owner status are given by wording.",
+    "french_and_english": "Both restrict case to owner registered in their name moving within France; neither includes leasing or importing from abroad. One-month deadline consistent.",
+    "all_four_options": "C one month. A one week and B six months invent deadlines; D incorrectly delays until sale. Both translations preserve the same alternatives.",
+    "official_rule": "Sources read and checked 2026-10-11; research-and-selection.json records facts and limitations. Owner moving withinFrance has1month to update vehicle registration address; leasing and return-from-abroad exceptions excluded. Source: https://www.service-public.gouv.fr/particuliers/vosdroits/F12118",
+    "novelty": "Existing administrative items concern insurance sticker, licence eyesight restriction, vehicle mass and inspections; no change-of-address deadline. All five saved nearest questions, including bilingual options/explanations, compared as recorded in research-and-selection.json; broader current bank screened.",
+    "full_resolution": "Inspected entire final staged JPEG 1672x941, plus 390px preview, against both translations and all four options. Rejected earlier candidates remain in history. No detected unresolved defect in this version."
+  }
+}

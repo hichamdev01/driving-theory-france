@@ -1,0 +1,42 @@
+[
+  {
+    "scenario_id": "abs_emergency_pedal_pulsation",
+    "native_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-2fb373bc-88b1-4c4b-ae39-62b226a639ae.png"
+  },
+  {
+    "scenario_id": "ecall_accidental_connected_call",
+    "native_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-76eebe8a-746d-4aaf-a696-c5f4d8f42d81.png"
+  },
+  {
+    "scenario_id": "ead_retest_stop_engine",
+    "native_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-e8c7a1c9-34a4-4428-ada5-022d7a20fb5d.png"
+  },
+  {
+    "scenario_id": "medicine_blurred_vision_during_drive",
+    "native_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-a18247d8-ca37-4381-91ce-714bba6344cf.png"
+  },
+  {
+    "scenario_id": "moving_procession_do_not_cut",
+    "native_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-9ce8a876-93fa-4849-8b66-27698afb4009.png"
+  },
+  {
+    "scenario_id": "yellow_broken_kerb_parking_only",
+    "native_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-294727ca-46ed-40f7-afec-3eb5ed114b02.png"
+  },
+  {
+    "scenario_id": "alternating_parking_change_evening",
+    "native_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-c27c7f41-d35a-4fa3-adc7-c1ce59abb365.png"
+  },
+  {
+    "scenario_id": "trailer_ptra_over3500_motorway90",
+    "native_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-d148b1a7-c64a-4ff9-962d-e0df0d3688e0.png"
+  },
+  {
+    "scenario_id": "long_caravan_facilitate_overtaking",
+    "native_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-b1033916-cdd3-4191-a401-7f96859acdb2.png"
+  },
+  {
+    "scenario_id": "motorway_tunnel_fire_evacuate",
+    "native_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-051a5eb5-6a7c-4116-8d3d-2c547ad17acb.png"
+  }
+]

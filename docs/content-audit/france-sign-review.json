@@ -175,6 +175,7 @@
     "M9z",
     "R11j",
     "R11v",
+    "R16",
     "R16td",
     "R21a",
     "R21c",
@@ -3046,6 +3047,910 @@
       "note": "Belted upright driver adjusts head restraint while stationary; restraint close behind head and top at least level with head. General passenger-car rule; no new primary sign-code learning target.",
       "reviewed_on": "2026-09-16",
       "scenario_id": "safety_head_restraint_neck_protection"
+    },
+    "situation_motorway_wrongway_alert_no_overtake": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "source_sha256": "3134a352b2c8291138bb4169fc8ad6951d35a9a2204c89319c6afea067561506",
+      "note": "Corrected scene reviewed: overhead VEHICULE A CONTRESENS / PRUDENCE is legible; learner in right travel lane, car ahead and empty left lane, no immediate collision. Removed incidental blue route marker. A alone follows operator guidance: no overtaking and use next accessible rest area. Both translations and all four options reviewed.",
+      "reviewed_on": "2026-09-21",
+      "scenario_id": "motorway_wrongway_alert_no_overtake"
+    },
+    "situation_motorway_planned_break_two_hours": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "source_sha256": "d38ab12eebd88abc4b8a683bdc3528724f85a9e37d0be2debfa2c106cb2ac7da",
+      "note": "Reviewed parked rest-area setting with marked bays, picnic area and separated motorway. Question supplies two hours and feeling alert rather than claiming they are visible. B is a preventive recommendation, not a statutory driving-time limit. Both translations and four options agree.",
+      "reviewed_on": "2026-09-21",
+      "scenario_id": "motorway_planned_break_two_hours"
+    },
+    "situation_speed_reaction_one_second_90": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "source_sha256": "16ffaeaf3319a7add5235c72569d508a9f9a2f2f44b68b04f5667fd651565360",
+      "note": "Reviewed blue car brake lamps on a dry divided road with visible gap; no misleading speed readout or distance annotation. Question explicitly supplies 90 km/h and one second; independently calculated 90/3.6=25. C uniquely correct; reaction and braking distances distinguished in FR/EN.",
+      "reviewed_on": "2026-09-21",
+      "scenario_id": "speed_reaction_one_second_90"
+    },
+    "situation_speed_double_braking_distance_quadruples": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "source_sha256": "04c3ac3aa5bd25b72d9fea9372bad0636afa4627eb4a59c04982c07b0c5848a0",
+      "note": "Reviewed ordinary passenger car on dry training track, cones away from vehicle path, no skid or racing situation. Question explicitly holds grip and braking conditions constant; D follows d=k*v^2, so d(2v)=4d(v). Both languages qualify approximation and distinguish braking from stopping distance.",
+      "reviewed_on": "2026-09-21",
+      "scenario_id": "speed_double_braking_distance_quadruples"
+    },
+    "situation_parking_camera_requires_direct_checks": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "source_sha256": "9d1157cb2944353a7f0770e22458a2552ecb499e84b16c75e7ca6bebcc101e90",
+      "note": "Full-resolution and 390px review: rear camera shows a clear bay with realistic converging guidelines; windshield view remains separate and plausible. Removed malformed peripheral numbered gauges by reframing around camera. Four options and both translations still require direct and mirror checks, not reliance on the camera alone.",
+      "reviewed_on": "2026-10-09",
+      "scenario_id": "parking_camera_requires_direct_checks"
+    },
+    "situation_parking_disc_actual_arrival": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "source_sha256": "6396f8f83ae25af12922dd6277de67ee008ee5714fe419a1a809cef0ecddd4f5",
+      "note": "Full-resolution and 390px review: French C1a P symbol above HEURE D’ARRIVÉE, downward arrow, one dial window, 14/15/16 in order with five intermediate ten-minute marks per hour and half-hour differentiation; outward readable, left-hand-drive wheel correct from exterior viewpoint. No question depends on reading the displayed number. Corrected missing P, previous tick spacing, and steering placement against the 6 December 2007 order.",
+      "reviewed_on": "2026-10-09",
+      "scenario_id": "parking_disc_actual_arrival"
+    },
+    "situation_overtake_signal_before_moving_left": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "source_sha256": "0454617e37f410865dc74bf4a2231c60708fe18f3e65c18912de37d1e41ef014",
+      "note": "Reviewed learner still in right lane behind white car, dashed centre line and unobstructed opposite lane. Question explicitly establishes completed safety checks and tests signal timing, not inferred mirror coverage. C before moving out is uniquely correct in both languages; explanation denies indicator priority.",
+      "reviewed_on": "2026-09-21",
+      "scenario_id": "overtake_signal_before_moving_left"
+    },
+    "situation_priority_officer_over_green_light": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "source_sha256": "20a6a6f6d6f224786593b1ed4e5bc5bd44573834e9f693f3e3e2a2f7ba10e27b",
+      "note": "Replaced the duplicated officer-versus-green-light objective with interpretation of the horizontal-arm gesture: both front and rear approaches stop. Inspected full image and 390px rendering: face-on officer with two level outstretched arms and natural hands, simple four-way junction, no conflicting lights/signs, clear opposite approach. Four options, D only, FR/EN explanations agree with Vienna Convention article 6(3)(b). Existing stable question key retained as a historical identifier.",
+      "reviewed_on": "2026-10-09",
+      "scenario_id": "priority_officer_over_green_light"
+    },
+    "situation_alcohol_carrying_breathalyser_optional": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "source_sha256": "5dee4629281a356406f27dc39bd3a93fcd4492332596c6cf5bb9b4915e8750f8",
+      "note": "Reviewed unbranded handheld breathalyser with blank display, folded vest and triangle case on parked-car passenger seat. No inferred test result. A reflects current Service Public equipment guidance; bilingual explanation distinguishes optional self-test from mandated ignition interlock.",
+      "reviewed_on": "2026-09-21",
+      "scenario_id": "alcohol_carrying_breathalyser_optional"
+    },
+    "situation_safety_oil_pressure_stop_engine": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "source_sha256": "85d275f63f5fa5f22e353c1f953b24aa88fd42e0de03be3b2fc3f26d9bd5c9aa",
+      "note": "Corrected close-up reviewed: red oil-can with droplet and STOP clearly visible on actual dashboard display; misleading auxiliary gauges removed from frame. Question supplies persistent warning while driving; B stops safely before switching engine off. Both languages and four options checked against manufacturer guidance.",
+      "reviewed_on": "2026-09-21",
+      "scenario_id": "safety_oil_pressure_stop_engine"
+    },
+    "situation_first_aid_conscious_waiting_care": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "first_aid_conscious_waiting_care",
+      "source_sha256": "9df0928f480f63810dd49f00b66a28830f2bce49836911360bc3acf176b35c6c",
+      "note": "Fresh full recheck after expanding English explanation to meet native content quality minimum; image unchanged and inspected again. No detected unresolved defects.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_coolant_hot_cap_wait": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "coolant_hot_cap_wait",
+      "source_sha256": "0148c48794e34b4106479692fffdb209f90c944093ba0db72000f55c43cc3b1b",
+      "note": "No detected unresolved defects after actual full-size JPEG and 390px inspections; original wording/rationale reviewed against saved sources.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_aac_accompanying_adult_alcohol": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "aac_accompanying_adult_alcohol",
+      "source_sha256": "ebdee943d209926881f95c00c6b3a164d78ab69787f151baf557c6ea4a1a6f2c",
+      "note": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_otc_medicine_not_driving_guarantee": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "otc_medicine_not_driving_guarantee",
+      "source_sha256": "cf2ea9919c9222e50eafd172aa50da6d74f1ae9f92fbd1013359b403c0866c5e",
+      "note": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_limiter_no_braking_downhill": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "limiter_no_braking_downhill",
+      "source_sha256": "92428a51033a1fcb6eb483af7c5b1b3fb90e35dd79f2101f80615cb8ce66614d",
+      "note": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_cmi_parking_card_passenger": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "cmi_parking_card_passenger",
+      "source_sha256": "72c8ca17de7dc957dfe5c574bde0cfbc1c521088cd3514ab4a9dc8edbf007d17",
+      "note": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_amber_beacon_alone_no_priority": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "amber_beacon_alone_no_priority",
+      "source_sha256": "e9cc72bbfe8bd8a8203cac53c05c302f298dd7cfebfe8f146069805d236eed02",
+      "note": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_short_left_turn_lane_arrow": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "short_left_turn_lane_arrow",
+      "source_sha256": "ff803c8f160474d208fdab448e04a322fceb6fd2eda7373f59d3e5be90268234",
+      "note": "Fresh full recheck after expanding English explanation to meet native content quality minimum; image unchanged and inspected again. No detected unresolved defects.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_night_following_before_overtake_dipped": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "night_following_before_overtake_dipped",
+      "source_sha256": "373184250ef1d4a0bff9919944dcd2e3e186e982d9c798384335a0d81efbfd92",
+      "note": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_motorway_blowout_initial_control": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "motorway_blowout_initial_control",
+      "source_sha256": "fd98730a0c0db2df78ff783102dc8a294e69e5b60ea98b28af58d49985be1e08",
+      "note": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_abs_emergency_pedal_pulsation": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "abs_emergency_pedal_pulsation",
+      "source_sha256": "a7da77a694d11fbd1cf891811f7798a8d1f7431f1e8cc85c2278f845ae7e2722",
+      "note": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_ecall_accidental_connected_call": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "ecall_accidental_connected_call",
+      "source_sha256": "02615b95397aa7eb4ae0b0a619513f0b7c62241d0b1564a118b839c40477e485",
+      "note": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_ead_retest_stop_engine": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "ead_retest_stop_engine",
+      "source_sha256": "a7feec304c97816777db94bbfc741962f7fe07f4dd284b5c45119c85f68a6d9c",
+      "note": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_medicine_blurred_vision_during_drive": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "medicine_blurred_vision_during_drive",
+      "source_sha256": "7d3f65d32054fa72c517260447c0d79027d998da7baf7249cc939bdc5d8e19c5",
+      "note": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_moving_procession_do_not_cut": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "moving_procession_do_not_cut",
+      "source_sha256": "d4c704580fd745ea5a1a4c43f3019a68a7331607124c400b882f329381bed023",
+      "note": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_yellow_broken_kerb_parking_only": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "yellow_broken_kerb_parking_only",
+      "source_sha256": "15edb5322e150279b87871b2a570d44ccbffb574245ee7dc15c0e6b14a523a80",
+      "note": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_alternating_parking_change_evening": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "alternating_parking_change_evening",
+      "source_sha256": "b61e5db3320a564736b964d30d22f05b2c6142f3ec78714412bb16bb89911730",
+      "note": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_trailer_ptra_over3500_motorway90": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "trailer_ptra_over3500_motorway90",
+      "source_sha256": "902a5e3a2e03402abcc89bfac156a0e062b73c6a0331a3181abf78176b60cca2",
+      "note": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_long_caravan_facilitate_overtaking": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "long_caravan_facilitate_overtaking",
+      "source_sha256": "8c565acb1097dfece0201b49aeb24272fe468b51481ef6d9079d116890565e33",
+      "note": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_motorway_tunnel_fire_evacuate": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "motorway_tunnel_fire_evacuate",
+      "source_sha256": "c1d4957e2a76243530a4c622dacaf3aed7a60caf6cc628a794e50426347b76cc",
+      "note": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+      "reviewed_on": "2026-10-09"
+    },
+    "situation_tyre_sidewall_bulge_before_trip": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "tyre_sidewall_bulge_before_trip",
+      "source_sha256": "a80fcdaa8b96e6838d8221e92e375582a2c2d82f4ced5098e9d0d5fa8fa78ffe",
+      "note": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_ev_charge_cable_cut_insulation": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "ev_charge_cable_cut_insulation",
+      "source_sha256": "4b165a508d7c3b3d7981679262c26096ce6e88816edf67dc95d2368c442ac7fe",
+      "note": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_windscreen_condensation_air_recirculation": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "windscreen_condensation_air_recirculation",
+      "source_sha256": "5b05225a31a6bde9665195e8c7f439a8ba4517d179af9520ae2540b7174aa718",
+      "note": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_first_technical_inspection_timing": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "first_technical_inspection_timing",
+      "source_sha256": "8155d03a8278eaf8c71e1b2033ae12776b77ce40388f519c271f54a90959cca1",
+      "note": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_cruise_control_rain_deactivate": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "cruise_control_rain_deactivate",
+      "source_sha256": "e6a0aa112c0a10a59f53720bb97b4123d0fa614ba9458c2facbf58931f0105a0",
+      "note": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_rail_trapped_break_exit_barrier": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "rail_trapped_break_exit_barrier",
+      "source_sha256": "cd17947b76366f32f24f7374e762ff269eace094a6a9631abfe5da019c0ff181",
+      "note": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_cmi_parking_local_twelve_hour_limit": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "cmi_parking_local_twelve_hour_limit",
+      "source_sha256": "71c75b60250382416e2d723cdd2db0a3414044c2c060a35314a6a06993eb9b7e",
+      "note": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_long_caravan_snow_overtaking_prohibited": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "long_caravan_snow_overtaking_prohibited",
+      "source_sha256": "46ab95590866b1eccd7d845b613484dfb30728576a414108b363d06a998f36f5",
+      "note": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_b13_ptac_not_actual_mass": {
+      "status": "mapped",
+      "primary_codes": [
+        "B13"
+      ],
+      "context_codes": [],
+      "scenario_id": "b13_ptac_not_actual_mass",
+      "source_sha256": "187acfe9845d66caca5c7b75c1ae90a2b255cc9d617f6068dc4cccab89a996c5",
+      "note": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_insurance_fva_no_green_sticker": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "insurance_fva_no_green_sticker",
+      "source_sha256": "98f7c8b3408b0b53c933e377336de674f2adc20048d98fa612caded74add695e",
+      "note": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_ead_restriction_borrowed_car": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "ead_restriction_borrowed_car",
+      "source_sha256": "12e73e05c3947a44ee8799e328eae2fb063f9579bdbb3ae812e6905f5b5bdba6",
+      "note": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_ead_personal_breath_no_substitute": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "ead_personal_breath_no_substitute",
+      "source_sha256": "18e15d011881fc781d51b0004297d2bf386f91a3e52257acebd30c0bd6b1436a",
+      "note": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_motorway_long_combination_two_right_lanes": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "motorway_long_combination_two_right_lanes",
+      "source_sha256": "c357f415ea9a096e63d00ce63b24f2819e2bfb66e368589e3d1d460aa62a6256",
+      "note": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_motorway_long_combinations_fifty_metre_gap": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "motorway_long_combinations_fifty_metre_gap",
+      "source_sha256": "117cc01ad2a9246bd95365f6d94a8d126f0393853a00255d0adcac002c9651d7",
+      "note": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_r16_right_arrow_conditional_passage": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "pregnancy_seatbelt_position",
+      "source_sha256": "f655dc13eda01f47e4df08a64473225acaa847a664d35b9651c9054d1b0594be",
+      "note": "Replacement objective and exact final JPEG fully reviewed. No detected unresolved defects; approval does not claim infallibility.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_b10a_combination_total_length": {
+      "status": "mapped",
+      "primary_codes": [
+        "B10a"
+      ],
+      "context_codes": [],
+      "scenario_id": "b10a_combination_total_length",
+      "source_sha256": "18caf9300a7c6b325f109d02bd755ae2696a841489a6cc1627226758bbb92af8",
+      "note": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_parked_engine_unnecessary_idling": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "parked_engine_unnecessary_idling",
+      "source_sha256": "ace4e8254ea44e7c2809621239457e2629a129e09663cf31ed3b5c371c5ac1c4",
+      "note": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_night_overtake_warning_headlights": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "night_overtake_warning_headlights",
+      "source_sha256": "854a46426bb48cf8b738546957a507a933b7c0e1aaf43a2b0d434f8037d5136e",
+      "note": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_temporary_spare_wheel_speed_label": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "temporary_spare_wheel_speed_label",
+      "source_sha256": "21e41acddf98f3fe7d05981c0a83dc6af402cde7c1fe952ef1ea7e8ac447474c",
+      "note": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_signed_accident_report_no_front_changes": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "signed_accident_report_no_front_changes",
+      "source_sha256": "584d8ff902c451025f043448f2691036e6aa2479996b2e623113ee8734f10b1a",
+      "note": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_loaded_car_exceeds_own_ptac": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "loaded_car_exceeds_own_ptac",
+      "source_sha256": "b7d00129a164d3f7d372cf5c290790c7fee6361591e3353eb05346b2b4196acd",
+      "note": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_licence_0106_contact_lenses": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "licence_0106_contact_lenses",
+      "source_sha256": "4e47193bdba8583b197d871bfaeee0ba77762c930808471482209b1122e8d077",
+      "note": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_abs_warning_stays_on_without_red_brake": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "abs_warning_stays_on_without_red_brake",
+      "source_sha256": "396e41b75612ae6b56d636fb9d6066b53757ae34e9372f209087bf2afe3aad93",
+      "note": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_mountain_winter_ms_without_3pmsf": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "mountain_winter_ms_without_3pmsf",
+      "source_sha256": "808a5d22d567a6f3b1384d87ab8f526b5a822dbed20befae90e455c71263f9b4",
+      "note": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_yellow_continuous_kerb_no_stopping": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "yellow_continuous_kerb_no_stopping",
+      "source_sha256": "1453c228a8bb1ab67af31964b8b05dbb1ceed8fa7ea464ea7d5c4f3e4b834aa0",
+      "note": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_speed_narrows_useful_visual_field": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "speed_narrows_useful_visual_field",
+      "source_sha256": "f25ce8f8be5cd7a28a8d60f15757438811842d2ca05040bdfbcc4a3205ecddd7",
+      "note": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_engine_oil_level_measurement_conditions": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "engine_oil_level_measurement_conditions",
+      "source_sha256": "b2aee947bfee14553a214c51278c61ee200a4b47070c2e6fe50c9d356c6790f9",
+      "note": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_blind_spot_monitor_not_clearance_guarantee": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "blind_spot_monitor_not_clearance_guarantee",
+      "source_sha256": "2b4fe975b478e9e53e5fe149bdab9a8897894c4a75c4022922a5c2346f4765ec",
+      "note": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_tunnel_radio_safety_messages": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "tunnel_radio_safety_messages",
+      "source_sha256": "96625deceb003cd327b1afdf0f5b2bdde0b3dee6a4cb233a23656ad58f7a3d56",
+      "note": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_electric_car_finished_charging_leave_bay": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "electric_car_finished_charging_leave_bay",
+      "source_sha256": "8a6a1cedc778b8f18000b96bf3b183e70133171aa4f1989080326171da30f53f",
+      "note": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_b7a_mopeds_exception_not_all_motor": {
+      "status": "mapped",
+      "primary_codes": [
+        "B7a"
+      ],
+      "context_codes": [],
+      "scenario_id": "b7a_mopeds_exception_not_all_motor",
+      "source_sha256": "6455d7e3727f23e48780663252505f362a9a2f4948fc42e9e3924fa1e1403dbb",
+      "note": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_c13d_dead_end_cycle_pedestrian_outlet": {
+      "status": "mapped",
+      "primary_codes": [
+        "C13d"
+      ],
+      "context_codes": [],
+      "scenario_id": "c13d_dead_end_cycle_pedestrian_outlet",
+      "source_sha256": "2bc0cabe62696180b3aaa97cd209cad10cc94f58a1b4324e02140d459ccbaa5b",
+      "note": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_b5b_police_checkpoint_required_stop": {
+      "status": "mapped",
+      "primary_codes": [
+        "B5b"
+      ],
+      "context_codes": [],
+      "scenario_id": "b5b_police_checkpoint_required_stop",
+      "source_sha256": "a6baaef561a79f43b3b31e525cff0fb3700803f47cc6e57841bc0cbb77775a49",
+      "note": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_alcohol_screening_then_evidential_measurement": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "alcohol_screening_then_evidential_measurement",
+      "source_sha256": "79f86fcafbd89eb164263f831d2846da6d21eb62c82dbb82ba0c9164afa76b47",
+      "note": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_probation_alcohol_six_point_deduction": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "probation_alcohol_six_point_deduction",
+      "source_sha256": "72ec03e85a9808e2c4f3669c88ee76273ca01a0a1c4d4b0e741648079075b931",
+      "note": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_wrong_fuel_discovered_before_start": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "wrong_fuel_discovered_before_start",
+      "source_sha256": "4e859e31a08fd70c633c8790cacb4e415ec7c423644e7a68151b6a7cbdbd657c",
+      "note": "Entire exact replacement JPEG inspected at1672x941 and390px. No detected unresolved defects; previous rejected versions retained.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_stopping_distance_reaction_plus_braking": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "stopping_distance_reaction_plus_braking",
+      "source_sha256": "27a91a26ae3df7ccd9fce3a2352445bb9031fc90ae7713c309f799384aca2486",
+      "note": "Entire exact replacement JPEG inspected at1672x941 and390px. No detected unresolved defects; previous rejected versions retained.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_hot_tyre_pressure_do_not_bleed": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "hot_tyre_pressure_do_not_bleed",
+      "source_sha256": "726bf8fd29e49f3d902d2e31c9aa85af01a83bb687210a12004856cbce20ea65",
+      "note": "Entire exact replacement JPEG inspected at1672x941 and390px. No detected unresolved defects; previous rejected versions retained.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_wiper_split_rubber_before_rain_trip": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "wiper_split_rubber_before_rain_trip",
+      "source_sha256": "03c11a77fcce5db50a383fd6501d782225cd3942b42c1e7e94557019c7b96eb4",
+      "note": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_accident_emergency_call_information": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "accident_emergency_call_information",
+      "source_sha256": "4d068759d469f2da80818ed93285355b91ef6984145ac849b8e4917fa0c3c488",
+      "note": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+      "reviewed_on": "2026-10-10"
+    },
+    "situation_officer_vertical_arm_clear_entered_junction": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "officer_vertical_arm_clear_entered_junction",
+      "source_sha256": "32356bf8aeabb70c17aaed4a85c3c0b1fd4da1666078176489edca15c9b6f119",
+      "note": "Entire exact replacement scene-2.jpg and390px phone-2.jpg inspected. No detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_mixed_line_return_after_legal_overtake": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "mixed_line_return_after_legal_overtake",
+      "source_sha256": "93bdcec541401ec2559447fb0fc4ba507d59574fd416bfaf3191608212d54863",
+      "note": "Entire exact replacement scene-2.jpg and390px phone-2.jpg inspected. No detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_paid_parking_time_exceeded_fps": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "paid_parking_time_exceeded_fps",
+      "source_sha256": "214e19cd523acedecec31ef6bb69dfb1b9a31be3afa88364f57cd3827dc21b00",
+      "note": "Exact staged JPEG inspected at full resolution and390px. No detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_cmi_barrier_carpark_fee_possible": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "cmi_barrier_carpark_fee_possible",
+      "source_sha256": "a64fc294bf7daad5532831ae1394827676034d82123122c5528e9978167a80ed",
+      "note": "Exact staged JPEG inspected at full resolution and390px. No detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_conscious_motorcyclist_leave_helmet_for_rescuers": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "conscious_motorcyclist_leave_helmet_for_rescuers",
+      "source_sha256": "398fce9c40590d1698d62db6f3990a82afe6c2f82eb3e0d1ff1cccd37a745687",
+      "note": "Entire exact replacement scene-2.jpg and390px phone-2.jpg inspected. No detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_motorway_stationary_queue_stay_inside": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "motorway_stationary_queue_stay_inside",
+      "source_sha256": "60b6abab056ec49ee6d9cc218836e275a7823c0ef2094278f0d5f01db864aa87",
+      "note": "Final correction (third after initial) passes full-resolution and phone review. Earlier failed markings retained in history. No detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_driver_mat_secure_no_stacking": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "driver_mat_secure_no_stacking",
+      "source_sha256": "3749d0c562ab0485f6a95464b4a6a08b9d903b6969005e661d81ec735fd41fce",
+      "note": "Exact staged JPEG inspected at full resolution and390px. No detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_borrowed_car_seat_then_mirrors_before_departure": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "borrowed_car_seat_then_mirrors_before_departure",
+      "source_sha256": "05b452e05f3635ef295c09ce2f508f4a83ee8485f5351f3f6a734acd16acd6bc",
+      "note": "Entire exact replacement scene-2.jpg and390px phone-2.jpg inspected. No detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_empty_roof_box_remove_after_holiday": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "empty_roof_box_remove_after_holiday",
+      "source_sha256": "34f2ecf8d250ce7bd20f4f7fdac8226c01667208b3b3f331c2443d7923f8bcdf",
+      "note": "Exact staged JPEG inspected at full resolution and390px. No detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_ecall_automatic_serious_crash_location": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "ecall_automatic_serious_crash_location",
+      "source_sha256": "ec6fed85534c0caec88d92a26da70314add83ad31a35b39f8b2dd6601a41f68e",
+      "note": "Exact staged JPEG inspected at full resolution and390px. No detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_one_way_left_turn_position": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "one_way_left_turn_position",
+      "source_sha256": "877234e50df42dd5b2f987c4b94ed43dbaa29a67e01a9472e3667c8c69ceb15b",
+      "note": "Exact staged JPEG inspected at original1672x941 and390px; no detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_wide_suv_narrow_crossing_yield": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "wide_suv_narrow_crossing_yield",
+      "source_sha256": "a263b9819084c3a09d89089d77be875513ac47ce377ab308176efc546a2c73f2",
+      "note": "Exact staged JPEG inspected at original1672x941 and390px; no detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_speed_time_gain_30km_110_130": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "speed_time_gain_30km_110_130",
+      "source_sha256": "99a614354d143a5c329f3a7c0319370d11c20231eaac42b17db0585e6bc88a8d",
+      "note": "Exact staged JPEG inspected at original1672x941 and390px; no detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_sign_reader_display_not_authority": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [
+        "B14"
+      ],
+      "scenario_id": "sign_reader_display_not_authority",
+      "source_sha256": "b909a95380e707610fbf6d67f259416dd2ff1f4ddf9ed5ca9c2b332f980ccfbf",
+      "note": "Full replacement inspected at original1672x941 and390px.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_alcohol_drugs_combined_nine_points": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "alcohol_drugs_combined_nine_points",
+      "source_sha256": "116600e6debb745eec0bff59d5f8b587ff41046238ee92e673681d8af47177e1",
+      "note": "Exact staged JPEG inspected at original1672x941 and390px; no detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_anaesthesia_discharge_no_driving": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "anaesthesia_discharge_no_driving",
+      "source_sha256": "eccd84aff4e82c1c5c3221853d7004ef30ce876d14ab71d72ecb3775e0692965",
+      "note": "Exact staged JPEG inspected at original1672x941 and390px; no detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_brake_fluid_below_min": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "brake_fluid_below_min",
+      "source_sha256": "362ea494588aa2f368f27ad258ca71752890338a54b5f049290863684eaa44d0",
+      "note": "Exact final scene-3.jpg inspected at1672x941and390px; broad clear gap belowMIN, no detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_flooded_road_do_not_enter": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "flooded_road_do_not_enter",
+      "source_sha256": "311c07ca2f87fdc57204921af9ddf0f9b4b2200c9c0a434e088bcc9d436616fd",
+      "note": "Exact staged JPEG inspected at original1672x941 and390px; no detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_child_never_alone_parked_heat": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "child_never_alone_parked_heat",
+      "source_sha256": "bcf2934fffdac7a7df7b3eddd6a66a5359c74db061e7a8ceded486324ad68f75",
+      "note": "Exact staged JPEG inspected at original1672x941 and390px; no detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_truck_right_indicator_not_overtake_permission": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "truck_right_indicator_not_overtake_permission",
+      "source_sha256": "5f3594de34da7c3d6efa1504bdfa97b830b5f0a1b81f507928b4fdacc76d3ef2",
+      "note": "Exact staged JPEG inspected at original1672x941 and390px; no detected unresolved defects.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_roundabout_left_lane_optional": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [
+        "AB3a"
+      ],
+      "scenario_id": "roundabout_left_lane_optional",
+      "source_sha256": "83a3ba0c34a7d5f1e8aa7a4d1e33249c3e5c7ae9bc785402000ddd2bb9ea5bdd",
+      "note": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_caravan_tight_right_turn_left_swing": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "caravan_tight_right_turn_left_swing",
+      "source_sha256": "08d7eb66aa5f476261056cae87f240e41ca29159da7f539d8cbdcb2818e998d2",
+      "note": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_motorway_filtering_two_leftmost_lanes": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "motorway_filtering_two_leftmost_lanes",
+      "source_sha256": "a64061aa5f5812f1d5da0d5cc5b0a0462cced553d91856e7e16dd61981180e7d",
+      "note": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_alcohol_accident_own_damage_exclusion": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "alcohol_accident_own_damage_exclusion",
+      "source_sha256": "f8889cab50b51e23c02b363133cff1ff9221dc43b561478f9102ee4b8f37cbd0",
+      "note": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_average_speed_camera_section": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "average_speed_camera_section",
+      "source_sha256": "1834bb44f92a697801e55244c8c8d2eb086d739fb009c411ee8ecb0713bcadb3",
+      "note": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_passenger_feet_dashboard_airbag": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "passenger_feet_dashboard_airbag",
+      "source_sha256": "d906f6e826c2a9ca9ffbfeb8df53d6be0d90cd83b4b1f01e57181c1d44ac1b8e",
+      "note": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_technical_inspection_critical_next_day": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "technical_inspection_critical_next_day",
+      "source_sha256": "a9acd87a475494e7accf032ff962872c33530fb48087b8ca9ea8d588d20a3c35",
+      "note": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_licence_b_750kg_trailer_over3500_sum": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "licence_b_750kg_trailer_over3500_sum",
+      "source_sha256": "fc8a48036c35890a4a19ed0a10211ae1d963940b29baccd7b0fa3cfdefb506eb",
+      "note": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_registration_address_change_one_month": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "registration_address_change_one_month",
+      "source_sha256": "0aede343f95da1191a31defbe96056b4fd9105ab10c5fc2beca05b15a3118053",
+      "note": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+      "reviewed_on": "2026-10-11"
+    },
+    "situation_ev_charging_no_extension_or_multisocket": {
+      "status": "no_sign_target",
+      "primary_codes": [],
+      "context_codes": [],
+      "scenario_id": "ev_charging_no_extension_or_multisocket",
+      "source_sha256": "57578657f9c2d2d5ccc8e871603d865e33f02a415764592bf5349e41242e8223",
+      "note": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+      "reviewed_on": "2026-10-11"
     }
   },
   "catalogue": {
@@ -4695,7 +5600,8 @@
     "R21c": "safety",
     "R24": "priority_rules",
     "SR4": "road_signs",
-    "XB14": "speed_limits"
+    "XB14": "speed_limits",
+    "R16": "priority_rules"
   },
   "scope": {
     "A13a": "ordinary_car_learning_target",
@@ -4831,7 +5737,13 @@
     "C24b": "ordinary_car_learning_target",
     "C24c": "ordinary_car_learning_target",
     "C29c": "ordinary_car_learning_target",
-    "C1a": "ordinary_car_learning_target"
+    "C1a": "ordinary_car_learning_target",
+    "B13": "ordinary_car_learning_target",
+    "R16": "ordinary_car_learning_target",
+    "B10a": "ordinary_car_learning_target",
+    "B7a": "ordinary_car_learning_target",
+    "C13d": "ordinary_car_learning_target",
+    "B5b": "ordinary_car_learning_target"
   },
   "scenario_review_groups": [
     {
@@ -5007,6 +5919,11 @@
       "title": "Code de la route, front load overhang",
       "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177086/2026-01-02",
       "use": "Article R312-22: ordinary passenger-car front-load rule checked 2026-09-13."
+    },
+    {
+      "title": "R16 directional anticipation signals, current IISR6",
+      "url": "https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_6epartie_vc_20250904.pdf",
+      "use": "2026-10-10: inspected figure6 p7 and article110-5; R16td horizontal right arrow positioned right of lower R11 lens. Added family R16 to registry to protect against repeated target. Rule crosschecked current1967article7."
     }
   ]
 }

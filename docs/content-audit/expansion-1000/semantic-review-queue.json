@@ -1,0 +1,1331 @@
+{
+  "checked_on": "2026-10-09",
+  "bank_sha256": "65c1b63fc7dfaee5118d0b0952c36db640f172bdcb633c3e2341c31d6a3176fc",
+  "scope": "Existing bank, separate from new-batch novelty checks",
+  "findings": [
+    {
+      "id": "a3a-same-objective",
+      "status": "confirmed_semantic_overlap",
+      "question_keys": [
+        "danger_sign_road_narrows_right",
+        "situation_road_narrows_right_a3a"
+      ],
+      "basis": "Both ask recognition of narrowing on the right, use left/both/one-way alternatives, and explain slowing/positioning. The extra action words do not create a distinct decision.",
+      "required_resolution": "Before final uniqueness acceptance, replace one learning situation with a researched uncovered objective and original reviewed image, retaining its stable key and user progress. Do not delete records or count rewording as a new situation."
+    },
+    {
+      "id": "exp004-r16-family-overlap",
+      "status": "resolved_verified",
+      "question_keys": [
+        "situation_yellow_arrow_red_light_turn",
+        "situation_r16_right_arrow_conditional_passage"
+      ],
+      "basis": "New R16 question repeated existing R16td conditional right-turn/yield objective; changing answer cardinality was not a new situation.",
+      "resolution": "Replaced latest item with pregnancy belt-routing question and original corrected image; retained key for database identity, new scenario_id pregnancy_seatbelt_position. Version97. Prior evidence and exact replacement review retained in expansion004 manifest.",
+      "workflow_fix": "R16 family/variant coverage blocks together; nearest retrieval uses distinctive bilingual stem/explanation words rather than predominantly shared question boilerplate."
+    },
+    {
+      "id": "stop-same-objective",
+      "status": "confirmed_semantic_overlap",
+      "question_keys": [
+        "situation_stop",
+        "situation_stop_ab4_realistic"
+      ],
+      "checked_on": "2026-10-11",
+      "basis": "Both ask the same approach decision: complete stop at the line and yield to priority-road traffic even if clear. Different wording, image realism and distractors do not establish a distinct learning situation.",
+      "evidence": {
+        "situation_stop": {
+          "question_sha256": "110018769a2fea39ab6f46a659a2092848e0304845348d91031aa6c492b71815",
+          "fr": {
+            "question_text": "Que devez-vous faire à cette intersection ?",
+            "answer_a": "Marquer l'arrêt à la ligne d'effet du STOP et céder le passage aux véhicules sur la route prioritaire.",
+            "answer_b": "Ralentir et passer sans marquer l'arrêt si la voie est libre.",
+            "answer_c": "S'arrêter uniquement s'il y a un panneau « Cédez le passage ».",
+            "answer_d": "Klaxonner avant de s'engager.",
+            "explanation": "Le panneau STOP impose toujours un arrêt complet à la ligne d'effet (ou à l'intersection si elle n'est pas marquée), même si la voie semble libre, avant de céder le passage à la route prioritaire."
+          },
+          "en": {
+            "question_text": "What must you do at this intersection?",
+            "answer_a": "Come to a complete stop at the stop line and give way to traffic on the priority road.",
+            "answer_b": "Slow down and proceed without stopping if the road is clear.",
+            "answer_c": "Stop only if there is also a 'Yield' sign.",
+            "answer_d": "Sound the horn before proceeding.",
+            "explanation": "A STOP sign always requires a complete stop at the marked line (or at the intersection if unmarked), even if the road looks clear, before giving way to traffic on the priority road."
+          }
+        },
+        "situation_stop_ab4_realistic": {
+          "question_sha256": "897876c30cf34d18c8808860414a93667e90ecbdaf24071b44c65f067a0f91e3",
+          "fr": {
+            "question_text": "À cette intersection, que dois-je faire ?",
+            "answer_a": "Je marque l'arrêt à la ligne et je cède le passage.",
+            "answer_b": "Je ralentis seulement si un véhicule arrive.",
+            "answer_c": "Je passe car la route semble libre.",
+            "answer_d": "Je m'arrête au niveau du panneau, après avoir franchi la ligne.",
+            "explanation": "Le panneau AB4 STOP impose un arrêt complet à la ligne d'arrêt. Après avoir contrôlé des deux côtés, je cède le passage aux véhicules circulant sur la route prioritaire et je repars uniquement lorsque la voie est libre."
+          },
+          "en": {
+            "question_text": "What must I do at this intersection?",
+            "answer_a": "Stop at the line and give way.",
+            "answer_b": "Slow down only if a vehicle is approaching.",
+            "answer_c": "Proceed because the road appears clear.",
+            "answer_d": "Stop beside the sign, even after crossing the line.",
+            "explanation": "The AB4 STOP sign requires a complete stop at the stop line. After checking both directions, I give way to traffic on the priority road and proceed only when it is safe."
+          }
+        }
+      },
+      "required_resolution": "Replace one situation with a researched uncovered objective and an original reviewed image, preserving stable question key and saved progress. Revalidate source, translations, answer cardinality, registry and iOS content after replacement. Do not delete/count-only/reword the duplicate."
+    },
+    {
+      "id": "slippery-action-same-objective",
+      "status": "confirmed_semantic_overlap",
+      "question_keys": [
+        "situation_slippery_rain",
+        "situation_slippery_road"
+      ],
+      "checked_on": "2026-10-11",
+      "basis": "Both ask the response to A4: progressive speed reduction, greater safety gaps and no abrupt controls. Rain in one stem does not change the tested decision. The separate recognition-only item is not included in this confirmed pair.",
+      "evidence": {
+        "situation_slippery_rain": {
+          "question_sha256": "44ff5882baad38c943774f56e6399812d6e076de04e5780c43825ff0fe723ef2",
+          "fr": {
+            "question_text": "Par temps de pluie, face à ce panneau, quelle attitude dois-je adopter ?",
+            "answer_a": "Réduire ma vitesse et éviter les manœuvres brusques.",
+            "answer_b": "Accélérer pour franchir la zone plus rapidement.",
+            "answer_c": "Freiner fortement en plein virage.",
+            "answer_d": "Rouler au centre de la chaussée.",
+            "explanation": "Le panneau A4 annonce une chaussée particulièrement glissante. Sous la pluie, je réduis progressivement mon allure, augmente mes distances et évite freinage ou braquage brusque."
+          },
+          "en": {
+            "question_text": "In rain, how should you react to this sign?",
+            "answer_a": "Reduce speed and avoid sudden manoeuvres.",
+            "answer_b": "Accelerate to leave the area quickly.",
+            "answer_c": "Brake hard while cornering.",
+            "answer_d": "Drive in the centre of the road.",
+            "explanation": "Sign A4 warns of a particularly slippery road. In rain, I reduce speed progressively, increase my safety gaps and avoid sudden braking or steering."
+          }
+        },
+        "situation_slippery_road": {
+          "question_sha256": "ba8f5fb76012be212b3c6de8f68725398126e91add125640f0f3d191fec1891f",
+          "fr": {
+            "question_text": "À l'approche de ce panneau, quelle attitude dois-je adopter ?",
+            "answer_a": "J'adapte ma vitesse et je redouble de prudence.",
+            "answer_b": "J'accélère si la route semble dégagée.",
+            "answer_c": "Je m'arrête immédiatement sur la chaussée.",
+            "answer_d": "Je freine brusquement dans les virages.",
+            "explanation": "Le panneau A4 annonce une chaussée particulièrement glissante. Je réduis progressivement mon allure, augmente mes distances et évite les commandes brusques."
+          },
+          "en": {
+            "question_text": "How should you react when approaching this sign?",
+            "answer_a": "Adjust speed and take extra care.",
+            "answer_b": "Accelerate if the road looks clear.",
+            "answer_c": "Stop immediately on the carriageway.",
+            "answer_d": "Brake sharply in bends.",
+            "explanation": "Sign A4 warns of a particularly slippery road. I reduce speed progressively, increase my safety gaps and avoid sudden control inputs."
+          }
+        }
+      },
+      "required_resolution": "Replace one situation with a researched uncovered objective and an original reviewed image, preserving stable question key and saved progress. Revalidate source, translations, answer cardinality, registry and iOS content after replacement. Do not delete/count-only/reword the duplicate."
+    },
+    {
+      "id": "crosswind-action-same-objective",
+      "status": "confirmed_semantic_overlap",
+      "question_keys": [
+        "situation_crosswind",
+        "situation_strong_crosswind"
+      ],
+      "checked_on": "2026-10-11",
+      "basis": "Both test reduce speed plus hold steering/anticipate deviations under crosswind. Splitting that combined response into two correct options does not create novelty. Recognition-only sign item requires a separate assessment.",
+      "evidence": {
+        "situation_crosswind": {
+          "question_sha256": "a26d0bf119fb394b85261c0db5a59b5dd82e1582ce3c94692401b97f6eb7494a",
+          "fr": {
+            "question_text": "Face à ce panneau, quelle attitude dois-je adopter ?",
+            "answer_a": "Réduire mon allure et maintenir fermement ma trajectoire.",
+            "answer_b": "Me rapprocher de la ligne médiane.",
+            "answer_c": "Accélérer pour sortir plus vite de la zone.",
+            "answer_d": "M'arrêter sur l'accotement.",
+            "explanation": "Le panneau A24 annonce un vent latéral. Je réduis mon allure, tiens fermement le volant et augmente ma vigilance en sortant d’une zone abritée ou en dépassant."
+          },
+          "en": {
+            "question_text": "How should you react to this sign?",
+            "answer_a": "Reduce speed and hold a steady course.",
+            "answer_b": "Move closer to the centre line.",
+            "answer_c": "Accelerate to leave the area quickly.",
+            "answer_d": "Stop on the shoulder.",
+            "explanation": "Sign A24 warns of crosswinds. I reduce speed, hold the steering wheel firmly and take extra care when leaving shelter or overtaking."
+          }
+        },
+        "situation_strong_crosswind": {
+          "question_sha256": "2f414617477529eeacaa571bb65637ce7d227121be55dc4c74982c67e4fa0896",
+          "fr": {
+            "question_text": "Dans cette zone de fort vent latéral, comment dois-je réagir ?",
+            "answer_a": "Je réduis mon allure.",
+            "answer_b": "Je tiens fermement le volant et j'anticipe les écarts.",
+            "answer_c": "J'accélère pour quitter la zone plus rapidement.",
+            "answer_d": "Je roule près de la ligne médiane.",
+            "explanation": "En présence d'un fort vent latéral, je réduis mon allure et je tiens fermement le volant en anticipant les écarts brusques, notamment dans les zones exposées et près des véhicules volumineux."
+          },
+          "en": {
+            "question_text": "How should I react in this strong crosswind area?",
+            "answer_a": "Reduce my speed.",
+            "answer_b": "Hold the steering wheel firmly and anticipate deviations.",
+            "answer_c": "Accelerate to leave the area more quickly.",
+            "answer_d": "Drive close to the centre line.",
+            "explanation": "In strong crosswinds, I reduce my speed and hold the steering wheel firmly while anticipating sudden deviations, particularly in exposed areas and near large vehicles."
+          }
+        }
+      },
+      "required_resolution": "Replace one situation with a researched uncovered objective and an original reviewed image, preserving stable question key and saved progress. Revalidate source, translations, answer cardinality, registry and iOS content after replacement. Do not delete/count-only/reword the duplicate."
+    },
+    {
+      "id": "b3-same-permitted-classes",
+      "status": "confirmed_semantic_overlap",
+      "question_keys": [
+        "situation_no_overtaking",
+        "situation_no_overtaking_basic"
+      ],
+      "checked_on": "2026-10-11",
+      "basis": "Both distinguish cars/lorries from cycles and two-wheel motor vehicles without sidecars under B3. Asking prohibited versus permitted alternatives and single versus multiple answers repeats the same classification. The 2.5km plate is mentioned but its extent is not the actual tested decision.",
+      "evidence": {
+        "situation_no_overtaking": {
+          "question_sha256": "bb3b9933dcb10ec29fce9eb6d7f75d84418f902a486ff9400b6958cde4e3d36c",
+          "fr": {
+            "question_text": "Sous réserve du marquage, de la visibilité et des distances de sécurité, que m’interdit ce panneau B3 ?",
+            "answer_a": "Dépasser une voiture ou un camion.",
+            "answer_b": "Dépasser un cycliste.",
+            "answer_c": "Dépasser un véhicule à moteur à deux roues sans side-car.",
+            "answer_d": "Circuler sur les 2,5 kilomètres indiqués.",
+            "explanation": "Le panneau B3 interdit de dépasser les véhicules à moteur autres que les deux-roues sans side-car. Il n’interdit pas, à lui seul, de dépasser un cycliste. Le panonceau M2 indique une étendue de 2,5 km ; tout dépassement encore autorisé reste soumis au marquage, à la visibilité et aux distances de sécurité."
+          },
+          "en": {
+            "question_text": "Subject to the road markings, visibility and safety distances, what does sign B3 prohibit?",
+            "answer_a": "Overtaking a car or lorry.",
+            "answer_b": "Overtaking a cyclist.",
+            "answer_c": "Overtaking a two-wheeled motor vehicle without a sidecar.",
+            "answer_d": "Driving along the indicated 2.5-kilometre section.",
+            "explanation": "Sign B3 prohibits overtaking motor vehicles other than two-wheelers without a sidecar. It does not, by itself, prohibit overtaking a cyclist. The M2 plate gives an extent of 2.5 km; any overtake that remains permitted is still subject to road markings, visibility and safety distances."
+          }
+        },
+        "situation_no_overtaking_basic": {
+          "question_sha256": "ca82797956500b2eca6a1dee0f3bb9b11d9c81996a2310c10f7e714dbcb1f20c",
+          "fr": {
+            "question_text": "Sous réserve des autres règles de dépassement, quelles manœuvres le panneau B3 autorise-t-il encore ?",
+            "answer_a": "Dépasser une voiture.",
+            "answer_b": "Dépasser un véhicule à moteur à deux roues sans side-car.",
+            "answer_c": "Dépasser un cycliste.",
+            "answer_d": "Dépasser un camion.",
+            "explanation": "B3 interdit de dépasser les véhicules à moteur autres que ceux à deux roues sans side-car. Un cycle n’est pas un véhicule à moteur. Les réponses B et C décrivent donc des dépassements que B3 n’interdit pas à lui seul ; ils ne sont possibles que si les autres règles de dépassement sont respectées."
+          },
+          "en": {
+            "question_text": "Subject to the other overtaking rules, which manoeuvres does sign B3 still allow?",
+            "answer_a": "Overtaking a car.",
+            "answer_b": "Overtaking a two-wheeled motor vehicle without a sidecar.",
+            "answer_c": "Overtaking a cyclist.",
+            "answer_d": "Overtaking a lorry.",
+            "explanation": "B3 prohibits overtaking motor vehicles other than two-wheelers without a sidecar. A cycle is not a motor vehicle. Answers B and C are therefore not prohibited by B3 itself, but the manoeuvres are possible only when all other overtaking rules are satisfied."
+          }
+        }
+      },
+      "required_resolution": "Replace one situation with a researched uncovered objective and an original reviewed image, preserving stable question key and saved progress. Revalidate source, translations, answer cardinality, registry and iOS content after replacement. Do not delete/count-only/reword the duplicate."
+    },
+    {
+      "id": "queue-last-hazards-same-objective",
+      "status": "confirmed_semantic_overlap",
+      "question_keys": [
+        "situation_motorway_last_in_slow_queue",
+        "situation_hazard_lights_strong_slowdown"
+      ],
+      "checked_on": "2026-10-11",
+      "basis": "Both explicitly place the driver last in a sharply slowing continuous queue and require hazard lights to warn following traffic. Motorway scenery does not create a new decision.",
+      "evidence": {
+        "situation_motorway_last_in_slow_queue": {
+          "question_sha256": "a33b32fa47b6970d73d3852c3ad6bc7d69d56a9d9da3ef753e546171b898d596",
+          "fr": {
+            "question_text": "Je suis le dernier véhicule d'une file qui ralentit fortement sur autoroute. Comment avertir les conducteurs derrière moi ?",
+            "answer_a": "Allumer uniquement le feu arrière de brouillard.",
+            "answer_b": "Allumer mes feux de détresse pendant que je risque de les surprendre.",
+            "answer_c": "Faire des appels de phare vers l'avant.",
+            "answer_d": "Klaxonner en continu.",
+            "explanation": "Le conducteur contraint de circuler momentanément à allure très réduite doit avertir les autres avec ses feux de détresse. Dans une file ininterrompue, cette obligation concerne le dernier véhicule : ici je les allume pour signaler le ralentissement, tout en freinant progressivement et en gardant mes distances."
+          },
+          "en": {
+            "question_text": "I am the last vehicle in a queue that is slowing sharply on the motorway. How should I warn drivers behind?",
+            "answer_a": "Switch on only the rear fog lamp.",
+            "answer_b": "Use my hazard lights while I may take them by surprise.",
+            "answer_c": "Flash the headlights toward the traffic ahead.",
+            "answer_d": "Sound the horn continuously.",
+            "explanation": "A driver temporarily forced to travel at a greatly reduced speed must warn other users with the hazard lights. In an uninterrupted queue that duty falls to the last vehicle, so I activate them to signal the slowdown while braking progressively and preserving distance."
+          }
+        },
+        "situation_hazard_lights_strong_slowdown": {
+          "question_sha256": "76e493bcccd360e3d7ae05736ea84953f6a78834542a7a6e78a8a374d5ba547b",
+          "fr": {
+            "question_text": "Un bouchon me contraint soudain à rouler très lentement et je suis le dernier de la file. Que dois-je faire ?",
+            "answer_a": "Klaxonner en continu.",
+            "answer_b": "Allumer mes feux de détresse pour avertir derrière.",
+            "answer_c": "Éteindre mes feux pour mieux voir les freinages.",
+            "answer_d": "M'arrêter sur l'accotement sans signaler.",
+            "explanation": "Le conducteur contraint de circuler momentanément à une allure fortement réduite doit avertir les usagers qu'il risque de surprendre avec ses feux de détresse. Dans une file continue, cette obligation concerne le dernier véhicule, ici le mien."
+          },
+          "en": {
+            "question_text": "A queue suddenly forces me to drive very slowly and I am the last vehicle in line. What must I do?",
+            "answer_a": "Sound the horn continuously.",
+            "answer_b": "Use my hazard lights to warn traffic behind.",
+            "answer_c": "Turn off my lights to see brake lights better.",
+            "answer_d": "Stop on the shoulder without signalling.",
+            "explanation": "A driver temporarily forced to travel at a greatly reduced speed must warn road users who may be surprised by using hazard lights. In a continuous queue, this obligation applies to the last vehicle, which is mine here."
+          }
+        }
+      },
+      "required_resolution": "Replace one situation with a researched uncovered objective and an original reviewed image, preserving stable question key and saved progress. Revalidate source, translations, answer cardinality, registry and iOS content after replacement. Do not delete/count-only/reword the duplicate."
+    },
+    {
+      "id": "a13a-recognition-repeat",
+      "status": "confirmed_semantic_overlap",
+      "checked_on": "2026-10-11",
+      "question_keys": [
+        "danger_sign_children",
+        "situation_children"
+      ],
+      "basis": "Both identify A13a as children likely near/in the road. Same recognition decision and same anticipation; new scenery and paraphrasing do not distinguish them.",
+      "evidence": {
+        "danger_sign_children": {
+          "question_sha256": "c106eed2dbac0f2e2bcf58642f5e0de611347d3145bf4702c50d784f3e81ea3c",
+          "fr": {
+            "question_text": "Quel danger ce panneau annonce-t-il ?",
+            "answer_a": "Une aire réservée aux piétons.",
+            "answer_b": "L'entrée d'une aire de jeux.",
+            "answer_c": "Un endroit fréquenté par les enfants.",
+            "answer_d": "Un accès interdit aux piétons.",
+            "explanation": "Ce panneau annonce un endroit fréquenté par les enfants, souvent à proximité d'une école. Je ralentis et je reste prêt à m'arrêter si un enfant s'engage sur la chaussée."
+          },
+          "en": {
+            "question_text": "What danger does this sign announce?",
+            "answer_a": "A pedestrian-only area.",
+            "answer_b": "A playground entrance.",
+            "answer_c": "A place frequently used by children.",
+            "answer_d": "Access prohibited to pedestrians.",
+            "explanation": "This sign warns of a place frequently used by children, often near a school. I slow down and remain ready to stop for a child entering the road."
+          }
+        },
+        "situation_children": {
+          "question_sha256": "5634bddcdf3cad6be151c8e1469cd631f7af52e2ec2ada56902cf716befbc3b4",
+          "fr": {
+            "question_text": "Que vous indique ce panneau ?",
+            "answer_a": "Passage pour piétons à l'approche.",
+            "answer_b": "Risque de traversée d'enfants (à proximité d'une école).",
+            "answer_c": "Aire de jeux à proximité.",
+            "answer_d": "Arrêt interdit à proximité de l'école.",
+            "explanation": "Il s’agit du panneau A13a « Endroit fréquenté par les enfants ». Il annonce un lieu où des enfants peuvent déboucher ou traverser, souvent près d’une école : je ralentis et reste prêt à m’arrêter."
+          },
+          "en": {
+            "question_text": "What does this sign indicate?",
+            "answer_a": "Pedestrian crossing ahead.",
+            "answer_b": "Children likely to cross the road (near a school).",
+            "answer_c": "Playground nearby.",
+            "answer_d": "No stopping allowed near the school.",
+            "explanation": "This is sign A13a, ‘Place frequented by children.’ It warns of a place where children may enter or cross the road, often near a school; I slow down and remain ready to stop."
+          }
+        }
+      },
+      "required_resolution": "Retain one objective and replace the other record(s) with researched uncovered situations and original reviewed images. Preserve stable keys and progress; rerun all content, registry, SQLite and simulator gates. A new numeral, answer order or scenery is not a replacement objective."
+    },
+    {
+      "id": "a15b-recognition-repeat",
+      "status": "confirmed_semantic_overlap",
+      "checked_on": "2026-10-11",
+      "question_keys": [
+        "danger_sign_wild_animals",
+        "situation_wild_animals"
+      ],
+      "basis": "Both identify A15b as possible wild-animal crossings, contrasting domestic animals and nature reserves.",
+      "evidence": {
+        "danger_sign_wild_animals": {
+          "question_sha256": "7fea291160f0ca65c3fd8b09b99537ea094b6e844fb1915bc530002cfcf80caf",
+          "fr": {
+            "question_text": "Quel danger ce panneau annonce-t-il ?",
+            "answer_a": "L'entrée d'une réserve naturelle.",
+            "answer_b": "Un passage d'animaux domestiques.",
+            "answer_c": "Une interdiction de chasser.",
+            "answer_d": "Un passage d'animaux sauvages.",
+            "explanation": "Ce panneau annonce un passage possible d'animaux sauvages. Je réduis mon allure, je surveille les bas-côtés et je reste prêt à freiner, notamment à l'aube, au crépuscule et la nuit."
+          },
+          "en": {
+            "question_text": "What danger does this sign announce?",
+            "answer_a": "A nature reserve entrance.",
+            "answer_b": "Domestic animals crossing.",
+            "answer_c": "Hunting is prohibited.",
+            "answer_d": "Wild animals crossing.",
+            "explanation": "This sign warns that wild animals may cross the road. I reduce my speed, scan the verges and remain ready to brake, especially at dawn, dusk and night."
+          }
+        },
+        "situation_wild_animals": {
+          "question_sha256": "ba8ccf891224d6338fa1e6e030e1bd6de69a64e41ea2f729a13d229dc69a04c7",
+          "fr": {
+            "question_text": "Que vous annonce ce panneau ?",
+            "answer_a": "Passage d'animaux sauvages.",
+            "answer_b": "Passage d'animaux domestiques.",
+            "answer_c": "Passage d'éleveurs.",
+            "answer_d": "Réserve naturelle interdite aux véhicules.",
+            "explanation": "Le panneau A15b annonce un passage possible d’animaux sauvages. Je ralentis, surveille les accotements et reste prêt à m’arrêter."
+          },
+          "en": {
+            "question_text": "What does this sign warn of?",
+            "answer_a": "Wild animals crossing.",
+            "answer_b": "Domestic animals crossing.",
+            "answer_c": "Farmers crossing.",
+            "answer_d": "A nature reserve closed to vehicles.",
+            "explanation": "Sign A15b warns that wild animals may cross. I slow down, watch the verges and remain ready to stop."
+          }
+        }
+      },
+      "required_resolution": "Retain one objective and replace the other record(s) with researched uncovered situations and original reviewed images. Preserve stable keys and progress; rerun all content, registry, SQLite and simulator gates. A new numeral, answer order or scenery is not a replacement objective."
+    },
+    {
+      "id": "a18-recognition-repeat",
+      "status": "confirmed_semantic_overlap",
+      "checked_on": "2026-10-11",
+      "question_keys": [
+        "danger_sign_two_way_traffic",
+        "situation_two_way_traffic"
+      ],
+      "basis": "Both identify the start/resumption of two-way traffic, with the same one-way/priority misconception alternatives.",
+      "evidence": {
+        "danger_sign_two_way_traffic": {
+          "question_sha256": "e1c2fe10003bff5a318ccf062b403b8987dae1e92ae5773e9e1e6e484dee4d05",
+          "fr": {
+            "question_text": "Que vous annonce ce panneau ?",
+            "answer_a": "Je suis prioritaire sur les véhicules venant en sens inverse.",
+            "answer_b": "Le début d'une route à sens unique.",
+            "answer_c": "Une obligation de dépasser.",
+            "answer_d": "Le début ou la reprise d'une circulation à double sens.",
+            "explanation": "Ce panneau annonce le début ou la reprise d'une circulation à double sens. Je serre à droite et je reste attentif aux véhicules venant en sens inverse."
+          },
+          "en": {
+            "question_text": "What does this sign announce?",
+            "answer_a": "I have priority over oncoming traffic.",
+            "answer_b": "A one-way road begins.",
+            "answer_c": "Overtaking is compulsory.",
+            "answer_d": "Two-way traffic begins or resumes.",
+            "explanation": "This sign warns that traffic will run in both directions. I keep to the right and remain alert for oncoming vehicles."
+          }
+        },
+        "situation_two_way_traffic": {
+          "question_sha256": "d361b446f05a1281923fe3266188098635ce60a9f8155e694e84417dd56c64e9",
+          "fr": {
+            "question_text": "Que m’annonce le panneau A18 ?",
+            "answer_a": "Le début ou la reprise d’une circulation à double sens.",
+            "answer_b": "Le début d’une chaussée à sens unique.",
+            "answer_c": "Une priorité sur les véhicules venant en sens inverse.",
+            "answer_d": "Une voie réservée au dépassement.",
+            "explanation": "Le panneau A18, placé au début de la zone concernée, annonce le début ou la reprise d’une circulation à double sens. Je reste à droite et j’anticipe les véhicules venant en face."
+          },
+          "en": {
+            "question_text": "What does sign A18 announce?",
+            "answer_a": "The start or resumption of two-way traffic.",
+            "answer_b": "The start of a one-way road.",
+            "answer_c": "Priority over oncoming vehicles.",
+            "answer_d": "A lane reserved for overtaking.",
+            "explanation": "Sign A18 is placed at the start of the affected section and announces the start or resumption of two-way traffic. I keep right and anticipate oncoming vehicles."
+          }
+        }
+      },
+      "required_resolution": "Retain one objective and replace the other record(s) with researched uncovered situations and original reviewed images. Preserve stable keys and progress; rerun all content, registry, SQLite and simulator gates. A new numeral, answer order or scenery is not a replacement objective."
+    },
+    {
+      "id": "a19-recognition-repeat",
+      "status": "confirmed_semantic_overlap",
+      "checked_on": "2026-10-11",
+      "question_keys": [
+        "danger_sign_falling_rocks",
+        "situation_falling_rocks"
+      ],
+      "basis": "Both identify falling rocks and rocks possibly already on carriageway. The separate 2km item tests an extent plate and is excluded from this confirmed pair.",
+      "evidence": {
+        "danger_sign_falling_rocks": {
+          "question_sha256": "b1d9efdcbaaf9d6291581e835e45d14e1fe0b6e14b121566efc35d4d649d7c7e",
+          "fr": {
+            "question_text": "Quel danger ce panneau annonce-t-il ?",
+            "answer_a": "Un risque de chute de pierres et de pierres présentes sur la chaussée.",
+            "answer_b": "Des projections de gravillons dues à des travaux.",
+            "answer_c": "L'entrée d'une carrière.",
+            "answer_d": "Une chaussée déformée.",
+            "explanation": "Ce panneau annonce un risque de chute de pierres et la présence possible de pierres sur la chaussée. Je ralentis, je surveille la route et j'évite de m'arrêter dans la zone exposée."
+          },
+          "en": {
+            "question_text": "What danger does this sign announce?",
+            "answer_a": "Falling rocks and stones on the road.",
+            "answer_b": "Loose chippings from roadworks.",
+            "answer_c": "A quarry entrance.",
+            "answer_d": "An uneven road.",
+            "explanation": "This sign warns of a risk of falling rocks and stones already lying on the road. I slow down, watch the carriageway and avoid stopping in the exposed area."
+          }
+        },
+        "situation_falling_rocks": {
+          "question_sha256": "af6239fe96f36b18c30b3ecdbf2f8ea88bba6404a1f400fa854d15f5720cc1be",
+          "fr": {
+            "question_text": "Que vous indique ce panneau ?",
+            "answer_a": "Un risque de chute de pierres sur une section de 2 km.",
+            "answer_b": "Un risque de chute de pierres ou de pierres déjà présentes sur la chaussée.",
+            "answer_c": "La présence certaine de pierres sur la chaussée.",
+            "answer_d": "Une carrière interdite aux véhicules.",
+            "explanation": "Le panneau A19 annonce un risque de chute de pierres ou la présence possible sur la route de pierres déjà tombées. Je réduis mon allure, j’augmente la distance de sécurité et j’évite les écarts brusques."
+          },
+          "en": {
+            "question_text": "What does this sign indicate?",
+            "answer_a": "Risk of falling rocks over a 2 km section.",
+            "answer_b": "A risk of falling rocks or rocks already present on the carriageway.",
+            "answer_c": "Rocks are definitely present on the road.",
+            "answer_d": "A quarry closed to vehicles.",
+            "explanation": "Sign A19 warns of falling rocks or rocks that may already have fallen onto the road. I reduce speed, increase the safety gap and avoid sudden swerves."
+          }
+        }
+      },
+      "required_resolution": "Retain one objective and replace the other record(s) with researched uncovered situations and original reviewed images. Preserve stable keys and progress; rerun all content, registry, SQLite and simulator gates. A new numeral, answer order or scenery is not a replacement objective."
+    },
+    {
+      "id": "a1a-recognition-repeat",
+      "status": "confirmed_semantic_overlap",
+      "checked_on": "2026-10-11",
+      "question_keys": [
+        "danger_sign_bend_right",
+        "situation_bend_right"
+      ],
+      "basis": "Both identify a dangerous right bend rather than a mandatory right turn.",
+      "evidence": {
+        "danger_sign_bend_right": {
+          "question_sha256": "2cad111f4daedd2d1eb36d72d5c8cd29ccfc171b676b9448b46b07a5af74daee",
+          "fr": {
+            "question_text": "Quel danger ce panneau annonce-t-il ?",
+            "answer_a": "Un virage dangereux à gauche.",
+            "answer_b": "Une obligation de serrer à droite.",
+            "answer_c": "Un carrefour à sens giratoire.",
+            "answer_d": "Un virage dangereux à droite.",
+            "explanation": "Ce panneau annonce un virage dangereux à droite. Je réduis mon allure avant le virage et je reste correctement placé sur ma voie."
+          },
+          "en": {
+            "question_text": "What danger does this sign announce?",
+            "answer_a": "A dangerous bend to the left.",
+            "answer_b": "An obligation to keep right.",
+            "answer_c": "A roundabout ahead.",
+            "answer_d": "A dangerous bend to the right.",
+            "explanation": "This sign warns of a dangerous bend to the right. I reduce my speed before entering the bend and remain correctly positioned in my lane."
+          }
+        },
+        "situation_bend_right": {
+          "question_sha256": "15364234f32e309f10e2636f637136408a295b1468bc45bb33eeb99cbedf53a5",
+          "fr": {
+            "question_text": "Que vous indique ce panneau ?",
+            "answer_a": "Un virage dangereux à droite.",
+            "answer_b": "Une obligation de tourner à droite.",
+            "answer_c": "La fin d'une limitation de vitesse.",
+            "answer_d": "Chaussée glissante.",
+            "explanation": "Les panneaux triangulaires à bordure rouge sont des panneaux de danger et non d'obligation — celui-ci (A1a) annonce un virage à droite, il faut donc ralentir et ne pas couper le virage."
+          },
+          "en": {
+            "question_text": "What does this sign indicate?",
+            "answer_a": "A dangerous bend to the right.",
+            "answer_b": "A mandatory turn to the right.",
+            "answer_c": "The end of a speed restriction.",
+            "answer_d": "Slippery road ahead.",
+            "explanation": "Triangular signs with a red border are danger warnings, not obligations — this one (A1a) warns of a bend to the right ahead, so the driver should slow down and not cut the corner."
+          }
+        }
+      },
+      "required_resolution": "Retain one objective and replace the other record(s) with researched uncovered situations and original reviewed images. Preserve stable keys and progress; rerun all content, registry, SQLite and simulator gates. A new numeral, answer order or scenery is not a replacement objective."
+    },
+    {
+      "id": "a1c-recognition-repeat",
+      "status": "confirmed_semantic_overlap",
+      "checked_on": "2026-10-11",
+      "question_keys": [
+        "danger_sign_double_bend_right",
+        "situation_double_bend_right"
+      ],
+      "basis": "Both identify successive bends with first right; no new condition or driving decision.",
+      "evidence": {
+        "danger_sign_double_bend_right": {
+          "question_sha256": "2c535a60015b09fd68c14399f95527e982ebce54e2f74abee3087eb396b5d5e4",
+          "fr": {
+            "question_text": "Que vous annonce ce panneau ?",
+            "answer_a": "Un seul virage à droite.",
+            "answer_b": "Une succession de virages dont le premier est à droite.",
+            "answer_c": "Une succession de virages dont le premier est à gauche.",
+            "answer_d": "La fin d'une route sinueuse.",
+            "explanation": "Ce panneau annonce une succession de virages dont le premier est à droite. Je ralentis avant le premier virage et je reste prêt à adapter ma trajectoire aux suivants."
+          },
+          "en": {
+            "question_text": "What does this sign warn you about?",
+            "answer_a": "A single bend to the right.",
+            "answer_b": "A series of bends, the first to the right.",
+            "answer_c": "A series of bends, the first to the left.",
+            "answer_d": "The end of a winding section.",
+            "explanation": "This sign announces a series of bends, with the first bend to the right. I slow down before the first bend and remain prepared for the following changes of direction."
+          }
+        },
+        "situation_double_bend_right": {
+          "question_sha256": "2bbf6e1c457cbbd1a0ad806ab5262baaa7df31923e3604cd6acbf9add0d41171",
+          "fr": {
+            "question_text": "Que vous annonce ce panneau ?",
+            "answer_a": "Une succession de virages, le premier à droite.",
+            "answer_b": "Une succession de virages, le premier à gauche.",
+            "answer_c": "Une route sinueuse sur plusieurs kilomètres.",
+            "answer_d": "Une obligation de tourner deux fois.",
+            "explanation": "Le panneau A1c annonce une succession de virages dont le premier est à droite. Je réduis mon allure avant le premier virage et conserve une trajectoire sûre."
+          },
+          "en": {
+            "question_text": "What does this sign warn of?",
+            "answer_a": "Successive bends, the first to the right.",
+            "answer_b": "Successive bends, the first to the left.",
+            "answer_c": "A winding road for several kilometres.",
+            "answer_d": "A requirement to turn twice.",
+            "explanation": "Sign A1c warns of successive bends, the first to the right. I reduce speed before the first bend and maintain a safe line."
+          }
+        }
+      },
+      "required_resolution": "Retain one objective and replace the other record(s) with researched uncovered situations and original reviewed images. Preserve stable keys and progress; rerun all content, registry, SQLite and simulator gates. A new numeral, answer order or scenery is not a replacement objective."
+    },
+    {
+      "id": "a1d-recognition-repeat",
+      "status": "confirmed_semantic_overlap",
+      "checked_on": "2026-10-11",
+      "question_keys": [
+        "danger_sign_double_bend_left",
+        "situation_double_bend_left"
+      ],
+      "basis": "Both identify successive bends with first left; no new condition or driving decision.",
+      "evidence": {
+        "danger_sign_double_bend_left": {
+          "question_sha256": "f1e79c787c4133f6119bd9415025d5010e9619e00fd08f91e3042a3e74db07f2",
+          "fr": {
+            "question_text": "Que vous annonce ce panneau ?",
+            "answer_a": "Un seul virage à gauche.",
+            "answer_b": "Une succession de virages dont le premier est à droite.",
+            "answer_c": "Une succession de virages dont le premier est à gauche.",
+            "answer_d": "Un rétrécissement de la chaussée des deux côtés.",
+            "explanation": "Ce panneau annonce une succession de virages dont le premier est à gauche. Je réduis mon allure et je reste vigilant pendant toute la section sinueuse."
+          },
+          "en": {
+            "question_text": "What does this sign warn you about?",
+            "answer_a": "A single bend to the left.",
+            "answer_b": "A series of bends, the first to the right.",
+            "answer_c": "A series of bends, the first to the left.",
+            "answer_d": "A road narrowing on both sides.",
+            "explanation": "This sign announces a series of bends, with the first bend to the left. I reduce my speed and stay alert throughout the winding section."
+          }
+        },
+        "situation_double_bend_left": {
+          "question_sha256": "2eaff6d6ff4231b0cc2f60a76fd81a1596edf711022cf828d5e64850aaca1c75",
+          "fr": {
+            "question_text": "Que vous indique ce panneau ?",
+            "answer_a": "Succession de virages, le premier à droite.",
+            "answer_b": "Succession de virages, le premier à gauche.",
+            "answer_c": "Chaussée sinueuse.",
+            "answer_d": "Virage obligatoire à gauche.",
+            "explanation": "Le panneau A1d annonce une succession de virages dont le premier est à gauche. Je ralentis avant le premier virage et conserve une trajectoire sûre."
+          },
+          "en": {
+            "question_text": "What does this sign indicate?",
+            "answer_a": "Successive bends, the first to the right.",
+            "answer_b": "Successive bends, the first to the left.",
+            "answer_c": "A winding road.",
+            "answer_d": "A compulsory left turn.",
+            "explanation": "Sign A1d warns of successive bends, the first to the left. I slow down before the first bend and maintain a safe line."
+          }
+        }
+      },
+      "required_resolution": "Retain one objective and replace the other record(s) with researched uncovered situations and original reviewed images. Preserve stable keys and progress; rerun all content, registry, SQLite and simulator gates. A new numeral, answer order or scenery is not a replacement objective."
+    },
+    {
+      "id": "a21-recognition-repeat",
+      "status": "confirmed_semantic_overlap",
+      "checked_on": "2026-10-11",
+      "question_keys": [
+        "danger_sign_cyclists",
+        "situation_cyclists_crossing"
+      ],
+      "basis": "Both identify cyclists entering from either side, contrasted with compulsory cycle track and cyclist prohibition.",
+      "evidence": {
+        "danger_sign_cyclists": {
+          "question_sha256": "b825c050c7855ac2bcfd3742cfc3e58ead444fb62ed0b0c282af3394b5ac883d",
+          "fr": {
+            "question_text": "Quel danger ce panneau annonce-t-il ?",
+            "answer_a": "Une piste cyclable obligatoire.",
+            "answer_b": "Un accès interdit aux cyclistes.",
+            "answer_c": "Un débouché de cyclistes venant de droite ou de gauche.",
+            "answer_d": "Un stationnement réservé aux vélos.",
+            "explanation": "Ce panneau annonce que des cyclistes peuvent déboucher ou traverser depuis la droite ou la gauche. Je réduis mon allure, je contrôle les voies latérales et je conserve une distance de sécurité."
+          },
+          "en": {
+            "question_text": "What danger does this sign announce?",
+            "answer_a": "A mandatory cycle lane.",
+            "answer_b": "Access prohibited to cyclists.",
+            "answer_c": "Cyclists may enter or cross from the right or left.",
+            "answer_d": "A bicycle parking area.",
+            "explanation": "This sign warns that cyclists may enter or cross the road from either side. I reduce my speed, check the side roads and maintain a safe distance."
+          }
+        },
+        "situation_cyclists_crossing": {
+          "question_sha256": "ada854ab679a72c72719d8dce357d8784b484380f1bb3e807fb1670da3276e7c",
+          "fr": {
+            "question_text": "Ce panneau m'annonce :",
+            "answer_a": "Un débouché de cyclistes venant de droite ou de gauche.",
+            "answer_b": "Une piste cyclable obligatoire.",
+            "answer_c": "L'interdiction de circuler à bicyclette.",
+            "answer_d": "Une voie réservée aux cyclomoteurs.",
+            "explanation": "Le panneau A21 annonce un débouché de cyclistes venant de droite ou de gauche. Je ralentis et recherche activement les cycles avant de poursuivre."
+          },
+          "en": {
+            "question_text": "This sign warns of:",
+            "answer_a": "Cyclists entering from the right or left.",
+            "answer_b": "A compulsory cycle path.",
+            "answer_c": "Cycling prohibited.",
+            "answer_d": "A lane reserved for mopeds.",
+            "explanation": "Sign A21 warns that cyclists may emerge from the right or left. I slow down and actively look for cycles before continuing."
+          }
+        }
+      },
+      "required_resolution": "Retain one objective and replace the other record(s) with researched uncovered situations and original reviewed images. Preserve stable keys and progress; rerun all content, registry, SQLite and simulator gates. A new numeral, answer order or scenery is not a replacement objective."
+    },
+    {
+      "id": "a7-recognition-repeat",
+      "status": "confirmed_semantic_overlap",
+      "checked_on": "2026-10-11",
+      "question_keys": [
+        "danger_sign_level_crossing_barriers",
+        "situation_level_crossing"
+      ],
+      "basis": "Both identify a railway crossing with barriers, contrasted with one without barriers.",
+      "evidence": {
+        "danger_sign_level_crossing_barriers": {
+          "question_sha256": "0106a039f90ad942e86995b6d9da19c52c1384b735263b017a8e7c8b2d618ab3",
+          "fr": {
+            "question_text": "Que vous annonce ce panneau ?",
+            "answer_a": "Une traversée de voies de tramways.",
+            "answer_b": "Un passage à niveau sans barrière.",
+            "answer_c": "Un passage à niveau muni de barrières ou de demi-barrières.",
+            "answer_d": "Un pont mobile.",
+            "explanation": "Ce panneau annonce un passage à niveau muni de barrières ou de demi-barrières. Je ralentis et je respecte les feux, le signal sonore et les barrières."
+          },
+          "en": {
+            "question_text": "What does this sign announce?",
+            "answer_a": "A tramway crossing.",
+            "answer_b": "A level crossing without barriers.",
+            "answer_c": "A level crossing with barriers or half-barriers.",
+            "answer_d": "A movable bridge.",
+            "explanation": "This sign warns of a level crossing equipped with barriers or half-barriers. I slow down and obey the lights, audible warning and barriers."
+          }
+        },
+        "situation_level_crossing": {
+          "question_sha256": "4a655a0675d3881b394bb8a778ea0c0e036d462ce37167e3ccc5a81634988b7a",
+          "fr": {
+            "question_text": "Que vous indique ce panneau ?",
+            "answer_a": "Un passage à niveau avec barrières.",
+            "answer_b": "Un passage à niveau sans barrière.",
+            "answer_c": "Une voie ferrée sans croisement.",
+            "answer_d": "Un ralentisseur à l'approche.",
+            "explanation": "Ce panneau A7, représentant une barrière rayée, annonce un passage à niveau équipé de barrières — il faut ralentir et être prêt à s'arrêter si les barrières s'abaissent."
+          },
+          "en": {
+            "question_text": "What does this sign indicate?",
+            "answer_a": "A level crossing with barriers.",
+            "answer_b": "A level crossing without barriers.",
+            "answer_c": "A railway line with no crossing.",
+            "answer_d": "A speed bump ahead.",
+            "explanation": "This A7 sign, showing a striped barrier pictogram, warns of an upcoming level crossing equipped with gates — approach with caution and be ready to stop if the barriers are lowering."
+          }
+        }
+      },
+      "required_resolution": "Retain one objective and replace the other record(s) with researched uncovered situations and original reviewed images. Preserve stable keys and progress; rerun all content, registry, SQLite and simulator gates. A new numeral, answer order or scenery is not a replacement objective."
+    },
+    {
+      "id": "a8-recognition-repeat",
+      "status": "confirmed_semantic_overlap",
+      "checked_on": "2026-10-11",
+      "question_keys": [
+        "danger_sign_level_crossing_no_barrier",
+        "situation_level_crossing_no_barrier"
+      ],
+      "basis": "Both identify a railway crossing without barriers/half-barriers, contrasted with barrier and tramway alternatives.",
+      "evidence": {
+        "danger_sign_level_crossing_no_barrier": {
+          "question_sha256": "1600a09686db292027e9609a86054996528014098bd574aa69c066ab2fda36cc",
+          "fr": {
+            "question_text": "Que vous annonce ce panneau ?",
+            "answer_a": "Une traversée de voies de tramways.",
+            "answer_b": "L'entrée d'un tunnel.",
+            "answer_c": "Un passage à niveau muni de barrières.",
+            "answer_d": "Un passage à niveau sans barrière ni demi-barrière.",
+            "explanation": "Ce panneau annonce un passage à niveau sans barrière ni demi-barrière. J'approche lentement, je regarde et j'écoute attentivement, puis je traverse uniquement si aucun train n'arrive."
+          },
+          "en": {
+            "question_text": "What does this sign announce?",
+            "answer_a": "A tramway crossing.",
+            "answer_b": "A tunnel entrance.",
+            "answer_c": "A level crossing with barriers.",
+            "answer_d": "A level crossing without barriers or half-barriers.",
+            "explanation": "This sign warns of a level crossing without barriers or half-barriers. I approach slowly, look and listen carefully, and cross only when no train is approaching."
+          }
+        },
+        "situation_level_crossing_no_barrier": {
+          "question_sha256": "db2c10857803e92f85b9913af72bf91e7326bff62ee8b2464422186c343735d9",
+          "fr": {
+            "question_text": "Que vous annonce ce panneau ?",
+            "answer_a": "Un passage à niveau sans barrière ni demi-barrière.",
+            "answer_b": "Un passage à niveau avec barrière.",
+            "answer_c": "Un passage de tramway.",
+            "answer_d": "Une gare ferroviaire.",
+            "explanation": "Le panneau A8 annonce un passage à niveau sans barrière ni demi-barrière. Je ralentis, regarde et écoute des deux côtés et ne franchis que si la voie est libre."
+          },
+          "en": {
+            "question_text": "What does this sign warn of?",
+            "answer_a": "A level crossing without a barrier or half-barrier.",
+            "answer_b": "A level crossing with a barrier.",
+            "answer_c": "A tramway crossing.",
+            "answer_d": "A railway station.",
+            "explanation": "Sign A8 warns of a level crossing without gates or half-gates. I slow down, look and listen both ways, and cross only when the track is clear."
+          }
+        }
+      },
+      "required_resolution": "Retain one objective and replace the other record(s) with researched uncovered situations and original reviewed images. Preserve stable keys and progress; rerun all content, registry, SQLite and simulator gates. A new numeral, answer order or scenery is not a replacement objective."
+    },
+    {
+      "id": "ab25-recognition-repeat",
+      "status": "confirmed_semantic_overlap",
+      "checked_on": "2026-10-11",
+      "question_keys": [
+        "danger_sign_roundabout",
+        "situation_roundabout_ab25"
+      ],
+      "basis": "Both identify AB25 roundabout ahead. Added yielding wording in one correct option does not change the sign-recognition decision.",
+      "evidence": {
+        "danger_sign_roundabout": {
+          "question_sha256": "11b8f6550524a8db39f488037f8bce991aa52444750c03dcc2f7b45fb8d1fe8e",
+          "fr": {
+            "question_text": "Que vous annonce ce panneau ?",
+            "answer_a": "La fin d'un carrefour à sens giratoire.",
+            "answer_b": "Une obligation de tourner immédiatement à droite.",
+            "answer_c": "Un carrefour à sens giratoire ; je devrai céder le passage aux usagers circulant sur l’anneau.",
+            "answer_d": "Je suis toujours prioritaire en entrant.",
+            "explanation": "Le panneau AB25 annonce un carrefour à sens giratoire. Tout conducteur qui l’aborde doit céder le passage aux usagers circulant sur la chaussée qui ceinture le carrefour."
+          },
+          "en": {
+            "question_text": "What does this sign announce?",
+            "answer_a": "The end of a roundabout.",
+            "answer_b": "A mandatory right turn immediately.",
+            "answer_c": "A roundabout; I must give way to users circulating on it.",
+            "answer_d": "I always have priority when entering.",
+            "explanation": "Sign AB25 warns of a roundabout. Every driver approaching it must give way to users circulating on the carriageway around the central island."
+          }
+        },
+        "situation_roundabout_ab25": {
+          "question_sha256": "d3596543433785094fce87713d47819a99288c629b3cbd6441c48713591b4999",
+          "fr": {
+            "question_text": "Que vous annonce ce panneau ?",
+            "answer_a": "Un carrefour à sens giratoire à l'approche.",
+            "answer_b": "Une obligation de tourner immédiatement à droite.",
+            "answer_c": "Une intersection où je suis toujours prioritaire.",
+            "answer_d": "La fin d'un carrefour à sens giratoire.",
+            "explanation": "Le panneau AB25 annonce un carrefour à sens giratoire. Je ralentis, choisis ma voie si nécessaire et je cède le passage aux usagers qui circulent déjà sur l’anneau."
+          },
+          "en": {
+            "question_text": "What does this sign warn you about?",
+            "answer_a": "A roundabout is ahead.",
+            "answer_b": "You must turn right immediately.",
+            "answer_c": "You always have priority at the next intersection.",
+            "answer_d": "The roundabout has ended.",
+            "explanation": "Sign AB25 warns of a roundabout. I slow down, choose the appropriate lane when necessary, and give way to users already circulating on the roundabout."
+          }
+        }
+      },
+      "required_resolution": "Retain one objective and replace the other record(s) with researched uncovered situations and original reviewed images. Preserve stable keys and progress; rerun all content, registry, SQLite and simulator gates. A new numeral, answer order or scenery is not a replacement objective."
+    },
+    {
+      "id": "b14-number-only-variants",
+      "status": "confirmed_semantic_overlap",
+      "checked_on": "2026-10-11",
+      "question_keys": [
+        "situation_speed_limit_110",
+        "situation_speed_limit_50",
+        "situation_speed_limit_70"
+      ],
+      "basis": "All three read the posted B14 numeral as a maximum. Different numbers and road scenery do not create a distinct decision. Probationary personal cap and temporary works restriction are separate conditions and excluded.",
+      "evidence": {
+        "situation_speed_limit_110": {
+          "question_sha256": "37bea25f9f00ad1834ee2cafa79a11b7ffc131f06289728ffc1ae7d63f730d33",
+          "fr": {
+            "question_text": "Quelle est la vitesse maximale autorisée sur cette autoroute ?",
+            "answer_a": "90 km/h",
+            "answer_b": "110 km/h",
+            "answer_c": "130 km/h",
+            "answer_d": "La vitesse dépend uniquement de la circulation.",
+            "explanation": "Le panneau B14 interdit de dépasser 110 km/h à partir de son implantation. Cette limite reste un plafond : je ralentis davantage si les conditions l’exigent."
+          },
+          "en": {
+            "question_text": "What is the maximum speed permitted on this motorway?",
+            "answer_a": "90 km/h",
+            "answer_b": "110 km/h",
+            "answer_c": "130 km/h",
+            "answer_d": "The speed depends only on traffic conditions.",
+            "explanation": "Sign B14 prohibits exceeding 110 km/h from where it is placed. This limit remains a ceiling: I slow down further when conditions require it."
+          }
+        },
+        "situation_speed_limit_50": {
+          "question_sha256": "0e4eebf08beada16f0b71bde5e6b16ed8ab8e6551f024104d9b068e61c22984f",
+          "fr": {
+            "question_text": "À partir de ce panneau, quelle est la vitesse maximale autorisée ?",
+            "answer_a": "50 km/h",
+            "answer_b": "70 km/h",
+            "answer_c": "30 km/h",
+            "answer_d": "La limitation ne s'applique qu'aux poids lourds.",
+            "explanation": "Le panneau B14 fixe ici une vitesse maximale de 50 km/h. Je peux devoir circuler moins vite selon la visibilité, le trafic ou l’adhérence."
+          },
+          "en": {
+            "question_text": "From this sign, what is the maximum permitted speed?",
+            "answer_a": "50 km/h",
+            "answer_b": "70 km/h",
+            "answer_c": "30 km/h",
+            "answer_d": "The limit applies only to heavy goods vehicles.",
+            "explanation": "Sign B14 sets a maximum speed of 50 km/h here. I may need to drive more slowly depending on visibility, traffic or grip."
+          }
+        },
+        "situation_speed_limit_70": {
+          "question_sha256": "f70dfacf523387f8507f6ada330cde92e406973271fdfe85d272cf00a5d835d2",
+          "fr": {
+            "question_text": "Quelle est la vitesse maximale autorisée sur cette route ?",
+            "answer_a": "70 km/h",
+            "answer_b": "80 km/h",
+            "answer_c": "90 km/h",
+            "answer_d": "La limitation ne vaut que par temps de pluie.",
+            "explanation": "Le panneau B14 fixe ici la vitesse maximale à 70 km/h. Cette valeur est un plafond et non une allure à atteindre."
+          },
+          "en": {
+            "question_text": "What is the maximum permitted speed on this road?",
+            "answer_a": "70 km/h",
+            "answer_b": "80 km/h",
+            "answer_c": "90 km/h",
+            "answer_d": "The limit applies only in rain.",
+            "explanation": "Sign B14 sets the maximum speed here at 70 km/h. This value is a ceiling, not a speed to aim for, and I reduce it further when conditions require it."
+          }
+        }
+      },
+      "required_resolution": "Retain one objective and replace the other record(s) with researched uncovered situations and original reviewed images. Preserve stable keys and progress; rerun all content, registry, SQLite and simulator gates. A new numeral, answer order or scenery is not a replacement objective."
+    }
+  ],
+  "other_groups_to_review": [
+    {
+      "id": "slippery-road",
+      "question_keys": [
+        "situation_slippery_rain",
+        "situation_slippery_road",
+        "danger_sign_slippery_road"
+      ],
+      "note": "Same sign/hazard; compare learning objective before creating another scenario.",
+      "review_status": "comparison_recorded_in_findings"
+    },
+    {
+      "id": "crosswind",
+      "question_keys": [
+        "situation_crosswind",
+        "situation_strong_crosswind",
+        "danger_sign_crosswind"
+      ],
+      "note": "Same sign/hazard; recognition and action questions overlap without being exact duplicates.",
+      "review_status": "comparison_recorded_in_findings"
+    },
+    {
+      "id": "stop",
+      "question_keys": [
+        "situation_stop",
+        "situation_stop_ab4_realistic"
+      ],
+      "note": "Two STOP approach situations already exist.",
+      "review_status": "comparison_recorded_in_findings"
+    },
+    {
+      "id": "no-overtaking",
+      "question_keys": [
+        "situation_no_overtaking",
+        "situation_no_overtaking_basic"
+      ],
+      "note": "B3 already has extent and basic restriction variants.",
+      "review_status": "comparison_recorded_in_findings"
+    },
+    {
+      "id": "alcohol-general-limit",
+      "question_keys": [
+        "alcohol_general_limit",
+        "situation_breath_test_general_limit"
+      ],
+      "note": "Blood and breath versions address the same threshold concept in different units."
+    },
+    {
+      "id": "alcohol-probationary-limit",
+      "question_keys": [
+        "alcohol_probationary_limit",
+        "situation_breath_test_probationary_limit"
+      ],
+      "note": "Text and scene questions already cover the probationary threshold."
+    },
+    {
+      "id": "queue-hazard-lights",
+      "question_keys": [
+        "situation_motorway_last_in_slow_queue",
+        "situation_hazard_lights_strong_slowdown"
+      ],
+      "note": "Related warning-light actions in a sudden queue; compare before repeating.",
+      "review_status": "comparison_recorded_in_findings"
+    }
+  ],
+  "remaining_sign_code_groups": [
+    {
+      "code": "A13a",
+      "question_keys": [
+        "danger_sign_children",
+        "situation_children",
+        "situation_children_action"
+      ],
+      "review_status": "partial_overlap",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Two recognition items confirmed duplicate; action-only item still needs stronger novelty analysis against the full bank."
+    },
+    {
+      "code": "A14",
+      "question_keys": [
+        "danger_sign_permanent_warning",
+        "danger_sign_unspecified_danger"
+      ],
+      "review_status": "distinct_tested_decisions",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Generic A14 meaning differs from reading the specific SORTIE DE CAMIONS plate; the latter requires anticipating an emerging truck, not merely recognising other danger."
+    },
+    {
+      "code": "A15a1",
+      "question_keys": [
+        "danger_sign_cattle",
+        "situation_domestic_animals"
+      ],
+      "review_status": "needs_objective_strengthening",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Recognition versus generic slow/ready-to-stop response share the same sign-only situation. Do not certify uniqueness without a genuinely distinct applied decision."
+    },
+    {
+      "code": "A15b",
+      "question_keys": [
+        "danger_sign_wild_animals",
+        "situation_wild_animals",
+        "situation_wild_animals_action"
+      ],
+      "review_status": "partial_overlap",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Recognition pair confirmed duplicate; generic action item remains to strengthen or compare with animal-response items elsewhere."
+    },
+    {
+      "code": "A16",
+      "question_keys": [
+        "danger_sign_steep_descent",
+        "situation_steep_descent"
+      ],
+      "review_status": "distinct_tested_decisions",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Recognition of downhill gradient versus gear/engine-braking decision; the latter rejects neutral and engine-off coasting, a separate equipment-use concept."
+    },
+    {
+      "code": "A17",
+      "question_keys": [
+        "danger_sign_traffic_lights",
+        "situation_traffic_lights_ahead"
+      ],
+      "review_status": "needs_objective_strengthening",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Action prompt adds only generic anticipation of stopping; compare/strengthen beyond recognition of lights ahead before final uniqueness claim."
+    },
+    {
+      "code": "A18",
+      "question_keys": [
+        "danger_sign_two_way_traffic",
+        "situation_two_way_traffic"
+      ],
+      "review_status": "confirmed_overlap",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Both recognition records repeat; see finding a18-recognition-repeat."
+    },
+    {
+      "code": "A19",
+      "question_keys": [
+        "danger_sign_falling_rocks",
+        "situation_falling_rocks",
+        "situation_falling_rocks_2km"
+      ],
+      "review_status": "partial_overlap",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Plain recognition pair repeated. M2 2km item tests extent rather than distance-to-hazard, so it must be compared against other M2 questions across sign codes."
+    },
+    {
+      "code": "A1a",
+      "question_keys": [
+        "danger_sign_bend_right",
+        "situation_bend_right"
+      ],
+      "review_status": "confirmed_overlap",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Both right-bend recognition records repeat."
+    },
+    {
+      "code": "A1c",
+      "question_keys": [
+        "danger_sign_double_bend_right",
+        "situation_double_bend_right"
+      ],
+      "review_status": "confirmed_overlap",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Both first-right successive-bend recognition records repeat."
+    },
+    {
+      "code": "A1d",
+      "question_keys": [
+        "danger_sign_double_bend_left",
+        "situation_double_bend_left"
+      ],
+      "review_status": "confirmed_overlap",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Both first-left successive-bend recognition records repeat. The broader winding-road distractor may also be true, strengthening replacement priority."
+    },
+    {
+      "code": "A20",
+      "question_keys": [
+        "danger_sign_quayside",
+        "situation_quayside"
+      ],
+      "review_status": "distinct_tested_decisions",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Meaning of quayside warning differs from lateral positioning beside an exposed edge, including the unsafe keep-right response."
+    },
+    {
+      "code": "A21",
+      "question_keys": [
+        "danger_sign_cyclists",
+        "situation_cyclists_crossing"
+      ],
+      "review_status": "confirmed_overlap",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Both cyclist-emergence sign recognition records repeat."
+    },
+    {
+      "code": "A23",
+      "question_keys": [
+        "danger_sign_aircraft",
+        "situation_aircraft"
+      ],
+      "review_status": "needs_objective_strengthening",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Stay vigilant because aircraft may fly low largely restates the sign meaning. Stronger applied decision needed before final uniqueness certification."
+    },
+    {
+      "code": "A24",
+      "question_keys": [
+        "danger_sign_crosswind",
+        "situation_crosswind",
+        "situation_strong_crosswind"
+      ],
+      "review_status": "partial_overlap",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Two response items confirmed repeated. Recognition is separate from control response, but generic action needs distinct scenario if retained."
+    },
+    {
+      "code": "A2a",
+      "question_keys": [
+        "danger_sign_uneven_road",
+        "situation_uneven_road"
+      ],
+      "review_status": "needs_objective_strengthening",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Generic slow-down action is not yet a distinct applied situation from recognising uneven road."
+    },
+    {
+      "code": "A2b",
+      "question_keys": [
+        "danger_sign_speed_hump",
+        "situation_speed_hump"
+      ],
+      "review_status": "needs_objective_strengthening",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Slow because hump ahead restates the warning with generic caution. Compare with C27/hump questions too."
+    },
+    {
+      "code": "A4",
+      "question_keys": [
+        "danger_sign_slippery_road",
+        "situation_slippery_rain",
+        "situation_slippery_road"
+      ],
+      "review_status": "partial_overlap",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Two action items confirmed repeated; recognition/action distinction alone is not a whole-bank novelty certificate."
+    },
+    {
+      "code": "A7",
+      "question_keys": [
+        "danger_sign_level_crossing_barriers",
+        "situation_level_crossing"
+      ],
+      "review_status": "confirmed_overlap",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Both barrier-crossing recognition records repeat."
+    },
+    {
+      "code": "A8",
+      "question_keys": [
+        "danger_sign_level_crossing_no_barrier",
+        "situation_level_crossing_no_barrier"
+      ],
+      "review_status": "confirmed_overlap",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Both unbarriered-crossing recognition records repeat."
+    },
+    {
+      "code": "A9b",
+      "question_keys": [
+        "danger_sign_tramway_crossing",
+        "situation_tramway_crossing"
+      ],
+      "review_status": "needs_objective_strengthening",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Watch for a tram and adjust speed is mainly sign meaning with generic caution. Compare with actual tram-priority scenarios."
+    },
+    {
+      "code": "AB1",
+      "question_keys": [
+        "danger_sign_priority_to_right",
+        "situation_priority_right_ab1"
+      ],
+      "review_status": "needs_objective_strengthening",
+      "reviewed_on": "2026-10-11",
+      "comparison": "An actual vehicle from right adds an applied priority choice, but must be compared with unmarked priority-right and wide-road scenarios elsewhere."
+    },
+    {
+      "code": "AB25",
+      "question_keys": [
+        "danger_sign_roundabout",
+        "situation_roundabout_ab25"
+      ],
+      "review_status": "confirmed_overlap",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Both AB25 recognition items repeat."
+    },
+    {
+      "code": "AB3a",
+      "question_keys": [
+        "situation_flashing_amber_yield_sign",
+        "situation_yield"
+      ],
+      "review_status": "distinct_tested_decisions",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Yield-sign stopping requirement differs from how a flashing amber signal interacts with a yield sign; separate hierarchy/priority condition. Incorrect option B has a translation precision issue noted separately."
+    },
+    {
+      "code": "AB4",
+      "question_keys": [
+        "situation_stop",
+        "situation_stop_ab4_realistic"
+      ],
+      "review_status": "confirmed_overlap",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Complete stop plus give-way decision repeated; existing stop-same-objective finding."
+    },
+    {
+      "code": "B12",
+      "question_keys": [
+        "situation_height_limit_2_8m",
+        "situation_height_limit_3_5m"
+      ],
+      "review_status": "distinct_tested_decisions",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Sign dimension recognition (height, not width/length) differs from including roof box/load in the measured overall height. The difference is not solely 2.8 versus 3.5."
+    },
+    {
+      "code": "B14",
+      "question_keys": [
+        "situation_probationary_posted_90_max_80",
+        "situation_roadworks_b14_50_over_general_80",
+        "situation_speed_limit_110",
+        "situation_speed_limit_50",
+        "situation_speed_limit_70"
+      ],
+      "review_status": "partial_overlap",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Three plain posted-number items duplicate. Probationary cap and works/general-limit conflict add distinct conditions; still compare with other speed-rule questions."
+    },
+    {
+      "code": "B3",
+      "question_keys": [
+        "situation_no_overtaking",
+        "situation_no_overtaking_basic"
+      ],
+      "review_status": "confirmed_overlap",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Permitted versus prohibited vehicle classes are inverse framings of one rule; recorded b3-same-permitted-classes."
+    },
+    {
+      "code": "B6a1",
+      "question_keys": [
+        "situation_ev_charger_blocked_parking",
+        "situation_no_parking"
+      ],
+      "review_status": "distinct_tested_decisions",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Ordinary brief passenger stop under parking ban differs from obstruction of a charging point by a combustion car."
+    },
+    {
+      "code": "C111",
+      "question_keys": [
+        "situation_c111_tunnel_day_dipped_headlights",
+        "situation_tunnel"
+      ],
+      "review_status": "distinct_tested_decisions",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Compulsory dipped beams differs from reading M2 tunnel length. The length item needs cross-code M2 comparison, not repeated lamp reasoning."
+    },
+    {
+      "code": "C18",
+      "question_keys": [
+        "situation_priority_c18_bridge",
+        "situation_priority_oncoming"
+      ],
+      "review_status": "distinct_tested_decisions",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Clear passage with priority differs from already-committed opposing vehicle that cannot safely pass; changed occupancy condition reverses required entry decision."
+    },
+    {
+      "code": "R11v",
+      "question_keys": [
+        "situation_fixed_amber_safe_stop",
+        "situation_flashing_amber_no_priority_sign",
+        "situation_traffic_lights_blocked"
+      ],
+      "review_status": "distinct_tested_decisions",
+      "reviewed_on": "2026-10-11",
+      "comparison": "Steady amber safe stopping, flashing amber without priority signage, and green with blocked exit are three distinct signal/traffic conditions, not cosmetic variants."
+    }
+  ],
+  "completion_gate": "Final 1,000-unique claim requires this queue resolved with recorded comparisons. Shared codes alone are review candidates, not automatic duplicates.",
+  "last_incremental_review_on": "2026-10-11",
+  "last_incremental_pack_sha256": "8103f8c47032696f66f70b1d689817a89b2b76a38c0b1262d2bcfa42495ccc83",
+  "wording_followups": [
+    {
+      "question_key": "alcohol_probationary_limit",
+      "status": "needs_reviewed_repair",
+      "note": "French asks taux maximal 0.2g/L although the neighbouring breath-threshold question treats equality as prohibited; rewrite as threshold from which driving is forbidden, keeping text-only status, after source verification."
+    },
+    {
+      "question_key": "situation_flashing_amber_yield_sign",
+      "status": "needs_reviewed_repair",
+      "note": "Incorrect B says reste à 30km/h in French but stay below 30km/h in English; align the exact condition on the next reviewed wording repair."
+    },
+    {
+      "question_key": "situation_double_bend_left",
+      "status": "needs_reviewed_repair",
+      "note": "Option C merely says winding road/chaussée sinueuse and may be true alongside the more precise B; replacement already required by semantic overlap."
+    }
+  ]
+}

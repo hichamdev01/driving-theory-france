@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "a9224782bb7731178cd2c89d754d70c55dac951f9130eb44450a3fd0f2108a71",
+  "image_sha256": "2d2ad1c92827019f5b5adb0bcfc626ccf39add099fa993ed0d2d444bc0d239dd",
+  "result": "pass",
+  "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+  "compared_question_keys": [
+    "situation_motorway_tunnel_fire_evacuate",
+    "situation_motorway_sos_location",
+    "situation_rear_passenger_seatbelt",
+    "situation_motorway_exit_lane_deadline",
+    "situation_b9b_car_interpretation"
+  ],
+  "checks": {
+    "signs_and_text": "Exact display FM 107.7 MHz; six plain preset marks; no extra labels or faulty heater symbols after correction.",
+    "road_geometry": "Dashboard close-up; this tunnel and announced frequency established by stem.",
+    "vehicles_and_people": "No driver manipulating controls; passenger operation specified in both languages.",
+    "dashboard_and_equipment": "Two radio knobs, six buttons, coherent vents and surrounding physical trim; heater panel excluded.",
+    "phone_size": "Frequency legible at390px; no claim that107.7 works in every tunnel.",
+    "official_rule": "Sources actually read during authoring: CETUnote24pp3-5operatorcaninsertsecuritymessagesinrebroadcastFM; p10CE22announcesfrequencies. Appliesonlyequippedtunnel,notallfrequencies.",
+    "novelty": "Receiving tunnel operator radio messages, distinct from outgoing SOS location or evacuation after fire. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+    "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No driver manipulating controls; passenger operation specified in both languages. Two radio knobs, six buttons, coherent vents and surrounding physical trim; heater panel excluded.",
+    "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Frequency legible at390px; no claim that107.7 works in every tunnel.",
+    "all_four_options": "Correct A. A: The network carries safety messages.; B: Radio does not replace lighting.; C: AnFMreceiver does not send location.; D: No priority is granted."
+  }
+}

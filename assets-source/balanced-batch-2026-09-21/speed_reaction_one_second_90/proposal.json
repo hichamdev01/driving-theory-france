@@ -1,0 +1,49 @@
+{
+  "sequence": 3,
+  "scenario_id": "speed_reaction_one_second_90",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives or prepares a normal passenger car; no specialist vehicle operating rules.",
+  "learning_objective": "Calculate distance travelled before braking during reaction time",
+  "references": [
+    "https://www.securite-routiere.gouv.fr/sites/default/files/2019-01/depliantvitesse2018_exe_sansreperes.pdf"
+  ],
+  "novelty_review": "Existing speed questions concern limits and adapting speed; none asks the distance travelled during an explicitly specified reaction time. Exact calculation is 90 / 3.6 = 25 m/s.",
+  "scenario": "Driver-eye view on a straight divided French expressway in dry daylight, two lanes in this direction with central barrier at left, learner centred in right lane. A blue hatchback far ahead in the right lane has its red brake lights illuminated with a generous visible gap. No numeric speed display, no readable signs, no measuring marks, no collision, no motion blur. A narrow dashboard rim at bottom.",
+  "image_prompt": "Use case: photorealistic-natural. Create ONE realistic educational photograph for a French Code de la Route passenger-car question. Landscape 16:9, preferably 2048x1152. Contemporary France, natural photographic colours and exposure, physically plausible perspective. Driver-eye view on a straight divided French expressway in dry daylight, two lanes in this direction with central barrier at left, learner centred in right lane. A blue hatchback far ahead in the right lane has its red brake lights illuminated with a generous visible gap. No numeric speed display, no readable signs, no measuring marks, no collision, no motion blur. A narrow dashboard rim at bottom. No quiz panel, question text, answer choices, highlighted answer, watermark, instructional overlay, collage or invented road signs. Any cars use French-style plates with unreadable small characters. This is a scene photograph, not an infographic.",
+  "question": {
+    "key": "situation_speed_reaction_one_second_90",
+    "category_slug": "speed_limits",
+    "correct_answer": "c",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "À 90 km/h, avec un temps de réaction d’une seconde, quelle distance est parcourue avant le début du freinage ?",
+        "answer_a": "Environ 9 mètres.",
+        "answer_b": "Environ 15 mètres.",
+        "answer_c": "Environ 25 mètres.",
+        "answer_d": "Environ 90 mètres.",
+        "explanation": "90 km/h correspondent à 25 mètres par seconde. Pendant une seconde de réaction, la voiture parcourt donc environ 25 mètres avant que le freinage commence. La distance de freinage s’ajoute ensuite."
+      },
+      "en": {
+        "question_text": "At 90 km/h, with a reaction time of one second, how far does the car travel before braking begins?",
+        "answer_a": "About 9 metres.",
+        "answer_b": "About 15 metres.",
+        "answer_c": "About 25 metres.",
+        "answer_d": "About 90 metres.",
+        "explanation": "90 km/h equals 25 metres per second. During a one-second reaction time, the car therefore travels about 25 metres before braking begins. The braking distance must then be added."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-2a6f3c3b-586d-40ab-b578-a3059468adc2.png",
+  "native_image_sha256": "424648b193a625666cd23a84c1303406444e8595625d5a3df52ee20fe772d97d",
+  "image_path": "assets-source/balanced-batch-2026-09-21/speed_reaction_one_second_90/scene.jpg",
+  "image_sha256": "b2d59b65d5df691e0df051701374ad87faac4da59e438ba93b4a5fdb2643f4f0",
+  "visual_review": "Reviewed blue car brake lamps on a dry divided road with visible gap; no misleading speed readout or distance annotation. Question explicitly supplies 90 km/h and one second; independently calculated 90/3.6=25. C uniquely correct; reaction and braking distances distinguished in FR/EN.",
+  "reviewed_on": "2026-09-21",
+  "reviewed_sha256": "32cbdb396389b1bf1c33f50cb04fd6d0ac565db86dd621ed11ba691b296ed177",
+  "question_key": "situation_speed_reaction_one_second_90",
+  "imported_content_version": 89,
+  "imported_on": "2026-09-21"
+}

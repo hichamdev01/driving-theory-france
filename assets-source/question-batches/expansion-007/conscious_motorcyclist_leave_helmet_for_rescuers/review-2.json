@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "3b41debfed0ffdfa64f367babe11fb8129eae89c550da8b7d0f0a4b2978e84d4",
+  "image_sha256": "8747fc3f3edbe55d6da7cdda467ef2b6c6586058b2606b467f9f9ea0ec4c45ef",
+  "result": "pass",
+  "notes": "Entire exact replacement scene-2.jpg and390px phone-2.jpg inspected. No detected unresolved defects.",
+  "compared_question_keys": [
+    "situation_first_aid_conscious_waiting_care",
+    "situation_unconscious_breathing_pls",
+    "situation_severe_bleeding_direct_pressure",
+    "situation_not_breathing_cpr_aed",
+    "safety_accident_first_actions"
+  ],
+  "checks": {
+    "official_rule": "Interior road-collision guidance sectionBlessés106: do not remove motorcyclist helmet. Whole section read; restricted here to conscious normally breathing casualty with no danger, no CPR exception claimed. Official indexed advice: leave helmet removal to rescue services after accident.",
+    "novelty": "Full-bank first-aid questions cover compression, CPR, PLS, choking and general waiting care. This new item isolates helmet removal and possible neck movement in a stable conscious casualty. Replaces SOS-access candidate because its nearest existing explanation already forbids crossing for a phone. Full five nearest items and full-bank topic inventory reviewed.",
+    "signs_and_text": "No text or signs; physical white helmet stickers on visible side and chin front.",
+    "road_geometry": "Grass/hedge close-up away from roadway, no claim that witness moved casualty.",
+    "vehicles_and_people": "One conscious person with coherent face/arms/torso; no depicted breathing emergency or visible injury.",
+    "dashboard_and_equipment": "Secured full-face helmet, raised visor, chin vents unobstructed, normal jacket. Far-side/rear reflectors outside view.",
+    "full_resolution": "Exact replacement1672x941 JPEG viewed fully at original resolution. No text or signs; physical white helmet stickers on visible side and chin front. Secured full-face helmet, raised visor, chin vents unobstructed, normal jacket. Far-side/rear reflectors outside view.",
+    "phone_size": "Helmet stays on head, patches and face visible at390px; condition stated in both stems.",
+    "french_and_english": "Same conditions, scope and answer set; all unavailable temporal facts explicit. Car driver assisting a motorcyclist who is conscious and breathing normally, no immediate danger, help alerted; no contrary emergency operator instruction.",
+    "all_four_options": "Correct set d. {'fr': {'a': 'Pas de retrait pour une inspection de routine.', 'b': 'La parole ne justifie pas de retirer le casque.', 'c': 'Une traction risque de mobiliser le cou.', 'd': 'On évite un geste non nécessaire et attend les secours.'}, 'en': {'a': 'No removal for routine inspection.', 'b': 'Being able to speak does not justify removal.', 'c': 'Pulling can move the neck.', 'd': 'Avoid unnecessary intervention and wait for rescuers.'}}"
+  }
+}

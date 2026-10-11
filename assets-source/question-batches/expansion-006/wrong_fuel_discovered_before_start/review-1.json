@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "9f8289e2c69914b7365640b4e382c259590c5b47903e5c9eb46918048e410e67",
+  "image_sha256": "e638af2c687cec781b4cb607826d2e00c2feeb888a07072af742837ad6720334",
+  "result": "pass",
+  "notes": "Entire exact replacement JPEG inspected at1672x941 and390px. No detected unresolved defects; previous rejected versions retained.",
+  "compared_question_keys": [
+    "situation_tyre_sidewall_bulge_before_trip",
+    "situation_coolant_hot_cap_wait",
+    "situation_dog_on_driver_lap_no_departure",
+    "situation_safety_oil_pressure_stop_engine",
+    "situation_parked_engine_unnecessary_idling"
+  ],
+  "checks": {
+    "official_rule": "Original Peugeot208 guide printedp145: incompatible fuel requires tank draining before engine start. General wrong-fuel no-start precaution, no model-specific nozzle assumption.",
+    "novelty": "Entire438-bank search for carburant/diesel/gazole/refuel/wrongfuel found only unrelated downhill and toll items. No current question tests misfuelling or avoiding circulating contaminated fuel. Different from oil-pressure urgent stop and coolant hot-cap precautions. Full five nearest questions/options/explanations inspected; whole-bank topic search performed.",
+    "signs_and_text": "No road signs, prices, fuel labels or invented lettering. Nozzle colour is not used to infer fuel type.",
+    "road_geometry": "Stationary-car forecourt close-up, clean concrete pump island; no lane or right-of-way decision.",
+    "vehicles_and_people": "Car rear-quarter, door handle, mirror and tail lamp plausible; a cropped distant car beyond forecourt supplies no decision clue. No people.",
+    "dashboard_and_equipment": "Open filler door, circular neck, hinged flap and tethered cap held inside door are coherent; no spilled liquid.",
+    "full_resolution": "Viewed exact staged scene-1.jpg in full original resolution. No road signs, prices, fuel labels or invented lettering. Nozzle colour is not used to infer fuel type. Open filler door, circular neck, hinged flap and tethered cap held inside door are coherent; no spilled liquid.",
+    "phone_size": "At390px open filler and separate cap remain clear; actual fuel error and engine state are explicitly in both stems.",
+    "french_and_english": "FR/EN both supply same facts and correct answer set. No image-dependent hidden measurement or invented universal equipment specification. Diesel passenger car mistakenly filled with petrol; driver notices before restarting. Type and mistake explicitly stated, no reliance on nozzle colours.",
+    "all_four_options": "Correct set b. {'fr': {'a': 'Démarrer peut faire circuler le carburant inadapté.', 'b': 'Une prise en charge professionnelle évite d’aggraver les dégâts.', 'c': 'Ajouter le bon carburant ne garantit pas la sécurité du mélange.', 'd': 'La vitesse ne supprime pas le carburant inadapté et aggrave les risques.'}, 'en': {'a': 'Starting can circulate the wrong fuel.', 'b': 'Professional intervention avoids worsening damage.', 'c': 'Adding correct fuel does not guarantee a safe mixture.', 'd': 'Speed does not fix the fuel and adds risk.'}}"
+  }
+}

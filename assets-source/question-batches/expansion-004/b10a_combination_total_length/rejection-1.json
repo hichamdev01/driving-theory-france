@@ -1,0 +1,6 @@
+{
+  "result": "reject",
+  "proposal_sha256": "56f948ed55e7f269e5549fdb8bfd4c5a9212475d8dee7b115d0359ffe8cd655b",
+  "image_sha256": "2a842f981142ace9f55f158d59e84c0c025641ea4aaa246182231087be8fb1a8",
+  "notes": "B10a dimension indicators are drawn as full arrows with shafts; the checked sign uses compact outward triangular arrowheads. Correct these two graphic details and recheck all."
+}

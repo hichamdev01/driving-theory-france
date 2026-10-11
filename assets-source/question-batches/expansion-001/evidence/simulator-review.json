@@ -1,0 +1,105 @@
+{
+  "result": "pass",
+  "device": "iPhone17Pro/iOS26.5",
+  "device_id": "B49BFA96-2E2B-4EBD-BF84-0860E2C2FD3B",
+  "content_version": 93,
+  "pack_sha256": "cb2fb2189ce42ac646f4725bc937c1e1508c8dc65215308497f5108d2cf92f39",
+  "method": "Actual native Simulator UI through CUA, Debug ContentReviewKeys route; all ten image/question screens inspected in French, answer result and explanation checked. English multiple-answer checks separately. No simulated or inferred UI results.",
+  "items": [
+    {
+      "key": "situation_first_aid_conscious_waiting_care",
+      "image_sha256": "b6ee9150cfa8e069f53abb833455a27fb122dbc19fba647c1cdb441cf7bcf576",
+      "observations": "Conscious victim, helper and blanket clear; French multi label visible, four options accessible by scrolling."
+    },
+    {
+      "key": "situation_coolant_hot_cap_wait",
+      "image_sha256": "80ed3ade7719e9bcb184cfe29d16a8e225bc1fa9a44ff38c20e5023c90c2a921",
+      "observations": "Closed coolant cap and engine compartment fully fit; B accepted."
+    },
+    {
+      "key": "situation_aac_accompanying_adult_alcohol",
+      "image_sha256": "a5feafadfe44c0515c10b822ca8f9512a0ec502a14587fa647f54a0dd69d7a31",
+      "observations": "Learner and accompanying adult clear; BAC remains in stem; D accepted."
+    },
+    {
+      "key": "situation_otc_medicine_not_driving_guarantee",
+      "image_sha256": "70b89bd879d96e059468667ec3e128ba4b83c4d4bf8e951007697ed320b31601",
+      "observations": "Carton, leaflet and keys clear; C accepted."
+    },
+    {
+      "key": "situation_limiter_no_braking_downhill",
+      "image_sha256": "16d3e60898b10ef6f82e35a5fca989decbb791db3ea2df1c5e22d4de5a905f6a",
+      "observations": "Downhill scene readable with engine-only condition in stem; A accepted."
+    },
+    {
+      "key": "situation_cmi_parking_card_passenger",
+      "image_sha256": "1984cea76b0e237cd188d912cfdd1c408ecccb40a8f22ef913427d7a44a6a9ab",
+      "observations": "Passenger holder/card visible; multi label and B/D result correct."
+    },
+    {
+      "key": "situation_amber_beacon_alone_no_priority",
+      "image_sha256": "2642ccad04b1eb8c4e162453f86a7516facdab76d79f3a7cc70bad8e8da8a96d",
+      "observations": "Amber beacon visible at app size; B accepted without implying actual junction priority."
+    },
+    {
+      "key": "situation_short_left_turn_lane_arrow",
+      "image_sha256": "5e10e96f4c2f0ba651960a9edbf448d3b4c5957be39dc1a770ca190f99e1d1dd",
+      "observations": "Complete final arrow visible; left-only C accepted."
+    },
+    {
+      "key": "situation_night_following_before_overtake_dipped",
+      "image_sha256": "45de824596c7001bf5c4b358f83095bcfe2f07d28c3952e5ced7bbad53b22632",
+      "observations": "Night car and road remain discernible at app size; D accepted."
+    },
+    {
+      "key": "situation_motorway_blowout_initial_control",
+      "image_sha256": "edca2dc8a821a578092e289b5d8f9f6f79423079451585953d0b0394cd0f6b82",
+      "observations": "Divided motorway narrow-verge scene clear; A accepted."
+    }
+  ],
+  "multiple_answer_checks": [
+    {
+      "key": "situation_first_aid_conscious_waiting_care",
+      "language": "fr",
+      "selected": [
+        "a"
+      ],
+      "expected": "incorrect",
+      "observed": "Incorrect; A and C displayed as correct"
+    },
+    {
+      "key": "situation_first_aid_conscious_waiting_care",
+      "language": "en",
+      "selected": [
+        "a",
+        "c"
+      ],
+      "expected": "correct",
+      "observed": "Correct; expanded English explanation displayed"
+    },
+    {
+      "key": "situation_cmi_parking_card_passenger",
+      "language": "fr",
+      "selected": [
+        "b",
+        "d"
+      ],
+      "expected": "correct",
+      "observed": "Correct"
+    },
+    {
+      "key": "situation_cmi_parking_card_passenger",
+      "language": "en",
+      "selected": [
+        "a",
+        "b",
+        "d"
+      ],
+      "expected": "incorrect",
+      "observed": "Incorrect; B and D correct, A marked wrong"
+    }
+  ],
+  "progress_before": "35e5e3503c10891d92e69ab9fc0074f4358999baeafe7ed2d75992723533da75",
+  "progress_after": "35e5e3503c10891d92e69ab9fc0074f4358999baeafe7ed2d75992723533da75",
+  "restored": "Normal English home shown; progress reports54explored of398, consistent with preserved history."
+}

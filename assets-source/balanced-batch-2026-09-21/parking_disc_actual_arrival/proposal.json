@@ -1,0 +1,58 @@
+{
+  "sequence": 6,
+  "scenario_id": "parking_disc_actual_arrival",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives or prepares a normal passenger car; no specialist vehicle operating rules.",
+  "learning_objective": "Set a parking disc to the actual arrival time",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030851507",
+    "https://www.leconquet.bzh/actualites/stationnement-zone-bleue-mairie-le-conquet/",
+    "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000017727614"
+  ],
+  "novelty_review": "The existing C1b question identifies disc-controlled parking; this tests the information to put on the disc, not sign recognition or the maximum duration.",
+  "scenario": "Close natural photograph from inside a parked passenger car of a European blue parking disc on the dashboard just behind the passenger-side lower windscreen. The disc has a blue rectangular sleeve, a white rotating circular time dial with ordinary hour markings and a small triangular index, and the only heading is HEURE D’ARRIVÉE. Through the windscreen is an ordinary quiet parking bay in a French town. No readable roadside signs, no teaching overlay. Do not add a departure-time window.",
+  "image_prompt": "Use case: photorealistic-natural. Create ONE realistic educational photograph for a French Code de la Route passenger-car question. Landscape 16:9, preferably 2048x1152. Contemporary France, natural photographic colours and exposure, physically plausible perspective. Close natural photograph from inside a parked passenger car of a European blue parking disc on the dashboard just behind the passenger-side lower windscreen. The disc has a blue rectangular sleeve, a white rotating circular time dial with ordinary hour markings and a small triangular index, and the only heading is HEURE D’ARRIVÉE. Through the windscreen is an ordinary quiet parking bay in a French town. No readable roadside signs, no teaching overlay. Do not add a departure-time window. No quiz panel, question text, answer choices, highlighted answer, watermark, instructional overlay, collage or invented road signs. Any cars use French-style plates with unreadable small characters. This is a scene photograph, not an infographic.",
+  "question": {
+    "key": "situation_parking_disc_actual_arrival",
+    "category_slug": "parking_stopping",
+    "correct_answer": "b",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Je viens de me garer sur une place où le disque est obligatoire. Quelle heure dois-je y indiquer ?",
+        "answer_a": "L’heure à laquelle je pense revenir.",
+        "answer_b": "Mon heure réelle d’arrivée.",
+        "answer_c": "L’heure de fermeture des commerces.",
+        "answer_d": "L’heure d’arrivée augmentée de la durée autorisée.",
+        "explanation": "Le disque sert à contrôler la durée du stationnement à partir de l’arrivée. J’y indique mon heure réelle d’arrivée et je le place de façon lisible derrière le pare-brise. La durée maximale dépend de la réglementation locale."
+      },
+      "en": {
+        "question_text": "I have just parked in a bay where a parking disc is required. Which time should I set?",
+        "answer_a": "The time when I expect to return.",
+        "answer_b": "My actual arrival time.",
+        "answer_c": "The time when the shops close.",
+        "answer_d": "My arrival time plus the permitted duration.",
+        "explanation": "The disc allows the parking duration to be checked from arrival. Set the actual arrival time and display it clearly behind the windscreen. The maximum stay depends on the local rules."
+      }
+    }
+  },
+  "state": "imported",
+  "edit_prompt_path": "assets-source/balanced-batch-2026-09-21/parking_disc_actual_arrival/edit-prompt.md",
+  "original_native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-6d9db429-f8c5-40b7-9918-e70bfc88d93f.png",
+  "generation_method": "built-in image_gen",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-8f614155-0b88-45e0-8a05-5d00ee293a51.png",
+  "native_image_sha256": "6ba299941a94c2a1e5e87d3a8f830e4d5adec94d5d642691c4d75be91b4a2800",
+  "image_path": "assets-source/balanced-batch-2026-09-21/parking_disc_actual_arrival/corrections-2026-10-09/scene.jpg",
+  "image_sha256": "ead2750aba808ab6545ebbf5fbe84a5ccddff76f8e712762bbb71be09819f66b",
+  "visual_review": "Full-resolution and 390px review: French C1a P symbol above HEURE D’ARRIVÉE, downward arrow, one dial window, 14/15/16 in order with five intermediate ten-minute marks per hour and half-hour differentiation; outward readable, left-hand-drive wheel correct from exterior viewpoint. No question depends on reading the displayed number. Corrected missing P, previous tick spacing, and steering placement against the 6 December 2007 order.",
+  "reviewed_on": "2026-10-09",
+  "reviewed_sha256": "8527619818137cfd802724ea1f50ce929df704bda126d102bf121d25d6790f44",
+  "question_key": "situation_parking_disc_actual_arrival",
+  "imported_content_version": 89,
+  "imported_on": "2026-09-21",
+  "corrections_2026_10_09": {
+    "previous_image_path": "assets-source/balanced-batch-2026-09-21/parking_disc_actual_arrival/scene.jpg",
+    "previous_image_sha256": "2542b860f46e6e25badf0156dfe8952d8d1fad553077121bfa9f9efb409c2e10",
+    "reason": "Full-resolution and 390px review: French C1a P symbol above HEURE D’ARRIVÉE, downward arrow, one dial window, 14/15/16 in order with five intermediate ten-minute marks per hour and half-hour differentiation; outward readable, left-hand-drive wheel correct from exterior viewpoint. No question depends on reading the displayed number. Corrected missing P, previous tick spacing, and steering placement against the 6 December 2007 order."
+  }
+}

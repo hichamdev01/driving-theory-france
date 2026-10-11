@@ -1,0 +1,239 @@
+{
+  "batch": "expansion-007",
+  "checked_on": "2026-10-11",
+  "research": "Ornikar public practice page consulted for format/topic style; all questions/options/explanations independently authored. Sources and access limitations recorded per proposal.",
+  "novelty": "Whole-bank category stem inventories and all five nearest complete questions, options and explanations read. Initial opposite-side SOS-phone proposal replaced before generation because existing explanation already covers not crossing.",
+  "items": [
+    {
+      "scenario_id": "officer_vertical_arm_clear_entered_junction",
+      "novelty": "Existing horizontal-arm item asks which approaches must stop; this tests the already-entered exception to a different gesture, avoiding stopping inside the junction.",
+      "compared_question_keys": [
+        "situation_priority_officer_over_green_light",
+        "situation_b4_car_sign_interpretation",
+        "situation_b5b_police_checkpoint_required_stop",
+        "situation_motorway_exit_deceleration",
+        "situation_overtaking_uncontrolled_intersection"
+      ],
+      "sources": [
+        {
+          "url": "https://unece.org/fileadmin/DAM/trans/conventn/Conv_road_traffic_FR.pdf",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "Article6 paragraph3(a): raised vertical arm; exception for drivers already within intersection. Official indexed full paragraph read; direct PDF returned403."
+        },
+        {
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842090/",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "R411-28: officer instructions prevail over signals and traffic rules."
+        }
+      ]
+    },
+    {
+      "scenario_id": "mixed_line_return_after_legal_overtake",
+      "novelty": "Existing mixed-line item asks starting permission. This asks the opposite-side return where solid component is now nearest, with commencement and completion conditions explicit.",
+      "compared_question_keys": [
+        "situation_mixed_line_broken_my_side",
+        "situation_return_right_safe_gap",
+        "situation_yellow_broken_kerb_parking_only",
+        "situation_overtaking_no_safe_return_gap",
+        "situation_cyclist_solid_line_overlap_only"
+      ],
+      "sources": [
+        {
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842140/",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "R412-20 mixed-line manoeuvre judged at start, completed before end of broken line; current article read."
+        }
+      ]
+    },
+    {
+      "scenario_id": "paid_parking_time_exceeded_fps",
+      "novelty": "C1c tests sign meaning. Existing prohibited-parking questions concern traffic offences; this tests the FPS for insufficient payment on an otherwise lawful bay.",
+      "compared_question_keys": [
+        "situation_c1c_car_sign_interpretation",
+        "situation_parking_disc_actual_arrival",
+        "situation_motorway_friend_tow_offer",
+        "situation_motorway_freeflow_pay_72h",
+        "situation_one_way_left_side_parking"
+      ],
+      "sources": [
+        {
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34440",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "FPS applies to absent or insufficient payment, including exceeded paid duration. Current page sections49–60 read."
+        }
+      ]
+    },
+    {
+      "scenario_id": "cmi_barrier_carpark_fee_possible",
+      "novelty": "Existing CMI items cover holder/passenger and local12h limit. New exception concerns payment at accessible entry/exit terminals, not duration or entitlement to reserved bays.",
+      "compared_question_keys": [
+        "situation_cmi_parking_local_twelve_hour_limit",
+        "situation_cmi_parking_card_passenger",
+        "situation_c1b_parking_disc_control",
+        "situation_speed_carpark_walking_pace",
+        "situation_c112_tunnel_exit"
+      ],
+      "sources": [
+        {
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34049",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "CMI parking section: fee possible at parks with entry and exit terminals usable from vehicle, current paragraph140 read."
+        }
+      ]
+    },
+    {
+      "scenario_id": "conscious_motorcyclist_leave_helmet_for_rescuers",
+      "novelty": "Full-bank first-aid questions cover compression, CPR, PLS, choking and general waiting care. This new item isolates helmet removal and possible neck movement in a stable conscious casualty. Replaces SOS-access candidate because its nearest existing explanation already forbids crossing for a phone.",
+      "compared_question_keys": [
+        "situation_first_aid_conscious_waiting_care",
+        "situation_unconscious_breathing_pls",
+        "situation_severe_bleeding_direct_pressure",
+        "situation_not_breathing_cpr_aed",
+        "safety_accident_first_actions"
+      ],
+      "sources": [
+        {
+          "url": "https://www.interieur.gouv.fr/fr/Archives/Archives-de-la-rubrique-Ma-securite/Securite-routiere/Conseils-pratiques/Que-faire-en-cas-de-panne-ou-d-accident",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "Interior road-collision guidance sectionBlessés106: do not remove motorcyclist helmet. Whole section read; restricted here to conscious normally breathing casualty with no danger, no CPR exception claimed."
+        },
+        {
+          "url": "https://www.interieur.gouv.fr/fr/Archives/Archives-de-la-rubrique-Ma-securite/Votre-securite-en-deux-roues-a-moteur",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "Official indexed advice: leave helmet removal to rescue services after accident."
+        }
+      ]
+    },
+    {
+      "scenario_id": "motorway_stationary_queue_stay_inside",
+      "novelty": "Breakdown and tunnelfire items require leaving unsafe vehicle. This is the opposite appropriate action under explicitly non-emergency congestion conditions.",
+      "compared_question_keys": [
+        "situation_motorway_passenger_walks_shoulder",
+        "situation_motorway_friend_tow_offer",
+        "situation_motorway_breakdown_no_triangle",
+        "situation_tunnel_stopped_keep_safety_gap",
+        "situation_motorway_nonessential_stop"
+      ],
+      "sources": [
+        {
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842313/",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "R421-2 prohibits pedestrians on motorways."
+        },
+        {
+          "url": "https://www.vinci-autoroutes.com/fr/conseils/securite/bouchon-autoroute/",
+          "kind": "operator",
+          "checked_on": "2026-10-11",
+          "supports": "VINCI advice: do not leave vehicle in queue; traffic can restart. Indexed substantive passage read, page parser returned only heading."
+        }
+      ]
+    },
+    {
+      "scenario_id": "driver_mat_secure_no_stacking",
+      "novelty": "No existing floor-mat item. Distinct mechanical obstruction of pedals, not general seatbelt/headrest/phone distraction.",
+      "compared_question_keys": [
+        "situation_hot_tyre_pressure_do_not_bleed",
+        "situation_parking_secure_before_leaving",
+        "situation_tyre_sidewall_bulge_before_trip",
+        "situation_rear_load_over_one_metre_marked",
+        "situation_abs_emergency_pedal_pulsation"
+      ],
+      "sources": [
+        {
+          "url": "https://www.fordservicecontent.com/Ford_Content/vdirsnet/OwnerManual/Home/Content?ProcUid=G1448653&Uid=G2051163&buildtype=web&countryCode=FRA&div=f&languageCode=fr&moidRef=G1405403&userMarket=che&vFilteringEnabled=False&variantid=8421",
+          "kind": "manufacturer",
+          "checked_on": "2026-10-11",
+          "supports": "Original Ford floor-mat manual: appropriate anchored mat, no stacking, free pedals. Full safety section read."
+        }
+      ]
+    },
+    {
+      "scenario_id": "borrowed_car_seat_then_mirrors_before_departure",
+      "novelty": "Head-restraint item covers neck protection, licencevision correction; this concerns seat and mirror fit after driver change, not headrest or blindspotmonitor.",
+      "compared_question_keys": [
+        "situation_overtaking_near_occupied_crossing",
+        "situation_frosted_windscreen_clear_before_drive",
+        "situation_pedestrian_intent_no_crosswalk",
+        "situation_limiter_no_braking_downhill",
+        "situation_motorway_breakdown_no_triangle"
+      ],
+      "sources": [
+        {
+          "url": "https://validation.securite-routiere.gouv.fr/sites/default/files/2024-09/dsr_guide_bon_conducteur.pdf",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "DSR guide installation section: adjust seat and mirrors before starting. Full indexed installation passage read; direct PDF unavailable."
+        }
+      ]
+    },
+    {
+      "scenario_id": "empty_roof_box_remove_after_holiday",
+      "novelty": "OldB12 tests totalheight, roofloadtestssecureattachment and ecoanticipation drivingstyle. New objective unnecessary aerodynamic drag of an empty accessory.",
+      "compared_question_keys": [
+        "situation_height_limit_3_5m",
+        "safety_eco_driving_anticipation",
+        "situation_speed_narrows_useful_visual_field",
+        "situation_alcohol_peak_empty_stomach",
+        "situation_parked_engine_unnecessary_idling"
+      ],
+      "sources": [
+        {
+          "url": "https://www.morbihan.gouv.fr/Actions-de-l-Etat/Transports-deplacements-et-securite-routiere/Securite-routiere/Les-conseils-de-la-securite-routiere/Bien-preparer-les-longs-trajets",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "Prefecture guidance: remove roof accessories after use to avoid unnecessary consumption; indexed text read, direct page502."
+        },
+        {
+          "url": "https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "ADEME current advice paragraph39 remove unused roof box/racks. Full page read. No numeric consumption claim used."
+        }
+      ]
+    },
+    {
+      "scenario_id": "ecall_automatic_serious_crash_location",
+      "novelty": "Existing eCallitem concerns accidentalmanualbuttonpress and nothangingup. New objective automatictrigger when occupants cannotcall, including accidentlocation; officialexamtopic.",
+      "compared_question_keys": [
+        "situation_accident_emergency_call_information",
+        "situation_motorway_friend_tow_offer",
+        "motorway_breakdown_safety",
+        "situation_motorway_sos_location",
+        "situation_motorway_breakdown_no_triangle"
+      ],
+      "sources": [
+        {
+          "url": "https://www.securite-routiere.gouv.fr/sites/default/files/2020-03/exemples%2Bde%2B30%2Bquestions%2B-%2Breponses%2Bde%2Bla%2Bnouvelle%2Bepreuve%2Bdu%2Bcode%2Bde%2Bla%2Broute%2B%2811%2Bmai%2B2016%29.pdf",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "Official example14: eCall serious collision automaticalert+geolocation. Used topic only; original questions/images, not historic2percentstat or old futureequipmentdate."
+        },
+        {
+          "url": "https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency-assistance-vehicles-ecall/index_fr.htm",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "CurrentYourEurope27Jan2026: automatic112seriouscrash and minimal locationdata; paragraphs471–475 read."
+        }
+      ]
+    }
+  ],
+  "additional_visual_sources": [
+    {
+      "url": "https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_7epartie_vc_20250404.pdf",
+      "read": "Full table pages6–8: T1 bar3m gap10m; mixed line T1 orT3 beside continuous."
+    },
+    {
+      "url": "https://www.securite-routiere.gouv.fr/operations/equipezvous/video",
+      "read": "Official helmet guidance four retroreflective stickers, secured helmet."
+    }
+  ],
+  "motorway_source_check": "R421-2 current full article opened and read; pedestrians prohibited. No emergency evacuation situation in candidate."
+}

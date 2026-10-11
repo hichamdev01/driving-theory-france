@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+  "proposal_sha256": "931bec8dd9ed6e3a6f509c04e1b474b87e5f0b4f1429c97cf591ea5c52cc7089",
+  "image_sha256": "2642ccad04b1eb8c4e162453f86a7516facdab76d79f3a7cc70bad8e8da8a96d",
+  "compared_question_keys": [
+    "situation_b9b_car_interpretation",
+    "situation_priority_rural_bus_no_automatic_priority",
+    "situation_end_priority_road_ab7",
+    "situation_blind_crest_no_overtake",
+    "situation_urban_horn_impatience"
+  ],
+  "checks": {
+    "official_rule": "R313-28 amber warning equipment and R415-12 priority vehicles checked 2026-10-09; amber beacon alone does not grant priority. Question deliberately does not ask which vehicle actually proceeds first.",
+    "signs_and_text": "One amber roof beacon, no blue emergency beacon; original unexplained give-way sign/pole removed. No signs/plates or readable registration text. Small vehicle grille emblem has no instructional function.",
+    "road_geometry": "Ordinary side street joins from right, zebra across main road, dashed centre line, realistic curbs. Removed isolated side-road stroke. Ordinary junction rules remain applicable.",
+    "vehicles_and_people": "Single orange maintenance van approaches from right, correctly grounded wheels, plausible body/lights; no pedestrian or conflicting gesture.",
+    "dashboard_and_equipment": "Beacon mounted on roof and visibly amber. No dash, siren or emergency-light claim.",
+    "full_resolution": "Entire corrected scene-2 JPEG inspected at1672x941, including removed sign location, side-road edge, zebra, van and roof beacon.",
+    "phone_size": "390px corrected preview retains orange van and bright amber beacon; no tiny necessary text.",
+    "french_and_english": "Both ask whether the light alone grants priority. Neither denies possible ordinary priority from the vehicle's position.",
+    "all_four_options": "B only. A universal priority, C urban exception and D slow-speed priority are all unsupported; B warns to attend cautiously.",
+    "novelty": "Nearest B9b, end-of-priority road, blind crest and horn questions use different cues and obligations. Rural bus indicator question distinguishes intent from priority, whereas this item identifies a different warning device and vehicle class. Also compared emergency/convoy questions; no claim is made about all maintenance vehicles in all circumstances."
+  }
+}

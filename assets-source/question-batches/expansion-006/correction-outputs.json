@@ -1,0 +1,12 @@
+[
+  {
+    "i": 5,
+    "prompt": "Edit this original French cycle advanced-stop-box photo. Preserve the foreground empty bicycle box, the bicycle pictogram, zebra crossing, red traffic light with its two other lenses unlit, buildings and realistic photo style. Correct BOTH transverse dashed stop lines: each white stroke must have the SAME width across the lane as the empty gap next to it (0.5m white,0.5m gap), thin15cm depth; use four evenly spaced strokes across this approximately4m-wide one-way lane. Box length4m. Remove every tiny distant traffic sign, vehicle and pole-mounted signal in the far street beyond the intersection. End the far view after about20m with the road gently bending behind a plain stone wall and trees so there is no long vanishing street of illegible objects. Preserve the main foreground red traffic light and low repeater. No additional symbols, arrows, labels or annotations. Landscape1672x941.",
+    "path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-14e8b756-ed09-43e1-8c03-bed1237066d3.png"
+  },
+  {
+    "i": 6,
+    "prompt": "Edit this original quiet residential road photograph only to remove every white dashed centreline mark from foreground all the way to the distant vanishing point. Replace paint with matching natural asphalt texture, making an entirely UNMARKED two-way residential road. Preserve realistic perspective, sidewalks, trees, walls and houses. No vehicles, people, signs, captions, numbers or overlays. Landscape1672x941, scene only.",
+    "path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-3dfb6d16-e397-4dd8-b668-0cb1cd61fc72.png"
+  }
+]

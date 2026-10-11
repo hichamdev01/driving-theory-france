@@ -3,6 +3,8 @@
 - [Image and question generation workflow](SIGN_WORKFLOW.md): the complete
   authoring process, duplicate checks, category balance, review, integration and
   sign-code CLI commands.
+- [Resumable batches toward 1,000 questions](QUESTION_BATCH_WORKFLOW.md): batch
+  commands, mandatory review evidence, corrections, imports and verification gates.
 - [Original quiz-card image prompt](QUIZ_CARD_IMAGE_PROMPT.md): the saved prompt
   for standalone cards; follow the workflow's scene-only instructions for app
   images.

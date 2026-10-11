@@ -46,6 +46,9 @@ struct PracticeView: View {
             .onChange(of: router.pendingLearningRoute) {
                 openPendingRouteIfNeeded()
             }
+            .onChange(of: router.learningRootRequest) {
+                path = NavigationPath()
+            }
         }
     }
 

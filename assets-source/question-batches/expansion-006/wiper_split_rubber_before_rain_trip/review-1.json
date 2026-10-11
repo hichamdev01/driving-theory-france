@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "75863651741f8563d64282f44f2f4bbbf13152e8822ad0c3ede6a2c47f975904",
+  "image_sha256": "3dc1fc09fab6ade7b4fadb8f9edfd1b6b8b1bca2bcfbc30d8e0ddcb127cd37dd",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+  "compared_question_keys": [
+    "situation_ev_charge_cable_cut_insulation",
+    "situation_engine_oil_level_measurement_conditions",
+    "situation_wet_bend_below_posted_limit",
+    "situation_dual_carriageway_rain_100",
+    "situation_parking_solid_line_insufficient_passage"
+  ],
+  "checks": {
+    "official_rule": "R316-4 requires sufficient effective windscreen wiping to see road distinctly; current article read. Wiper blade condition follows maintenance guidance.",
+    "novelty": "Other visibility questions concern interior condensation, frost removal, lighting. None tests worn wiper rubber despite adequate washer fluid. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+    "signs_and_text": "No signs/text/labels. No highlighted defect marker.",
+    "road_geometry": "Windscreen closeup; road and other traffic outside frame.",
+    "vehicles_and_people": "No people or vehicles beyond the inspected parked car.",
+    "dashboard_and_equipment": "Raised wiper blade has intact rigid spine and split flexible lip near end, visible loose rubber. Glass has rain drops, no unrelated crack.",
+    "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. No signs/text/labels. No highlighted defect marker. Raised wiper blade has intact rigid spine and split flexible lip near end, visible loose rubber. Glass has rain drops, no unrelated crack.",
+    "phone_size": "At390px loose rubber end remains visible; split and streaking also explicitly stated.",
+    "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. Before departure in rain, a wiper blade rubber edge split and wiping leaves streaks; reservoir full.",
+    "all_four_options": "Correct set c. {'fr': {'a': 'Cela ne répare pas le balai.', 'b': 'La vitesse aggrave le risque.', 'c': 'Le caoutchouc défectueux doit être remplacé.', 'd': 'Il faut pouvoir essuyer la pluie.'}, 'en': {'a': 'This cannot repair the blade.', 'b': 'Speed increases the risk.', 'c': 'The damaged blade needs replacement.', 'd': 'Rain must be wiped away.'}}"
+  }
+}

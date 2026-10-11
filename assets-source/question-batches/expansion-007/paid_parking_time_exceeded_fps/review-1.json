@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "a9807209c581788807fbd1ce0b8f860456c917d37657f69eb185b46ab3bda3d2",
+  "image_sha256": "583687fa81647b19326d9951fbf3ecc8ea19ecafd28e8a6659850fb4554c51ae",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected at full resolution and390px. No detected unresolved defects.",
+  "compared_question_keys": [
+    "situation_c1c_car_sign_interpretation",
+    "situation_parking_disc_actual_arrival",
+    "situation_motorway_friend_tow_offer",
+    "situation_motorway_freeflow_pay_72h",
+    "situation_one_way_left_side_parking"
+  ],
+  "checks": {
+    "official_rule": "FPS applies to absent or insufficient payment, including exceeded paid duration. Current page sections49–60 read.",
+    "novelty": "C1c tests sign meaning. Existing prohibited-parking questions concern traffic offences; this tests the FPS for insufficient payment on an otherwise lawful bay. Five nearest complete questions/options/explanations and whole-bank topic inventory reviewed.",
+    "signs_and_text": "No road signs or lettering; meter has a small square payment-code graphic, blank display and slot; registration anonymised without fake characters.",
+    "road_geometry": "Car wholly inside parallel bay, wheels off pavement, clear footway and no crossing/driveway.",
+    "vehicles_and_people": "Coherent blue car, mirrors, wheels, rear lamps and rear wiper; no people.",
+    "dashboard_and_equipment": "Parking meter supported on pavement pole; payment expiry stated, not inferred from blank screen.",
+    "full_resolution": "Exact1672x941 scene-1.jpg viewed at original resolution. No road signs or lettering; meter has a small square payment-code graphic, blank display and slot; registration anonymised without fake characters. Parking meter supported on pavement pole; payment expiry stated, not inferred from blank screen.",
+    "phone_size": "Car within bay and meter identifiable at390px; no answer depends on small payment graphic.",
+    "french_and_english": "Same conditions, learning objective and correct answer set in both translations. Authorised on-street paid bay, paid period expired, no exemption. No obstructive/dangerous parking.",
+    "all_four_options": "Correct set c. {'fr': {'a': 'Pas de tolérance générale acquise.', 'b': 'Le FPS ne retire pas six points.', 'c': 'Le temps payé est dépassé.', 'd': 'Le ticket expiré ne suffit pas.'}, 'en': {'a': 'There is no general automatic grace.', 'b': 'An FPS does not deduct six points.', 'c': 'The paid time has expired.', 'd': 'An expired ticket is insufficient.'}}"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "8e047c1cc72012380a14c6e8ca3d8eef9b5714813495c8fd7fff044a81e5661e",
+  "image_sha256": "171699e9088b13246e6f372fab5d40b06a4d2c9f6149afcfe9a440fa2bb41200",
+  "result": "pass",
+  "notes": "Entire exact replacement JPEG inspected at1672x941 and390px. No detected unresolved defects; previous rejected versions retained.",
+  "compared_question_keys": [
+    "situation_speed_reaction_one_second_90",
+    "safety_tyre_pressure",
+    "situation_motorway_blowout_initial_control",
+    "situation_speed_double_braking_distance_quadruples",
+    "situation_fixed_amber_safe_stop"
+  ],
+  "checks": {
+    "official_rule": "Page6 defines stopping distance as reaction distance plus braking distance. Use only stable definition, no historical crash statistics or universal numeric table.",
+    "novelty": "Existing one-second90 question computes reaction travel, another speed doubling affects braking. This tests sum of the two stages and their different start/end definitions. Full five nearest questions/options/explanations inspected; whole-bank topic search performed.",
+    "signs_and_text": "No signs, letters or road paint remain. Original inconsistent centreline removed completely.",
+    "road_geometry": "Unmarked quiet two-way residential street, coherent kerbs and pavements; numeric distances are explicitly supplied, not measured from scene.",
+    "vehicles_and_people": "No vehicles or people; no hazard/location invented from timing unavailable in still image.",
+    "dashboard_and_equipment": "No dashboard or vehicle controls visible.",
+    "full_resolution": "Viewed exact staged scene-2.jpg in full original resolution. No signs, letters or road paint remain. Original inconsistent centreline removed completely. No dashboard or vehicle controls visible.",
+    "phone_size": "At390px entire clear road remains visible; no diagram/scale implies a physical30m measurement.",
+    "french_and_english": "FR/EN both supply same facts and correct answer set. No image-dependent hidden measurement or invented universal equipment specification. Given reaction14m and braking16m for THIS situation, no universal speed/road-condition formula. Ask total from danger perception to full stop.",
+    "all_four_options": "Correct set d. {'fr': {'a': 'Il faut additionner, pas soustraire.', 'b': 'La phase de freinage manque.', 'c': 'La phase de réaction manque.', 'd': 'Les deux phases donnent trente mètres.'}, 'en': {'a': 'Add rather than subtract.', 'b': 'This omits braking.', 'c': 'This omits reaction travel.', 'd': 'The two stages total thirty metres.'}}"
+  }
+}

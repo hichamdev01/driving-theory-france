@@ -1,0 +1,28 @@
+{
+  "pack_sha256": "bc59f891f9cf080c9cba98f0a45bb63a456303666e6342e5c0ef7d676cba1fa8",
+  "content_version": 99,
+  "python_tests": {
+    "result": "pass",
+    "notes": "52 workflow tests passed, covering duplicate blocking, exact approvals, recovery and retries.",
+    "path": "assets-source/question-batches/expansion-006/python-tests.log",
+    "sha256": "edf5ba4d0621aca73066cbe24c325ab23843dc41ad1759131be867bc0cf25e2e"
+  },
+  "ios_tests": {
+    "result": "pass",
+    "notes": "36 native tests passed, including bundled content, decoding and multiple-answer handling.",
+    "path": "assets-source/question-batches/expansion-006/ios-tests.log",
+    "sha256": "afcb5af538e260791dc8d4e19a982fdacb85506009f4f703c9f4c5ad9fa8ef3e"
+  },
+  "sqlite_check": {
+    "result": "pass",
+    "notes": "448 active questions, 419 illustrated; translations, categories, answer sets and paths match version99. Saved practice history unchanged.",
+    "path": "assets-source/question-batches/expansion-006/sqlite-after-ui.json",
+    "sha256": "17e5ebff09e909f9f6be739aa0b22f053ba28b38d981963009085dcb7e10b473"
+  },
+  "simulator_review": {
+    "result": "pass",
+    "notes": "All ten French questions displayed and complete answer sets accepted. Both English partial multi-answer sets rejected; plural corrections verified. Normal home restored.",
+    "path": "assets-source/question-batches/expansion-006/simulator-review.json",
+    "sha256": "39a01b375fde8a7544881dc5a84791bfb57814c2828b7ce54c61daef856e8605"
+  }
+}

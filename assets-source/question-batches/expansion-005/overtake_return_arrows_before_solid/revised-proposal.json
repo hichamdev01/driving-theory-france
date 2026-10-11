@@ -1,0 +1,66 @@
+{
+  "scenario_id": "overtake_return_arrows_before_solid",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+  "learning_objective": "Recognise return arrows along an announcement line as warning of an upcoming continuous centreline.",
+  "topic": "markings.return_before_solid",
+  "scenario": "Two-way rural road; return arrows straddle centre announcement line, upcoming solid line. Driver has not started overtaking.",
+  "novelty_review": "C28 announces lane reduction on three lanes; mixed/solidline scenarios concern existing line. This tests anticipation from curved return arrows on a two-lane road before the solid begins.",
+  "primary_codes": [],
+  "context_codes": [],
+  "question": {
+    "key": "situation_overtake_return_arrows_before_solid",
+    "category_slug": "overtaking",
+    "difficulty": "medium",
+    "correct_answers": [
+      "b"
+    ],
+    "translations": {
+      "fr": {
+        "question_text": "Sur cette route à deux voies et à double sens, cette flèche de rabattement accompagne la ligne d’annonce. Que m’indique-t-elle avant un dépassement ?",
+        "answer_a": "Que je dispose d’une voie supplémentaire pour dépasser.",
+        "answer_b": "Qu’une ligne continue approche et que je dois rester ou revenir à droite avant elle.",
+        "answer_c": "Que je dois obligatoirement tourner à droite au prochain carrefour.",
+        "answer_d": "Que la route devient à sens unique.",
+        "explanation": "Sur une route à deux voies, les flèches de rabattement accompagnent l’annonce d’une ligne continue. Elles ne créent pas de voie de dépassement : j’anticipe le retour à droite avant cette ligne et ne commence pas une manœuvre qui ne pourrait y être terminée en sécurité."
+      },
+      "en": {
+        "question_text": "On this two-lane, two-way road, this return arrow accompanies the warning centreline. What does it tell me before overtaking?",
+        "answer_a": "An extra overtaking lane is available.",
+        "answer_b": "A solid line is approaching; I must stay or return to the right before it.",
+        "answer_c": "I must turn right at the next junction.",
+        "answer_d": "The road is becoming one-way.",
+        "explanation": "On a two-lane road, return arrows accompany the warning of a solid centreline. They do not create an overtaking lane: I anticipate returning right before that line and do not start a manoeuvre that cannot finish safely in time."
+      }
+    }
+  },
+  "option_rationale": {
+    "fr": {
+      "a": "Aucune voie ajoutée.",
+      "b": "Annonce de la ligne continue et rabattement.",
+      "c": "Ce ne sont pas des flèches directionnelles de carrefour.",
+      "d": "Les sens ne changent pas."
+    },
+    "en": {
+      "a": "No extra lane is created.",
+      "b": "They warn of the solid line and return.",
+      "c": "They are not junction turn arrows.",
+      "d": "Traffic directions do not change."
+    }
+  },
+  "image_prompt": "Original photorealistic landscape scene of the LAST French return arrow in a sequence, camera close enough that previous arrows behind the camera are outside frame. One standard six-metre slender white curved arrow straddles the T3 centreline, points forward slightly right, with 30 metres of T3 long dashes then a solid line. One lane each direction, camera in right lane, countryside and no vehicles or signs. IISR B1 silhouette, not a turn arrow. No text, captions or overlays.",
+  "sources": [
+    {
+      "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/",
+      "kind": "official",
+      "checked_on": "2026-10-10",
+      "supports": "Article8 describes curved return arrows directing users to indicated lanes and warning of continuouslines."
+    },
+    {
+      "url": "https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_7epartie_vc_20250404.pdf",
+      "kind": "official",
+      "checked_on": "2026-10-10",
+      "supports": "IISR7Article115-3B,p21-22: two-lane road arrowsstraddleannouncementline,3arrows; AnnexB1p61shape visually inspected."
+    }
+  ]
+}

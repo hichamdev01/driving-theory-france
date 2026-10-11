@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "df4bee393bb807dd04e88d53016f9aed39def97a1b5a675ad8d6fcd1067bf196",
+  "image_sha256": "7daaaa2b2a642d2b2844c66407517209e71ec837b67c147ab889596d52a4be9b",
+  "result": "pass",
+  "notes": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+  "compared_question_keys": [
+    "situation_roundabout_inner_lane_yield_outer",
+    "situation_cmi_parking_card_passenger",
+    "situation_abs_emergency_pedal_pulsation",
+    "situation_abs_warning_stays_on_without_red_brake",
+    "situation_overtake_three_lane_no_far_left"
+  ],
+  "checks": {
+    "signs_and_text": "One visible AB3a yield sign: inverted triangle, red border, white centre, facing the approach. No plates, text, signals, lane-allocation signs or overlay arrows.",
+    "road_geometry": "Third candidate shows entry give-way rectangles between splitter island and right kerb, then two circulating lanes divided by one curved broken white line around raised planted island. Other arms are outside the frame or hidden. No line crosses an exit.",
+    "vehicles_and_people": "Empty approach and ring; no vehicle movement or pedestrian intention is inferred.",
+    "dashboard_and_equipment": "No dashboard, vehicle controls or roadside machinery. Splitter bollard and yield pole are physically grounded.",
+    "phone_size": "390px preview clearly retains the yield triangle, entry line and two circular lanes. Destination and absence of lane allocation are explicit in both stems.",
+    "french_and_english": "Both specify an exit left of the approach axis, two lanes and no special allocation; both distinguish permission from obligation. No exact exit position must be deduced from the photograph.",
+    "all_four_options": "AC: left lane is permitted and right lane may be retained. B incorrectly makes the permission compulsory. D proposes driving across the raised island. Both translations preserve these four distinct meanings.",
+    "official_rule": "Sources read and checked 2026-10-11; research-and-selection.json records facts and limitations. R412-9 permits moving left for an exit left of entry axis on a multi-lane roundabout; it does not mandate it. No special lane allocation stipulated. Source: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050965688/",
+    "novelty": "Existing roundabout items cover sign meaning, entry priority and yielding while leaving the inner lane. None tests whether inner-lane use for a left-side destination is optional. All five saved nearest questions, including bilingual options/explanations, compared as recorded in research-and-selection.json; broader current bank screened.",
+    "full_resolution": "Inspected entire final staged JPEG 1672x941, plus 390px preview, against both translations and all four options. Rejected earlier candidates remain in history. No detected unresolved defect in this version."
+  }
+}

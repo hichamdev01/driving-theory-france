@@ -1,0 +1,28 @@
+{
+  "pack_sha256": "560f27f01e00d7639622e8b0db41da3cd7ffbe9978f37104ee7e0fb4bd8b815d",
+  "content_version": 97,
+  "python_tests": {
+    "result": "pass",
+    "notes": "52 tests pass, including signal-family blocking, improved nearest retrieval and full replacement preservation/stale-review/recovery/retry checks.",
+    "path": "assets-source/question-batches/expansion-004/evidence/python-tests-repair.log",
+    "sha256": "7d90c29cb3b6a3a3c8051a7b0974ad70871dcd980beb3bb213ffeabc62dec003"
+  },
+  "ios_tests": {
+    "result": "pass",
+    "notes": "All36 native tests pass after replacement; all images decode and seeded content/progress checks pass.",
+    "path": "assets-source/question-batches/expansion-004/evidence/ios-tests-repair.log",
+    "sha256": "e752ae600f2f60dfb3056a209bedec116b4cf6a90994e3f010dbbea9f97b1e46"
+  },
+  "sqlite_check": {
+    "result": "pass",
+    "notes": "All428 questions match version97 and user-history hash is unchanged.",
+    "path": "assets-source/question-batches/expansion-004/evidence/sqlite-repair-after-ui.json",
+    "sha256": "e5f2132e54354c4fb515f411d30366991c282a1f368a78131f71cfaf059a16f6"
+  },
+  "simulator_review": {
+    "result": "pass",
+    "notes": "New exact replacement checked in French and English; complete set passes and incomplete set fails. Nine unchanged items retain exact-file UI evidence.",
+    "path": "assets-source/question-batches/expansion-004/evidence/simulator-review-repair.json",
+    "sha256": "35a52f0af4b7e0645c2bb1549d2dad6fb07824240ffb4d5e539f2b8a34c7cca5"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "pack_sha256": "cb2fb2189ce42ac646f4725bc937c1e1508c8dc65215308497f5108d2cf92f39",
+  "content_version": 93,
+  "python_tests": {
+    "result": "pass",
+    "notes": "47 workflow tests passed, including stale reviews, duplicate blocking, multiple answers, import recovery and idempotent wording repair.",
+    "path": "assets-source/question-batches/expansion-001/evidence/python-tests.log",
+    "sha256": "843e51c791213fdf77ea8391ebd84bffb3734ee657cdd22b5c44759a52c1e9bc"
+  },
+  "ios_tests": {
+    "result": "pass",
+    "notes": "36 native tests passed after repairing two short explanations; bank seed/progress/image decoding validated.",
+    "path": "assets-source/question-batches/expansion-001/evidence/ios-tests.log",
+    "sha256": "e81c3694b76daf21adff49205290c194b3b1afaf7246cd733de92e1c03f5e097"
+  },
+  "sqlite_check": {
+    "result": "pass",
+    "notes": "All398active questions,369image references and both translations match version93; integrity and unchanged practice-history hash checked.",
+    "path": "assets-source/question-batches/expansion-001/evidence/sqlite-after.json",
+    "sha256": "1b50000062a8d4f69736be8bff90db337f6ce791dbebb2b5abaf046f47bd415f"
+  },
+  "simulator_review": {
+    "result": "pass",
+    "notes": "All ten inspected in actual simulator; single/multiple instructions and exact-set scoring checked in FR/EN; normal home restored.",
+    "path": "assets-source/question-batches/expansion-001/evidence/simulator-review.json",
+    "sha256": "2b0c87f069f9d5fcdabb0016294bbbbfe77a42af2a61d4caf7e0d078324213b1"
+  }
+}

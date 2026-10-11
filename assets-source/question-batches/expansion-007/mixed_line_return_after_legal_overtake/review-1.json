@@ -1,0 +1,13 @@
+{
+  "proposal_sha256": "c92b30a9209e674bc9c7c0c62999c9636dca500257617ce14998f6a309267aef",
+  "image_sha256": "5b47651d46b63411b465fedaed6c6e4973960a3140fe0812a11da6cadd19d2ed",
+  "result": "reject",
+  "notes": "Broken component has insufficient gaps for requested T1 pattern: correct to3m bars and10m gaps with consistent perspective, solid component nearest overtaking camera.",
+  "compared_question_keys": [
+    "situation_mixed_line_broken_my_side",
+    "situation_return_right_safe_gap",
+    "situation_yellow_broken_kerb_parking_only",
+    "situation_overtaking_no_safe_return_gap",
+    "situation_cyclist_solid_line_overlap_only"
+  ]
+}

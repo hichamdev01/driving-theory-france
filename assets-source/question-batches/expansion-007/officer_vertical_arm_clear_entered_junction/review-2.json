@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "0e74476e4878b8da0115fa4c3f45c39b373d6874867ccaa8f4a3d2343c4122c9",
+  "image_sha256": "5098f0296643ebd8389e8c7577923717eba3e4f2df6cf094b7e055cf63d59240",
+  "result": "pass",
+  "notes": "Entire exact replacement scene-2.jpg and390px phone-2.jpg inspected. No detected unresolved defects.",
+  "compared_question_keys": [
+    "situation_priority_officer_over_green_light",
+    "situation_b4_car_sign_interpretation",
+    "situation_b5b_police_checkpoint_required_stop",
+    "situation_motorway_exit_deceleration",
+    "situation_overtaking_uncontrolled_intersection"
+  ],
+  "checks": {
+    "official_rule": "Article6 paragraph3(a): raised vertical arm; exception for drivers already within intersection. Official indexed full paragraph read; direct PDF returned403. R411-28: officer instructions prevail over signals and traffic rules.",
+    "novelty": "Existing horizontal-arm item asks which approaches must stop; this tests the already-entered exception to a different gesture, avoiding stopping inside the junction. Full five nearest items and full-bank topic inventory reviewed.",
+    "signs_and_text": "No signs, text, lights or road paint.",
+    "road_geometry": "Foreground is crossing-road asphalt with entry kerbs behind camera; far corners frame unobstructed straight exit.",
+    "vehicles_and_people": "Officer at left, one arm vertical with five-finger open hand, other arm down, normal anatomy, out of path.",
+    "dashboard_and_equipment": "Navy uniform/fluorescent vest, thin bonnet edge; no dashboard readings.",
+    "full_resolution": "Exact replacement1672x941 JPEG viewed fully at original resolution. No signs, text, lights or road paint. Navy uniform/fluorescent vest, thin bonnet edge; no dashboard readings.",
+    "phone_size": "Raised arm and clear exit distinguishable at390px; already-entered timing stated.",
+    "french_and_english": "Same conditions, scope and answer set; all unavailable temporal facts explicit. Driver already inside intersection, exit free, officer raises one arm; no contrary instruction. Entry and timing stated because still image cannot establish prior movement.",
+    "all_four_options": "Correct set b. {'fr': {'a': 'L’exception vise les conducteurs déjà engagés.', 'b': 'Il faut libérer l’intersection.', 'c': 'Une marche arrière n’est pas demandée.', 'd': 'Cela maintiendrait le carrefour occupé.'}, 'en': {'a': 'The exception concerns drivers already inside.', 'b': 'The intersection should be cleared.', 'c': 'Reversing is not requested.', 'd': 'That would keep the junction obstructed.'}}"
+  }
+}

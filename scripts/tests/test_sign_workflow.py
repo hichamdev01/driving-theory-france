@@ -68,6 +68,15 @@ class WorkflowTests(unittest.TestCase):
         self.assertIn('= 37', (self.root / w.SCHEMA).read_text())
         self.assertEqual(r.lookup(w.fresh(self.root), 'B15')['question_keys'], [self.proposal['question']['key']])
 
+    def test_single_sign_workflow_supports_multiple_correct_answers(self):
+        self.proposal['question'].pop('correct_answer')
+        self.proposal['question']['correct_answers'] = ['b', 'd']
+        self.ready()
+        w.import_question(self.root, 'B15')
+        question = r.read(self.root, r.CONTENT / 'pack.json')['questions'][-1]
+        self.assertEqual(question['correct_answers'], ['b', 'd'])
+        self.assertNotIn('correct_answer', question)
+
     def test_changed_image_blocks_import(self):
         self.ready()
         job = r.read(self.root, r.JOBS / 'B15.json')

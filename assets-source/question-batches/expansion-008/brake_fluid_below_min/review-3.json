@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "abc03f55fdf67a11d5b7f5ad16ebd68abf675a11423f8ebe6d7a6e9d82f5fbd6",
+  "image_sha256": "8fa078018506bae69e0c165bf32f667bb43a1333de488dda998673261a215cca",
+  "result": "pass",
+  "notes": "Exact final scene-3.jpg inspected at1672x941and390px; broad clear gap belowMIN, no detected unresolved defects.",
+  "compared_question_keys": [
+    "situation_driver_mat_secure_no_stacking",
+    "situation_coolant_hot_cap_wait",
+    "situation_parking_secure_before_leaving",
+    "situation_medicine_level_one_notice",
+    "situation_otc_medicine_not_driving_guarantee"
+  ],
+  "checks": {
+    "official_rule": "Ford original French manuals require prompt check for belowMIN and appropriate clean specified fluid. No diagnosis inferred; seek professional advice before departure.",
+    "novelty": "Existing oil-level, coolant-temperature andABSwarning questions concern different systems and decisions; no prior brake-fluid level/contamination objective. Five nearest complete bilingual questions and equipment inventory compared.",
+    "signs_and_text": "Only MAXandMINlabels, correctly ordered and spelled, short level marks. No extraneous text.",
+    "road_geometry": "Engine-bay macro, no road geometry. Car level is explicit wording condition.",
+    "vehicles_and_people": "No people, hands or tools. Reservoir remains installed.",
+    "dashboard_and_equipment": "Closed black cap, translucent reservoir, amber fluid distinctly belowMIN. Two small lower mount/feed ends at bottom margin; cylinder and plumbing outside frame.",
+    "full_resolution": "Entire1672x941replacement viewed: clean material boundaries, MAXaboveMIN, level belowMIN, cap closed, no malformed pipe assembly.",
+    "phone_size": "Both labels and empty band betweenMINand fluid remain obvious at390px.",
+    "french_and_english": "Same level-check conditions and required professional check/compatible fluid precautions. Neither permits driving with unresolved abnormal level.",
+    "all_four_options": "Bprofessionalcheck andDcorrectfluid/cleanliness. AwaterandCignoreunsafe. Fourdistinctoptionswithmatchingtranslations."
+  }
+}

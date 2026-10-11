@@ -1,0 +1,54 @@
+{
+  "sequence": 5,
+  "scenario_id": "parking_camera_requires_direct_checks",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives or prepares a normal passenger car; no specialist vehicle operating rules.",
+  "learning_objective": "Use a reversing camera as an aid rather than sole observation",
+  "references": [
+    "https://www.user-manual.renault.com/fr/aides-au-stationnement/camera-de-recul-2"
+  ],
+  "novelty_review": "No existing question tests reliance on a reversing camera when manoeuvring into a parking bay; distinct from opening a door or rejoining traffic.",
+  "scenario": "Photoreal interior of a stationary left-hand-drive passenger car in a French outdoor car park, photographed from front passenger position. Centre dashboard screen clearly shows a simple live reversing-camera view of an empty white-lined parking bay and realistic coloured parking guide lines only. Steering wheel at left, exterior parking bays visible through windows. No pedestrians in immediate path, no text labels, no brand logos. Screen occupies about one quarter of image, ordinary realistic proportions.",
+  "image_prompt": "Use case: photorealistic-natural. Create ONE realistic educational photograph for a French Code de la Route passenger-car question. Landscape 16:9, preferably 2048x1152. Contemporary France, natural photographic colours and exposure, physically plausible perspective. Photoreal interior of a stationary left-hand-drive passenger car in a French outdoor car park, photographed from front passenger position. Centre dashboard screen clearly shows a simple live reversing-camera view of an empty white-lined parking bay and realistic coloured parking guide lines only. Steering wheel at left, exterior parking bays visible through windows. No pedestrians in immediate path, no text labels, no brand logos. Screen occupies about one quarter of image, ordinary realistic proportions. No quiz panel, question text, answer choices, highlighted answer, watermark, instructional overlay, collage or invented road signs. Any cars use French-style plates with unreadable small characters. This is a scene photograph, not an infographic.",
+  "question": {
+    "key": "situation_parking_camera_requires_direct_checks",
+    "category_slug": "parking_stopping",
+    "correct_answer": "a",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Pour me garer en marche arrière, l’écran de la caméra semble dégagé. Puis-je regarder uniquement cet écran ?",
+        "answer_a": "Non, je contrôle aussi directement les alentours, les rétroviseurs et les angles morts.",
+        "answer_b": "Oui, la caméra couvre forcément tous les angles morts.",
+        "answer_c": "Oui, si je recule assez vite pour finir rapidement.",
+        "answer_d": "Oui, dès lors qu’aucun signal sonore ne retentit.",
+        "explanation": "La caméra de recul est une aide. Des obstacles ou des usagers peuvent rester hors de son champ. Je complète l’écran par les contrôles autour du véhicule et je manœuvre lentement, prêt à m’arrêter."
+      },
+      "en": {
+        "question_text": "The reversing-camera screen looks clear as I prepare to park. May I watch only that screen?",
+        "answer_a": "No, I also check the surroundings directly, the mirrors and blind spots.",
+        "answer_b": "Yes, the camera necessarily covers every blind spot.",
+        "answer_c": "Yes, if I reverse fast enough to finish quickly.",
+        "answer_d": "Yes, provided no warning sound is heard.",
+        "explanation": "A reversing camera is an aid. Obstacles or road users may remain outside its view. Supplement the screen with checks around the vehicle and manoeuvre slowly, ready to stop."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-8c8dbfd3-3861-4f41-8ebd-8f5134f41d0a.png",
+  "native_image_sha256": "c40a23d01d6933a691a60a2e293b4b3d88e8bd584a2c701ed1b24dc23b2f2ac6",
+  "image_path": "assets-source/balanced-batch-2026-09-21/parking_camera_requires_direct_checks/corrections-2026-10-09/scene.jpg",
+  "image_sha256": "50ae9806bf06638031d8c0d4212541aaccbc0476bc0918abd7989ae0564411ba",
+  "visual_review": "Full-resolution and 390px review: rear camera shows a clear bay with realistic converging guidelines; windshield view remains separate and plausible. Removed malformed peripheral numbered gauges by reframing around camera. Four options and both translations still require direct and mirror checks, not reliance on the camera alone.",
+  "reviewed_on": "2026-10-09",
+  "reviewed_sha256": "3bc41bb82b31645c6406329d32dcd39a0211b1579a8051238d399406eb15ce02",
+  "question_key": "situation_parking_camera_requires_direct_checks",
+  "imported_content_version": 89,
+  "imported_on": "2026-09-21",
+  "corrections_2026_10_09": {
+    "previous_image_path": "assets-source/balanced-batch-2026-09-21/parking_camera_requires_direct_checks/scene.jpg",
+    "previous_image_sha256": "890f94c9c29c1f565368ece5c39710507cc4db4d86d0ab791af7f61d7c8a5b99",
+    "reason": "Full-resolution and 390px review: rear camera shows a clear bay with realistic converging guidelines; windshield view remains separate and plausible. Removed malformed peripheral numbered gauges by reframing around camera. Four options and both translations still require direct and mirror checks, not reliance on the camera alone."
+  }
+}

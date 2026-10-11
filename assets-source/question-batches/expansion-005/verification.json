@@ -1,0 +1,28 @@
+{
+  "pack_sha256": "9049451b9f4ed6f641ed7c5e9ee62f63259102928441797e209064c235b350b3",
+  "content_version": 98,
+  "python_tests": {
+    "result": "pass",
+    "notes": "52 workflow and sign tests passed; duplicate blocking, exact approvals, recovery and safe retries covered.",
+    "path": "assets-source/question-batches/expansion-005/python-tests.log",
+    "sha256": "87ea989d377ec5ec96a5b145ec617dda742a6c57582a2c960a1a739f2005826f"
+  },
+  "ios_tests": {
+    "result": "pass",
+    "notes": "36 native tests passed, including bundled content, image decoding and multiple-answer checks.",
+    "path": "assets-source/question-batches/expansion-005/ios-tests.log",
+    "sha256": "d3f993d46bfbdbf940cefb7840964c7a4b16ef8f6853a0fefdb25e6e160f0c6a"
+  },
+  "sqlite_check": {
+    "result": "pass",
+    "notes": "438 active questions and409images; full translations and answer sets match pack, saved practice history unchanged.",
+    "path": "assets-source/question-batches/expansion-005/sqlite-after-ui.json",
+    "sha256": "7a9b26423874e1e085ca9e4d631da04c5703a4a1668577a8d1eb9f9fb1931cdf"
+  },
+  "simulator_review": {
+    "result": "pass",
+    "notes": "All ten FR scenes/questions answered correctly, both multiple sets complete; EN incomplete sets rejected and correction uses plural. Normal home restored.",
+    "path": "assets-source/question-batches/expansion-005/simulator-review.json",
+    "sha256": "4c4f43e050001ac6944f428bbf12c6e99ca370479f9d36c388234ed40fe2e299"
+  }
+}

@@ -1,0 +1,1884 @@
+{
+  "schema_version": 1,
+  "id": "expansion-004",
+  "state": "verified",
+  "created_on": "2026-10-10",
+  "target": 1000,
+  "questions_before": 418,
+  "pack_before_sha256": "017498fa2abe706993e999c2394bfcffeac900f751235fbd4e9970dc6dc5aedc",
+  "items": [
+    {
+      "proposal": {
+        "scenario_id": "ead_restriction_borrowed_car",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+        "learning_objective": "Apply a personal EAD driving restriction to a borrowed passenger car.",
+        "topic": "alcohol.ead_licence_scope",
+        "scenario": "A sober driver whose B licence has an active EAD restriction is offered a borrowed car with no EAD.",
+        "novelty_review": "Existing EAD question covers stopping before a requested repeat breath. This tests which cars the restricted licence permits, including a loan, even while sober.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_ead_restriction_borrowed_car",
+          "category_slug": "alcohol_drugs",
+          "difficulty": "medium",
+          "correct_answers": [
+            "b"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Mon permis B impose actuellement un éthylotest antidémarrage (EAD). Je suis sobre. Puis-je conduire la voiture prêtée par un ami si elle n’a pas d’EAD ?",
+              "answer_a": "Oui, puisque je n’ai pas bu.",
+              "answer_b": "Non, la restriction s’applique aussi à cette voiture prêtée.",
+              "answer_c": "Oui, si mon ami m’accompagne.",
+              "answer_d": "Oui, pour un trajet inférieur à dix kilomètres.",
+              "explanation": "La restriction limite mon droit de conduire aux voitures équipées d’un EAD. Le prêt du véhicule, ma sobriété ou la présence de son propriétaire ne suppriment pas cette condition."
+            },
+            "en": {
+              "question_text": "My category-B licence currently requires an alcohol interlock (EAD). I am sober. May I drive a friend’s borrowed car if it has no EAD?",
+              "answer_a": "Yes, because I have not drunk alcohol.",
+              "answer_b": "No; the restriction also applies to this borrowed car.",
+              "answer_c": "Yes, if my friend travels with me.",
+              "answer_d": "Yes, for a journey of less than ten kilometres.",
+              "explanation": "The restriction limits my driving entitlement to cars equipped with an alcohol interlock. Borrowing the car, being sober or having its owner present does not remove that condition."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "La sobriété ne supprime pas la restriction.",
+            "b": "Le droit à conduire reste soumis à l’équipement.",
+            "c": "La présence de l’ami ne vaut pas dérogation.",
+            "d": "Aucune exception de distance."
+          },
+          "en": {
+            "a": "Sobriety does not remove the restriction.",
+            "b": "The equipment condition still applies.",
+            "c": "The owner’s presence is not an exemption.",
+            "d": "There is no short-distance exemption."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Outside a quiet private home, one adult hand extends a plain black car key fob toward the camera, in front of the closed driver door of a parked ordinary blue hatchback. The key has no lettering or logo. Side view of the door and mirror only, front and rear number plates out of frame. No road signs, no dashboard, no drinks, no other people. Natural late-afternoon light; believable five-finger hand. The image illustrates borrowing; the question supplies licence restriction and equipment facts.",
+        "sources": [
+          {
+            "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2671",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Current page verified 25 September 2026: a licence with EAD restriction permits only equipped light vehicles; category B car loan is no exemption."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_alcohol_carrying_breathalyser_optional",
+          "similarity": 0.451,
+          "question_fr": "En France, dois-je obligatoirement emporter un éthylotest de dépistage dans ma voiture particulière ?"
+        },
+        {
+          "key": "situation_breath_test_probationary_limit",
+          "similarity": 0.435,
+          "question_fr": "Je suis en permis probatoire et l’éthylomètre affiche 0,10 mg/L d’air expiré. Puis-je prendre le volant ?"
+        },
+        {
+          "key": "situation_motorway_lost_object_no_retrieval",
+          "similarity": 0.432,
+          "question_fr": "Une valise vient de tomber de ma galerie sur l'autoroute. Puis-je revenir à pied sur la chaussée pour la récupérer ?"
+        },
+        {
+          "key": "situation_overtaking_ungated_level_crossing",
+          "similarity": 0.406,
+          "question_fr": "La voiture devant ralentit à ce passage à niveau sans barrière. Puis-je la dépasser sur les rails si aucun train n'est visible ?"
+        },
+        {
+          "key": "situation_abs_emergency_pedal_pulsation",
+          "similarity": 0.403,
+          "question_fr": "Lors d’un freinage d’urgence, l’ABS de ma voiture entre en action et la pédale vibre. Quelles affirmations sont exactes ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-004/ead_restriction_borrowed_car/scene-1.jpg",
+          "image_sha256": "c1464f3b45b7feda90b3cd0196d62713d2b66f0418cdd302c049ada8c168760e",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Outside a quiet private home, one adult hand extends a plain black car key fob toward the camera, in front of the closed driver door of a parked ordinary blue hatchback. The key has no lettering or logo. Side view of the door and mirror only, front and rear number plates out of frame. No road signs, no dashboard, no drinks, no other people. Natural late-afternoon light; believable five-finger hand. The image illustrates borrowing; the question supplies licence restriction and equipment facts.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+            "proposal_sha256": "0daed2ad8c4ca28678ebab9765d242dca5f18e69c76481c01cb0460ba3ca550f",
+            "image_sha256": "c1464f3b45b7feda90b3cd0196d62713d2b66f0418cdd302c049ada8c168760e",
+            "compared_question_keys": [
+              "situation_alcohol_carrying_breathalyser_optional",
+              "situation_breath_test_probationary_limit",
+              "situation_motorway_lost_object_no_retrieval",
+              "situation_overtaking_ungated_level_crossing",
+              "situation_abs_emergency_pedal_pulsation"
+            ],
+            "checks": {
+              "official_rule": "Checked 2026-10-10. Current page verified 25 September 2026: a licence with EAD restriction permits only equipped light vehicles; category B car loan is no exemption.",
+              "novelty": "Existing EAD question covers stopping before a requested repeat breath. This tests which cars the restricted licence permits, including a loan, even while sober. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+              "signs_and_text": "No roadside sign, plate or written text. Key has ordinary lock/unlock pictograms, not an EAD display.",
+              "road_geometry": "Private gravel drive and closed house door; no traffic lane or claimed manoeuvre.",
+              "vehicles_and_people": "Blue car door, side mirror and one naturally flexed hand holding key. Door/wheel perspective consistent; no people in traffic.",
+              "dashboard_and_equipment": "No readable dashboard; key is ordinary fob and cannot establish presence or absence of an EAD. That is explicit in the stem.",
+              "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Private gravel drive and closed house door; no traffic lane or claimed manoeuvre. Blue car door, side mirror and one naturally flexed hand holding key. Door/wheel perspective consistent; no people in traffic.",
+              "phone_size": "Inspected saved390px phone-1.jpg. Hand, key and parked car remain identifiable. Neither equipment state nor licence restriction is inferred from pixels.",
+              "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. A sober driver whose B licence has an active EAD restriction is offered a borrowed car with no EAD.",
+              "all_four_options": "Correct set b. FR: {\"a\": \"La sobriété ne supprime pas la restriction.\", \"b\": \"Le droit à conduire reste soumis à l’équipement.\", \"c\": \"La présence de l’ami ne vaut pas dérogation.\", \"d\": \"Aucune exception de distance.\"} EN: {\"a\": \"Sobriety does not remove the restriction.\", \"b\": \"The equipment condition still applies.\", \"c\": \"The owner’s presence is not an exemption.\", \"d\": \"There is no short-distance exemption.\"}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-004/ead_restriction_borrowed_car/scene-1.jpg",
+      "image_sha256": "c1464f3b45b7feda90b3cd0196d62713d2b66f0418cdd302c049ada8c168760e",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+        "proposal_sha256": "0daed2ad8c4ca28678ebab9765d242dca5f18e69c76481c01cb0460ba3ca550f",
+        "image_sha256": "c1464f3b45b7feda90b3cd0196d62713d2b66f0418cdd302c049ada8c168760e",
+        "compared_question_keys": [
+          "situation_alcohol_carrying_breathalyser_optional",
+          "situation_breath_test_probationary_limit",
+          "situation_motorway_lost_object_no_retrieval",
+          "situation_overtaking_ungated_level_crossing",
+          "situation_abs_emergency_pedal_pulsation"
+        ],
+        "checks": {
+          "official_rule": "Checked 2026-10-10. Current page verified 25 September 2026: a licence with EAD restriction permits only equipped light vehicles; category B car loan is no exemption.",
+          "novelty": "Existing EAD question covers stopping before a requested repeat breath. This tests which cars the restricted licence permits, including a loan, even while sober. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+          "signs_and_text": "No roadside sign, plate or written text. Key has ordinary lock/unlock pictograms, not an EAD display.",
+          "road_geometry": "Private gravel drive and closed house door; no traffic lane or claimed manoeuvre.",
+          "vehicles_and_people": "Blue car door, side mirror and one naturally flexed hand holding key. Door/wheel perspective consistent; no people in traffic.",
+          "dashboard_and_equipment": "No readable dashboard; key is ordinary fob and cannot establish presence or absence of an EAD. That is explicit in the stem.",
+          "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Private gravel drive and closed house door; no traffic lane or claimed manoeuvre. Blue car door, side mirror and one naturally flexed hand holding key. Door/wheel perspective consistent; no people in traffic.",
+          "phone_size": "Inspected saved390px phone-1.jpg. Hand, key and parked car remain identifiable. Neither equipment state nor licence restriction is inferred from pixels.",
+          "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. A sober driver whose B licence has an active EAD restriction is offered a borrowed car with no EAD.",
+          "all_four_options": "Correct set b. FR: {\"a\": \"La sobriété ne supprime pas la restriction.\", \"b\": \"Le droit à conduire reste soumis à l’équipement.\", \"c\": \"La présence de l’ami ne vaut pas dérogation.\", \"d\": \"Aucune exception de distance.\"} EN: {\"a\": \"Sobriety does not remove the restriction.\", \"b\": \"The equipment condition still applies.\", \"c\": \"The owner’s presence is not an exemption.\", \"d\": \"There is no short-distance exemption.\"}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "a2afa3590b41d204ace5db0631af33f0f29d62e6d1c171a645b4e570b062826c"
+    },
+    {
+      "proposal": {
+        "scenario_id": "ead_personal_breath_no_substitute",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+        "learning_objective": "Do not substitute another person’s breath in an alcohol interlock.",
+        "topic": "alcohol.ead_personal_measurement",
+        "scenario": "Before starting an EAD-equipped car, the intended driver is offered a breath sample by a sober passenger.",
+        "novelty_review": "Distinct from EAD repeat-test timing and equipment restriction: identifies fraudulent substitution of the driver’s own measurement.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_ead_personal_breath_no_substitute",
+          "category_slug": "alcohol_drugs",
+          "difficulty": "medium",
+          "correct_answers": [
+            "d"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Ma voiture est obligatoirement équipée d’un EAD. Avant que je conduise, mon passager sobre propose de souffler à ma place pour permettre le démarrage. Puis-je accepter ?",
+              "answer_a": "Oui, si le résultat est négatif.",
+              "answer_b": "Oui, si le passager reste à mes côtés.",
+              "answer_c": "Oui, si je souffle moi-même au prochain contrôle.",
+              "answer_d": "Non, le souffle doit être celui du conducteur.",
+              "explanation": "L’EAD doit mesurer l’alcoolémie du conducteur avant le démarrage. Conduire après qu’un tiers a soufflé pour permettre de démarrer est interdit ; un nouveau souffle ultérieur ne régularise pas cette substitution."
+            },
+            "en": {
+              "question_text": "My car must be fitted with an alcohol interlock. Before I drive, my sober passenger offers to blow into it for me so the engine can start. May I accept?",
+              "answer_a": "Yes, if the result is negative.",
+              "answer_b": "Yes, if the passenger stays beside me.",
+              "answer_c": "Yes, if I blow into it myself at the next check.",
+              "answer_d": "No; the breath sample must come from the driver.",
+              "explanation": "The interlock must measure the driver’s alcohol level before starting. Driving after someone else has supplied the breath to enable starting is prohibited; a later personal test does not undo that substitution."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Un résultat concernant le passager ne mesure pas le conducteur.",
+            "b": "Le passager n’est pas le conducteur testé.",
+            "c": "Un contrôle futur n’autorise pas la substitution.",
+            "d": "La mesure personnelle est obligatoire."
+          },
+          "en": {
+            "a": "A passenger’s result does not measure the driver.",
+            "b": "Remaining in the car changes nothing.",
+            "c": "A later test does not permit substitution.",
+            "d": "The driver must provide the sample."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Close natural photograph inside a parked left-hand-drive passenger car. A generic alcohol-interlock handset is clipped securely to the centre console: compact rectangular black device, blank unlit LCD, a clear disposable mouthpiece protruding horizontally from its top side, coiled cable visibly connecting it to the lower dashboard. Driver steering wheel partially visible on the LEFT. No hands or people, no readable control labels, no test result, no brand. No phone resemblance: substantial breath-testing mouthpiece and wired handset are clear. Exterior through windows is a quiet parking area, not a moving road.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000025109766/",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "R234-6: the driver must use the EAD before starting and may not drive after a third party supplied the breath to enable starting."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_overtaking_near_occupied_crossing",
+          "similarity": 0.479,
+          "question_fr": "La voiture devant ralentit avant ce passage piéton où une personne traverse. Puis-je la dépasser ?"
+        },
+        {
+          "key": "situation_motorway_friend_tow_offer",
+          "similarity": 0.454,
+          "question_fr": "Ma voiture est en panne sur autoroute et un ami propose de la remorquer avec une sangle. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_triangle_placement_personal_danger",
+          "similarity": 0.448,
+          "question_fr": "Hors autoroute, ma voiture est immobilisée après ce virage, mais marcher sur la chaussée pour poser le triangle me mettrait manifestement en danger. Dois-je le faire ?"
+        },
+        {
+          "key": "situation_b13_ptac_not_actual_mass",
+          "similarity": 0.446,
+          "question_fr": "Ma voiture sans remorque a un PTAC de 2 300 kg, mais pèse aujourd’hui 1 700 kg. Puis-je franchir ce panneau ?"
+        },
+        {
+          "key": "situation_rear_passenger_seatbelt",
+          "similarity": 0.422,
+          "question_fr": "Mon passager adulte à l'arrière ne veut pas boucler sa ceinture pour ce trajet très court. Puis-je démarrer ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-004/ead_personal_breath_no_substitute/scene-1.jpg",
+          "image_sha256": "c209bdca5053e9766dea6d10e13df63ce619be089307f3945c3bd7bf56c1b887",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Close natural photograph inside a parked left-hand-drive passenger car. A generic alcohol-interlock handset is clipped securely to the centre console: compact rectangular black device, blank unlit LCD, a clear disposable mouthpiece protruding horizontally from its top side, coiled cable visibly connecting it to the lower dashboard. Driver steering wheel partially visible on the LEFT. No hands or people, no readable control labels, no test result, no brand. No phone resemblance: substantial breath-testing mouthpiece and wired handset are clear. Exterior through windows is a quiet parking area, not a moving road.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "reject",
+            "proposal_sha256": "db3db4c38bbc46c31a51c505378acf87783cc645dbb8f477375a279508f13ca9",
+            "image_sha256": "c209bdca5053e9766dea6d10e13df63ce619be089307f3945c3bd7bf56c1b887",
+            "notes": "Speedometer at left contains an impossible sequence of values (repeated/descending numbers), gear knob and climate pictograms are malformed. Regenerate a tightly framed handset-only equipment photograph with no gauges, gear selector or control labels.",
+            "recorded_on": "2026-10-10"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-004/ead_personal_breath_no_substitute/scene-2.jpg",
+          "image_sha256": "db07451ab0de3d5ad8c098eee68bc4312fcd3d15a4eb9bde87a57f652f43efd2",
+          "prompt": "Create one original landscape 16:9 realistic photograph for a French car-theory question, no text, watermark, graphic annotation or logo. Very tight natural close-up of a generic alcohol-interlock handset securely clipped to the smooth lower centre console of a parked car. Black purpose-built rectangular instrument with small blank unlit LCD and a clear rigid disposable breath-test mouthpiece extending from its upper side; coiled black cable connected at the base and descending behind console trim. Show ONLY the whole handset, clip, cable, plain dark-grey textured plastic console backing and a small part of empty seat fabric. Exclude steering wheel, speedometer, gear lever, pedals, climate buttons, other screens, windows, people and hands. Mechanically plausible assembly, no invented numbers or labels. Soft natural light; clear mouthpiece and mounting remain recognisable on a phone. At least1672x941.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+            "proposal_sha256": "db3db4c38bbc46c31a51c505378acf87783cc645dbb8f477375a279508f13ca9",
+            "image_sha256": "db07451ab0de3d5ad8c098eee68bc4312fcd3d15a4eb9bde87a57f652f43efd2",
+            "compared_question_keys": [
+              "situation_overtaking_near_occupied_crossing",
+              "situation_motorway_friend_tow_offer",
+              "situation_triangle_placement_personal_danger",
+              "situation_b13_ptac_not_actual_mass",
+              "situation_rear_passenger_seatbelt"
+            ],
+            "checks": {
+              "official_rule": "Checked 2026-10-10. R234-6: the driver must use the EAD before starting and may not drive after a third party supplied the breath to enable starting.",
+              "novelty": "Distinct from EAD repeat-test timing and equipment restriction: identifies fraudulent substitution of the driver’s own measurement. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+              "signs_and_text": "No text, numbers or roadside signs. The LCD is blank.",
+              "road_geometry": "Interior-only close view, no road geometry to interpret.",
+              "vehicles_and_people": "No people; no implied breath by an unseen passenger.",
+              "dashboard_and_equipment": "Clear disposable mouthpiece connected to black instrument, clipped cradle and coiled lead. No malformed speedometer or gear markings remain.",
+              "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Interior-only close view, no road geometry to interpret. No people; no implied breath by an unseen passenger.",
+              "phone_size": "Inspected saved390px phone-2.jpg. Mouthpiece, handset and mounting remain clear; driver/passenger roles are explicit in wording.",
+              "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Before starting an EAD-equipped car, the intended driver is offered a breath sample by a sober passenger.",
+              "all_four_options": "Correct set d. FR: {\"a\": \"Un résultat concernant le passager ne mesure pas le conducteur.\", \"b\": \"Le passager n’est pas le conducteur testé.\", \"c\": \"Un contrôle futur n’autorise pas la substitution.\", \"d\": \"La mesure personnelle est obligatoire.\"} EN: {\"a\": \"A passenger’s result does not measure the driver.\", \"b\": \"Remaining in the car changes nothing.\", \"c\": \"A later test does not permit substitution.\", \"d\": \"The driver must provide the sample.\"}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-004/ead_personal_breath_no_substitute/scene-2.jpg",
+      "image_sha256": "db07451ab0de3d5ad8c098eee68bc4312fcd3d15a4eb9bde87a57f652f43efd2",
+      "dimensions": [
+        1672,
+        940
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+        "proposal_sha256": "db3db4c38bbc46c31a51c505378acf87783cc645dbb8f477375a279508f13ca9",
+        "image_sha256": "db07451ab0de3d5ad8c098eee68bc4312fcd3d15a4eb9bde87a57f652f43efd2",
+        "compared_question_keys": [
+          "situation_overtaking_near_occupied_crossing",
+          "situation_motorway_friend_tow_offer",
+          "situation_triangle_placement_personal_danger",
+          "situation_b13_ptac_not_actual_mass",
+          "situation_rear_passenger_seatbelt"
+        ],
+        "checks": {
+          "official_rule": "Checked 2026-10-10. R234-6: the driver must use the EAD before starting and may not drive after a third party supplied the breath to enable starting.",
+          "novelty": "Distinct from EAD repeat-test timing and equipment restriction: identifies fraudulent substitution of the driver’s own measurement. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+          "signs_and_text": "No text, numbers or roadside signs. The LCD is blank.",
+          "road_geometry": "Interior-only close view, no road geometry to interpret.",
+          "vehicles_and_people": "No people; no implied breath by an unseen passenger.",
+          "dashboard_and_equipment": "Clear disposable mouthpiece connected to black instrument, clipped cradle and coiled lead. No malformed speedometer or gear markings remain.",
+          "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Interior-only close view, no road geometry to interpret. No people; no implied breath by an unseen passenger.",
+          "phone_size": "Inspected saved390px phone-2.jpg. Mouthpiece, handset and mounting remain clear; driver/passenger roles are explicit in wording.",
+          "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Before starting an EAD-equipped car, the intended driver is offered a breath sample by a sober passenger.",
+          "all_four_options": "Correct set d. FR: {\"a\": \"Un résultat concernant le passager ne mesure pas le conducteur.\", \"b\": \"Le passager n’est pas le conducteur testé.\", \"c\": \"Un contrôle futur n’autorise pas la substitution.\", \"d\": \"La mesure personnelle est obligatoire.\"} EN: {\"a\": \"A passenger’s result does not measure the driver.\", \"b\": \"Remaining in the car changes nothing.\", \"c\": \"A later test does not permit substitution.\", \"d\": \"The driver must provide the sample.\"}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "fe2751b10f538db03a10bf6d9e1edafe306a7c20841eec001dbb624605d40d38"
+    },
+    {
+      "proposal": {
+        "scenario_id": "motorway_long_combination_two_right_lanes",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+        "learning_objective": "Restrict a combination over seven metres to the two rightmost general traffic lanes when overtaking.",
+        "topic": "motorway.towing_lane_restriction",
+        "scenario": "Three motorway lanes in one direction, dry, no reserved lanes or change of direction. Car and caravan together 8m; sum of PTACs 3200kg.",
+        "novelty_review": "Keeping right after a pass and a three-lane TWO-WAY road are covered. Here the restriction derives from combination length on three SAME-DIRECTION motorway lanes.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_motorway_long_combination_two_right_lanes",
+          "category_slug": "motorways",
+          "difficulty": "medium",
+          "correct_answers": [
+            "c"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Sur cette autoroute à trois voies dans mon sens, mon ensemble voiture-caravane mesure 8 m (somme des PTAC : 3 200 kg). Puis-je utiliser la voie la plus à gauche pour dépasser ?",
+              "answer_a": "Oui, car l’ensemble est autorisé avec mon permis B.",
+              "answer_b": "Oui, si la voie est libre.",
+              "answer_c": "Non, je suis limité aux deux voies les plus à droite.",
+              "answer_d": "Oui, si je reste sous 90 km/h.",
+              "explanation": "Sur une chaussée à au moins trois voies de circulation générale dans un même sens, un ensemble de plus de 7 m utilise seulement les deux voies les plus à droite pour circuler et dépasser. La masse inférieure à 3,5 tonnes ne supprime pas cette règle de longueur."
+            },
+            "en": {
+              "question_text": "On this motorway with three lanes in my direction, my car and caravan are 8 m long (combined maximum authorised masses: 3,200 kg). May I use the leftmost lane to overtake?",
+              "answer_a": "Yes, because my category-B licence covers the combination.",
+              "answer_b": "Yes, if that lane is clear.",
+              "answer_c": "No; I am limited to the two rightmost lanes.",
+              "answer_d": "Yes, if I stay below 90 km/h.",
+              "explanation": "On a road with at least three general traffic lanes in the same direction, a combination longer than 7 m uses only the two rightmost lanes for normal driving and overtaking. Being below 3.5 tonnes does not remove this length-based rule."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "La catégorie de permis ne supprime pas la restriction de voie.",
+            "b": "Une voie libre reste interdite à cet ensemble pour dépasser.",
+            "c": "R412-25 vise les ensembles de plus de 7 m.",
+            "d": "Ralentir ne lève pas la restriction."
+          },
+          "en": {
+            "a": "Licence entitlement does not remove the lane restriction.",
+            "b": "An empty lane does not make it available.",
+            "c": "R412-25 applies to combinations over 7 m.",
+            "d": "A lower speed does not remove the restriction."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Forward-facing eye-level road photograph from an ordinary car in the RIGHTMOST lane of a dry straight French motorway, with THREE equally wide traffic lanes in this direction, clearly formed by exactly TWO broken white lane-divider lines. A continuous white edge line on the right borders a broad empty emergency shoulder and guardrail. Concrete median barrier at the left edge of the leftmost lane. No other vehicles, no signs, no exit, no junction, no arrows painted on road. All three lanes converge consistently to the same vanishing point. No dashboard. The camera car’s caravan is behind the camera and need not appear. Wide daylight landscape.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177122",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "R412-25 in force: combinations longer than 7m use the two rightmost general lanes when three or more serve one direction; stated scenario is overtaking, not an exception for changing direction."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_motorway_left_lane_minimum_80",
+          "similarity": 0.63,
+          "question_fr": "Sur cette autoroute, les conditions sont normales et la circulation est fluide. Puis-je utiliser la voie la plus à gauche à 70 km/h pour dépasser ?"
+        },
+        {
+          "key": "situation_overtake_three_lane_no_far_left",
+          "similarity": 0.583,
+          "question_fr": "Sur cette chaussée à double sens à trois voies, la voie centrale est occupée par un dépassement. Puis-je utiliser la voie tout à gauche pour dépasser à mon tour ?"
+        },
+        {
+          "key": "situation_long_caravan_snow_overtaking_prohibited",
+          "similarity": 0.427,
+          "question_fr": "Je tracte une caravane : longueur totale 8 m, somme des PTAC 3 200 kg. Une voie de la chaussée est partiellement enneigée. Puis-je dépasser une voiture ?"
+        },
+        {
+          "key": "situation_long_caravan_facilitate_overtaking",
+          "similarity": 0.419,
+          "question_fr": "Mon ensemble voiture-caravane mesure 8 m. La route est trop étroite pour que la petite voiture derrière me dépasse facilement et sans danger. Je dois :"
+        },
+        {
+          "key": "situation_overtake_tram_left_one_way",
+          "similarity": 0.415,
+          "question_fr": "Cette rue est à sens unique et le tramway roule sans desservir un arrêt. Si tout est sûr, puis-je le dépasser par la gauche ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-004/motorway_long_combination_two_right_lanes/scene-1.jpg",
+          "image_sha256": "0968c7c818d27990ddf3efa00d9ac325dafe0510cf52b7d4ee11b399d900a535",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Forward-facing eye-level road photograph from an ordinary car in the RIGHTMOST lane of a dry straight French motorway, with THREE equally wide traffic lanes in this direction, clearly formed by exactly TWO broken white lane-divider lines. A continuous white edge line on the right borders a broad empty emergency shoulder and guardrail. Concrete median barrier at the left edge of the leftmost lane. No other vehicles, no signs, no exit, no junction, no arrows painted on road. All three lanes converge consistently to the same vanishing point. No dashboard. The camera car’s caravan is behind the camera and need not appear. Wide daylight landscape.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+            "proposal_sha256": "78d0887a47a12f1704c3968159115b05214cdcae3b550a186736745b7e4b20bd",
+            "image_sha256": "0968c7c818d27990ddf3efa00d9ac325dafe0510cf52b7d4ee11b399d900a535",
+            "compared_question_keys": [
+              "situation_motorway_left_lane_minimum_80",
+              "situation_overtake_three_lane_no_far_left",
+              "situation_long_caravan_snow_overtaking_prohibited",
+              "situation_long_caravan_facilitate_overtaking",
+              "situation_overtake_tram_left_one_way"
+            ],
+            "checks": {
+              "official_rule": "Checked 2026-10-10. R412-25 in force: combinations longer than 7m use the two rightmost general lanes when three or more serve one direction; stated scenario is overtaking, not an exception for changing direction.",
+              "novelty": "Keeping right after a pass and a three-lane TWO-WAY road are covered. Here the restriction derives from combination length on three SAME-DIRECTION motorway lanes. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+              "signs_and_text": "No signs or supplementary plates; white lane markings only.",
+              "road_geometry": "Exactly two broken dividers form three same-direction lanes between median and right edge. Continuous shoulder edge is permitted. Camera is in middle lane, a deviation from prompt but not from question: current lane is unspecified and middle is allowed.",
+              "vehicles_and_people": "No vehicles, people or competing movements. Caravan and dimensions are explicitly stated, behind/outside image.",
+              "dashboard_and_equipment": "No dashboard, speed reading or controls.",
+              "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Exactly two broken dividers form three same-direction lanes between median and right edge. Continuous shoulder edge is permitted. Camera is in middle lane, a deviation from prompt but not from question: current lane is unspecified and middle is allowed. No vehicles, people or competing movements. Caravan and dimensions are explicitly stated, behind/outside image.",
+              "phone_size": "Inspected saved390px phone-1.jpg. Three lanes, left median and right shoulder are easy to distinguish; no implied fourth traffic lane.",
+              "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Three motorway lanes in one direction, dry, no reserved lanes or change of direction. Car and caravan together 8m; sum of PTACs 3200kg.",
+              "all_four_options": "Correct set c. FR: {\"a\": \"La catégorie de permis ne supprime pas la restriction de voie.\", \"b\": \"Une voie libre reste interdite à cet ensemble pour dépasser.\", \"c\": \"R412-25 vise les ensembles de plus de 7 m.\", \"d\": \"Ralentir ne lève pas la restriction.\"} EN: {\"a\": \"Licence entitlement does not remove the lane restriction.\", \"b\": \"An empty lane does not make it available.\", \"c\": \"R412-25 applies to combinations over 7 m.\", \"d\": \"A lower speed does not remove the restriction.\"}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-004/motorway_long_combination_two_right_lanes/scene-1.jpg",
+      "image_sha256": "0968c7c818d27990ddf3efa00d9ac325dafe0510cf52b7d4ee11b399d900a535",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+        "proposal_sha256": "78d0887a47a12f1704c3968159115b05214cdcae3b550a186736745b7e4b20bd",
+        "image_sha256": "0968c7c818d27990ddf3efa00d9ac325dafe0510cf52b7d4ee11b399d900a535",
+        "compared_question_keys": [
+          "situation_motorway_left_lane_minimum_80",
+          "situation_overtake_three_lane_no_far_left",
+          "situation_long_caravan_snow_overtaking_prohibited",
+          "situation_long_caravan_facilitate_overtaking",
+          "situation_overtake_tram_left_one_way"
+        ],
+        "checks": {
+          "official_rule": "Checked 2026-10-10. R412-25 in force: combinations longer than 7m use the two rightmost general lanes when three or more serve one direction; stated scenario is overtaking, not an exception for changing direction.",
+          "novelty": "Keeping right after a pass and a three-lane TWO-WAY road are covered. Here the restriction derives from combination length on three SAME-DIRECTION motorway lanes. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+          "signs_and_text": "No signs or supplementary plates; white lane markings only.",
+          "road_geometry": "Exactly two broken dividers form three same-direction lanes between median and right edge. Continuous shoulder edge is permitted. Camera is in middle lane, a deviation from prompt but not from question: current lane is unspecified and middle is allowed.",
+          "vehicles_and_people": "No vehicles, people or competing movements. Caravan and dimensions are explicitly stated, behind/outside image.",
+          "dashboard_and_equipment": "No dashboard, speed reading or controls.",
+          "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Exactly two broken dividers form three same-direction lanes between median and right edge. Continuous shoulder edge is permitted. Camera is in middle lane, a deviation from prompt but not from question: current lane is unspecified and middle is allowed. No vehicles, people or competing movements. Caravan and dimensions are explicitly stated, behind/outside image.",
+          "phone_size": "Inspected saved390px phone-1.jpg. Three lanes, left median and right shoulder are easy to distinguish; no implied fourth traffic lane.",
+          "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Three motorway lanes in one direction, dry, no reserved lanes or change of direction. Car and caravan together 8m; sum of PTACs 3200kg.",
+          "all_four_options": "Correct set c. FR: {\"a\": \"La catégorie de permis ne supprime pas la restriction de voie.\", \"b\": \"Une voie libre reste interdite à cet ensemble pour dépasser.\", \"c\": \"R412-25 vise les ensembles de plus de 7 m.\", \"d\": \"Ralentir ne lève pas la restriction.\"} EN: {\"a\": \"Licence entitlement does not remove the lane restriction.\", \"b\": \"An empty lane does not make it available.\", \"c\": \"R412-25 applies to combinations over 7 m.\", \"d\": \"A lower speed does not remove the restriction.\"}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "2e1051e483659566200484c0b9a7d7fe6203fd202f3e33ed623bfec213272c8c"
+    },
+    {
+      "proposal": {
+        "scenario_id": "motorway_long_combinations_fifty_metre_gap",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+        "learning_objective": "Apply the fifty-metre minimum when two long combinations follow at the same speed outside built-up areas.",
+        "topic": "motorway.towing_following_distance",
+        "scenario": "Two car-caravan combinations each 8m long travel at the same 70km/h outside a built-up area on a motorway. Own sum PTAC3200kg. No special increased-distance sign.",
+        "novelty_review": "Existing following distance tests general two seconds and rain. The specific 50m floor for TWO long combinations at equal speed is a different condition; 70km/h avoids two-second distance exceeding 50m.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_motorway_long_combinations_fifty_metre_gap",
+          "category_slug": "motorways",
+          "difficulty": "medium",
+          "correct_answers": [
+            "a"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Hors agglomération, nos deux ensembles voiture-caravane mesurent chacun 8 m et roulent à la même vitesse de 70 km/h. Le mien totalise 3 200 kg de PTAC. Sans prescription plus stricte, quelle distance minimale dois-je garder derrière l’autre ?",
+              "answer_a": "Au moins 50 mètres.",
+              "answer_b": "Seulement la distance parcourue en une seconde.",
+              "answer_c": "20 mètres, puisque je conduis une voiture.",
+              "answer_d": "La longueur de ma caravane suffit.",
+              "explanation": "Quand deux véhicules ou ensembles de plus de 7 m se suivent à la même vitesse hors agglomération, l’écart est d’au moins 50 m. À 70 km/h, ce minimum est supérieur à la distance parcourue en deux secondes ; les circonstances peuvent demander davantage."
+            },
+            "en": {
+              "question_text": "Outside a built-up area, our two car-and-caravan combinations are each 8 m long and both travel at 70 km/h. Mine has combined maximum authorised masses of 3,200 kg. With no stricter requirement, what minimum gap must I leave behind the other?",
+              "answer_a": "At least 50 metres.",
+              "answer_b": "Only the distance travelled in one second.",
+              "answer_c": "20 metres, because I am driving a car.",
+              "answer_d": "The length of my caravan is enough.",
+              "explanation": "When two vehicles or combinations longer than 7 m follow at the same speed outside a built-up area, the gap must be at least 50 m. At 70 km/h this exceeds the distance travelled in two seconds; conditions may require an even larger gap."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "R412-12 II impose ce plancher aux deux ensembles longs.",
+            "b": "Une seconde est déjà inférieure au minimum général.",
+            "c": "La voiture tractrice fait partie de l’ensemble long.",
+            "d": "La longueur de la caravane ne constitue pas la distance légale."
+          },
+          "en": {
+            "a": "R412-12 II sets this floor for the two long combinations.",
+            "b": "One second is below even the general time minimum.",
+            "c": "The towing car is part of a long combination.",
+            "d": "The caravan’s length is not the statutory gap."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Natural daylight motorway scene from a following car, TWO lanes in our direction with one broken white lane-divider on the left of our right-hand lane. A compact white touring caravan being towed by an ordinary car is well ahead in our RIGHT lane, rear visible, not a motorhome: caravan box, two small rear red lights, no brake lamps lit, no lettering, registration too distant to resolve any characters. A portion of the towing car can be glimpsed naturally forward of the caravan, not beside it. Clear dry road, empty left lane, continuous right edge line and broad shoulder, guardrail, median on the far left. No signs, arrows or distance annotations. Neither exact speed, length nor distance is to be inferred from the photo; those conditions are supplied in the question.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051682619/",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "R412-12 I/II current since June2025: at least2s generally; outside towns two vehicles/combinations >7m following at equal speed leave at least50m."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_motorway_long_combination_two_right_lanes",
+          "similarity": 0.446,
+          "question_fr": "Sur cette autoroute à trois voies dans mon sens, mon ensemble voiture-caravane mesure 8 m (somme des PTAC : 3 200 kg). Puis-je utiliser la voie la plus à gauche pour dépasser ?"
+        },
+        {
+          "key": "situation_long_caravan_facilitate_overtaking",
+          "similarity": 0.386,
+          "question_fr": "Mon ensemble voiture-caravane mesure 8 m. La route est trop étroite pour que la petite voiture derrière me dépasse facilement et sans danger. Je dois :"
+        },
+        {
+          "key": "situation_rural_moped_overtake_clearance",
+          "similarity": 0.384,
+          "question_fr": "Hors agglomération, quelle distance latérale minimale dois-je laisser pour dépasser ce cyclomoteur ?"
+        },
+        {
+          "key": "situation_rural_horse_overtake_clearance",
+          "similarity": 0.382,
+          "question_fr": "Hors agglomération, quelle distance latérale minimale dois-je laisser pour dépasser ce cavalier ?"
+        },
+        {
+          "key": "situation_rural_pedestrian_overtake_clearance",
+          "similarity": 0.372,
+          "question_fr": "Hors agglomération, quelle distance latérale minimale dois-je laisser pour dépasser ce piéton qui marche sur la chaussée ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-004/motorway_long_combinations_fifty_metre_gap/scene-1.jpg",
+          "image_sha256": "54a11ad6f447fe3cd37ad16407182ef8b1cb9cb4b6de7475d74e4018c3ba111e",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Natural daylight motorway scene from a following car, TWO lanes in our direction with one broken white lane-divider on the left of our right-hand lane. A compact white touring caravan being towed by an ordinary car is well ahead in our RIGHT lane, rear visible, not a motorhome: caravan box, two small rear red lights, no brake lamps lit, no lettering, registration too distant to resolve any characters. A portion of the towing car can be glimpsed naturally forward of the caravan, not beside it. Clear dry road, empty left lane, continuous right edge line and broad shoulder, guardrail, median on the far left. No signs, arrows or distance annotations. Neither exact speed, length nor distance is to be inferred from the photo; those conditions are supplied in the question.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "reject",
+            "proposal_sha256": "52ad0072c4fc112881ddeccbecade0c7ce4f5423235acc9d110a01e0b5e5e2e8",
+            "image_sha256": "54a11ad6f447fe3cd37ad16407182ef8b1cb9cb4b6de7475d74e4018c3ba111e",
+            "notes": "Tow car shows rear lamp alongside the rear of the caravan, so the towing geometry is ambiguous and appears like a second vehicle beside the trailer. Regenerate with towing car fully occluded in front of caravan; no speculative glimpse. Caravan also lacks a credible registration location at this distance.",
+            "recorded_on": "2026-10-10"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-004/motorway_long_combinations_fifty_metre_gap/scene-2.jpg",
+          "image_sha256": "5b80fe5d220d7d41eaa0c615f7ea28f7a438ec4410a8df58212b672cd2adca68",
+          "prompt": "Create an original realistic landscape16:9 French motorway photograph, at least1672x941, no annotation,text,logos or watermark. Elevated oblique side-rear view from safely beyond a guardrail of a normal compact hatchback TOWING a small white touring caravan in the rightmost traffic lane of a dry two-lane motorway. Vehicle combination travels AWAY toward upper LEFT. Correct order along road: hatchback at FRONT farther away on left, clearly visible short A-frame tow hitch connected from REAR BUMPER of car to FRONT of caravan, caravan BEHIND nearer to camera at right. No car beside caravan. Each vehicle aligned in same lane, four car wheels and one caravan axle, realistic scale. Caravan rear has paired red triangular reflectors and paired rear lamp assemblies, small distant plate unresolvable. One broken white line divides our two motorway lanes; continuous right edge and empty shoulder, medianbarrier far left. No other vehicles, junction, signs or road text. Green countryside. Frame wide enough entire car, coupling and caravan visible. Do not depict a motorhome. Exact lengths,speed,gap given byquestion, no measuring marks.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "reject",
+            "proposal_sha256": "52ad0072c4fc112881ddeccbecade0c7ce4f5423235acc9d110a01e0b5e5e2e8",
+            "image_sha256": "5b80fe5d220d7d41eaa0c615f7ea28f7a438ec4410a8df58212b672cd2adca68",
+            "notes": "Towing connection and lane geometry now correct, but visible rear plates are blank rather than plausible registered vehicles. Add correctly formatted distinct French registrations without changing geometry.",
+            "recorded_on": "2026-10-10"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-004/motorway_long_combinations_fifty_metre_gap/scene-3.jpg",
+          "image_sha256": "83f5d31cf09bb02aae7984cc0a3acae1d3472206a39cdfef345a8a50c01a38da",
+          "prompt": "Edit this photograph only to give both visible rear registration plates plausible French registrations. Caravan rear white plate: exact black characters AB-742-CD, small blue EU/F strip at left and blue regional strip with 69 at right. Towing car rear white plate: exact black characters EF-315-GH, same blue strips, 69 at right. Match plate perspective and lighting naturally; no floating labels or graphic overlays. Keep car, caravan, tow hitch, wheels, all lamps and reflectors, road geometry, markings, shoulder, median, shadows and countryside unchanged. No other changes. Preserve landscape16:9.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+            "proposal_sha256": "52ad0072c4fc112881ddeccbecade0c7ce4f5423235acc9d110a01e0b5e5e2e8",
+            "image_sha256": "83f5d31cf09bb02aae7984cc0a3acae1d3472206a39cdfef345a8a50c01a38da",
+            "compared_question_keys": [
+              "situation_motorway_long_combination_two_right_lanes",
+              "situation_long_caravan_facilitate_overtaking",
+              "situation_rural_moped_overtake_clearance",
+              "situation_rural_horse_overtake_clearance",
+              "situation_rural_pedestrian_overtake_clearance"
+            ],
+            "checks": {
+              "official_rule": "Checked 2026-10-10. R412-12 I/II current since June2025: at least2s generally; outside towns two vehicles/combinations >7m following at equal speed leave at least50m.",
+              "novelty": "Existing following distance tests general two seconds and rain. The specific 50m floor for TWO long combinations at equal speed is a different condition; 70km/h avoids two-second distance exceeding 50m. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+              "signs_and_text": "No roadside signs. French-format registrations EF-315-GH on car and AB-742-CD on caravan; paired red triangular trailer reflectors and lamps. Registration numbers are not question clues.",
+              "road_geometry": "Two motorway lanes, broken separator, continuous edge and shoulder; median guardrail on foreground left. Both connected vehicles inside right traffic lane, aligned away toward upper left.",
+              "vehicles_and_people": "Hatchback is in front of caravan; coupling visible between car rear and caravan front. One trailer axle, plausible wheel/vehicle scale, distinct registrations appropriate to ordinary caravan. No person in carriageway.",
+              "dashboard_and_equipment": "No dashboard. Coupling, trailer reflectors and lights inspected; no brake/indicator claim is needed.",
+              "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Two motorway lanes, broken separator, continuous edge and shoulder; median guardrail on foreground left. Both connected vehicles inside right traffic lane, aligned away toward upper left. Hatchback is in front of caravan; coupling visible between car rear and caravan front. One trailer axle, plausible wheel/vehicle scale, distinct registrations appropriate to ordinary caravan. No person in carriageway.",
+              "phone_size": "Inspected saved390px phone-3.jpg. Towing order and right lane remain clear. Photograph is an exterior context view; the other combination, common70speed and both8m lengths are supplied by text. It does not claim to measure the photographed gap.",
+              "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Two car-caravan combinations each 8m long travel at the same 70km/h outside a built-up area on a motorway. Own sum PTAC3200kg. No special increased-distance sign.",
+              "all_four_options": "Correct set a. FR: {\"a\": \"R412-12 II impose ce plancher aux deux ensembles longs.\", \"b\": \"Une seconde est déjà inférieure au minimum général.\", \"c\": \"La voiture tractrice fait partie de l’ensemble long.\", \"d\": \"La longueur de la caravane ne constitue pas la distance légale.\"} EN: {\"a\": \"R412-12 II sets this floor for the two long combinations.\", \"b\": \"One second is below even the general time minimum.\", \"c\": \"The towing car is part of a long combination.\", \"d\": \"The caravan’s length is not the statutory gap.\"}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-004/motorway_long_combinations_fifty_metre_gap/scene-3.jpg",
+      "image_sha256": "83f5d31cf09bb02aae7984cc0a3acae1d3472206a39cdfef345a8a50c01a38da",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+        "proposal_sha256": "52ad0072c4fc112881ddeccbecade0c7ce4f5423235acc9d110a01e0b5e5e2e8",
+        "image_sha256": "83f5d31cf09bb02aae7984cc0a3acae1d3472206a39cdfef345a8a50c01a38da",
+        "compared_question_keys": [
+          "situation_motorway_long_combination_two_right_lanes",
+          "situation_long_caravan_facilitate_overtaking",
+          "situation_rural_moped_overtake_clearance",
+          "situation_rural_horse_overtake_clearance",
+          "situation_rural_pedestrian_overtake_clearance"
+        ],
+        "checks": {
+          "official_rule": "Checked 2026-10-10. R412-12 I/II current since June2025: at least2s generally; outside towns two vehicles/combinations >7m following at equal speed leave at least50m.",
+          "novelty": "Existing following distance tests general two seconds and rain. The specific 50m floor for TWO long combinations at equal speed is a different condition; 70km/h avoids two-second distance exceeding 50m. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+          "signs_and_text": "No roadside signs. French-format registrations EF-315-GH on car and AB-742-CD on caravan; paired red triangular trailer reflectors and lamps. Registration numbers are not question clues.",
+          "road_geometry": "Two motorway lanes, broken separator, continuous edge and shoulder; median guardrail on foreground left. Both connected vehicles inside right traffic lane, aligned away toward upper left.",
+          "vehicles_and_people": "Hatchback is in front of caravan; coupling visible between car rear and caravan front. One trailer axle, plausible wheel/vehicle scale, distinct registrations appropriate to ordinary caravan. No person in carriageway.",
+          "dashboard_and_equipment": "No dashboard. Coupling, trailer reflectors and lights inspected; no brake/indicator claim is needed.",
+          "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Two motorway lanes, broken separator, continuous edge and shoulder; median guardrail on foreground left. Both connected vehicles inside right traffic lane, aligned away toward upper left. Hatchback is in front of caravan; coupling visible between car rear and caravan front. One trailer axle, plausible wheel/vehicle scale, distinct registrations appropriate to ordinary caravan. No person in carriageway.",
+          "phone_size": "Inspected saved390px phone-3.jpg. Towing order and right lane remain clear. Photograph is an exterior context view; the other combination, common70speed and both8m lengths are supplied by text. It does not claim to measure the photographed gap.",
+          "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Two car-caravan combinations each 8m long travel at the same 70km/h outside a built-up area on a motorway. Own sum PTAC3200kg. No special increased-distance sign.",
+          "all_four_options": "Correct set a. FR: {\"a\": \"R412-12 II impose ce plancher aux deux ensembles longs.\", \"b\": \"Une seconde est déjà inférieure au minimum général.\", \"c\": \"La voiture tractrice fait partie de l’ensemble long.\", \"d\": \"La longueur de la caravane ne constitue pas la distance légale.\"} EN: {\"a\": \"R412-12 II sets this floor for the two long combinations.\", \"b\": \"One second is below even the general time minimum.\", \"c\": \"The towing car is part of a long combination.\", \"d\": \"The caravan’s length is not the statutory gap.\"}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "e77e3361550124b8132b342398d70051ff6a5d79b923b6ef65d46117827be59f"
+    },
+    {
+      "proposal": {
+        "scenario_id": "pregnancy_seatbelt_position",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Pregnant adult passenger in an ordinary category-B car; no medical exemption.",
+        "learning_objective": "Position the lap and shoulder straps safely during pregnancy.",
+        "topic": "occupants.pregnancy_belt_position",
+        "scenario": "Pregnant passenger, no exemption, before departure. Determine correct routing of both seat-belt straps.",
+        "novelty_review": "Read all428 French stems across ALL categories, plus full seatbelt/child-seat explanations. Existing questions require wearing belts, protecting minors and disabling airbag for rear-facing child seats. None tests lap-strap position below a pregnant abdomen or retaining the shoulder strap across the chest. Stable key retained from withdrawn duplicate R16 item to preserve database identity; key wording is historical.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_r16_right_arrow_conditional_passage",
+          "category_slug": "safety",
+          "difficulty": "medium",
+          "correct_answers": [
+            "a",
+            "c"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Enceinte et sans dispense médicale, je m’installe comme passagère. Comment positionner correctement ma ceinture ?",
+              "answer_a": "La sangle basse sous le ventre, au plus bas sur le bassin.",
+              "answer_b": "La sangle basse au milieu du ventre.",
+              "answer_c": "La sangle diagonale sur l’épaule et le thorax.",
+              "answer_d": "La sangle diagonale derrière mon dos.",
+              "explanation": "Pendant la grossesse, la sangle basse doit passer sous le ventre, au plus bas sur les os du bassin. La partie diagonale reste sur l’épaule et le thorax : la placer derrière le dos supprime une partie de la protection."
+            },
+            "en": {
+              "question_text": "I am pregnant and have no medical exemption. I am getting into the passenger seat. How should I position my seat belt?",
+              "answer_a": "The lap strap below my abdomen, as low as possible on my pelvis.",
+              "answer_b": "The lap strap across the middle of my abdomen.",
+              "answer_c": "The diagonal strap over my shoulder and chest.",
+              "answer_d": "The diagonal strap behind my back.",
+              "explanation": "During pregnancy, the lap strap should pass below the abdomen, as low as possible over the pelvic bones. The diagonal strap stays over the shoulder and chest; putting it behind the back removes part of the protection."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "La sangle prend appui sur le bassin, sous le ventre.",
+            "b": "Le ventre ne doit pas supporter la sangle basse.",
+            "c": "La partie haute conserve son trajet normal.",
+            "d": "Derrière le dos, elle ne retient plus correctement le thorax."
+          },
+          "en": {
+            "a": "The lap strap rests on the pelvis below the abdomen.",
+            "b": "The lap strap must not run across the abdomen.",
+            "c": "The upper strap keeps its normal route.",
+            "d": "Behind the back it cannot properly restrain the chest."
+          }
+        },
+        "sources": [
+          {
+            "url": "https://www.interieur.gouv.fr/actualites/communiques-de-presse/a-loccasion-de-journee-mondiale-des-parents-1er-juin-securite-0",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Interior Ministry31May2024 En cas de grossesse: lap strap below abdomen, lowest possible on pelvic bone; upper part positioned normally. Current page read10October2026."
+          }
+        ],
+        "image_prompt": "Use case: photorealistic-natural. Create ONE original landscape16:9 photograph,1672x941 or larger, for a French passenger-car driving-theory scene. No question, answer, annotation, label, diagram, solution highlight, logo or watermark. Natural daylight photograph through the open front passenger door of a parked LEFT-HAND-DRIVE ordinary European car. Close clear side-three-quarter view of a fully clothed visibly pregnant adult woman sitting upright normally in the FRONT RIGHT PASSENGER SEAT; head can be cropped above mouth, legs visible to mid-thigh. Plain soft blue fitted maternity top and dark trousers. One standard BLACK THREE-POINT SEAT BELT correctly fastened, flat untwisted webbing: diagonal strap runs from the upper outboard RIGHT-shoulder anchorage across her collarbone and between her breasts, along the side of the rounded belly to the inboard LEFT-hip buckle. The lap strap runs visibly LOW across BOTH hips at the upper thighs, UNDER the entire rounded abdomen, never across its middle. The shoulder and lap portions meet naturally at the same latched metal tongue in one buckle next to her LEFT hip. Belt tension snug, no extra belts, no cushion, no belt adapter. Her two relaxed hands rest separately on upper thighs without covering any belt section; realistic fingers. Show complete torso, round belly, both hips and both belt portions clearly at phone size. The car is parked on a private driveway with leafy garden outside. Passenger seat and head restraint mechanically plausible. No steering wheel on passenger side, no visible dashboard dials, no number plates, no signs or text."
+      },
+      "state": "reviewed",
+      "image_path": "assets-source/question-batches/expansion-004/pregnancy_seatbelt_position/scene-2.jpg",
+      "image_sha256": "b4850da0b6a03ecfa1fe81f9ecd1343523dc6a35f233fceda858113a08ecdfb7",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "nearest_questions": [
+        {
+          "key": "situation_bus_passengers_alighting_slow",
+          "similarity": 0.11,
+          "question_fr": "Des voyageurs descendent de ce bus arrêté et peuvent traverser devant lui. Comment adapter mon allure ?"
+        },
+        {
+          "key": "situation_rear_facing_child_active_airbag",
+          "similarity": 0.11,
+          "question_fr": "Ce siège enfant dos à la route est installé à l'avant et l'airbag passager est actif. Puis-je partir ainsi ?"
+        },
+        {
+          "key": "safety_seat_belts_occupants",
+          "similarity": 0.109,
+          "question_fr": "Qui doit normalement porter la ceinture dans une voiture qui en est équipée ?"
+        },
+        {
+          "key": "safety_child_under_ten",
+          "similarity": 0.098,
+          "question_fr": "Où un enfant de moins de dix ans doit-il normalement voyager dans une voiture ?"
+        },
+        {
+          "key": "situation_rural_park_off_carriageway_right",
+          "similarity": 0.096,
+          "question_fr": "Hors agglomération, je veux stationner sur cette route à double sens dont l'accotement droit est praticable. Où placer la voiture ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-004/pregnancy_seatbelt_position/scene-2.jpg",
+          "image_sha256": "b4850da0b6a03ecfa1fe81f9ecd1343523dc6a35f233fceda858113a08ecdfb7",
+          "prompt": "Use case: photorealistic-natural. Create ONE original landscape16:9 photograph,1672x941 or larger, for a French passenger-car driving-theory scene. No question, answer, annotation, label, diagram, solution highlight, logo or watermark. Natural daylight photograph through the open front passenger door of a parked LEFT-HAND-DRIVE ordinary European car. Close clear side-three-quarter view of a fully clothed visibly pregnant adult woman sitting upright normally in the FRONT RIGHT PASSENGER SEAT; head can be cropped above mouth, legs visible to mid-thigh. Plain soft blue fitted maternity top and dark trousers. One standard BLACK THREE-POINT SEAT BELT correctly fastened, flat untwisted webbing: diagonal strap runs from the upper outboard RIGHT-shoulder anchorage across her collarbone and between her breasts, along the side of the rounded belly to the inboard LEFT-hip buckle. The lap strap runs visibly LOW across BOTH hips at the upper thighs, UNDER the entire rounded abdomen, never across its middle. The shoulder and lap portions meet naturally at the same latched metal tongue in one buckle next to her LEFT hip. Belt tension snug, no extra belts, no cushion, no belt adapter. Her two relaxed hands rest separately on upper thighs without covering any belt section; realistic fingers. Show complete torso, round belly, both hips and both belt portions clearly at phone size. The car is parked on a private driveway with leafy garden outside. Passenger seat and head restraint mechanically plausible. No steering wheel on passenger side, no visible dashboard dials, no number plates, no signs or text.",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "Replacement objective and exact final JPEG fully reviewed. No detected unresolved defects; approval does not claim infallibility.",
+            "proposal_sha256": "a33a74f60c3bbf5ad3ec17176cdfe969877f50b9ec6d9fb1d7da14555e67cdb7",
+            "image_sha256": "b4850da0b6a03ecfa1fe81f9ecd1343523dc6a35f233fceda858113a08ecdfb7",
+            "checks": {
+              "official_rule": "Interior Ministry pregnancy advice read directly: lap strap below abdomen as low as possible on pelvic bone; upper strap positioned normally. No claimed automatic medical exemption.",
+              "novelty": "Read all428 French stems across ALL categories, plus full seatbelt/child-seat explanations. Existing questions require wearing belts, protecting minors and disabling airbag for rear-facing child seats. None tests lap-strap position below a pregnant abdomen or retaining the shoulder strap across the chest. Stable key retained from withdrawn duplicate R16 item to preserve database identity; key wording is historical. Weighted nearest comparisons: bus passenger speed and rural parking are unrelated; general belts/child seating do not test pregnancy belt routing.",
+              "signs_and_text": "No road signs, supplementary plates, road markings or readable text. Gear area lettering removed. Red release button only on correct inboard buckle.",
+              "road_geometry": "Stationary private driveway/garden outside an open front-right passenger door; no traffic manoeuvre or claimed priority.",
+              "vehicles_and_people": "One fully clothed adult passenger; two anatomically plausible hands with five fingers, relaxed on thighs; seat and head restraint plausible. Rounded abdomen, hips and shoulders visible.",
+              "dashboard_and_equipment": "Standard three-point belt: diagonal flat webbing across shoulder/chest into partly obscured inboard buckle, low lap strap below abdomen across pelvis to outboard fixed anchor. Erroneous additional outboard red buckle in candidate1 removed. No extra restraint or malformed dial.",
+              "full_resolution": "Entire final1672x941 JPEG inspected at original resolution, including fingers, belt paths, anchors, inboard release, door hinges/latch/trim, seat, centre console and exterior. No detected unresolved defect.",
+              "phone_size": "390px preview inspected: low lap strap below abdomen and diagonal shoulder/chest path both remain distinguishable. No tiny text required.",
+              "french_and_english": "Both translations reviewed. Pregnant passenger without exemption; low strap below abdomen/pelvis and upper strap shoulder/chest convey equivalent meaning. No claim about driving while photographed.",
+              "all_four_options": "A and C correct in both languages. B crosses abdomen incorrectly; D removes chest restraint by putting shoulder strap behind back. Four distinct statements, no duplicate answer. Both explanations complete and over100characters."
+            },
+            "compared_question_keys": [
+              "situation_bus_passengers_alighting_slow",
+              "situation_rear_facing_child_active_airbag",
+              "safety_seat_belts_occupants",
+              "safety_child_under_ten",
+              "situation_rural_park_off_carriageway_right",
+              "situation_rear_passenger_seatbelt",
+              "situation_minor_passenger_unbelted_driver_duty"
+            ]
+          }
+        }
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "Replacement objective and exact final JPEG fully reviewed. No detected unresolved defects; approval does not claim infallibility.",
+        "proposal_sha256": "a33a74f60c3bbf5ad3ec17176cdfe969877f50b9ec6d9fb1d7da14555e67cdb7",
+        "image_sha256": "b4850da0b6a03ecfa1fe81f9ecd1343523dc6a35f233fceda858113a08ecdfb7",
+        "checks": {
+          "official_rule": "Interior Ministry pregnancy advice read directly: lap strap below abdomen as low as possible on pelvic bone; upper strap positioned normally. No claimed automatic medical exemption.",
+          "novelty": "Read all428 French stems across ALL categories, plus full seatbelt/child-seat explanations. Existing questions require wearing belts, protecting minors and disabling airbag for rear-facing child seats. None tests lap-strap position below a pregnant abdomen or retaining the shoulder strap across the chest. Stable key retained from withdrawn duplicate R16 item to preserve database identity; key wording is historical. Weighted nearest comparisons: bus passenger speed and rural parking are unrelated; general belts/child seating do not test pregnancy belt routing.",
+          "signs_and_text": "No road signs, supplementary plates, road markings or readable text. Gear area lettering removed. Red release button only on correct inboard buckle.",
+          "road_geometry": "Stationary private driveway/garden outside an open front-right passenger door; no traffic manoeuvre or claimed priority.",
+          "vehicles_and_people": "One fully clothed adult passenger; two anatomically plausible hands with five fingers, relaxed on thighs; seat and head restraint plausible. Rounded abdomen, hips and shoulders visible.",
+          "dashboard_and_equipment": "Standard three-point belt: diagonal flat webbing across shoulder/chest into partly obscured inboard buckle, low lap strap below abdomen across pelvis to outboard fixed anchor. Erroneous additional outboard red buckle in candidate1 removed. No extra restraint or malformed dial.",
+          "full_resolution": "Entire final1672x941 JPEG inspected at original resolution, including fingers, belt paths, anchors, inboard release, door hinges/latch/trim, seat, centre console and exterior. No detected unresolved defect.",
+          "phone_size": "390px preview inspected: low lap strap below abdomen and diagonal shoulder/chest path both remain distinguishable. No tiny text required.",
+          "french_and_english": "Both translations reviewed. Pregnant passenger without exemption; low strap below abdomen/pelvis and upper strap shoulder/chest convey equivalent meaning. No claim about driving while photographed.",
+          "all_four_options": "A and C correct in both languages. B crosses abdomen incorrectly; D removes chest restraint by putting shoulder strap behind back. Four distinct statements, no duplicate answer. Both explanations complete and over100characters."
+        },
+        "compared_question_keys": [
+          "situation_bus_passengers_alighting_slow",
+          "situation_rear_facing_child_active_airbag",
+          "safety_seat_belts_occupants",
+          "safety_child_under_ten",
+          "situation_rural_park_off_carriageway_right",
+          "situation_rear_passenger_seatbelt",
+          "situation_minor_passenger_unbelted_driver_duty"
+        ]
+      },
+      "imported_question_sha256": "5edcbc9412432a9a9a9dd1eb5ebb33ab405f5d9db7485e57015ab0a2adcecdc9"
+    },
+    {
+      "proposal": {
+        "scenario_id": "b10a_combination_total_length",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+        "learning_objective": "Apply B10a to the total length of a car-caravan combination despite the lorry silhouette.",
+        "topic": "signs.total_combination_length",
+        "scenario": "B10a7m; car+caravan8m, combined PTAC3200kg. Do not infer length from picture.",
+        "novelty_review": "Other dimensional signs cover height/width/mass; B10a remains catalogue-only. The lorry pictogram does not exclude a passenger-car combination.",
+        "primary_codes": [
+          "B10a"
+        ],
+        "context_codes": [],
+        "question": {
+          "key": "situation_b10a_combination_total_length",
+          "category_slug": "road_signs",
+          "difficulty": "medium",
+          "correct_answers": [
+            "c"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Mon ensemble voiture-caravane mesure 8 m au total (somme des PTAC : 3 200 kg). Puis-je entrer sur la route signalée par ce panneau ?",
+              "answer_a": "Oui, car le dessin ne concerne que les camions.",
+              "answer_b": "Oui, si la voiture seule mesure moins de 7 m.",
+              "answer_c": "Non, la longueur totale de l’ensemble dépasse 7 m.",
+              "answer_d": "Oui, car l’ensemble pèse moins de 3,5 tonnes.",
+              "explanation": "Le panneau B10a limite la longueur des véhicules et des ensembles, pas seulement celle des camions. Les 8 m de l’ensemble dépassent les 7 m indiqués : je choisis un autre itinéraire."
+            },
+            "en": {
+              "question_text": "My car and caravan are 8 m long in total (combined maximum authorised masses: 3,200 kg). May I enter the road marked by this sign?",
+              "answer_a": "Yes, because the picture applies only to lorries.",
+              "answer_b": "Yes, if the car alone is shorter than 7 m.",
+              "answer_c": "No; the total combination length exceeds 7 m.",
+              "answer_d": "Yes, because the combination is below 3.5 tonnes.",
+              "explanation": "B10a restricts the length of vehicles and combinations, not just lorries. The combination’s 8 m length exceeds the displayed 7 m, so I must choose another route."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "La silhouette ne limite pas la règle aux poids lourds.",
+            "b": "Il faut prendre l’ensemble en compte.",
+            "c": "8 m dépasse le seuil de7m.",
+            "d": "Le seuil est une longueur, pas une masse."
+          },
+          "en": {
+            "a": "The silhouette does not limit the rule to lorries.",
+            "b": "The entire combination counts.",
+            "c": "8m exceeds the7m threshold.",
+            "d": "This is a length limit, not a mass limit."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Quiet rural French road with one official B10a length-restriction sign on the RIGHT verge in the near foreground, large and front-facing. Sign is a white circle with thick RED ring; black side-profile lorry silhouette facing LEFT in upper centre; below the truck, black outward-pointing small arrowheads bracket the exact text \"7 m\" horizontally (left arrow points left; right arrow points right). Correct sign graphic, no other words or numbers. Single grey pole. Narrow two-way asphalt rural road recedes beside fields and a stone wall, no centre or edge markings, no vehicles or other signs. Sign occupies roughly one third image height minimum and all symbols remain legible on a phone. No caravan shown: length supplied in the question.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Article4 B10a excludes vehicles and combinations longer than the displayed length, regardless of passenger-car towing status."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_motorway_long_combination_two_right_lanes",
+          "similarity": 0.635,
+          "question_fr": "Sur cette autoroute à trois voies dans mon sens, mon ensemble voiture-caravane mesure 8 m (somme des PTAC : 3 200 kg). Puis-je utiliser la voie la plus à gauche pour dépasser ?"
+        },
+        {
+          "key": "situation_c64b_toll_bank_card_payment",
+          "similarity": 0.505,
+          "question_fr": "Quel moyen de paiement dois-je préparer pour la voie de péage signalée par ce panneau ?"
+        },
+        {
+          "key": "situation_motorway_breakdown_no_triangle",
+          "similarity": 0.474,
+          "question_fr": "Ma voiture est en panne sur la bande d'arrêt d'urgence de l'autoroute. Dois-je marcher sur la chaussée pour poser le triangle ?"
+        },
+        {
+          "key": "situation_long_caravan_facilitate_overtaking",
+          "similarity": 0.471,
+          "question_fr": "Mon ensemble voiture-caravane mesure 8 m. La route est trop étroite pour que la petite voiture derrière me dépasse facilement et sans danger. Je dois :"
+        },
+        {
+          "key": "situation_long_caravan_snow_overtaking_prohibited",
+          "similarity": 0.465,
+          "question_fr": "Je tracte une caravane : longueur totale 8 m, somme des PTAC 3 200 kg. Une voie de la chaussée est partiellement enneigée. Puis-je dépasser une voiture ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-004/b10a_combination_total_length/scene-1.jpg",
+          "image_sha256": "2a842f981142ace9f55f158d59e84c0c025641ea4aaa246182231087be8fb1a8",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Quiet rural French road with one official B10a length-restriction sign on the RIGHT verge in the near foreground, large and front-facing. Sign is a white circle with thick RED ring; black side-profile lorry silhouette facing LEFT in upper centre; below the truck, black outward-pointing small arrowheads bracket the exact text \"7 m\" horizontally (left arrow points left; right arrow points right). Correct sign graphic, no other words or numbers. Single grey pole. Narrow two-way asphalt rural road recedes beside fields and a stone wall, no centre or edge markings, no vehicles or other signs. Sign occupies roughly one third image height minimum and all symbols remain legible on a phone. No caravan shown: length supplied in the question.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "reject",
+            "proposal_sha256": "56f948ed55e7f269e5549fdb8bfd4c5a9212475d8dee7b115d0359ffe8cd655b",
+            "image_sha256": "2a842f981142ace9f55f158d59e84c0c025641ea4aaa246182231087be8fb1a8",
+            "notes": "B10a dimension indicators are drawn as full arrows with shafts; the checked sign uses compact outward triangular arrowheads. Correct these two graphic details and recheck all.",
+            "recorded_on": "2026-10-10"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-004/b10a_combination_total_length/scene-2.jpg",
+          "image_sha256": "5b183a6c9af28672a6d0fc75f091649d9e1405850631b82e91f28b3b78b3c40f",
+          "prompt": "Edit only the two black dimension arrows on the B10a sign in this image. Replace the left full arrow by a solid compact BLACK TRIANGLE pointing LEFT with NO SHAFT OR TAIL, and the right full arrow by a solid compact BLACK TRIANGLE pointing RIGHT with NO SHAFT OR TAIL. Keep exact text 7 m, black left-facing lorry silhouette, red ring, sign position, road, sky,wall,grass, lighting and composition unchanged. Natural official road sign, no added labels or graphics.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+            "proposal_sha256": "56f948ed55e7f269e5549fdb8bfd4c5a9212475d8dee7b115d0359ffe8cd655b",
+            "image_sha256": "5b183a6c9af28672a6d0fc75f091649d9e1405850631b82e91f28b3b78b3c40f",
+            "compared_question_keys": [
+              "situation_motorway_long_combination_two_right_lanes",
+              "situation_c64b_toll_bank_card_payment",
+              "situation_motorway_breakdown_no_triangle",
+              "situation_long_caravan_facilitate_overtaking",
+              "situation_long_caravan_snow_overtaking_prohibited"
+            ],
+            "checks": {
+              "official_rule": "Checked 2026-10-10. Article4 B10a excludes vehicles and combinations longer than the displayed length, regardless of passenger-car towing status.",
+              "novelty": "Other dimensional signs cover height/width/mass; B10a remains catalogue-only. The lorry pictogram does not exclude a passenger-car combination. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+              "signs_and_text": "B10a white circle/red ring, black left-facing lorry and exact7m. Two outward triangular arrowheads without shafts after correction. No supplementary plate.",
+              "road_geometry": "Narrow unmarked rural two-way road, single sign on right verge; no lane or junction conflict.",
+              "vehicles_and_people": "No vehicles or people.8m total combination stated in text rather than measured from scene.",
+              "dashboard_and_equipment": "No dashboard or controls.",
+              "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Narrow unmarked rural two-way road, single sign on right verge; no lane or junction conflict. No vehicles or people.8m total combination stated in text rather than measured from scene.",
+              "phone_size": "Inspected saved390px phone-2.jpg. Truck pictogram,7m and both triangle directions remain readable; prompt has no answer overlay.",
+              "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. B10a7m; car+caravan8m, combined PTAC3200kg. Do not infer length from picture.",
+              "all_four_options": "Correct set c. FR: {\"a\": \"La silhouette ne limite pas la règle aux poids lourds.\", \"b\": \"Il faut prendre l’ensemble en compte.\", \"c\": \"8 m dépasse le seuil de7m.\", \"d\": \"Le seuil est une longueur, pas une masse.\"} EN: {\"a\": \"The silhouette does not limit the rule to lorries.\", \"b\": \"The entire combination counts.\", \"c\": \"8m exceeds the7m threshold.\", \"d\": \"This is a length limit, not a mass limit.\"}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-004/b10a_combination_total_length/scene-2.jpg",
+      "image_sha256": "5b183a6c9af28672a6d0fc75f091649d9e1405850631b82e91f28b3b78b3c40f",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+        "proposal_sha256": "56f948ed55e7f269e5549fdb8bfd4c5a9212475d8dee7b115d0359ffe8cd655b",
+        "image_sha256": "5b183a6c9af28672a6d0fc75f091649d9e1405850631b82e91f28b3b78b3c40f",
+        "compared_question_keys": [
+          "situation_motorway_long_combination_two_right_lanes",
+          "situation_c64b_toll_bank_card_payment",
+          "situation_motorway_breakdown_no_triangle",
+          "situation_long_caravan_facilitate_overtaking",
+          "situation_long_caravan_snow_overtaking_prohibited"
+        ],
+        "checks": {
+          "official_rule": "Checked 2026-10-10. Article4 B10a excludes vehicles and combinations longer than the displayed length, regardless of passenger-car towing status.",
+          "novelty": "Other dimensional signs cover height/width/mass; B10a remains catalogue-only. The lorry pictogram does not exclude a passenger-car combination. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+          "signs_and_text": "B10a white circle/red ring, black left-facing lorry and exact7m. Two outward triangular arrowheads without shafts after correction. No supplementary plate.",
+          "road_geometry": "Narrow unmarked rural two-way road, single sign on right verge; no lane or junction conflict.",
+          "vehicles_and_people": "No vehicles or people.8m total combination stated in text rather than measured from scene.",
+          "dashboard_and_equipment": "No dashboard or controls.",
+          "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Narrow unmarked rural two-way road, single sign on right verge; no lane or junction conflict. No vehicles or people.8m total combination stated in text rather than measured from scene.",
+          "phone_size": "Inspected saved390px phone-2.jpg. Truck pictogram,7m and both triangle directions remain readable; prompt has no answer overlay.",
+          "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. B10a7m; car+caravan8m, combined PTAC3200kg. Do not infer length from picture.",
+          "all_four_options": "Correct set c. FR: {\"a\": \"La silhouette ne limite pas la règle aux poids lourds.\", \"b\": \"Il faut prendre l’ensemble en compte.\", \"c\": \"8 m dépasse le seuil de7m.\", \"d\": \"Le seuil est une longueur, pas une masse.\"} EN: {\"a\": \"The silhouette does not limit the rule to lorries.\", \"b\": \"The entire combination counts.\", \"c\": \"8m exceeds the7m threshold.\", \"d\": \"This is a length limit, not a mass limit.\"}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "16299b0700aaf861e805ae1c25a1bf4cecde9effe45823e8d4834898b8f86991"
+    },
+    {
+      "proposal": {
+        "scenario_id": "parked_engine_unnecessary_idling",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+        "learning_objective": "Stop an unnecessarily idling combustion engine during parking, even when remaining in the car.",
+        "topic": "environment.parked_engine",
+        "scenario": "Driver waiting parked10min, enginewarm,mildweather,nomechanicalorhealthnecessity.",
+        "novelty_review": "Existing securing parked car concerns runaway/theft on departure. This tests needless idling during parking while the driver stays, a pollution obligation.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_parked_engine_unnecessary_idling",
+          "category_slug": "parking_stopping",
+          "difficulty": "medium",
+          "correct_answers": [
+            "b"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Je stationne dix minutes en attendant un ami, par temps doux. Le moteur thermique est chaud et rien ne nécessite de le laisser tourner. Que dois-je faire ?",
+              "answer_a": "Le laisser au ralenti puisque je reste au volant.",
+              "answer_b": "Couper le moteur pendant cette attente.",
+              "answer_c": "Accélérer légèrement pour éviter l’encrassement.",
+              "answer_d": "Le laisser tourner si les vitres sont fermées.",
+              "explanation": "Un véhicule en stationnement doit avoir son moteur arrêté, sauf nécessité. Ici, rester au volant ne justifie pas le ralenti ; couper le moteur évite aussi une consommation et des émissions inutiles."
+            },
+            "en": {
+              "question_text": "I am parked for ten minutes waiting for a friend in mild weather. The combustion engine is warm and there is no need to keep it running. What must I do?",
+              "answer_a": "Leave it idling because I remain at the wheel.",
+              "answer_b": "Switch off the engine while waiting.",
+              "answer_c": "Rev it slightly to prevent deposits.",
+              "answer_d": "Keep it running if the windows are closed.",
+              "explanation": "A parked vehicle must have its engine stopped unless running it is necessary. Remaining at the wheel does not justify idling here; switching off also avoids needless fuel use and emissions."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "La présence au volant n’est pas une nécessité.",
+            "b": "L’arrêté du12novembre1963art2 impose l’arrêt hors nécessité.",
+            "c": "Accélérer accroît bruit et consommation sans nécessité.",
+            "d": "Les vitres ne créent pas de dérogation."
+          },
+          "en": {
+            "a": "Being at the wheel is not a necessity.",
+            "b": "Article2 requires the engine stopped unless necessary.",
+            "c": "Revving needlessly adds consumption and noise.",
+            "d": "Closed windows are no exemption."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. A plain silver petrol hatchback parked entirely inside a clearly marked white rectangular parking bay on a quiet level outdoor car park, side three-quarter view with number plates outside the crop. One adult driver sits normally behind the left-hand steering wheel, seen through the side window, both hands resting naturally, no phone. Doors closed, tyres on asphalt, no exhaust smoke, no lights flashing, no people near the car. Soft mild-weather daylight, green trees and blank building wall background. No road signs, no text, no dashboard details. No illustration of sound or engine state; these facts are stated in the question.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006074457/",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Article2, arrêté12November1963 in force: parked vehicles must have engine stopped except necessity, notably cold starts. Conditions exclude necessity."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_motorway_friend_tow_offer",
+          "similarity": 0.463,
+          "question_fr": "Ma voiture est en panne sur autoroute et un ami propose de la remorquer avec une sangle. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_red_cross_lane_closed",
+          "similarity": 0.456,
+          "question_fr": "Une croix rouge R21a est allumée au-dessus de ma voie sur l'autoroute. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_urban_cyclist_clearance_blocked",
+          "similarity": 0.448,
+          "question_fr": "En ville, une voiture arrive en face et je ne peux pas laisser un mètre au cycliste. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_parking_solid_line_insufficient_passage",
+          "similarity": 0.44,
+          "question_fr": "Si je stationne contre ce bord droit, les autres voitures devront chevaucher la ligne continue pour passer. Puis-je m'y garer ?"
+        },
+        {
+          "key": "situation_garage_exit_sidewalk_pedestrian",
+          "similarity": 0.436,
+          "question_fr": "Je sors d'un garage en traversant le trottoir, où un piéton passe devant moi. Que dois-je faire ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-004/parked_engine_unnecessary_idling/scene-1.jpg",
+          "image_sha256": "409079d9aa6cbf2ee9d0d00e3e5fd02a3d2fb25ce82ed39219f12724f9b0f898",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. A plain silver petrol hatchback parked entirely inside a clearly marked white rectangular parking bay on a quiet level outdoor car park, side three-quarter view with number plates outside the crop. One adult driver sits normally behind the left-hand steering wheel, seen through the side window, both hands resting naturally, no phone. Doors closed, tyres on asphalt, no exhaust smoke, no lights flashing, no people near the car. Soft mild-weather daylight, green trees and blank building wall background. No road signs, no text, no dashboard details. No illustration of sound or engine state; these facts are stated in the question.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+            "proposal_sha256": "c1cf5b048f4af799730287fe482aa855809286e2b337859c22d1a1742d1e2a8f",
+            "image_sha256": "409079d9aa6cbf2ee9d0d00e3e5fd02a3d2fb25ce82ed39219f12724f9b0f898",
+            "compared_question_keys": [
+              "situation_motorway_friend_tow_offer",
+              "situation_red_cross_lane_closed",
+              "situation_urban_cyclist_clearance_blocked",
+              "situation_parking_solid_line_insufficient_passage",
+              "situation_garage_exit_sidewalk_pedestrian"
+            ],
+            "checks": {
+              "official_rule": "Checked 2026-10-10. Article2, arrêté12November1963 in force: parked vehicles must have engine stopped except necessity, notably cold starts. Conditions exclude necessity.",
+              "novelty": "Existing securing parked car concerns runaway/theft on departure. This tests needless idling during parking while the driver stays, a pollution obligation. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+              "signs_and_text": "No traffic signs. Only white parking-bay lines; no meaningful instruction on distant/cropped plate.",
+              "road_geometry": "Car entirely inside a rectangular level parking bay, away from travel lane, no parking obstruction.",
+              "vehicles_and_people": "One driver seated normally with hands forward; closed doors, normally supported wheels, no person in path.",
+              "dashboard_and_equipment": "Engine state, warmth, ten-minute wait and lack of necessity supplied in text; no false smoke or tachometer claim.",
+              "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Car entirely inside a rectangular level parking bay, away from travel lane, no parking obstruction. One driver seated normally with hands forward; closed doors, normally supported wheels, no person in path.",
+              "phone_size": "Inspected saved390px phone-1.jpg. Parked position and waiting occupant are visible. Question does not require image to reveal idling.",
+              "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Driver waiting parked10min, enginewarm,mildweather,nomechanicalorhealthnecessity.",
+              "all_four_options": "Correct set b. FR: {\"a\": \"La présence au volant n’est pas une nécessité.\", \"b\": \"L’arrêté du12novembre1963art2 impose l’arrêt hors nécessité.\", \"c\": \"Accélérer accroît bruit et consommation sans nécessité.\", \"d\": \"Les vitres ne créent pas de dérogation.\"} EN: {\"a\": \"Being at the wheel is not a necessity.\", \"b\": \"Article2 requires the engine stopped unless necessary.\", \"c\": \"Revving needlessly adds consumption and noise.\", \"d\": \"Closed windows are no exemption.\"}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-004/parked_engine_unnecessary_idling/scene-1.jpg",
+      "image_sha256": "409079d9aa6cbf2ee9d0d00e3e5fd02a3d2fb25ce82ed39219f12724f9b0f898",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+        "proposal_sha256": "c1cf5b048f4af799730287fe482aa855809286e2b337859c22d1a1742d1e2a8f",
+        "image_sha256": "409079d9aa6cbf2ee9d0d00e3e5fd02a3d2fb25ce82ed39219f12724f9b0f898",
+        "compared_question_keys": [
+          "situation_motorway_friend_tow_offer",
+          "situation_red_cross_lane_closed",
+          "situation_urban_cyclist_clearance_blocked",
+          "situation_parking_solid_line_insufficient_passage",
+          "situation_garage_exit_sidewalk_pedestrian"
+        ],
+        "checks": {
+          "official_rule": "Checked 2026-10-10. Article2, arrêté12November1963 in force: parked vehicles must have engine stopped except necessity, notably cold starts. Conditions exclude necessity.",
+          "novelty": "Existing securing parked car concerns runaway/theft on departure. This tests needless idling during parking while the driver stays, a pollution obligation. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+          "signs_and_text": "No traffic signs. Only white parking-bay lines; no meaningful instruction on distant/cropped plate.",
+          "road_geometry": "Car entirely inside a rectangular level parking bay, away from travel lane, no parking obstruction.",
+          "vehicles_and_people": "One driver seated normally with hands forward; closed doors, normally supported wheels, no person in path.",
+          "dashboard_and_equipment": "Engine state, warmth, ten-minute wait and lack of necessity supplied in text; no false smoke or tachometer claim.",
+          "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Car entirely inside a rectangular level parking bay, away from travel lane, no parking obstruction. One driver seated normally with hands forward; closed doors, normally supported wheels, no person in path.",
+          "phone_size": "Inspected saved390px phone-1.jpg. Parked position and waiting occupant are visible. Question does not require image to reveal idling.",
+          "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Driver waiting parked10min, enginewarm,mildweather,nomechanicalorhealthnecessity.",
+          "all_four_options": "Correct set b. FR: {\"a\": \"La présence au volant n’est pas une nécessité.\", \"b\": \"L’arrêté du12novembre1963art2 impose l’arrêt hors nécessité.\", \"c\": \"Accélérer accroît bruit et consommation sans nécessité.\", \"d\": \"Les vitres ne créent pas de dérogation.\"} EN: {\"a\": \"Being at the wheel is not a necessity.\", \"b\": \"Article2 requires the engine stopped unless necessary.\", \"c\": \"Revving needlessly adds consumption and noise.\", \"d\": \"Closed windows are no exemption.\"}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "5ddd49b46555d96a2289076bafeae866da0a164659936153ea258a6f2ea12f9a"
+    },
+    {
+      "proposal": {
+        "scenario_id": "night_overtake_warning_headlights",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+        "learning_objective": "Use brief light signals rather than the horn for a non-urgent night-time overtaking warning.",
+        "topic": "overtaking.night_warning",
+        "scenario": "Outside town at night, overtaking otherwise lawful and safe, no absolute need to sound horn. Question concerns warning method only.",
+        "novelty_review": "Existing following car at night tests dipping sustained main beams. This tests brief warning signals before an otherwise-safe overtake; no impatience/horn urban scenario repeat.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_night_overtake_warning_headlights",
+          "category_slug": "overtaking",
+          "difficulty": "medium",
+          "correct_answers": [
+            "a"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "De nuit, hors agglomération, je veux avertir le conducteur devant avant un dépassement autorisé et sûr. Sans nécessité absolue de klaxonner, quel avertissement utiliser ?",
+              "answer_a": "Un bref appel de phares, sans maintenir les feux de route.",
+              "answer_b": "Un long coup de klaxon.",
+              "answer_c": "Les feux de détresse en continu.",
+              "answer_d": "Les feux arrière de brouillard.",
+              "explanation": "De nuit, les avertissements se font par allumage intermittent des feux de croisement ou de route. Le klaxon est réservé à l’absolue nécessité ; un bref appel ne doit pas devenir un éclairage éblouissant maintenu."
+            },
+            "en": {
+              "question_text": "At night outside a built-up area, I want to warn the driver ahead before an otherwise lawful and safe overtake. With no absolute need to use the horn, which warning should I use?",
+              "answer_a": "A brief headlight flash, without keeping main beam on.",
+              "answer_b": "A long blast of the horn.",
+              "answer_c": "Continuous hazard warning lights.",
+              "answer_d": "Rear fog lights.",
+              "explanation": "At night, warnings are given by briefly flashing dipped or main beams. The horn is reserved for absolute necessity; a brief flash must not become sustained dazzling main-beam lighting."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "R416-2 prévoit les avertissements lumineux intermittents.",
+            "b": "Pas d’absolue nécessité justifiant le klaxon.",
+            "c": "Les feux de détresse ne signalent pas cette intention.",
+            "d": "Les antibrouillard ne sont pas un avertisseur de dépassement."
+          },
+          "en": {
+            "a": "R416-2 specifies intermittent light warnings at night.",
+            "b": "No absolute necessity justifies the horn.",
+            "c": "Hazards do not communicate this warning.",
+            "d": "Fog lamps are not overtaking warning lights."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Night-time forward road photograph from a following passenger car on a straight dry rural French two-way road. One ordinary dark car ahead in our RIGHT-hand lane with two normal dim red rear position lamps, no brake or turn indicators. White broken centreline to its LEFT, clear empty opposing lane and continuous white road edges. Wide unlit countryside, stars not necessary, no moon glare. Road gently illuminated by the camera car’s normal dipped headlight beam with controlled cutoff, no theatrical long light beams. The car ahead distant enough its rear plate has no resolvable characters. No dashboard, signs, junction, bend or crest. Photograph is just the context before warning; no flash-state inference or solution annotation.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842258",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "R416-2 requires intermittent dipped/main light warnings at night; sound warnings only absolute necessity."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_rural_park_off_carriageway_right",
+          "similarity": 0.481,
+          "question_fr": "Hors agglomération, je veux stationner sur cette route à double sens dont l'accotement droit est praticable. Où placer la voiture ?"
+        },
+        {
+          "key": "situation_dual_carriageway_default_110",
+          "similarity": 0.442,
+          "question_fr": "Par temps sec, hors agglomération, sur cette route à deux chaussées séparées par un terre-plein central et sans autre limitation, quelle est la vitesse maximale ?"
+        },
+        {
+          "key": "situation_parked_engine_unnecessary_idling",
+          "similarity": 0.433,
+          "question_fr": "Je stationne dix minutes en attendant un ami, par temps doux. Le moteur thermique est chaud et rien ne nécessite de le laisser tourner. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_motorway_tunnel_fire_evacuate",
+          "similarity": 0.426,
+          "question_fr": "Dans ce tunnel autoroutier, un véhicule brûle devant moi. Je suis arrêté en sécurité, moteur coupé. Que faire ensuite ?"
+        },
+        {
+          "key": "situation_night_following_before_overtake_dipped",
+          "similarity": 0.425,
+          "question_fr": "De nuit, je suis cette voiture sans avoir commencé à dépasser. Mes feux de route risqueraient d’éblouir son conducteur dans les rétroviseurs. Quel éclairage dois-je utiliser ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-004/night_overtake_warning_headlights/scene-1.jpg",
+          "image_sha256": "ffe4a6d9fab7763133d4e9558e6882a6329bcfa88a3761525020c1d44acf0adc",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Night-time forward road photograph from a following passenger car on a straight dry rural French two-way road. One ordinary dark car ahead in our RIGHT-hand lane with two normal dim red rear position lamps, no brake or turn indicators. White broken centreline to its LEFT, clear empty opposing lane and continuous white road edges. Wide unlit countryside, stars not necessary, no moon glare. Road gently illuminated by the camera car’s normal dipped headlight beam with controlled cutoff, no theatrical long light beams. The car ahead distant enough its rear plate has no resolvable characters. No dashboard, signs, junction, bend or crest. Photograph is just the context before warning; no flash-state inference or solution annotation.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+            "proposal_sha256": "dfc1cbcbc03441ea2a2db272b9d56c10a789befb4f867c7c149f6cd56960ab7b",
+            "image_sha256": "ffe4a6d9fab7763133d4e9558e6882a6329bcfa88a3761525020c1d44acf0adc",
+            "compared_question_keys": [
+              "situation_rural_park_off_carriageway_right",
+              "situation_dual_carriageway_default_110",
+              "situation_parked_engine_unnecessary_idling",
+              "situation_motorway_tunnel_fire_evacuate",
+              "situation_night_following_before_overtake_dipped"
+            ],
+            "checks": {
+              "official_rule": "Checked 2026-10-10. R416-2 requires intermittent dipped/main light warnings at night; sound warnings only absolute necessity.",
+              "novelty": "Existing following car at night tests dipping sustained main beams. This tests brief warning signals before an otherwise-safe overtake; no impatience/horn urban scenario repeat. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+              "signs_and_text": "No signs or plates with interpretable instructions. White broken centreline and continuous edges, red rear lamps.",
+              "road_geometry": "Straight two-way road, vehicle in right lane and empty opposing lane. Normal dipped illumination and open visibility; no junction, solid divider or crest to prohibit stated safe overtake.",
+              "vehicles_and_people": "One car ahead, two red rear lights, no people or oncoming car. It is before the warning, not an image claiming that the flash already occurred.",
+              "dashboard_and_equipment": "No dashboard; no persistent high-beam telltale.",
+              "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Straight two-way road, vehicle in right lane and empty opposing lane. Normal dipped illumination and open visibility; no junction, solid divider or crest to prohibit stated safe overtake. One car ahead, two red rear lights, no people or oncoming car. It is before the warning, not an image claiming that the flash already occurred.",
+              "phone_size": "Inspected saved390px phone-1.jpg. Night, lane arrangement and car ahead all remain clear. Distinct question from sustained following-light choice.",
+              "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Outside town at night, overtaking otherwise lawful and safe, no absolute need to sound horn. Question concerns warning method only.",
+              "all_four_options": "Correct set a. FR: {\"a\": \"R416-2 prévoit les avertissements lumineux intermittents.\", \"b\": \"Pas d’absolue nécessité justifiant le klaxon.\", \"c\": \"Les feux de détresse ne signalent pas cette intention.\", \"d\": \"Les antibrouillard ne sont pas un avertisseur de dépassement.\"} EN: {\"a\": \"R416-2 specifies intermittent light warnings at night.\", \"b\": \"No absolute necessity justifies the horn.\", \"c\": \"Hazards do not communicate this warning.\", \"d\": \"Fog lamps are not overtaking warning lights.\"}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-004/night_overtake_warning_headlights/scene-1.jpg",
+      "image_sha256": "ffe4a6d9fab7763133d4e9558e6882a6329bcfa88a3761525020c1d44acf0adc",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+        "proposal_sha256": "dfc1cbcbc03441ea2a2db272b9d56c10a789befb4f867c7c149f6cd56960ab7b",
+        "image_sha256": "ffe4a6d9fab7763133d4e9558e6882a6329bcfa88a3761525020c1d44acf0adc",
+        "compared_question_keys": [
+          "situation_rural_park_off_carriageway_right",
+          "situation_dual_carriageway_default_110",
+          "situation_parked_engine_unnecessary_idling",
+          "situation_motorway_tunnel_fire_evacuate",
+          "situation_night_following_before_overtake_dipped"
+        ],
+        "checks": {
+          "official_rule": "Checked 2026-10-10. R416-2 requires intermittent dipped/main light warnings at night; sound warnings only absolute necessity.",
+          "novelty": "Existing following car at night tests dipping sustained main beams. This tests brief warning signals before an otherwise-safe overtake; no impatience/horn urban scenario repeat. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+          "signs_and_text": "No signs or plates with interpretable instructions. White broken centreline and continuous edges, red rear lamps.",
+          "road_geometry": "Straight two-way road, vehicle in right lane and empty opposing lane. Normal dipped illumination and open visibility; no junction, solid divider or crest to prohibit stated safe overtake.",
+          "vehicles_and_people": "One car ahead, two red rear lights, no people or oncoming car. It is before the warning, not an image claiming that the flash already occurred.",
+          "dashboard_and_equipment": "No dashboard; no persistent high-beam telltale.",
+          "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Straight two-way road, vehicle in right lane and empty opposing lane. Normal dipped illumination and open visibility; no junction, solid divider or crest to prohibit stated safe overtake. One car ahead, two red rear lights, no people or oncoming car. It is before the warning, not an image claiming that the flash already occurred.",
+          "phone_size": "Inspected saved390px phone-1.jpg. Night, lane arrangement and car ahead all remain clear. Distinct question from sustained following-light choice.",
+          "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Outside town at night, overtaking otherwise lawful and safe, no absolute need to sound horn. Question concerns warning method only.",
+          "all_four_options": "Correct set a. FR: {\"a\": \"R416-2 prévoit les avertissements lumineux intermittents.\", \"b\": \"Pas d’absolue nécessité justifiant le klaxon.\", \"c\": \"Les feux de détresse ne signalent pas cette intention.\", \"d\": \"Les antibrouillard ne sont pas un avertisseur de dépassement.\"} EN: {\"a\": \"R416-2 specifies intermittent light warnings at night.\", \"b\": \"No absolute necessity justifies the horn.\", \"c\": \"Hazards do not communicate this warning.\", \"d\": \"Fog lamps are not overtaking warning lights.\"}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "7e5ceee42af65dd54467e8f6217d940cbe15d20befcada73636587f37b09bd00"
+    },
+    {
+      "proposal": {
+        "scenario_id": "temporary_spare_wheel_speed_label",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+        "learning_objective": "Obey the fitted temporary spare’s stated maximum even on a road with a higher limit.",
+        "topic": "equipment.temporary_spare_speed",
+        "scenario": "Temporary spare fitted, label80km/h, dry road otherwise90. Avoid claiming all spares share a universal limit.",
+        "novelty_review": "Existing blowout, tyrepressure, tread and bulge do not test the lower equipment-specific speed limit after fitting a temporary spare.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_temporary_spare_wheel_speed_label",
+          "category_slug": "speed_limits",
+          "difficulty": "medium",
+          "correct_answers": [
+            "d"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Une roue de secours temporaire portant la limite « 80 km/h » est montée sur ma voiture. Sur une route autorisée à 90 km/h par temps sec, quelle vitesse ne dois-je pas dépasser ?",
+              "answer_a": "90 km/h, comme les autres voitures.",
+              "answer_b": "100 km/h pendant quelques minutes.",
+              "answer_c": "Aucune limite particulière si le pneu est bien gonflé.",
+              "answer_d": "80 km/h, et moins si les conditions l’exigent.",
+              "explanation": "Je respecte la limite indiquée sur la roue de secours temporaire, même si la route autorise davantage. Cette roue reste une solution provisoire à remplacer rapidement ; les conditions peuvent imposer une vitesse encore plus faible."
+            },
+            "en": {
+              "question_text": "A temporary spare wheel marked “80 km/h” is fitted to my car. On a dry road with a 90 km/h limit, what speed must I not exceed?",
+              "answer_a": "90 km/h, like other cars.",
+              "answer_b": "100 km/h for a few minutes.",
+              "answer_c": "No special limit if the tyre is correctly inflated.",
+              "answer_d": "80 km/h, or less if conditions require it.",
+              "explanation": "I must respect the limit stated on the temporary spare even when the road allows more. The wheel is only a temporary solution and should be replaced promptly; conditions may require an even lower speed."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "La limitation de la roue est inférieure à celle de la route.",
+            "b": "Il n’existe pas d’exception de quelques minutes.",
+            "c": "La pression correcte ne supprime pas la limite.",
+            "d": "La limite propre à cette roue reste80."
+          },
+          "en": {
+            "a": "The wheel’s limit is lower than the road’s.",
+            "b": "There is no brief high-speed exception.",
+            "c": "Correct pressure does not remove the limit.",
+            "d": "This wheel’s80limit applies."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Close natural photograph of a temporary narrow space-saver spare wheel properly fitted to the front corner of a parked grey ordinary passenger car on a safe paved driveway. Black narrow tyre, black stamped steel rim, five evenly spaced wheel bolts, no hubcap. A large genuine-looking yellow manufacturer safety sticker on the flat part of the rim bears ONLY black text \"80 km/h\" in clean readable type. No red circle or road sign. Entire wheel, small fender section and ground visible, no lifting jack, wheel rests with vehicle weight normally on ground. No other lettering, brand, people or other equipment. Sticker easily legible at390px width, no graphic highlight.",
+        "sources": [
+          {
+            "url": "https://www.user-manual.renault.com/fr/pneumatiques/crevaison-roue-de-secours-14",
+            "kind": "manufacturer",
+            "checked_on": "2026-10-10",
+            "supports": "Temporary spare use must not exceed speed marked on wheel label; replace with original-type wheel as soon as possible.80is the stated pictured wheel limit, not asserted universal."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_roadworks_b14_50_over_general_80",
+          "similarity": 0.497,
+          "question_fr": "Cette limitation temporaire à 50 est implantée avant le chantier, sur une route normalement limitée à 80. Quelle vitesse maximale respecter à partir du panneau ?"
+        },
+        {
+          "key": "situation_driveway_exit_yield",
+          "similarity": 0.458,
+          "question_fr": "Je sors de ce parking privé en franchissant le trottoir. Un cycliste et une voiture circulent sur la route. Qui dois-je laisser passer ?"
+        },
+        {
+          "key": "situation_red_cross_lane_closed",
+          "similarity": 0.438,
+          "question_fr": "Une croix rouge R21a est allumée au-dessus de ma voie sur l'autoroute. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_mountain_car_backs_for_caravan",
+          "similarity": 0.433,
+          "question_fr": "Le croisement est impossible entre ma voiture seule et l'ensemble voiture-caravane. Qui doit reculer ?"
+        },
+        {
+          "key": "situation_limiter_no_braking_downhill",
+          "similarity": 0.428,
+          "question_fr": "Dans cette descente, mon limiteur agit seulement sur le moteur, jamais sur les freins. Que dois-je savoir ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-004/temporary_spare_wheel_speed_label/scene-1.jpg",
+          "image_sha256": "4edb5bb04aef66e5fa48e5a82e92d26ccbd7d85800e0b453db3a63aa810fb216",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Close natural photograph of a temporary narrow space-saver spare wheel properly fitted to the front corner of a parked grey ordinary passenger car on a safe paved driveway. Black narrow tyre, black stamped steel rim, five evenly spaced wheel bolts, no hubcap. A large genuine-looking yellow manufacturer safety sticker on the flat part of the rim bears ONLY black text \"80 km/h\" in clean readable type. No red circle or road sign. Entire wheel, small fender section and ground visible, no lifting jack, wheel rests with vehicle weight normally on ground. No other lettering, brand, people or other equipment. Sticker easily legible at390px width, no graphic highlight.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+            "proposal_sha256": "4c684dace1b096dc5882d88f707277272f36a3ae0cc320a9cec185cdfb71910e",
+            "image_sha256": "4edb5bb04aef66e5fa48e5a82e92d26ccbd7d85800e0b453db3a63aa810fb216",
+            "compared_question_keys": [
+              "situation_roadworks_b14_50_over_general_80",
+              "situation_driveway_exit_yield",
+              "situation_red_cross_lane_closed",
+              "situation_mountain_car_backs_for_caravan",
+              "situation_limiter_no_braking_downhill"
+            ],
+            "checks": {
+              "official_rule": "Checked 2026-10-10. Temporary spare use must not exceed speed marked on wheel label; replace with original-type wheel as soon as possible.80is the stated pictured wheel limit, not asserted universal.",
+              "novelty": "Existing blowout, tyrepressure, tread and bulge do not test the lower equipment-specific speed limit after fitting a temporary spare. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+              "signs_and_text": "Exact yellow wheel label80km/h readable, no roadside speed sign. Faint moulded tyre texture has no interpretable competing limit.",
+              "road_geometry": "Stationary close-up on paved driveway, no road movement implied.",
+              "vehicles_and_people": "Mounted spare wheel supports car normally, no jack, damaged tyre or person.",
+              "dashboard_and_equipment": "Five bolts, black stamped wheel, narrow tyre, valve and wheel well plausible.80label is manufacturer-type equipment label, not an invented road sign.",
+              "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Stationary close-up on paved driveway, no road movement implied. Mounted spare wheel supports car normally, no jack, damaged tyre or person.",
+              "phone_size": "Inspected saved390px phone-1.jpg. 80 remains readily legible;km/h is also explicit in bilingual stem. No universal80limit for every spare is claimed.",
+              "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Temporary spare fitted, label80km/h, dry road otherwise90. Avoid claiming all spares share a universal limit.",
+              "all_four_options": "Correct set d. FR: {\"a\": \"La limitation de la roue est inférieure à celle de la route.\", \"b\": \"Il n’existe pas d’exception de quelques minutes.\", \"c\": \"La pression correcte ne supprime pas la limite.\", \"d\": \"La limite propre à cette roue reste80.\"} EN: {\"a\": \"The wheel’s limit is lower than the road’s.\", \"b\": \"There is no brief high-speed exception.\", \"c\": \"Correct pressure does not remove the limit.\", \"d\": \"This wheel’s80limit applies.\"}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-004/temporary_spare_wheel_speed_label/scene-1.jpg",
+      "image_sha256": "4edb5bb04aef66e5fa48e5a82e92d26ccbd7d85800e0b453db3a63aa810fb216",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+        "proposal_sha256": "4c684dace1b096dc5882d88f707277272f36a3ae0cc320a9cec185cdfb71910e",
+        "image_sha256": "4edb5bb04aef66e5fa48e5a82e92d26ccbd7d85800e0b453db3a63aa810fb216",
+        "compared_question_keys": [
+          "situation_roadworks_b14_50_over_general_80",
+          "situation_driveway_exit_yield",
+          "situation_red_cross_lane_closed",
+          "situation_mountain_car_backs_for_caravan",
+          "situation_limiter_no_braking_downhill"
+        ],
+        "checks": {
+          "official_rule": "Checked 2026-10-10. Temporary spare use must not exceed speed marked on wheel label; replace with original-type wheel as soon as possible.80is the stated pictured wheel limit, not asserted universal.",
+          "novelty": "Existing blowout, tyrepressure, tread and bulge do not test the lower equipment-specific speed limit after fitting a temporary spare. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+          "signs_and_text": "Exact yellow wheel label80km/h readable, no roadside speed sign. Faint moulded tyre texture has no interpretable competing limit.",
+          "road_geometry": "Stationary close-up on paved driveway, no road movement implied.",
+          "vehicles_and_people": "Mounted spare wheel supports car normally, no jack, damaged tyre or person.",
+          "dashboard_and_equipment": "Five bolts, black stamped wheel, narrow tyre, valve and wheel well plausible.80label is manufacturer-type equipment label, not an invented road sign.",
+          "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Stationary close-up on paved driveway, no road movement implied. Mounted spare wheel supports car normally, no jack, damaged tyre or person.",
+          "phone_size": "Inspected saved390px phone-1.jpg. 80 remains readily legible;km/h is also explicit in bilingual stem. No universal80limit for every spare is claimed.",
+          "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Temporary spare fitted, label80km/h, dry road otherwise90. Avoid claiming all spares share a universal limit.",
+          "all_four_options": "Correct set d. FR: {\"a\": \"La limitation de la roue est inférieure à celle de la route.\", \"b\": \"Il n’existe pas d’exception de quelques minutes.\", \"c\": \"La pression correcte ne supprime pas la limite.\", \"d\": \"La limite propre à cette roue reste80.\"} EN: {\"a\": \"The wheel’s limit is lower than the road’s.\", \"b\": \"There is no brief high-speed exception.\", \"c\": \"Correct pressure does not remove the limit.\", \"d\": \"This wheel’s80limit applies.\"}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "098c1621ba0bebbe1b14804f9bf4358804382ef8df18acb5629682367e2ba1f9"
+    },
+    {
+      "proposal": {
+        "scenario_id": "signed_accident_report_no_front_changes",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+        "learning_objective": "Preserve the jointly signed accident report front and complete only the individual reverse later.",
+        "topic": "responsibility.accident_report",
+        "scenario": "Material-only accident, safe location, both drivers have agreed and signed paper report front, each keptcopy.",
+        "novelty_review": "Existing accident question covers immediate protect-alert-aid. This covers subsequent insurance paperwork integrity, not rescue.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_signed_accident_report_no_front_changes",
+          "category_slug": "safety",
+          "difficulty": "medium",
+          "correct_answers": [
+            "b",
+            "d"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Après un accident sans blessé, nous avons rempli et signé le recto du constat amiable papier. Chacun a son exemplaire. Que puis-je faire ensuite ?",
+              "answer_a": "Ajouter seul une nouvelle case cochée au recto.",
+              "answer_b": "Compléter individuellement le verso.",
+              "answer_c": "Modifier seul le croquis commun déjà signé.",
+              "answer_d": "Conserver le recto signé sans rien y ajouter.",
+              "explanation": "Après la signature des deux conducteurs, la partie commune au recto ne doit plus être modifiée. Chacun conserve son exemplaire et peut compléter ensuite son propre verso pour la déclaration à l’assureur."
+            },
+            "en": {
+              "question_text": "After a collision with no injuries, both drivers have completed and signed the front of the paper accident report. Each has a copy. What may I do next?",
+              "answer_a": "Tick an additional box on the front on my own.",
+              "answer_b": "Complete the reverse individually.",
+              "answer_c": "Alter the jointly signed sketch on my own.",
+              "answer_d": "Keep the signed front unchanged.",
+              "explanation": "Once both drivers have signed, the shared front of the report must not be changed. Each keeps a copy and may later complete their own reverse side for the declaration to their insurer."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Une case ajoutée modifierait le constat commun signé.",
+            "b": "Le verso individuel peut être rempli plus tard.",
+            "c": "Le croquis fait partie du recto commun signé.",
+            "d": "Préserver le document commun signé."
+          },
+          "en": {
+            "a": "An extra tick changes the signed joint record.",
+            "b": "The individual reverse can be completed later.",
+            "c": "The sketch is part of the signed front.",
+            "d": "Preserve the signed joint record."
+          }
+        },
+        "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Original realistic landscape photograph illustrating minor car damage after a low-speed bump, safely parked away from traffic in a quiet outdoor parking area. Tight close-up of a grey passenger car’s rear bumper corner, with a small shallow scuff and slight dent; intact tail-lamp partly in frame. No broken glass, no smoke, no injury, no visible number plate. A second plain blue car is softly out of focus behind on another marked parking bay. No people or paperwork visible, no legible text, no signs. Gentle daylight. This is context only; the question explicitly supplies what has happened with the paper report, do not fabricate a form.",
+        "sources": [
+          {
+            "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2149",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Paper accident report: jointly complete and sign front, add nothing once signed, each retain copy; reverse may be completed later individually."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_tyre_tread_below_minimum",
+          "similarity": 0.434,
+          "question_fr": "La profondeur mesurée dans les rainures principales de ce pneu est de 1,5 mm. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_exceptional_convoy_crossing",
+          "similarity": 0.415,
+          "question_fr": "Un véhicule d'accompagnement signale le franchissement imminent du carrefour par ce transport exceptionnel. Puis-je m'engager avant lui ?"
+        },
+        {
+          "key": "situation_motorway_toll_intercom_problem",
+          "similarity": 0.409,
+          "question_fr": "Le terminal de péage ne fonctionne pas et la barrière reste fermée. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_alcohol_sedating_medicine",
+          "similarity": 0.405,
+          "question_fr": "J'ai pris un médicament pouvant provoquer une somnolence. Puis-je boire de l'alcool puis conduire ?"
+        },
+        {
+          "key": "situation_priority_right_ab1",
+          "similarity": 0.404,
+          "question_fr": "À l'approche de cette intersection, le véhicule à droite s'engage. Que dois-je faire ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-004/signed_accident_report_no_front_changes/scene-1.jpg",
+          "image_sha256": "ff5ee380e368d2cb3c8e2384583eefd1cdecac56043ece3ba71b5e2205af3403",
+          "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Original realistic landscape photograph illustrating minor car damage after a low-speed bump, safely parked away from traffic in a quiet outdoor parking area. Tight close-up of a grey passenger car’s rear bumper corner, with a small shallow scuff and slight dent; intact tail-lamp partly in frame. No broken glass, no smoke, no injury, no visible number plate. A second plain blue car is softly out of focus behind on another marked parking bay. No people or paperwork visible, no legible text, no signs. Gentle daylight. This is context only; the question explicitly supplies what has happened with the paper report, do not fabricate a form.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "result": "pass",
+            "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+            "proposal_sha256": "bff0bac6a3144afc417b77e1785a539abc655bfb83b31529ffeb9ce3aab586dc",
+            "image_sha256": "ff5ee380e368d2cb3c8e2384583eefd1cdecac56043ece3ba71b5e2205af3403",
+            "compared_question_keys": [
+              "situation_tyre_tread_below_minimum",
+              "situation_exceptional_convoy_crossing",
+              "situation_motorway_toll_intercom_problem",
+              "situation_alcohol_sedating_medicine",
+              "situation_priority_right_ab1"
+            ],
+            "checks": {
+              "official_rule": "Checked 2026-10-10. Paper accident report: jointly complete and sign front, add nothing once signed, each retain copy; reverse may be completed later individually.",
+              "novelty": "Existing accident question covers immediate protect-alert-aid. This covers subsequent insurance paperwork integrity, not rescue. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+              "signs_and_text": "No signs or readable text. No invented insurance form or signature is displayed.",
+              "road_geometry": "Close bumper view in parking area, white bay lines, no unsafe roadside exchange.",
+              "vehicles_and_people": "Grey car minor bumper dent/scuff, intact lamp and reflector, second blue car parked behind; no injury or broken glass.",
+              "dashboard_and_equipment": "No controls or dashboard, no paperwork detail that conflicts with stated post-signature scenario.",
+              "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Close bumper view in parking area, white bay lines, no unsafe roadside exchange. Grey car minor bumper dent/scuff, intact lamp and reflector, second blue car parked behind; no injury or broken glass.",
+              "phone_size": "Inspected saved390px phone-1.jpg. Minor bumper damage remains visible; completed jointly signed report and separate copies are explicit in both stems.",
+              "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Material-only accident, safe location, both drivers have agreed and signed paper report front, each keptcopy.",
+              "all_four_options": "Correct set b,d. FR: {\"a\": \"Une case ajoutée modifierait le constat commun signé.\", \"b\": \"Le verso individuel peut être rempli plus tard.\", \"c\": \"Le croquis fait partie du recto commun signé.\", \"d\": \"Préserver le document commun signé.\"} EN: {\"a\": \"An extra tick changes the signed joint record.\", \"b\": \"The individual reverse can be completed later.\", \"c\": \"The sketch is part of the signed front.\", \"d\": \"Preserve the signed joint record.\"}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-004/signed_accident_report_no_front_changes/scene-1.jpg",
+      "image_sha256": "ff5ee380e368d2cb3c8e2384583eefd1cdecac56043ece3ba71b5e2205af3403",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+        "proposal_sha256": "bff0bac6a3144afc417b77e1785a539abc655bfb83b31529ffeb9ce3aab586dc",
+        "image_sha256": "ff5ee380e368d2cb3c8e2384583eefd1cdecac56043ece3ba71b5e2205af3403",
+        "compared_question_keys": [
+          "situation_tyre_tread_below_minimum",
+          "situation_exceptional_convoy_crossing",
+          "situation_motorway_toll_intercom_problem",
+          "situation_alcohol_sedating_medicine",
+          "situation_priority_right_ab1"
+        ],
+        "checks": {
+          "official_rule": "Checked 2026-10-10. Paper accident report: jointly complete and sign front, add nothing once signed, each retain copy; reverse may be completed later individually.",
+          "novelty": "Existing accident question covers immediate protect-alert-aid. This covers subsequent insurance paperwork integrity, not rescue. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+          "signs_and_text": "No signs or readable text. No invented insurance form or signature is displayed.",
+          "road_geometry": "Close bumper view in parking area, white bay lines, no unsafe roadside exchange.",
+          "vehicles_and_people": "Grey car minor bumper dent/scuff, intact lamp and reflector, second blue car parked behind; no injury or broken glass.",
+          "dashboard_and_equipment": "No controls or dashboard, no paperwork detail that conflicts with stated post-signature scenario.",
+          "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Close bumper view in parking area, white bay lines, no unsafe roadside exchange. Grey car minor bumper dent/scuff, intact lamp and reflector, second blue car parked behind; no injury or broken glass.",
+          "phone_size": "Inspected saved390px phone-1.jpg. Minor bumper damage remains visible; completed jointly signed report and separate copies are explicit in both stems.",
+          "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Material-only accident, safe location, both drivers have agreed and signed paper report front, each keptcopy.",
+          "all_four_options": "Correct set b,d. FR: {\"a\": \"Une case ajoutée modifierait le constat commun signé.\", \"b\": \"Le verso individuel peut être rempli plus tard.\", \"c\": \"Le croquis fait partie du recto commun signé.\", \"d\": \"Préserver le document commun signé.\"} EN: {\"a\": \"An extra tick changes the signed joint record.\", \"b\": \"The individual reverse can be completed later.\", \"c\": \"The sketch is part of the signed front.\", \"d\": \"Preserve the signed joint record.\"}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "d96a13ba4dd8d8730a5df42f9657676c44550cf742951ff83878d1789b622983"
+    }
+  ],
+  "imported_on": "2026-10-10",
+  "content_version": 97,
+  "questions_after": 428,
+  "pack_after_sha256": "560f27f01e00d7639622e8b0db41da3cd7ffbe9978f37104ee7e0fb4bd8b815d",
+  "verification_revocations": [
+    {
+      "reason": "Semantic duplicate found: R16 family was incorrectly treated as distinct from covered R16td; new question repeats situation_yellow_arrow_red_light_turn. Replace latest item and reverify before next batch.",
+      "recorded_on": "2026-10-10",
+      "previous_verification": {
+        "pack_sha256": "f6524510d4a9060d961299ca6aa48c7642546115bdc9585b93375a426342b53c",
+        "content_version": 96,
+        "python_tests": {
+          "result": "pass",
+          "notes": "47 workflow/content tests passed, including duplicate blocking, answer sets, stale approvals, interrupted import and safe retries.",
+          "path": "assets-source/question-batches/expansion-004/evidence/python-tests.log",
+          "sha256": "91170c0a8a82fd87896c5d0a438ff24c8e49d0d7e03aa1afb3975e3d8e26af37"
+        },
+        "ios_tests": {
+          "result": "pass",
+          "notes": "36 native tests passed after the plural-feedback repair, including content integrity, image decoding and progress preservation.",
+          "path": "assets-source/question-batches/expansion-004/evidence/ios-tests-plural-fix.log",
+          "sha256": "4b1182e93ab71613bad0ea8affa33a0dd901d6878e27cf8277b2437b1d0d0007"
+        },
+        "sqlite_check": {
+          "result": "pass",
+          "notes": "All428 questions match version96 and both translations; practice-history hash unchanged across all review sessions.",
+          "path": "assets-source/question-batches/expansion-004/evidence/sqlite-after-ui.json",
+          "sha256": "2bb413b3af9d4492654124e4f031af036a65180ee513d4b3fedbf924073d3117"
+        },
+        "simulator_review": {
+          "result": "pass",
+          "notes": "All ten French scenes/questions inspected; English multi-answer scoring, singular/plural feedback and long towing question checked. Partial and extra-wrong sets rejected.",
+          "path": "assets-source/question-batches/expansion-004/evidence/simulator-review.json",
+          "sha256": "059e746a4aac76e582b29714fe011726fbcfaceb91c3dca54a93b0c2bbf951b4"
+        }
+      },
+      "previous_verified_on": "2026-10-10"
+    }
+  ],
+  "content_repairs": [
+    {
+      "repair_id": "r16-overlap-to-pregnancy-belt",
+      "revision_sha256": "610e5546f21eafb0c7ebcc690613a1dcbe8508b9942a709711ca754c64a4f7c3",
+      "reason": "Confirmed semantic duplicate of situation_yellow_arrow_red_light_turn. Replace with previously uncovered pregnancy belt-routing objective, preserving stable database key and two-answer mix.",
+      "previous_item": {
+        "proposal": {
+          "scenario_id": "r16_right_arrow_conditional_passage",
+          "scope": "ordinary_passenger_car",
+          "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+          "learning_objective": "Understand the conditional movement and retained yielding duty of a flashing amber R16 arrow.",
+          "topic": "signals.conditional_right_arrow",
+          "scenario": "Driver is in a right-turn lane. Main R11 is red; separate R16 right arrow flashes. No still image is claimed to prove flashing.",
+          "novelty_review": "Existing fixed amber, dark signal and green pedestrian turns do not test permission to cross an associated RED signal in the arrow direction without acquiring priority.",
+          "primary_codes": [
+            "R16"
+          ],
+          "context_codes": [],
+          "question": {
+            "key": "situation_r16_right_arrow_conditional_passage",
+            "category_slug": "priority_rules",
+            "difficulty": "medium",
+            "correct_answers": [
+              "a",
+              "b"
+            ],
+            "translations": {
+              "fr": {
+                "question_text": "Je suis dans la voie pour tourner à droite. La flèche jaune clignote alors que le feu principal est rouge. Quelles affirmations sont exactes ?",
+                "answer_a": "Je peux franchir le feu pour tourner à droite avec prudence.",
+                "answer_b": "Je dois céder le passage aux usagers qui ont la priorité.",
+                "answer_c": "Cette flèche m’autorise aussi à aller tout droit.",
+                "answer_d": "La flèche me donne la priorité sur les piétons.",
+                "explanation": "La flèche jaune clignotante d’anticipation autorise uniquement le mouvement indiqué malgré le rouge du feu associé. Elle ne donne pas la priorité : je contrôle les autres usagers et leur cède le passage avant de tourner."
+              },
+              "en": {
+                "question_text": "I am in the right-turn lane. The amber arrow is flashing while the main signal is red. Which statements are correct?",
+                "answer_a": "I may pass the signal to turn right cautiously.",
+                "answer_b": "I must give way to road users who have priority.",
+                "answer_c": "This arrow also allows me to go straight ahead.",
+                "answer_d": "The arrow gives me priority over pedestrians.",
+                "explanation": "The flashing amber filter arrow permits only the indicated movement despite the associated red signal. It does not confer priority: I check for other road users and give way before turning."
+              }
+            }
+          },
+          "option_rationale": {
+            "fr": {
+              "a": "Le mouvement indiqué est autorisé sous conditions.",
+              "b": "Le devoir de céder le passage demeure.",
+              "c": "L’autorisation ne concerne pas la direction tout droit.",
+              "d": "Les piétons prioritaires restent prioritaires."
+            },
+            "en": {
+              "a": "The indicated movement is conditionally permitted.",
+              "b": "The duty to give way remains.",
+              "c": "Straight ahead is not authorised by a right arrow.",
+              "d": "Pedestrian priority is not removed."
+            }
+          },
+          "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Close eye-level photograph of a French traffic signal mounted on a single grey pole at a quiet urban corner. Main narrow black vertical housing has exactly three circular lenses: RED top lens brightly lit, middle amber lens OFF dark, bottom green lens OFF dark. Immediately to the RIGHT of the bottom green lens, at the same height, a separate small black single-lens circular signal contains a bright AMBER arrow pointing horizontally to the RIGHT, the standard French R16td filter-arrow shape; ONLY that arrow illuminates against its black background. It is photographed during the on phase of flashing, no drawn motion marks. Main red and separate amber arrow both fully visible, large and sharp. Background: neutral stone wall and leafy trees at the corner, a little asphalt and pavement; shallow depth of field, no other signals, people, signs, lane markings or readable text. No inset, no highlighting.",
+          "sources": [
+            {
+              "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/",
+              "kind": "official",
+              "checked_on": "2026-10-10",
+              "supports": "Article7 R16: amber flashing arrow associated with R11 permits indicated direction despite red, cautiously while respecting others’ priority."
+            },
+            {
+              "url": "https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_6epartie_vc_20250904.pdf",
+              "kind": "official",
+              "checked_on": "2026-10-10",
+              "supports": "IISR6 articles109-3 and110-5: R16 direction signal associated with R11, directional arrow and placement."
+            }
+          ]
+        },
+        "state": "reviewed",
+        "nearest_questions": [
+          {
+            "key": "situation_cmi_parking_card_passenger",
+            "similarity": 0.483,
+            "question_fr": "Je transporte une personne titulaire d’une CMI « stationnement » valide. Pour stationner avec elle, quelles affirmations sont exactes ?"
+          },
+          {
+            "key": "situation_abs_emergency_pedal_pulsation",
+            "similarity": 0.478,
+            "question_fr": "Lors d’un freinage d’urgence, l’ABS de ma voiture entre en action et la pédale vibre. Quelles affirmations sont exactes ?"
+          },
+          {
+            "key": "situation_left_turn_oncoming_yield",
+            "similarity": 0.468,
+            "question_fr": "Je tourne à gauche dans cette rue tandis qu’une voiture arrive en face. Quelle action est correcte ?"
+          },
+          {
+            "key": "situation_overtaking_uncontrolled_intersection",
+            "similarity": 0.438,
+            "question_fr": "Je vais dépasser cette voiture à l'approche d'une intersection sans feu ni route prioritaire. Puis-je commencer la manœuvre ?"
+          },
+          {
+            "key": "situation_cocaine_false_confidence",
+            "similarity": 0.428,
+            "question_fr": "Une personne ayant consommé de la cocaïne se dit très alerte et veut conduire. Quelle réponse est correcte ?"
+          }
+        ],
+        "history": [
+          {
+            "image_path": "assets-source/question-batches/expansion-004/r16_right_arrow_conditional_passage/scene-1.jpg",
+            "image_sha256": "c2f6aa5e26c08459eaf0ead5facf70fd9d2eccc9a4139490fb906a4287ddcbde",
+            "prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Close eye-level photograph of a French traffic signal mounted on a single grey pole at a quiet urban corner. Main narrow black vertical housing has exactly three circular lenses: RED top lens brightly lit, middle amber lens OFF dark, bottom green lens OFF dark. Immediately to the RIGHT of the bottom green lens, at the same height, a separate small black single-lens circular signal contains a bright AMBER arrow pointing horizontally to the RIGHT, the standard French R16td filter-arrow shape; ONLY that arrow illuminates against its black background. It is photographed during the on phase of flashing, no drawn motion marks. Main red and separate amber arrow both fully visible, large and sharp. Background: neutral stone wall and leafy trees at the corner, a little asphalt and pavement; shallow depth of field, no other signals, people, signs, lane markings or readable text. No inset, no highlighting.\n",
+            "created_on": "2026-10-10",
+            "review": {
+              "result": "pass",
+              "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+              "proposal_sha256": "f5fd45fbc60debd74ed6b1d8cd8b4c7b6ecb1228b1ab3d2f95c93b05d9025674",
+              "image_sha256": "c2f6aa5e26c08459eaf0ead5facf70fd9d2eccc9a4139490fb906a4287ddcbde",
+              "compared_question_keys": [
+                "situation_cmi_parking_card_passenger",
+                "situation_abs_emergency_pedal_pulsation",
+                "situation_left_turn_oncoming_yield",
+                "situation_overtaking_uncontrolled_intersection",
+                "situation_cocaine_false_confidence"
+              ],
+              "checks": {
+                "official_rule": "Checked 2026-10-10. Article7 R16: amber flashing arrow associated with R11 permits indicated direction despite red, cautiously while respecting others’ priority. IISR6 articles109-3 and110-5: R16 direction signal associated with R11, directional arrow and placement.",
+                "novelty": "Existing fixed amber, dark signal and green pedestrian turns do not test permission to cross an associated RED signal in the arrow direction without acquiring priority. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+                "signs_and_text": "R11 has top red lit, middle amber and lower green dark. Separate R16td horizontal right amber arrow at lower-right matches IISR6 figure6; no cycle pictogram, extra lamp or diagonal arrow.",
+                "road_geometry": "Pole at urban pavement edge; narrow background marking not an asserted stop position. Question explicitly places driver in right-turn lane.",
+                "vehicles_and_people": "No pedestrians or vehicles whose priority would be visually contradicted.",
+                "dashboard_and_equipment": "No car dashboard. Signal lenses, hoods, bracket and arrow orientation inspected against official-signal-reference.png.",
+                "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Pole at urban pavement edge; narrow background marking not an asserted stop position. Question explicitly places driver in right-turn lane. No pedestrians or vehicles whose priority would be visually contradicted.",
+                "phone_size": "Inspected saved390px phone-1.jpg. Red main signal and amber right arrow clearly distinct; flashing cannot be proved by still image and is explicitly stated in both translations.",
+                "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Driver is in a right-turn lane. Main R11 is red; separate R16 right arrow flashes. No still image is claimed to prove flashing.",
+                "all_four_options": "Correct set a,b. FR: {\"a\": \"Le mouvement indiqué est autorisé sous conditions.\", \"b\": \"Le devoir de céder le passage demeure.\", \"c\": \"L’autorisation ne concerne pas la direction tout droit.\", \"d\": \"Les piétons prioritaires restent prioritaires.\"} EN: {\"a\": \"The indicated movement is conditionally permitted.\", \"b\": \"The duty to give way remains.\", \"c\": \"Straight ahead is not authorised by a right arrow.\", \"d\": \"Pedestrian priority is not removed.\"}"
+              },
+              "recorded_on": "2026-10-10"
+            }
+          }
+        ],
+        "image_path": "assets-source/question-batches/expansion-004/r16_right_arrow_conditional_passage/scene-1.jpg",
+        "image_sha256": "c2f6aa5e26c08459eaf0ead5facf70fd9d2eccc9a4139490fb906a4287ddcbde",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "review": {
+          "result": "pass",
+          "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+          "proposal_sha256": "f5fd45fbc60debd74ed6b1d8cd8b4c7b6ecb1228b1ab3d2f95c93b05d9025674",
+          "image_sha256": "c2f6aa5e26c08459eaf0ead5facf70fd9d2eccc9a4139490fb906a4287ddcbde",
+          "compared_question_keys": [
+            "situation_cmi_parking_card_passenger",
+            "situation_abs_emergency_pedal_pulsation",
+            "situation_left_turn_oncoming_yield",
+            "situation_overtaking_uncontrolled_intersection",
+            "situation_cocaine_false_confidence"
+          ],
+          "checks": {
+            "official_rule": "Checked 2026-10-10. Article7 R16: amber flashing arrow associated with R11 permits indicated direction despite red, cautiously while respecting others’ priority. IISR6 articles109-3 and110-5: R16 direction signal associated with R11, directional arrow and placement.",
+            "novelty": "Existing fixed amber, dark signal and green pedestrian turns do not test permission to cross an associated RED signal in the arrow direction without acquiring priority. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+            "signs_and_text": "R11 has top red lit, middle amber and lower green dark. Separate R16td horizontal right amber arrow at lower-right matches IISR6 figure6; no cycle pictogram, extra lamp or diagonal arrow.",
+            "road_geometry": "Pole at urban pavement edge; narrow background marking not an asserted stop position. Question explicitly places driver in right-turn lane.",
+            "vehicles_and_people": "No pedestrians or vehicles whose priority would be visually contradicted.",
+            "dashboard_and_equipment": "No car dashboard. Signal lenses, hoods, bracket and arrow orientation inspected against official-signal-reference.png.",
+            "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Pole at urban pavement edge; narrow background marking not an asserted stop position. Question explicitly places driver in right-turn lane. No pedestrians or vehicles whose priority would be visually contradicted.",
+            "phone_size": "Inspected saved390px phone-1.jpg. Red main signal and amber right arrow clearly distinct; flashing cannot be proved by still image and is explicitly stated in both translations.",
+            "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Driver is in a right-turn lane. Main R11 is red; separate R16 right arrow flashes. No still image is claimed to prove flashing.",
+            "all_four_options": "Correct set a,b. FR: {\"a\": \"Le mouvement indiqué est autorisé sous conditions.\", \"b\": \"Le devoir de céder le passage demeure.\", \"c\": \"L’autorisation ne concerne pas la direction tout droit.\", \"d\": \"Les piétons prioritaires restent prioritaires.\"} EN: {\"a\": \"The indicated movement is conditionally permitted.\", \"b\": \"The duty to give way remains.\", \"c\": \"Straight ahead is not authorised by a right arrow.\", \"d\": \"Pedestrian priority is not removed.\"}"
+          },
+          "recorded_on": "2026-10-10"
+        },
+        "imported_question_sha256": "590594999c02c56ca984453101fcd55c69a5706228146f3483d70129c22a9438"
+      },
+      "previous_verification": null,
+      "previous_pack_sha256": "f6524510d4a9060d961299ca6aa48c7642546115bdc9585b93375a426342b53c",
+      "previous_content_version": 96,
+      "recorded_on": "2026-10-10"
+    }
+  ],
+  "verified_on": "2026-10-10",
+  "verification": {
+    "pack_sha256": "560f27f01e00d7639622e8b0db41da3cd7ffbe9978f37104ee7e0fb4bd8b815d",
+    "content_version": 97,
+    "python_tests": {
+      "result": "pass",
+      "notes": "52 tests pass, including signal-family blocking, improved nearest retrieval and full replacement preservation/stale-review/recovery/retry checks.",
+      "path": "assets-source/question-batches/expansion-004/evidence/python-tests-repair.log",
+      "sha256": "7d90c29cb3b6a3a3c8051a7b0974ad70871dcd980beb3bb213ffeabc62dec003"
+    },
+    "ios_tests": {
+      "result": "pass",
+      "notes": "All36 native tests pass after replacement; all images decode and seeded content/progress checks pass.",
+      "path": "assets-source/question-batches/expansion-004/evidence/ios-tests-repair.log",
+      "sha256": "e752ae600f2f60dfb3056a209bedec116b4cf6a90994e3f010dbbea9f97b1e46"
+    },
+    "sqlite_check": {
+      "result": "pass",
+      "notes": "All428 questions match version97 and user-history hash is unchanged.",
+      "path": "assets-source/question-batches/expansion-004/evidence/sqlite-repair-after-ui.json",
+      "sha256": "e5f2132e54354c4fb515f411d30366991c282a1f368a78131f71cfaf059a16f6"
+    },
+    "simulator_review": {
+      "result": "pass",
+      "notes": "New exact replacement checked in French and English; complete set passes and incomplete set fails. Nine unchanged items retain exact-file UI evidence.",
+      "path": "assets-source/question-batches/expansion-004/evidence/simulator-review-repair.json",
+      "sha256": "35a52f0af4b7e0645c2bb1549d2dad6fb07824240ffb4d5e539f2b8a34c7cca5"
+    }
+  }
+}

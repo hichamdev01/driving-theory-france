@@ -1,0 +1,42 @@
+[
+  {
+    "scenario": "roundabout_left_lane_optional",
+    "path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-0490f467-4fb8-4607-ab33-a21c960c423d.png"
+  },
+  {
+    "scenario": "caravan_tight_right_turn_left_swing",
+    "path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-59c5f48c-4182-4f91-bda0-e5cad60eee2e.png"
+  },
+  {
+    "scenario": "motorway_filtering_two_leftmost_lanes",
+    "path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-a89a0927-a1ae-43d9-a9f3-4f9a5e90d2e7.png"
+  },
+  {
+    "scenario": "alcohol_accident_own_damage_exclusion",
+    "path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-74f72b9b-5247-4098-8d95-183b22f7ecac.png"
+  },
+  {
+    "scenario": "average_speed_camera_section",
+    "path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-fb935217-957c-4261-8c05-30b158a4e404.png"
+  },
+  {
+    "scenario": "passenger_feet_dashboard_airbag",
+    "path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-52fdd28d-a0f3-4c30-ae85-0c89e140c616.png"
+  },
+  {
+    "scenario": "technical_inspection_critical_next_day",
+    "path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-c66175f8-f8f3-4061-9837-7668d3796572.png"
+  },
+  {
+    "scenario": "licence_b_750kg_trailer_over3500_sum",
+    "path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-c12b13fa-42cb-4a38-9f37-3d4d515aa351.png"
+  },
+  {
+    "scenario": "registration_address_change_one_month",
+    "path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-f4dfe3fc-117e-46d0-890e-b5f8df1faa12.png"
+  },
+  {
+    "scenario": "ev_charging_no_extension_or_multisocket",
+    "path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-80c3c72a-ad53-42fd-a26f-45e0962f4a52.png"
+  }
+]

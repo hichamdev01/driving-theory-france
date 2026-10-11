@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "7cff2b4e155105cf2fe2728db4f1e1e39fa4c43e6b42a81581ab31ce777ec4c5",
+  "image_sha256": "421338410b741c0d5faf74e7ac7a1035fa7322992259ed5f20924872d30c43c9",
+  "result": "pass",
+  "notes": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+  "compared_question_keys": [
+    "situation_alcohol_drugs_combined_nine_points",
+    "situation_signed_accident_report_no_front_changes",
+    "situation_otc_medicine_not_driving_guarantee",
+    "situation_alcohol_cannabis_combination",
+    "situation_alcohol_0_40mg_offence"
+  ],
+  "checks": {
+    "signs_and_text": "No traffic signs, legal text, bottle labels or solution highlights. Private driveway scene has no required text.",
+    "road_geometry": "Paved private driveway alongside a low stone wall; no public lanes, signals, junction priority or road markings to interpret.",
+    "vehicles_and_people": "One empty blue compact car with visible front wing/bumper damage near a wall. Body and wheels plausible; no injured person or visually inferred intoxication. Damage side is irrelevant to wording.",
+    "dashboard_and_equipment": "Only natural glimpses of seats and steering wheel, no readable dashboard or insurance document. Lamp and bumper damage consistent with parked post-collision vehicle.",
+    "phone_size": "Car and front damage remain clear at 390px. Alcohol, responsibility and policy type come from the stem rather than invisible evidence.",
+    "french_and_english": "Both explicitly state caused crash under alcohol and ask whether comprehensive cover necessarily reimburses own damage. Both say may refuse, avoiding a claim that every contract has identical exclusions.",
+    "all_four_options": "A: cover is not guaranteed and may be refused. Paid premium B, no other damaged car C and same-day reporting D do not guarantee removal of an exclusion.",
+    "official_rule": "Sources read and checked 2026-10-11; research-and-selection.json records facts and limitations. An accident caused under alcohol can lead to refusal of own bodily/material-damage guarantees, notwithstanding comprehensive cover or paid premiums; question uses may/refuses guaranteed cover, not universal contractual wording. Source: https://www.service-public.gouv.fr/particuliers/vosdroits/F2630",
+    "novelty": "Existing items cover alcohol limits, points, health effects and enforcement. The uninsured-windscreen sticker item tests proof of insurance, not intoxication-related own-damage exclusions. All five saved nearest questions, including bilingual options/explanations, compared as recorded in research-and-selection.json; broader current bank screened.",
+    "full_resolution": "Inspected entire final staged JPEG 1672x941, plus 390px preview, against both translations and all four options. Rejected earlier candidates remain in history. No detected unresolved defect in this version."
+  }
+}

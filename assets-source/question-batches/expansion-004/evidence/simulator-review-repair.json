@@ -1,0 +1,16 @@
+{
+  "result": "pass",
+  "date": "2026-10-10",
+  "device": "iPhone17Pro iOS26.5",
+  "content_version": 97,
+  "pack_sha256": "560f27f01e00d7639622e8b0db41da3cd7ffbe9978f37104ee7e0fb4bd8b815d",
+  "method": "Actual simulator UI observed via CUA screenshot and accessibility, DEBUG ContentReviewKeys with no progress writes. Screenshots remain in conversation output.",
+  "replacement_observations": [
+    "French correct category Safety, new pregnancy scene, four matching options, explicit multiple-answer instruction; A+C scores Correct, explanation visible.",
+    "English new scene/stem/options readable and equivalent; A alone scores Incorrect, with plural The correct answers are: A...C..., and complete English explanation.",
+    "Normal English home restored:54 of428 explored."
+  ],
+  "unchanged_items": "Other nine exact question/image pairs unchanged from first-pass French inspection and subsequent English checks; inherited observations in simulator-review.json. Only the formerly duplicated R16 item was replaced.",
+  "plural_feedback": "French and English plural feedback previously confirmed after native label repair; English verified again on replacement.",
+  "sqlite": "All428 records/translations match version97; progress hash unchanged. No detected unresolved batch defect."
+}

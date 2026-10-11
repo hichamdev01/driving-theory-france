@@ -1,0 +1,6 @@
+{
+  "result": "reject",
+  "proposal_sha256": "db3db4c38bbc46c31a51c505378acf87783cc645dbb8f477375a279508f13ca9",
+  "image_sha256": "c209bdca5053e9766dea6d10e13df63ce619be089307f3945c3bd7bf56c1b887",
+  "notes": "Speedometer at left contains an impossible sequence of values (repeated/descending numbers), gear knob and climate pictograms are malformed. Regenerate a tightly framed handset-only equipment photograph with no gauges, gear selector or control labels."
+}

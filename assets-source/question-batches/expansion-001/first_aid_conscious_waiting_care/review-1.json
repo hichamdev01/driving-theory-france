@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defects after actual full-size JPEG and 390px inspections; original wording/rationale reviewed against saved sources.",
+  "proposal_sha256": "30d6d1e38b841d6a10005bb12c8b194d43b48c31a1146ce6d3bdb25c72290eff",
+  "image_sha256": "b6ee9150cfa8e069f53abb833455a27fb122dbc19fba647c1cdb441cf7bcf576",
+  "checks": {
+    "official_rule": "Interior victim-care guidance supports covering, reassurance, no drink and no unnecessary movement. Stem explicitly secures scene, alerts help and excludes immediate danger/major bleeding.",
+    "novelty": "Conscious waiting care after alert differs from existing protect/alert, unconscious PLS, CPR, bleeding and choking. Nearest questions and broader topic comparisons recorded in authoring-preflight.",
+    "signs_and_text": "No road sign, plate, road marking, signal or necessary readable text; no embedded quiz text or solution overlay.",
+    "road_geometry": "Off-road paved lay-by with low wall, no active carriageway or crossing conflict in frame; casualty position plausible.",
+    "vehicles_and_people": "Two alert adults with natural hands and limbs. Casualty seated against wall; helper kneeling nearby, not moving him. Compact car rear dent, parked behind them, no graphic injury or dangerous intervention.",
+    "dashboard_and_equipment": "Blanket folded beside casualty; high-visibility vest on helper; no drink, tool, medical apparatus or dashboard implied.",
+    "full_resolution": "Inspected final JPEG 1672x941, whole frame and people/car/blanket details; no detected unresolved visual defect.",
+    "phone_size": "Viewed actual 390px resize: two people, seated posture, vest and folded blanket remain clear; no small text needed.",
+    "french_and_english": "Consciousness, secured scene, alert and lack of immediate danger/major bleeding stated in both versions; neither translation infers treatment needs from image alone.",
+    "all_four_options": "A cover without moving and C stay/reassure correct. B water and D walking incorrect. Four distinct choices and A/C multiple-answer set agree in both languages."
+  },
+  "compared_question_keys": [
+    "situation_unconscious_breathing_pls",
+    "situation_not_breathing_cpr_aed",
+    "situation_pedestrian_intent_no_crosswalk",
+    "situation_speed_rain_posted_90_80",
+    "situation_motorway_sos_location"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "23f6b9a368a49ec51b3646e537a71b04c1467300a36fbaa5bafcb401b2255419",
+  "image_sha256": "1dcfcc91a3250394a0f446147ddcea1247f59c109812d06a7a668e8f0a3f18f3",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+  "compared_question_keys": [
+    "situation_b4_car_sign_interpretation",
+    "situation_random_alcohol_check_no_infraction",
+    "situation_b21c1_car_scenario",
+    "situation_overtaking_uncontrolled_intersection",
+    "situation_b21b_straight_at_junction"
+  ],
+  "checks": {
+    "official_rule": "Article4 B5b: arrêt au poste de police; original catalogue appearance inspected.",
+    "novelty": "B4 customs and C64 toll payment are different facilities; B5b unreserved. Tests compulsory stop at police control even without personal suspicion, not an ordinary STOP intersection. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+    "signs_and_text": "HALTE and POLICE spelled exactly, black horizontal bar on white within red rim; no diagonal slash or supplementary text. Three orange cones with white bands.",
+    "road_geometry": "Two-way rural road beside broad gravel pull-off; cones/sign outside running lanes, coherent road edges.",
+    "vehicles_and_people": "No people or vehicles; no unsupported agent gesture. Question explicitly excludes contrary instruction.",
+    "dashboard_and_equipment": "Tripod supports sign at verge; no dashboard or signal hardware.",
+    "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. HALTE and POLICE spelled exactly, black horizontal bar on white within red rim; no diagonal slash or supplementary text. Three orange cones with white bands. Tripod supports sign at verge; no dashboard or signal hardware.",
+    "phone_size": "At390px both HALTE and POLICE readable; black bar/red rim and cones clear.",
+    "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. B5b police checkpoint; no agent gives contrary instructions; car approaches.",
+    "all_four_options": "Correct set d. {'fr': {'a': 'L’arrêt ne dépend pas d’une faute supposée.', 'b': 'Rouler au pas ne constitue pas un arrêt.', 'c': 'Le klaxon ne dispense pas du contrôle.', 'd': 'B5b impose cet arrêt.'}, 'en': {'a': 'Stopping is not conditional on an assumed offence.', 'b': 'Walking pace is not a stop.', 'c': 'A horn does not exempt the check.', 'd': 'B5b requires this stop.'}}"
+  }
+}

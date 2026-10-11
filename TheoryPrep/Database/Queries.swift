@@ -1,6 +1,8 @@
 import Foundation
 
 enum Queries {
+    static let randomPracticeLimit = 30
+
     static func getLanguagesForCountry(_ db: Database, _ countryCode: CountryCode) -> [Language] {
         db.query(
             """
@@ -103,6 +105,18 @@ enum Queries {
             params.append(limit)
         }
         return db.query(sql, params, map: mapQuestion)
+    }
+
+    /// RANDOM() orders the entire eligible pool before LIMIT is applied.
+    /// Group by ID so even a legacy duplicate translation cannot repeat a question.
+    static func getRandomPracticeQuestions(
+        _ db: Database, _ countryCode: CountryCode, _ languageCode: LanguageCode
+    ) -> [QuestionWithTranslation] {
+        db.query(
+            questionSelect + " GROUP BY q.id ORDER BY RANDOM() LIMIT ?",
+            [languageCode.rawValue, languageCode.rawValue, countryCode.rawValue, randomPracticeLimit],
+            map: mapQuestion
+        )
     }
 
     static func getExamConfiguration(_ db: Database, _ countryCode: CountryCode) -> ExamConfiguration {

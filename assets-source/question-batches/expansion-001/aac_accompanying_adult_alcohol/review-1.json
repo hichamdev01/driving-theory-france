@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+  "proposal_sha256": "3b6318a83a20c7ca0ba3de05c717c12b3a505de84ac2362848dd5a5539fdc746",
+  "image_sha256": "a5feafadfe44c0515c10b822ca8f9512a0ec502a14587fa647f54a0dd69d7a31",
+  "compared_question_keys": [
+    "alcohol_probationary_limit",
+    "alcohol_general_limit",
+    "situation_two_way_wrong_side_parking",
+    "situation_breath_test_general_limit",
+    "situation_parking_disc_actual_arrival"
+  ],
+  "checks": {
+    "official_rule": "Current L234-1, including paragraph V, checked 2026-10-09: provisions apply to the learner's accompanier. The explicit 0.80 g/L condition is enough; no visible intoxication required.",
+    "signs_and_text": "No signs, dashboard values, alcohol measurement or readable text. The BAC and learner's sobriety are provided by the stem.",
+    "road_geometry": "Stationary car in residential setting; no junction, markings or moving-traffic judgement. Passenger-side composition differs from initial prompt but correctly distinguishes the learner at the wheel and supervising passenger.",
+    "vehicles_and_people": "Two adults in plausible seated positions with natural faces and hands. Woman holds wheel, man sits beside her; no visual implication of drunken behaviour.",
+    "dashboard_and_equipment": "Steering wheel belongs to driver's position; both diagonal seat belts and headrests visible, no ambiguous gauge readings.",
+    "full_resolution": "Inspected final 1672x941 JPEG, including hand on wheel, occupants, window/body geometry and restraints; no unresolved defect detected.",
+    "phone_size": "390px preview retains driver/passenger roles and both occupants clearly.",
+    "french_and_english": "Both specify accompanied practice, adult BAC0.80g/L and sober learner. Neither requires inferring BAC from appearance.",
+    "all_four_options": "D only. A wrongly exempts passenger role; B invents short-trip exemption; C wrongly requires visible intoxication; D applies the legal provision.",
+    "novelty": "Nearest probationary/general/breath thresholds regulate a driver, whereas this question tests the designated accompanier’s legal role. Wrong-side parking and parking-disc arrival time are unrelated."
+  }
+}

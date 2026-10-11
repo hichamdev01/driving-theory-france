@@ -1,0 +1,6 @@
+{
+  "proposal_sha256": "8f41c0f7c8108dbcd4c19dac3b7a727f8e4b6ac8c6fd1ea38bbe729503efcd2d",
+  "image_sha256": "4c17492b98d6d3116b98223f31c808457fe6635adee52fa267f4b604f953ef23",
+  "result": "reject",
+  "notes": "Rejected: several centre-console button labels and the manual gear-shift pattern are malformed. Reframe to exclude those controls while retaining the adult passenger, belt and both feet on the dashboard."
+}

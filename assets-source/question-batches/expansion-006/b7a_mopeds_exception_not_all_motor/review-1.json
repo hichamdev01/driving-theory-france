@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "b8d571624747fa0b22a63996d26c7ef0f044943e54ca81fb95109343499d92a6",
+  "image_sha256": "62a9aab1596e71342403e9fb834c223f6d54e45affdf4bc20583dbdf7f1587ba",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+  "compared_question_keys": [
+    "situation_b7b_car_sign_interpretation",
+    "situation_no_overtaking_goods",
+    "situation_height_limit_2_8m",
+    "situation_bus_lane",
+    "situation_no_motor_vehicles"
+  ],
+  "checks": {
+    "official_rule": "Article4 B7a: motor vehicles prohibited except mopeds; B7b all motor vehicles.",
+    "novelty": "Existing B7b asks whether electric car is a motor vehicle; B0 all traffic. This tests the moped exception of a different protected sign code. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+    "signs_and_text": "White circular B7a, red rim and diagonal slash, car upper-right and motorcycle lower-left; no other text, plate or sign.",
+    "road_geometry": "Single narrow empty paved lane with verge and stone walls; no contradictory markings or junction.",
+    "vehicles_and_people": "No people or vehicles. Black sign silhouettes are identifiable, not actual road users.",
+    "dashboard_and_equipment": "Only mounted metal sign/post; no dashboard or vehicle equipment.",
+    "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. White circular B7a, red rim and diagonal slash, car upper-right and motorcycle lower-left; no other text, plate or sign. Only mounted metal sign/post; no dashboard or vehicle equipment.",
+    "phone_size": "At390px red diagonal and both vehicle silhouettes remain clear; moped exception is knowledge tested, not illegible text.",
+    "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. A car driver sees B7a, no supplementary plate. Identify the exact restriction, not merely whether own car can enter.",
+    "all_four_options": "Correct set c. {'fr': {'a': 'Le panneau vise plus que les voitures.', 'b': 'Les cycles ne sont pas des véhicules à moteur.', 'c': 'C’est la portée de B7a.', 'd': 'Les voitures sont également concernées.'}, 'en': {'a': 'It covers more than cars.', 'b': 'Bicycles are not motor vehicles.', 'c': 'This is the scope of B7a.', 'd': 'Cars are also covered.'}}"
+  }
+}

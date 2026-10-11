@@ -1,0 +1,57 @@
+test_all_ten_reviews_required_before_import (test_question_batch.BatchTests) ... ok
+test_bank_changed_since_reservation_is_not_overwritten (test_question_batch.BatchTests) ... ok
+test_batch_size_answer_mix_and_invalid_choices_are_rejected (test_question_batch.BatchTests) ... ok
+test_changed_image_blocks_import (test_question_batch.BatchTests) ... ok
+test_changed_proposal_cannot_reuse_review_even_after_registry_rebuild (test_question_batch.BatchTests) ... ok
+test_duplicate_content_image_and_sign_are_rejected (test_question_batch.BatchTests) ... ok
+test_final_two_and_target_cap (test_question_batch.BatchTests) ... ok
+test_import_is_idempotent_bilingual_and_preserves_existing_record (test_question_batch.BatchTests) ... ok
+test_imported_wording_repair_requires_fresh_review_and_is_idempotent (test_question_batch.BatchTests) ... ok
+test_interrupted_import_recovers_and_does_not_duplicate (test_question_batch.BatchTests) ... ok
+test_interrupted_repair_recovers_without_duplicate_or_second_version_bump (test_question_batch.BatchTests) ... ok
+test_missing_review_observations_or_novelty_comparisons_fail (test_question_batch.BatchTests) ... ok
+test_nearest_prefers_shared_rule_over_multiple_answer_boilerplate (test_question_batch.BatchTests) ... ok
+test_pending_signs_block_old_sign_workflow (test_question_batch.BatchTests) ... ok
+test_public_bodies_and_lookalike_domains (test_question_batch.BatchTests) ... ok
+test_repair_preserves_key_count_and_audit_and_is_idempotent (test_question_batch.BatchTests) ... ok
+test_repair_rejects_stale_receipt_and_key_change (test_question_batch.BatchTests) ... ok
+test_short_explanation_blocked_before_generation (test_question_batch.BatchTests) ... ok
+test_signal_family_cannot_bypass_existing_direction_variant (test_question_batch.BatchTests) ... ok
+test_staging_invalidates_review_and_preserves_candidates (test_question_batch.BatchTests) ... ok
+test_three_corrections_then_replacement_required (test_question_batch.BatchTests) ... ok
+test_unverified_baseline_blocks_expansion (test_question_batch.BatchTests) ... ok
+test_unverified_batch_blocks_next_batch (test_question_batch.BatchTests) ... ok
+test_verification_needs_real_evidence_for_current_pack (test_question_batch.BatchTests) ... ok
+test_a13b_blocks_question_and_draft (test_sign_registry.BundledRegistryTests) ... ok
+test_comparison_is_not_question_coverage (test_sign_registry.BundledRegistryTests) ... ok
+test_every_source_is_accounted_for_and_artifacts_current (test_sign_registry.BundledRegistryTests) ... ok
+test_no_false_clearance_for_catalogue_only_or_unknown (test_sign_registry.BundledRegistryTests) ... ok
+test_resolved_codes_keep_coverage_without_false_mappings (test_sign_registry.BundledRegistryTests) ... ok
+test_resolved_visual_mappings_do_not_invent_absent_signs (test_sign_registry.BundledRegistryTests) ... ok
+test_review_hold_still_overrides_existing_coverage (test_sign_registry.BundledRegistryTests) ... ok
+test_shared_speed_code_keeps_variants (test_sign_registry.BundledRegistryTests) ... ok
+test_catalogue_merge_uses_loader_precedence (test_sign_registry.SourceChangeTests) ... ok
+test_changed_explanation_invalidates_review (test_sign_registry.SourceChangeTests) ... ok
+test_changed_image_invalidates_review (test_sign_registry.SourceChangeTests) ... ok
+test_duplicate_keys_are_rejected (test_sign_registry.SourceChangeTests) ... ok
+test_exact_duplicate_detection_ignores_identity_and_order (test_sign_registry.SourceChangeTests) ... ok
+test_missing_image_does_not_pass (test_sign_registry.SourceChangeTests) ... ok
+test_new_question_requires_explicit_review (test_sign_registry.SourceChangeTests) ... ok
+test_registered_draft_alone_blocks_repetition (test_sign_registry.SourceChangeTests) ... ok
+test_unregistered_draft_blocks (test_sign_registry.SourceChangeTests) ... ok
+test_changed_image_blocks_import (test_sign_workflow.WorkflowTests) ... ok
+test_changed_proposal_cannot_reuse_approval_even_after_rebuild (test_sign_workflow.WorkflowTests) ... ok
+test_import_is_idempotent_and_keeps_existing_question (test_sign_workflow.WorkflowTests) ... ok
+test_import_requires_visual_review (test_sign_workflow.WorkflowTests) ... ok
+test_journal_resumes_after_interruption (test_sign_workflow.WorkflowTests) ... ok
+test_pending_reservation_is_visible_to_registry (test_sign_workflow.WorkflowTests) ... ok
+test_recovery_does_not_overwrite_unrelated_edits (test_sign_workflow.WorkflowTests) ... ok
+test_replacement_image_requires_review_again (test_sign_workflow.WorkflowTests) ... ok
+test_single_sign_workflow_supports_multiple_correct_answers (test_sign_workflow.WorkflowTests) ... ok
+test_two_workers_cannot_reserve_same_code (test_sign_workflow.WorkflowTests) ... ok
+test_wrong_category_and_specialist_scope_block_reservation (test_sign_workflow.WorkflowTests) ... ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 3.827s
+
+OK

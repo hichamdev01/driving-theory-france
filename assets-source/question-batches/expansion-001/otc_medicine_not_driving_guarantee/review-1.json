@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+  "proposal_sha256": "ca33205e1b11bd9e15165383c05ed9068886d1a0e0506cb8d496c9d81c0d665e",
+  "image_sha256": "70b89bd879d96e059468667ec3e128ba4b83c4d4bf8e951007697ed320b31601",
+  "compared_question_keys": [
+    "situation_alcohol_sedating_medicine",
+    "designated_driver_plan",
+    "situation_speed_night_dipped_visibility",
+    "situation_motorway_lost_object_no_retrieval",
+    "situation_alcohol_cbd_legal_sale_not_driving"
+  ],
+  "checks": {
+    "official_rule": "Ameli medicine-and-driving guidance checked 2026-10-09: non-prescription status does not guarantee compatibility; check precautions and pharmacist advice.",
+    "signs_and_text": "Plain carton and reverse of folded leaflet have no drug name, dose, level pictogram or illegible necessary text. No road signs.",
+    "road_geometry": "Domestic tabletop, no roadway or lane geometry; purchase status comes from question.",
+    "vehicles_and_people": "No people or vehicles depicted. Keys, carton and folded paper rest naturally on table.",
+    "dashboard_and_equipment": "Key blade/fob has plausible lock controls; no dashboard or medicinal dose displayed.",
+    "full_resolution": "Inspected final 1672x941 JPEG including key, packaging folds, leaflet, table and background; no unreadable required clue.",
+    "phone_size": "390px preview retains medicine-box/leaflet/key context without requiring tiny print.",
+    "french_and_english": "Both ask whether purchase without prescription guarantees driving safety, not whether this unnamed medicine specifically causes impairment.",
+    "all_four_options": "C only. A wrongly guarantees every OTC medicine; B one dose can affect driving; D short trip offers no guarantee; C checks leaflet and pharmacist.",
+    "novelty": "Nearest alcohol-plus-medicine item tests potentiation. Designated-driver planning, limited night visibility and lost-object retrieval are unrelated. Legal CBD sale versus THC liability is another product with a distinct legal mechanism; this item tests medicine purchase status versus precaution checking. Also compared all medication-pictogram and dosing items."
+  }
+}

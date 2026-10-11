@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "9af36fe956a526f8bd503dc4304a2386c4652c919f5b1ecf7993ed37059c2b0c",
+  "image_sha256": "7035a0c90f6fbec935458717dbf6e28229a339eaaa088465157905facee29d87",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected at original1672x941 and390px; no detected unresolved defects.",
+  "compared_question_keys": [
+    "situation_alcohol_energy_drink_not_sober",
+    "situation_b13_ptac_not_actual_mass",
+    "drugs_no_safe_threshold",
+    "situation_ead_retest_stop_engine",
+    "situation_cmi_parking_local_twelve_hour_limit"
+  ],
+  "checks": {
+    "official_rule": "Current patient guidance: general-anaesthesia endoscopy requires no driving on examination day and accompaniment home.24hour period is explicit individual instruction in scenario, not universal clearance after24h.",
+    "novelty": "Existing medication questions cover warning levels, self-dose changes, OTC status and symptoms. This asks travel home after anaesthesia despite authorised discharge and subjective recovery. Both translations/options/explanations of five nearest reviewed, with whole-category inventory.",
+    "signs_and_text": "No signage, plates or written medical instructions visible.",
+    "road_geometry": "Permitted parking-bay line with curb beyond and clear entrance; open door over empty bay edge, no road traffic.",
+    "vehicles_and_people": "Stationary car, empty front passenger access; no patient anatomy or implied independent driving.",
+    "dashboard_and_equipment": "Front passenger door correctly front-hinged, mirror and seat visible; no steering on this side.",
+    "full_resolution": "Exact scene-1.jpg1672x941 inspected. No signage, plates or written medical instructions visible. Front passenger door correctly front-hinged, mirror and seat visible; no steering on this side.",
+    "phone_size": "Open passenger door and facility entrance clear at390px.",
+    "french_and_english": "Both translations match conditions and correct set. Patient discharged today after general anaesthesia for outpatient examination; specific24hno-driving instruction remains active; feeling alert does not override it.",
+    "all_four_options": "Correct set c. {\"fr\": {\"a\": \"Un trajet court ne lève pas la consigne.\", \"b\": \"Le café n’annule pas les effets.\", \"c\": \"Retour accompagné et consignes respectées.\", \"d\": \"La sortie ne valide pas l’aptitude à conduire.\"}, \"en\": {\"a\": \"A short trip does not cancel the instruction.\", \"b\": \"Coffee does not reverse the effects.\", \"c\": \"Accompanied journey and instructions respected.\", \"d\": \"Discharge is not driving clearance.\"}}"
+  }
+}

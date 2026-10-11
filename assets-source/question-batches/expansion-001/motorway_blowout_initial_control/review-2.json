@@ -1,0 +1,6 @@
+{
+  "result": "reject",
+  "notes": "Reject correction 1: shoulder dashes now broken but much too short and widely gapped relative to lane width; cannot accept as T4. Next correction will depict a narrow verge with no BAU and continuous edge, explicitly permitted by IISR114-4B, without altering the blowout learning objective.",
+  "proposal_sha256": "6a544720e74e0c3cc497d58940ca8da5fb65ce4318d3f4b23039de09f4cacccb",
+  "image_sha256": "330ab67e90f147303985eb4bb09c47cd9c78c908cee3e3858bfb08708adab2e4"
+}

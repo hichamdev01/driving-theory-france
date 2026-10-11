@@ -2,8 +2,9 @@
 
 Use this process to add French driving-theory questions for ordinary
 passenger-car learners (permis B). Every new image belongs to a complete
-French/English question with four distinct options, one correct answer and an
-explanation.
+French/English question with four distinct options, one or more correct answers
+and an explanation. The expansion to 1,000 uses eight single-answer and two
+multiple-answer questions per full batch. See the [batch operator guide](QUESTION_BATCH_WORKFLOW.md).
 
 ## End-to-end process
 
@@ -42,9 +43,9 @@ explanation.
 
 ## Sign codes and general scenarios
 
-The CLI below supports **one sign-code job at a time**. General driving
-scenarios and balanced batches follow the same review process, but do not yet
-have a reusable batch-import CLI. Do not invent sign codes to fit the script.
+The CLI below supports **one sign-code job at a time**. The reusable
+`scripts/question_batch.py` CLI handles complete batches of general scenarios
+and sign targets with the same lock and recovery journal. Do not invent sign codes to fit the script.
 Record general-rule objectives as `no_sign_target`, with reviewed contextual
 sign codes where relevant.
 
@@ -136,7 +137,7 @@ Jobs live in `docs/content-audit/sign-jobs/CODE.json`; inspect `state`:
 
 The reserved proposal is stored inside the job; modifying the original proposal
 file later does not change that reservation. There is no automatic cancellation,
-expiry, variant override or batch mode yet. Leave failed jobs reserved until
+expiry or variant override in the single-sign CLI. Leave failed jobs reserved until
 deliberately reconciled so a retry cannot silently spend another generation.
 
 Scenario IDs catch exact repeated registered situations. The `novelty_review`

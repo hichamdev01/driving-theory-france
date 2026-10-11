@@ -1,0 +1,13 @@
+{
+  "proposal_sha256": "07022967b3da24f99650768e831b65c71161bf54ae04bbbe4e3b0e8915ac4ccf",
+  "image_sha256": "82ad61ee82a1be14eb0e30f33cc63e75a523341e7759bb8a022e2bf43c88d5f0",
+  "result": "reject",
+  "notes": "Lane position corrected, but divider gaps remain insufficient/inconsistent for requested T1. Needs second correction of marking only.",
+  "compared_question_keys": [
+    "situation_motorway_passenger_walks_shoulder",
+    "situation_motorway_friend_tow_offer",
+    "situation_motorway_breakdown_no_triangle",
+    "situation_tunnel_stopped_keep_safety_gap",
+    "situation_motorway_nonessential_stop"
+  ]
+}

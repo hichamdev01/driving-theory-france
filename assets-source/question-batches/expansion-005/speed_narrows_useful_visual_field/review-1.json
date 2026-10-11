@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "30e2fd267d8811b357b0fcd9b77313c646c17666d3e1b20d363c9b942b53ca24",
+  "image_sha256": "f40486d87b739db1473f5df37c4d5f6adf7c03e68652bc742354fb3c1ca0e483",
+  "result": "pass",
+  "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+  "compared_question_keys": [
+    "situation_bus_passengers_alighting_slow",
+    "situation_occluded_pedestrian_hazard",
+    "situation_frosted_windscreen_clear_before_drive",
+    "safety_eco_driving_anticipation",
+    "situation_slippery_rain"
+  ],
+  "checks": {
+    "signs_and_text": "White broken centreline only; no signs, numbers or artificial field-of-view overlay.",
+    "road_geometry": "Straight two-way rural road, camera right of centreline, verges and perspective coherent.",
+    "vehicles_and_people": "No other vehicles or people; no hidden hazard asserted by image.",
+    "dashboard_and_equipment": "No dashboard or speed display; no numeric speed inferred.",
+    "phone_size": "Ordinary wide road context remains clear; question states the perceptual effect without pretending still image measures speed.",
+    "official_rule": "Sources actually read during authoring: Sécurité routière, La vue (July 2015 leaflet, still hosted on official site), page 2, Voir large: speed narrows the useful visual field; mirrors leave blind spots checked by a brief head turn. Actual PDF downloaded and read; no numerical angle claim used.",
+    "novelty": "Useful peripheral attention narrowing as speed rises, distinct from physical obstruction/frost, bus visibility and eco-driving. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+    "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No other vehicles or people; no hidden hazard asserted by image. No dashboard or speed display; no numeric speed inferred.",
+    "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Ordinary wide road context remains clear; question states the perceptual effect without pretending still image measures speed.",
+    "all_four_options": "Correct C. A: Peripheral perception instead decreases.; B: Speed does not eliminate blind spots.; C: Lateral information may be detected later.; D: Looking ahead remains necessary."
+  }
+}

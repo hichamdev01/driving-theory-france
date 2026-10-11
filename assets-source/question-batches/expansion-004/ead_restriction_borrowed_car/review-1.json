@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+  "proposal_sha256": "0daed2ad8c4ca28678ebab9765d242dca5f18e69c76481c01cb0460ba3ca550f",
+  "image_sha256": "c1464f3b45b7feda90b3cd0196d62713d2b66f0418cdd302c049ada8c168760e",
+  "compared_question_keys": [
+    "situation_alcohol_carrying_breathalyser_optional",
+    "situation_breath_test_probationary_limit",
+    "situation_motorway_lost_object_no_retrieval",
+    "situation_overtaking_ungated_level_crossing",
+    "situation_abs_emergency_pedal_pulsation"
+  ],
+  "checks": {
+    "official_rule": "Checked 2026-10-10. Current page verified 25 September 2026: a licence with EAD restriction permits only equipped light vehicles; category B car loan is no exemption.",
+    "novelty": "Existing EAD question covers stopping before a requested repeat breath. This tests which cars the restricted licence permits, including a loan, even while sober. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+    "signs_and_text": "No roadside sign, plate or written text. Key has ordinary lock/unlock pictograms, not an EAD display.",
+    "road_geometry": "Private gravel drive and closed house door; no traffic lane or claimed manoeuvre.",
+    "vehicles_and_people": "Blue car door, side mirror and one naturally flexed hand holding key. Door/wheel perspective consistent; no people in traffic.",
+    "dashboard_and_equipment": "No readable dashboard; key is ordinary fob and cannot establish presence or absence of an EAD. That is explicit in the stem.",
+    "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Private gravel drive and closed house door; no traffic lane or claimed manoeuvre. Blue car door, side mirror and one naturally flexed hand holding key. Door/wheel perspective consistent; no people in traffic.",
+    "phone_size": "Inspected saved390px phone-1.jpg. Hand, key and parked car remain identifiable. Neither equipment state nor licence restriction is inferred from pixels.",
+    "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. A sober driver whose B licence has an active EAD restriction is offered a borrowed car with no EAD.",
+    "all_four_options": "Correct set b. FR: {\"a\": \"La sobriété ne supprime pas la restriction.\", \"b\": \"Le droit à conduire reste soumis à l’équipement.\", \"c\": \"La présence de l’ami ne vaut pas dérogation.\", \"d\": \"Aucune exception de distance.\"} EN: {\"a\": \"Sobriety does not remove the restriction.\", \"b\": \"The equipment condition still applies.\", \"c\": \"The owner’s presence is not an exemption.\", \"d\": \"There is no short-distance exemption.\"}"
+  }
+}

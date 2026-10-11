@@ -1,0 +1,28 @@
+{
+  "pack_sha256": "107dc3d308e592507a3ea975480bcc3ed37a5dcb98cf5f0041a6aa4df2ca15ea",
+  "content_version": 94,
+  "python_tests": {
+    "result": "pass",
+    "notes": "All 47 Python tests passed, including duplicate prevention, multiple answers, stale approvals and recoverable imports.",
+    "path": "assets-source/question-batches/expansion-002/evidence/python-tests.log",
+    "sha256": "3c02d25e239cdfc208891fbcb49fa5401547ccb16c41c3f2ab6d392f87c75cc8"
+  },
+  "ios_tests": {
+    "result": "pass",
+    "notes": "All 36 native tests passed, including image decoding, bank seed parity and stable progress updates.",
+    "path": "assets-source/question-batches/expansion-002/evidence/ios-tests.log",
+    "sha256": "de316b4d0784c810ce02f6cbc0bcb6ce58ceefbda8874ee07c2ac61686523aad"
+  },
+  "sqlite_check": {
+    "result": "pass",
+    "notes": "All 408 active questions and both translations match pack v94; progress hash unchanged before/after review.",
+    "path": "assets-source/question-batches/expansion-002/evidence/sqlite-after.json",
+    "sha256": "f1f9d856f1df496d443d5e898b5fd8809a1e1efc0baa652e7d0c4a0e369fa140"
+  },
+  "simulator_review": {
+    "result": "pass",
+    "notes": "All ten new French screens inspected and scored; English full, partial and extra multi-answer selections and long-text scrolling checked.",
+    "path": "assets-source/question-batches/expansion-002/evidence/simulator-review.json",
+    "sha256": "336eab4cae956f2f2e3b73bdd29919ef6f90f4f781cf1c727ae8ff24c7684a89"
+  }
+}

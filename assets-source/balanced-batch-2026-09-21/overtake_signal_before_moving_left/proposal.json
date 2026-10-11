@@ -1,0 +1,49 @@
+{
+  "sequence": 7,
+  "scenario_id": "overtake_signal_before_moving_left",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives or prepares a normal passenger car; no specialist vehicle operating rules.",
+  "learning_objective": "Signal the intended move before starting an overtake",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842127"
+  ],
+  "novelty_review": "Existing questions cover whether overtaking is safe or permitted and other drivers’ signals. This tests timing of the learner’s own indicator after safety checks.",
+  "scenario": "Driver-eye view from a left-hand-drive car still centred in the RIGHT lane of a straight two-way French rural road. Exactly one lane each direction separated by a broken white centre line. A white compact car travels well ahead in the same lane. Opposite lane clear for a long distance, no junction, no pedestrians. Small left steering wheel rim and indicator stalk visible naturally but no green indicator arrow lit and no numerical speed display. Daylight, no lane change underway.",
+  "image_prompt": "Use case: photorealistic-natural. Create ONE realistic educational photograph for a French Code de la Route passenger-car question. Landscape 16:9, preferably 2048x1152. Contemporary France, natural photographic colours and exposure, physically plausible perspective. Driver-eye view from a left-hand-drive car still centred in the RIGHT lane of a straight two-way French rural road. Exactly one lane each direction separated by a broken white centre line. A white compact car travels well ahead in the same lane. Opposite lane clear for a long distance, no junction, no pedestrians. Small left steering wheel rim and indicator stalk visible naturally but no green indicator arrow lit and no numerical speed display. Daylight, no lane change underway. No quiz panel, question text, answer choices, highlighted answer, watermark, instructional overlay, collage or invented road signs. Any cars use French-style plates with unreadable small characters. This is a scene photograph, not an infographic.",
+  "question": {
+    "key": "situation_overtake_signal_before_moving_left",
+    "category_slug": "overtaking",
+    "correct_answer": "c",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Les contrôles confirment que le dépassement est possible. Quand dois-je actionner le clignotant gauche ?",
+        "answer_a": "Seulement lorsque je suis à côté de la voiture.",
+        "answer_b": "Après avoir franchi la ligne centrale.",
+        "answer_c": "Avant de me déporter, pour annoncer ma manœuvre.",
+        "answer_d": "Uniquement si un conducteur me suit.",
+        "explanation": "J’annonce mon intention avant de me déporter à gauche. Le clignotant informe les autres usagers ; il ne donne aucune priorité et ne remplace pas les contrôles de sécurité."
+      },
+      "en": {
+        "question_text": "My checks confirm that overtaking is safe. When should I use the left indicator?",
+        "answer_a": "Only when I am alongside the other car.",
+        "answer_b": "After crossing the centre line.",
+        "answer_c": "Before moving out, to signal my manoeuvre.",
+        "answer_d": "Only if another driver is behind me.",
+        "explanation": "Signal the intention before moving out to the left. The indicator informs other road users; it gives no priority and does not replace safety checks."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-b7558800-fcf9-4d82-82a7-fe7b4611609a.png",
+  "native_image_sha256": "5e46fc77348f4058505312baf67f4b37d53c8b04bb76339d911333f948396a39",
+  "image_path": "assets-source/balanced-batch-2026-09-21/overtake_signal_before_moving_left/scene.jpg",
+  "image_sha256": "89f483fd7e4d801d44c7db18b9f2a16247705cb9f00bdf535a059748cfe835a5",
+  "visual_review": "Reviewed learner still in right lane behind white car, dashed centre line and unobstructed opposite lane. Question explicitly establishes completed safety checks and tests signal timing, not inferred mirror coverage. C before moving out is uniquely correct in both languages; explanation denies indicator priority.",
+  "reviewed_on": "2026-09-21",
+  "reviewed_sha256": "3f64691b0e14d954b0badc70ed4e36c7c2f03f89151314a803d5799c7bfff7ca",
+  "question_key": "situation_overtake_signal_before_moving_left",
+  "imported_content_version": 89,
+  "imported_on": "2026-09-21"
+}

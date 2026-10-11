@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "07022967b3da24f99650768e831b65c71161bf54ae04bbbe4e3b0e8915ac4ccf",
+  "image_sha256": "b904ff6f9210815446123327e586644ccda1aca12b04353fab53222f217b62c6",
+  "result": "pass",
+  "notes": "Final correction (third after initial) passes full-resolution and phone review. Earlier failed markings retained in history. No detected unresolved defects.",
+  "compared_question_keys": [
+    "situation_motorway_passenger_walks_shoulder",
+    "situation_motorway_friend_tow_offer",
+    "situation_motorway_breakdown_no_triangle",
+    "situation_tunnel_stopped_keep_safety_gap",
+    "situation_motorway_nonessential_stop"
+  ],
+  "checks": {
+    "official_rule": "R421-2 full current article and VINCI queue advice checked; no emergency/evacuation exception applies in stated scenario.",
+    "novelty": "Breakdown and tunnelfire items require leaving unsafe vehicle. This is the opposite appropriate action under explicitly non-emergency congestion conditions. Five nearest full questions/options/explanations and entire motorway inventory reviewed.",
+    "signs_and_text": "No road signs, lettering or fake registration characters. Plates plain anonymised. No dashed marking series in crop.",
+    "road_geometry": "Close forward queue view, camera aligned behind van in right lane; silver car left with queue behind; median left and guardrail right. Lane paint outside crop/occluded, no defective modulation visible.",
+    "vehicles_and_people": "Van closed double rear doors, hinge/handle/bumper/wheels/lamp clusters coherent; silver car rear and other queuing vehicle rears consistent. No people outside, fire or emergency.",
+    "dashboard_and_equipment": "Only dark dashboard lip visible; no unsupported instruments, phone or state inferred from gauge.",
+    "full_resolution": "Entire exact1672x941 scene-4.jpg inspected at original resolution, scanning vehicles, road edges, lamps, plates and barriers. No detected unresolved defect.",
+    "phone_size": "Exact390px phone-4.jpg viewed; closed van, adjacent car, queue and barriers clear. No label/number to read.",
+    "french_and_english": "Both explicitly establish motorway stationary queue with no emergency or evacuation instruction. Passenger intention stated rather than invented from image.",
+    "all_four_options": "Correct B. A stopped motorway is not pedestrian space; C emergency lane is not a walkway; D central barrier is not pedestrian access. Same in FR/EN."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "scenario_id": "engine_oil_level_measurement_conditions",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "Routine maintenance check by a category-B car driver.",
+  "learning_objective": "Choose reliable conditions for a routine dipstick engine-oil-level reading.",
+  "topic": "vehicle.oil_level_measurement",
+  "scenario": "Routine pre-trip oil check with a dipstick; select level ground, stopped engine and manufacturer wait, not a running or sloping vehicle.",
+  "novelty_review": "Whole-bank oil/jauge search finds only urgent red oil-pressure warning. This teaches obtaining a reliable routine level measurement, not responding to pressure failure, opening a hot coolant cap, or checking tyre pressure.",
+  "primary_codes": [],
+  "context_codes": [],
+  "question": {
+    "key": "situation_engine_oil_level_measurement_conditions",
+    "category_slug": "safety",
+    "difficulty": "medium",
+    "correct_answers": [
+      "b"
+    ],
+    "translations": {
+      "fr": {
+        "question_text": "Avant un trajet, je veux vérifier le niveau d’huile moteur avec la jauge. Dans quelles conditions obtenir une lecture fiable ?",
+        "answer_a": "Moteur en marche, quelle que soit la pente.",
+        "answer_b": "Sur sol horizontal, moteur arrêté, après le délai indiqué dans la notice.",
+        "answer_c": "Sur une forte pente, dès la coupure du moteur.",
+        "answer_d": "Uniquement après avoir rempli jusqu’au-dessus du maximum.",
+        "explanation": "Le sol horizontal et le délai après l’arrêt permettent à l’huile de se répartir correctement dans le carter. Je suis la notice, essuie la jauge puis la remets complètement avant la lecture, sans dépasser le niveau maximal."
+      },
+      "en": {
+        "question_text": "Before a trip, I want to check the engine-oil level with the dipstick. Which conditions give a reliable reading?",
+        "answer_a": "With the engine running, on any slope.",
+        "answer_b": "On level ground, with the engine stopped, after the wait specified in the manual.",
+        "answer_c": "On a steep slope, immediately after switching off.",
+        "answer_d": "Only after filling above the maximum mark.",
+        "explanation": "Level ground and the wait after stopping let the oil settle correctly in the sump. I follow the manual, wipe the dipstick and fully reinsert it before reading, and never exceed the maximum level."
+      }
+    }
+  },
+  "option_rationale": {
+    "fr": {
+      "a": "Le moteur en marche et la pente faussent la lecture.",
+      "b": "Le sol et le délai adaptés rendent la mesure fiable.",
+      "c": "La pente et une lecture trop précoce faussent la mesure.",
+      "d": "Un excès d’huile risque d’endommager le moteur."
+    },
+    "en": {
+      "a": "A running engine and slope distort the reading.",
+      "b": "Level ground and the specified wait support an accurate reading.",
+      "c": "A slope and immediate reading can distort the result.",
+      "d": "Overfilling risks engine damage."
+    }
+  },
+  "image_prompt": "Create one original photorealistic landscape16:9 photograph at least1672x941 for a French car theory question. A single ordinary car engine-oil dipstick rests diagonally on a clean folded white lint-free cloth on a dark workshop bench. The dipstick has one orange plastic ring handle connected to a long thin flat metal strip, and a small crosshatched measuring area between two shallow notches near the opposite end. Whole dipstick fits the frame. Plain realistic metal, no letters, numbers, oil brand, bottles, people, hands, engine or other tools. Soft natural daylight. The photo illustrates the tool; question asks measurement conditions, not a displayed oil reading. No question, answer, labels, captions, watermark or highlights.",
+  "sources": [
+    {
+      "url": "https://www.user-manual.renault.com/fr/acc%C3%A8s-moteur-niveaux/huile-moteur",
+      "kind": "manufacturer",
+      "checked_on": "2026-10-10",
+      "supports": "Original Renault Clio5 manual, engine-oil-level section: horizontal ground after prolonged engine stop; wipe dipstick, fully reinsert then read; never exceed maximum. Question defers precise waiting interval to vehicle manual."
+    }
+  ]
+}

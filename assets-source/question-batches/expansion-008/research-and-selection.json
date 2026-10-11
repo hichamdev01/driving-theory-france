@@ -1,0 +1,266 @@
+{
+  "date": "2026-10-11",
+  "bank_count": 458,
+  "style_source": "https://www.ornikar.com/code/gratuit/test-examen-blanc",
+  "style_review": "Public original exercise format/topic inspiration only, no copied wording or image.",
+  "selection": "Priority2,speed2,alcohol2,safety3,overtaking1;8single2multi.",
+  "rejected_before_authoring": [
+    "Neutral downhill duplicates existing descent engine-braking explanation.",
+    "Truck crosswind duplicates strong-crosswind explanation.",
+    "R21redX andB27abuslane already covered."
+  ],
+  "calculation_minutes": 2.5174825174825166,
+  "candidates": [
+    {
+      "scenario": "one_way_left_turn_position",
+      "novelty": "Existing questions concern yielding to oncoming traffic or cyclists and interpreting lane arrows; none asks left-side preparation on an unmarked one-way street.",
+      "sources": [
+        {
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025541/",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "R415-4 I: move left before leaving road left; II opposite-direction median constraint does not arise in explicitly one-way case."
+        }
+      ]
+    },
+    {
+      "scenario": "wide_suv_narrow_crossing_yield",
+      "novelty": "Existing mountain questions use uphill/reversing rules; long-caravan item concerns facilitating overtaking. This is crossing with a wide ordinary passenger car on level ground.",
+      "sources": [
+        {
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000034133009/",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "R414-2 first paragraph: width over2m or length over7m; insufficient safe crossing space; facilitate smaller vehicles."
+        }
+      ]
+    },
+    {
+      "scenario": "speed_time_gain_30km_110_130",
+      "novelty": "Existing numerical items cover stopping and reaction distances, not journey-time gains. Original values differ from source example.",
+      "sources": [
+        {
+          "url": "https://www.securite-routiere.gouv.fr/sites/default/files/press-kits/3677-sric_dp_vitesse130_2006_07_06.pdf",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "Official speed education explains overestimated travel-time gains. Our original30km110/130 calculation is independently computed, not copied from their example."
+        }
+      ]
+    },
+    {
+      "scenario": "sign_reader_display_not_authority",
+      "novelty": "Existing dynamic-versus-fixed item compares two authoritative road signs. This tests a fallible in-car assistance display and continuing driver responsibility, not sign-code identification.",
+      "sources": [
+        {
+          "url": "https://validation.securite-routiere.gouv.fr/chacun-son-mode-de-deplacement/dangers-de-la-route-en-voiture/equipement-de-la-voiture/adas",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "ADAS require permanent supervision; driver retains responsibility; sign recognition is an assistance function."
+        },
+        {
+          "url": "https://www.fordservicecontent.com/Ford_Content/Catalog/owner_information/CG3920frFRA-202209-20220923151021.pdf",
+          "kind": "manufacturer",
+          "checked_on": "2026-10-11",
+          "supports": "Manufacturer explains incorrect displayed signs can result from outdated maps or camera misrecognition."
+        }
+      ]
+    },
+    {
+      "scenario": "alcohol_drugs_combined_nine_points",
+      "novelty": "Existing combined-consumption item concerns crash risk; drug penalty item concerns imprisonment/fine, probation alcohol item6points. This tests the current specific combined9point deduction.",
+      "sources": [
+        {
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31551",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "Current official table verified27Feb2026: drug driving6points; drug driving with alcohol influence9points. Read table directly."
+        }
+      ]
+    },
+    {
+      "scenario": "anaesthesia_discharge_no_driving",
+      "novelty": "Existing medication questions cover warning levels, self-dose changes, OTC status and symptoms. This asks travel home after anaesthesia despite authorised discharge and subjective recovery.",
+      "sources": [
+        {
+          "url": "https://www.ameli.fr/assure/sante/examen/exploration/deroulement-endoscopie-digestive-haute",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "Current patient guidance: general-anaesthesia endoscopy requires no driving on examination day and accompaniment home.24hour period is explicit individual instruction in scenario, not universal clearance after24h."
+        }
+      ]
+    },
+    {
+      "scenario": "brake_fluid_below_min",
+      "novelty": "Existing oil-level, coolant-temperature andABSwarning questions concern different systems and decisions; no prior brake-fluid level/contamination objective.",
+      "sources": [
+        {
+          "url": "https://www.fordservicecontent.com/Ford_Content/Catalog/owner_information/CG3851frFRA-202012-20201217102217.pdf",
+          "kind": "manufacturer",
+          "checked_on": "2026-10-11",
+          "supports": "Manufacturer: belowMINoraboveMAXrequires prompt inspection."
+        },
+        {
+          "url": "https://www.fordservicecontent.com/Ford_Content/Catalog/owner_information/CG4031frFRA-202407-20250623194449.pdf",
+          "kind": "manufacturer",
+          "checked_on": "2026-10-11",
+          "supports": "Manufacturer brake-fluid warnings: contamination water/petroleum can cause failure; use correct specification, level surface."
+        }
+      ]
+    },
+    {
+      "scenario": "flooded_road_do_not_enter",
+      "novelty": "Aquaplaning item tests reaction after tyre grip is lost on surfacewater. Newdecision is not entering an inundated road at all.",
+      "sources": [
+        {
+          "url": "https://www.info.gouv.fr/actualite/orages-comment-se-proteger",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "Current official safety advice: never enter a flooded road even if apparent water level is low."
+        }
+      ]
+    },
+    {
+      "scenario": "child_never_alone_parked_heat",
+      "novelty": "Existing childseat questions concern restraint, front-seat age and airbag orientation; this addresses heat risk during an unattended parked interval.",
+      "sources": [
+        {
+          "url": "https://www.ameli.fr/assure/sante/themes/canicule-chaleur/canicule-chaleur/protection-specifique-personnes-risque",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "Current health advice explicitly prohibits leaving child alone in parked vehicle even briefly with windows open."
+        }
+      ]
+    },
+    {
+      "scenario": "truck_right_indicator_not_overtake_permission",
+      "novelty": "Existing truckblindspot item forbids entering right-side space during wide turn. This asks whether another driver can certify our LEFT overtake with their signal; owncontrols cannot be delegated.",
+      "sources": [
+        {
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842127/",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "R412-10: direction signal communicates intention."
+        },
+        {
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842216/",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "R414-4I/II: overtaking driver must establish safety and return space. Inference: another driver’s signal cannot replace these checks."
+        }
+      ]
+    }
+  ],
+  "nearest_review": [
+    {
+      "scenario": "one_way_left_turn_position",
+      "compared_question_keys": [
+        "situation_left_turn_two_way_cycle_track",
+        "situation_motorway_keep_right",
+        "situation_one_way_c12_follow_arrow",
+        "situation_overtake_tram_left_one_way",
+        "situation_short_left_turn_lane_arrow"
+      ],
+      "conclusion": "Existing questions concern yielding to oncoming traffic or cyclists and interpreting lane arrows; none asks left-side preparation on an unmarked one-way street."
+    },
+    {
+      "scenario": "wide_suv_narrow_crossing_yield",
+      "compared_question_keys": [
+        "situation_long_caravan_facilitate_overtaking",
+        "situation_mountain_downhill_yields",
+        "situation_bus_departing_marked_stop",
+        "situation_unmarked_t_junction_priority_right",
+        "situation_width_limit_2_1m"
+      ],
+      "conclusion": "Existing mountain questions use uphill/reversing rules; long-caravan item concerns facilitating overtaking. This is crossing with a wide ordinary passenger car on level ground."
+    },
+    {
+      "scenario": "speed_time_gain_30km_110_130",
+      "compared_question_keys": [
+        "speed_motorway_dry_general",
+        "situation_speed_limit_110",
+        "speed_motorway_probationary",
+        "situation_dual_carriageway_default_110",
+        "situation_speed_two_same_direction_90"
+      ],
+      "conclusion": "Existing numerical items cover stopping and reaction distances, not journey-time gains. Original values differ from source example."
+    },
+    {
+      "scenario": "sign_reader_display_not_authority",
+      "compared_question_keys": [
+        "situation_dynamic_speed_limit_over_fixed",
+        "situation_cmi_parking_card_passenger",
+        "situation_abs_emergency_pedal_pulsation",
+        "situation_abs_warning_stays_on_without_red_brake",
+        "situation_tramway_crossing"
+      ],
+      "conclusion": "Existing dynamic-versus-fixed item compares two authoritative road signs. This tests a fallible in-car assistance display and continuing driver responsibility, not sign-code identification."
+    },
+    {
+      "scenario": "alcohol_drugs_combined_nine_points",
+      "compared_question_keys": [
+        "situation_probation_alcohol_six_point_deduction",
+        "situation_drug_driving_principal_penalty_2026",
+        "situation_aac_accompanying_adult_alcohol",
+        "drugs_no_safe_threshold",
+        "situation_ead_restriction_borrowed_car"
+      ],
+      "conclusion": "Existing combined-consumption item concerns crash risk; drug penalty item concerns imprisonment/fine, probation alcohol item6points. This tests the current specific combined9point deduction."
+    },
+    {
+      "scenario": "anaesthesia_discharge_no_driving",
+      "compared_question_keys": [
+        "situation_alcohol_energy_drink_not_sober",
+        "situation_b13_ptac_not_actual_mass",
+        "drugs_no_safe_threshold",
+        "situation_ead_retest_stop_engine",
+        "situation_cmi_parking_local_twelve_hour_limit"
+      ],
+      "conclusion": "Existing medication questions cover warning levels, self-dose changes, OTC status and symptoms. This asks travel home after anaesthesia despite authorised discharge and subjective recovery."
+    },
+    {
+      "scenario": "brake_fluid_below_min",
+      "compared_question_keys": [
+        "situation_driver_mat_secure_no_stacking",
+        "situation_coolant_hot_cap_wait",
+        "situation_parking_secure_before_leaving",
+        "situation_medicine_level_one_notice",
+        "situation_otc_medicine_not_driving_guarantee"
+      ],
+      "conclusion": "Existing oil-level, coolant-temperature andABSwarning questions concern different systems and decisions; no prior brake-fluid level/contamination objective."
+    },
+    {
+      "scenario": "flooded_road_do_not_enter",
+      "compared_question_keys": [
+        "situation_overtake_too_little_speed_difference",
+        "situation_overtaking_ungated_level_crossing",
+        "situation_train_approaching_ungated_crossing",
+        "situation_tyre_sidewall_bulge_before_trip",
+        "situation_ev_charger_blocked_parking"
+      ],
+      "conclusion": "Aquaplaning item tests reaction after tyre grip is lost on surfacewater. Newdecision is not entering an inundated road at all."
+    },
+    {
+      "scenario": "child_never_alone_parked_heat",
+      "compared_question_keys": [
+        "situation_parked_engine_unnecessary_idling",
+        "situation_parking_blocks_parked_exit",
+        "situation_coolant_hot_cap_wait",
+        "situation_double_parking_space",
+        "safety_child_under_ten"
+      ],
+      "conclusion": "Existing childseat questions concern restraint, front-seat age and airbag orientation; this addresses heat risk during an unattended parked interval."
+    },
+    {
+      "scenario": "truck_right_indicator_not_overtake_permission",
+      "compared_question_keys": [
+        "situation_vehicle_ahead_signals_overtake_wait",
+        "situation_overtake_signal_before_moving_left",
+        "situation_bus_departing_marked_stop",
+        "situation_rear_vehicle_already_overtaking",
+        "situation_end_no_overtaking"
+      ],
+      "conclusion": "Existing truckblindspot item forbids entering right-side space during wide turn. This asks whether another driver can certify our LEFT overtake with their signal; owncontrols cannot be delegated."
+    }
+  ],
+  "review_note": "Both languages, every option and explanation of all nearest candidates read. Broader category inventories examined. Apparent lexical neighbours such as CMI and medication are not shared objectives. Truck indicator question distinguishes another driver signal from own signalling; wide SUV crossing differs from same-direction caravan overtaking. No duplicate objective detected in selected candidates."
+}

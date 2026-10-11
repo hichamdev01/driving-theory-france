@@ -1,0 +1,6 @@
+{
+  "result": "reject",
+  "proposal_sha256": "829beaf26a540872b84fbda24cba691343eae579dec8ffb438a9aee6090ca6c8",
+  "image_sha256": "3da1b3af7cd385a5a203875bf0a9817ec1e8f11e6316b5b3964cb6fef5fffea8",
+  "notes": "Correction removed the foreground centre line but still does not clearly establish a snowy traffic lane separate from the snowy field. At phone size the road remains apparently fully clear. Regenerate a forward road view that directly shows the snow-covered lane; combination length and mass remain explicitly supplied by both translations."
+}
