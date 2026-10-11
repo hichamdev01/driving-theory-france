@@ -1,0 +1,6 @@
+{
+  "proposal_sha256": "a9224782bb7731178cd2c89d754d70c55dac951f9130eb44450a3fd0f2108a71",
+  "image_sha256": "d43f2facfdf2164fa0623db9942733ba46f58bb36d20a4cf3f6bd8b11f486530",
+  "result": "reject",
+  "notes": "Unrequested heater controls show duplicate fan number 1 and malformed airflow symbols. Reframe to exclude entire heater panel."
+}

@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "182539a838debfdc19f10387e28c6332c88543c5a8d9d33bddd325358bc1c342",
+  "image_sha256": "d89c3646d2d7aa15ee30618736e2d69cd0f5bb810bfd9dfc3d40b5df613bdb87",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected at full resolution and390px. No detected unresolved defects.",
+  "compared_question_keys": [
+    "situation_hot_tyre_pressure_do_not_bleed",
+    "situation_parking_secure_before_leaving",
+    "situation_tyre_sidewall_bulge_before_trip",
+    "situation_rear_load_over_one_metre_marked",
+    "situation_abs_emergency_pedal_pulsation"
+  ],
+  "checks": {
+    "official_rule": "Original Ford floor-mat manual: appropriate anchored mat, no stacking, free pedals. Full safety section read.",
+    "novelty": "No existing floor-mat item. Distinct mechanical obstruction of pedals, not general seatbelt/headrest/phone distraction. Five nearest complete questions/options/explanations and whole-bank topic inventory reviewed.",
+    "signs_and_text": "No signs, lettering or logo.",
+    "road_geometry": "Driver footwell, no road geometry.",
+    "vehicles_and_people": "No people or loose objects.",
+    "dashboard_and_equipment": "Exactly two automatic-car pedals: broad brake left, narrow accelerator right; single flat mat secured by two rear anchors, clear pedal travel.",
+    "full_resolution": "Exact1672x941 scene-1.jpg viewed at original resolution. No signs, lettering or logo. Exactly two automatic-car pedals: broad brake left, narrow accelerator right; single flat mat secured by two rear anchors, clear pedal travel.",
+    "phone_size": "At390px both pedals, clear space and two mat anchors remain visible.",
+    "french_and_english": "Same conditions, learning objective and correct answer set in both translations. Before setting off, preparing driver footwell; no moving-car intervention.",
+    "all_four_options": "Correct set a,c. {'fr': {'a': 'Il doit rester en place.', 'b': 'Les tapis superposés peuvent bloquer une pédale.', 'c': 'La course doit être libre.', 'd': 'Un tapis mobile peut se coincer.'}, 'en': {'a': 'It needs to stay in place.', 'b': 'Stacked mats may block a pedal.', 'c': 'Pedal travel must remain clear.', 'd': 'A loose mat can become trapped.'}}"
+  }
+}

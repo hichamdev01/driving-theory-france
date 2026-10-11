@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "e847b359853599fda0d0aff8f310c0214ab67f14ec39b08e86f4db58fec14773",
+  "image_sha256": "371b23bb4cb1c61c9bfb920d08aaec9e0e24bf656884a3e85da4c5efad949703",
+  "result": "pass",
+  "notes": "Entire exact replacement scene-2.jpg and390px phone-2.jpg inspected. No detected unresolved defects.",
+  "compared_question_keys": [
+    "situation_overtaking_near_occupied_crossing",
+    "situation_frosted_windscreen_clear_before_drive",
+    "situation_pedestrian_intent_no_crosswalk",
+    "situation_limiter_no_braking_downhill",
+    "situation_motorway_breakdown_no_triangle"
+  ],
+  "checks": {
+    "official_rule": "DSR guide installation section: adjust seat and mirrors before starting. Full indexed installation passage read; direct PDF unavailable.",
+    "novelty": "Head-restraint item covers neck protection, licencevision correction; this concerns seat and mirror fit after driver change, not headrest or blindspotmonitor. Full five nearest items and full-bank topic inventory reviewed.",
+    "signs_and_text": "Door-jamb fake label removed; no readable lettering, steering pad has only faint neutral circular embossing.",
+    "road_geometry": "Parked interior through open driver door, no road movement.",
+    "vehicles_and_people": "Empty driver seat, coherent passenger interior/mirror, no people.",
+    "dashboard_and_equipment": "Two automatic pedals broad brake left/narrow accelerator right, automatic selector, seat lever/rails/headrest/buckle/belt coherent.",
+    "full_resolution": "Exact replacement1672x941 JPEG viewed fully at original resolution. Door-jamb fake label removed; no readable lettering, steering pad has only faint neutral circular embossing. Two automatic pedals broad brake left/narrow accelerator right, automatic selector, seat lever/rails/headrest/buckle/belt coherent.",
+    "phone_size": "Seat lever, position and mirror context clear at390px; no instruction depends on tiny controls.",
+    "french_and_english": "Same conditions, scope and answer set; all unavailable temporal facts explicit. Borrowed passenger car stationary before departure, previous driver very different height.",
+    "all_four_options": "Correct set b,d. {'fr': {'a': 'Les morphologies sont différentes.', 'b': 'La maîtrise des commandes dépend de l’installation.', 'c': 'Ces réglages se font avant le départ.', 'd': 'Le champ réfléchi dépend de la position du conducteur.'}, 'en': {'a': 'Body sizes differ.', 'b': 'Control access depends on seating position.', 'c': 'These adjustments belong before departure.', 'd': 'The reflected field depends on driver position.'}}"
+  }
+}

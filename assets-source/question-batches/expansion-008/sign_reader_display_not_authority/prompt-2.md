@@ -1,0 +1,2 @@
+Edit this original French car-driving scene. Remove ONLY both white road-edge painted lines, replacing them seamlessly with matching plain asphalt. Road should be entirely unmarked. Keep roadside circular red-rim white70 speed-limit sign, dashboard sign-recognition90 icon, car position and all interior, grass and landscape unchanged. No extra signs, numbers, text, markings or highlights. Preserve landscape1672x941.
+

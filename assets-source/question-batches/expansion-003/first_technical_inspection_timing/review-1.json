@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+  "proposal_sha256": "7afa6510f66f982ff6cf84fc1b6b73d175aee17ae83bcdf88a00579a112bb907",
+  "image_sha256": "6dbccb5592f86fb41cb6ba49537abba00eb377d6701aff69bd572e6477246075",
+  "compared_question_keys": [
+    "situation_motorway_blowout_initial_control",
+    "situation_b9b_car_interpretation",
+    "speed_visibility_under_fifty",
+    "situation_motorway_end",
+    "situation_night_unlit_roadside_position_lights"
+  ],
+  "checks": {
+    "official_rule": "Service Public F2878 specifies six months BEFORE fourth anniversary and no summons for an ordinary private car. Special-use exceptions excluded.",
+    "signs_and_text": "No traffic signs or date-bearing document; no hidden date needed to calculate. Small wheel-hub motifs and workshop casing are not presented as text or instructions.",
+    "road_geometry": "Level inspection-bay floor and recessed roller bed under front axle, rear wheels on floor; no unsafe raised car or open pit.",
+    "vehicles_and_people": "Ordinary closed hatchback in side view; wheels, body panels, mirrors and front/rear lamps coherent. No technician in danger.",
+    "dashboard_and_equipment": "Front tyre on roller bed, realistic shop monitor seen edge-on; no fabricated readable certificate or dashboard.",
+    "phone_size": "Car in inspection bay remains clear at 390 pixels; timing comes explicitly from the options.",
+    "french_and_english": "FR première mise en circulation and EN first registration used consistently; B/C are independent correct timing/initiative facts.",
+    "novelty": "No existing inspection-timing objective in bank or pending work; distinct from equipment maintenance checks. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+    "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. Ordinary closed hatchback in side view; wheels, body panels, mirrors and front/rear lamps coherent. No technician in danger. Front tyre on roller bed, realistic shop monitor seen edge-on; no fabricated readable certificate or dashboard.",
+    "all_four_options": "Correct set B,C. A: The fifth anniversary is too late. B: The statutory window precedes four years. C: The owner initiates the appointment. D: No summons is sent. Four distinct options in both languages."
+  }
+}

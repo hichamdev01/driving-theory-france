@@ -1,0 +1,249 @@
+{
+  "date": "2026-10-11",
+  "bank_count": 468,
+  "style_source": "https://www.ornikar.com/code/gratuit/test-examen-blanc",
+  "style_review": "Public exam-style stems, four choices and explanations used for style and topic inspiration only; original wording and original image prompts.",
+  "selection": "Priority2,motorways1,alcohol1,speed1,safety5;8single2multi. Safety would become96/478=20.1%, close to20% training allocation.",
+  "rejected_before_authoring": [
+    "STOP-line idea too close to existing complete-stop/line instructions.",
+    "Third-party insurance-cover candidate dropped to avoid overlapping the selected alcohol-insurance objective."
+  ],
+  "source_limitations": [
+    "Security-routiere inter-files page returned502; current ServicePublic A17992 read instead.",
+    "Vendee radar PDF unavailable; official2025 Security-routiere brochure indexed full relevant radar table used instead."
+  ],
+  "candidates": [
+    {
+      "scenario": "roundabout_left_lane_optional",
+      "novelty": "Existing roundabout items cover sign meaning, entry priority and yielding while leaving the inner lane. None tests whether inner-lane use for a left-side destination is optional.",
+      "sources": [
+        {
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050965688/",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "R412-9 permits moving left for an exit left of entry axis on a multi-lane roundabout; it does not mandate it. No special lane allocation stipulated."
+        }
+      ]
+    },
+    {
+      "scenario": "caravan_tight_right_turn_left_swing",
+      "novelty": "Truck-right-turn blind-spot item asks another driver not to pass inside a truck. This asks the towing driver when the left side can be used for a tight right turn, rather than overtaking or oncoming crossing.",
+      "sources": [
+        {
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039278135/",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "R415-3 II: left carriageway may be used if bend and vehicle dimensions prevent keeping right, only at moderate speed after ensuring no danger to others."
+        }
+      ]
+    },
+    {
+      "scenario": "motorway_filtering_two_leftmost_lanes",
+      "novelty": "Existing queue question distinguishes lanes advancing at different rates; existing overtaking/merging checks do not teach the lawful filtering corridor between the two leftmost lanes.",
+      "sources": [
+        {
+          "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17992",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "Since11January2025 filtering under specified dense-traffic/road/weather conditions is between the two leftmost queues. Applies to car-driver anticipation of that location."
+        }
+      ]
+    },
+    {
+      "scenario": "alcohol_accident_own_damage_exclusion",
+      "novelty": "Existing items cover alcohol limits, points, health effects and enforcement. The uninsured-windscreen sticker item tests proof of insurance, not intoxication-related own-damage exclusions.",
+      "sources": [
+        {
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2630",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "An accident caused under alcohol can lead to refusal of own bodily/material-damage guarantees, notwithstanding comprehensive cover or paid premiums; question uses may/refuses guaranteed cover, not universal contractual wording."
+        }
+      ]
+    },
+    {
+      "scenario": "average_speed_camera_section",
+      "novelty": "Bank has instantaneous limits, stopping distances and travel-time gains; no item teaches enforcement measurement averaged over a road section.",
+      "sources": [
+        {
+          "url": "https://www.securite-routiere.gouv.fr/sites/default/files/2025-05/brochure_radars_print.pdf",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "Official2025 radar brochure describes radar tronçon as calculating average speed over a road section."
+        }
+      ]
+    },
+    {
+      "scenario": "passenger_feet_dashboard_airbag",
+      "novelty": "Existing belt, headrest and child-airbag questions do not cover adult limbs obstructing front passenger airbag deployment.",
+      "sources": [
+        {
+          "url": "https://www.user-manual.renault.com/sites/renault/files/GUI_NU_REN_XFKEV_1441_7_0_LHD-RHD_PRNT-fr-FR.pdf",
+          "kind": "manufacturer",
+          "checked_on": "2026-10-11",
+          "supports": "Renault complementary restraint safety warning: feet must not be placed on dashboard or seat because deployment can cause serious injury; body parts kept away from dashboard."
+        }
+      ]
+    },
+    {
+      "scenario": "technical_inspection_critical_next_day",
+      "novelty": "Existing first-inspection item concerns fourth-anniversary schedule, not consequences of a critical failed inspection.",
+      "sources": [
+        {
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2878",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "Critical R result valid only inspection day; reinspection within2months does not extend critical-result circulation validity."
+        }
+      ]
+    },
+    {
+      "scenario": "licence_b_750kg_trailer_over3500_sum",
+      "novelty": "Existing trailer items cover speed, vehicle length and overtaking restrictions; none tests licence entitlement based on trailer PTAC at750kg.",
+      "sources": [
+        {
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2828",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "CategoryB vehicle at most3500kg may tow trailer PTAC≤750kg; code96 requires trailer>750kg and combinedPTAC>3500≤4250."
+        }
+      ]
+    },
+    {
+      "scenario": "registration_address_change_one_month",
+      "novelty": "Existing administrative items concern insurance sticker, licence eyesight restriction, vehicle mass and inspections; no change-of-address deadline.",
+      "sources": [
+        {
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F12118",
+          "kind": "official",
+          "checked_on": "2026-10-11",
+          "supports": "Owner moving withinFrance has1month to update vehicle registration address; leasing and return-from-abroad exceptions excluded."
+        }
+      ]
+    },
+    {
+      "scenario": "ev_charging_no_extension_or_multisocket",
+      "novelty": "Existing EV item rejects damaged insulation; this rejects intact but unsuitable added domestic extension/multiple sockets and requires checking the supply installation.",
+      "sources": [
+        {
+          "url": "https://www.user-manual.renault.com/fr/v%C3%A9hicule-%C3%A9lectrique/charge-2",
+          "kind": "manufacturer",
+          "checked_on": "2026-10-11",
+          "supports": "Renault instructions prohibit extension leads/adaptors/multiple sockets and require professional verification of domestic socket installation against charging specifications."
+        }
+      ]
+    }
+  ],
+  "nearest_review": [
+    {
+      "scenario": "roundabout_left_lane_optional",
+      "compared_question_keys": [
+        "situation_roundabout_inner_lane_yield_outer",
+        "situation_cmi_parking_card_passenger",
+        "situation_abs_emergency_pedal_pulsation",
+        "situation_abs_warning_stays_on_without_red_brake",
+        "situation_overtake_three_lane_no_far_left"
+      ],
+      "result": "Distinct learning decision after reading full FR/EN stems, options and explanations; also screened complete bank category inventory."
+    },
+    {
+      "scenario": "caravan_tight_right_turn_left_swing",
+      "compared_question_keys": [
+        "situation_long_caravan_facilitate_overtaking",
+        "situation_mountain_car_backs_for_caravan",
+        "situation_overtake_middle_lane_hog_no_right",
+        "situation_no_entry",
+        "situation_no_left_turn"
+      ],
+      "result": "Distinct learning decision after reading full FR/EN stems, options and explanations; also screened complete bank category inventory."
+    },
+    {
+      "scenario": "motorway_filtering_two_leftmost_lanes",
+      "compared_question_keys": [
+        "situation_queued_lanes_right_moves_faster",
+        "situation_motorway_long_combination_two_right_lanes",
+        "situation_overtake_three_lane_no_far_left",
+        "situation_road_narrows_right_a3a",
+        "situation_parking_solid_line_insufficient_passage"
+      ],
+      "result": "Distinct learning decision after reading full FR/EN stems, options and explanations; also screened complete bank category inventory."
+    },
+    {
+      "scenario": "alcohol_accident_own_damage_exclusion",
+      "compared_question_keys": [
+        "situation_alcohol_drugs_combined_nine_points",
+        "situation_signed_accident_report_no_front_changes",
+        "situation_otc_medicine_not_driving_guarantee",
+        "situation_alcohol_cannabis_combination",
+        "situation_alcohol_0_40mg_offence"
+      ],
+      "result": "Distinct learning decision after reading full FR/EN stems, options and explanations; also screened complete bank category inventory."
+    },
+    {
+      "scenario": "average_speed_camera_section",
+      "compared_question_keys": [
+        "situation_c51a_car_scenario",
+        "situation_speed_night_dipped_visibility",
+        "situation_sr4_car_scenario",
+        "situation_motorway_exit_deceleration",
+        "situation_coolant_hot_cap_wait"
+      ],
+      "result": "Distinct learning decision after reading full FR/EN stems, options and explanations; also screened complete bank category inventory."
+    },
+    {
+      "scenario": "passenger_feet_dashboard_airbag",
+      "compared_question_keys": [
+        "situation_rear_passenger_seatbelt",
+        "safety_seat_belts_occupants",
+        "situation_driver_mat_secure_no_stacking",
+        "situation_rear_facing_child_active_airbag",
+        "situation_minor_passenger_unbelted_driver_duty"
+      ],
+      "result": "Distinct learning decision after reading full FR/EN stems, options and explanations; also screened complete bank category inventory."
+    },
+    {
+      "scenario": "technical_inspection_critical_next_day",
+      "compared_question_keys": [
+        "situation_first_technical_inspection_timing",
+        "situation_alcohol_expired_self_test_unreliable",
+        "situation_b13_ptac_not_actual_mass",
+        "situation_anaesthesia_discharge_no_driving",
+        "situation_speed_rain_posted_90_80"
+      ],
+      "result": "Distinct learning decision after reading full FR/EN stems, options and explanations; also screened complete bank category inventory."
+    },
+    {
+      "scenario": "licence_b_750kg_trailer_over3500_sum",
+      "compared_question_keys": [
+        "situation_b13_ptac_not_actual_mass",
+        "situation_trailer_ptra_over3500_motorway90",
+        "situation_loaded_car_exceeds_own_ptac",
+        "situation_motorway_long_combination_two_right_lanes",
+        "situation_b10a_combination_total_length"
+      ],
+      "result": "Distinct learning decision after reading full FR/EN stems, options and explanations; also screened complete bank category inventory."
+    },
+    {
+      "scenario": "registration_address_change_one_month",
+      "compared_question_keys": [
+        "situation_first_technical_inspection_timing",
+        "situation_technical_inspection_critical_next_day",
+        "situation_insurance_fva_no_green_sticker",
+        "situation_c13c_dead_end_pedestrian_exit",
+        "situation_motorway_freeflow_pay_72h"
+      ],
+      "result": "Distinct learning decision after reading full FR/EN stems, options and explanations; also screened complete bank category inventory."
+    },
+    {
+      "scenario": "ev_charging_no_extension_or_multisocket",
+      "compared_question_keys": [
+        "situation_ev_charge_cable_cut_insulation",
+        "situation_brake_fluid_below_min",
+        "situation_electric_car_finished_charging_leave_bay",
+        "situation_driver_mat_secure_no_stacking",
+        "situation_ev_charger_blocked_parking"
+      ],
+      "result": "Distinct learning decision after reading full FR/EN stems, options and explanations; also screened complete bank category inventory."
+    }
+  ]
+}

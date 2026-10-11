@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+  "proposal_sha256": "2be0cb20c8ee5a2523aaa3103708570f1c4eb32456755d9220ba3416756867c1",
+  "image_sha256": "77d4f4859c3376066ab625ce8c7a4914c53c6805e063fbd834b01cddb2a96af8",
+  "compared_question_keys": [
+    "situation_motorway_help_merge_occupied_left",
+    "situation_parking_blocks_parked_exit",
+    "situation_motorway_friend_tow_offer",
+    "situation_overtake_too_little_speed_difference",
+    "situation_height_limit_3_5m"
+  ],
+  "checks": {
+    "official_rule": "Consolidated official sign regulation p14 defines B13 by PTAC/PTRA, not actual mass. Untowed car PTAC2300 exceeds sign2000 even when actually1700.",
+    "signs_and_text": "One correct round white B13 face, red border, black 2 t, no truck/axle symbol or plate. Text legible at full and phone size.",
+    "road_geometry": "Right verge before restricted rural road, sensible sign height and facing direction; no conflicting junction/markings.",
+    "vehicles_and_people": "No other cars, people or animals; ordinary car assumed by stem.",
+    "dashboard_and_equipment": "No gauges; mass supplied in both languages, not inferred from pictured body size.",
+    "phone_size": "2 t is readable at 390 pixels; no fine print changes scope.",
+    "french_and_english": "FR PTAC and EN maximum authorised mass/PTAC correspond exactly; no trailer ambiguity. A correct; real mass/truck-only/slow-speed distractors false.",
+    "novelty": "No B13 primary question or reservation. Width/height signs test actual dimensions; this specifically contrasts maximum authorised mass with actual mass. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+    "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. No other cars, people or animals; ordinary car assumed by stem. No gauges; mass supplied in both languages, not inferred from pictured body size.",
+    "all_four_options": "Correct set A. A: The authorised mass exceeds the limit. B: Actual mass is not the figure compared here. C: No lorry silhouette: passenger cars are also covered. D: Speed does not change authorised mass. Four distinct options in both languages."
+  }
+}

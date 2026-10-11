@@ -7,6 +7,7 @@ enum MainTab: Hashable {
 final class TabRouter: ObservableObject {
     @Published var selectedTab: MainTab
     @Published var pendingLearningRoute: LearningRoute?
+    @Published var learningRootRequest = UUID()
 
     init() {
         pendingLearningRoute = nil
@@ -37,6 +38,12 @@ final class TabRouter: ObservableObject {
 
     func openLearning(_ route: LearningRoute) {
         pendingLearningRoute = route
+        selectedTab = .practice
+    }
+
+    func openPracticeCategories() {
+        pendingLearningRoute = nil
+        learningRootRequest = UUID()
         selectedTab = .practice
     }
 

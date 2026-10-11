@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "9cc9011e64448844e0b12d13686dbc788513fec4f227c9a69f732b94ef2a228b",
+  "image_sha256": "cef63dd6563bc0d601a15baa4f6fd52b5d704a6d0352a0d0a2ba226556ab3151",
+  "result": "pass",
+  "notes": "Full replacement inspected at original1672x941 and390px.",
+  "compared_question_keys": [
+    "situation_dynamic_speed_limit_over_fixed",
+    "situation_cmi_parking_card_passenger",
+    "situation_abs_emergency_pedal_pulsation",
+    "situation_abs_warning_stays_on_without_red_brake",
+    "situation_tramway_crossing"
+  ],
+  "checks": {
+    "official_rule": "Official SR ADAS guidance keeps responsibility with driver; Ford recognition manual allows incorrect displayed limit.",
+    "novelty": "Existing dynamic-versus-fixed item compares two authoritative road signs. This tests a fallible in-car assistance display and continuing driver responsibility, not sign-code identification. Five nearest and wider bank compared.",
+    "signs_and_text": "Roadside B14red circle white disk black70correct; dashboard90clearly an icon, not actual speed. No supplementary plate; hazard switch has coherent red triangle.",
+    "road_geometry": "Both generated edge stripes removed; entirely unmarked ordinary two-way road. Camera in car, road context consistent.",
+    "vehicles_and_people": "No other road users, no anatomy.",
+    "dashboard_and_equipment": "Partial steering wheel and central recognition icon90; no malformed gauges or other numbers; vents and hazard switch plausible.",
+    "full_resolution": "Exact scene-2.jpg inspected throughout;70and90clear, markings removed, no new artefacts detected.",
+    "phone_size": "Both roadside70and display90legible at390px; whole sign and icon uncropped.",
+    "french_and_english": "Both versions explicitly identify recognition system and applicable roadside restriction; AandCmatch, no reliance on estimating actual speed.",
+    "all_four_options": "Aobey70;Cdriverresponsible. BexemptionandDguaranteearefalse. Distinct four options in both languages."
+  }
+}

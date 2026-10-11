@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+  "proposal_sha256": "5d5ff0332f835b7815c65aa40e2a0a6c677225a1fabbbf124d50cf309d4d88b1",
+  "image_sha256": "45de824596c7001bf5c4b358f83095bcfe2f07d28c3952e5ced7bbad53b22632",
+  "compared_question_keys": [
+    "situation_being_overtaken_hold_speed",
+    "situation_front_fog_lights_heavy_rain",
+    "situation_priority_uphill_near_refuge_reverse",
+    "situation_child_under_ten_front_seat",
+    "situation_motorway_freeflow_pay_72h"
+  ],
+  "checks": {
+    "official_rule": "R416-6 checked 2026-10-09: avoid dazzling driver being followed. Stem expressly says overtaking has not started, preserving the provision's during-overtake distinction.",
+    "signs_and_text": "No signs or readable text; one rear registration plate now, not two. Broken white centre and white road edges.",
+    "road_geometry": "Two-way rural road at night, driver follows in right lane, empty opposing lane and realistic vanishing point; no manoeuvre already underway.",
+    "vehicles_and_people": "Single car ahead in same direction with two red rear lamps; corrected rear bumper has one plate and plausible vehicle parts. No people.",
+    "dashboard_and_equipment": "Low dipped-beam road illumination, dark dash silhouette, no unreadable gauge or control needed.",
+    "full_resolution": "Entire corrected scene-2 JPEG inspected at1672x941 including tailgate, bumper, single plate, rear lights, road edges and illumination.",
+    "phone_size": "390px preview makes following-car context and rear lights clear; no small text required.",
+    "french_and_english": "Both explicitly state following before passing and potential mirror glare; question does not ask for distance or infer glare from brightness.",
+    "all_four_options": "D only. A absence of oncoming traffic does not permit dazzling ahead; B sidelights insufficient; C no lights unsafe; D dipped headlights.",
+    "novelty": "Nearest being-overtaken item asks speed behaviour, rain fog lights ask weather-specific equipment, uphill reversing asks crossing, child seating and freeflow toll ask unrelated obligations. Broader oncoming-main-beam item concerns crossing; here the image/wording establish following before a pass, requiring recognition of possible mirror glare even with no oncoming traffic."
+  }
+}

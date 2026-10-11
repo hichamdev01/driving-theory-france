@@ -1,0 +1,19 @@
+{
+  "result": "pass",
+  "content_version": 95,
+  "questions": 418,
+  "illustrated": 389,
+  "categories": {
+    "road_signs": 119,
+    "priority_rules": 41,
+    "speed_limits": 38,
+    "parking_stopping": 38,
+    "overtaking": 38,
+    "motorways": 31,
+    "alcohol_drugs": 41,
+    "safety": 72
+  },
+  "pack_sha256": "017498fa2abe706993e999c2394bfcffeac900f751235fbd4e9970dc6dc5aedc",
+  "progress_sha256": "35e5e3503c10891d92e69ab9fc0074f4358999baeafe7ed2d75992723533da75",
+  "checks": "SQLite integrity, all active FR keys, categories, media paths, difficulty, answer sets and both full translations match the current pack."
+}

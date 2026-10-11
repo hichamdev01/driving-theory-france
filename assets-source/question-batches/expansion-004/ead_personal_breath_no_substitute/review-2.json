@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+  "proposal_sha256": "db3db4c38bbc46c31a51c505378acf87783cc645dbb8f477375a279508f13ca9",
+  "image_sha256": "db07451ab0de3d5ad8c098eee68bc4312fcd3d15a4eb9bde87a57f652f43efd2",
+  "compared_question_keys": [
+    "situation_overtaking_near_occupied_crossing",
+    "situation_motorway_friend_tow_offer",
+    "situation_triangle_placement_personal_danger",
+    "situation_b13_ptac_not_actual_mass",
+    "situation_rear_passenger_seatbelt"
+  ],
+  "checks": {
+    "official_rule": "Checked 2026-10-10. R234-6: the driver must use the EAD before starting and may not drive after a third party supplied the breath to enable starting.",
+    "novelty": "Distinct from EAD repeat-test timing and equipment restriction: identifies fraudulent substitution of the driver’s own measurement. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+    "signs_and_text": "No text, numbers or roadside signs. The LCD is blank.",
+    "road_geometry": "Interior-only close view, no road geometry to interpret.",
+    "vehicles_and_people": "No people; no implied breath by an unseen passenger.",
+    "dashboard_and_equipment": "Clear disposable mouthpiece connected to black instrument, clipped cradle and coiled lead. No malformed speedometer or gear markings remain.",
+    "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Interior-only close view, no road geometry to interpret. No people; no implied breath by an unseen passenger.",
+    "phone_size": "Inspected saved390px phone-2.jpg. Mouthpiece, handset and mounting remain clear; driver/passenger roles are explicit in wording.",
+    "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Before starting an EAD-equipped car, the intended driver is offered a breath sample by a sober passenger.",
+    "all_four_options": "Correct set d. FR: {\"a\": \"Un résultat concernant le passager ne mesure pas le conducteur.\", \"b\": \"Le passager n’est pas le conducteur testé.\", \"c\": \"Un contrôle futur n’autorise pas la substitution.\", \"d\": \"La mesure personnelle est obligatoire.\"} EN: {\"a\": \"A passenger’s result does not measure the driver.\", \"b\": \"Remaining in the car changes nothing.\", \"c\": \"A later test does not permit substitution.\", \"d\": \"The driver must provide the sample.\"}"
+  }
+}

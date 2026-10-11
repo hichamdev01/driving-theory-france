@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+  "proposal_sha256": "52ad0072c4fc112881ddeccbecade0c7ce4f5423235acc9d110a01e0b5e5e2e8",
+  "image_sha256": "83f5d31cf09bb02aae7984cc0a3acae1d3472206a39cdfef345a8a50c01a38da",
+  "compared_question_keys": [
+    "situation_motorway_long_combination_two_right_lanes",
+    "situation_long_caravan_facilitate_overtaking",
+    "situation_rural_moped_overtake_clearance",
+    "situation_rural_horse_overtake_clearance",
+    "situation_rural_pedestrian_overtake_clearance"
+  ],
+  "checks": {
+    "official_rule": "Checked 2026-10-10. R412-12 I/II current since June2025: at least2s generally; outside towns two vehicles/combinations >7m following at equal speed leave at least50m.",
+    "novelty": "Existing following distance tests general two seconds and rain. The specific 50m floor for TWO long combinations at equal speed is a different condition; 70km/h avoids two-second distance exceeding 50m. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+    "signs_and_text": "No roadside signs. French-format registrations EF-315-GH on car and AB-742-CD on caravan; paired red triangular trailer reflectors and lamps. Registration numbers are not question clues.",
+    "road_geometry": "Two motorway lanes, broken separator, continuous edge and shoulder; median guardrail on foreground left. Both connected vehicles inside right traffic lane, aligned away toward upper left.",
+    "vehicles_and_people": "Hatchback is in front of caravan; coupling visible between car rear and caravan front. One trailer axle, plausible wheel/vehicle scale, distinct registrations appropriate to ordinary caravan. No person in carriageway.",
+    "dashboard_and_equipment": "No dashboard. Coupling, trailer reflectors and lights inspected; no brake/indicator claim is needed.",
+    "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Two motorway lanes, broken separator, continuous edge and shoulder; median guardrail on foreground left. Both connected vehicles inside right traffic lane, aligned away toward upper left. Hatchback is in front of caravan; coupling visible between car rear and caravan front. One trailer axle, plausible wheel/vehicle scale, distinct registrations appropriate to ordinary caravan. No person in carriageway.",
+    "phone_size": "Inspected saved390px phone-3.jpg. Towing order and right lane remain clear. Photograph is an exterior context view; the other combination, common70speed and both8m lengths are supplied by text. It does not claim to measure the photographed gap.",
+    "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Two car-caravan combinations each 8m long travel at the same 70km/h outside a built-up area on a motorway. Own sum PTAC3200kg. No special increased-distance sign.",
+    "all_four_options": "Correct set a. FR: {\"a\": \"R412-12 II impose ce plancher aux deux ensembles longs.\", \"b\": \"Une seconde est déjà inférieure au minimum général.\", \"c\": \"La voiture tractrice fait partie de l’ensemble long.\", \"d\": \"La longueur de la caravane ne constitue pas la distance légale.\"} EN: {\"a\": \"R412-12 II sets this floor for the two long combinations.\", \"b\": \"One second is below even the general time minimum.\", \"c\": \"The towing car is part of a long combination.\", \"d\": \"The caravan’s length is not the statutory gap.\"}"
+  }
+}

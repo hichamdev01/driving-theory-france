@@ -1,0 +1,13 @@
+{
+  "proposal_sha256": "ebaeec658edaa07191eb7b5fc1f9e9727b54da17bea8031b4ff34cee116ea563",
+  "image_sha256": "b207529cb3bd2b5288bc34c95ecbaa279a994d17482e16caf6a0b0f98ca38e3b",
+  "result": "reject",
+  "notes": "Reject: extra distant signs and a car too small to inspect; rear/front dashed-line stroke-to-gap ratios do not clearly match the required equal0.5m pattern. Replace remote street view with plain wall/trees, remove tiny signs and correct the two transverse lines.",
+  "compared_question_keys": [
+    "situation_c113_car_interpretation",
+    "situation_red_flashing_level_crossing_stop",
+    "situation_emergency_vehicle_without_special_signals",
+    "situation_fixed_amber_safe_stop",
+    "situation_b27b_car_scenario"
+  ]
+}

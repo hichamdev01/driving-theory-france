@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+  "proposal_sha256": "6a544720e74e0c3cc497d58940ca8da5fb65ce4318d3f4b23039de09f4cacccb",
+  "image_sha256": "edca2dc8a821a578092e289b5d8f9f6f79423079451585953d0b0394cd0f6b82",
+  "compared_question_keys": [
+    "situation_rear_fog_lights_falling_snow",
+    "situation_speed_rain_posted_90_80",
+    "situation_front_fog_lights_heavy_rain",
+    "situation_minimum_speed_80",
+    "safety_accident_first_actions"
+  ],
+  "checks": {
+    "official_rule": "Michelin original guidance checked2026-10-09 supports firm steering and avoiding abrupt inputs before gradual slowdown. Additional visual source IISR114-4B permits continuous edge without BAU; https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_7epartie_vc_20250404.pdf checked2026-10-09.",
+    "signs_and_text": "No signs, captions, readable dash or tyre depiction. Continuous median and right edge; normal broken divider between two lanes. Right side is narrow verge, no emergency stopping lane.",
+    "road_geometry": "Correction2 depicts divided motorway with two lanes our way and guardrails, no BAU. Narrow verge consistently runs between right stripe and barrier; no car-width stopping space. This legitimate configuration replaces original broad shoulder without changing question.",
+    "vehicles_and_people": "No other vehicles or pedestrians; no unsafe recovery operation shown. Driver viewpoint stays in right traffic lane.",
+    "dashboard_and_equipment": "Only steering/dash silhouette, no visible tyre damage or false indicator. Burst explicitly stated in question.",
+    "full_resolution": "Scene-3 inspected at1672x941: narrowed verge, guardrail continuity, lane divider, horizon and dashboard; no unresolved defect.",
+    "phone_size": "390px preview retains divided-road context and continuous narrow-verge edge, no hidden necessary detail.",
+    "french_and_english": "Both explicitly state a sudden tyre burst while driving and ask FIRST response; gradual safe stopping follows, not changing tyre in lane.",
+    "all_four_options": "A only. B harsh full braking, C sudden swerve, D parking-brake application can destabilise car; A prioritises control.",
+    "novelty": "Nearest weather lighting, rain limit, minimum motorway speed and first actions at an accident concern different decisions. Broader flat-tyre recovery item begins after the car has stopped; this asks immediate stability control while moving."
+  }
+}

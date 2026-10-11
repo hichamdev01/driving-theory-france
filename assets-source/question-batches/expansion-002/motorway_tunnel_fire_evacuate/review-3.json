@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "proposal_sha256": "d14ccb87a5141b024751ac27db1919391c41953ec3139f3b65738c78d8764623",
+  "image_sha256": "9087f191abc390352efca8d2b5315e6eef5e2c4da8e2d353d5d961648d57cc29",
+  "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+  "compared_question_keys": [
+    "situation_phone_in_moving_queue",
+    "safety_emergency_corridor",
+    "situation_motorway_passenger_walks_shoulder",
+    "situation_tunnel_nonessential_stop",
+    "situation_motorway_friend_tow_offer"
+  ],
+  "checks": {
+    "official_rule": "Reviewed authoritative sources checked 2026-10-09: Updated 8 January 2024: in tunnel fire, leave vehicle carefully and evacuate on foot towards emergency exits without waiting for firefighters; cars do not protect against smoke.",
+    "novelty": "Existing tunnel items test routine stopping prohibition or queue separation; motorway breakdown protection does not cover fire in a confined tunnel. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+    "signs_and_text": "Final optical-zoom composition contains no signs, text, road markings or registration plate; lower car body and side-wall equipment are naturally outside frame, not erased.",
+    "road_geometry": "Tight telephoto detail of car ahead in tunnel, ceiling arch and two lamps visible; road and exit locations outside frame. The stem supplies motorway tunnel, safe stopping and engine-off conditions.",
+    "vehicles_and_people": "Burning car upper rear, rear glass, roof rails, antenna and red upper tail lamps coherent. Fire ahead of cabin and smoke rising toward ceiling; no people or injuries. Zoom framing does not assert short physical following distance.",
+    "dashboard_and_equipment": "Headrests, mirror and heated rear-window lines plausible through glass. No dashboard numbers or exit hardware shown.",
+    "full_resolution": "Viewed exact staged scene-3.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. Final optical-zoom composition contains no signs, text, road markings or registration plate; lower car body and side-wall equipment are naturally outside frame, not erased. Headrests, mirror and heated rear-window lines plausible through glass. No dashboard numbers or exit hardware shown.",
+    "phone_size": "Viewed phone-preview-3.jpg at 390 px. Fire, rising smoke and tunnel setting are unmistakable at 390 px. No small route sign must be read to choose immediate evacuation.",
+    "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: In a motorway tunnel a vehicle ahead is on fire. The driver has safely stopped and switched off the engine. Question asks immediate personal evacuation, not fire-fighting.",
+    "all_four_options": "Correct set b. FR: A: Incorrect : la voiture ne protège pas de l’asphyxie.; B: Correct : auto-évacuation à pied vers une issue accessible.; C: Incorrect : demi-tour dangereux et retard à l’évacuation.; D: Incorrect : ne pas s’engager vers le foyer et les fumées. EN: A: Incorrect: the car does not prevent smoke inhalation.; B: Correct: evacuate on foot towards an accessible exit.; C: Incorrect: a U-turn creates danger and delays evacuation.; D: Incorrect: do not drive towards the fire and smoke."
+  }
+}

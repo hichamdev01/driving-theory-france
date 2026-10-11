@@ -1,0 +1,133 @@
+{
+  "result": "pass",
+  "device": "iPhone 17 Pro iOS 26.5",
+  "review_route": "Debug ContentReviewKeys; real question UI and scoring without progress writes",
+  "french": [
+    {
+      "question_key": "situation_b7a_mopeds_exception_not_all_motor",
+      "image": "Displayed and visually inspected in simulator",
+      "four_options": "All four present; scrolling used for long questions",
+      "selected": [
+        "c"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_c13d_dead_end_cycle_pedestrian_outlet",
+      "image": "Displayed and visually inspected in simulator",
+      "four_options": "All four present; scrolling used for long questions",
+      "selected": [
+        "a"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_b5b_police_checkpoint_required_stop",
+      "image": "Displayed and visually inspected in simulator",
+      "four_options": "All four present; scrolling used for long questions",
+      "selected": [
+        "d"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_alcohol_screening_then_evidential_measurement",
+      "image": "Displayed and visually inspected in simulator",
+      "four_options": "All four present; scrolling used for long questions",
+      "selected": [
+        "b"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_probation_alcohol_six_point_deduction",
+      "image": "Displayed and visually inspected in simulator",
+      "four_options": "All four present; scrolling used for long questions",
+      "selected": [
+        "c"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_wrong_fuel_discovered_before_start",
+      "image": "Displayed and visually inspected in simulator",
+      "four_options": "All four present; scrolling used for long questions",
+      "selected": [
+        "b"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_stopping_distance_reaction_plus_braking",
+      "image": "Displayed and visually inspected in simulator",
+      "four_options": "All four present; scrolling used for long questions",
+      "selected": [
+        "d"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_hot_tyre_pressure_do_not_bleed",
+      "image": "Displayed and visually inspected in simulator",
+      "four_options": "All four present; scrolling used for long questions",
+      "selected": [
+        "b",
+        "d"
+      ],
+      "result": "Correct !",
+      "instruction": "multiple"
+    },
+    {
+      "question_key": "situation_wiper_split_rubber_before_rain_trip",
+      "image": "Displayed and visually inspected in simulator",
+      "four_options": "All four present; scrolling used for long questions",
+      "selected": [
+        "c"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_accident_emergency_call_information",
+      "image": "Displayed and visually inspected in simulator",
+      "four_options": "All four present; scrolling used for long questions",
+      "selected": [
+        "a",
+        "c"
+      ],
+      "result": "Correct !",
+      "instruction": "multiple"
+    }
+  ],
+  "english": [
+    {
+      "question_key": "situation_hot_tyre_pressure_do_not_bleed",
+      "selected": [
+        "b"
+      ],
+      "result": "Incorrect",
+      "correction": "The correct answers are: B and D",
+      "notes": "Multiple-answer instruction, full plural correction and explanation visually checked after scrolling."
+    },
+    {
+      "question_key": "situation_accident_emergency_call_information",
+      "selected": [
+        "a"
+      ],
+      "result": "Incorrect",
+      "correction": "The correct answers are: A and C",
+      "notes": "Multiple-answer instruction, full plural correction and explanation visually checked after scrolling."
+    }
+  ],
+  "normal_launch": "English home restored; Questions explored: 54 of 448",
+  "progress_before": "35e5e3503c10891d92e69ab9fc0074f4358999baeafe7ed2d75992723533da75",
+  "progress_after": "35e5e3503c10891d92e69ab9fc0074f4358999baeafe7ed2d75992723533da75",
+  "notes": "No detected unresolved content or scoring defects. Existing scroll-under-status-bar behavior remains; all text accessible by scrolling."
+}

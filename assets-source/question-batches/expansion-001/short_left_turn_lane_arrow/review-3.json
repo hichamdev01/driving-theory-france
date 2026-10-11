@@ -1,0 +1,6 @@
+{
+  "result": "reject",
+  "notes": "Reject correction 2: arrowheads closer to B2 but two arrows are side-by-side in one lane; an unexplained transverse stop line was added, and lane layout is inconsistent. Last correction must show a single unambiguous lane marking without these contradictions.",
+  "proposal_sha256": "09f68e02f4ec5b41c11713a5638332b45867c9f9f77950a7aa776fa336d46965",
+  "image_sha256": "ecad12830599b8cce446ef4ab41f0293ac543ff260818168a6ff28e9f0140e5d"
+}

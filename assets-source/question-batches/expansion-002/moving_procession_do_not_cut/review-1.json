@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "proposal_sha256": "22b4eb289e3cfd758c64527f4f543a0d092923224bdef7dda64e8a3d24606660",
+  "image_sha256": "3c9f4ad347b2ce0b90eafd2b46865631d7332ae0b1a26017c015d5b7c1d08ba5",
+  "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+  "compared_question_keys": [
+    "situation_two_way_wrong_side_parking",
+    "situation_overtaking_uncontrolled_intersection",
+    "situation_first_aid_conscious_waiting_care",
+    "situation_overtake_right_left_turner",
+    "situation_blind_crest_no_overtake"
+  ],
+  "checks": {
+    "official_rule": "Reviewed authoritative sources checked 2026-10-09: R412-15 prohibits cutting through a moving procession; the question explicitly identifies a continuing organised procession.",
+    "novelty": "Distinct from yielding to an individual pedestrian or an exceptional road convoy: R412-15 protects the continuity of a moving procession even when a gap opens. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+    "signs_and_text": "No signs, signals, road paint, flags, words or supplementary plates.",
+    "road_geometry": "Consistent narrow village street, pavements on both sides. Camera is behind crossing line, unobstructed view of gap.",
+    "vehicles_and_people": "Six separate adults, three on either side of a gap, all walking left-to-right with plausible arms, legs and shadows. Organised continuing procession is explicitly supplied; image alone would not establish legal status.",
+    "dashboard_and_equipment": "Only ordinary dashboard edge; no invented controls or instrument readings.",
+    "full_resolution": "Viewed exact staged scene-1.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No signs, signals, road paint, flags, words or supplementary plates. Only ordinary dashboard edge; no invented controls or instrument readings.",
+    "phone_size": "Viewed phone-preview-1.jpg at 390 px. All six walkers and the gap remain apparent at 390 px; no clothing detail needed to answer.",
+    "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: A legally organised walking procession is crossing the street. Its members form a continuing procession with a gap; it has not finished passing. Explicitly stated, not inferred solely from a pedestrian image.",
+    "all_four_options": "Correct set d. FR: A: Incorrect : la taille de l’espace ne lève pas l’interdiction.; B: Incorrect : le klaxon ne donne pas de priorité.; C: Incorrect : la règle vise aussi les cortèges à pied.; D: Correct : continuité du cortège à respecter. EN: A: Incorrect: the size of the gap does not remove the prohibition.; B: Incorrect: a horn does not grant priority.; C: Incorrect: walking processions are also covered.; D: Correct: respect the continuity of the procession."
+  }
+}

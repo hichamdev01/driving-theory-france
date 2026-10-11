@@ -1,0 +1,6 @@
+{
+  "proposal_sha256": "6086622724673761af246387e88ddda0a3e2c69c804ed8054f3eecf41d697375",
+  "image_sha256": "c15eedd41367aafc011b4a231f9b781223feca4669599d9b2c1764f0c615ed3c",
+  "result": "reject",
+  "notes": "Rejected: the disconnected domestic plug has three protruding metal pins rather than an appropriate French compatible two-pin/earthed plug. Correct or turn the plug away without suggesting it is connected."
+}

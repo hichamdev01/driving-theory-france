@@ -1,0 +1,634 @@
+[
+  {
+    "scenario_id": "officer_vertical_arm_clear_entered_junction",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver; no professional or motorcycle licence knowledge.",
+    "learning_objective": "Clear a junction already entered when an officer raises one arm vertically.",
+    "topic": "officer_vertical_arm_clear_entered_junction",
+    "scenario": "Driver already inside intersection, exit free, officer raises one arm; no contrary instruction. Entry and timing stated because still image cannot establish prior movement.",
+    "novelty_review": "Existing horizontal-arm item asks which approaches must stop; this tests the already-entered exception to a different gesture, avoiding stopping inside the junction.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_officer_vertical_arm_clear_entered_junction",
+      "category_slug": "priority_rules",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Je suis déjà engagé dans le carrefour et ma sortie est libre lorsque l’agent lève un bras verticalement. Que dois-je faire ?",
+          "answer_a": "M’arrêter immédiatement au milieu du carrefour.",
+          "answer_b": "Dégager prudemment le carrefour.",
+          "answer_c": "Reculer jusqu’à mon point d’entrée.",
+          "answer_d": "Attendre que tous les véhicules derrière moi passent.",
+          "explanation": "Ce geste impose normalement l’arrêt aux usagers qui approchent, mais pas à ceux déjà engagés dans l’intersection. Je la dégage prudemment sans immobiliser ma voiture au milieu, en restant attentif aux consignes de l’agent."
+        },
+        "en": {
+          "question_text": "I am already inside the junction and my exit is clear when the officer raises one arm vertically. What should I do?",
+          "answer_a": "Stop immediately in the middle of the junction.",
+          "answer_b": "Carefully clear the junction.",
+          "answer_c": "Reverse back to where I entered.",
+          "answer_d": "Wait for every vehicle behind me to pass.",
+          "explanation": "The raised arm normally stops approaching traffic, but does not require drivers already inside the intersection to stop there. I carefully clear it while remaining attentive to the officer’s instructions."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "L’exception vise les conducteurs déjà engagés.",
+        "b": "Il faut libérer l’intersection.",
+        "c": "Une marche arrière n’est pas demandée.",
+        "d": "Cela maintiendrait le carrefour occupé."
+      },
+      "en": {
+        "a": "The exception concerns drivers already inside.",
+        "b": "The intersection should be cleared.",
+        "c": "Reversing is not requested.",
+        "d": "That would keep the junction obstructed."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French car-driving theory scene, 1672x941 or larger. No quiz text, answers, diagram arrows, solution highlights, watermark or brands. Realistic geometry and equipment. Relevant detail must remain clear at390px width. View from a passenger-car windscreen already within a quiet simple four-way French residential junction. A clearly recognisable municipal traffic officer in navy uniform and fluorescent vest stands safely to the LEFT of our straight exit, not in our path, one straight arm raised vertically overhead with open palm, other arm hanging down. Exactly two arms and realistic anatomy. Full officer visible, large enough to read gesture. Road ahead entirely clear. Unmarked asphalt, ordinary pavements, no signals, road signs, text, other vehicles or pedestrians. Only thin dashboard edge, no instruments.",
+    "sources": [
+      {
+        "url": "https://unece.org/fileadmin/DAM/trans/conventn/Conv_road_traffic_FR.pdf",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "Article6 paragraph3(a): raised vertical arm; exception for drivers already within intersection. Official indexed full paragraph read; direct PDF returned403."
+      },
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842090/",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "R411-28: officer instructions prevail over signals and traffic rules."
+      }
+    ]
+  },
+  {
+    "scenario_id": "mixed_line_return_after_legal_overtake",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver; no professional or motorcycle licence knowledge.",
+    "learning_objective": "Recognise permission to return over the continuous component after starting beside the broken component.",
+    "topic": "mixed_line_return_after_legal_overtake",
+    "scenario": "Legal pass began with broken line nearest own lane; now on opposite side, same mixed line continues and safe return gap exists.",
+    "novelty_review": "Existing mixed-line item asks starting permission. This asks the opposite-side return where solid component is now nearest, with commencement and completion conditions explicit.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_mixed_line_return_after_legal_overtake",
+      "category_slug": "overtaking",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "J’ai commencé ce dépassement du côté discontinu de la ligne mixte. Je peux maintenant me rabattre sans gêner, avant la fin des pointillés. Puis-je franchir la partie continue pour revenir à droite ?",
+          "answer_a": "Non, je dois rester à gauche jusqu’au prochain carrefour.",
+          "answer_b": "Non, je dois m’arrêter sur la voie opposée.",
+          "answer_c": "Oui, mais seulement si je dépasse la limitation de vitesse.",
+          "answer_d": "Oui, puisque les conditions de cette manœuvre sont respectées.",
+          "explanation": "Pour une ligne mixte, on considère le côté le plus proche au début de la manœuvre. Ayant commencé du côté discontinu, je peux revenir à droite en franchissant la partie continue, en sécurité et avant la fin de la ligne discontinue."
+        },
+        "en": {
+          "question_text": "I began overtaking from the broken-line side of this mixed marking. I can now return without obstructing anyone, before the broken line ends. May I cross its solid component to return right?",
+          "answer_a": "No, I must stay left until the next junction.",
+          "answer_b": "No, I must stop in the opposing lane.",
+          "answer_c": "Yes, but only if I exceed the speed limit.",
+          "answer_d": "Yes, because the conditions for this manoeuvre are met.",
+          "explanation": "For a mixed marking, the side nearest the vehicle at the start matters. Having started from the broken side, I may cross the solid component to return right safely, completing the manoeuvre before the broken line ends."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Rester à gauche prolongerait inutilement la manœuvre.",
+        "b": "Un arrêt sur la voie opposée serait dangereux.",
+        "c": "Aucune dérogation à la vitesse.",
+        "d": "Début du bon côté et fin avant la fin des pointillés."
+      },
+      "en": {
+        "a": "Staying left needlessly prolongs the manoeuvre.",
+        "b": "Stopping in the opposing lane is dangerous.",
+        "c": "There is no speed exemption.",
+        "d": "Started on the permitted side and completed before the broken line ends."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French car-driving theory scene, 1672x941 or larger. No quiz text, answers, diagram arrows, solution highlights, watermark or brands. Realistic geometry and equipment. Relevant detail must remain clear at390px width. Driver viewpoint during a legal overtaking manoeuvre on a straight empty rural French TWO-WAY TWO-LANE road. Camera is in LEFT lane, looking forward. At camera RIGHT is a mixed centre marking: nearest the camera a straight continuous WHITE line, beside it farther right a parallel WHITE broken line made of short3m painted bars separated by long10m gaps, both continue far ahead. Beyond those lines is the empty right-hand return lane. Both outside road edges unmarked. No vehicles ahead or beside, passed vehicle is behind outside frame. No mirrors or instruments or road signs. Narrow car bonnet edge only. The two parallel centre lines must be close together, not form another lane. Countryside daytime.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842140/",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "R412-20 mixed-line manoeuvre judged at start, completed before end of broken line; current article read."
+      }
+    ]
+  },
+  {
+    "scenario_id": "paid_parking_time_exceeded_fps",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver; no professional or motorcycle licence knowledge.",
+    "learning_objective": "Distinguish insufficient parking payment from prohibited-parking offences.",
+    "topic": "paid_parking_time_exceeded_fps",
+    "scenario": "Authorised on-street paid bay, paid period expired, no exemption. No obstructive/dangerous parking.",
+    "novelty_review": "C1c tests sign meaning. Existing prohibited-parking questions concern traffic offences; this tests the FPS for insufficient payment on an otherwise lawful bay.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_paid_parking_time_exceeded_fps",
+      "category_slug": "parking_stopping",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Ma voiture est sur une place payante autorisée, mais la durée réglée est dépassée et je n’ai aucune exemption. À quoi m’expose ce paiement insuffisant ?",
+          "answer_a": "À une simple tolérance automatique jusqu’au lendemain.",
+          "answer_b": "À un retrait automatique de six points.",
+          "answer_c": "À un forfait de post-stationnement (FPS).",
+          "answer_d": "À aucune conséquence si un ancien ticket reste visible.",
+          "explanation": "Le FPS peut être demandé en cas d’absence ou d’insuffisance de paiement du stationnement payant. Un ticket expiré ne couvre pas la durée supplémentaire ; ce dispositif se distingue des contraventions pour stationnement interdit."
+        },
+        "en": {
+          "question_text": "My car is in a permitted paid street-parking bay, but the paid time has expired and I have no exemption. What can this insufficient payment lead to?",
+          "answer_a": "Automatic grace until the next day.",
+          "answer_b": "An automatic six-point deduction.",
+          "answer_c": "A post-parking charge (FPS).",
+          "answer_d": "No consequence if an old ticket remains visible.",
+          "explanation": "An FPS can be charged when paid parking is unpaid or underpaid. An expired ticket does not cover the extra time; this system is separate from offences involving prohibited parking."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Pas de tolérance générale acquise.",
+        "b": "Le FPS ne retire pas six points.",
+        "c": "Le temps payé est dépassé.",
+        "d": "Le ticket expiré ne suffit pas."
+      },
+      "en": {
+        "a": "There is no general automatic grace.",
+        "b": "An FPS does not deduct six points.",
+        "c": "The paid time has expired.",
+        "d": "An expired ticket is insufficient."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French car-driving theory scene, 1672x941 or larger. No quiz text, answers, diagram arrows, solution highlights, watermark or brands. Realistic geometry and equipment. Relevant detail must remain clear at390px width. Quiet French street, tightly framed parked blue passenger car inside one white marked curbside parallel parking bay on the right of road, facing same direction as nearby road. Generic parking meter on pavement beside car, dark blank display without text, no sign. Side rear three-quarter view, crop registration out rather than invented plate. Pavement unobstructed, no crossings, driveways, hydrants or people. No ticket or clock visible; paid duration and expiry are supplied in wording. Daylight.",
+    "sources": [
+      {
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34440",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "FPS applies to absent or insufficient payment, including exceeded paid duration. Current page sections49–60 read."
+      }
+    ]
+  },
+  {
+    "scenario_id": "cmi_barrier_carpark_fee_possible",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver; no professional or motorcycle licence knowledge.",
+    "learning_objective": "Recognise the controlled-car-park exception to CMI parking-fee exemption.",
+    "topic": "cmi_barrier_carpark_fee_possible",
+    "scenario": "Transporting CMI parking holder; car park entry/exit terminals usable from driver seat; asks possible fee, not universal fee.",
+    "novelty_review": "Existing CMI items cover holder/passenger and local12h limit. New exception concerns payment at accessible entry/exit terminals, not duration or entitlement to reserved bays.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_cmi_barrier_carpark_fee_possible",
+      "category_slug": "parking_stopping",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "J’accompagne un titulaire de CMI stationnement. Ce parc possède des bornes d’entrée et de sortie utilisables depuis la voiture. Une redevance peut-elle malgré tout être demandée ?",
+          "answer_a": "Oui, cette exception à la gratuité est possible.",
+          "answer_b": "Non, tous les parcs sont toujours gratuits avec la carte.",
+          "answer_c": "Oui, mais seulement si la personne conduit elle-même.",
+          "answer_d": "Non, à condition de laisser tourner le moteur.",
+          "explanation": "La CMI stationnement permet en principe le stationnement gratuit. Une redevance peut toutefois être exigée dans les parcs équipés de bornes d’entrée et de sortie utilisables depuis le véhicule : je consulte les conditions du parc."
+        },
+        "en": {
+          "question_text": "I am accompanying a CMI parking-card holder. This car park has entry and exit terminals usable from inside the car. Can a fee still be charged?",
+          "answer_a": "Yes, this exception to free parking is possible.",
+          "answer_b": "No, every car park is always free with the card.",
+          "answer_c": "Yes, but only if the card holder is driving.",
+          "answer_d": "No, provided I leave the engine running.",
+          "explanation": "The CMI parking card generally provides free parking. However, car parks with entry and exit terminals usable from the vehicle may charge a fee; I check the car park’s conditions."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Exception prévue pour ces équipements.",
+        "b": "La gratuité connaît cette exception.",
+        "c": "La place du titulaire dans la voiture n’est pas le critère.",
+        "d": "Le moteur n’a aucun effet sur le tarif."
+      },
+      "en": {
+        "a": "This equipment is covered by the exception.",
+        "b": "Free parking has this exception.",
+        "c": "Who is driving is not the criterion.",
+        "d": "The engine has no effect on the fee."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French car-driving theory scene, 1672x941 or larger. No quiz text, answers, diagram arrows, solution highlights, watermark or brands. Realistic geometry and equipment. Relevant detail must remain clear at390px width. Original close view of one orderly French car-park entrance lane. Generic ticket terminal stands at driver-window height on LEFT of lane. Horizontal red-and-white barrier arm across entrance, straight, hinged at terminal island. Parking area behind, no cars or people. Dark terminal screen and plain ticket slot, no prices, logos, arrows or lettering. Normal raised curb island and paved lane. No motorway features. Low camera at car-window height; no dashboard. Exit-terminal accessibility is a stated condition not required to be visible.",
+    "sources": [
+      {
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34049",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "CMI parking section: fee possible at parks with entry and exit terminals usable from vehicle, current paragraph140 read."
+      }
+    ]
+  },
+  {
+    "scenario_id": "conscious_motorcyclist_leave_helmet_for_rescuers",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver; no professional or motorcycle licence knowledge.",
+    "learning_objective": "Avoid unnecessary helmet removal from a conscious normally breathing road-collision casualty.",
+    "topic": "first_aid.helmet_removal",
+    "scenario": "Car driver assisting a motorcyclist who is conscious and breathing normally, no immediate danger, help alerted; no contrary emergency operator instruction.",
+    "novelty_review": "Full-bank first-aid questions cover compression, CPR, PLS, choking and general waiting care. This new item isolates helmet removal and possible neck movement in a stable conscious casualty. Replaces SOS-access candidate because its nearest existing explanation already forbids crossing for a phone.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_conscious_motorcyclist_leave_helmet_for_rescuers",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Les lieux sont sécurisés et les secours prévenus. Ce motard est conscient, respire normalement et ne court aucun danger immédiat. Sans autre consigne des secours, dois-je lui enlever son casque ?",
+          "answer_a": "Oui, pour examiner systématiquement sa tête.",
+          "answer_b": "Oui, dès qu’il peut me parler.",
+          "answer_c": "Oui, en tirant rapidement vers le haut.",
+          "answer_d": "Non, je laisse les secours s’en charger.",
+          "explanation": "Dans cette situation sans détresse respiratoire ni danger immédiat, je n’enlève pas le casque et j’évite de mobiliser sa tête et son cou. Je rassure le blessé, surveille son état et suis les consignes des secours."
+        },
+        "en": {
+          "question_text": "The scene is safe and help has been called. This motorcyclist is conscious, breathing normally and in no immediate danger. Without another instruction from emergency services, should I remove their helmet?",
+          "answer_a": "Yes, to examine the head routinely.",
+          "answer_b": "Yes, as soon as they can speak to me.",
+          "answer_c": "Yes, by pulling it quickly upwards.",
+          "answer_d": "No, I leave that to the rescuers.",
+          "explanation": "With no breathing emergency or immediate danger in this situation, I do not remove the helmet or unnecessarily move the head and neck. I reassure the casualty, monitor their condition and follow emergency-service instructions."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Pas de retrait pour une inspection de routine.",
+        "b": "La parole ne justifie pas de retirer le casque.",
+        "c": "Une traction risque de mobiliser le cou.",
+        "d": "On évite un geste non nécessaire et attend les secours."
+      },
+      "en": {
+        "a": "No removal for routine inspection.",
+        "b": "Being able to speak does not justify removal.",
+        "c": "Pulling can move the neck.",
+        "d": "Avoid unnecessary intervention and wait for rescuers."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape16:9 French driving theory scene1672x941 or larger. Close respectful photograph of a conscious adult motorcyclist seated still on a wide safe grassy verge after a minor road collision, wearing a normal plain full-face motorcycle helmet with transparent visor raised and chin bar intact. Eyes open and calm expression visible through opening. Dark protective jacket, both arms resting naturally on thighs, no blood or visible injury. Helmet remains on head, strap secured below chin. Only person waist-up, hedge and grass background, road and motorcycle entirely outside crop. No helper handling helmet, no loose body parts, no logos, letters, captions, arrows, highlighting or quiz elements. Accurate helmet and anatomy, natural overcast daylight. Scene depicts current seated position, no instruction to move a casualty; condition supplied in question.",
+    "sources": [
+      {
+        "url": "https://www.interieur.gouv.fr/fr/Archives/Archives-de-la-rubrique-Ma-securite/Securite-routiere/Conseils-pratiques/Que-faire-en-cas-de-panne-ou-d-accident",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "Interior road-collision guidance sectionBlessés106: do not remove motorcyclist helmet. Whole section read; restricted here to conscious normally breathing casualty with no danger, no CPR exception claimed."
+      },
+      {
+        "url": "https://www.interieur.gouv.fr/fr/Archives/Archives-de-la-rubrique-Ma-securite/Votre-securite-en-deux-roues-a-moteur",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "Official indexed advice: leave helmet removal to rescue services after accident."
+      }
+    ]
+  },
+  {
+    "scenario_id": "motorway_stationary_queue_stay_inside",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver; no professional or motorcycle licence knowledge.",
+    "learning_objective": "Distinguish routine queue immobilisation from an emergency evacuation.",
+    "topic": "motorway_stationary_queue_stay_inside",
+    "scenario": "Stationary motorway traffic jam, no fire, medical need or authority evacuation instruction; passenger wants walk between lanes.",
+    "novelty_review": "Breakdown and tunnelfire items require leaving unsafe vehicle. This is the opposite appropriate action under explicitly non-emergency congestion conditions.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_motorway_stationary_queue_stay_inside",
+      "category_slug": "motorways",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Un bouchon immobilise la circulation sur autoroute, sans urgence ni consigne d’évacuation. Mon passager veut sortir se promener entre les voitures. Que lui dire ?",
+          "answer_a": "Il peut sortir, car l’arrêt des voitures transforme la route en zone piétonne.",
+          "answer_b": "De rester dans la voiture : le trafic peut reprendre soudainement.",
+          "answer_c": "De marcher uniquement sur la bande d’arrêt d’urgence.",
+          "answer_d": "De passer d’abord par-dessus la glissière centrale.",
+          "explanation": "Dans un bouchon ordinaire, les voies restent dangereuses et la circulation peut repartir. Les occupants restent dans le véhicule ; une panne, un incendie ou une consigne des secours serait une situation différente."
+        },
+        "en": {
+          "question_text": "A motorway queue is stationary, with no emergency or evacuation instruction. My passenger wants to walk between the cars. What should I say?",
+          "answer_a": "They may get out because stopped traffic makes it a pedestrian zone.",
+          "answer_b": "Stay inside the car: traffic may move again suddenly.",
+          "answer_c": "Walk only on the emergency lane.",
+          "answer_d": "Climb over the central barrier first.",
+          "explanation": "In an ordinary queue, the lanes remain dangerous and traffic can restart. Occupants stay in the vehicle; a breakdown, fire or emergency-service instruction would be a different situation."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "La nature de la voie ne change pas.",
+        "b": "Le trafic peut repartir et exposer le piéton.",
+        "c": "La bande d’urgence n’est pas une promenade.",
+        "d": "La glissière centrale n’est pas un accès piéton."
+      },
+      "en": {
+        "a": "The road does not become a pedestrian zone.",
+        "b": "Traffic may restart and endanger someone outside.",
+        "c": "The emergency lane is not a footpath.",
+        "d": "The central barrier is not pedestrian access."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French car-driving theory scene, 1672x941 or larger. No quiz text, answers, diagram arrows, solution highlights, watermark or brands. Realistic geometry and equipment. Relevant detail must remain clear at390px width. Original driver view through windscreen in a stationary French motorway queue. Two lanes in our direction, a blue hatchback ahead in right lane and gray hatchback ahead in left lane, both clear rear views with normal red rear lamps, no visible people outside. Generous waiting gap. Three or four further cars at distance but no unreadable large signs. Concrete median far left, steel guardrail right, two-lane straight geometry, white broken divider with realistic spacing, dry daylight. Minimal dark bonnet edge; no steering wheel, phone or dashboard numbers. Frame car rears to avoid readable registration strings, no invented text.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842313/",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "R421-2 prohibits pedestrians on motorways."
+      },
+      {
+        "url": "https://www.vinci-autoroutes.com/fr/conseils/securite/bouchon-autoroute/",
+        "kind": "operator",
+        "checked_on": "2026-10-11",
+        "supports": "VINCI advice: do not leave vehicle in queue; traffic can restart. Indexed substantive passage read, page parser returned only heading."
+      }
+    ]
+  },
+  {
+    "scenario_id": "driver_mat_secure_no_stacking",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver; no professional or motorcycle licence knowledge.",
+    "learning_objective": "Keep driver pedals free by securing one suitable floor mat and avoiding stacked mats.",
+    "topic": "driver_mat_secure_no_stacking",
+    "scenario": "Before setting off, preparing driver footwell; no moving-car intervention.",
+    "novelty_review": "No existing floor-mat item. Distinct mechanical obstruction of pedals, not general seatbelt/headrest/phone distraction.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_driver_mat_secure_no_stacking",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a",
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Avant de partir, je vérifie le tapis côté conducteur. Quelles précautions sont correctes ?",
+          "answer_a": "Utiliser un tapis adapté et correctement fixé.",
+          "answer_b": "Superposer un second tapis pour mieux protéger le premier.",
+          "answer_c": "Vérifier qu’aucune pédale n’est gênée dans sa course.",
+          "answer_d": "Laisser le tapis libre pour pouvoir le pousser en roulant.",
+          "explanation": "Un tapis inadapté, mal fixé ou superposé peut bloquer une pédale. Avant le départ, je garde un seul tapis prévu pour le véhicule, fixé selon la notice, et je vérifie le libre mouvement des pédales."
+        },
+        "en": {
+          "question_text": "Before setting off I check the driver’s floor mat. Which precautions are correct?",
+          "answer_a": "Use a suitable mat secured correctly.",
+          "answer_b": "Stack another mat over it to protect the first one.",
+          "answer_c": "Check that every pedal can move freely.",
+          "answer_d": "Leave the mat loose so I can push it away while driving.",
+          "explanation": "An unsuitable, loose or stacked mat can obstruct a pedal. Before departure I use one mat designed for the vehicle, secure it as instructed and check that the pedals can move freely."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Il doit rester en place.",
+        "b": "Les tapis superposés peuvent bloquer une pédale.",
+        "c": "La course doit être libre.",
+        "d": "Un tapis mobile peut se coincer."
+      },
+      "en": {
+        "a": "It needs to stay in place.",
+        "b": "Stacked mats may block a pedal.",
+        "c": "Pedal travel must remain clear.",
+        "d": "A loose mat can become trapped."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French car-driving theory scene, 1672x941 or larger. No quiz text, answers, diagram arrows, solution highlights, watermark or brands. Realistic geometry and equipment. Relevant detail must remain clear at390px width. Original well-lit close photograph of an unoccupied LEFT-HAND-DRIVE automatic car driver footwell. Exactly TWO pedals: wide rectangular black rubber brake at LEFT and narrow accelerator at RIGHT, sensible spacing. One fitted plain black floor mat flat on carpet, two secured anchor points at its rear edge near camera, mat front edge well below pedals leaving all travel clear. No third pedal, no stacked mats, shoes, loose objects, hands, logos or letters. Open driver door gives daylight. Photorealistic physical linkages, not a diagram.",
+    "sources": [
+      {
+        "url": "https://www.fordservicecontent.com/Ford_Content/vdirsnet/OwnerManual/Home/Content?ProcUid=G1448653&Uid=G2051163&buildtype=web&countryCode=FRA&div=f&languageCode=fr&moidRef=G1405403&userMarket=che&vFilteringEnabled=False&variantid=8421",
+        "kind": "manufacturer",
+        "checked_on": "2026-10-11",
+        "supports": "Original Ford floor-mat manual: appropriate anchored mat, no stacking, free pedals. Full safety section read."
+      }
+    ]
+  },
+  {
+    "scenario_id": "borrowed_car_seat_then_mirrors_before_departure",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver; no professional or motorcycle licence knowledge.",
+    "learning_objective": "Personalise seating and rearward vision before moving an unfamiliar car.",
+    "topic": "borrowed_car_seat_then_mirrors_before_departure",
+    "scenario": "Borrowed passenger car stationary before departure, previous driver very different height.",
+    "novelty_review": "Head-restraint item covers neck protection, licencevision correction; this concerns seat and mirror fit after driver change, not headrest or blindspotmonitor.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_borrowed_car_seat_then_mirrors_before_departure",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b",
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Je prends une voiture conduite auparavant par une personne d’une taille différente. Avant de démarrer, que dois-je faire ?",
+          "answer_a": "Garder tous ses réglages puisqu’elle a pu conduire ainsi.",
+          "answer_b": "Adapter le siège et la position de conduite à ma morphologie.",
+          "answer_c": "Attendre d’être sur la route pour régler les rétroviseurs.",
+          "answer_d": "Régler les rétroviseurs depuis ma position de conduite.",
+          "explanation": "Les réglages du conducteur précédent ne me conviennent pas forcément. À l’arrêt, je m’installe pour maîtriser les commandes, puis je règle les rétroviseurs depuis cette position afin de surveiller correctement l’arrière et les côtés."
+        },
+        "en": {
+          "question_text": "I am taking a car previously driven by someone of a different height. What should I do before setting off?",
+          "answer_a": "Keep all their settings because they managed to drive with them.",
+          "answer_b": "Adjust the seat and driving position to fit me.",
+          "answer_c": "Wait until I am on the road to adjust the mirrors.",
+          "answer_d": "Adjust the mirrors from my driving position.",
+          "explanation": "The previous driver’s settings may not suit me. While stationary, I position myself to control the vehicle, then set the mirrors from that position so I can monitor behind and beside the car."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Les morphologies sont différentes.",
+        "b": "La maîtrise des commandes dépend de l’installation.",
+        "c": "Ces réglages se font avant le départ.",
+        "d": "Le champ réfléchi dépend de la position du conducteur."
+      },
+      "en": {
+        "a": "Body sizes differ.",
+        "b": "Control access depends on seating position.",
+        "c": "These adjustments belong before departure.",
+        "d": "The reflected field depends on driver position."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French car-driving theory scene, 1672x941 or larger. No quiz text, answers, diagram arrows, solution highlights, watermark or brands. Realistic geometry and equipment. Relevant detail must remain clear at390px width. Photorealistic view through open driver door of a parked LEFT-HAND-DRIVE passenger car, EMPTY driver seat clearly visible with seat-position lever on outer lower side. Left steering wheel, normal seatback and head restraint, exterior mirror beyond open door, no people. Tight interior crop, dashboard display off dark, no readable gauges or tiny button labels, no logos. Seatbelt hanging naturally at pillar not tangled. Clean realistic seat rails and one seat cushion, ordinary neutral upholstery, daytime. Image shows adjustment context, no solution arrows or ideal posture demonstration.",
+    "sources": [
+      {
+        "url": "https://validation.securite-routiere.gouv.fr/sites/default/files/2024-09/dsr_guide_bon_conducteur.pdf",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "DSR guide installation section: adjust seat and mirrors before starting. Full indexed installation passage read; direct PDF unavailable."
+      }
+    ]
+  },
+  {
+    "scenario_id": "empty_roof_box_remove_after_holiday",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver; no professional or motorcycle licence knowledge.",
+    "learning_objective": "Remove unused roof accessories to reduce aerodynamic drag and fuel consumption.",
+    "topic": "empty_roof_box_remove_after_holiday",
+    "scenario": "Holiday ended, empty roof box no longer needed; car parked before removal.",
+    "novelty_review": "OldB12 tests totalheight, roofloadtestssecureattachment and ecoanticipation drivingstyle. New objective unnecessary aerodynamic drag of an empty accessory.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_empty_roof_box_remove_after_holiday",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Les vacances sont terminées et ce coffre de toit vide ne me sert plus. Pour limiter la consommation, quelle action est utile ?",
+          "answer_a": "Le garder, puisqu’un coffre vide n’a aucun effet.",
+          "answer_b": "L’ouvrir pendant les trajets.",
+          "answer_c": "Le démonter avec ses supports inutiles, selon la notice.",
+          "answer_d": "Ajouter du poids dedans pour stabiliser l’air.",
+          "explanation": "Même vide, un coffre de toit augmente la résistance à l’air et peut faire consommer davantage. Une fois inutile, je le démonte avec les accessoires amovibles concernés, à l’arrêt et en suivant la notice."
+        },
+        "en": {
+          "question_text": "The holiday is over and I no longer need this empty roof box. What helps limit fuel consumption?",
+          "answer_a": "Keep it because an empty box has no effect.",
+          "answer_b": "Leave it open while driving.",
+          "answer_c": "Remove it and its unused supports as instructed.",
+          "answer_d": "Add weight inside to stabilise the air.",
+          "explanation": "Even empty, a roof box increases aerodynamic drag and can raise fuel consumption. Once it is no longer needed, I remove it and the relevant removable accessories while parked, following the instructions."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "La résistance à l’air subsiste.",
+        "b": "Rouler coffre ouvert serait dangereux.",
+        "c": "On supprime un accessoire inutile qui accroît la traînée.",
+        "d": "Ajouter une masse est inutile."
+      },
+      "en": {
+        "a": "Aerodynamic resistance remains.",
+        "b": "Driving with it open is unsafe.",
+        "c": "This removes unnecessary drag.",
+        "d": "Extra mass is unnecessary."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French car-driving theory scene, 1672x941 or larger. No quiz text, answers, diagram arrows, solution highlights, watermark or brands. Realistic geometry and equipment. Relevant detail must remain clear at390px width. Original side three-quarter photograph of a parked ordinary silver estate passenger car with a CLOSED streamlined plain dark gray roof box correctly attached to two transverse roof bars. Close upper-half crop showing entire box and both supports, car roof, side windows and upper doors only, no registration. Quiet private driveway, hedge background, no people, signs or text. No loose straps or luggage. Empty state and no-longer-needed are facts supplied in question, not visible. Natural daylight and realistic car/box proportions.",
+    "sources": [
+      {
+        "url": "https://www.morbihan.gouv.fr/Actions-de-l-Etat/Transports-deplacements-et-securite-routiere/Securite-routiere/Les-conseils-de-la-securite-routiere/Bien-preparer-les-longs-trajets",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "Prefecture guidance: remove roof accessories after use to avoid unnecessary consumption; indexed text read, direct page502."
+      },
+      {
+        "url": "https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "ADEME current advice paragraph39 remove unused roof box/racks. Full page read. No numeric consumption claim used."
+      }
+    ]
+  },
+  {
+    "scenario_id": "ecall_automatic_serious_crash_location",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver; no professional or motorcycle licence knowledge.",
+    "learning_objective": "Recognise automatic emergency alert and location transmission after severe collision.",
+    "topic": "ecall_automatic_serious_crash_location",
+    "scenario": "Car explicitly equipped with functioning eCall112; occupants unable to call after severe detected collision, system operation asked.",
+    "novelty_review": "Existing eCallitem concerns accidentalmanualbuttonpress and nothangingup. New objective automatictrigger when occupants cannotcall, including accidentlocation; officialexamtopic.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_ecall_automatic_serious_crash_location",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Ma voiture dispose de l’eCall 112. Quel est son rôle prévu si un choc grave est détecté et que les occupants ne peuvent pas téléphoner ?",
+          "answer_a": "Appeler automatiquement les secours et transmettre la localisation.",
+          "answer_b": "Réparer automatiquement les dégâts du véhicule.",
+          "answer_c": "Prévenir uniquement mon garagiste par courrier.",
+          "answer_d": "Attendre obligatoirement qu’un témoin appuie sur le bouton.",
+          "explanation": "L’eCall 112 est conçu pour déclencher automatiquement un appel après un accident grave et transmettre notamment la position du véhicule. Cette alerte peut aider les secours même si les occupants ne peuvent pas appeler eux-mêmes."
+        },
+        "en": {
+          "question_text": "My car has 112-based eCall. What is it designed to do if a serious crash is detected and the occupants cannot make a call?",
+          "answer_a": "Automatically call emergency services and transmit the location.",
+          "answer_b": "Automatically repair the vehicle’s damage.",
+          "answer_c": "Notify only my garage by post.",
+          "answer_d": "Always wait for a witness to press the button.",
+          "explanation": "112-based eCall is designed to trigger an automatic emergency call after a serious collision and transmit information including the vehicle’s location. It can alert help even when occupants cannot make the call themselves."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Fonction d’alerte automatique du système.",
+        "b": "Ce n’est pas un dispositif de réparation.",
+        "c": "L’alerte vise les secours immédiatement.",
+        "d": "Le déclenchement peut être automatique."
+      },
+      "en": {
+        "a": "This is the automatic alert function.",
+        "b": "It is not a repair device.",
+        "c": "It alerts emergency services immediately.",
+        "d": "It can activate automatically."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape 16:9 French car-driving theory scene, 1672x941 or larger. No quiz text, answers, diagram arrows, solution highlights, watermark or brands. Realistic geometry and equipment. Relevant detail must remain clear at390px width. Original close realistic photograph of a passenger-car overhead console with a single recessed emergency-call button clearly marked SOS in three crisp WHITE uppercase letters on dark red button, protected by small closed transparent cover. Two ordinary reading-light lenses symmetrically adjacent, roof upholstery around. No hands, no other labels or buttons, no logo, no screen, no wreck shown. Natural daylight. Button not highlighted by arrows or artificial glow; simple contextual equipment view. Automatic eCall capability supplied by wording, not inferred from every SOS button.",
+    "sources": [
+      {
+        "url": "https://www.securite-routiere.gouv.fr/sites/default/files/2020-03/exemples%2Bde%2B30%2Bquestions%2B-%2Breponses%2Bde%2Bla%2Bnouvelle%2Bepreuve%2Bdu%2Bcode%2Bde%2Bla%2Broute%2B%2811%2Bmai%2B2016%29.pdf",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "Official example14: eCall serious collision automaticalert+geolocation. Used topic only; original questions/images, not historic2percentstat or old futureequipmentdate."
+      },
+      {
+        "url": "https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency-assistance-vehicles-ecall/index_fr.htm",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "CurrentYourEurope27Jan2026: automatic112seriouscrash and minimal locationdata; paragraphs471–475 read."
+      }
+    ]
+  }
+]

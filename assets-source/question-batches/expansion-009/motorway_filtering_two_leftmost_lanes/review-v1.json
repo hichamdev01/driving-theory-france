@@ -1,0 +1,6 @@
+{
+  "proposal_sha256": "5df4d391ed178720c2b90be6facebec51ece544556553f55350cc54719532ddc",
+  "image_sha256": "4e78b16be08ce0deb0e745c004ac907321da230f4526b50fb8baf7e8f8b36952",
+  "result": "reject",
+  "notes": "Rejected: the visible motorway hard-shoulder boundary is continuous throughout, rather than a French T4 long broken boundary. Review lane-divider scale during correction as well."
+}

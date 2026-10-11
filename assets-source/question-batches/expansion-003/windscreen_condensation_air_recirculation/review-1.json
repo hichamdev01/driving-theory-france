@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+  "proposal_sha256": "65e3bc7fbbd2c73bb615ba763f098d3f244c9636ef1be0b5784dd7cead950985",
+  "image_sha256": "fec5dea24101c66b244206ffd2f925fa357e7dfca60969d9a8bf192a0dda43cf",
+  "compared_question_keys": [
+    "situation_motorway_exit_deceleration",
+    "situation_roundabout_inner_lane_yield_outer",
+    "situation_ecall_accidental_connected_call",
+    "situation_motorway_friend_tow_offer",
+    "situation_fatigue_medicine_effects_amplified"
+  ],
+  "checks": {
+    "official_rule": "Renault manual describes demist airflow and return to fresh air; prolonged recirculation can encourage fogging. No claim AC operates at every temperature.",
+    "signs_and_text": "No signs, symbols or text shown; question asks function rather than identifying an unseen button.",
+    "road_geometry": "Private driveway with closed gate; no implication that the car is being driven with obstructed vision.",
+    "vehicles_and_people": "No occupants, moving vehicles or pedestrians. Trees and house beyond glass.",
+    "dashboard_and_equipment": "Fine interior moisture and clear patch, unobstructed demister slot, plausible pillar and dashboard. No ice or wiper streaks suggesting another task.",
+    "phone_size": "The misted glass and obstructed right-side view remain obvious at phone size.",
+    "french_and_english": "FR/EN explicitly stopped safely, manual ventilation, inside condensation. Two distinct correct actions A and D; not a frost-scraping repeat.",
+    "novelty": "Existing frost question tests clearing outside ice before departure. This tests ventilation settings for inside humidity, including stopping recirculation. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+    "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. No occupants, moving vehicles or pedestrians. Trees and house beyond glass. Fine interior moisture and clear patch, unobstructed demister slot, plausible pillar and dashboard. No ice or wiper streaks suggesting another task.",
+    "all_four_options": "Correct set A,D. A: Airflow should reach the windscreen. B: Prolonged recirculation can encourage misting. C: Stopping airflow does not clear moisture effectively. D: Fresh air replaces humid cabin air. Four distinct options in both languages."
+  }
+}

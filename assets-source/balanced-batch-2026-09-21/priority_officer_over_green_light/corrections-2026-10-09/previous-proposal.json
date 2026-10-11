@@ -1,0 +1,51 @@
+{
+  "sequence": 8,
+  "scenario_id": "priority_officer_over_green_light",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives or prepares a normal passenger car; no specialist vehicle operating rules.",
+  "learning_objective": "Obey an officer’s stop instruction despite a green light",
+  "references": [
+    "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842090"
+  ],
+  "novelty_review": "No existing question tests the hierarchy of an officer’s directions over traffic lights; distinct from green-light blocked junctions or pedestrian priority.",
+  "scenario": "Driver-eye view approaching a French urban intersection in right-hand traffic. Learner is still before the white stop line. A clearly identifiable French traffic police officer in navy uniform and high-visibility vest stands in centre of junction FACING learner and raises one open palm toward learner in an unmistakable stop gesture. A standard vertical traffic light on the right roadside facing learner has ONLY bottom GREEN lamp lit, upper red and amber dark; small repeater likewise green. Officer distant enough for no identifiable face, no weapon in hands, no police vehicle blocking scene. Daylight, clear coherent intersection.",
+  "image_prompt": "Use case: photorealistic-natural. Create ONE realistic educational photograph for a French Code de la Route passenger-car question. Landscape 16:9, preferably 2048x1152. Contemporary France, natural photographic colours and exposure, physically plausible perspective. Driver-eye view approaching a French urban intersection in right-hand traffic. Learner is still before the white stop line. A clearly identifiable French traffic police officer in navy uniform and high-visibility vest stands in centre of junction FACING learner and raises one open palm toward learner in an unmistakable stop gesture. A standard vertical traffic light on the right roadside facing learner has ONLY bottom GREEN lamp lit, upper red and amber dark; small repeater likewise green. Officer distant enough for no identifiable face, no weapon in hands, no police vehicle blocking scene. Daylight, clear coherent intersection. No quiz panel, question text, answer choices, highlighted answer, watermark, instructional overlay, collage or invented road signs. Any cars use French-style plates with unreadable small characters. This is a scene photograph, not an infographic.",
+  "question": {
+    "key": "situation_priority_officer_over_green_light",
+    "category_slug": "priority_rules",
+    "correct_answer": "d",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Le feu est vert, mais l’agent qui règle la circulation m’ordonne de m’arrêter. Que dois-je faire ?",
+        "answer_a": "Passer puisque le feu est vert.",
+        "answer_b": "Suivre la voiture précédente sans m’arrêter.",
+        "answer_c": "Klaxonner pour demander à l’agent de s’écarter.",
+        "answer_d": "M’arrêter et suivre les indications de l’agent.",
+        "explanation": "Les indications d’un agent qui règle la circulation priment sur les feux, les panneaux et les règles habituelles. Je respecte donc son ordre d’arrêt, même si mon feu est vert."
+      },
+      "en": {
+        "question_text": "The light is green, but the officer directing traffic orders me to stop. What should I do?",
+        "answer_a": "Proceed because the light is green.",
+        "answer_b": "Follow the car ahead without stopping.",
+        "answer_c": "Sound the horn to ask the officer to move.",
+        "answer_d": "Stop and follow the officer’s directions.",
+        "explanation": "An officer’s traffic directions take precedence over lights, signs and the usual traffic rules. Obey the instruction to stop even though the light is green."
+      }
+    }
+  },
+  "state": "imported",
+  "edit_prompt_path": "assets-source/balanced-batch-2026-09-21/priority_officer_over_green_light/edit-prompt.md",
+  "original_native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-7fc26044-be17-4dcd-8992-3964993f063d.png",
+  "generation_method": "built-in image_gen",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-495ade00-1365-422a-b393-15392f856678.png",
+  "native_image_sha256": "bcd857545154f136f3b6a35c86c3ccd2955f27135800229a219e94d0ea4abd2b",
+  "image_path": "assets-source/balanced-batch-2026-09-21/priority_officer_over_green_light/scene.jpg",
+  "image_sha256": "9d5257290ed8f90c65e4759a90e1a99a5e8427464bc3103edf961d67b4310c47",
+  "visual_review": "Corrected scene reviewed: officer faces learner with raised open palm, main signal and repeater green, other lamps unlit; learner before crossing/stop line. Incidental direction signs and distant no-parking sign removed. D follows R411-28 in FR/EN; no ambiguity about obeying officer.",
+  "reviewed_on": "2026-09-21",
+  "reviewed_sha256": "5aa8cb30fdb5018b69527afc8cb1103990e2612a93805697cf33303fa4b17b84",
+  "question_key": "situation_priority_officer_over_green_light",
+  "imported_content_version": 89,
+  "imported_on": "2026-09-21"
+}

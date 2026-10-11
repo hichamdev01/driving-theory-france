@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "10001473c8318ec59be8c4da40d6cffc49ae6d9daa8e7a100fe8f7a8f350afb6",
+  "image_sha256": "efbdf06a7ec17069209ed7f918b4e87a95b51f05abb24b4efc805d26caaae3eb",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+  "compared_question_keys": [
+    "situation_refuse_alcohol_verification_offence",
+    "situation_injury_collision_alcohol_verification",
+    "situation_refuse_drug_verification_offence",
+    "situation_breath_test_probationary_limit",
+    "situation_alcohol_0_40mg_offence"
+  ],
+  "checks": {
+    "official_rule": "Dépistage and vérification sections explicitly separate ethylotest screening from ethylomètre precise breath measurement; read current page.",
+    "novelty": "Existing refusal question tests illegality of refusing verification; quantitative tests ask thresholds. New objective is identifying why a second instrument is used after positive screening. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+    "signs_and_text": "No signs, plates, digits or invented labels. Small standard power symbol on one button.",
+    "road_geometry": "No road decision encoded; table and parked-car side only.",
+    "vehicles_and_people": "No person; plausible car door/handle/mirror in background, no required movement inferred.",
+    "dashboard_and_equipment": "Handheld breath analyser with mouthpiece, blank display, buttons and fitted protective case; no result claimed from picture.",
+    "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. No signs, plates, digits or invented labels. Small standard power symbol on one button. Handheld breath analyser with mouthpiece, blank display, buttons and fitted protective case; no result claimed from picture.",
+    "phone_size": "At390px mouthpiece and analyser remain visible. Procedural identity stated in wording so no dependence on a tiny model label.",
+    "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. Roadside alcohol screening ethylotest positive; officers proceed to verification. Question does not ask refusal/penalty/threshold.",
+    "all_four_options": "Correct set b. {'fr': {'a': 'Une mesure n’élimine pas l’alcool.', 'b': 'La vérification établit le taux.', 'c': 'Ce dispositif mesure l’alcool.', 'd': 'Ce n’est pas un contrôle d’assurance.'}, 'en': {'a': 'Measurement does not remove alcohol.', 'b': 'Verification establishes the concentration.', 'c': 'This instrument measures alcohol.', 'd': 'It does not check insurance.'}}"
+  }
+}

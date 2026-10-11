@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "6086622724673761af246387e88ddda0a3e2c69c804ed8054f3eecf41d697375",
+  "image_sha256": "7370bd9a50da05499959dce8f055290e1f03df4d5edfcd88573cec0da36aede0",
+  "result": "pass",
+  "notes": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+  "compared_question_keys": [
+    "situation_ev_charge_cable_cut_insulation",
+    "situation_brake_fluid_below_min",
+    "situation_electric_car_finished_charging_leave_bay",
+    "situation_driver_mat_secure_no_stacking",
+    "situation_ev_charger_blocked_parking"
+  ],
+  "checks": {
+    "signs_and_text": "No legal signs, labels, overlays or answer highlights. Wall socket cover closed; no unreadable charging specifications are needed.",
+    "road_geometry": "Dry level private garage with parked EV, wall socket and extension reel. No public road, traffic marking or collision geometry.",
+    "vehicles_and_people": "One stationary EV with closed charging flap, coherent rear quarter/wheel/light. No people handling live equipment. Bicycle and shelves in background physically plausible.",
+    "dashboard_and_equipment": "Second candidate fixes loose plug to two projecting round pins with recessed earth contact. Four reel sockets, cable, handle and covered wall outlet coherent; nothing is connected. Reel represents proposed unsuitable equipment, not endorsed practice.",
+    "phone_size": "At 390px the reel, car, covered outlet and disconnected cable are recognisable. Pin detail inspected at full resolution; no solution depends on recognising tiny plug contacts.",
+    "french_and_english": "Both say charging cable does not reach household socket; this fact is supplied, not measured from scene. Both recommend no extension/power strip and professional installation check under manufacturer guidance.",
+    "all_four_options": "BD: no inserted extension/power strip and professional socket/installation check. A unwinding domestic lead does not make it suitable; C new power strip is still unsuitable. Both translations preserve exact multiple-answer set.",
+    "official_rule": "Sources read and checked 2026-10-11; research-and-selection.json records facts and limitations. Renault instructions prohibit extension leads/adaptors/multiple sockets and require professional verification of domestic socket installation against charging specifications. Source: https://www.user-manual.renault.com/fr/v%C3%A9hicule-%C3%A9lectrique/charge-2",
+    "novelty": "Existing EV item rejects damaged insulation; this rejects intact but unsuitable added domestic extension/multiple sockets and requires checking the supply installation. All five saved nearest questions, including bilingual options/explanations, compared as recorded in research-and-selection.json; broader current bank screened.",
+    "full_resolution": "Inspected entire final staged JPEG 1672x941, plus 390px preview, against both translations and all four options. Rejected earlier candidates remain in history. No detected unresolved defect in this version."
+  }
+}

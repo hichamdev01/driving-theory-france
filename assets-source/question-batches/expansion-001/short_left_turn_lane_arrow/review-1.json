@@ -1,0 +1,6 @@
+{
+  "result": "reject",
+  "notes": "Reject: the road ends at a T junction instead of the through lane continuing; both arrows use square-elbow broad-head geometry inconsistent with inspected French annex B2 reference.",
+  "proposal_sha256": "09f68e02f4ec5b41c11713a5638332b45867c9f9f77950a7aa776fa336d46965",
+  "image_sha256": "914213123f3321d1da1c1851c5d637ae64616347680dd53539456698d050e04f"
+}

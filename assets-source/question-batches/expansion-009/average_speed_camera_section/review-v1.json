@@ -1,0 +1,6 @@
+{
+  "proposal_sha256": "e55338cd10a3ffc9a470e1c1d2b04790a165cb2bfbd14671c6882015addfe6f9",
+  "image_sha256": "4533a00f7c1c9b324f436347eb120e2e56d4ca56b4b1e3e5d62f4ceef1ff6501",
+  "result": "reject",
+  "notes": "Rejected: centre-line paint/gap proportions look nearly equal on this ordinary rural road, leaving an ambiguous nonstandard marking. Remove unnecessary road paint; the question explicitly establishes average-speed enforcement and does not depend on markings."
+}

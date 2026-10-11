@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+  "proposal_sha256": "ffe6c5ed08fe435b8a732a7ffa2c0fcf7b663fb7fd7a140deb382af743ae9590",
+  "image_sha256": "6a5614a00d2388cbdd46661f4135278f26281a446abb47fa0a3e938c8dee8b2d",
+  "compared_question_keys": [
+    "situation_triangle_placement_personal_danger",
+    "situation_urban_default_50",
+    "situation_night_unlit_roadside_position_lights",
+    "situation_no_motor_vehicles",
+    "situation_dual_carriageway_default_110"
+  ],
+  "checks": {
+    "official_rule": "Service Public F1362 verified April2026: green sticker/card discontinued April2024 for French-registered vehicles; insurance remains compulsory and FVA verifies. No claim sticker absence establishes actual policy status.",
+    "signs_and_text": "No sticker or certificate, no readable text or sign in windshield close-up.",
+    "road_geometry": "Private-driveway illustration; no road-control geometry or parking claim.",
+    "vehicles_and_people": "Only part of ordinary passenger car exterior; no people, registration plate or privacy details.",
+    "dashboard_and_equipment": "Resting wiper, seal, dotted ceramic glass edge, bonnet and dashboard plausible. Missing insurance sticker is shown without claiming CT exemption.",
+    "phone_size": "Empty lower glass area and resting wiper remain clear at phone size; FVA facts in text.",
+    "french_and_english": "FR/EN both specify France registration and ask inference from absence. D is right; insurance-optional distractor C explicitly false.",
+    "novelty": "No FVA or insurance-proof question in bank or pending work. Distinct from technical inspection proof. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+    "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. Only part of ordinary passenger car exterior; no people, registration plate or privacy details. Resting wiper, seal, dotted ceramic glass edge, bonnet and dashboard plausible. Missing insurance sticker is shown without claiming CT exemption.",
+    "all_four_options": "Correct set D. A: The sticker requirement ended in April 2024. B: Age does not exempt a car from insurance. C: Insurance is still compulsory. D: No sticker does not prove there is no policy. Four distinct options in both languages."
+  }
+}

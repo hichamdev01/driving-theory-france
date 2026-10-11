@@ -1,0 +1,6 @@
+{
+  "proposal_sha256": "035f5ae223f720212756247b518591efe51162005483420b7c0d662bc5af87a1",
+  "image_sha256": "2642a0f0eb1cb12afc37987872592bdcdcce59c2bdb8fd1770f52d5f63e03254",
+  "result": "reject",
+  "notes": "Return arrows too short and broad, incorrectly compact spacing with only one short dash between. Does not match IISR B1 slender six-metre shape or long-dash warning line arrangement."
+}

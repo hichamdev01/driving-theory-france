@@ -1,0 +1,622 @@
+[
+  {
+    "scenario_id": "loaded_car_exceeds_own_ptac",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+    "learning_objective": "Compare actual loaded car mass with its own authorised mass, not the B-licence ceiling.",
+    "topic": "vehicle.loading_ptac",
+    "scenario": "Car PTAC1900kg measured2000kg including occupants,luggage,fuel. No road mass-restriction sign.",
+    "novelty_review": "B13 compares PTAC with a road access threshold; roof load tests secure attachment. This tests overloading the vehicle itself despite being under3.5t.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_loaded_car_exceeds_own_ptac",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Ma voiture a un PTAC de 1 900 kg. Prête à partir, elle pèse 2 000 kg, occupants et bagages compris. Puis-je rouler ainsi ?",
+          "answer_a": "Oui, puisque je reste sous 3,5 tonnes.",
+          "answer_b": "Non, je dois réduire la charge avant de partir.",
+          "answer_c": "Oui, si les bagages sont bien attachés.",
+          "answer_d": "Oui, en augmentant la pression des pneus.",
+          "explanation": "Le poids réel de la voiture chargée ne doit pas dépasser son propre PTAC. Ici, 2 000 kg dépasse 1 900 kg : ni le permis B, ni l’arrimage, ni le gonflage ne rendent cette surcharge autorisée."
+        },
+        "en": {
+          "question_text": "My car has a maximum authorised mass of 1,900 kg. Ready to leave, it weighs 2,000 kg including occupants and luggage. May I drive it like this?",
+          "answer_a": "Yes, because it remains below 3.5 tonnes.",
+          "answer_b": "No; I must reduce the load before leaving.",
+          "answer_c": "Yes, if the luggage is securely fastened.",
+          "answer_d": "Yes, by increasing tyre pressure.",
+          "explanation": "The actual mass of the loaded car must not exceed its own maximum authorised mass. Here, 2,000 kg exceeds 1,900 kg; licence entitlement, secure luggage or tyre pressure cannot authorise that overload."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Le plafond du permis ne remplace pas le PTAC du véhicule.",
+        "b": "La masse réelle excède son PTAC.",
+        "c": "L’arrimage ne réduit pas la masse.",
+        "d": "Le gonflage ne modifie pas le PTAC."
+      },
+      "en": {
+        "a": "The licence ceiling does not replace the car limit.",
+        "b": "Actual mass exceeds authorised mass.",
+        "c": "Securing luggage does not reduce mass.",
+        "d": "Pressure does not change authorised mass."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Close rear-side view into the open boot of a stationary ordinary dark-blue hatchback in a private driveway. Three plain compact suitcases lie flat and low below the parcel-shelf level, secured by a realistic black luggage net attached to four cargo anchor points. Empty folded picnic blanket alongside. No people, no objects above seatback, no plate visible, no road signs or written labels. Rear seatbacks upright, tailgate held by two struts, tail-lamp intact at crop edge. The image illustrates loaded luggage only; exact measured total mass is supplied by the question, not inferred from suspension sag.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032401231/",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "R312-2 prohibits actual vehicle mass exceeding its authorised loaded mass; current article read."
+      }
+    ]
+  },
+  {
+    "scenario_id": "licence_0106_contact_lenses",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+    "learning_objective": "Recognise that licence code01.06 allows the required correction using glasses OR contact lenses.",
+    "topic": "driver.vision_restriction",
+    "scenario": "CategoryB licence explicitly01.06; driver wears prescribed contact lenses giving required correction.",
+    "novelty_review": "EAD scope is covered; no current item tests the optical-code choice. This asks whether appropriate contacts meet01.06, not generic licence restrictions or medicine-blurred vision.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_licence_0106_contact_lenses",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Mon permis B porte le code 01.06. Je porte mes lentilles de contact correctrices adaptées. Est-ce que je respecte cette restriction de vision sans lunettes ?",
+          "answer_a": "Non, les lunettes sont toujours obligatoires en plus.",
+          "answer_b": "Oui, seulement de jour.",
+          "answer_c": "Oui, ce code autorise lunettes ou lentilles de contact.",
+          "answer_d": "Non, ce code interdit toute lentille de contact.",
+          "explanation": "Le code 01.06 prévoit une correction par lunettes ou lentilles de contact. Des lentilles adaptées permettent donc de respecter cette mention ; je conserve la correction nécessaire pendant toute la conduite."
+        },
+        "en": {
+          "question_text": "My category-B licence shows code 01.06. I am wearing my suitable corrective contact lenses. Do I meet this vision restriction without glasses?",
+          "answer_a": "No; glasses must always be worn as well.",
+          "answer_b": "Yes, but only in daylight.",
+          "answer_c": "Yes; this code allows glasses or contact lenses.",
+          "answer_d": "No; this code prohibits all contact lenses.",
+          "explanation": "Code 01.06 allows correction with glasses or contact lenses. Suitable corrective lenses therefore meet this restriction; I must retain the necessary correction throughout the drive."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "01.06 ne demande pas les deux équipements ensemble.",
+        "b": "Aucune condition de jour ne figure dans ce code.",
+        "c": "Le code prévoit bien lunettes ou lentilles.",
+        "d": "Les lentilles sont expressément permises."
+      },
+      "en": {
+        "a": "Both are not required together.",
+        "b": "This code does not specify daylight only.",
+        "c": "Glasses or lenses are permitted.",
+        "d": "Contacts are expressly allowed."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Original close photograph before departure: a plain open contact-lens case with two clean shallow wells on a bathroom counter, with folded ordinary clear-lens prescription spectacles alongside. One open opaque white case cap and one blue cap beside their matching wells, no written L/R or brand. Clean soft daylight, no person or eye procedure, no medicines, licence card, personal document, mirror or tiny text. Realistic spectacles with two lenses and two folded temples. This is context for optical correction; the exact licence code and lenses already worn are stated in the question.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/section_lc/JORFTEXT000025803494/JORFSCTA000025803549/2026-04-01",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "AnnexeI code01.06 explicitly means glasses or contact lenses; distinguished from01.01 and01.02."
+      }
+    ]
+  },
+  {
+    "scenario_id": "abs_warning_stays_on_without_red_brake",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+    "learning_objective": "Distinguish ABS failure from normal activation and complete braking loss.",
+    "topic": "vehicle.abs_failure",
+    "scenario": "After self-test, amberABS stays lit while driving; no red brake/STOP warning, no abnormal pedal. Prompt asks meanings/actions matching manual.",
+    "novelty_review": "Existing ABS pedal pulsation concerns successful emergency activation. This is a persistent fault warning and loss of anti-lock protection, not pumping technique.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_abs_warning_stays_on_without_red_brake",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a",
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Après l’autotest, le voyant ABS reste allumé en roulant, sans alerte rouge de freinage ni anomalie de pédale. Quelles affirmations sont exactes ?",
+          "answer_a": "L’antiblocage peut être indisponible, même si le freinage classique fonctionne.",
+          "answer_b": "Ce voyant prouve que l’ABS protège normalement les roues.",
+          "answer_c": "Je peux ignorer ce défaut jusqu’au prochain contrôle technique.",
+          "answer_d": "Je fais contrôler rapidement le système et conduis avec prudence.",
+          "explanation": "Ce voyant persistant signale un défaut de l’antiblocage, et non son fonctionnement normal. Le freinage peut rester assuré sans ABS ; je suis la notice et fais contrôler rapidement. Une alerte rouge de freinage imposerait une réaction plus urgente."
+        },
+        "en": {
+          "question_text": "After the self-test, the ABS warning stays on while driving, with no red brake warning or abnormal pedal feel. Which statements are correct?",
+          "answer_a": "Anti-lock protection may be unavailable even though conventional braking works.",
+          "answer_b": "This warning proves that ABS is protecting the wheels normally.",
+          "answer_c": "I may ignore the fault until the next roadworthiness test.",
+          "answer_d": "I arrange a prompt system check and drive cautiously.",
+          "explanation": "A persistent ABS warning indicates an anti-lock fault rather than normal operation. Conventional braking may remain available without ABS; I follow the manual and arrange a prompt check. A red brake warning would require a more urgent response."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Freinage classique possible sans antiblocage.",
+        "b": "Un voyant persistant après autotest signale un défaut.",
+        "c": "Le défaut ne doit pas attendre le contrôle périodique.",
+        "d": "Contrôle rapide et prudence suivant la notice."
+      },
+      "en": {
+        "a": "Conventional brakes may work without anti-lock.",
+        "b": "Persistent warning after self-test indicates a fault.",
+        "c": "Do not postpone the fault to periodic inspection.",
+        "d": "Prompt inspection and caution follow the manual."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Tight close-up of a real black car instrument-cluster warning-light strip behind clear glass. One AMBER illuminated standard ABS telltale: exact uppercase letters ABS inside a thin amber circle, with curved amber brackets outside left and right. Symbol sharp and large at centre. Surrounding panel black and unlit, no other lit warnings, no red STOP or brake light, no gauge numerals or text. A small curved edge of dashboard housing at bottom makes it clearly physical equipment, not a floating graphic. Photorealistic glass reflections subtle, entire background dark matte. Only actual ABS symbol is readable. Whether warning persists after self-test is explicitly supplied by the stem.",
+    "sources": [
+      {
+        "url": "https://www.user-manual.renault.com/fr/la-conduite/dispositifs-de-correction-et-dassistance-la-conduite-20",
+        "kind": "manufacturer",
+        "checked_on": "2026-10-10",
+        "supports": "RenaultKoleos ABS fault leaves braking withoutABS; cautious prompt workshop visit. Simultaneous red brake warning indicates grave braking problem, excluded here."
+      }
+    ]
+  },
+  {
+    "scenario_id": "mountain_winter_ms_without_3pmsf",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+    "learning_objective": "Recognise that M+S alone no longer substitutes for chains/socks in regulated winter mountain zones.",
+    "topic": "equipment.winter_tyre_certification",
+    "scenario": "January in a signposted regulated mountain zone. All four tyresM+S only,no3PMSF,nochains/socks.",
+    "novelty_review": "Existing B26 tests fitting carried chains on snow with summer tyres. This tests seasonal zone equipment eligibility and insufficientM+S certification, not when to fit chains.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_mountain_winter_ms_without_3pmsf",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "En janvier, dans une zone de montagne soumise à l’obligation hivernale, mes quatre pneus portent seulement M+S, sans 3PMSF. Je n’ai ni chaînes ni chaussettes. Suis-je correctement équipé ?",
+          "answer_a": "Oui, M+S suffit encore à lui seul.",
+          "answer_b": "Oui, si la route est sèche aujourd’hui.",
+          "answer_c": "Oui, si je reste dans la zone moins d’une heure.",
+          "answer_d": "Non, cette configuration ne satisfait pas l’obligation.",
+          "explanation": "Depuis novembre 2024, des pneus M+S seuls ne remplacent plus les dispositifs antidérapants amovibles dans ces zones. Il faut quatre pneus hiver conformes, marqués 3PMSF, ou détenir des chaînes ou chaussettes adaptées pour au moins deux roues motrices."
+        },
+        "en": {
+          "question_text": "In January, in a mountain zone subject to winter-equipment rules, all four tyres are marked only M+S, without 3PMSF. I have no chains or snow socks. Is my equipment compliant?",
+          "answer_a": "Yes; M+S alone is still enough.",
+          "answer_b": "Yes, if the road is dry today.",
+          "answer_c": "Yes, if I stay in the zone for less than an hour.",
+          "answer_d": "No; this equipment does not meet the requirement.",
+          "explanation": "Since November 2024, M+S-only tyres no longer replace removable anti-skid devices in these zones. I need four compliant 3PMSF winter tyres or suitable chains or snow socks for at least two driven wheels."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "L’équivalence M+S seul a pris fin.",
+        "b": "La règle saisonnière ne dépend pas seulement de la météo du jour.",
+        "c": "Pas d’exception pour séjour bref.",
+        "d": "Il manque un équipement admis."
+      },
+      "en": {
+        "a": "M+S-only equivalence has ended.",
+        "b": "The seasonal requirement is not limited to snowy days.",
+        "c": "Short visits are not exempt.",
+        "d": "An accepted equipment option is missing."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Close realistic photograph of the upper sidewall of a healthy black passenger-car tyre fitted to a silver alloy wheel on a parked car, clean rubber. Clearly moulded raised black text M+S visible on the sidewall near upper centre, lit by soft raking daylight. No three-peak-mountain/snowflake symbol anywhere visible. Crop most other sidewall lettering out of frame rather than invent a full tyre specification. Tread undamaged, vehicle not jacked up, parked on dry asphalt. Soft background of a private garage, no other signs, numbers or people. Text in the question establishes all four tyres lack3PMSF; do not imply a partial photo proves the whole tyre certification.",
+    "sources": [
+      {
+        "url": "https://www.service-public.gouv.fr/particuliers/actualites/A14389",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "2025-26 winter guidance: only3PMSF tyres accepted instead of removable devices; other snow tyres require devices. No temporary weather exemption."
+      },
+      {
+        "url": "https://www.ecologie.gouv.fr/actualites/vrai-du-faux-circulation-cas-neige-verglas",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "January2026 government guidance confirms seasonalNov1–Mar31 regulated communes, four3PMSF tyres or chains/socks for two driven wheels."
+      }
+    ]
+  },
+  {
+    "scenario_id": "yellow_continuous_kerb_no_stopping",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+    "learning_objective": "Identify no-stopping meaning of a continuous yellow kerb marking.",
+    "topic": "markings.continuous_yellow_kerb",
+    "scenario": "Single continuous yellow line painted on top of kerb, no parking bay or works, normal nonemergency dropoff.",
+    "novelty_review": "Broken yellow kerb covers parking-only prohibition. This distinct marking also forbids a brief ordinary passenger dropoff, unlike the broken pattern; no newB6d sign reused.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_yellow_continuous_kerb_no_stopping",
+      "category_slug": "parking_stopping",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Cette ligne jaune continue longe la bordure du trottoir. Puis-je m’y arrêter juste pour laisser descendre un passager, sans urgence ?",
+          "answer_a": "Non, elle interdit aussi l’arrêt.",
+          "answer_b": "Oui, si je reste au volant.",
+          "answer_c": "Oui, pendant moins d’une minute.",
+          "answer_d": "Oui, car seule la nuit est concernée.",
+          "explanation": "Une ligne jaune continue sur la bordure indique une interdiction d’arrêt, donc aussi de stationnement. Un bref dépôt de passager reste un arrêt et n’est pas autorisé ici ; la ligne discontinue aurait une autre portée."
+        },
+        "en": {
+          "question_text": "A continuous yellow line runs along this kerb. May I stop there briefly to let a passenger out, with no emergency?",
+          "answer_a": "No; it also prohibits stopping.",
+          "answer_b": "Yes, if I stay at the wheel.",
+          "answer_c": "Yes, for less than a minute.",
+          "answer_d": "Yes, because it applies only at night.",
+          "explanation": "A continuous yellow kerb line prohibits stopping as well as parking. A brief passenger drop-off is still a stop and is not permitted here; a broken yellow line would have a different meaning."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "L’interdiction vise l’arrêt aussi.",
+        "b": "Rester présent ne lève pas l’interdiction.",
+        "c": "La brièveté ne crée pas d’exception.",
+        "d": "Aucun horaire de nuit seulement."
+      },
+      "en": {
+        "a": "Stopping is prohibited too.",
+        "b": "Remaining present is no exemption.",
+        "c": "Brief duration does not allow it.",
+        "d": "No night-only qualification is shown."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Quiet ordinary French urban street, eye-level oblique view along the RIGHT curb. A single neat uninterrupted YELLOW stripe is painted on the TOP HORIZONTAL surface of the stone kerb for the entire visible street frontage, clearly continuous not dashed. Plain grey asphalt to left, unobstructed pale pavement to right, neutral buildings and a closed garden wall. No parking bays, no zigzags, no cones/roadworks, no signs, people, vehicles, driveways or crossings. Yellow stripe large and continuous at390px width, natural daylight, no unnatural high saturation.",
+    "sources": [
+      {
+        "url": "https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_7epartie_vc_20250404.pdf",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "Current availableIISR7 Article118-2B,p47 and tablep10: continuous yellow kerb marking for prohibited stopping; broken for parking. Read cached officialPDF downloaded earlier."
+      },
+      {
+        "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000031285676",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "2015modification Article8 introduced current118-2B wording, confirmed in2025consolidation."
+      }
+    ]
+  },
+  {
+    "scenario_id": "speed_narrows_useful_visual_field",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+    "learning_objective": "Understand that speed concentrates useful vision ahead and reduces peripheral hazard detection.",
+    "topic": "speed.peripheral_observation",
+    "scenario": "Increasing speed on an open road; question about useful visual field, not measured optical angle or exact speed visible.",
+    "novelty_review": "Existing speed questions cover limits, stopping distance and adaptation to specific hazards. None tests speed’s narrowing of useful peripheral observation.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_speed_narrows_useful_visual_field",
+      "category_slug": "speed_limits",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Quand ma vitesse augmente fortement, mon champ de vision utile tend à se rétrécir. Quelle conséquence dois-je anticiper ?",
+          "answer_a": "Je repère mieux les dangers sur les côtés.",
+          "answer_b": "Mes rétroviseurs suppriment tous les angles morts.",
+          "answer_c": "Je risque de repérer plus tard un danger sur le côté.",
+          "answer_d": "Je n’ai plus besoin de regarder loin devant.",
+          "explanation": "À grande vitesse, l’attention visuelle se concentre davantage vers l’avant et les informations périphériques sont moins bien perçues. Réduire l’allure aide à observer les côtés et laisse davantage de temps pour réagir."
+        },
+        "en": {
+          "question_text": "As my speed rises substantially, my useful field of vision tends to narrow. What consequence should I expect?",
+          "answer_a": "I detect hazards at the sides better.",
+          "answer_b": "My mirrors eliminate every blind spot.",
+          "answer_c": "I may notice a hazard at the side later.",
+          "answer_d": "I no longer need to look well ahead.",
+          "explanation": "At high speed, visual attention becomes more concentrated ahead and peripheral information is less readily noticed. Reducing speed helps observation at the sides and gives more time to respond."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "La perception périphérique diminue au contraire.",
+        "b": "La vitesse ne supprime aucun angle mort.",
+        "c": "Les informations latérales risquent d’être détectées plus tard.",
+        "d": "L’anticipation loin devant demeure nécessaire."
+      },
+      "en": {
+        "a": "Peripheral perception instead decreases.",
+        "b": "Speed does not eliminate blind spots.",
+        "c": "Lateral information may be detected later.",
+        "d": "Looking ahead remains necessary."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Original wide natural daylight road photograph from a car travelling on the RIGHT of a quiet straight French two-way rural road. White broken centreline left of camera lane, grassy verges, roadside trees and open fields on both sides, clear horizon. No other vehicles, people, signs, intersections or readable text, no dashboard. Crisp normal photographic focus across scene: DO NOT draw tunnel-vision masks, vignette, blur cones, shaded field-of-view graphics or speed annotations. This is neutral road context; the question describes a general perceptual effect, not a speed inferred from the image.",
+    "sources": [
+      {
+        "url": "https://www.securite-routiere.gouv.fr/sites/default/files/2021-07/depliant-la_vue-v3.pdf",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "Sécurité routière, La vue (July 2015 leaflet, still hosted on official site), page 2, Voir large: speed narrows the useful visual field; mirrors leave blind spots checked by a brief head turn. Actual PDF downloaded and read; no numerical angle claim used."
+      }
+    ]
+  },
+  {
+    "scenario_id": "engine_oil_level_measurement_conditions",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Routine maintenance check by a category-B car driver.",
+    "learning_objective": "Choose reliable conditions for a routine dipstick engine-oil-level reading.",
+    "topic": "vehicle.oil_level_measurement",
+    "scenario": "Routine pre-trip oil check with a dipstick; select level ground, stopped engine and manufacturer wait, not a running or sloping vehicle.",
+    "novelty_review": "Whole-bank oil/jauge search finds only urgent red oil-pressure warning. This teaches obtaining a reliable routine level measurement, not responding to pressure failure, opening a hot coolant cap, or checking tyre pressure.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_engine_oil_level_measurement_conditions",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Avant un trajet, je veux vérifier le niveau d’huile moteur avec la jauge. Dans quelles conditions obtenir une lecture fiable ?",
+          "answer_a": "Moteur en marche, quelle que soit la pente.",
+          "answer_b": "Sur sol horizontal, moteur arrêté, après le délai indiqué dans la notice.",
+          "answer_c": "Sur une forte pente, dès la coupure du moteur.",
+          "answer_d": "Uniquement après avoir rempli jusqu’au-dessus du maximum.",
+          "explanation": "Le sol horizontal et le délai après l’arrêt permettent à l’huile de se répartir correctement dans le carter. Je suis la notice, essuie la jauge puis la remets complètement avant la lecture, sans dépasser le niveau maximal."
+        },
+        "en": {
+          "question_text": "Before a trip, I want to check the engine-oil level with the dipstick. Which conditions give a reliable reading?",
+          "answer_a": "With the engine running, on any slope.",
+          "answer_b": "On level ground, with the engine stopped, after the wait specified in the manual.",
+          "answer_c": "On a steep slope, immediately after switching off.",
+          "answer_d": "Only after filling above the maximum mark.",
+          "explanation": "Level ground and the wait after stopping let the oil settle correctly in the sump. I follow the manual, wipe the dipstick and fully reinsert it before reading, and never exceed the maximum level."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Le moteur en marche et la pente faussent la lecture.",
+        "b": "Le sol et le délai adaptés rendent la mesure fiable.",
+        "c": "La pente et une lecture trop précoce faussent la mesure.",
+        "d": "Un excès d’huile risque d’endommager le moteur."
+      },
+      "en": {
+        "a": "A running engine and slope distort the reading.",
+        "b": "Level ground and the specified wait support an accurate reading.",
+        "c": "A slope and immediate reading can distort the result.",
+        "d": "Overfilling risks engine damage."
+      }
+    },
+    "image_prompt": "Create one original photorealistic landscape16:9 photograph at least1672x941 for a French car theory question. A single ordinary car engine-oil dipstick rests diagonally on a clean folded white lint-free cloth on a dark workshop bench. The dipstick has one orange plastic ring handle connected to a long thin flat metal strip, and a small crosshatched measuring area between two shallow notches near the opposite end. Whole dipstick fits the frame. Plain realistic metal, no letters, numbers, oil brand, bottles, people, hands, engine or other tools. Soft natural daylight. The photo illustrates the tool; question asks measurement conditions, not a displayed oil reading. No question, answer, labels, captions, watermark or highlights.",
+    "sources": [
+      {
+        "url": "https://www.user-manual.renault.com/fr/acc%C3%A8s-moteur-niveaux/huile-moteur",
+        "kind": "manufacturer",
+        "checked_on": "2026-10-10",
+        "supports": "Original Renault Clio5 manual, engine-oil-level section: horizontal ground after prolonged engine stop; wipe dipstick, fully reinsert then read; never exceed maximum. Question defers precise waiting interval to vehicle manual."
+      }
+    ]
+  },
+  {
+    "scenario_id": "blind_spot_monitor_not_clearance_guarantee",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+    "learning_objective": "Keep direct checks despite an unlit blind-spot warning before changing lane to overtake.",
+    "topic": "assistance.blind_spot_limits",
+    "scenario": "Blind-spot aid fitted; indicator unlit. Before pulling left, no claim that absenceoflightprovesallclear.",
+    "novelty_review": "Earlier rear-caralreadyovertaking has a visible vehicle; signalbeforemoving assumescheckscomplete. This tests reliabilitylimits of an electronic non-warning and retained observation.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_blind_spot_monitor_not_clearance_guarantee",
+      "category_slug": "overtaking",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b",
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Avant de me déporter à gauche pour dépasser, le témoin d’angle mort reste éteint. Que dois-je retenir ?",
+          "answer_a": "L’absence d’alerte garantit que personne ne se trouve à gauche.",
+          "answer_b": "Je dois toujours contrôler les rétroviseurs et l’angle mort.",
+          "answer_c": "Le clignotant oblige les autres à me laisser passer.",
+          "answer_d": "Cette aide peut ne pas détecter certains usagers.",
+          "explanation": "L’avertisseur d’angle mort est une aide, pas une autorisation de changer de voie. Une absence d’alerte ne garantit pas une zone libre : je garde mes contrôles visuels et ne me déporte que lorsque la manœuvre est sûre."
+        },
+        "en": {
+          "question_text": "Before moving left to overtake, the blind-spot warning remains off. What should I remember?",
+          "answer_a": "An unlit warning guarantees that nobody is on my left.",
+          "answer_b": "I must still check my mirrors and blind spot.",
+          "answer_c": "My indicator forces other drivers to let me through.",
+          "answer_d": "This aid may fail to detect some road users.",
+          "explanation": "A blind-spot monitor is an aid, not permission to change lanes. No warning does not guarantee a clear area: I keep my visual checks and move over only when the manoeuvre is safe."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Les limites du système empêchent cette garantie.",
+        "b": "Les contrôles restent indispensables.",
+        "c": "Le clignotant ne donne pas priorité.",
+        "d": "Des situations ou objets peuvent ne pas être détectés."
+      },
+      "en": {
+        "a": "System limitations prevent that guarantee.",
+        "b": "Observation remains essential.",
+        "c": "Indicators do not grant priority.",
+        "d": "Some users or circumstances may not be detected."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Close natural photograph from inside a left-hand-drive car looking at its LEFT exterior rear-view mirror through the side window. Mirror fixed correctly to driver door, reflecting a coherent empty stretch of road receding behind and a small portion of the same car body at inner edge. On mirror glass a small factory-style blind-spot icon of two overlapping car outlines is present but DARK grey/unlit, no yellowglow, text, label or invented warning. No other vehicles in reflection or background, no dashboard. Question explicitly says warning unlit and requires checking an area outside mirror; image must NOT claim to show the complete blind spot. Bright daylight and normal straight road context, realistic windowframe, no hands.",
+    "sources": [
+      {
+        "url": "https://www.user-manual.renault.com/fr/content/xjk/driving/additional-driving-aid-functions/avertisseur-dangle-mort",
+        "kind": "manufacturer",
+        "checked_on": "2026-10-10",
+        "supports": "Original Renault Express manual: system only supplements vigilance, limitations/objects may not detected; indicatoroff meansno detection,notguaranteedclearzone."
+      },
+      {
+        "url": "https://www.securite-routiere.gouv.fr/sites/default/files/2021-07/depliant-la_vue-v3.pdf",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "Sécurité routière, La vue (July 2015 leaflet, still hosted on official site), page 2, Voir large: speed narrows the useful visual field; mirrors leave blind spots checked by a brief head turn. Actual PDF downloaded and read; no numerical angle claim used."
+      }
+    ]
+  },
+  {
+    "scenario_id": "tunnel_radio_safety_messages",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+    "learning_objective": "Understand why tuning the announced tunnel radio frequency supports safety.",
+    "topic": "tunnel.radio_instructions",
+    "scenario": "Before entering a motorway tunnel that retransmits an announced FM frequency; passenger setsradio. No universal107.7claim.",
+    "novelty_review": "Existing tunnelitems cover headlights,stoppinggap,fireexit. No question covers operator emergency messages through rebroadcastFM.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_tunnel_radio_safety_messages",
+      "category_slug": "motorways",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Avant ce tunnel autoroutier, une fréquence radio est annoncée. Mon passager la règle sur l’autoradio. Quel intérêt principal pour la sécurité ?",
+          "answer_a": "Pouvoir entendre les consignes diffusées par l’exploitant du tunnel.",
+          "answer_b": "Remplacer les feux de croisement par la radio.",
+          "answer_c": "Donner automatiquement ma position aux secours.",
+          "answer_d": "Obtenir la priorité sur les autres véhicules.",
+          "explanation": "Dans un tunnel équipé, la retransmission radio permet à l’exploitant de diffuser des messages de sécurité aux usagers. J’écoute les consignes sur la fréquence annoncée tout en restant attentif à la signalisation et à la circulation."
+        },
+        "en": {
+          "question_text": "Before this motorway tunnel, a radio frequency is announced. My passenger tunes the car radio to it. What is the main safety benefit?",
+          "answer_a": "Being able to hear instructions broadcast by the tunnel operator.",
+          "answer_b": "Replacing dipped headlights with the radio.",
+          "answer_c": "Automatically sending my location to emergency services.",
+          "answer_d": "Gaining priority over other vehicles.",
+          "explanation": "In an equipped tunnel, radio rebroadcasting lets the operator send safety messages to road users. I listen to the announced frequency while continuing to observe traffic and signs."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Le réseau permet les messages de sécurité.",
+        "b": "La radio ne remplace pas l’éclairage.",
+        "c": "Un récepteurFM ne transmet pas la position.",
+        "d": "Aucune priorité acquise."
+      },
+      "en": {
+        "a": "The network carries safety messages.",
+        "b": "Radio does not replace lighting.",
+        "c": "AnFMreceiver does not send location.",
+        "d": "No priority is granted."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Close realistic photograph of a generic built-in car FM radio at the centre of a dashboard, landscape composition. Small clear monochrome display reads exactly \"FM 107.7 MHz\"; two plain round black knobs and a neat row of blank physical preset buttons, no manufacturer logo or extra tiny labels. Natural reflections, neutral grey dashboard, no touchscreenmap, no phone, no people or hands. Exterior out of frame, no road signs. Radio is shown as contextual equipment; question establishes the announced frequency for THIS tunnel, not a universal frequency. Readable atphone size, no explanatory captions.",
+    "sources": [
+      {
+        "url": "https://www.cetu.developpement-durable.gouv.fr/IMG/pdf/CETU-Note_Info_24_2014_cle7c4a7e-1.pdf",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "CETUnote24pp3-5operatorcaninsertsecuritymessagesinrebroadcastFM; p10CE22announcesfrequencies. Appliesonlyequippedtunnel,notallfrequencies."
+      }
+    ]
+  },
+  {
+    "scenario_id": "electric_car_finished_charging_leave_bay",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car; no specialist licence or professional operation.",
+    "learning_objective": "Leave a bay reserved for vehicles actively charging when the charging session ends.",
+    "topic": "parking.charging_duration",
+    "scenario": "Publicbay expresslyreservedforEVduringrecharge. DriverEVchargefinished,wantsleaveovernightwithoutcharging.",
+    "novelty_review": "OldEVbayitemasksaboutthermalcar. This tests that electricpropulsionalonedoesnotqualifyafterrechargeends, a distinct temporal eligibility condition.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_electric_car_finished_charging_leave_bay",
+      "category_slug": "parking_stopping",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Cet emplacement est réservé aux véhicules électriques pendant leur recharge. Ma recharge est terminée. Puis-je laisser ma voiture ici toute la nuit sans recharger ?",
+          "answer_a": "Oui, toute voiture électrique peut y rester.",
+          "answer_b": "Oui, si le câble reste branché sans recharge.",
+          "answer_c": "Oui, si je laisse un numéro de téléphone.",
+          "answer_d": "Non, je dois libérer la place après la recharge.",
+          "explanation": "La réservation vise les véhicules électriques pendant la durée de recharge de leurs accumulateurs. Une fois celle-ci terminée, rester branché ou laisser un numéro ne transforme pas l’emplacement en stationnement ordinaire."
+        },
+        "en": {
+          "question_text": "This bay is reserved for electric vehicles while charging. My charging session has finished. May I leave my car here all night without charging?",
+          "answer_a": "Yes; any electric car may remain here.",
+          "answer_b": "Yes, if the cable stays connected without charging.",
+          "answer_c": "Yes, if I leave a phone number.",
+          "answer_d": "No; I must free the bay after charging.",
+          "explanation": "The reservation applies to electric vehicles while their batteries are charging. Once charging has ended, keeping the cable connected or leaving a phone number does not turn the bay into ordinary parking."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "La motorisation ne suffit pas après la recharge.",
+        "b": "Un branchement inactif ne constitue pas une recharge.",
+        "c": "Un numéro de téléphone ne vaut pas autorisation.",
+        "d": "La durée de recharge conditionne la réservation."
+      },
+      "en": {
+        "a": "Electric propulsion alone is not enough after charging.",
+        "b": "An inactive connection is not charging.",
+        "c": "A phone number does not grant permission.",
+        "d": "The bay is reserved while charging."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic landscape16:9 scene, at least1672x941, for a French passenger-car theory question. Scene only, no embedded question/answer, annotations, inset, watermark, logo or solution highlight. French right-hand traffic, physically realistic geometry and equipment. Important details readable at390px width. Quiet modern French public parking area close view of the rear-quarter charging port of a plain white electric hatchback and a generic upright charging pedestal immediately beside it. One plausible thick charging cable runs from pedestal to car port, physically connected. Pedestal display blank/dark so it does not falsely show activecharging or a fabricatedstatus. Tight crop excludes front/rear registration plates and all parking signs/roadmarking symbols; pavedground, no otherpeople orcars, clean daylight. No Tesla/brand logos,text,questionorpercentage. The question explicitly supplies reservedbayrule and completedcharge; image is context only, not proof of an electrical state.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "Article8EVparkingmarkingreservesbayduringbatteryrecharging; explicitreservationinquestion. Electricvehiclealoneafterchargeisnotsufficient."
+      }
+    ]
+  }
+]

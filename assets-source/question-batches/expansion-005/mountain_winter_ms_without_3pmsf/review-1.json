@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "3064b5d8f3526f60633fe6f5b2ebca84a41a3e8b5395844e8f3c349ecefdbc19",
+  "image_sha256": "046785025e002bb20eb4e1248ec17510e9a0bef1a602f69741bc62b4785471cb",
+  "result": "pass",
+  "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+  "compared_question_keys": [
+    "situation_snow_chains_b26_fit",
+    "situation_long_caravan_snow_overtaking_prohibited",
+    "situation_b44_car_scenario",
+    "situation_no_overtaking_basic",
+    "situation_insurance_fva_no_green_sticker"
+  ],
+  "checks": {
+    "signs_and_text": "Raised M+S is legible; no 3PMSF symbol visible or invented full specification.",
+    "road_geometry": "Parked on dry surface; seasonal duty supplied in stem independent of actual snow.",
+    "vehicles_and_people": "Tyre fitted to parked car, sound tread, no jack or person.",
+    "dashboard_and_equipment": "Consistent tyre/rim/brake geometry, intact sidewall; partial view does not prove whole certification.",
+    "phone_size": "M+S remains readable at390px; all four tyres and absent chains/socks are explicit.",
+    "official_rule": "Sources actually read during authoring: 2025-26 winter guidance: only3PMSF tyres accepted instead of removable devices; other snow tyres require devices. No temporary weather exemption.; January2026 government guidance confirms seasonalNov1–Mar31 regulated communes, four3PMSF tyres or chains/socks for two driven wheels.",
+    "novelty": "Seasonal equipment qualification of M+S-only tyres, distinct from fitting chains at B26 or ending that signed requirement. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+    "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. Tyre fitted to parked car, sound tread, no jack or person. Consistent tyre/rim/brake geometry, intact sidewall; partial view does not prove whole certification.",
+    "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. M+S remains readable at390px; all four tyres and absent chains/socks are explicit.",
+    "all_four_options": "Correct D. A: M+S-only equivalence has ended.; B: The seasonal requirement is not limited to snowy days.; C: Short visits are not exempt.; D: An accepted equipment option is missing."
+  }
+}

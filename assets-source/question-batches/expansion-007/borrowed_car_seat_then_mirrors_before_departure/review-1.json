@@ -1,0 +1,13 @@
+{
+  "proposal_sha256": "e847b359853599fda0d0aff8f310c0214ab67f14ec39b08e86f4db58fec14773",
+  "image_sha256": "53ea6e552e7406d53664aedbc0cfdd6a96d45b940bdba63c08945c95cadd8b57",
+  "result": "reject",
+  "notes": "Manual-looking selector with only two visible pedals; steering badge is garbled and door-jamb label unreadable. Resolve equipment consistency and remove invented tiny labels/badge.",
+  "compared_question_keys": [
+    "situation_overtaking_near_occupied_crossing",
+    "situation_frosted_windscreen_clear_before_drive",
+    "situation_pedestrian_intent_no_crosswalk",
+    "situation_limiter_no_braking_downhill",
+    "situation_motorway_breakdown_no_triangle"
+  ]
+}

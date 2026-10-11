@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "0989d4996900af06a4f5334d4cb4d88db17127135a712d4bcfb7a7029f4b80a9",
+  "image_sha256": "e57feb8a83712c33c8fa671e60ed0adf9b16bace5846eef27d6ec2b63a74a778",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected at original1672x941 and390px; no detected unresolved defects.",
+  "compared_question_keys": [
+    "situation_long_caravan_facilitate_overtaking",
+    "situation_mountain_downhill_yields",
+    "situation_bus_departing_marked_stop",
+    "situation_unmarked_t_junction_priority_right",
+    "situation_width_limit_2_1m"
+  ],
+  "checks": {
+    "official_rule": "R414-2 first paragraph: width over2m or length over7m; insufficient safe crossing space; facilitate smaller vehicles.",
+    "novelty": "Existing mountain questions use uphill/reversing rules; long-caravan item concerns facilitating overtaking. This is crossing with a wide ordinary passenger car on level ground. Both translations/options/explanations of five nearest reviewed, with whole-category inventory.",
+    "signs_and_text": "No road signs or markings. Distant plate below readable resolution, no relevant text.",
+    "road_geometry": "Narrow country lane with firm right-side passing recess; no steep gradient. Oncoming car keeps its right (imageleft).",
+    "vehicles_and_people": "Compact car frontal proportions and lights coherent, only driver silhouette; opposing vehicle still outside near passing recess.",
+    "dashboard_and_equipment": "SUV bonnet only, no dashboard measurement;2.05mwidth explicitly stated.",
+    "full_resolution": "Exact scene-1.jpg1672x941 inspected. No road signs or markings. Distant plate below readable resolution, no relevant text. SUV bonnet only, no dashboard measurement;2.05mwidth explicitly stated.",
+    "phone_size": "Narrowness, oncoming car and right recess clear at390px.",
+    "french_and_english": "Both translations match conditions and correct set. SUV body width2.05m stated; flat road, insufficient width for safe easy crossing with smaller car; no signs assigning priority.",
+    "all_four_options": "Correct set a. {\"fr\": {\"a\": \"Obligation liée au gabarit et au manque de place.\", \"b\": \"La largeur ne donne pas la priorité.\", \"c\": \"Il faut faciliter le passage sans imposer une manœuvre risquée.\", \"d\": \"Il n’y a pas de pente.\"}, \"en\": {\"a\": \"Width and restricted space trigger this duty.\", \"b\": \"Being wider gives no priority.\", \"c\": \"Facilitate passage without forcing a risky move.\", \"d\": \"There is no slope.\"}}"
+  }
+}

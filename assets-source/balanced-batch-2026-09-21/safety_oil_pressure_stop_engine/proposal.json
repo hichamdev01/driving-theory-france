@@ -1,0 +1,51 @@
+{
+  "sequence": 10,
+  "scenario_id": "safety_oil_pressure_stop_engine",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives or prepares a normal passenger car; no specialist vehicle operating rules.",
+  "learning_objective": "Respond to a persistent oil-pressure warning while driving",
+  "references": [
+    "https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux-0"
+  ],
+  "novelty_review": "No existing question addresses engine oil-pressure warnings or shutting the engine off after reaching safety; distinct from tyre checks and roadside visibility.",
+  "scenario": "Close realistic driver-eye photograph of an ordinary combustion-engine passenger car dashboard. In the instrument cluster a RED oil-can pictogram with one droplet is clearly illuminated next to the red word STOP. Other warning icons dark. No brand logo, no impossible text, no numeric speed in focus. Through top of windscreen a quiet rural road and a safe lay-by ahead are softly visible. Dashboard warning is clear, photo fills whole landscape frame, no inset or instructional panel.",
+  "image_prompt": "Use case: photorealistic-natural. Create ONE realistic educational photograph for a French Code de la Route passenger-car question. Landscape 16:9, preferably 2048x1152. Contemporary France, natural photographic colours and exposure, physically plausible perspective. Close realistic driver-eye photograph of an ordinary combustion-engine passenger car dashboard. In the instrument cluster a RED oil-can pictogram with one droplet is clearly illuminated next to the red word STOP. Other warning icons dark. No brand logo, no impossible text, no numeric speed in focus. Through top of windscreen a quiet rural road and a safe lay-by ahead are softly visible. Dashboard warning is clear, photo fills whole landscape frame, no inset or instructional panel. No quiz panel, question text, answer choices, highlighted answer, watermark, instructional overlay, collage or invented road signs. Any cars use French-style plates with unreadable small characters. This is a scene photograph, not an infographic.",
+  "question": {
+    "key": "situation_safety_oil_pressure_stop_engine",
+    "category_slug": "safety",
+    "correct_answer": "b",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "En roulant, le témoin rouge de pression d’huile reste allumé avec l’alerte STOP. Que dois-je faire ?",
+        "answer_a": "Continuer jusqu’à la prochaine révision.",
+        "answer_b": "M’arrêter dès que possible en sécurité, puis couper le moteur.",
+        "answer_c": "Accélérer pour rétablir la pression.",
+        "answer_d": "Laisser tourner le moteur longtemps à l’arrêt.",
+        "explanation": "Une alerte persistante de pression d’huile peut signaler une lubrification insuffisante. Je m’immobilise dès que les conditions le permettent en sécurité, puis je coupe le moteur et demande une assistance adaptée. Je ne poursuis pas le trajet."
+      },
+      "en": {
+        "question_text": "While driving, the red oil-pressure warning stays on with the STOP alert. What should I do?",
+        "answer_a": "Continue until the next scheduled service.",
+        "answer_b": "Stop safely as soon as possible, then switch off the engine.",
+        "answer_c": "Accelerate to restore the pressure.",
+        "answer_d": "Leave the engine idling for a long time.",
+        "explanation": "A persistent oil-pressure alert may indicate inadequate lubrication. Stop as soon as it is safe, then switch off the engine and seek appropriate assistance. Do not continue the journey."
+      }
+    }
+  },
+  "state": "imported",
+  "edit_prompt_path": "assets-source/balanced-batch-2026-09-21/safety_oil_pressure_stop_engine/edit-prompt.md",
+  "original_native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-52d021c0-3a12-4347-9b0f-aecb3341b443.png",
+  "generation_method": "built-in image_gen",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-59b81889-979c-4b6e-8b14-14e567f08aab.png",
+  "native_image_sha256": "1715c44dbe439958f0ad3b384017ecc4893e56ccadef1ba217c3fdae76d18531",
+  "image_path": "assets-source/balanced-batch-2026-09-21/safety_oil_pressure_stop_engine/scene.jpg",
+  "image_sha256": "3975b04cf7dcfc1f7e69eb1065c0ca25a01f755167f4e994bfc1baf4692aa4d6",
+  "visual_review": "Corrected close-up reviewed: red oil-can with droplet and STOP clearly visible on actual dashboard display; misleading auxiliary gauges removed from frame. Question supplies persistent warning while driving; B stops safely before switching engine off. Both languages and four options checked against manufacturer guidance.",
+  "reviewed_on": "2026-09-21",
+  "reviewed_sha256": "4769d87a4a15eae042037cf191899db015f6b26e8d26854d50bfa95c3c7e0f8e",
+  "question_key": "situation_safety_oil_pressure_stop_engine",
+  "imported_content_version": 89,
+  "imported_on": "2026-09-21"
+}

@@ -1,0 +1,6 @@
+{
+  "proposal_sha256": "df4bee393bb807dd04e88d53016f9aed39def97a1b5a675ad8d6fcd1067bf196",
+  "image_sha256": "98f8a80ae6f710c1c840444b2496c6ea07f5c8b0378d1c5a3468a819b04c0d4d",
+  "result": "reject",
+  "notes": "Second candidate rejected at full resolution and 390px: far give-way line crosses both carriageways, far yield sign faces the viewer rather than incoming traffic, and left-arm give-way marking is on the outbound half. No approval."
+}

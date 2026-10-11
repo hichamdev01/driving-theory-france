@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "proposal_sha256": "fadfa311df2164ca837ab35f0069cd989869cb2399228509405c6d82c721ed35",
+  "image_sha256": "a38c7d334930c0aa555c1ebe24ef86c0e8e02e32211823da906f8f2f0c7f9adc",
+  "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+  "compared_question_keys": [
+    "safety_eco_driving_anticipation",
+    "situation_motorway_keep_right",
+    "situation_b21b_straight_at_junction",
+    "medicine_level_three",
+    "safety_emergency_corridor"
+  ],
+  "checks": {
+    "official_rule": "Reviewed authoritative sources checked 2026-10-09: Updated July 2026: medicines can impair vision; warning symptoms can require abstaining from driving and medical/pharmacist advice. The question does not diagnose the cause.",
+    "novelty": "Unlike pictogram recognition, OTC status, combinations or skipped doses, this tests action when an actual visual impairment develops during the journey. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+    "signs_and_text": "No road signs, text, medicine brand or dashboard indicators in final crop.",
+    "road_geometry": "Corrected interior view removes the already-stopped lay-by and missing plate. Road position is outside crop and no unsafe lane inference is needed.",
+    "vehicles_and_people": "One natural adult face, separate plausible hands on wheel; forward gaze. Reported blurred vision is in stem, not a visual diagnosis.",
+    "dashboard_and_equipment": "Left-driving-seat belt runs from outer left shoulder toward inner hip; head restraint, wheel rim and hands plausible. No phone, controls or distracting activity.",
+    "full_resolution": "Viewed exact staged scene-2.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No road signs, text, medicine brand or dashboard indicators in final crop. Left-driving-seat belt runs from outer left shoulder toward inner hip; head restraint, wheel rim and hands plausible. No phone, controls or distracting activity.",
+    "phone_size": "Viewed phone-preview-2.jpg at 390 px. Face, belt and wheel remain clear at 390 px. Scene is sharp; no fake optical blur conceals detail.",
+    "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: The driver reports blurred vision during a journey after taking a medicine whose leaflet lists this possible effect. Causation is not diagnosed from the image; stopping safely and seeking medical advice is tested.",
+    "all_four_options": "Correct set c. FR: A: Incorrect : la distance restante ne supprime pas le danger.; B: Incorrect : aérer ne rétablit pas une aptitude certaine.; C: Correct : sécuriser l’arrêt puis demander un avis.; D: Incorrect : vitesse accrue et vision altérée aggravent le risque. EN: A: Incorrect: a short remaining distance does not remove the danger.; B: Incorrect: fresh air does not establish fitness to drive.; C: Correct: stop safely and seek advice.; D: Incorrect: speeding with impaired vision increases risk."
+  }
+}

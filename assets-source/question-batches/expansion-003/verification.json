@@ -1,0 +1,28 @@
+{
+  "pack_sha256": "017498fa2abe706993e999c2394bfcffeac900f751235fbd4e9970dc6dc5aedc",
+  "content_version": 95,
+  "python_tests": {
+    "result": "pass",
+    "notes": "47 workflow/content tests passed, including duplicates, multiple answers, stale reviews, interrupted import and safe retries.",
+    "path": "assets-source/question-batches/expansion-003/evidence/python-tests.log",
+    "sha256": "cbcde44bef686a81fc03592b5021f18a55a2a8d060502746d6b132c556a98ef2"
+  },
+  "ios_tests": {
+    "result": "pass",
+    "notes": "36 native tests passed, including bundled-image decoding, content integrity and progress-preserving seed updates.",
+    "path": "assets-source/question-batches/expansion-003/evidence/ios-tests.log",
+    "sha256": "a37e41bf9db9ca35fd92a714fbaec1ccef71e225e144f55daf793c06458faae0"
+  },
+  "sqlite_check": {
+    "result": "pass",
+    "notes": "All 418 active questions and both translations match content version 95; progress hash unchanged before and after UI review.",
+    "path": "assets-source/question-batches/expansion-003/evidence/sqlite-after-ui.json",
+    "sha256": "770b22f0014f15a9ab1901935f46ab095ee6519def72eaa97fe5c4557dfbe7f5"
+  },
+  "simulator_review": {
+    "result": "pass",
+    "notes": "All ten French images/questions reviewed in the app. Incomplete and extra-wrong multiple-answer sets rejected; complete sets accepted. English labels/long options checked.",
+    "path": "assets-source/question-batches/expansion-003/evidence/simulator-review.json",
+    "sha256": "154ec6bf6dcc9267648d0b7a0ec8b01cda858337b0ef4a3113f0d60164002495"
+  }
+}

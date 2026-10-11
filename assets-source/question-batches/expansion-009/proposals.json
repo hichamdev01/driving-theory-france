@@ -1,0 +1,606 @@
+[
+  {
+    "scenario_id": "roundabout_left_lane_optional",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver knowledge; any towing case is within stated category B entitlements, not a professional or heavy-vehicle question.",
+    "learning_objective": "Distinguish optional inner-lane use for a left-side roundabout exit from an obligation.",
+    "topic": "roundabout_left_lane_optional",
+    "scenario": "Two-lane ordinary roundabout, destination left of approach axis, no lane allocation or arrows. Ask available lane choices, not entry priority or exiting across another vehicle.",
+    "novelty_review": "Existing roundabout items cover sign meaning, entry priority and yielding while leaving the inner lane. None tests whether inner-lane use for a left-side destination is optional.",
+    "primary_codes": [],
+    "context_codes": [
+      "AB3a"
+    ],
+    "question": {
+      "key": "situation_roundabout_left_lane_optional",
+      "category_slug": "priority_rules",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a",
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Je vais vers une sortie située à gauche de mon axe d’entrée dans ce giratoire à deux voies, sans affectation particulière. Quelles affirmations sont exactes ?",
+          "answer_a": "Je peux me placer sur la voie de gauche.",
+          "answer_b": "Je suis obligé de prendre la voie de gauche.",
+          "answer_c": "Je peux rester sur la voie de droite.",
+          "answer_d": "Je dois traverser l’îlot central.",
+          "explanation": "Pour une sortie située à gauche de mon axe d’entrée, je peux serrer à gauche dans un giratoire à plusieurs voies : c’est une possibilité, pas une obligation. En l’absence d’affectation particulière, rester à droite est permis."
+        },
+        "en": {
+          "question_text": "My exit is to the left of my approach direction on this two-lane roundabout, with no special lane allocation. Which statements are correct?",
+          "answer_a": "I may use the left-hand lane.",
+          "answer_b": "I must use the left-hand lane.",
+          "answer_c": "I may remain in the right-hand lane.",
+          "answer_d": "I must drive across the central island.",
+          "explanation": "For an exit to the left of my approach direction, I may use the left lane on a multi-lane roundabout; it is optional, not compulsory. With no special lane allocation, remaining in the right lane is permitted."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Autorisé pour cette destination.",
+        "b": "Le texte autorise sans imposer.",
+        "c": "Le placement à droite reste permis ici.",
+        "d": "L’îlot n’est pas une voie de circulation."
+      },
+      "en": {
+        "a": "Allowed for this destination.",
+        "b": "The rule permits but does not require it.",
+        "c": "The outer right lane remains permitted here.",
+        "d": "The island is not a traffic lane."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic French passenger-car driving-theory scene, landscape 16:9, 1672x941 or larger. Natural daylight, believable French road/vehicle geometry. Scene only: no question, answers, captions, highlighting, arrows overlaid on the scene, watermark or brand advertising. Every visible mechanical detail must be plausible. Avoid unnecessary signs, text and people. High oblique aerial photograph of an empty small French roundabout in a green suburban area. Exactly TWO circulating asphalt lanes separated by one concentric dashed white circular lane divider, a planted raised round central island, four normal entry/exit arms. Near approach from bottom frame has one entry lane and one exit lane separated by a small splitter island; dashed give-way line across ENTRY only, small standard inverted red-bordered white yield sign on its right, no supplementary text. Entire circulating ring visible, clean realistic connections. No direction arrows, no route trace, no vehicles, no mandatory lane allocation signs. Counterclockwise circulation geometry appropriate to France. Not a diagram.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050965688/",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "R412-9 permits moving left for an exit left of entry axis on a multi-lane roundabout; it does not mandate it. No special lane allocation stipulated."
+      }
+    ]
+  },
+  {
+    "scenario_id": "caravan_tight_right_turn_left_swing",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver knowledge; any towing case is within stated category B entitlements, not a professional or heavy-vehicle question.",
+    "learning_objective": "Apply the limited positioning exception when a passenger-car combination cannot turn right while keeping right.",
+    "topic": "caravan_tight_right_turn_left_swing",
+    "scenario": "Driver tows a permitted small caravan; explicit dimensions and tight turn make keeping right impossible. No road markings prohibit using left half. Moderate speed and absence of danger are necessary.",
+    "novelty_review": "Truck-right-turn blind-spot item asks another driver not to pass inside a truck. This asks the towing driver when the left side can be used for a tight right turn, rather than overtaking or oncoming crossing.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_caravan_tight_right_turn_left_swing",
+      "category_slug": "priority_rules",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Avec ma voiture et sa caravane autorisée, ce virage à droite est impossible en restant à droite. Aucun marquage ne l’interdit. Puis-je utiliser la partie gauche pour manœuvrer ?",
+          "answer_a": "Oui, à vitesse normale sans autre contrôle.",
+          "answer_b": "Oui, à allure modérée, après m’être assuré de ne mettre personne en danger.",
+          "answer_c": "Non, cette possibilité est réservée aux autobus.",
+          "answer_d": "Oui, mon clignotant oblige les autres à s’arrêter.",
+          "explanation": "Quand le tracé du virage et les dimensions du véhicule empêchent de tenir la droite, une manœuvre par la partie gauche est possible. Elle exige une allure modérée et la vérification de l’absence de danger pour autrui."
+        },
+        "en": {
+          "question_text": "With my car and permitted caravan, this right turn cannot be made while keeping right. No marking prohibits it. May I use the left part of the road to manoeuvre?",
+          "answer_a": "Yes, at normal speed without further checks.",
+          "answer_b": "Yes, at moderate speed after making sure nobody is endangered.",
+          "answer_c": "No; only buses may do this.",
+          "answer_d": "Yes; my indicator forces everyone else to stop.",
+          "explanation": "When the bend and the vehicle’s dimensions make keeping right impossible, the left part of the road may be used for the manoeuvre. This requires moderate speed and checking that nobody else is endangered."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "La sécurité et l’allure modérée sont exigées.",
+        "b": "C’est l’exception sous ses conditions.",
+        "c": "L’exception ne vise pas uniquement les autobus.",
+        "d": "Le clignotant ne donne pas priorité."
+      },
+      "en": {
+        "a": "Safety checks and moderate speed are required.",
+        "b": "This states the exception and its conditions.",
+        "c": "The exception is not restricted to buses.",
+        "d": "An indicator does not confer priority."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic French passenger-car driving-theory scene, landscape 16:9, 1672x941 or larger. Natural daylight, believable French road/vehicle geometry. Scene only: no question, answers, captions, highlighting, arrows overlaid on the scene, watermark or brand advertising. Every visible mechanical detail must be plausible. Avoid unnecessary signs, text and people. Elevated rear three-quarter photograph of a normal European family estate car towing one modest single-axle white caravan, both straight on the right half of an unmarked two-way village road BEFORE a tight right turn into a narrow paved side street. Show full combination, plausible towbar coupling and caravan chassis/wheels, all tyres on road. Low stone kerbs, no sidewalks crowded with people. Road ahead and opposite half completely empty and visible. No road centre line or other markings, no signs, no arrows, no text, no people. Side street clearly joins on the vehicle’s RIGHT. The vehicle is waiting before any swinging turn, not shown already crossing the pavement.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039278135/",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "R415-3 II: left carriageway may be used if bend and vehicle dimensions prevent keeping right, only at moderate speed after ensuring no danger to others."
+      }
+    ]
+  },
+  {
+    "scenario_id": "motorway_filtering_two_leftmost_lanes",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver knowledge; any towing case is within stated category B entitlements, not a professional or heavy-vehicle question.",
+    "learning_objective": "Anticipate the permitted position of filtering motorcycles as a car driver in motorway congestion.",
+    "topic": "motorway_filtering_two_leftmost_lanes",
+    "scenario": "Dry three-lane motorway, uninterrupted slow queues on all lanes; asks where lawful filtering occurs, not motorcycle licence or speed rules.",
+    "novelty_review": "Existing queue question distinguishes lanes advancing at different rates; existing overtaking/merging checks do not teach the lawful filtering corridor between the two leftmost lanes.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_motorway_filtering_two_leftmost_lanes",
+      "category_slug": "motorways",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Sur cette autoroute sèche à trois voies, toutes les files roulent au pas. Comme automobiliste, où dois-je notamment anticiper les motos circulant légalement en inter-files ?",
+          "answer_a": "Sur le terre-plein central.",
+          "answer_b": "Uniquement sur la bande d’arrêt d’urgence.",
+          "answer_c": "Entre la voie de droite et la voie du milieu.",
+          "answer_d": "Entre les deux voies les plus à gauche.",
+          "explanation": "Lorsque les conditions réglementaires sont réunies, l’inter-files se pratique entre les deux files les plus à gauche de la chaussée. Je surveille cet espace et mes angles morts avant tout changement de voie."
+        },
+        "en": {
+          "question_text": "On this dry three-lane motorway, every lane is crawling in a continuous queue. As a car driver, where should I particularly anticipate motorcycles filtering legally?",
+          "answer_a": "On the central reservation.",
+          "answer_b": "Only on the hard shoulder.",
+          "answer_c": "Between the right and middle lanes.",
+          "answer_d": "Between the two leftmost lanes.",
+          "explanation": "When the legal conditions are met, filtering takes place between the two leftmost queues on the carriageway. I watch this space and check blind spots before changing lanes."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Le terre-plein n’est pas un couloir de circulation.",
+        "b": "La bande d’arrêt d’urgence n’est pas l’inter-files.",
+        "c": "Ce ne sont pas les deux files les plus à gauche.",
+        "d": "C’est l’emplacement prévu."
+      },
+      "en": {
+        "a": "The central reservation is not a traffic corridor.",
+        "b": "The hard shoulder is not the filtering corridor.",
+        "c": "These are not the two leftmost queues.",
+        "d": "This is the designated position."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic French passenger-car driving-theory scene, landscape 16:9, 1672x941 or larger. Natural daylight, believable French road/vehicle geometry. Scene only: no question, answers, captions, highlighting, arrows overlaid on the scene, watermark or brand advertising. Every visible mechanical detail must be plausible. Avoid unnecessary signs, text and people. High oblique photograph looking forward along a dry French motorway with exactly THREE same-direction traffic lanes, all occupied by dense orderly queues of passenger cars facing away, rear lamps and rear windows visible. Two dashed white lane dividers, central steel barrier at LEFT, narrow hard shoulder at RIGHT beyond a clear edge boundary. Enough vehicles across all three lanes to demonstrate continuous slow traffic. All cars completely within their lanes. Opposite carriageway visible beyond left central barrier with distant cars travelling opposite way. No motorcycles, no signs, no text, no arrows, no highlighted space. Scene tests anticipation, not finding an already illustrated answer.",
+    "sources": [
+      {
+        "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17992",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "Since11January2025 filtering under specified dense-traffic/road/weather conditions is between the two leftmost queues. Applies to car-driver anticipation of that location."
+      }
+    ]
+  },
+  {
+    "scenario_id": "alcohol_accident_own_damage_exclusion",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver knowledge; any towing case is within stated category B entitlements, not a professional or heavy-vehicle question.",
+    "learning_objective": "Understand that comprehensive insurance does not guarantee own-damage cover for an accident caused under alcohol.",
+    "topic": "alcohol_accident_own_damage_exclusion",
+    "scenario": "Driver causes accident under alcohol; comprehensive policy; asks whether own loss is necessarily covered, avoiding blanket claim all contracts identical.",
+    "novelty_review": "Existing items cover alcohol limits, points, health effects and enforcement. The uninsured-windscreen sticker item tests proof of insurance, not intoxication-related own-damage exclusions.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_alcohol_accident_own_damage_exclusion",
+      "category_slug": "alcohol_drugs",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Je provoque un accident sous l’emprise de l’alcool. Mon contrat « tous risques » garantit-il forcément le remboursement des dégâts de ma propre voiture ?",
+          "answer_a": "Non, l’assureur peut refuser cette garantie.",
+          "answer_b": "Oui, dès que ma cotisation est payée.",
+          "answer_c": "Oui, si aucune autre voiture n’est abîmée.",
+          "answer_d": "Oui, si je déclare l’accident le jour même.",
+          "explanation": "Une assurance « tous risques » n’efface pas les exclusions liées à la conduite sous alcool. L’assureur peut refuser l’indemnisation de mes propres dommages ; payer la cotisation ou déclarer vite l’accident ne garantit pas cette couverture."
+        },
+        "en": {
+          "question_text": "I cause a crash while under the influence of alcohol. Does my comprehensive policy necessarily cover the damage to my own car?",
+          "answer_a": "No; the insurer may refuse this cover.",
+          "answer_b": "Yes, as long as my premium is paid.",
+          "answer_c": "Yes, if no other car is damaged.",
+          "answer_d": "Yes, if I report the crash that day.",
+          "explanation": "Comprehensive insurance does not remove exclusions relating to driving under alcohol. The insurer may refuse to cover my own damage; paying the premium or reporting promptly does not guarantee this protection."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Des exclusions peuvent empêcher cette indemnisation.",
+        "b": "Le paiement ne supprime pas les exclusions.",
+        "c": "L’absence d’autre voiture ne garantit pas la couverture.",
+        "d": "La déclaration rapide ne supprime pas une exclusion."
+      },
+      "en": {
+        "a": "Exclusions may prevent payment for this loss.",
+        "b": "Payment does not remove exclusions.",
+        "c": "No other damaged car does not guarantee cover.",
+        "d": "Prompt reporting does not remove an exclusion."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic French passenger-car driving-theory scene, landscape 16:9, 1672x941 or larger. Natural daylight, believable French road/vehicle geometry. Scene only: no question, answers, captions, highlighting, arrows overlaid on the scene, watermark or brand advertising. Every visible mechanical detail must be plausible. Avoid unnecessary signs, text and people. Original realistic photograph of one empty compact blue passenger car stationary in a private paved driveway beside a low stone wall. Its right front wing and bumper have minor believable collision damage near the wall, no smoke, no injuries, no broken glass. Entire car and affected corner clear. Neutral daylight, no people, no alcohol bottles, no insurance documents, no police, no signs or legible number plates. Alcohol state and insurance are explicitly supplied by the question, not visually inferred.",
+    "sources": [
+      {
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2630",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "An accident caused under alcohol can lead to refusal of own bodily/material-damage guarantees, notwithstanding comprehensive cover or paid premiums; question uses may/refuses guaranteed cover, not universal contractual wording."
+      }
+    ]
+  },
+  {
+    "scenario_id": "average_speed_camera_section",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver knowledge; any towing case is within stated category B entitlements, not a professional or heavy-vehicle question.",
+    "learning_objective": "Understand what an average-speed camera system measures.",
+    "topic": "average_speed_camera_section",
+    "scenario": "A road section is explicitly stated to be monitored by an average-speed camera. Ask measurement type, not evasion techniques or specific camera identification.",
+    "novelty_review": "Bank has instantaneous limits, stopping distances and travel-time gains; no item teaches enforcement measurement averaged over a road section.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_average_speed_camera_section",
+      "category_slug": "speed_limits",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Je circule sur une section contrôlée par un radar de vitesse moyenne, dit « radar tronçon ». Que mesure ce dispositif ?",
+          "answer_a": "Seulement ma vitesse au premier point.",
+          "answer_b": "Seulement ma vitesse au dernier point.",
+          "answer_c": "Ma vitesse moyenne sur la portion contrôlée.",
+          "answer_d": "Uniquement la vitesse du véhicule devant moi.",
+          "explanation": "Le radar tronçon détermine la vitesse moyenne sur une portion de route. Il ne se limite pas à une vitesse instantanée à une extrémité ; je respecte les limitations pendant tout le trajet."
+        },
+        "en": {
+          "question_text": "I am travelling on a section monitored by an average-speed camera system. What does it measure?",
+          "answer_a": "Only my speed at the first point.",
+          "answer_b": "Only my speed at the last point.",
+          "answer_c": "My average speed over the monitored section.",
+          "answer_d": "Only the speed of the vehicle ahead.",
+          "explanation": "An average-speed camera system determines average speed over a section of road. It is not limited to instantaneous speed at either end; I obey the limits throughout the journey."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Ce n’est pas seulement une mesure à l’entrée.",
+        "b": "Ce n’est pas seulement une mesure à la sortie.",
+        "c": "C’est le principe du radar tronçon.",
+        "d": "Chaque véhicule contrôlé a sa propre mesure."
+      },
+      "en": {
+        "a": "It is not only a measurement at the entrance.",
+        "b": "It is not only a measurement at the exit.",
+        "c": "This is the average-speed principle.",
+        "d": "The measurement relates to each monitored vehicle."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic French passenger-car driving-theory scene, landscape 16:9, 1672x941 or larger. Natural daylight, believable French road/vehicle geometry. Scene only: no question, answers, captions, highlighting, arrows overlaid on the scene, watermark or brand advertising. Every visible mechanical detail must be plausible. Avoid unnecessary signs, text and people. Photorealistic driver-eye road scene through the windscreen, dashboard entirely cropped out. Straight ordinary French rural two-way road with a dashed white centre line, short grass verges and fields, one distant car travelling away in the right lane. No junction, no signs or poles, no text, no visible speedometer. Wide clear road perspective, fine dry weather. The question explicitly supplies the monitoring technology; do not invent a camera design or draw a diagram.",
+    "sources": [
+      {
+        "url": "https://www.securite-routiere.gouv.fr/sites/default/files/2025-05/brochure_radars_print.pdf",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "Official2025 radar brochure describes radar tronçon as calculating average speed over a road section."
+      }
+    ]
+  },
+  {
+    "scenario_id": "passenger_feet_dashboard_airbag",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver knowledge; any towing case is within stated category B entitlements, not a professional or heavy-vehicle question.",
+    "learning_objective": "Prevent serious injury from a passenger’s feet being in the deployment path of the front airbag.",
+    "topic": "passenger_feet_dashboard_airbag",
+    "scenario": "Car stationary before departure; belted adult passenger rests both feet on dashboard. Ask corrective posture before departure.",
+    "novelty_review": "Existing belt, headrest and child-airbag questions do not cover adult limbs obstructing front passenger airbag deployment.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_passenger_feet_dashboard_airbag",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Avant de partir, mon passager adulte a bouclé sa ceinture mais pose ses pieds sur la planche de bord. Que dois-je lui demander ?",
+          "answer_a": "De garder cette position si la ceinture est bouclée.",
+          "answer_b": "De remettre ses pieds au plancher et de s’asseoir correctement.",
+          "answer_c": "De croiser les jambes sur la planche de bord.",
+          "answer_d": "De désactiver l’airbag pour garder ses pieds en hauteur.",
+          "explanation": "La ceinture ne rend pas cette posture sûre : le déploiement de l’airbag peut provoquer de graves blessures si les jambes sont devant lui. Le passager remet ses pieds au plancher et reprend une position assise correcte avant le départ."
+        },
+        "en": {
+          "question_text": "Before departure, my adult passenger has fastened the seat belt but has both feet on the dashboard. What should I ask them to do?",
+          "answer_a": "Stay like that if the belt is fastened.",
+          "answer_b": "Put their feet on the floor and sit properly.",
+          "answer_c": "Cross their legs on the dashboard.",
+          "answer_d": "Disable the airbag to keep their feet raised.",
+          "explanation": "A fastened belt does not make this posture safe: airbag deployment can seriously injure legs placed in front of it. Before departure, the passenger puts both feet on the floor and resumes a proper seated position."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "La ceinture ne protège pas contre cette mauvaise posture.",
+        "b": "Cette posture éloigne les jambes de l’airbag.",
+        "c": "Croiser les jambes ne retire pas le danger.",
+        "d": "On corrige la posture, pas l’airbag pour conserver le risque."
+      },
+      "en": {
+        "a": "The belt does not make this posture safe.",
+        "b": "This moves the legs away from the airbag area.",
+        "c": "Crossing the legs does not remove the danger.",
+        "d": "Correct the posture rather than disabling protection to retain it."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic French passenger-car driving-theory scene, landscape 16:9, 1672x941 or larger. Natural daylight, believable French road/vehicle geometry. Scene only: no question, answers, captions, highlighting, arrows overlaid on the scene, watermark or brand advertising. Every visible mechanical detail must be plausible. Avoid unnecessary signs, text and people. Realistic photograph from the rear-left seat looking diagonally at an ADULT front-right passenger inside a stationary left-hand-drive European car parked in an empty driveway. Passenger fully clothed in jeans and trainers, natural seated anatomy, shoulder belt correctly across shoulder and chest and lap belt low across hips, but BOTH feet visibly resting on the passenger dashboard directly ahead of them, knees naturally bent. Show body from shoulders down, no face necessary. Steering wheel only at far left if visible, conventional glovebox at right, no screens or illuminated symbols. No inflated airbag, no crash, no injuries, no overlaid warnings. Clearly illustrate unsafe feet-up posture to be corrected before departure.",
+    "sources": [
+      {
+        "url": "https://www.user-manual.renault.com/sites/renault/files/GUI_NU_REN_XFKEV_1441_7_0_LHD-RHD_PRNT-fr-FR.pdf",
+        "kind": "manufacturer",
+        "checked_on": "2026-10-11",
+        "supports": "Renault complementary restraint safety warning: feet must not be placed on dashboard or seat because deployment can cause serious injury; body parts kept away from dashboard."
+      }
+    ]
+  },
+  {
+    "scenario_id": "technical_inspection_critical_next_day",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver knowledge; any towing case is within stated category B entitlements, not a professional or heavy-vehicle question.",
+    "learning_objective": "Distinguish a critical roadworthiness failure’s same-day validity from the two-month reinspection window.",
+    "topic": "technical_inspection_critical_next_day",
+    "scenario": "Critical R result yesterday, no repair or favourable reinspection yet, asks ordinary commute next day.",
+    "novelty_review": "Existing first-inspection item concerns fourth-anniversary schedule, not consequences of a critical failed inspection.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_technical_inspection_critical_next_day",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Hier, ma voiture a reçu un contrôle technique défavorable pour défaillance critique (R). Sans réparation ni contre-visite favorable, puis-je l’utiliser normalement aujourd’hui ?",
+          "answer_a": "Oui, pendant deux mois.",
+          "answer_b": "Oui, pendant une semaine.",
+          "answer_c": "Oui, si le trajet est court.",
+          "answer_d": "Non, la validité était limitée au jour du contrôle.",
+          "explanation": "Avec une défaillance critique, la validité du contrôle est limitée au jour où il est réalisé. Le délai de deux mois pour la contre-visite ne donne pas deux mois de circulation normale avec ce résultat."
+        },
+        "en": {
+          "question_text": "Yesterday my car failed its roadworthiness inspection with a critical defect (R). Without repair or a favourable reinspection, may I use it normally today?",
+          "answer_a": "Yes, for two months.",
+          "answer_b": "Yes, for one week.",
+          "answer_c": "Yes, if the trip is short.",
+          "answer_d": "No; validity ended on the day of the inspection.",
+          "explanation": "With a critical defect, the inspection is valid only on the day it is carried out. The two-month reinspection deadline does not grant two months of normal driving with that result."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Deux mois est le délai de contre-visite, pas cette validité.",
+        "b": "Aucune semaine supplémentaire dans ce cas.",
+        "c": "La longueur du trajet ne prolonge pas la validité.",
+        "d": "La validité est limitée au jour du contrôle."
+      },
+      "en": {
+        "a": "Two months is the reinspection deadline, not this validity.",
+        "b": "There is no extra week in this case.",
+        "c": "Trip length does not extend validity.",
+        "d": "Validity is restricted to the inspection day."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic French passenger-car driving-theory scene, landscape 16:9, 1672x941 or larger. Natural daylight, believable French road/vehicle geometry. Scene only: no question, answers, captions, highlighting, arrows overlaid on the scene, watermark or brand advertising. Every visible mechanical detail must be plausible. Avoid unnecessary signs, text and people. Photorealistic French vehicle inspection workshop, one ordinary compact car stationary on a flat inspection bay, three-quarter front view, open workshop door and neutral equipment in background, clean professional setting. No people, no car raised in air, no readable reports, logos, signs or status lights. Vehicle externally intact; unseen critical defect and yesterday’s result are facts in question, do not manufacture a visible defect or place an answer label.",
+    "sources": [
+      {
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2878",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "Critical R result valid only inspection day; reinspection within2months does not extend critical-result circulation validity."
+      }
+    ]
+  },
+  {
+    "scenario_id": "licence_b_750kg_trailer_over3500_sum",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver knowledge; any towing case is within stated category B entitlements, not a professional or heavy-vehicle question.",
+    "learning_objective": "Apply category B entitlement for a trailer at or below750kg even when combination PTAC exceeds3500kg.",
+    "topic": "licence_b_750kg_trailer_over3500_sum",
+    "scenario": "Car PTAC3000kg, trailer750kg, technical towing limits explicitly satisfied. Sole question is licence B versus96 orBE.",
+    "novelty_review": "Existing trailer items cover speed, vehicle length and overtaking restrictions; none tests licence entitlement based on trailer PTAC at750kg.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_licence_b_750kg_trailer_over3500_sum",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Ma voiture a un PTAC de 3 000 kg et la remorque un PTAC de 750 kg. Les limites techniques de traction sont respectées. Quel permis suffit pour cet ensemble ?",
+          "answer_a": "Le permis B seul.",
+          "answer_b": "Le permis B avec la mention 96 obligatoirement.",
+          "answer_c": "Le permis BE obligatoirement.",
+          "answer_d": "Le permis C obligatoirement.",
+          "explanation": "Le permis B permet d’atteler une remorque de PTAC inférieur ou égal à 750 kg à une voiture relevant de cette catégorie. Ici, la somme de 3 750 kg n’impose pas à elle seule la mention 96, puisque la remorque ne dépasse pas 750 kg."
+        },
+        "en": {
+          "question_text": "My car has a maximum authorised mass of 3,000 kg and the trailer 750 kg. All technical towing limits are met. Which licence is sufficient for this combination?",
+          "answer_a": "Category B alone.",
+          "answer_b": "Category B with code 96 is compulsory.",
+          "answer_c": "Category BE is compulsory.",
+          "answer_d": "Category C is compulsory.",
+          "explanation": "Category B permits a trailer with a maximum authorised mass of no more than 750 kg behind a category B car. Here, the combined 3,750 kg does not itself require code 96 because the trailer does not exceed 750 kg."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "La remorque ne dépasse pas 750 kg et la voiture relève du B.",
+        "b": "La mention96 vise notamment une remorque de plus de750kg.",
+        "c": "BE n’est pas nécessaire pour cette remorque.",
+        "d": "La voiture ne dépasse pas3500kg."
+      },
+      "en": {
+        "a": "The trailer is at most750kg and the car is category B.",
+        "b": "Code96 applies to combinations with a trailer over750kg.",
+        "c": "BE is not needed for this trailer.",
+        "d": "The car does not exceed3500kg."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic French passenger-car driving-theory scene, landscape 16:9, 1672x941 or larger. Natural daylight, believable French road/vehicle geometry. Scene only: no question, answers, captions, highlighting, arrows overlaid on the scene, watermark or brand advertising. Every visible mechanical detail must be plausible. Avoid unnecessary signs, text and people. Original realistic side three-quarter photograph of a normal large family SUV towing a SMALL empty single-axle low-sided utility trailer on a level private driveway. Show entire SUV, secure plausible A-frame hitch coupling, trailer and wheels. SUV front towards frame left, trailer behind to right, correct geometry and proportions, no caravan. Trailer compact clearly plausible750kg class but no written weight labels. No people, readable plates, signs or cargo. Legal maximum masses are stated in question, not guessed from size.",
+    "sources": [
+      {
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2828",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "CategoryB vehicle at most3500kg may tow trailer PTAC≤750kg; code96 requires trailer>750kg and combinedPTAC>3500≤4250."
+      }
+    ]
+  },
+  {
+    "scenario_id": "registration_address_change_one_month",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver knowledge; any towing case is within stated category B entitlements, not a professional or heavy-vehicle question.",
+    "learning_objective": "Know the deadline for changing the vehicle registration address after moving home.",
+    "topic": "registration_address_change_one_month",
+    "scenario": "Owner moves between two addresses within France; no lease or return-from-abroad exceptions; asks one-month deadline.",
+    "novelty_review": "Existing administrative items concern insurance sticker, licence eyesight restriction, vehicle mass and inspections; no change-of-address deadline.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_registration_address_change_one_month",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Je déménage en France et je suis propriétaire de ma voiture immatriculée à mon nom. Dans quel délai dois-je déclarer la nouvelle adresse pour sa carte grise ?",
+          "answer_a": "Une semaine.",
+          "answer_b": "Six mois.",
+          "answer_c": "Un mois.",
+          "answer_d": "Seulement lors de la vente de la voiture.",
+          "explanation": "Après un déménagement, le changement d’adresse du certificat d’immatriculation doit être effectué dans le mois. Cette formalité ne doit pas attendre une vente ni le prochain contrôle technique."
+        },
+        "en": {
+          "question_text": "I move home within France and own the car registered in my name. How long do I have to declare the new address for its registration certificate?",
+          "answer_a": "One week.",
+          "answer_b": "Six months.",
+          "answer_c": "One month.",
+          "answer_d": "Only when I sell the car.",
+          "explanation": "After moving home, the address on the vehicle registration certificate must be updated within one month. This formality must not wait until a sale or the next roadworthiness inspection."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Ce n’est pas le délai réglementaire demandé.",
+        "b": "Ce délai dépasserait le mois autorisé.",
+        "c": "Le délai réglementaire est d’un mois.",
+        "d": "La vente n’est pas le déclencheur ici."
+      },
+      "en": {
+        "a": "That is not the statutory period asked for.",
+        "b": "This would exceed the one-month deadline.",
+        "c": "The statutory period is one month.",
+        "d": "A sale is not the trigger here."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic French passenger-car driving-theory scene, landscape 16:9, 1672x941 or larger. Natural daylight, believable French road/vehicle geometry. Scene only: no question, answers, captions, highlighting, arrows overlaid on the scene, watermark or brand advertising. Every visible mechanical detail must be plausible. Avoid unnecessary signs, text and people. Natural photograph of a parked family hatchback on a private residential driveway beside the open doorway of a modest French home. A few closed unmarked cardboard moving boxes sit safely on the porch, none on the car or road. Soft daylight, no people, house numbers, licence plate text, documents, letters, brands, signs or labels. One coherent moving-home scene; no diagram and no symbolic calendar.",
+    "sources": [
+      {
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F12118",
+        "kind": "official",
+        "checked_on": "2026-10-11",
+        "supports": "Owner moving withinFrance has1month to update vehicle registration address; leasing and return-from-abroad exceptions excluded."
+      }
+    ]
+  },
+  {
+    "scenario_id": "ev_charging_no_extension_or_multisocket",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary passenger-car driver knowledge; any towing case is within stated category B entitlements, not a professional or heavy-vehicle question.",
+    "learning_objective": "Avoid domestic extension leads and use a professionally verified suitable socket for EV charging.",
+    "topic": "ev_charging_no_extension_or_multisocket",
+    "scenario": "Domestic socket beyond charging cable reach; charging not started; equipment undamaged; asks safe arrangements instead of extension reel or power strip.",
+    "novelty_review": "Existing EV item rejects damaged insulation; this rejects intact but unsuitable added domestic extension/multiple sockets and requires checking the supply installation.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_ev_charging_no_extension_or_multisocket",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b",
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Pour recharger ma voiture électrique, son câble n’atteint pas la prise domestique. Quelles précautions sont correctes ?",
+          "answer_a": "Ajouter une rallonge domestique, même entièrement déroulée.",
+          "answer_b": "Ne pas intercaler de rallonge ni de multiprise.",
+          "answer_c": "Utiliser une multiprise neuve pour gagner de la longueur.",
+          "answer_d": "Faire vérifier la prise et son installation par un professionnel.",
+          "explanation": "La recharge ne doit pas passer par une rallonge ou une multiprise. Je prévois un point de branchement adapté et fais vérifier l’installation selon les prescriptions du constructeur ; un accessoire neuf ou déroulé ne remplace pas ces précautions."
+        },
+        "en": {
+          "question_text": "My electric car’s charging cable does not reach the household socket. Which precautions are correct?",
+          "answer_a": "Add a household extension lead, even fully unwound.",
+          "answer_b": "Do not insert an extension lead or a power strip.",
+          "answer_c": "Use a new power strip to gain extra length.",
+          "answer_d": "Have the socket and its installation checked by a professional.",
+          "explanation": "Charging must not use an extension lead or power strip. I arrange a suitable connection point and have the installation checked against the manufacturer’s requirements; new or unwound accessories do not replace these precautions."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Dérouler une rallonge ne l’autorise pas pour cet usage.",
+        "b": "Le constructeur interdit ces intermédiaires.",
+        "c": "Une multiprise neuve reste inadaptée.",
+        "d": "La conformité de la prise et de l’installation doit être vérifiée."
+      },
+      "en": {
+        "a": "Unwinding an extension does not make its use acceptable here.",
+        "b": "The manufacturer prohibits these intermediary devices.",
+        "c": "A new power strip remains unsuitable.",
+        "d": "The socket and installation must be verified as suitable."
+      }
+    },
+    "image_prompt": "Create ONE original photorealistic French passenger-car driving-theory scene, landscape 16:9, 1672x941 or larger. Natural daylight, believable French road/vehicle geometry. Scene only: no question, answers, captions, highlighting, arrows overlaid on the scene, watermark or brand advertising. Every visible mechanical detail must be plausible. Avoid unnecessary signs, text and people. Photorealistic garage scene, one compact electric car parked at right with charging flap CLOSED. At left a French grounded wall power socket, empty with its protective cover closed. In foreground a standard domestic extension cable reel on floor, clearly unplugged, with its loose grounded plug visible nearby; NO connection to car, socket or anything. No charging cable plugged in, no sparks, damage, warninglights or people. Realistic single reel cable topology, dry clean floor, no text, no logos, no labels. Everything disconnected before deciding how to arrange safe charging.",
+    "sources": [
+      {
+        "url": "https://www.user-manual.renault.com/fr/v%C3%A9hicule-%C3%A9lectrique/charge-2",
+        "kind": "manufacturer",
+        "checked_on": "2026-10-11",
+        "supports": "Renault instructions prohibit extension leads/adaptors/multiple sockets and require professional verification of domestic socket installation against charging specifications."
+      }
+    ]
+  }
+]

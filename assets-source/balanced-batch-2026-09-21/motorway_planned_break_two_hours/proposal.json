@@ -1,0 +1,49 @@
+{
+  "sequence": 2,
+  "scenario_id": "motorway_planned_break_two_hours",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives or prepares a normal passenger car; no specialist vehicle operating rules.",
+  "learning_objective": "Plan preventive breaks before feeling drowsy",
+  "references": [
+    "https://radio.vinci-autoroutes.com/article/faites-une-pause-sur-les-aires-d-autoroutes-8188"
+  ],
+  "novelty_review": "Existing fatigue content reacts to yawning and drowsiness. This asks about scheduling a preventive break after two hours, despite feeling alert.",
+  "scenario": "Photograph from a parked passenger car inside a quiet motorway rest area in France. In front are ordinary marked parking bays with two cars, trees, picnic tables and a footpath. In the far background a motorway is separated by a fence and planted buffer. Small dashboard edge only, no clock, no navigation screen, no traffic signs or text. Peaceful daylight; car safely parked, no person on traffic lanes.",
+  "image_prompt": "Use case: photorealistic-natural. Create ONE realistic educational photograph for a French Code de la Route passenger-car question. Landscape 16:9, preferably 2048x1152. Contemporary France, natural photographic colours and exposure, physically plausible perspective. Photograph from a parked passenger car inside a quiet motorway rest area in France. In front are ordinary marked parking bays with two cars, trees, picnic tables and a footpath. In the far background a motorway is separated by a fence and planted buffer. Small dashboard edge only, no clock, no navigation screen, no traffic signs or text. Peaceful daylight; car safely parked, no person on traffic lanes. No quiz panel, question text, answer choices, highlighted answer, watermark, instructional overlay, collage or invented road signs. Any cars use French-style plates with unreadable small characters. This is a scene photograph, not an infographic.",
+  "question": {
+    "key": "situation_motorway_planned_break_two_hours",
+    "category_slug": "motorways",
+    "correct_answer": "b",
+    "difficulty": "easy",
+    "translations": {
+      "fr": {
+        "question_text": "Après environ deux heures de conduite sur autoroute, je me sens encore alerte. Quelle bonne habitude adopter ?",
+        "answer_a": "Attendre les premiers bâillements pour faire une pause.",
+        "answer_b": "Faire une pause d’environ 15 à 20 minutes sur une aire.",
+        "answer_c": "Continuer deux heures de plus en ouvrant la fenêtre.",
+        "answer_d": "Remplacer la pause par un café bu en roulant.",
+        "explanation": "Il est recommandé de prévoir une pause d’environ 15 à 20 minutes au moins toutes les deux heures, même sans fatigue ressentie. Si la somnolence apparaît plus tôt, je m’arrête dès que possible dans un lieu sûr."
+      },
+      "en": {
+        "question_text": "After about two hours of motorway driving, I still feel alert. What is a good habit?",
+        "answer_a": "Wait until I start yawning before taking a break.",
+        "answer_b": "Take a break of about 15 to 20 minutes at a rest area.",
+        "answer_c": "Drive for another two hours with the window open.",
+        "answer_d": "Replace the break with coffee while driving.",
+        "explanation": "Plan a break of about 15 to 20 minutes at least every two hours, even if you do not feel tired. If drowsiness appears sooner, stop as soon as possible in a safe place."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-f7765777-500b-4605-9da7-a545c5a703b8.png",
+  "native_image_sha256": "9144526ad52b10b220829f6f57ddef31cd5904829ce245936bc075b713501b19",
+  "image_path": "assets-source/balanced-batch-2026-09-21/motorway_planned_break_two_hours/scene.jpg",
+  "image_sha256": "8375ca9efccf405a7c88272202c32cf6b3bc6d1f94948ee6eddda20654b3216f",
+  "visual_review": "Reviewed parked rest-area setting with marked bays, picnic area and separated motorway. Question supplies two hours and feeling alert rather than claiming they are visible. B is a preventive recommendation, not a statutory driving-time limit. Both translations and four options agree.",
+  "reviewed_on": "2026-09-21",
+  "reviewed_sha256": "a16313975686989618a7ec34f0fc09519012b45d484f930b90564bc67c0e89bf",
+  "question_key": "situation_motorway_planned_break_two_hours",
+  "imported_content_version": 89,
+  "imported_on": "2026-09-21"
+}

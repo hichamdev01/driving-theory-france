@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+  "proposal_sha256": "a49c0107015d46c4cfc9543a70f47e4bc2bacc2f7b6e05435c59fb1b079a1356",
+  "image_sha256": "b24fbd7c7b120ad4ccf43af72583ecfb29903ee4885173097be54b1c0f2b1301",
+  "compared_question_keys": [
+    "situation_motorway_friend_tow_offer",
+    "situation_motorway_flat_tyre_approved_recovery",
+    "situation_unsecured_roof_load",
+    "situation_motorway_breakdown_no_triangle",
+    "situation_coolant_hot_cap_wait"
+  ],
+  "checks": {
+    "official_rule": "SNCF Réseau rule 6 gives immediate escape through breakable barrier; official BEA-TT car case confirms SAL4 breakable arms. Question explicitly trapped, car movable, clear exit. Alert only after safety.",
+    "signs_and_text": "White rectangular barrier arm with red rectangular reflective bands, intact, no signs/words/signal faces. No highlighted solution point.",
+    "road_geometry": "Replacement is a neutral side close-up, not a driver diagram: two parallel rails through rubber panels into ballast, barrier above and separate. No ambiguous road stop line remains.",
+    "vehicles_and_people": "No vehicle or person depicted; movable trapped car and clear exit are explicitly stated in both stems rather than inferred.",
+    "dashboard_and_equipment": "Plausible lightweight barrier section and railway panel/rail relationship; no dashboard or invented controls.",
+    "phone_size": "Barrier and rails are clearly recognisable at 390 pixels; all emergency conditions supplied by wording.",
+    "french_and_english": "FR/EN agree on immediate action D and safe subsequent alert; explanation explicitly forbids entering a closed crossing, preventing generalisation.",
+    "novelty": "Existing railway questions concern entry and train priority; this asks escape after the vehicle is already trapped between barriers. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+    "full_resolution": "Inspected the entire final scene-2.jpg at original 1672x941 resolution and phone-2.jpg at 390 pixels. No vehicle or person depicted; movable trapped car and clear exit are explicitly stated in both stems rather than inferred. Plausible lightweight barrier section and railway panel/rail relationship; no dashboard or invented controls.",
+    "all_four_options": "Correct set D. A: Waiting retains the collision risk. B: This wastes time on the tracks. C: Clear the tracks before making the call. D: The breakable barrier allows the vehicle to escape. Four distinct options in both languages."
+  }
+}

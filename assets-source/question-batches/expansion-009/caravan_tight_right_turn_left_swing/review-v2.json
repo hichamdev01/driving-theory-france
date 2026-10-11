@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "aff6c571d7bc0f7b6ce33cac4a367d50eb25b9e9ffdec9da91701fb75e8cbc96",
+  "image_sha256": "11785150327f8e1a54477487b59ed51fc91634c416cd2977ea6e8be582d069e6",
+  "result": "pass",
+  "notes": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+  "compared_question_keys": [
+    "situation_long_caravan_facilitate_overtaking",
+    "situation_mountain_car_backs_for_caravan",
+    "situation_overtake_middle_lane_hog_no_right",
+    "situation_no_entry",
+    "situation_no_left_turn"
+  ],
+  "checks": {
+    "signs_and_text": "No road signs, signals, painted arrows or necessary readable text. Vehicle plates are not a question clue. Two red triangular caravan reflectors now present separately below rear lamps.",
+    "road_geometry": "Unmarked two-way village carriageway with an empty opposite half and a tight branch to the combination's right. Kerbs, house walls and branch mouth connect plausibly; tyres stay on asphalt.",
+    "vehicles_and_people": "Estate car and single-axle caravan aligned before manoeuvring, tow connection partly occluded naturally; body, windows, wheels and lights coherent. No other road users or fabricated gestures.",
+    "dashboard_and_equipment": "No dashboard shown. Caravan has separate rear lamp clusters, corrected paired red triangular reflectors, side amber markers and plausible roof fittings.",
+    "phone_size": "Full combination and right-hand branch remain visible at 390px; no tiny indicator or reflector is required to solve the question.",
+    "french_and_english": "Both explicitly establish that dimensions/turn prevent keeping right, permitted caravan and no prohibiting markings; the still image need not prove swept-path dimensions. Moderate speed and danger check match.",
+    "all_four_options": "B alone states the conditional manoeuvre at moderate speed without endangering others. A omits checks; C incorrectly limits the exception to buses; D falsely grants priority through the indicator.",
+    "official_rule": "Sources read and checked 2026-10-11; research-and-selection.json records facts and limitations. R415-3 II: left carriageway may be used if bend and vehicle dimensions prevent keeping right, only at moderate speed after ensuring no danger to others. Source: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039278135/",
+    "novelty": "Truck-right-turn blind-spot item asks another driver not to pass inside a truck. This asks the towing driver when the left side can be used for a tight right turn, rather than overtaking or oncoming crossing. All five saved nearest questions, including bilingual options/explanations, compared as recorded in research-and-selection.json; broader current bank screened.",
+    "full_resolution": "Inspected entire final staged JPEG 1672x940, plus 390px preview, against both translations and all four options. Rejected earlier candidates remain in history. No detected unresolved defect in this version."
+  }
+}

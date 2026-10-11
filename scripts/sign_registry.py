@@ -15,6 +15,7 @@ REVIEW = AUDIT / 'france-sign-review.json'
 REGISTRY = AUDIT / 'france-sign-registry.json'
 REPORT = AUDIT / 'france-sign-audit.md'
 JOBS = AUDIT / 'sign-jobs'
+BATCHES = AUDIT / 'batch-jobs'
 
 
 def encoded(value):
@@ -188,6 +189,27 @@ def build(root=ROOT):
                 errors.append(f'Workflow image changed: {job["id"]}')
         paths.add(path.relative_to(root))
         jobs.append(job)
+    batches = []
+    for path in sorted((root / BATCHES).glob('*.json')):
+        batch = read(root, path.relative_to(root))
+        if batch.get('state') not in ('reserved', 'imported', 'verified'):
+            raise ValueError(f'Invalid batch state: {path.name}')
+        paths.add(path.relative_to(root))
+        for item in batch['items']:
+            proposal = item['proposal']
+            for code in proposal.get('primary_codes', []):
+                if code not in index:
+                    raise ValueError(f'Unknown batch sign code: {code}')
+                if batch['state'] == 'reserved':
+                    index[code]['pending_job_ids'].append(batch['id'])
+            if item.get('image_path'):
+                asset = Path(item['image_path'])
+                if asset.is_absolute() or '..' in asset.parts:
+                    raise ValueError('Batch asset must be a relative workspace path')
+                paths.add(asset)
+                if file_hash(root, asset) != item['image_sha256']:
+                    errors.append(f'Batch image changed: {proposal["scenario_id"]}')
+        batches.append(batch)
     question_index = {q['key']: q for q in questions}
     for code, entry in index.items():
         for field in entry:
@@ -225,7 +247,7 @@ def build(root=ROOT):
             'question_statuses': dict(sorted(Counter(q['status'] for q in questions).items())),
             'questions_by_category': dict(sorted(Counter(q['category_slug'] for q in questions).items())),
             'codes_with_primary_questions': sum(bool(e['question_keys']) for e in index.values())},
-        'codes': index, 'questions': questions, 'catalogue': signs, 'drafts': drafts, 'jobs': jobs,
+        'codes': index, 'questions': questions, 'catalogue': signs, 'drafts': drafts, 'jobs': jobs, 'batches': batches,
         'exact_duplicate_content_groups': duplicates(questions, 'content_sha256'),
         'exact_duplicate_image_groups': duplicates(questions, 'image_sha256'),
         'scenario_review_groups': review['scenario_review_groups'], 'findings': review['findings'],

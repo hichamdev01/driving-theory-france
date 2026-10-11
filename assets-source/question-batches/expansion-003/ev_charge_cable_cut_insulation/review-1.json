@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+  "proposal_sha256": "7872e9a4cdd9f9c93146f9f866f321bc3a5ce30bab2b40927280d2061c92a8c0",
+  "image_sha256": "4b0e430b4b6c693201b3c446cc692a177cbaf0c3d48e40c1775f5a1aedc819ad",
+  "compared_question_keys": [
+    "situation_ev_charger_blocked_parking",
+    "situation_green_turn_pedestrian_crossing",
+    "safety_door_cyclist_check",
+    "situation_rear_vehicle_already_overtaking",
+    "situation_mountain_car_backs_for_caravan"
+  ],
+  "checks": {
+    "official_rule": "Renault charging instructions explicitly prohibit use after a cable cut and require replacement. No unsupported instruction to touch conductors or improvise electrical repair.",
+    "signs_and_text": "No readable text or labels; capped connector prevents invented contact numbering.",
+    "road_geometry": "Dry garage floor, no road markings or wet electrical environment.",
+    "vehicles_and_people": "Background parked wheel/body plausible; no hands, people or exposed live sparks.",
+    "dashboard_and_equipment": "One continuous cable with visibly split sheath and intact coloured inner insulation; capped charging handle, strain relief and disconnected state coherent.",
+    "phone_size": "The cut and coloured insulation remain visible at 390 pixels; the stem also explicitly identifies the cut.",
+    "french_and_english": "Both translations concern a cut BEFORE plugging in; B is identical in meaning. Dry weather and tape distractors remain false.",
+    "novelty": "Existing charging topic concerns obstructing a charging bay, not electrical equipment inspection. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+    "full_resolution": "Inspected the entire final scene-1.jpg at original 1672x941 resolution and phone-1.jpg at 390 pixels. Background parked wheel/body plausible; no hands, people or exposed live sparks. One continuous cable with visibly split sheath and intact coloured inner insulation; capped charging handle, strain relief and disconnected state coherent.",
+    "all_four_options": "Correct set B. A: Starting normally does not prove sound insulation. B: Avoid use and arrange replacement. C: An improvised repair is unsafe. D: Dry weather does not remove the defect. Four distinct options in both languages."
+  }
+}

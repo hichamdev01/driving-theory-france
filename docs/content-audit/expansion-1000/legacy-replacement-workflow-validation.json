@@ -1,0 +1,24 @@
+{
+  "checked_on": "2026-10-11",
+  "result": "pass",
+  "test_count": 59,
+  "test_log": "assets-source/question-batches/expansion-009/python-tests-current.log",
+  "test_log_sha256": "4551e1817bdec01359b3b5b5f7108e8d165ccf7157b44f590a93fa62d02735ef",
+  "scripts": {
+    "scripts/question_batch.py": "bae630d5e4aeed54387eed607ab680d7598b642558071a724583c52ef06d4cc1",
+    "scripts/sign_workflow.py": "02e662ceef5aaf476ae66ecc2b092b1bf5b6723c7c03b3134e7b4f74169aef1f",
+    "scripts/tests/test_question_batch.py": "788c2bad8f4bbe62298ddd9f6242c7861a9338a9558f7f48ce1a2f63eaec5dce"
+  },
+  "checks": [
+    "Replacement preserves full question-key order and total count.",
+    "Text-only and unrelated questions remain byte-identical in fixtures.",
+    "Old question, image and review mapping archived.",
+    "New keys, missing reason and covered sign codes rejected.",
+    "Stale approvals and altered archives block import.",
+    "Candidate replacement keeps old identity and archive.",
+    "Interrupted replacement recovers and retry does not repeat version increment.",
+    "Nonstandard legacy key accepted only for that explicitly retained identity; unsafe key syntax rejected.",
+    "Prior batch must be verified; replacement count does not increase bank even at target."
+  ],
+  "deployment": "Implementation and fixture validation only; no real legacy replacement batch reserved/imported. Current bank remains expansion009 at478/version102 awaiting visual simulator review."
+}

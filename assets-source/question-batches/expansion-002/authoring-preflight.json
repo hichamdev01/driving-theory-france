@@ -1,0 +1,302 @@
+[
+  {
+    "scenario": "abs_emergency_pedal_pulsation",
+    "nearest": [
+      {
+        "key": "safety_accident_first_actions",
+        "similarity": 0.513,
+        "question_fr": "Lors d’un accident de la route, quelles premières actions sont adaptées ?"
+      },
+      {
+        "key": "situation_parking_secure_before_leaving",
+        "similarity": 0.5,
+        "question_fr": "Avant de laisser ma voiture stationnée dans cette pente, quelle précaution est indispensable ?"
+      },
+      {
+        "key": "situation_cocaine_false_confidence",
+        "similarity": 0.477,
+        "question_fr": "Une personne ayant consommé de la cocaïne se dit très alerte et veut conduire. Quelle réponse est correcte ?"
+      },
+      {
+        "key": "situation_night_unlit_roadside_position_lights",
+        "similarity": 0.474,
+        "question_fr": "Je laisse ma voiture stationnée de nuit sur cette chaussée sans éclairage public. Quelle signalisation conserver ?"
+      },
+      {
+        "key": "situation_ecstasy_false_alertness",
+        "similarity": 0.456,
+        "question_fr": "Après avoir pris de l'ecstasy, cette personne dit ne plus sentir sa fatigue et veut conduire. Quelle décision est correcte ?"
+      }
+    ]
+  },
+  {
+    "scenario": "ecall_accidental_connected_call",
+    "nearest": [
+      {
+        "key": "situation_motorway_friend_tow_offer",
+        "similarity": 0.507,
+        "question_fr": "Ma voiture est en panne sur autoroute et un ami propose de la remorquer avec une sangle. Que dois-je faire ?"
+      },
+      {
+        "key": "situation_coolant_hot_cap_wait",
+        "similarity": 0.469,
+        "question_fr": "Après un trajet, ma voiture est garée, contact coupé, mais le moteur est encore chaud. Pour contrôler le liquide de refroidissement, je dois :"
+      },
+      {
+        "key": "situation_rear_vehicle_already_overtaking",
+        "similarity": 0.422,
+        "question_fr": "Je veux dépasser le camion, mais une voiture derrière moi a déjà commencé à me dépasser. Que faire ?"
+      },
+      {
+        "key": "situation_garage_exit_sidewalk_pedestrian",
+        "similarity": 0.408,
+        "question_fr": "Je sors d'un garage en traversant le trottoir, où un piéton passe devant moi. Que dois-je faire ?"
+      },
+      {
+        "key": "parking_on_pavement",
+        "similarity": 0.398,
+        "question_fr": "Une voiture peut-elle normalement stationner partiellement sur le trottoir sans aménagement matérialisé ?"
+      }
+    ]
+  },
+  {
+    "scenario": "ead_retest_stop_engine",
+    "nearest": [
+      {
+        "key": "situation_rear_passenger_seatbelt",
+        "similarity": 0.439,
+        "question_fr": "Mon passager adulte à l'arrière ne veut pas boucler sa ceinture pour ce trajet très court. Puis-je démarrer ?"
+      },
+      {
+        "key": "situation_temporary_yellow_lane_shift",
+        "similarity": 0.431,
+        "question_fr": "Dans ce chantier, le marquage jaune temporaire déporte ma voie vers la gauche. Quelle trajectoire dois-je suivre ?"
+      },
+      {
+        "key": "situation_garage_exit_sidewalk_pedestrian",
+        "similarity": 0.417,
+        "question_fr": "Je sors d'un garage en traversant le trottoir, où un piéton passe devant moi. Que dois-je faire ?"
+      },
+      {
+        "key": "situation_front_load_no_projection",
+        "similarity": 0.407,
+        "question_fr": "Ces planches dépassent devant l’aplomb avant de ma voiture. Puis-je prendre la route ?"
+      },
+      {
+        "key": "situation_motorway_toll_intercom_problem",
+        "similarity": 0.404,
+        "question_fr": "Le terminal de péage ne fonctionne pas et la barrière reste fermée. Que dois-je faire ?"
+      }
+    ]
+  },
+  {
+    "scenario": "medicine_blurred_vision_during_drive",
+    "nearest": [
+      {
+        "key": "safety_eco_driving_anticipation",
+        "similarity": 0.439,
+        "question_fr": "Quel style de conduite améliore généralement la sécurité tout en réduisant la consommation d’énergie ?"
+      },
+      {
+        "key": "situation_motorway_keep_right",
+        "similarity": 0.427,
+        "question_fr": "Après mon dépassement, les deux voies de droite sont libres. Où dois-je circuler ?"
+      },
+      {
+        "key": "situation_b21b_straight_at_junction",
+        "similarity": 0.426,
+        "question_fr": "À la prochaine intersection, quelle direction ce panneau m’impose-t-il ?"
+      },
+      {
+        "key": "medicine_level_three",
+        "similarity": 0.424,
+        "question_fr": "Un médicament porte le pictogramme rouge de niveau 3. Que dois-je faire ?"
+      },
+      {
+        "key": "safety_emergency_corridor",
+        "similarity": 0.419,
+        "question_fr": "J’approche d’un véhicule d’intervention ou de service arrêté avec ses feux d’alerte. Que dois-je faire ?"
+      }
+    ]
+  },
+  {
+    "scenario": "moving_procession_do_not_cut",
+    "nearest": [
+      {
+        "key": "situation_two_way_wrong_side_parking",
+        "similarity": 0.49,
+        "question_fr": "En agglomération sur cette chaussée à double sens, une place est libre à gauche. Puis-je m’y garer face au sens inverse ?"
+      },
+      {
+        "key": "situation_overtaking_uncontrolled_intersection",
+        "similarity": 0.463,
+        "question_fr": "Je vais dépasser cette voiture à l'approche d'une intersection sans feu ni route prioritaire. Puis-je commencer la manœuvre ?"
+      },
+      {
+        "key": "situation_first_aid_conscious_waiting_care",
+        "similarity": 0.441,
+        "question_fr": "Les lieux sont sécurisés et les secours prévenus. Cette personne blessée est consciente, sans danger immédiat ni saignement important. En attendant, que puis-je faire ?"
+      },
+      {
+        "key": "situation_overtake_right_left_turner",
+        "similarity": 0.437,
+        "question_fr": "Cette voiture ralentit et signale qu'elle tourne à gauche. Si l'espace est suffisant et sûr, de quel côté puis-je la dépasser ?"
+      },
+      {
+        "key": "situation_blind_crest_no_overtake",
+        "similarity": 0.435,
+        "question_fr": "Le véhicule devant roule lentement et le sommet de la côte masque la route. Puis-je commencer à le dépasser ?"
+      }
+    ]
+  },
+  {
+    "scenario": "yellow_broken_kerb_parking_only",
+    "nearest": [
+      {
+        "key": "danger_sign_temporary_warning",
+        "similarity": 0.492,
+        "question_fr": "Que signifie le fond jaune de ce panneau ?"
+      },
+      {
+        "key": "situation_fire_hydrant_parking",
+        "similarity": 0.481,
+        "question_fr": "Puis-je stationner devant cette bouche d'incendie encastrée dans le trottoir ?"
+      },
+      {
+        "key": "situation_c30_car_scenario",
+        "similarity": 0.474,
+        "question_fr": "Que signifie ce panneau sur cette route à trois voies ?"
+      },
+      {
+        "key": "speed_motorway_rain",
+        "similarity": 0.448,
+        "question_fr": "Quelle est la vitesse maximale générale d’une voiture sur autoroute lorsqu’il pleut ?"
+      },
+      {
+        "key": "parking_on_pavement",
+        "similarity": 0.443,
+        "question_fr": "Une voiture peut-elle normalement stationner partiellement sur le trottoir sans aménagement matérialisé ?"
+      }
+    ]
+  },
+  {
+    "scenario": "alternating_parking_change_evening",
+    "nearest": [
+      {
+        "key": "situation_traffic_lights_blocked",
+        "similarity": 0.435,
+        "question_fr": "Le feu est vert, mais la circulation est arrêtée après le carrefour : puis-je m'engager ?"
+      },
+      {
+        "key": "situation_hazard_lights_strong_slowdown",
+        "similarity": 0.429,
+        "question_fr": "Un bouchon me contraint soudain à rouler très lentement et je suis le dernier de la file. Que dois-je faire ?"
+      },
+      {
+        "key": "situation_officer_stop_over_green",
+        "similarity": 0.429,
+        "question_fr": "Le feu est vert, mais l'agent face à moi m'ordonne clairement de m'arrêter. Quelle indication dois-je suivre ?"
+      },
+      {
+        "key": "situation_random_alcohol_check_no_infraction",
+        "similarity": 0.429,
+        "question_fr": "Je n'ai commis aucune infraction et aucun accident n'a eu lieu. Les forces de l'ordre peuvent-elles quand même contrôler mon alcoolémie ?"
+      },
+      {
+        "key": "situation_overtake_tram_left_one_way",
+        "similarity": 0.427,
+        "question_fr": "Cette rue est à sens unique et le tramway roule sans desservir un arrêt. Si tout est sûr, puis-je le dépasser par la gauche ?"
+      }
+    ]
+  },
+  {
+    "scenario": "trailer_ptra_over3500_motorway90",
+    "nearest": [
+      {
+        "key": "situation_motorway_breakdown_no_triangle",
+        "similarity": 0.406,
+        "question_fr": "Ma voiture est en panne sur la bande d'arrêt d'urgence de l'autoroute. Dois-je marcher sur la chaussée pour poser le triangle ?"
+      },
+      {
+        "key": "situation_motorway_friend_tow_offer",
+        "similarity": 0.405,
+        "question_fr": "Ma voiture est en panne sur autoroute et un ami propose de la remorquer avec une sangle. Que dois-je faire ?"
+      },
+      {
+        "key": "situation_night_unlit_roadside_position_lights",
+        "similarity": 0.388,
+        "question_fr": "Je laisse ma voiture stationnée de nuit sur cette chaussée sans éclairage public. Quelle signalisation conserver ?"
+      },
+      {
+        "key": "situation_overtake_too_little_speed_difference",
+        "similarity": 0.369,
+        "question_fr": "La voiture devant roule presque à ma vitesse. Même à la limite autorisée, mon dépassement serait très long. Que faire ?"
+      },
+      {
+        "key": "situation_overtaking_uncontrolled_intersection",
+        "similarity": 0.366,
+        "question_fr": "Je vais dépasser cette voiture à l'approche d'une intersection sans feu ni route prioritaire. Puis-je commencer la manœuvre ?"
+      }
+    ]
+  },
+  {
+    "scenario": "long_caravan_facilitate_overtaking",
+    "nearest": [
+      {
+        "key": "situation_motorway_friend_tow_offer",
+        "similarity": 0.452,
+        "question_fr": "Ma voiture est en panne sur autoroute et un ami propose de la remorquer avec une sangle. Que dois-je faire ?"
+      },
+      {
+        "key": "situation_mountain_downhill_yields",
+        "similarity": 0.448,
+        "question_fr": "Je descends cette route de montagne trop étroite pour croiser la voiture qui monte. Qui doit s'arrêter en premier ?"
+      },
+      {
+        "key": "situation_coolant_hot_cap_wait",
+        "similarity": 0.447,
+        "question_fr": "Après un trajet, ma voiture est garée, contact coupé, mais le moteur est encore chaud. Pour contrôler le liquide de refroidissement, je dois :"
+      },
+      {
+        "key": "situation_triangle_placement_personal_danger",
+        "similarity": 0.427,
+        "question_fr": "Hors autoroute, ma voiture est immobilisée après ce virage, mais marcher sur la chaussée pour poser le triangle me mettrait manifestement en danger. Dois-je le faire ?"
+      },
+      {
+        "key": "situation_overtake_middle_lane_hog_no_right",
+        "similarity": 0.419,
+        "question_fr": "La circulation est fluide et cette voiture reste au milieu. Puis-je la dépasser en restant à sa droite ?"
+      }
+    ]
+  },
+  {
+    "scenario": "motorway_tunnel_fire_evacuate",
+    "nearest": [
+      {
+        "key": "situation_phone_in_moving_queue",
+        "similarity": 0.481,
+        "question_fr": "La file avance au pas et mon véhicule roule encore. Puis-je tenir mon téléphone pour lire un message ?"
+      },
+      {
+        "key": "safety_emergency_corridor",
+        "similarity": 0.467,
+        "question_fr": "J’approche d’un véhicule d’intervention ou de service arrêté avec ses feux d’alerte. Que dois-je faire ?"
+      },
+      {
+        "key": "situation_motorway_passenger_walks_shoulder",
+        "similarity": 0.452,
+        "question_fr": "Après une panne sur autoroute, mon passager veut marcher sur la bande d'arrêt d'urgence jusqu'à l'aire suivante. Est-ce autorisé ?"
+      },
+      {
+        "key": "situation_tunnel_nonessential_stop",
+        "similarity": 0.444,
+        "question_fr": "Mon passager veut descendre dans ce tunnel, sans urgence ni emplacement prévu. Puis-je m'arrêter quelques instants ?"
+      },
+      {
+        "key": "situation_motorway_friend_tow_offer",
+        "similarity": 0.44,
+        "question_fr": "Ma voiture est en panne sur autoroute et un ami propose de la remorquer avec une sangle. Que dois-je faire ?"
+      }
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "key": "situation_bus_passengers_alighting_slow",
+    "similarity": 0.11,
+    "question_fr": "Des voyageurs descendent de ce bus arrêté et peuvent traverser devant lui. Comment adapter mon allure ?"
+  },
+  {
+    "key": "situation_rear_facing_child_active_airbag",
+    "similarity": 0.11,
+    "question_fr": "Ce siège enfant dos à la route est installé à l'avant et l'airbag passager est actif. Puis-je partir ainsi ?"
+  },
+  {
+    "key": "safety_seat_belts_occupants",
+    "similarity": 0.109,
+    "question_fr": "Qui doit normalement porter la ceinture dans une voiture qui en est équipée ?"
+  },
+  {
+    "key": "safety_child_under_ten",
+    "similarity": 0.098,
+    "question_fr": "Où un enfant de moins de dix ans doit-il normalement voyager dans une voiture ?"
+  },
+  {
+    "key": "situation_rural_park_off_carriageway_right",
+    "similarity": 0.096,
+    "question_fr": "Hors agglomération, je veux stationner sur cette route à double sens dont l'accotement droit est praticable. Où placer la voiture ?"
+  }
+]

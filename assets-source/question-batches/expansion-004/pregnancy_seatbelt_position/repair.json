@@ -1,0 +1,95 @@
+{
+  "repair_id": "r16-overlap-to-pregnancy-belt",
+  "scenario_id": "r16_right_arrow_conditional_passage",
+  "previous_question_sha256": "590594999c02c56ca984453101fcd55c69a5706228146f3483d70129c22a9438",
+  "reason": "Confirmed semantic duplicate of situation_yellow_arrow_red_light_turn. Replace with previously uncovered pregnancy belt-routing objective, preserving stable database key and two-answer mix.",
+  "proposal": {
+    "scenario_id": "pregnancy_seatbelt_position",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Pregnant adult passenger in an ordinary category-B car; no medical exemption.",
+    "learning_objective": "Position the lap and shoulder straps safely during pregnancy.",
+    "topic": "occupants.pregnancy_belt_position",
+    "scenario": "Pregnant passenger, no exemption, before departure. Determine correct routing of both seat-belt straps.",
+    "novelty_review": "Read all428 French stems across ALL categories, plus full seatbelt/child-seat explanations. Existing questions require wearing belts, protecting minors and disabling airbag for rear-facing child seats. None tests lap-strap position below a pregnant abdomen or retaining the shoulder strap across the chest. Stable key retained from withdrawn duplicate R16 item to preserve database identity; key wording is historical.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_r16_right_arrow_conditional_passage",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a",
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Enceinte et sans dispense médicale, je m’installe comme passagère. Comment positionner correctement ma ceinture ?",
+          "answer_a": "La sangle basse sous le ventre, au plus bas sur le bassin.",
+          "answer_b": "La sangle basse au milieu du ventre.",
+          "answer_c": "La sangle diagonale sur l’épaule et le thorax.",
+          "answer_d": "La sangle diagonale derrière mon dos.",
+          "explanation": "Pendant la grossesse, la sangle basse doit passer sous le ventre, au plus bas sur les os du bassin. La partie diagonale reste sur l’épaule et le thorax : la placer derrière le dos supprime une partie de la protection."
+        },
+        "en": {
+          "question_text": "I am pregnant and have no medical exemption. I am getting into the passenger seat. How should I position my seat belt?",
+          "answer_a": "The lap strap below my abdomen, as low as possible on my pelvis.",
+          "answer_b": "The lap strap across the middle of my abdomen.",
+          "answer_c": "The diagonal strap over my shoulder and chest.",
+          "answer_d": "The diagonal strap behind my back.",
+          "explanation": "During pregnancy, the lap strap should pass below the abdomen, as low as possible over the pelvic bones. The diagonal strap stays over the shoulder and chest; putting it behind the back removes part of the protection."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "La sangle prend appui sur le bassin, sous le ventre.",
+        "b": "Le ventre ne doit pas supporter la sangle basse.",
+        "c": "La partie haute conserve son trajet normal.",
+        "d": "Derrière le dos, elle ne retient plus correctement le thorax."
+      },
+      "en": {
+        "a": "The lap strap rests on the pelvis below the abdomen.",
+        "b": "The lap strap must not run across the abdomen.",
+        "c": "The upper strap keeps its normal route.",
+        "d": "Behind the back it cannot properly restrain the chest."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://www.interieur.gouv.fr/actualites/communiques-de-presse/a-loccasion-de-journee-mondiale-des-parents-1er-juin-securite-0",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "Interior Ministry31May2024 En cas de grossesse: lap strap below abdomen, lowest possible on pelvic bone; upper part positioned normally. Current page read10October2026."
+      }
+    ],
+    "image_prompt": "Use case: photorealistic-natural. Create ONE original landscape16:9 photograph,1672x941 or larger, for a French passenger-car driving-theory scene. No question, answer, annotation, label, diagram, solution highlight, logo or watermark. Natural daylight photograph through the open front passenger door of a parked LEFT-HAND-DRIVE ordinary European car. Close clear side-three-quarter view of a fully clothed visibly pregnant adult woman sitting upright normally in the FRONT RIGHT PASSENGER SEAT; head can be cropped above mouth, legs visible to mid-thigh. Plain soft blue fitted maternity top and dark trousers. One standard BLACK THREE-POINT SEAT BELT correctly fastened, flat untwisted webbing: diagonal strap runs from the upper outboard RIGHT-shoulder anchorage across her collarbone and between her breasts, along the side of the rounded belly to the inboard LEFT-hip buckle. The lap strap runs visibly LOW across BOTH hips at the upper thighs, UNDER the entire rounded abdomen, never across its middle. The shoulder and lap portions meet naturally at the same latched metal tongue in one buckle next to her LEFT hip. Belt tension snug, no extra belts, no cushion, no belt adapter. Her two relaxed hands rest separately on upper thighs without covering any belt section; realistic fingers. Show complete torso, round belly, both hips and both belt portions clearly at phone size. The car is parked on a private driveway with leafy garden outside. Passenger seat and head restraint mechanically plausible. No steering wheel on passenger side, no visible dashboard dials, no number plates, no signs or text."
+  },
+  "image_path": "assets-source/question-batches/expansion-004/pregnancy_seatbelt_position/scene-2.jpg",
+  "review": {
+    "result": "pass",
+    "notes": "Replacement objective and exact final JPEG fully reviewed. No detected unresolved defects; approval does not claim infallibility.",
+    "proposal_sha256": "a33a74f60c3bbf5ad3ec17176cdfe969877f50b9ec6d9fb1d7da14555e67cdb7",
+    "image_sha256": "b4850da0b6a03ecfa1fe81f9ecd1343523dc6a35f233fceda858113a08ecdfb7",
+    "checks": {
+      "official_rule": "Interior Ministry pregnancy advice read directly: lap strap below abdomen as low as possible on pelvic bone; upper strap positioned normally. No claimed automatic medical exemption.",
+      "novelty": "Read all428 French stems across ALL categories, plus full seatbelt/child-seat explanations. Existing questions require wearing belts, protecting minors and disabling airbag for rear-facing child seats. None tests lap-strap position below a pregnant abdomen or retaining the shoulder strap across the chest. Stable key retained from withdrawn duplicate R16 item to preserve database identity; key wording is historical. Weighted nearest comparisons: bus passenger speed and rural parking are unrelated; general belts/child seating do not test pregnancy belt routing.",
+      "signs_and_text": "No road signs, supplementary plates, road markings or readable text. Gear area lettering removed. Red release button only on correct inboard buckle.",
+      "road_geometry": "Stationary private driveway/garden outside an open front-right passenger door; no traffic manoeuvre or claimed priority.",
+      "vehicles_and_people": "One fully clothed adult passenger; two anatomically plausible hands with five fingers, relaxed on thighs; seat and head restraint plausible. Rounded abdomen, hips and shoulders visible.",
+      "dashboard_and_equipment": "Standard three-point belt: diagonal flat webbing across shoulder/chest into partly obscured inboard buckle, low lap strap below abdomen across pelvis to outboard fixed anchor. Erroneous additional outboard red buckle in candidate1 removed. No extra restraint or malformed dial.",
+      "full_resolution": "Entire final1672x941 JPEG inspected at original resolution, including fingers, belt paths, anchors, inboard release, door hinges/latch/trim, seat, centre console and exterior. No detected unresolved defect.",
+      "phone_size": "390px preview inspected: low lap strap below abdomen and diagonal shoulder/chest path both remain distinguishable. No tiny text required.",
+      "french_and_english": "Both translations reviewed. Pregnant passenger without exemption; low strap below abdomen/pelvis and upper strap shoulder/chest convey equivalent meaning. No claim about driving while photographed.",
+      "all_four_options": "A and C correct in both languages. B crosses abdomen incorrectly; D removes chest restraint by putting shoulder strap behind back. Four distinct statements, no duplicate answer. Both explanations complete and over100characters."
+    },
+    "compared_question_keys": [
+      "situation_bus_passengers_alighting_slow",
+      "situation_rear_facing_child_active_airbag",
+      "safety_seat_belts_occupants",
+      "safety_child_under_ten",
+      "situation_rural_park_off_carriageway_right",
+      "situation_rear_passenger_seatbelt",
+      "situation_minor_passenger_unbelted_driver_duty"
+    ]
+  }
+}

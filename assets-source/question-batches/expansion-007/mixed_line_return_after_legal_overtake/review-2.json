@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "c92b30a9209e674bc9c7c0c62999c9636dca500257617ce14998f6a309267aef",
+  "image_sha256": "a8eedd0881b91842aa85f1e6844f6542f0b35e5601060f7b9af0962aab1d0a0d",
+  "result": "pass",
+  "notes": "Entire exact replacement scene-2.jpg and390px phone-2.jpg inspected. No detected unresolved defects.",
+  "compared_question_keys": [
+    "situation_mixed_line_broken_my_side",
+    "situation_return_right_safe_gap",
+    "situation_yellow_broken_kerb_parking_only",
+    "situation_overtaking_no_safe_return_gap",
+    "situation_cyclist_solid_line_overlap_only"
+  ],
+  "checks": {
+    "official_rule": "R412-20 mixed-line manoeuvre judged at start, completed before end of broken line; current article read.",
+    "novelty": "Existing mixed-line item asks starting permission. This asks the opposite-side return where solid component is now nearest, with commencement and completion conditions explicit. Full five nearest items and full-bank topic inventory reviewed.",
+    "signs_and_text": "Mixed marking continuous on camera side, broken beyond it; no signs/text.",
+    "road_geometry": "Two-way two-lane road. T1 short strokes now separated by long gaps with perspective consistent with3m/10m; narrow parallel components, no extra lane.",
+    "vehicles_and_people": "No vehicles visible; passed car behind frame per scenario, return safety explicitly stated.",
+    "dashboard_and_equipment": "Thin bonnet edge, no invented speed or mirror reading.",
+    "full_resolution": "Exact replacement1672x941 JPEG viewed fully at original resolution. Mixed marking continuous on camera side, broken beyond it; no signs/text. Thin bonnet edge, no invented speed or mirror reading.",
+    "phone_size": "At390px solid nearest and spaced broken component to right remain visible.",
+    "french_and_english": "Same conditions, scope and answer set; all unavailable temporal facts explicit. Legal pass began with broken line nearest own lane; now on opposite side, same mixed line continues and safe return gap exists.",
+    "all_four_options": "Correct set d. {'fr': {'a': 'Rester à gauche prolongerait inutilement la manœuvre.', 'b': 'Un arrêt sur la voie opposée serait dangereux.', 'c': 'Aucune dérogation à la vitesse.', 'd': 'Début du bon côté et fin avant la fin des pointillés.'}, 'en': {'a': 'Staying left needlessly prolongs the manoeuvre.', 'b': 'Stopping in the opposing lane is dangerous.', 'c': 'There is no speed exemption.', 'd': 'Started on the permitted side and completed before the broken line ends.'}}"
+  }
+}

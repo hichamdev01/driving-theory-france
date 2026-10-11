@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "proposal_sha256": "6c0f86b1ff2a64260db0e83a19b57f4841591b19f31a659d41bb9a21c3faf97a",
+  "image_sha256": "1777dcc8c2845c501340718b2449fac14519267afe5bbd0e23682566f4e1da98",
+  "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+  "compared_question_keys": [
+    "safety_accident_first_actions",
+    "situation_parking_secure_before_leaving",
+    "situation_cocaine_false_confidence",
+    "situation_night_unlit_roadside_position_lights",
+    "situation_ecstasy_false_alertness"
+  ],
+  "checks": {
+    "official_rule": "Reviewed authoritative sources checked 2026-10-09: ABS can cause pedal tremor; for emergency braking maintain strong continuous pressure without pumping.",
+    "novelty": "Existing aquaplaning and braking-distance questions concern grip loss or speed physics, not how to operate an ABS brake pedal. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+    "signs_and_text": "No signs, markings, text, symbols, plates or highlights in the footwell.",
+    "road_geometry": "Interior-only view; no road geometry or direction claim. Automatic-car pedal arrangement is consistent with the wording.",
+    "vehicles_and_people": "Two natural lower legs and flat shoes; right foot contacts the wide brake, left rests on the fixed footrest.",
+    "dashboard_and_equipment": "Wide brake at centre and narrow accelerator at right, footrest at far left; plausible suspended pedal arms; no extra clutch or loose object. Still image cannot demonstrate ABS activation, explicitly supplied in wording.",
+    "full_resolution": "Viewed exact staged scene-1.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No signs, markings, text, symbols, plates or highlights in the footwell. Wide brake at centre and narrow accelerator at right, footrest at far left; plausible suspended pedal arms; no extra clutch or loose object. Still image cannot demonstrate ABS activation, explicitly supplied in wording.",
+    "phone_size": "Viewed phone-preview-1.jpg at 390 px. Both feet and the brake/accelerator distinction remain clear at 390 px; no tiny clue required.",
+    "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: Emergency braking in an ABS-equipped car on a wet road. ABS operation and pedal vibration are stated; a still image cannot establish them.",
+    "all_four_options": "Correct set a,d. FR: A: Correct : pression forte continue.; B: Incorrect : le système module déjà le freinage.; C: Incorrect : les pulsations ne justifient pas de relâcher un freinage nécessaire.; D: Correct : réaction normale possible de l’ABS. EN: A: Correct: firm continuous pressure.; B: Incorrect: the system already modulates braking.; C: Incorrect: pulsation alone does not justify releasing necessary braking.; D: Correct: ABS may produce normal pedal pulsation."
+  }
+}

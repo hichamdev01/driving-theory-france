@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+  "proposal_sha256": "09f68e02f4ec5b41c11713a5638332b45867c9f9f77950a7aa776fa336d46965",
+  "image_sha256": "5e10e96f4c2f0ba651960a9edbf448d3b4c5957be39dc1a770ca190f99e1d1dd",
+  "compared_question_keys": [
+    "situation_b55_car_scenario",
+    "situation_c13c_dead_end_pedestrian_exit",
+    "situation_left_turn_oncoming_yield",
+    "situation_c24b_car_interpretation",
+    "situation_probationary_posted_90_max_80"
+  ],
+  "checks": {
+    "official_rule": "IISR115-3C and annexB2 checked 2026-10-09, official reference retained. Final marking has long thin stem, oblique left branch and elongated left-pointing head, not a straight-ahead branch.",
+    "signs_and_text": "One white left-only directional marking, solid left boundary and broken right boundary. No stop line, vertical sign, dimensions or text.",
+    "road_geometry": "Final close crop shows one arrow centred in one lane before junction. Initial requests for two visible repetitions were superseded by close crop; short dedicated lane is explicit in stem. No contradictory through-road/dead-end geometry remains visible.",
+    "vehicles_and_people": "No people or vehicles; no gesture, traffic direction or priority assumption needed.",
+    "dashboard_and_equipment": "No dashboard or equipment in close road-surface crop.",
+    "full_resolution": "Final scene-4 inspected at1672x941 and compared to leftward mirror of annexB2: diagonal branch and tall narrow triangular head with leftmost point retained. Duplicate arrow and unexplained stop line removed.",
+    "phone_size": "390px final preview retains complete stem, branch and head clearly; sole direction left, no second forward branch.",
+    "french_and_english": "Both ask direction indicated by pavement arrow in stated short dedicated lane; neither asks which manoeuvre is safe or priority.",
+    "all_four_options": "C only. A has no straight-ahead branch; B wrong side; D invents a second branch; C matches left-only symbol.",
+    "novelty": "Nearest B55, C13c, left-turn yielding and probationary-speed questions are unrelated. C24b tests reading a vertical lane diagram to choose a through lane; this item decodes the pavement-only directional marking of a short turn pocket. It must not reuse a C24 sign as a new primary target."
+  }
+}

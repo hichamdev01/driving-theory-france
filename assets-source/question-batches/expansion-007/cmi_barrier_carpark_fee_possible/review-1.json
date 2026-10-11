@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "4c3ac3c7a60f81cc3904d9a7cf1ff094fba0819051a13505cf442beecd3e8ec0",
+  "image_sha256": "2ab16ab3996712c9ea558994be560923c1e5fc2aa1cdb90b338765c98690cf2d",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected at full resolution and390px. No detected unresolved defects.",
+  "compared_question_keys": [
+    "situation_cmi_parking_local_twelve_hour_limit",
+    "situation_cmi_parking_card_passenger",
+    "situation_c1b_parking_disc_control",
+    "situation_speed_carpark_walking_pace",
+    "situation_c112_tunnel_exit"
+  ],
+  "checks": {
+    "official_rule": "CMI parking section: fee possible at parks with entry and exit terminals usable from vehicle, current paragraph140 read.",
+    "novelty": "Existing CMI items cover holder/passenger and local12h limit. New exception concerns payment at accessible entry/exit terminals, not duration or entitlement to reserved bays. Five nearest complete questions/options/explanations and whole-bank topic inventory reviewed.",
+    "signs_and_text": "No readable labels or prices; small ticket pictogram by slot, no pseudo-writing.",
+    "road_geometry": "Terminal on left island at car-window height, separate hinge housing, straight barrier across entrance with end support; ordinary car park beyond.",
+    "vehicles_and_people": "No people or cars; no contradictory access restriction depicted.",
+    "dashboard_and_equipment": "Blank terminal screen, ticket slot and barrier mechanism plausible; accessible exit is explicitly stated.",
+    "full_resolution": "Exact1672x941 scene-1.jpg viewed at original resolution. No readable labels or prices; small ticket pictogram by slot, no pseudo-writing. Blank terminal screen, ticket slot and barrier mechanism plausible; accessible exit is explicitly stated.",
+    "phone_size": "Terminal, slot and lowered barrier clear at390px; no tiny tariff must be read.",
+    "french_and_english": "Same conditions, learning objective and correct answer set in both translations. Transporting CMI parking holder; car park entry/exit terminals usable from driver seat; asks possible fee, not universal fee.",
+    "all_four_options": "Correct set a. {'fr': {'a': 'Exception prévue pour ces équipements.', 'b': 'La gratuité connaît cette exception.', 'c': 'La place du titulaire dans la voiture n’est pas le critère.', 'd': 'Le moteur n’a aucun effet sur le tarif.'}, 'en': {'a': 'This equipment is covered by the exception.', 'b': 'Free parking has this exception.', 'c': 'Who is driving is not the criterion.', 'd': 'The engine has no effect on the fee.'}}"
+  }
+}

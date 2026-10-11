@@ -1,0 +1,141 @@
+{
+  "result": "pass",
+  "device": "iPhone17Pro iOS26.5",
+  "review_route": "Debug ContentReviewKeys; real question screen and scoring without progress writes",
+  "french": [
+    {
+      "question_key": "situation_loaded_car_exceeds_own_ptac",
+      "image": "displayed and visually inspected in simulator",
+      "four_options": "present and accessible by scrolling",
+      "selected": [
+        "b"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_licence_0106_contact_lenses",
+      "image": "displayed and visually inspected in simulator",
+      "four_options": "present and accessible by scrolling",
+      "selected": [
+        "c"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_abs_warning_stays_on_without_red_brake",
+      "image": "displayed and visually inspected in simulator",
+      "four_options": "present and accessible by scrolling",
+      "selected": [
+        "a",
+        "d"
+      ],
+      "result": "Correct !",
+      "instruction": "multiple"
+    },
+    {
+      "question_key": "situation_mountain_winter_ms_without_3pmsf",
+      "image": "displayed and visually inspected in simulator",
+      "four_options": "present and accessible by scrolling",
+      "selected": [
+        "d"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_yellow_continuous_kerb_no_stopping",
+      "image": "displayed and visually inspected in simulator",
+      "four_options": "present and accessible by scrolling",
+      "selected": [
+        "a"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_speed_narrows_useful_visual_field",
+      "image": "displayed and visually inspected in simulator",
+      "four_options": "present and accessible by scrolling",
+      "selected": [
+        "c"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_engine_oil_level_measurement_conditions",
+      "image": "displayed and visually inspected in simulator",
+      "four_options": "present and accessible by scrolling",
+      "selected": [
+        "b"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_blind_spot_monitor_not_clearance_guarantee",
+      "image": "displayed and visually inspected in simulator",
+      "four_options": "present and accessible by scrolling",
+      "selected": [
+        "b",
+        "d"
+      ],
+      "result": "Correct !",
+      "instruction": "multiple"
+    },
+    {
+      "question_key": "situation_tunnel_radio_safety_messages",
+      "image": "displayed and visually inspected in simulator",
+      "four_options": "present and accessible by scrolling",
+      "selected": [
+        "a"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    },
+    {
+      "question_key": "situation_electric_car_finished_charging_leave_bay",
+      "image": "displayed and visually inspected in simulator",
+      "four_options": "present and accessible by scrolling",
+      "selected": [
+        "d"
+      ],
+      "result": "Correct !",
+      "instruction": "single"
+    }
+  ],
+  "english": [
+    {
+      "question_key": "situation_abs_warning_stays_on_without_red_brake",
+      "selected": [
+        "a"
+      ],
+      "result": "Incorrect",
+      "correction": "The correct answers are: A and D",
+      "notes": "Full correction and explanation visually read after scrolling."
+    },
+    {
+      "question_key": "situation_blind_spot_monitor_not_clearance_guarantee",
+      "selected": [
+        "b"
+      ],
+      "result": "Incorrect",
+      "correction": "The correct answers are: B and D",
+      "notes": "Correct multiple-answer instruction and image displayed."
+    },
+    {
+      "question_key": "situation_mountain_winter_ms_without_3pmsf",
+      "selected": [
+        "d"
+      ],
+      "result": "Correct!",
+      "notes": "Long English stem and all four options accessible, image M+S legible."
+    }
+  ],
+  "normal_launch": "English home restored; Questions explored54of438",
+  "progress_before": "35e5e3503c10891d92e69ab9fc0074f4358999baeafe7ed2d75992723533da75",
+  "progress_after": "35e5e3503c10891d92e69ab9fc0074f4358999baeafe7ed2d75992723533da75",
+  "notes": "No detected content or scoring defects. Existing scrolling under status bar/fixed footer remains; complete text accessible."
+}

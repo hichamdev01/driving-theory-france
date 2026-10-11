@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "cd7e247c74391949528b97cb7596f53e3965229a9c2f49f02fac4d8195896bf2",
+  "image_sha256": "6178c31893099ad0f539bbbed53e33331a806483ee0ab505339f3a81b407c296",
+  "result": "pass",
+  "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+  "compared_question_keys": [
+    "situation_abs_emergency_pedal_pulsation",
+    "situation_safety_oil_pressure_stop_engine",
+    "situation_cmi_parking_card_passenger",
+    "situation_motorway_blowout_initial_control",
+    "situation_emergency_vehicle_without_special_signals"
+  ],
+  "checks": {
+    "signs_and_text": "Amber ABS inside circle and curved brackets; no red warning. Cropped peripheral gauge edge is not a question clue.",
+    "road_geometry": "Interior close-up; no road layout or speed can be inferred.",
+    "vehicles_and_people": "No people, vehicles or actions shown.",
+    "dashboard_and_equipment": "Physical glass-covered black cluster, amber ABS lit, surrounding display dark; no contradictory brake warning.",
+    "phone_size": "ABS is clear at390px; persistence after self-test and absent red alert stated in both languages.",
+    "official_rule": "Sources actually read during authoring: RenaultKoleos ABS fault leaves braking withoutABS; cautious prompt workshop visit. Simultaneous red brake warning indicates grave braking problem, excluded here.",
+    "novelty": "Persistent fault after self-test, distinct from normal emergency ABS pedal pulsation and urgent red oil warning. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+    "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No people, vehicles or actions shown. Physical glass-covered black cluster, amber ABS lit, surrounding display dark; no contradictory brake warning.",
+    "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. ABS is clear at390px; persistence after self-test and absent red alert stated in both languages.",
+    "all_four_options": "Correct A,D. A: Conventional brakes may work without anti-lock.; B: Persistent warning after self-test indicates a fault.; C: Do not postpone the fault to periodic inspection.; D: Prompt inspection and caution follow the manual."
+  }
+}

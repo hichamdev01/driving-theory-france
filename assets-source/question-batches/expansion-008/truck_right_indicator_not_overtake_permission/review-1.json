@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "01eb30f0f677ae3e25873d9e3102c70ee23a948aec0c959394e4d0be57c534a9",
+  "image_sha256": "59f652537a3181fbb2da3fc037c533accf43d0022a89a606a857202adbed9ad6",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected at original1672x941 and390px; no detected unresolved defects.",
+  "compared_question_keys": [
+    "situation_vehicle_ahead_signals_overtake_wait",
+    "situation_overtake_signal_before_moving_left",
+    "situation_bus_departing_marked_stop",
+    "situation_rear_vehicle_already_overtaking",
+    "situation_end_no_overtaking"
+  ],
+  "checks": {
+    "official_rule": "R412-10: direction signal communicates intention. R414-4I/II: overtaking driver must establish safety and return space. Inference: another driver’s signal cannot replace these checks.",
+    "novelty": "Existing truckblindspot item forbids entering right-side space during wide turn. This asks whether another driver can certify our LEFT overtake with their signal; owncontrols cannot be delegated. Both translations/options/explanations of five nearest reviewed, with whole-category inventory.",
+    "signs_and_text": "No signs or road markings. Plate AB-274-CD with blue bands, coherent French format.",
+    "road_geometry": "Unmarked rural road, lorry keeps right, no incorrect lane markings. No guarantee of full overtake safety is inferred.",
+    "vehicles_and_people": "Small rigid box lorry with two rear wheels and plausible rear lamps/reflectors; image-right amber lamp lit, image-left amber housing unlit.",
+    "dashboard_and_equipment": "Own dashboard top only, no instruments. Truckdoor hinges and bumper coherent.",
+    "full_resolution": "Exact scene-1.jpg1672x941 inspected. No signs or road markings. Plate AB-274-CD with blue bands, coherent French format. Own dashboard top only, no instruments. Truckdoor hinges and bumper coherent.",
+    "phone_size": "Right amber indicator clearly brighter at390px; flashing explicitly stated.",
+    "french_and_english": "Both translations match conditions and correct set. Truck ahead rightindicatorflashing stated, no hazardfromactualrightturnasked; ownpassingchecksstillrequired.",
+    "all_four_options": "Correct set b. {\"fr\": {\"a\": \"Mes contrôles ne se délèguent pas.\", \"b\": \"La décision reste sous ma responsabilité.\", \"c\": \"La visibilité suffisante reste nécessaire.\", \"d\": \"Aucune exception de vitesse.\"}, \"en\": {\"a\": \"My checks cannot be delegated.\", \"b\": \"The decision remains my responsibility.\", \"c\": \"Adequate visibility is still required.\", \"d\": \"There is no speed exemption.\"}}"
+  }
+}

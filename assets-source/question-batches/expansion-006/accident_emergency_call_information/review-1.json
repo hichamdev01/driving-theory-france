@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "58c7b01714875ddeb34b32103dcd054fdd1b0146cd45302cf8a133ad55dd0b18",
+  "image_sha256": "1d0ba0c7ade6634f53d505f4d781f1ea9cd424ba09999f283c8c2a77882a114e",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+  "compared_question_keys": [
+    "safety_accident_first_actions",
+    "situation_motorway_sos_location",
+    "situation_ecall_accidental_connected_call",
+    "situation_signed_accident_report_no_front_changes",
+    "situation_safety_oil_pressure_stop_engine"
+  ],
+  "checks": {
+    "official_rule": "Interior emergency-call advice: precise address, reason/circumstances, casualty details, do not hang up first. Original page read; stable communication guidance.",
+    "novelty": "Existing protect-alert-rescue sequence and SOSlocation advantage do not test verbal alert content or who ends the call. eCallaccidentmispress is false alarm, different objective. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+    "signs_and_text": "No signs, labels, registration or readable phone interface. Vest has two silver reflective bands.",
+    "road_geometry": "Witness on grassy safe side of continuous metal guardrail, separated from empty carriageway; road edges/centre dashes coherent.",
+    "vehicles_and_people": "One adult holding phone to ear naturally, hand/anatomy coherent, no visible injury or victim requiring invented diagnosis.",
+    "dashboard_and_equipment": "Phone back visible, screen toward ear; high visibility vest over jacket; guardrail posts support barrier.",
+    "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. No signs, labels, registration or readable phone interface. Vest has two silver reflective bands. Phone back visible, screen toward ear; high visibility vest over jacket; guardrail posts support barrier.",
+    "phone_size": "At390px caller, vest and protective barrier easily identified; all unavailable collision facts stated in stem.",
+    "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. Witness parked safely away from traffic; area secured, road collision with injured person; already connected to112. Ask communication priorities, no treatment instruction.",
+    "all_four_options": "Correct set a,c. {'fr': {'a': 'Informations nécessaires pour orienter les secours.', 'b': 'L’alerte serait incomplète.', 'c': 'L’opérateur doit pouvoir obtenir les précisions utiles.', 'd': 'L’attribution des responsabilités n’est pas prioritaire.'}, 'en': {'a': 'This helps direct suitable assistance.', 'b': 'The alert would be incomplete.', 'c': 'The operator needs to obtain useful details.', 'd': 'Assigning blame is not the priority.'}}"
+  }
+}

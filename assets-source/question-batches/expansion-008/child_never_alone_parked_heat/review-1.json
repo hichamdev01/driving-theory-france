@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "df1bf492095ae69a9a6ffd0a418acf66c7aedf4371baae3ea3656a26b9dad4d9",
+  "image_sha256": "52f40e41fe64bc2889dbe6f8b96c7ce0aa85916ae7b880884d1cd934015452b5",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected at original1672x941 and390px; no detected unresolved defects.",
+  "compared_question_keys": [
+    "situation_parked_engine_unnecessary_idling",
+    "situation_parking_blocks_parked_exit",
+    "situation_coolant_hot_cap_wait",
+    "situation_double_parking_space",
+    "safety_child_under_ten"
+  ],
+  "checks": {
+    "official_rule": "Current health advice explicitly prohibits leaving child alone in parked vehicle even briefly with windows open.",
+    "novelty": "Existing childseat questions concern restraint, front-seat age and airbag orientation; this addresses heat risk during an unattended parked interval. Both translations/options/explanations of five nearest reviewed, with whole-category inventory.",
+    "signs_and_text": "No signs, readable lettering or plates.",
+    "road_geometry": "Stationary parking environment, daylight/tree shadows; no active road geometry.",
+    "vehicles_and_people": "Child not visible through dark rear window; presence and sleep explicitly supplied by wording.",
+    "dashboard_and_equipment": "Rear window slightly lowered, front glass closed; door, mirror and body geometry coherent.",
+    "full_resolution": "Exact scene-1.jpg1672x941 inspected. No signs, readable lettering or plates. Rear window slightly lowered, front glass closed; door, mirror and body geometry coherent.",
+    "phone_size": "Open rear-window gap clear at390px; no needed clue hidden in reflection.",
+    "french_and_english": "Both translations match conditions and correct set. Adult considers five-minute errand during warmth; child asleep; no adult remains, windowsajar not protection.",
+    "all_four_options": "Correct set d. {\"fr\": {\"a\": \"Voir la voiture ne supprime pas le danger.\", \"b\": \"Aucune courte durée garantie sans risque.\", \"c\": \"L’ombre n’est pas une garantie.\", \"d\": \"Prévention correcte de l’exposition sans surveillance.\"}, \"en\": {\"a\": \"Seeing the car does not remove the danger.\", \"b\": \"No brief period is guaranteed safe.\", \"c\": \"Shade is not a guarantee.\", \"d\": \"Correct prevention of unattended exposure.\"}}"
+  }
+}

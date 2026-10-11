@@ -1,0 +1,1916 @@
+{
+  "schema_version": 1,
+  "id": "expansion-001",
+  "state": "verified",
+  "created_on": "2026-10-09",
+  "target": 1000,
+  "questions_before": 388,
+  "pack_before_sha256": "65c1b63fc7dfaee5118d0b0952c36db640f172bdcb633c3e2341c31d6a3176fc",
+  "items": [
+    {
+      "proposal": {
+        "scenario_id": "first_aid_conscious_waiting_care",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+        "learning_objective": "Support a conscious casualty while awaiting the emergency services, without unnecessary movement or oral intake.",
+        "topic": "first_aid.conscious_casualty",
+        "scenario": "A conscious adult remains seated where found in a safe off-road area after a collision. The scene is secured and help has already been called; no immediate danger or life-threatening bleeding is present. These facts are stated, not inferred from the still image.",
+        "novelty_review": "Existing PLS, CPR, bleeding, choking and initial protect-alert questions concern different conditions or urgent interventions. This asks appropriate waiting care for a conscious casualty after the alert.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_first_aid_conscious_waiting_care",
+          "category_slug": "safety",
+          "correct_answers": [
+            "a",
+            "c"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Les lieux sont sécurisés et les secours prévenus. Cette personne blessée est consciente, sans danger immédiat ni saignement important. En attendant, que puis-je faire ?",
+              "answer_a": "La couvrir sans la déplacer.",
+              "answer_b": "Lui donner de l’eau.",
+              "answer_c": "Rester près d’elle et la rassurer.",
+              "answer_d": "La faire marcher pour la réchauffer.",
+              "explanation": "Je la protège du froid et la rassure. Je ne lui donne rien à boire et ne la déplace pas inutilement."
+            },
+            "en": {
+              "question_text": "The scene is safe and help has been called. This injured person is conscious, with no immediate danger or major bleeding. While waiting, what can I do?",
+              "answer_a": "Cover them without moving them.",
+              "answer_b": "Give them water.",
+              "answer_c": "Stay nearby and reassure them.",
+              "answer_d": "Make them walk to warm up.",
+              "explanation": "I keep the conscious person warm and reassure them while waiting for help. I do not give them drinks or move them unnecessarily."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Correct : couvrir sans déplacer.",
+            "b": "Incorrect : ne rien donner à boire.",
+            "c": "Correct : présence et réconfort.",
+            "d": "Incorrect : déplacement inutile."
+          },
+          "en": {
+            "a": "Correct: cover without moving.",
+            "b": "Incorrect: do not give drinks.",
+            "c": "Correct: stay and reassure.",
+            "d": "Incorrect: unnecessary movement."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Eye-level view of a quiet paved lay-by, well away from the road. An alert adult in everyday clothes sits on the ground, back naturally supported by a low wall. Another adult in a high-visibility vest kneels nearby listening, hands relaxed. A folded plain blanket rests within reach, not yet applied. A parked compact car with a small bumper dent is in the background. No wounds, blood, medical equipment, drinks, ambulance, traffic, signs or readable text. Do not depict moving or treating the casualty. Both adults fully clothed with natural anatomy.",
+        "sources": [
+          {
+            "url": "https://www.interieur.gouv.fr/archive/que-faire-en-cas-de-panne-ou-d-accident",
+            "kind": "official",
+            "checked_on": "2026-10-09",
+            "supports": "Victim-care section: cover and reassure casualties; no drinks or unnecessary movement. The older page is used only for these care principles, not its roadside-placement advice."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_unconscious_breathing_pls",
+          "similarity": 0.508,
+          "question_fr": "La zone est sécurisée. Cette victime est inconsciente, respire normalement et ne présente pas de traumatisme suspecté. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_not_breathing_cpr_aed",
+          "similarity": 0.444,
+          "question_fr": "La victime est inconsciente et ne respire pas normalement. Après l'alerte, que dois-je faire ?"
+        },
+        {
+          "key": "situation_pedestrian_intent_no_crosswalk",
+          "similarity": 0.437,
+          "question_fr": "Aucun passage piéton n'est proche et cette personne manifeste clairement son intention de traverser. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_speed_rain_posted_90_80",
+          "similarity": 0.434,
+          "question_fr": "Il pleut sur cette route à double sens sans séparateur central, normalement limitée à 90 km/h. Quelle limite maximale dois-je respecter ?"
+        },
+        {
+          "key": "situation_motorway_sos_location",
+          "similarity": 0.423,
+          "question_fr": "Après une panne, je suis à l’abri et une borne SOS est accessible sans danger. Quel est son principal avantage pour l’alerte ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-001/first_aid_conscious_waiting_care/scene-1.jpg",
+          "image_sha256": "b6ee9150cfa8e069f53abb833455a27fb122dbc19fba647c1cdb441cf7bcf576",
+          "prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Eye-level view of a quiet paved lay-by, well away from the road. An alert adult in everyday clothes sits on the ground, back naturally supported by a low wall. Another adult in a high-visibility vest kneels nearby listening, hands relaxed. A folded plain blanket rests within reach, not yet applied. A parked compact car with a small bumper dent is in the background. No wounds, blood, medical equipment, drinks, ambulance, traffic, signs or readable text. Do not depict moving or treating the casualty. Both adults fully clothed with natural anatomy.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defects after actual full-size JPEG and 390px inspections; original wording/rationale reviewed against saved sources.",
+            "proposal_sha256": "30d6d1e38b841d6a10005bb12c8b194d43b48c31a1146ce6d3bdb25c72290eff",
+            "image_sha256": "b6ee9150cfa8e069f53abb833455a27fb122dbc19fba647c1cdb441cf7bcf576",
+            "checks": {
+              "official_rule": "Interior victim-care guidance supports covering, reassurance, no drink and no unnecessary movement. Stem explicitly secures scene, alerts help and excludes immediate danger/major bleeding.",
+              "novelty": "Conscious waiting care after alert differs from existing protect/alert, unconscious PLS, CPR, bleeding and choking. Nearest questions and broader topic comparisons recorded in authoring-preflight.",
+              "signs_and_text": "No road sign, plate, road marking, signal or necessary readable text; no embedded quiz text or solution overlay.",
+              "road_geometry": "Off-road paved lay-by with low wall, no active carriageway or crossing conflict in frame; casualty position plausible.",
+              "vehicles_and_people": "Two alert adults with natural hands and limbs. Casualty seated against wall; helper kneeling nearby, not moving him. Compact car rear dent, parked behind them, no graphic injury or dangerous intervention.",
+              "dashboard_and_equipment": "Blanket folded beside casualty; high-visibility vest on helper; no drink, tool, medical apparatus or dashboard implied.",
+              "full_resolution": "Inspected final JPEG 1672x941, whole frame and people/car/blanket details; no detected unresolved visual defect.",
+              "phone_size": "Viewed actual 390px resize: two people, seated posture, vest and folded blanket remain clear; no small text needed.",
+              "french_and_english": "Consciousness, secured scene, alert and lack of immediate danger/major bleeding stated in both versions; neither translation infers treatment needs from image alone.",
+              "all_four_options": "A cover without moving and C stay/reassure correct. B water and D walking incorrect. Four distinct choices and A/C multiple-answer set agree in both languages."
+            },
+            "compared_question_keys": [
+              "situation_unconscious_breathing_pls",
+              "situation_not_breathing_cpr_aed",
+              "situation_pedestrian_intent_no_crosswalk",
+              "situation_speed_rain_posted_90_80",
+              "situation_motorway_sos_location"
+            ],
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-001/first_aid_conscious_waiting_care/scene-1.jpg",
+      "image_sha256": "b6ee9150cfa8e069f53abb833455a27fb122dbc19fba647c1cdb441cf7bcf576",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "Fresh full recheck after expanding English explanation to meet native content quality minimum; image unchanged and inspected again. No detected unresolved defects.",
+        "proposal_sha256": "cbbe3d5d1f01162cfc3040a79c5e51b20d4b70a1c427a67338d477acda7d55e1",
+        "image_sha256": "b6ee9150cfa8e069f53abb833455a27fb122dbc19fba647c1cdb441cf7bcf576",
+        "checks": {
+          "official_rule": "Interior victim-care guidance supports covering, reassurance, no drink and no unnecessary movement. Stem explicitly secures scene, alerts help and excludes immediate danger/major bleeding.",
+          "novelty": "Conscious waiting care after alert differs from existing protect/alert, unconscious PLS, CPR, bleeding and choking. Nearest questions and broader topic comparisons recorded in authoring-preflight.",
+          "signs_and_text": "No road sign, plate, road marking, signal or necessary readable text; no embedded quiz text or solution overlay.",
+          "road_geometry": "Off-road paved lay-by with low wall, no active carriageway or crossing conflict in frame; casualty position plausible.",
+          "vehicles_and_people": "Two alert adults with natural hands and limbs. Casualty seated against wall; helper kneeling nearby, not moving him. Compact car rear dent, parked behind them, no graphic injury or dangerous intervention.",
+          "dashboard_and_equipment": "Blanket folded beside casualty; high-visibility vest on helper; no drink, tool, medical apparatus or dashboard implied.",
+          "full_resolution": "Inspected final JPEG 1672x941, whole frame and people/car/blanket details; no detected unresolved visual defect.",
+          "phone_size": "Viewed actual 390px resize: two people, seated posture, vest and folded blanket remain clear; no small text needed.",
+          "french_and_english": "Consciousness, secured scene, alert and lack of immediate danger/major bleeding stated in both versions; neither translation infers treatment needs from image alone. Expanded English explanation rechecked against unchanged French meaning, conditions and all four options; no new rule introduced.",
+          "all_four_options": "A cover without moving and C stay/reassure correct. B water and D walking incorrect. Four distinct choices and A/C multiple-answer set agree in both languages."
+        },
+        "compared_question_keys": [
+          "situation_unconscious_breathing_pls",
+          "situation_not_breathing_cpr_aed",
+          "situation_pedestrian_intent_no_crosswalk",
+          "situation_speed_rain_posted_90_80",
+          "situation_motorway_sos_location"
+        ],
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "999eb62ce77a294a687c53385ddf1d4e5dc715f47c519159006da3d73365cce6",
+      "amendments": [
+        {
+          "previous_proposal": {
+            "scenario_id": "first_aid_conscious_waiting_care",
+            "scope": "ordinary_passenger_car",
+            "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+            "learning_objective": "Support a conscious casualty while awaiting the emergency services, without unnecessary movement or oral intake.",
+            "topic": "first_aid.conscious_casualty",
+            "scenario": "A conscious adult remains seated where found in a safe off-road area after a collision. The scene is secured and help has already been called; no immediate danger or life-threatening bleeding is present. These facts are stated, not inferred from the still image.",
+            "novelty_review": "Existing PLS, CPR, bleeding, choking and initial protect-alert questions concern different conditions or urgent interventions. This asks appropriate waiting care for a conscious casualty after the alert.",
+            "primary_codes": [],
+            "context_codes": [],
+            "question": {
+              "key": "situation_first_aid_conscious_waiting_care",
+              "category_slug": "safety",
+              "correct_answers": [
+                "a",
+                "c"
+              ],
+              "difficulty": "medium",
+              "translations": {
+                "fr": {
+                  "question_text": "Les lieux sont sécurisés et les secours prévenus. Cette personne blessée est consciente, sans danger immédiat ni saignement important. En attendant, que puis-je faire ?",
+                  "answer_a": "La couvrir sans la déplacer.",
+                  "answer_b": "Lui donner de l’eau.",
+                  "answer_c": "Rester près d’elle et la rassurer.",
+                  "answer_d": "La faire marcher pour la réchauffer.",
+                  "explanation": "Je la protège du froid et la rassure. Je ne lui donne rien à boire et ne la déplace pas inutilement."
+                },
+                "en": {
+                  "question_text": "The scene is safe and help has been called. This injured person is conscious, with no immediate danger or major bleeding. While waiting, what can I do?",
+                  "answer_a": "Cover them without moving them.",
+                  "answer_b": "Give them water.",
+                  "answer_c": "Stay nearby and reassure them.",
+                  "answer_d": "Make them walk to warm up.",
+                  "explanation": "I keep them warm and reassure them. I do not give them drinks or move them unnecessarily."
+                }
+              }
+            },
+            "option_rationale": {
+              "fr": {
+                "a": "Correct : couvrir sans déplacer.",
+                "b": "Incorrect : ne rien donner à boire.",
+                "c": "Correct : présence et réconfort.",
+                "d": "Incorrect : déplacement inutile."
+              },
+              "en": {
+                "a": "Correct: cover without moving.",
+                "b": "Incorrect: do not give drinks.",
+                "c": "Correct: stay and reassure.",
+                "d": "Incorrect: unnecessary movement."
+              }
+            },
+            "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Eye-level view of a quiet paved lay-by, well away from the road. An alert adult in everyday clothes sits on the ground, back naturally supported by a low wall. Another adult in a high-visibility vest kneels nearby listening, hands relaxed. A folded plain blanket rests within reach, not yet applied. A parked compact car with a small bumper dent is in the background. No wounds, blood, medical equipment, drinks, ambulance, traffic, signs or readable text. Do not depict moving or treating the casualty. Both adults fully clothed with natural anatomy.",
+            "sources": [
+              {
+                "url": "https://www.interieur.gouv.fr/archive/que-faire-en-cas-de-panne-ou-d-accident",
+                "kind": "official",
+                "checked_on": "2026-10-09",
+                "supports": "Victim-care section: cover and reassure casualties; no drinks or unnecessary movement. The older page is used only for these care principles, not its roadside-placement advice."
+              }
+            ]
+          },
+          "previous_review": {
+            "result": "pass",
+            "notes": "No detected unresolved defects after actual full-size JPEG and 390px inspections; original wording/rationale reviewed against saved sources.",
+            "proposal_sha256": "30d6d1e38b841d6a10005bb12c8b194d43b48c31a1146ce6d3bdb25c72290eff",
+            "image_sha256": "b6ee9150cfa8e069f53abb833455a27fb122dbc19fba647c1cdb441cf7bcf576",
+            "checks": {
+              "official_rule": "Interior victim-care guidance supports covering, reassurance, no drink and no unnecessary movement. Stem explicitly secures scene, alerts help and excludes immediate danger/major bleeding.",
+              "novelty": "Conscious waiting care after alert differs from existing protect/alert, unconscious PLS, CPR, bleeding and choking. Nearest questions and broader topic comparisons recorded in authoring-preflight.",
+              "signs_and_text": "No road sign, plate, road marking, signal or necessary readable text; no embedded quiz text or solution overlay.",
+              "road_geometry": "Off-road paved lay-by with low wall, no active carriageway or crossing conflict in frame; casualty position plausible.",
+              "vehicles_and_people": "Two alert adults with natural hands and limbs. Casualty seated against wall; helper kneeling nearby, not moving him. Compact car rear dent, parked behind them, no graphic injury or dangerous intervention.",
+              "dashboard_and_equipment": "Blanket folded beside casualty; high-visibility vest on helper; no drink, tool, medical apparatus or dashboard implied.",
+              "full_resolution": "Inspected final JPEG 1672x941, whole frame and people/car/blanket details; no detected unresolved visual defect.",
+              "phone_size": "Viewed actual 390px resize: two people, seated posture, vest and folded blanket remain clear; no small text needed.",
+              "french_and_english": "Consciousness, secured scene, alert and lack of immediate danger/major bleeding stated in both versions; neither translation infers treatment needs from image alone.",
+              "all_four_options": "A cover without moving and C stay/reassure correct. B water and D walking incorrect. Four distinct choices and A/C multiple-answer set agree in both languages."
+            },
+            "compared_question_keys": [
+              "situation_unconscious_breathing_pls",
+              "situation_not_breathing_cpr_aed",
+              "situation_pedestrian_intent_no_crosswalk",
+              "situation_speed_rain_posted_90_80",
+              "situation_motorway_sos_location"
+            ],
+            "recorded_on": "2026-10-09"
+          },
+          "previous_question_sha256": "21111ac25ca7871d2dbe3660c6b12e74d4f95fc4b30b1560c18eeebb49fad3d2",
+          "reason": "Native content test found English explanation under100characters; add explicit context without changing objective or answers.",
+          "recorded_on": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "proposal": {
+        "scenario_id": "coolant_hot_cap_wait",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+        "learning_objective": "Recognise the burn risk of opening a hot cooling circuit.",
+        "topic": "maintenance.coolant_burn_risk",
+        "scenario": "A car is safely parked after a journey, ignition off. Its engine is still hot and its coolant reservoir remains closed; engine temperature is stated in the wording.",
+        "novelty_review": "The bank covers oil-pressure warnings and tyres but not opening a pressurised hot cooling circuit.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_coolant_hot_cap_wait",
+          "category_slug": "safety",
+          "correct_answers": [
+            "b"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Après un trajet, ma voiture est garée, contact coupé, mais le moteur est encore chaud. Pour contrôler le liquide de refroidissement, je dois :",
+              "answer_a": "Dévisser immédiatement le bouchon.",
+              "answer_b": "Attendre le refroidissement et suivre la notice.",
+              "answer_c": "Ouvrir le bouchon en gardant le moteur en marche.",
+              "answer_d": "Percer le bouchon pour libérer la pression.",
+              "explanation": "Le circuit chaud peut provoquer des brûlures. Je n’ouvre pas le bouchon à chaud ; je respecte les consignes du constructeur."
+            },
+            "en": {
+              "question_text": "After a journey, my car is parked with the ignition off, but the engine is still hot. To check the coolant, I should:",
+              "answer_a": "Unscrew the cap immediately.",
+              "answer_b": "Wait for it to cool and follow the manual.",
+              "answer_c": "Open the cap with the engine running.",
+              "answer_d": "Pierce the cap to release pressure.",
+              "explanation": "A hot cooling system can cause burns. I do not open its cap while hot and follow the manufacturer’s instructions."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Incorrect : risque de brûlure.",
+            "b": "Correct : contrôle selon la notice, à froid.",
+            "c": "Incorrect : le moteur doit être arrêté et refroidi.",
+            "d": "Incorrect : ce n’est pas une opération sûre."
+          },
+          "en": {
+            "a": "Incorrect: burn risk.",
+            "b": "Correct: check cold as instructed.",
+            "c": "Incorrect: stop and cool the engine.",
+            "d": "Incorrect: this is unsafe."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Close natural view into the engine bay of an ordinary unbranded petrol passenger car parked on a private driveway. Hood properly supported. A translucent coolant expansion reservoir with pink coolant and a fully closed black screw cap is prominent, with plausible connected hoses. No hands, tools, pouring, steam or leaks. Do not include tiny invented warning labels, numbers, logos or a dashboard. The composition must not imply that the cap has been opened.",
+        "sources": [
+          {
+            "url": "https://www.user-manual.renault.com/fr/acc%C3%A8s-moteur-niveaux/niveau-liquide-de-refroidissement-3",
+            "kind": "manufacturer",
+            "checked_on": "2026-10-09",
+            "supports": "Renault owner manual: check coolant cold; do not work on a hot cooling circuit because of burn risk."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_triangle_placement_personal_danger",
+          "similarity": 0.525,
+          "question_fr": "Hors autoroute, ma voiture est immobilisée après ce virage, mais marcher sur la chaussée pour poser le triangle me mettrait manifestement en danger. Dois-je le faire ?"
+        },
+        {
+          "key": "situation_motorway_planned_break_two_hours",
+          "similarity": 0.456,
+          "question_fr": "Après environ deux heures de conduite sur autoroute, je me sens encore alerte. Quelle bonne habitude adopter ?"
+        },
+        {
+          "key": "situation_medicine_no_self_dose_change_drive",
+          "similarity": 0.421,
+          "question_fr": "Mon traitement peut gêner la conduite. Puis-je sauter moi-même une dose pour prendre le volant ?"
+        },
+        {
+          "key": "situation_overtaking_no_safe_return_gap",
+          "similarity": 0.414,
+          "question_fr": "Je veux dépasser cette camionnette, mais l'espace devant elle est trop court pour me rabattre sans gêner le camion. Puis-je commencer ?"
+        },
+        {
+          "key": "situation_b22c_car_scenario",
+          "similarity": 0.408,
+          "question_fr": "Puis-je m’arrêter en voiture sur ce chemin pour attendre quelqu’un ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-001/coolant_hot_cap_wait/scene-1.jpg",
+          "image_sha256": "80ed3ade7719e9bcb184cfe29d16a8e225bc1fa9a44ff38c20e5023c90c2a921",
+          "prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Close natural view into the engine bay of an ordinary unbranded petrol passenger car parked on a private driveway. Hood properly supported. A translucent coolant expansion reservoir with pink coolant and a fully closed black screw cap is prominent, with plausible connected hoses. No hands, tools, pouring, steam or leaks. Do not include tiny invented warning labels, numbers, logos or a dashboard. The composition must not imply that the cap has been opened.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defects after actual full-size JPEG and 390px inspections; original wording/rationale reviewed against saved sources.",
+            "proposal_sha256": "40b0660b57c0bf4b6cf746d167355c623e3129effd2962cb11a345c624ac8b74",
+            "image_sha256": "80ed3ade7719e9bcb184cfe29d16a8e225bc1fa9a44ff38c20e5023c90c2a921",
+            "checks": {
+              "official_rule": "Renault original manual requires cold coolant check and warns against hot-circuit intervention. This is manufacturer safety guidance, not a claimed standalone statute.",
+              "novelty": "Opening a hot cooling system is absent from tyre and oil-pressure objectives; nearest lexical matches concern unrelated triangle, breaks, medication, overtaking and path-access decisions.",
+              "signs_and_text": "No road signs, plates, markings, signal or readable label governing the answer. No generated warning text requiring interpretation.",
+              "road_geometry": "Car safely in private driveway with coherent engine-bay/front-windscreen perspective, no traffic interaction.",
+              "vehicles_and_people": "Single ordinary car engine bay, no people or hands manipulating components. Hood support and stationary body plausible.",
+              "dashboard_and_equipment": "Closed expansion-reservoir cap, pink coolant, connected hoses and clamps, closed secondary filler; no opening, pouring, steam or leaks. Temperature is supplied in question, not inferred.",
+              "full_resolution": "Inspected final JPEG 1672x941 and reservoir/hoses/caps at full image size; no detected unresolved defect.",
+              "phone_size": "Viewed 390px resize: main reservoir and closed cap remain readily identifiable without tiny symbols.",
+              "french_and_english": "Both state parked after journey, ignition off, still-hot engine. B wait to cool and follow manual is equivalent.",
+              "all_four_options": "B is the only correct choice. A immediate unscrewing, C engine-running opening, D piercing cap are unsafe and distinct in both languages."
+            },
+            "compared_question_keys": [
+              "situation_triangle_placement_personal_danger",
+              "situation_motorway_planned_break_two_hours",
+              "situation_medicine_no_self_dose_change_drive",
+              "situation_overtaking_no_safe_return_gap",
+              "situation_b22c_car_scenario"
+            ],
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-001/coolant_hot_cap_wait/scene-1.jpg",
+      "image_sha256": "80ed3ade7719e9bcb184cfe29d16a8e225bc1fa9a44ff38c20e5023c90c2a921",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "No detected unresolved defects after actual full-size JPEG and 390px inspections; original wording/rationale reviewed against saved sources.",
+        "proposal_sha256": "40b0660b57c0bf4b6cf746d167355c623e3129effd2962cb11a345c624ac8b74",
+        "image_sha256": "80ed3ade7719e9bcb184cfe29d16a8e225bc1fa9a44ff38c20e5023c90c2a921",
+        "checks": {
+          "official_rule": "Renault original manual requires cold coolant check and warns against hot-circuit intervention. This is manufacturer safety guidance, not a claimed standalone statute.",
+          "novelty": "Opening a hot cooling system is absent from tyre and oil-pressure objectives; nearest lexical matches concern unrelated triangle, breaks, medication, overtaking and path-access decisions.",
+          "signs_and_text": "No road signs, plates, markings, signal or readable label governing the answer. No generated warning text requiring interpretation.",
+          "road_geometry": "Car safely in private driveway with coherent engine-bay/front-windscreen perspective, no traffic interaction.",
+          "vehicles_and_people": "Single ordinary car engine bay, no people or hands manipulating components. Hood support and stationary body plausible.",
+          "dashboard_and_equipment": "Closed expansion-reservoir cap, pink coolant, connected hoses and clamps, closed secondary filler; no opening, pouring, steam or leaks. Temperature is supplied in question, not inferred.",
+          "full_resolution": "Inspected final JPEG 1672x941 and reservoir/hoses/caps at full image size; no detected unresolved defect.",
+          "phone_size": "Viewed 390px resize: main reservoir and closed cap remain readily identifiable without tiny symbols.",
+          "french_and_english": "Both state parked after journey, ignition off, still-hot engine. B wait to cool and follow manual is equivalent.",
+          "all_four_options": "B is the only correct choice. A immediate unscrewing, C engine-running opening, D piercing cap are unsafe and distinct in both languages."
+        },
+        "compared_question_keys": [
+          "situation_triangle_placement_personal_danger",
+          "situation_motorway_planned_break_two_hours",
+          "situation_medicine_no_self_dose_change_drive",
+          "situation_overtaking_no_safe_return_gap",
+          "situation_b22c_car_scenario"
+        ],
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "93e09ee6c01be2f2b93780401001c5c5475d48c104a609aeaf7b0661bf328457"
+    },
+    {
+      "proposal": {
+        "scenario_id": "aac_accompanying_adult_alcohol",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+        "learning_objective": "Know that alcohol-driving provisions also apply to an accompanying adult supervising a learner.",
+        "topic": "alcohol.learner_accompanier",
+        "scenario": "Before an AAC trip, the adult assigned to accompany the learner has 0.80 g/L blood alcohol. The learner is sober. The role and measurement are supplied by the wording; neither can be established from a photograph.",
+        "novelty_review": "Existing alcohol thresholds ask about the driver. This asks whether sitting in the passenger seat exempts the legally designated learner accompanier.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_aac_accompanying_adult_alcohol",
+          "category_slug": "alcohol_drugs",
+          "correct_answers": [
+            "d"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "En conduite accompagnée, l’accompagnateur a 0,80 g/L d’alcool dans le sang. L’élève est sobre. L’accompagnateur peut-il assurer ce trajet ?",
+              "answer_a": "Oui, puisqu’il ne tient pas le volant.",
+              "answer_b": "Oui, si le trajet dure moins de dix minutes.",
+              "answer_c": "Oui, s’il ne présente aucun signe d’ivresse.",
+              "answer_d": "Non, les dispositions sur l’alcool s’appliquent aussi à lui.",
+              "explanation": "L’article L234-1 s’applique également à l’accompagnateur d’un élève conducteur. La place passager et l’absence de signes d’ivresse ne l’exemptent pas."
+            },
+            "en": {
+              "question_text": "During accompanied driving practice, the supervising adult has a blood alcohol level of 0.80 g/L. The learner is sober. May this adult supervise the trip?",
+              "answer_a": "Yes, because they are not steering.",
+              "answer_b": "Yes, if the trip lasts under ten minutes.",
+              "answer_c": "Yes, if they show no signs of drunkenness.",
+              "answer_d": "No, the alcohol provisions also apply to them.",
+              "explanation": "Article L234-1 also applies to an adult supervising a learner driver. Sitting in the passenger seat and appearing sober provide no exemption."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Incorrect : la règle vise aussi l’accompagnateur.",
+            "b": "Incorrect : aucune exemption pour un trajet court.",
+            "c": "Incorrect : aucun signe visible n’est nécessaire.",
+            "d": "Correct : l’article s’applique aussi à ce rôle."
+          },
+          "en": {
+            "a": "Incorrect: the supervising adult is also covered.",
+            "b": "Incorrect: no short-trip exemption.",
+            "c": "Incorrect: visible drunkenness is not required.",
+            "d": "Correct: this role is also covered."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Parked left-hand-drive compact car on a private driveway, photographed from outside through the open driver-side window. A young adult learner occupies the left driver seat; a middle-aged supervising adult sits in the right front passenger seat. Both are naturally seated with correctly routed seatbelts and sober neutral appearances. Engine off before departure. No alcohol containers, police, breathalyser display or numerical measurement. Crop dashboard instruments out. No need for an external learner badge in this close interior framing.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054724895",
+            "kind": "official",
+            "checked_on": "2026-10-09",
+            "supports": "Current L234-1 I covers blood alcohol at or above 0.80 g/L, even without visible drunkenness; V applies it to the learner’s accompanier."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "alcohol_probationary_limit",
+          "similarity": 0.452,
+          "question_fr": "Quel taux maximal d’alcool dans le sang s’applique à un conducteur en permis probatoire ?"
+        },
+        {
+          "key": "alcohol_general_limit",
+          "similarity": 0.425,
+          "question_fr": "Pour un conducteur qui n’est pas soumis au seuil probatoire, à partir de quel taux d’alcool dans le sang la conduite est-elle interdite ?"
+        },
+        {
+          "key": "situation_two_way_wrong_side_parking",
+          "similarity": 0.398,
+          "question_fr": "En agglomération sur cette chaussée à double sens, une place est libre à gauche. Puis-je m’y garer face au sens inverse ?"
+        },
+        {
+          "key": "situation_breath_test_general_limit",
+          "similarity": 0.397,
+          "question_fr": "Mon éthylomètre affiche 0,25 mg d’alcool par litre d’air expiré. Mon permis n’est plus probatoire. Puis-je conduire ?"
+        },
+        {
+          "key": "situation_parking_disc_actual_arrival",
+          "similarity": 0.384,
+          "question_fr": "Je viens de me garer sur une place où le disque est obligatoire. Quelle heure dois-je y indiquer ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-001/aac_accompanying_adult_alcohol/scene-1.jpg",
+          "image_sha256": "a5feafadfe44c0515c10b822ca8f9512a0ec502a14587fa647f54a0dd69d7a31",
+          "prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Parked left-hand-drive compact car on a private driveway, photographed from outside through the open driver-side window. A young adult learner occupies the left driver seat; a middle-aged supervising adult sits in the right front passenger seat. Both are naturally seated with correctly routed seatbelts and sober neutral appearances. Engine off before departure. No alcohol containers, police, breathalyser display or numerical measurement. Crop dashboard instruments out. No need for an external learner badge in this close interior framing.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+            "proposal_sha256": "3b6318a83a20c7ca0ba3de05c717c12b3a505de84ac2362848dd5a5539fdc746",
+            "image_sha256": "a5feafadfe44c0515c10b822ca8f9512a0ec502a14587fa647f54a0dd69d7a31",
+            "compared_question_keys": [
+              "alcohol_probationary_limit",
+              "alcohol_general_limit",
+              "situation_two_way_wrong_side_parking",
+              "situation_breath_test_general_limit",
+              "situation_parking_disc_actual_arrival"
+            ],
+            "checks": {
+              "official_rule": "Current L234-1, including paragraph V, checked 2026-10-09: provisions apply to the learner's accompanier. The explicit 0.80 g/L condition is enough; no visible intoxication required.",
+              "signs_and_text": "No signs, dashboard values, alcohol measurement or readable text. The BAC and learner's sobriety are provided by the stem.",
+              "road_geometry": "Stationary car in residential setting; no junction, markings or moving-traffic judgement. Passenger-side composition differs from initial prompt but correctly distinguishes the learner at the wheel and supervising passenger.",
+              "vehicles_and_people": "Two adults in plausible seated positions with natural faces and hands. Woman holds wheel, man sits beside her; no visual implication of drunken behaviour.",
+              "dashboard_and_equipment": "Steering wheel belongs to driver's position; both diagonal seat belts and headrests visible, no ambiguous gauge readings.",
+              "full_resolution": "Inspected final 1672x941 JPEG, including hand on wheel, occupants, window/body geometry and restraints; no unresolved defect detected.",
+              "phone_size": "390px preview retains driver/passenger roles and both occupants clearly.",
+              "french_and_english": "Both specify accompanied practice, adult BAC0.80g/L and sober learner. Neither requires inferring BAC from appearance.",
+              "all_four_options": "D only. A wrongly exempts passenger role; B invents short-trip exemption; C wrongly requires visible intoxication; D applies the legal provision.",
+              "novelty": "Nearest probationary/general/breath thresholds regulate a driver, whereas this question tests the designated accompanier’s legal role. Wrong-side parking and parking-disc arrival time are unrelated."
+            },
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-001/aac_accompanying_adult_alcohol/scene-1.jpg",
+      "image_sha256": "a5feafadfe44c0515c10b822ca8f9512a0ec502a14587fa647f54a0dd69d7a31",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+        "proposal_sha256": "3b6318a83a20c7ca0ba3de05c717c12b3a505de84ac2362848dd5a5539fdc746",
+        "image_sha256": "a5feafadfe44c0515c10b822ca8f9512a0ec502a14587fa647f54a0dd69d7a31",
+        "compared_question_keys": [
+          "alcohol_probationary_limit",
+          "alcohol_general_limit",
+          "situation_two_way_wrong_side_parking",
+          "situation_breath_test_general_limit",
+          "situation_parking_disc_actual_arrival"
+        ],
+        "checks": {
+          "official_rule": "Current L234-1, including paragraph V, checked 2026-10-09: provisions apply to the learner's accompanier. The explicit 0.80 g/L condition is enough; no visible intoxication required.",
+          "signs_and_text": "No signs, dashboard values, alcohol measurement or readable text. The BAC and learner's sobriety are provided by the stem.",
+          "road_geometry": "Stationary car in residential setting; no junction, markings or moving-traffic judgement. Passenger-side composition differs from initial prompt but correctly distinguishes the learner at the wheel and supervising passenger.",
+          "vehicles_and_people": "Two adults in plausible seated positions with natural faces and hands. Woman holds wheel, man sits beside her; no visual implication of drunken behaviour.",
+          "dashboard_and_equipment": "Steering wheel belongs to driver's position; both diagonal seat belts and headrests visible, no ambiguous gauge readings.",
+          "full_resolution": "Inspected final 1672x941 JPEG, including hand on wheel, occupants, window/body geometry and restraints; no unresolved defect detected.",
+          "phone_size": "390px preview retains driver/passenger roles and both occupants clearly.",
+          "french_and_english": "Both specify accompanied practice, adult BAC0.80g/L and sober learner. Neither requires inferring BAC from appearance.",
+          "all_four_options": "D only. A wrongly exempts passenger role; B invents short-trip exemption; C wrongly requires visible intoxication; D applies the legal provision.",
+          "novelty": "Nearest probationary/general/breath thresholds regulate a driver, whereas this question tests the designated accompanier’s legal role. Wrong-side parking and parking-disc arrival time are unrelated."
+        },
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "c3677ac8058270885792cd92829408c54b92905a298b2c035e31adf0af73e6ca"
+    },
+    {
+      "proposal": {
+        "scenario_id": "otc_medicine_not_driving_guarantee",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+        "learning_objective": "Do not equate non-prescription availability with safety for driving.",
+        "topic": "medicines.non_prescription",
+        "scenario": "At home before driving, a person has just bought a medicine without a prescription. Its purchase status is stated; no specific medicine or dose is depicted or recommended.",
+        "novelty_review": "Existing pictogram levels and treatment-interaction questions give known risk information. This tests the separate misconception that an over-the-counter purchase guarantees driving safety.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_otc_medicine_not_driving_guarantee",
+          "category_slug": "alcohol_drugs",
+          "correct_answers": [
+            "c"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "J’ai acheté un médicament sans ordonnance. Cela garantit-il qu’il est sans risque pour la conduite ?",
+              "answer_a": "Oui, tous les médicaments en vente libre sont compatibles.",
+              "answer_b": "Oui, si je ne prends qu’une seule dose.",
+              "answer_c": "Non, je vérifie la notice et demande conseil au pharmacien.",
+              "answer_d": "Oui, dès lors que le trajet est court.",
+              "explanation": "Un médicament sans ordonnance peut aussi altérer la conduite. Je vérifie ses précautions avant de prendre le volant."
+            },
+            "en": {
+              "question_text": "I bought a medicine without a prescription. Does that guarantee it is safe for driving?",
+              "answer_a": "Yes, all over-the-counter medicines are suitable.",
+              "answer_b": "Yes, if I take only one dose.",
+              "answer_c": "No, I check the leaflet and ask a pharmacist.",
+              "answer_d": "Yes, provided the trip is short.",
+              "explanation": "Non-prescription medicines can also affect driving. I check the precautions before getting behind the wheel."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Incorrect : la vente libre n’est pas une garantie.",
+            "b": "Incorrect : une seule dose peut avoir un effet.",
+            "c": "Correct : vérifier les précautions.",
+            "d": "Incorrect : la durée du trajet ne supprime pas le risque."
+          },
+          "en": {
+            "a": "Incorrect: availability is no guarantee.",
+            "b": "Incorrect: even one dose may have an effect.",
+            "c": "Correct: check the precautions.",
+            "d": "Incorrect: a short trip does not remove the risk."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Original domestic still life before a car journey: a closed medicine carton seen from a plain side, a folded leaflet with its blank reverse visible, and ordinary car keys on a wooden table. Natural daylight, no person taking medicine. No readable drug name, dose, advertising, invented medical symbols or safety pictograms. The question will state that the medicine was bought without a prescription; do not try to communicate that with text in the image.",
+        "sources": [
+          {
+            "url": "https://www.ameli.fr/assure/sante/medicaments/effets-indesirables-et-interactions-lies-aux-medicaments/comprendre-risques-lies-medicaments-conduite-vehicule",
+            "kind": "official",
+            "checked_on": "2026-10-09",
+            "supports": "Assurance Maladie guidance updated 1 July 2026: both prescribed and non-prescription medicines may impair driving; check the leaflet and consult a pharmacist."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_alcohol_sedating_medicine",
+          "similarity": 0.487,
+          "question_fr": "J'ai pris un médicament pouvant provoquer une somnolence. Puis-je boire de l'alcool puis conduire ?"
+        },
+        {
+          "key": "designated_driver_plan",
+          "similarity": 0.478,
+          "question_fr": "À quel moment un groupe doit-il choisir la personne qui restera sobre pour conduire ?"
+        },
+        {
+          "key": "situation_speed_night_dipped_visibility",
+          "similarity": 0.423,
+          "question_fr": "De nuit, mes feux de croisement n’éclairent qu’une portion limitée de la route. Que dois-je faire avec ma vitesse ?"
+        },
+        {
+          "key": "situation_motorway_lost_object_no_retrieval",
+          "similarity": 0.419,
+          "question_fr": "Une valise vient de tomber de ma galerie sur l'autoroute. Puis-je revenir à pied sur la chaussée pour la récupérer ?"
+        },
+        {
+          "key": "situation_alcohol_cbd_legal_sale_not_driving",
+          "similarity": 0.416,
+          "question_fr": "Un produit au CBD a été acheté légalement. Cela exclut-il une infraction si l’analyse établit une conduite après usage de THC ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-001/otc_medicine_not_driving_guarantee/scene-1.jpg",
+          "image_sha256": "70b89bd879d96e059468667ec3e128ba4b83c4d4bf8e951007697ed320b31601",
+          "prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Original domestic still life before a car journey: a closed medicine carton seen from a plain side, a folded leaflet with its blank reverse visible, and ordinary car keys on a wooden table. Natural daylight, no person taking medicine. No readable drug name, dose, advertising, invented medical symbols or safety pictograms. The question will state that the medicine was bought without a prescription; do not try to communicate that with text in the image.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+            "proposal_sha256": "ca33205e1b11bd9e15165383c05ed9068886d1a0e0506cb8d496c9d81c0d665e",
+            "image_sha256": "70b89bd879d96e059468667ec3e128ba4b83c4d4bf8e951007697ed320b31601",
+            "compared_question_keys": [
+              "situation_alcohol_sedating_medicine",
+              "designated_driver_plan",
+              "situation_speed_night_dipped_visibility",
+              "situation_motorway_lost_object_no_retrieval",
+              "situation_alcohol_cbd_legal_sale_not_driving"
+            ],
+            "checks": {
+              "official_rule": "Ameli medicine-and-driving guidance checked 2026-10-09: non-prescription status does not guarantee compatibility; check precautions and pharmacist advice.",
+              "signs_and_text": "Plain carton and reverse of folded leaflet have no drug name, dose, level pictogram or illegible necessary text. No road signs.",
+              "road_geometry": "Domestic tabletop, no roadway or lane geometry; purchase status comes from question.",
+              "vehicles_and_people": "No people or vehicles depicted. Keys, carton and folded paper rest naturally on table.",
+              "dashboard_and_equipment": "Key blade/fob has plausible lock controls; no dashboard or medicinal dose displayed.",
+              "full_resolution": "Inspected final 1672x941 JPEG including key, packaging folds, leaflet, table and background; no unreadable required clue.",
+              "phone_size": "390px preview retains medicine-box/leaflet/key context without requiring tiny print.",
+              "french_and_english": "Both ask whether purchase without prescription guarantees driving safety, not whether this unnamed medicine specifically causes impairment.",
+              "all_four_options": "C only. A wrongly guarantees every OTC medicine; B one dose can affect driving; D short trip offers no guarantee; C checks leaflet and pharmacist.",
+              "novelty": "Nearest alcohol-plus-medicine item tests potentiation. Designated-driver planning, limited night visibility and lost-object retrieval are unrelated. Legal CBD sale versus THC liability is another product with a distinct legal mechanism; this item tests medicine purchase status versus precaution checking. Also compared all medication-pictogram and dosing items."
+            },
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-001/otc_medicine_not_driving_guarantee/scene-1.jpg",
+      "image_sha256": "70b89bd879d96e059468667ec3e128ba4b83c4d4bf8e951007697ed320b31601",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+        "proposal_sha256": "ca33205e1b11bd9e15165383c05ed9068886d1a0e0506cb8d496c9d81c0d665e",
+        "image_sha256": "70b89bd879d96e059468667ec3e128ba4b83c4d4bf8e951007697ed320b31601",
+        "compared_question_keys": [
+          "situation_alcohol_sedating_medicine",
+          "designated_driver_plan",
+          "situation_speed_night_dipped_visibility",
+          "situation_motorway_lost_object_no_retrieval",
+          "situation_alcohol_cbd_legal_sale_not_driving"
+        ],
+        "checks": {
+          "official_rule": "Ameli medicine-and-driving guidance checked 2026-10-09: non-prescription status does not guarantee compatibility; check precautions and pharmacist advice.",
+          "signs_and_text": "Plain carton and reverse of folded leaflet have no drug name, dose, level pictogram or illegible necessary text. No road signs.",
+          "road_geometry": "Domestic tabletop, no roadway or lane geometry; purchase status comes from question.",
+          "vehicles_and_people": "No people or vehicles depicted. Keys, carton and folded paper rest naturally on table.",
+          "dashboard_and_equipment": "Key blade/fob has plausible lock controls; no dashboard or medicinal dose displayed.",
+          "full_resolution": "Inspected final 1672x941 JPEG including key, packaging folds, leaflet, table and background; no unreadable required clue.",
+          "phone_size": "390px preview retains medicine-box/leaflet/key context without requiring tiny print.",
+          "french_and_english": "Both ask whether purchase without prescription guarantees driving safety, not whether this unnamed medicine specifically causes impairment.",
+          "all_four_options": "C only. A wrongly guarantees every OTC medicine; B one dose can affect driving; D short trip offers no guarantee; C checks leaflet and pharmacist.",
+          "novelty": "Nearest alcohol-plus-medicine item tests potentiation. Designated-driver planning, limited night visibility and lost-object retrieval are unrelated. Legal CBD sale versus THC liability is another product with a distinct legal mechanism; this item tests medicine purchase status versus precaution checking. Also compared all medication-pictogram and dosing items."
+        },
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "e10238aa89eb78fe51aa1dc700568781411c35c6670b5ca3f7619eb19cb4b6d0"
+    },
+    {
+      "proposal": {
+        "scenario_id": "limiter_no_braking_downhill",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+        "learning_objective": "Understand that a speed limiter without brake control may not prevent overspeed on a steep descent.",
+        "topic": "driver_aids.limiter_descent",
+        "scenario": "A car descends a steep road. Its limiter only reduces engine power and cannot apply the brakes. These equipment capabilities are explicit in both translations; the still image establishes only the downhill setting.",
+        "novelty_review": "Existing downhill engine-braking questions concern gear selection. This tests the operational limit of a specific driver aid and the driver’s continuing duty to monitor speed.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_limiter_no_braking_downhill",
+          "category_slug": "speed_limits",
+          "correct_answers": [
+            "a"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Dans cette descente, mon limiteur agit seulement sur le moteur, jamais sur les freins. Que dois-je savoir ?",
+              "answer_a": "La vitesse peut dépasser la consigne : je dois la maîtriser.",
+              "answer_b": "La consigne ne peut jamais être dépassée.",
+              "answer_c": "Le limiteur actionne forcément les freins.",
+              "answer_d": "Je peux cesser de surveiller la vitesse.",
+              "explanation": "Un limiteur sans action sur les freins peut être dépassé en forte descente. Je surveille ma vitesse et adapte ma conduite."
+            },
+            "en": {
+              "question_text": "On this descent, my limiter controls engine power only and never applies the brakes. What should I know?",
+              "answer_a": "Speed may exceed the setting: I must control it.",
+              "answer_b": "The set speed can never be exceeded.",
+              "answer_c": "The limiter necessarily applies the brakes.",
+              "answer_d": "I can stop monitoring my speed.",
+              "explanation": "A limiter without brake control may not hold the set speed on a steep descent. I monitor my speed and adjust my driving."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Correct : la gravité peut entraîner un dépassement.",
+            "b": "Incorrect : ce système n’offre pas cette garantie.",
+            "c": "Incorrect : contraire à la condition précisée.",
+            "d": "Incorrect : je reste responsable de la vitesse."
+          },
+          "en": {
+            "a": "Correct: gravity may cause overspeed.",
+            "b": "Incorrect: this system provides no such guarantee.",
+            "c": "Incorrect: contrary to the stated equipment.",
+            "d": "Incorrect: I remain responsible for speed."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Driver-eye view through the windscreen down a clearly descending rural French road, with hills beyond. Dry daylight. One lane each direction with a continuous central white line and continuous edge lines, coherent road width and perspective. The camera is in the right-hand lane. No vehicles, junctions, signs, pedestrians or buildings with text. Crop out instrument cluster and hands; only a thin dashboard edge. Show the slope through terrain and horizon, without exaggerated dangerous geometry or diagrams.",
+        "sources": [
+          {
+            "url": "https://www.user-manual.renault.com/fr/la-conduite/limiteur-de-vitesse-4",
+            "kind": "manufacturer",
+            "checked_on": "2026-10-09",
+            "supports": "Renault describes this limiter as having no braking action; its set speed may not be maintained on steep descents. The question explicitly restricts itself to that system type."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_tram_crossing_without_signals",
+          "similarity": 0.495,
+          "question_fr": "Sans feu ni agent, ce tramway approche sur les rails qui traversent ma voie. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_unconscious_breathing_pls",
+          "similarity": 0.485,
+          "question_fr": "La zone est sécurisée. Cette victime est inconsciente, respire normalement et ne présente pas de traumatisme suspecté. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_motorway_entry",
+          "similarity": 0.48,
+          "question_fr": "En m'engageant sur l'autoroute, que dois-je faire ?"
+        },
+        {
+          "key": "situation_downhill_queue_reduce_speed",
+          "similarity": 0.475,
+          "question_fr": "Dans cette forte descente, une file arrêtée apparaît plus bas. Quelle action dois-je effectuer d'abord ?"
+        },
+        {
+          "key": "situation_rear_fog_lights_falling_snow",
+          "similarity": 0.459,
+          "question_fr": "Sous cette chute de neige qui réduit nettement la visibilité, puis-je allumer les feux arrière de brouillard ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-001/limiter_no_braking_downhill/scene-1.jpg",
+          "image_sha256": "16d3e60898b10ef6f82e35a5fca989decbb791db3ea2df1c5e22d4de5a905f6a",
+          "prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Driver-eye view through the windscreen down a clearly descending rural French road, with hills beyond. Dry daylight. One lane each direction with a continuous central white line and continuous edge lines, coherent road width and perspective. The camera is in the right-hand lane. No vehicles, junctions, signs, pedestrians or buildings with text. Crop out instrument cluster and hands; only a thin dashboard edge. Show the slope through terrain and horizon, without exaggerated dangerous geometry or diagrams.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+            "proposal_sha256": "78448827f8ba9431dda317f8cd7cc6a7dbff764c38120599a29f375fffb35db2",
+            "image_sha256": "16d3e60898b10ef6f82e35a5fca989decbb791db3ea2df1c5e22d4de5a905f6a",
+            "compared_question_keys": [
+              "situation_tram_crossing_without_signals",
+              "situation_unconscious_breathing_pls",
+              "situation_motorway_entry",
+              "situation_downhill_queue_reduce_speed",
+              "situation_rear_fog_lights_falling_snow"
+            ],
+            "checks": {
+              "official_rule": "Renault limiter manual checked 2026-10-09: set speed may be exceeded on a steep descent. Wording explicitly limits equipment to engine control with no braking.",
+              "signs_and_text": "No signs, numbers, warning plates, text or fake dashboard indicator. Solid white centre and edge lines; small reflectors do not form a conflicting lane.",
+              "road_geometry": "Two-way downhill rural road, one lane each way, right-hand camera lane. Rock face left and low wall right, consistent perspective and continuous road into valley.",
+              "vehicles_and_people": "No other vehicles or people, no implied collision or unsafe manoeuvre.",
+              "dashboard_and_equipment": "Only dashboard edge visible. Limiter capability is explicitly stated, not inferred from an absent display.",
+              "full_resolution": "Inspected final 1672x941 JPEG, road through bend, centre/edge lines, stone wall, foreground dash and distant surface; no unresolved defect.",
+              "phone_size": "390px preview clearly shows descent and right-hand lane without hiding a necessary clue.",
+              "french_and_english": "Both specify engine-only limiter with no automatic braking and ask its limitation downhill.",
+              "all_four_options": "A only. B promises impossible guarantee; C contradicts stated equipment; D removes necessary monitoring; A keeps driver responsible.",
+              "novelty": "Nearest tram, PLS, motorway entry and snow-fog-light questions are unrelated. Downhill queue requires anticipation of a visible obstruction. Here there is no queue: the specific misconception is whether a limiter lacking brake control guarantees the set speed."
+            },
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-001/limiter_no_braking_downhill/scene-1.jpg",
+      "image_sha256": "16d3e60898b10ef6f82e35a5fca989decbb791db3ea2df1c5e22d4de5a905f6a",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+        "proposal_sha256": "78448827f8ba9431dda317f8cd7cc6a7dbff764c38120599a29f375fffb35db2",
+        "image_sha256": "16d3e60898b10ef6f82e35a5fca989decbb791db3ea2df1c5e22d4de5a905f6a",
+        "compared_question_keys": [
+          "situation_tram_crossing_without_signals",
+          "situation_unconscious_breathing_pls",
+          "situation_motorway_entry",
+          "situation_downhill_queue_reduce_speed",
+          "situation_rear_fog_lights_falling_snow"
+        ],
+        "checks": {
+          "official_rule": "Renault limiter manual checked 2026-10-09: set speed may be exceeded on a steep descent. Wording explicitly limits equipment to engine control with no braking.",
+          "signs_and_text": "No signs, numbers, warning plates, text or fake dashboard indicator. Solid white centre and edge lines; small reflectors do not form a conflicting lane.",
+          "road_geometry": "Two-way downhill rural road, one lane each way, right-hand camera lane. Rock face left and low wall right, consistent perspective and continuous road into valley.",
+          "vehicles_and_people": "No other vehicles or people, no implied collision or unsafe manoeuvre.",
+          "dashboard_and_equipment": "Only dashboard edge visible. Limiter capability is explicitly stated, not inferred from an absent display.",
+          "full_resolution": "Inspected final 1672x941 JPEG, road through bend, centre/edge lines, stone wall, foreground dash and distant surface; no unresolved defect.",
+          "phone_size": "390px preview clearly shows descent and right-hand lane without hiding a necessary clue.",
+          "french_and_english": "Both specify engine-only limiter with no automatic braking and ask its limitation downhill.",
+          "all_four_options": "A only. B promises impossible guarantee; C contradicts stated equipment; D removes necessary monitoring; A keeps driver responsible.",
+          "novelty": "Nearest tram, PLS, motorway entry and snow-fog-light questions are unrelated. Downhill queue requires anticipation of a visible obstruction. Here there is no queue: the specific misconception is whether a limiter lacking brake control guarantees the set speed."
+        },
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "52d63bca1227f7e90502ffb7d050080b8977871ae5c9e9ecad903f8267180d4e"
+    },
+    {
+      "proposal": {
+        "scenario_id": "cmi_parking_card_passenger",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+        "learning_objective": "Use a valid CMI stationnement for its beneficiary as a passenger, and display it visibly without transferring the right to unrelated journeys.",
+        "topic": "accessibility.card_person_not_vehicle",
+        "scenario": "The driver transports the holder of a valid CMI stationnement. The beneficiary will actually accompany the parking visit; the question states card validity and beneficiary presence. No personal card data must be generated.",
+        "novelty_review": "Existing disabled-bay-without-card question tests prohibition without entitlement. This tests the card’s attachment to a person, use when they are a passenger, and visible display.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_cmi_parking_card_passenger",
+          "category_slug": "parking_stopping",
+          "correct_answers": [
+            "b",
+            "d"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Je transporte une personne titulaire d’une CMI « stationnement » valide. Pour stationner avec elle, quelles affirmations sont exactes ?",
+              "answer_a": "La carte est utilisable seulement si son titulaire conduit.",
+              "answer_b": "Je peux l’utiliser pour ce déplacement avec son titulaire.",
+              "answer_c": "Je pourrai aussi l’utiliser seul pour mes courses personnelles.",
+              "answer_d": "Je dois la placer en évidence à l’intérieur, contre le pare-brise.",
+              "explanation": "Le droit est lié au titulaire, conducteur ou passager. La carte doit être visible et ne m’autorise pas à l’utiliser lors de mes déplacements sans lui."
+            },
+            "en": {
+              "question_text": "I am carrying someone with a valid CMI parking card. When parking with them, which statements are correct?",
+              "answer_a": "The card is usable only if its holder drives.",
+              "answer_b": "I may use it for this trip with its holder.",
+              "answer_c": "I may also use it alone for my own shopping.",
+              "answer_d": "I must display it clearly inside against the windscreen.",
+              "explanation": "The right belongs to the holder, whether driver or passenger. The card must be visible and does not entitle me to use it on trips without them."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Incorrect : le titulaire peut être passager.",
+            "b": "Correct : le titulaire bénéficie du déplacement.",
+            "c": "Incorrect : le conducteur n’obtient pas un droit personnel.",
+            "d": "Correct : affichage visible à l’intérieur."
+          },
+          "en": {
+            "a": "Incorrect: the holder may be a passenger.",
+            "b": "Correct: the journey is with the beneficiary.",
+            "c": "Incorrect: the driver gains no personal entitlement.",
+            "d": "Correct: display visibly inside."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Parked left-hand-drive ordinary car in a plain private paved courtyard, seen obliquely from outside the front passenger side. Adult driver in the left front seat and another adult in the right front passenger seat, both seated naturally. Passenger holds a small card with its plain reverse towards the camera, no visible identity or writing. A folded mobility aid is not needed: disability need not be visible. No parking signs, painted disability symbols, storefronts or other cars. No card already on the dashboard, to avoid showing an answer. Scene illustrates the passenger role; wording supplies eligibility.",
+        "sources": [
+          {
+            "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34049",
+            "kind": "official",
+            "checked_on": "2026-10-09",
+            "supports": "CMI stationnement belongs to its holder, not the vehicle; its holder may be driver or passenger. Display it visibly inside the vehicle against the windscreen."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_night_unlit_roadside_position_lights",
+          "similarity": 0.479,
+          "question_fr": "Je laisse ma voiture stationnée de nuit sur cette chaussée sans éclairage public. Quelle signalisation conserver ?"
+        },
+        {
+          "key": "safety_accident_first_actions",
+          "similarity": 0.477,
+          "question_fr": "Lors d’un accident de la route, quelles premières actions sont adaptées ?"
+        },
+        {
+          "key": "situation_speed_carpark_walking_pace",
+          "similarity": 0.472,
+          "question_fr": "Je circule dans ce parc de stationnement aménagé au sol. Quelle allure dois-je adopter ?"
+        },
+        {
+          "key": "situation_ecstasy_false_alertness",
+          "similarity": 0.47,
+          "question_fr": "Après avoir pris de l'ecstasy, cette personne dit ne plus sentir sa fatigue et veut conduire. Quelle décision est correcte ?"
+        },
+        {
+          "key": "situation_motorway_last_in_slow_queue",
+          "similarity": 0.453,
+          "question_fr": "Je suis le dernier véhicule d'une file qui ralentit fortement sur autoroute. Comment avertir les conducteurs derrière moi ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-001/cmi_parking_card_passenger/scene-1.jpg",
+          "image_sha256": "1984cea76b0e237cd188d912cfdd1c408ecccb40a8f22ef913427d7a44a6a9ab",
+          "prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Parked left-hand-drive ordinary car in a plain private paved courtyard, seen obliquely from outside the front passenger side. Adult driver in the left front seat and another adult in the right front passenger seat, both seated naturally. Passenger holds a small card with its plain reverse towards the camera, no visible identity or writing. A folded mobility aid is not needed: disability need not be visible. No parking signs, painted disability symbols, storefronts or other cars. No card already on the dashboard, to avoid showing an answer. Scene illustrates the passenger role; wording supplies eligibility.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+            "proposal_sha256": "9fd6655eaebaac1a4bf22abb94b5ddb7e6db859bf3aa064e2cab900303426d6d",
+            "image_sha256": "1984cea76b0e237cd188d912cfdd1c408ecccb40a8f22ef913427d7a44a6a9ab",
+            "compared_question_keys": [
+              "situation_night_unlit_roadside_position_lights",
+              "safety_accident_first_actions",
+              "situation_speed_carpark_walking_pace",
+              "situation_ecstasy_false_alertness",
+              "situation_motorway_last_in_slow_queue"
+            ],
+            "checks": {
+              "official_rule": "Service Public CMI guidance checked 2026-10-09: cardholder can be passenger; card must be displayed visibly inside against windscreen; driver cannot use it for personal trips without holder.",
+              "signs_and_text": "Blank reverse of card, no invented identity, expiry or CMI design; no reserved-parking symbol or sign. Valid CMI status explicitly supplied.",
+              "road_geometry": "Car stationary on paved courtyard, not in a depicted restricted bay. No lane or right-of-way inference.",
+              "vehicles_and_people": "Woman in front passenger seat holds card naturally, driver at left-hand steering position (image right), both seated with plausible hands and anatomy.",
+              "dashboard_and_equipment": "Wheel, windscreen, wipers, mirror, headrests and restraints inspected; no necessary dashboard text.",
+              "full_resolution": "Inspected 1672x941 JPEG including card hand, steering hand, windshield reflections, mirror, body panels and passenger location; no unresolved defect.",
+              "phone_size": "390px preview clearly retains holder as passenger and card, without needing its reverse to be readable.",
+              "french_and_english": "Both specify valid CMI parking card and transport with holder; no claim all parking restrictions disappear.",
+              "all_four_options": "B,D exactly. A wrongly requires holder to drive; C wrongly transfers personal entitlement; B passenger use valid; D visible interior display required.",
+              "novelty": "Nearest night parking, first aid, carpark pace, ecstasy and queue warning questions are unrelated. Broader disabled-bay-without-card rule does not ask whose card/right applies when its holder travels as passenger."
+            },
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-001/cmi_parking_card_passenger/scene-1.jpg",
+      "image_sha256": "1984cea76b0e237cd188d912cfdd1c408ecccb40a8f22ef913427d7a44a6a9ab",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+        "proposal_sha256": "9fd6655eaebaac1a4bf22abb94b5ddb7e6db859bf3aa064e2cab900303426d6d",
+        "image_sha256": "1984cea76b0e237cd188d912cfdd1c408ecccb40a8f22ef913427d7a44a6a9ab",
+        "compared_question_keys": [
+          "situation_night_unlit_roadside_position_lights",
+          "safety_accident_first_actions",
+          "situation_speed_carpark_walking_pace",
+          "situation_ecstasy_false_alertness",
+          "situation_motorway_last_in_slow_queue"
+        ],
+        "checks": {
+          "official_rule": "Service Public CMI guidance checked 2026-10-09: cardholder can be passenger; card must be displayed visibly inside against windscreen; driver cannot use it for personal trips without holder.",
+          "signs_and_text": "Blank reverse of card, no invented identity, expiry or CMI design; no reserved-parking symbol or sign. Valid CMI status explicitly supplied.",
+          "road_geometry": "Car stationary on paved courtyard, not in a depicted restricted bay. No lane or right-of-way inference.",
+          "vehicles_and_people": "Woman in front passenger seat holds card naturally, driver at left-hand steering position (image right), both seated with plausible hands and anatomy.",
+          "dashboard_and_equipment": "Wheel, windscreen, wipers, mirror, headrests and restraints inspected; no necessary dashboard text.",
+          "full_resolution": "Inspected 1672x941 JPEG including card hand, steering hand, windshield reflections, mirror, body panels and passenger location; no unresolved defect.",
+          "phone_size": "390px preview clearly retains holder as passenger and card, without needing its reverse to be readable.",
+          "french_and_english": "Both specify valid CMI parking card and transport with holder; no claim all parking restrictions disappear.",
+          "all_four_options": "B,D exactly. A wrongly requires holder to drive; C wrongly transfers personal entitlement; B passenger use valid; D visible interior display required.",
+          "novelty": "Nearest night parking, first aid, carpark pace, ecstasy and queue warning questions are unrelated. Broader disabled-bay-without-card rule does not ask whose card/right applies when its holder travels as passenger."
+        },
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "52f5f40e5e83d567c2cca3632f633604f0f633862e78983434f58b3055fed419"
+    },
+    {
+      "proposal": {
+        "scenario_id": "amber_beacon_alone_no_priority",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+        "learning_objective": "Distinguish an amber warning beacon from a priority entitlement.",
+        "topic": "special_vehicles.amber_warning",
+        "scenario": "An ordinary road-maintenance van is at a quiet junction with an amber beacon. No priority emergency vehicle, convoy escort, active snow clearance, manual traffic controller or special traffic order is involved. Ask only what the amber beacon alone establishes, not which vehicle must cross first.",
+        "novelty_review": "Existing emergency blue-light and exceptional-convoy questions concern special legal priority. This tests the distinct meaning of an amber hazard beacon without inventing a right of way.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_amber_beacon_alone_no_priority",
+          "category_slug": "priority_rules",
+          "correct_answers": [
+            "b"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Ce véhicule d’entretien porte un gyrophare orange. Ce feu, à lui seul, lui donne-t-il la priorité au carrefour ?",
+              "answer_a": "Oui, sur tous les autres usagers.",
+              "answer_b": "Non, il signale un véhicule à remarquer avec prudence.",
+              "answer_c": "Oui, mais seulement en agglomération.",
+              "answer_d": "Oui, dès qu’il roule lentement.",
+              "explanation": "Le gyrophare orange avertit notamment de la présence d’un véhicule lent ou encombrant. À lui seul, il n’accorde pas la priorité ; je reste prudent et applique les règles du carrefour."
+            },
+            "en": {
+              "question_text": "This maintenance vehicle has an amber beacon. Does that light alone give it priority at the junction?",
+              "answer_a": "Yes, over every other road user.",
+              "answer_b": "No, it warns me to pay particular attention.",
+              "answer_c": "Yes, but only in built-up areas.",
+              "answer_d": "Yes, whenever it is moving slowly.",
+              "explanation": "An amber beacon warns of a vehicle that may be slow or bulky. By itself, it grants no priority; I remain cautious and follow the junction’s rules."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Incorrect : ce feu n’établit pas cette priorité.",
+            "b": "Correct : signal d’avertissement.",
+            "c": "Incorrect : l’agglomération ne change pas sa signification.",
+            "d": "Incorrect : la lenteur ne crée pas cette priorité."
+          },
+          "en": {
+            "a": "Incorrect: the beacon establishes no such priority.",
+            "b": "Correct: it is a warning signal.",
+            "c": "Incorrect: a built-up area does not change its meaning.",
+            "d": "Incorrect: slow speed does not create this priority."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Daylight exterior view of a quiet ordinary French junction. A compact generic orange municipal road-maintenance van stands on a side approach, clearly separated from the main roadway. Exactly one small amber rotating beacon on its roof, visibly amber, no blue light or siren equipment. Normal road tyres and compact service body, no snowplough, convoy, emergency livery, workers directing traffic or readable labels. Simple low buildings and clear road geometry. No arrows or highlights; do not imply the van is forcing passage.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177087",
+            "kind": "official",
+            "checked_on": "2026-10-09",
+            "supports": "R313-28 permits special lights for slow or bulky vehicles; this is a warning-device rule, not an automatic grant of priority."
+          },
+          {
+            "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842252",
+            "kind": "official",
+            "checked_on": "2026-10-09",
+            "supports": "R415-12 concerns priority vehicles of general interest using their special warnings. Do not extend that priority solely from an amber beacon."
+          },
+          {
+            "url": "https://www.ornikar.com/code/cours/signalisation/sur-vehicule/gyrophare",
+            "kind": "background",
+            "checked_on": "2026-10-09",
+            "supports": "Topic reference distinguishing amber beacons from blue emergency signals. Original question and scene; no proprietary exercise copied."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_b9b_car_interpretation",
+          "similarity": 0.419,
+          "question_fr": "Je conduis une voiture particulière. Ce panneau, à lui seul, m’interdit-il l’accès ?"
+        },
+        {
+          "key": "situation_priority_rural_bus_no_automatic_priority",
+          "similarity": 0.413,
+          "question_fr": "Hors agglomération, cet autocar veut quitter son arrêt. Son clignotant lui donne-t-il automatiquement la priorité ?"
+        },
+        {
+          "key": "situation_end_priority_road_ab7",
+          "similarity": 0.407,
+          "question_fr": "À la prochaine intersection, le véhicule venant de droite est-il prioritaire ?"
+        },
+        {
+          "key": "situation_blind_crest_no_overtake",
+          "similarity": 0.404,
+          "question_fr": "Le véhicule devant roule lentement et le sommet de la côte masque la route. Puis-je commencer à le dépasser ?"
+        },
+        {
+          "key": "situation_urban_horn_impatience",
+          "similarity": 0.396,
+          "question_fr": "En ville, le véhicule devant tarde à repartir au feu vert sans danger immédiat. Puis-je klaxonner par impatience ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-001/amber_beacon_alone_no_priority/scene-1.jpg",
+          "image_sha256": "f8d7ab4cafe2b7121671cbe30156bda49fb4a52756f119fdba198606ceaf0cd5",
+          "prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Daylight exterior view of a quiet ordinary French junction. A compact generic orange municipal road-maintenance van stands on a side approach, clearly separated from the main roadway. Exactly one small amber rotating beacon on its roof, visibly amber, no blue light or siren equipment. Normal road tyres and compact service body, no snowplough, convoy, emergency livery, workers directing traffic or readable labels. Simple low buildings and clear road geometry. No arrows or highlights; do not imply the van is forcing passage.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "reject",
+            "proposal_sha256": "931bec8dd9ed6e3a6f509c04e1b474b87e5f0b4f1429c97cf591ea5c52cc7089",
+            "image_sha256": "f8d7ab4cafe2b7121671cbe30156bda49fb4a52756f119fdba198606ceaf0cd5",
+            "notes": "Full-resolution and phone-size inspection: generated rear of an inverted triangular give-way sign at side approach, but its required matching broken transverse line is not clearly present. Unexpected ambiguous regulatory detail blocks approval. Simplify this to an uncontrolled junction, preserving the amber-beacon question’s limited claim.",
+            "recorded_on": "2026-10-09"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-001/amber_beacon_alone_no_priority/scene-2.jpg",
+          "image_sha256": "2642ccad04b1eb8c4e162453f86a7516facdab76d79f3a7cc70bad8e8da8a96d",
+          "prompt": "Edit the supplied original scene. Preserve the orange maintenance van, its single clearly amber roof beacon, the road layout, daylight and realistic photographic detail. Remove the entire inverted triangular road sign and its pole near the middle-right corner. Remove the isolated white painted stroke on the side-road approach beside the van. This must be an ordinary uncontrolled junction with no vertical priority signs, no stop or yield lines, no traffic lights and no traffic officer. Keep the main road centre markings and pedestrian crossing physically plausible. Keep all other objects and people unchanged; add no text, arrows, highlights, or other road signs. The quiz asks only whether the amber beacon by itself creates priority, not which vehicle proceeds first. Landscape 16:9.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+            "proposal_sha256": "931bec8dd9ed6e3a6f509c04e1b474b87e5f0b4f1429c97cf591ea5c52cc7089",
+            "image_sha256": "2642ccad04b1eb8c4e162453f86a7516facdab76d79f3a7cc70bad8e8da8a96d",
+            "compared_question_keys": [
+              "situation_b9b_car_interpretation",
+              "situation_priority_rural_bus_no_automatic_priority",
+              "situation_end_priority_road_ab7",
+              "situation_blind_crest_no_overtake",
+              "situation_urban_horn_impatience"
+            ],
+            "checks": {
+              "official_rule": "R313-28 amber warning equipment and R415-12 priority vehicles checked 2026-10-09; amber beacon alone does not grant priority. Question deliberately does not ask which vehicle actually proceeds first.",
+              "signs_and_text": "One amber roof beacon, no blue emergency beacon; original unexplained give-way sign/pole removed. No signs/plates or readable registration text. Small vehicle grille emblem has no instructional function.",
+              "road_geometry": "Ordinary side street joins from right, zebra across main road, dashed centre line, realistic curbs. Removed isolated side-road stroke. Ordinary junction rules remain applicable.",
+              "vehicles_and_people": "Single orange maintenance van approaches from right, correctly grounded wheels, plausible body/lights; no pedestrian or conflicting gesture.",
+              "dashboard_and_equipment": "Beacon mounted on roof and visibly amber. No dash, siren or emergency-light claim.",
+              "full_resolution": "Entire corrected scene-2 JPEG inspected at1672x941, including removed sign location, side-road edge, zebra, van and roof beacon.",
+              "phone_size": "390px corrected preview retains orange van and bright amber beacon; no tiny necessary text.",
+              "french_and_english": "Both ask whether the light alone grants priority. Neither denies possible ordinary priority from the vehicle's position.",
+              "all_four_options": "B only. A universal priority, C urban exception and D slow-speed priority are all unsupported; B warns to attend cautiously.",
+              "novelty": "Nearest B9b, end-of-priority road, blind crest and horn questions use different cues and obligations. Rural bus indicator question distinguishes intent from priority, whereas this item identifies a different warning device and vehicle class. Also compared emergency/convoy questions; no claim is made about all maintenance vehicles in all circumstances."
+            },
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-001/amber_beacon_alone_no_priority/scene-2.jpg",
+      "image_sha256": "2642ccad04b1eb8c4e162453f86a7516facdab76d79f3a7cc70bad8e8da8a96d",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+        "proposal_sha256": "931bec8dd9ed6e3a6f509c04e1b474b87e5f0b4f1429c97cf591ea5c52cc7089",
+        "image_sha256": "2642ccad04b1eb8c4e162453f86a7516facdab76d79f3a7cc70bad8e8da8a96d",
+        "compared_question_keys": [
+          "situation_b9b_car_interpretation",
+          "situation_priority_rural_bus_no_automatic_priority",
+          "situation_end_priority_road_ab7",
+          "situation_blind_crest_no_overtake",
+          "situation_urban_horn_impatience"
+        ],
+        "checks": {
+          "official_rule": "R313-28 amber warning equipment and R415-12 priority vehicles checked 2026-10-09; amber beacon alone does not grant priority. Question deliberately does not ask which vehicle actually proceeds first.",
+          "signs_and_text": "One amber roof beacon, no blue emergency beacon; original unexplained give-way sign/pole removed. No signs/plates or readable registration text. Small vehicle grille emblem has no instructional function.",
+          "road_geometry": "Ordinary side street joins from right, zebra across main road, dashed centre line, realistic curbs. Removed isolated side-road stroke. Ordinary junction rules remain applicable.",
+          "vehicles_and_people": "Single orange maintenance van approaches from right, correctly grounded wheels, plausible body/lights; no pedestrian or conflicting gesture.",
+          "dashboard_and_equipment": "Beacon mounted on roof and visibly amber. No dash, siren or emergency-light claim.",
+          "full_resolution": "Entire corrected scene-2 JPEG inspected at1672x941, including removed sign location, side-road edge, zebra, van and roof beacon.",
+          "phone_size": "390px corrected preview retains orange van and bright amber beacon; no tiny necessary text.",
+          "french_and_english": "Both ask whether the light alone grants priority. Neither denies possible ordinary priority from the vehicle's position.",
+          "all_four_options": "B only. A universal priority, C urban exception and D slow-speed priority are all unsupported; B warns to attend cautiously.",
+          "novelty": "Nearest B9b, end-of-priority road, blind crest and horn questions use different cues and obligations. Rural bus indicator question distinguishes intent from priority, whereas this item identifies a different warning device and vehicle class. Also compared emergency/convoy questions; no claim is made about all maintenance vehicles in all circumstances."
+        },
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "ab86609da7c9ed901f7ee8e98d6e19cfa17e3a521e3f2c88415f81e97502c3f1"
+    },
+    {
+      "proposal": {
+        "scenario_id": "short_left_turn_lane_arrow",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+        "learning_objective": "Interpret a left-only directional arrow in a short dedicated turn lane.",
+        "topic": "markings.directional_lane_arrow",
+        "scenario": "Driver is in a short left-turn pocket beside the through lane before a junction. A single clear left-only directional arrow is painted in this pocket. This is not a lane-reduction layout; the through lane continues. No manoeuvre or priority decision is asked.",
+        "novelty_review": "Existing B21 and C24 questions interpret vertical signs. This targets a short turn lane’s pavement marking, not a new rendering of a covered sign code.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_short_left_turn_lane_arrow",
+          "category_slug": "road_signs",
+          "correct_answers": [
+            "c"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Je suis dans cette courte voie spécialisée. Quelle direction indique la flèche peinte dans ma voie ?",
+              "answer_a": "Tout droit uniquement.",
+              "answer_b": "À droite uniquement.",
+              "answer_c": "À gauche uniquement.",
+              "answer_d": "Tout droit ou à gauche.",
+              "explanation": "La flèche directionnelle de cette voie indique seulement la gauche. Elle ne comporte pas de branche autorisant à continuer tout droit."
+            },
+            "en": {
+              "question_text": "I am in this short dedicated turn lane. Which direction does the arrow painted in my lane indicate?",
+              "answer_a": "Straight ahead only.",
+              "answer_b": "Right only.",
+              "answer_c": "Left only.",
+              "answer_d": "Straight ahead or left.",
+              "explanation": "This lane’s directional arrow points left only. Its single branch indicates a left turn; it has no additional branch permitting travel straight ahead."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Incorrect : aucune branche tout droit.",
+            "b": "Incorrect : la flèche pointe à gauche.",
+            "c": "Correct : seule direction représentée.",
+            "d": "Incorrect : la flèche n’a qu’une direction."
+          },
+          "en": {
+            "a": "Incorrect: there is no straight-ahead branch.",
+            "b": "Incorrect: the arrow points left.",
+            "c": "Correct: the sole direction shown.",
+            "d": "Incorrect: this arrow shows only one direction."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Driver-eye view from a car centred in a short urban left-turn pocket approaching a simple French T-junction where a side road joins from the left and the main road continues straight. Right-hand traffic. One regular through lane immediately to our right continues unchanged; one opposing lane is to our left beyond a continuous centre line. The short turn pocket is separated from our through lane by a broken white line. Large clean French-style directional arrow on asphalt within our pocket: a standard left-turn-only arrow conforming to French IISR part 7 annex B2, mirrored from the standard right-turn-only diagram; absolutely no forward arrowhead or second branch. Exactly two successive left-turn arrows visible at regular spacing in this short urban pocket, with consistent orientation; no room for a third within this short pocket. Dry daylight, no vehicles or pedestrians. No traffic lights or vertical signs in frame. Crop before the actual junction conflict area so no priority-control inference is needed. Realistic widths, perspective, no permanent through-lane reduction. Use the actual French annex B2 form: approximately 4 m overall longitudinal length, narrow 0.15 m stem, an oblique branch toward the left (not an American square elbow), and a narrow elongated triangular arrowhead pointing left; perspective naturally foreshortens its longitudinal dimensions.",
+        "sources": [
+          {
+            "url": "https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_7epartie_vc_20250404.pdf",
+            "kind": "official",
+            "checked_on": "2026-10-09",
+            "supports": "IISR part 7 (VC20250404), article 115-3 C: directional arrows identify permitted lane directions; short specialised lanes are excluded from the lane-reduction definition. Two repetitions are exceptional for short urban junction space. Final arrow geometry must be compared visually with annex B2 before approval. Annex B2 on PDF page 62 visually inspected on 2026-10-09: turn arrow uses an oblique branch and elongated head; left is the mirror of right."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_b55_car_scenario",
+          "similarity": 0.547,
+          "question_fr": "Je quitte cette aire où ma voiture était autorisée. Que m’indique le panneau ?"
+        },
+        {
+          "key": "situation_c13c_dead_end_pedestrian_exit",
+          "similarity": 0.525,
+          "question_fr": "L’issue indiquée au fond de cette impasse me permet-elle de rejoindre la rue suivante avec ma voiture ?"
+        },
+        {
+          "key": "situation_left_turn_oncoming_yield",
+          "similarity": 0.485,
+          "question_fr": "Je tourne à gauche dans cette rue tandis qu’une voiture arrive en face. Quelle action est correcte ?"
+        },
+        {
+          "key": "situation_c24b_car_interpretation",
+          "similarity": 0.478,
+          "question_fr": "Je souhaite continuer tout droit. Quelle voie correspond à mon itinéraire sur ce panneau ?"
+        },
+        {
+          "key": "situation_probationary_posted_90_max_80",
+          "similarity": 0.473,
+          "question_fr": "Je suis en permis probatoire sur cette route à double sens hors agglomération, signalée à 90 km/h. Quelle vitesse maximale s'applique à ma voiture ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-001/short_left_turn_lane_arrow/scene-1.jpg",
+          "image_sha256": "914213123f3321d1da1c1851c5d637ae64616347680dd53539456698d050e04f",
+          "prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Driver-eye view from a car centred in a short urban left-turn pocket approaching a simple French T-junction where a side road joins from the left and the main road continues straight. Right-hand traffic. One regular through lane immediately to our right continues unchanged; one opposing lane is to our left beyond a continuous centre line. The short turn pocket is separated from our through lane by a broken white line. Large clean French-style directional arrow on asphalt within our pocket: a standard left-turn-only arrow conforming to French IISR part 7 annex B2, mirrored from the standard right-turn-only diagram; absolutely no forward arrowhead or second branch. Exactly two successive left-turn arrows visible at regular spacing in this short urban pocket, with consistent orientation; no room for a third within this short pocket. Dry daylight, no vehicles or pedestrians. No traffic lights or vertical signs in frame. Crop before the actual junction conflict area so no priority-control inference is needed. Realistic widths, perspective, no permanent through-lane reduction. Use the actual French annex B2 form: approximately 4 m overall longitudinal length, narrow 0.15 m stem, an oblique branch toward the left (not an American square elbow), and a narrow elongated triangular arrowhead pointing left; perspective naturally foreshortens its longitudinal dimensions.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "reject",
+            "notes": "Reject: the road ends at a T junction instead of the through lane continuing; both arrows use square-elbow broad-head geometry inconsistent with inspected French annex B2 reference.",
+            "proposal_sha256": "09f68e02f4ec5b41c11713a5638332b45867c9f9f77950a7aa776fa336d46965",
+            "image_sha256": "914213123f3321d1da1c1851c5d637ae64616347680dd53539456698d050e04f",
+            "recorded_on": "2026-10-09"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-001/short_left_turn_lane_arrow/scene-2.jpg",
+          "image_sha256": "bd14fc6291b25143b3b2232d9c55d857bcb276e21a9985dcfc59f7e43ce73745",
+          "prompt": "Use case: precise-object-edit. Image 1 is the edit target. Image 2 is an official technical SHAPE REFERENCE ONLY, do not reproduce the page or labels. Correct this original French driving scene. Replace both white pavement turn arrows by the leftward mirror of the RIGHT-HAND SYMBOL on reference image 2: narrow long shaft, diagonal rising branch toward left, tall slim triangular arrowhead whose point faces left, with its base elongated along the direction of road travel. Match the actual reference silhouette, NOT an American square-elbow arrow with a short broad head. Project this painted flat geometry onto the road in natural perspective. Both arrows point left only. Also correct the junction: our road and the lane to our right must visibly continue STRAIGHT beyond the top of the frame toward a vanishing point; a side street joins from LEFT. Remove the wall blocking straight-ahead travel. Our short left-turn pocket is between one opposing lane on our left and a normal through lane on our right. Keep continuous opposing centre separation and broken divider to through lane; no impossible dead-end. Crop before actual conflict area, no signs or traffic lights, no vehicles, no pedestrians. Keep original daylight village style, driver viewpoint and 16:9 landscape. No text, annotations or highlights.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "reject",
+            "notes": "Reject correction 1: through road fixed, but arrows still have short broad heads and square elbows unlike the French annex B2 silhouette; pocket also appears to continue beyond its turn.",
+            "proposal_sha256": "09f68e02f4ec5b41c11713a5638332b45867c9f9f77950a7aa776fa336d46965",
+            "image_sha256": "bd14fc6291b25143b3b2232d9c55d857bcb276e21a9985dcfc59f7e43ce73745",
+            "recorded_on": "2026-10-09"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-001/short_left_turn_lane_arrow/scene-3.jpg",
+          "image_sha256": "ecad12830599b8cce446ef4ab41f0293ac543ff260818168a6ff28e9f0140e5d",
+          "prompt": "Use case: scientific-educational photorealistic scene. Regenerate a correct French left-turn-pocket scene using the attached technical reference solely to get the white paint shape right. The reference's RIGHT diagram is a RIGHT-TURN arrow: mirror it horizontally to make a LEFT-TURN arrow. Keep its exact silhouette proportions: long thin upright stem, diagonal shoulder rising to the LEFT, a very tall narrow left-facing arrowhead. Do not replace it with an L-shaped square elbow. The arrowhead base is 2 metres tall longitudinally, much longer than its 0.35 metre sideways protrusion. Overall symbol 4 metres long, stem15cmwide. Paint TWO copies of this mirrored silhouette in perspective on asphalt. Original daylight urban road, driver centred in short left-turn pocket, opposing lane to left across solid white line, through lane to right across broken white line. Main road continues straight ahead, left side street at end of short pocket. Landscape16:9 original photograph, no vehicles, signs, text, numbers, captions, solutions or reference-page graphics. Camera angled downward enough that French tall arrowhead and diagonal branch are visible clearly.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "reject",
+            "notes": "Reject correction 2: arrowheads closer to B2 but two arrows are side-by-side in one lane; an unexplained transverse stop line was added, and lane layout is inconsistent. Last correction must show a single unambiguous lane marking without these contradictions.",
+            "proposal_sha256": "09f68e02f4ec5b41c11713a5638332b45867c9f9f77950a7aa776fa336d46965",
+            "image_sha256": "ecad12830599b8cce446ef4ab41f0293ac543ff260818168a6ff28e9f0140e5d",
+            "recorded_on": "2026-10-09"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-001/short_left_turn_lane_arrow/scene-4.jpg",
+          "image_sha256": "5e10e96f4c2f0ba651960a9edbf448d3b4c5957be39dc1a770ca190f99e1d1dd",
+          "prompt": "Use case: precise-object-edit. Correct the attached road image into a simple close-up original French driving-theory photograph. Keep ONLY the LEFT white arrow, with its long slim left-pointing triangular head and diagonal stem exactly preserved; remove the entire right-hand duplicate arrow and fill with natural asphalt. Centre the remaining left arrow within the short turn lane by moving the camera/crop, not by changing its shape. Remove the transverse horizontal stop line completely: no stop line or STOP sign is needed. Crop tightly downward to the road surface BEFORE the junction, so one full left-only arrow and the solid left lane boundary and broken right lane boundary are visible; road perspective remains natural. No horizon, no background junction, no new text, no second arrow, no incorrect road-layout details. This is a close driver's downward view of a pavement marking, landscape16:9, realistic asphalt and white paint, not a diagram. Preserve reference left-arrow silhouette and remove the duplicate rather than replacing with a square-elbow symbol.\\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+            "proposal_sha256": "09f68e02f4ec5b41c11713a5638332b45867c9f9f77950a7aa776fa336d46965",
+            "image_sha256": "5e10e96f4c2f0ba651960a9edbf448d3b4c5957be39dc1a770ca190f99e1d1dd",
+            "compared_question_keys": [
+              "situation_b55_car_scenario",
+              "situation_c13c_dead_end_pedestrian_exit",
+              "situation_left_turn_oncoming_yield",
+              "situation_c24b_car_interpretation",
+              "situation_probationary_posted_90_max_80"
+            ],
+            "checks": {
+              "official_rule": "IISR115-3C and annexB2 checked 2026-10-09, official reference retained. Final marking has long thin stem, oblique left branch and elongated left-pointing head, not a straight-ahead branch.",
+              "signs_and_text": "One white left-only directional marking, solid left boundary and broken right boundary. No stop line, vertical sign, dimensions or text.",
+              "road_geometry": "Final close crop shows one arrow centred in one lane before junction. Initial requests for two visible repetitions were superseded by close crop; short dedicated lane is explicit in stem. No contradictory through-road/dead-end geometry remains visible.",
+              "vehicles_and_people": "No people or vehicles; no gesture, traffic direction or priority assumption needed.",
+              "dashboard_and_equipment": "No dashboard or equipment in close road-surface crop.",
+              "full_resolution": "Final scene-4 inspected at1672x941 and compared to leftward mirror of annexB2: diagonal branch and tall narrow triangular head with leftmost point retained. Duplicate arrow and unexplained stop line removed.",
+              "phone_size": "390px final preview retains complete stem, branch and head clearly; sole direction left, no second forward branch.",
+              "french_and_english": "Both ask direction indicated by pavement arrow in stated short dedicated lane; neither asks which manoeuvre is safe or priority.",
+              "all_four_options": "C only. A has no straight-ahead branch; B wrong side; D invents a second branch; C matches left-only symbol.",
+              "novelty": "Nearest B55, C13c, left-turn yielding and probationary-speed questions are unrelated. C24b tests reading a vertical lane diagram to choose a through lane; this item decodes the pavement-only directional marking of a short turn pocket. It must not reuse a C24 sign as a new primary target."
+            },
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-001/short_left_turn_lane_arrow/scene-4.jpg",
+      "image_sha256": "5e10e96f4c2f0ba651960a9edbf448d3b4c5957be39dc1a770ca190f99e1d1dd",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "Fresh full recheck after expanding English explanation to meet native content quality minimum; image unchanged and inspected again. No detected unresolved defects.",
+        "proposal_sha256": "0c91ca190964df6a40ddc6e1759799893155ba0b2729e2ab14c891948432cdd2",
+        "image_sha256": "5e10e96f4c2f0ba651960a9edbf448d3b4c5957be39dc1a770ca190f99e1d1dd",
+        "compared_question_keys": [
+          "situation_b55_car_scenario",
+          "situation_c13c_dead_end_pedestrian_exit",
+          "situation_left_turn_oncoming_yield",
+          "situation_c24b_car_interpretation",
+          "situation_probationary_posted_90_max_80"
+        ],
+        "checks": {
+          "official_rule": "IISR115-3C and annexB2 checked 2026-10-09, official reference retained. Final marking has long thin stem, oblique left branch and elongated left-pointing head, not a straight-ahead branch.",
+          "signs_and_text": "One white left-only directional marking, solid left boundary and broken right boundary. No stop line, vertical sign, dimensions or text.",
+          "road_geometry": "Final close crop shows one arrow centred in one lane before junction. Initial requests for two visible repetitions were superseded by close crop; short dedicated lane is explicit in stem. No contradictory through-road/dead-end geometry remains visible.",
+          "vehicles_and_people": "No people or vehicles; no gesture, traffic direction or priority assumption needed.",
+          "dashboard_and_equipment": "No dashboard or equipment in close road-surface crop.",
+          "full_resolution": "Final scene-4 inspected at1672x941 and compared to leftward mirror of annexB2: diagonal branch and tall narrow triangular head with leftmost point retained. Duplicate arrow and unexplained stop line removed.",
+          "phone_size": "390px final preview retains complete stem, branch and head clearly; sole direction left, no second forward branch.",
+          "french_and_english": "Both ask direction indicated by pavement arrow in stated short dedicated lane; neither asks which manoeuvre is safe or priority. Expanded English explanation rechecked against unchanged French meaning, conditions and all four options; no new rule introduced.",
+          "all_four_options": "C only. A has no straight-ahead branch; B wrong side; D invents a second branch; C matches left-only symbol.",
+          "novelty": "Nearest B55, C13c, left-turn yielding and probationary-speed questions are unrelated. C24b tests reading a vertical lane diagram to choose a through lane; this item decodes the pavement-only directional marking of a short turn pocket. It must not reuse a C24 sign as a new primary target."
+        },
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "c90eb8fc3965026820e52b8c0402182a99efb7fb32254f102e26f6f8c4fbca80",
+      "amendments": [
+        {
+          "previous_proposal": {
+            "scenario_id": "short_left_turn_lane_arrow",
+            "scope": "ordinary_passenger_car",
+            "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+            "learning_objective": "Interpret a left-only directional arrow in a short dedicated turn lane.",
+            "topic": "markings.directional_lane_arrow",
+            "scenario": "Driver is in a short left-turn pocket beside the through lane before a junction. A single clear left-only directional arrow is painted in this pocket. This is not a lane-reduction layout; the through lane continues. No manoeuvre or priority decision is asked.",
+            "novelty_review": "Existing B21 and C24 questions interpret vertical signs. This targets a short turn lane’s pavement marking, not a new rendering of a covered sign code.",
+            "primary_codes": [],
+            "context_codes": [],
+            "question": {
+              "key": "situation_short_left_turn_lane_arrow",
+              "category_slug": "road_signs",
+              "correct_answers": [
+                "c"
+              ],
+              "difficulty": "medium",
+              "translations": {
+                "fr": {
+                  "question_text": "Je suis dans cette courte voie spécialisée. Quelle direction indique la flèche peinte dans ma voie ?",
+                  "answer_a": "Tout droit uniquement.",
+                  "answer_b": "À droite uniquement.",
+                  "answer_c": "À gauche uniquement.",
+                  "answer_d": "Tout droit ou à gauche.",
+                  "explanation": "La flèche directionnelle de cette voie indique seulement la gauche. Elle ne comporte pas de branche autorisant à continuer tout droit."
+                },
+                "en": {
+                  "question_text": "I am in this short dedicated turn lane. Which direction does the arrow painted in my lane indicate?",
+                  "answer_a": "Straight ahead only.",
+                  "answer_b": "Right only.",
+                  "answer_c": "Left only.",
+                  "answer_d": "Straight ahead or left.",
+                  "explanation": "This lane’s directional arrow points left only. It has no branch indicating straight ahead."
+                }
+              }
+            },
+            "option_rationale": {
+              "fr": {
+                "a": "Incorrect : aucune branche tout droit.",
+                "b": "Incorrect : la flèche pointe à gauche.",
+                "c": "Correct : seule direction représentée.",
+                "d": "Incorrect : la flèche n’a qu’une direction."
+              },
+              "en": {
+                "a": "Incorrect: there is no straight-ahead branch.",
+                "b": "Incorrect: the arrow points left.",
+                "c": "Correct: the sole direction shown.",
+                "d": "Incorrect: this arrow shows only one direction."
+              }
+            },
+            "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Driver-eye view from a car centred in a short urban left-turn pocket approaching a simple French T-junction where a side road joins from the left and the main road continues straight. Right-hand traffic. One regular through lane immediately to our right continues unchanged; one opposing lane is to our left beyond a continuous centre line. The short turn pocket is separated from our through lane by a broken white line. Large clean French-style directional arrow on asphalt within our pocket: a standard left-turn-only arrow conforming to French IISR part 7 annex B2, mirrored from the standard right-turn-only diagram; absolutely no forward arrowhead or second branch. Exactly two successive left-turn arrows visible at regular spacing in this short urban pocket, with consistent orientation; no room for a third within this short pocket. Dry daylight, no vehicles or pedestrians. No traffic lights or vertical signs in frame. Crop before the actual junction conflict area so no priority-control inference is needed. Realistic widths, perspective, no permanent through-lane reduction. Use the actual French annex B2 form: approximately 4 m overall longitudinal length, narrow 0.15 m stem, an oblique branch toward the left (not an American square elbow), and a narrow elongated triangular arrowhead pointing left; perspective naturally foreshortens its longitudinal dimensions.",
+            "sources": [
+              {
+                "url": "https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_7epartie_vc_20250404.pdf",
+                "kind": "official",
+                "checked_on": "2026-10-09",
+                "supports": "IISR part 7 (VC20250404), article 115-3 C: directional arrows identify permitted lane directions; short specialised lanes are excluded from the lane-reduction definition. Two repetitions are exceptional for short urban junction space. Final arrow geometry must be compared visually with annex B2 before approval. Annex B2 on PDF page 62 visually inspected on 2026-10-09: turn arrow uses an oblique branch and elongated head; left is the mirror of right."
+              }
+            ]
+          },
+          "previous_review": {
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+            "proposal_sha256": "09f68e02f4ec5b41c11713a5638332b45867c9f9f77950a7aa776fa336d46965",
+            "image_sha256": "5e10e96f4c2f0ba651960a9edbf448d3b4c5957be39dc1a770ca190f99e1d1dd",
+            "compared_question_keys": [
+              "situation_b55_car_scenario",
+              "situation_c13c_dead_end_pedestrian_exit",
+              "situation_left_turn_oncoming_yield",
+              "situation_c24b_car_interpretation",
+              "situation_probationary_posted_90_max_80"
+            ],
+            "checks": {
+              "official_rule": "IISR115-3C and annexB2 checked 2026-10-09, official reference retained. Final marking has long thin stem, oblique left branch and elongated left-pointing head, not a straight-ahead branch.",
+              "signs_and_text": "One white left-only directional marking, solid left boundary and broken right boundary. No stop line, vertical sign, dimensions or text.",
+              "road_geometry": "Final close crop shows one arrow centred in one lane before junction. Initial requests for two visible repetitions were superseded by close crop; short dedicated lane is explicit in stem. No contradictory through-road/dead-end geometry remains visible.",
+              "vehicles_and_people": "No people or vehicles; no gesture, traffic direction or priority assumption needed.",
+              "dashboard_and_equipment": "No dashboard or equipment in close road-surface crop.",
+              "full_resolution": "Final scene-4 inspected at1672x941 and compared to leftward mirror of annexB2: diagonal branch and tall narrow triangular head with leftmost point retained. Duplicate arrow and unexplained stop line removed.",
+              "phone_size": "390px final preview retains complete stem, branch and head clearly; sole direction left, no second forward branch.",
+              "french_and_english": "Both ask direction indicated by pavement arrow in stated short dedicated lane; neither asks which manoeuvre is safe or priority.",
+              "all_four_options": "C only. A has no straight-ahead branch; B wrong side; D invents a second branch; C matches left-only symbol.",
+              "novelty": "Nearest B55, C13c, left-turn yielding and probationary-speed questions are unrelated. C24b tests reading a vertical lane diagram to choose a through lane; this item decodes the pavement-only directional marking of a short turn pocket. It must not reuse a C24 sign as a new primary target."
+            },
+            "recorded_on": "2026-10-09"
+          },
+          "previous_question_sha256": "351563920afbe80727ab6b3862a92662d17dfc730151f075fb9bca5b3da77c3e",
+          "reason": "Native content test found English explanation under100characters; add explicit context without changing objective or answers.",
+          "recorded_on": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "proposal": {
+        "scenario_id": "night_following_before_overtake_dipped",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+        "learning_objective": "Avoid dazzling the driver being followed before an overtaking manoeuvre has begun.",
+        "topic": "lighting.before_night_overtake",
+        "scenario": "At night the driver follows another car, close enough for main beam to dazzle its driver through mirrors. An overtaking manoeuvre has not started. Both facts are stated, since an image alone cannot establish intent or glare at the other driver’s eyes.",
+        "novelty_review": "The existing oncoming-dip question addresses crossing traffic. This asks about following and the before-manoeuvre condition, rather than treating empty opposing traffic as permission for main beam.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_night_following_before_overtake_dipped",
+          "category_slug": "overtaking",
+          "correct_answers": [
+            "d"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "De nuit, je suis cette voiture sans avoir commencé à dépasser. Mes feux de route risqueraient d’éblouir son conducteur dans les rétroviseurs. Quel éclairage dois-je utiliser ?",
+              "answer_a": "Les feux de route puisqu’il n’y a personne en face.",
+              "answer_b": "Les feux de position seuls.",
+              "answer_c": "Aucun feu tant que je reste derrière elle.",
+              "answer_d": "Les feux de croisement.",
+              "explanation": "Avant de dépasser, je ne dois pas éblouir le conducteur que je suis. J’utilise les feux de croisement ; l’absence de véhicule en face ne suffit pas à justifier les feux de route."
+            },
+            "en": {
+              "question_text": "At night, I am following this car and have not started overtaking. Main beam would dazzle its driver through the mirrors. Which lights should I use?",
+              "answer_a": "Main beam because there is no oncoming traffic.",
+              "answer_b": "Sidelights alone.",
+              "answer_c": "No lights while I remain behind it.",
+              "answer_d": "Dipped headlights.",
+              "explanation": "Before overtaking, I must not dazzle the driver ahead. I use dipped headlights; an empty opposing lane alone does not justify main beam."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Incorrect : risque d’éblouissement devant moi.",
+            "b": "Incorrect : éclairage insuffisant sur cette route.",
+            "c": "Incorrect : je dois garder un éclairage adapté.",
+            "d": "Correct : évite l’éblouissement évoqué."
+          },
+          "en": {
+            "a": "Incorrect: the driver ahead could be dazzled.",
+            "b": "Incorrect: insufficient lighting on this road.",
+            "c": "Incorrect: suitable lights remain necessary.",
+            "d": "Correct: avoids the stated dazzling risk."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Realistic night photograph through the windscreen of a car following a compact car on an unlit rural French road. Both cars aligned in the right-hand lane, no lane change underway. The leading car has exactly two natural red rear position lights, not reversing lights or indicators. Broken white centre line to the left and right edge line, road straight and clear. Ordinary headlight illumination on nearby asphalt, no theatrical glare. No oncoming traffic, signs, signals or street lights. Crop dashboard and gauges out; no numerical speed or distance is inferred from the scene. Enough contrast to inspect road and leading car on a phone.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842262",
+            "kind": "official",
+            "checked_on": "2026-10-09",
+            "supports": "R416-6 II 1(b) and III: dipped lights when following close enough to dazzle, with the overtaking exception. Wording expressly sets the situation before the manoeuvre starts."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_being_overtaken_hold_speed",
+          "similarity": 0.486,
+          "question_fr": "Cette voiture a commencé à me dépasser sur une route à double sens. Comment dois-je réagir ?"
+        },
+        {
+          "key": "situation_front_fog_lights_heavy_rain",
+          "similarity": 0.444,
+          "question_fr": "Sous cette forte pluie, puis-je compléter mes feux de croisement par les feux avant de brouillard ?"
+        },
+        {
+          "key": "situation_priority_uphill_near_refuge_reverse",
+          "similarity": 0.418,
+          "question_fr": "Deux voitures seules ne peuvent pas se croiser. Je monte, mais une place d’évitement est juste derrière moi et reculer y est manifestement plus facile. Qui doit reculer ?"
+        },
+        {
+          "key": "situation_child_under_ten_front_seat",
+          "similarity": 0.413,
+          "question_fr": "Un enfant de huit ans est installé face à la route sur le siège avant, alors que les places arrière sont libres et utilisables. Que faire ?"
+        },
+        {
+          "key": "situation_motorway_freeflow_pay_72h",
+          "similarity": 0.404,
+          "question_fr": "Je viens d’emprunter le péage en flux libre Sanef, sans badge ni paiement automatique. Dans quel délai dois-je régler mon passage ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-001/night_following_before_overtake_dipped/scene-1.jpg",
+          "image_sha256": "e15682252f11688aa1af36e38e9f683d3f9a8198cd4d33af2156aa387e1d4f0d",
+          "prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Realistic night photograph through the windscreen of a car following a compact car on an unlit rural French road. Both cars aligned in the right-hand lane, no lane change underway. The leading car has exactly two natural red rear position lights, not reversing lights or indicators. Broken white centre line to the left and right edge line, road straight and clear. Ordinary headlight illumination on nearby asphalt, no theatrical glare. No oncoming traffic, signs, signals or street lights. Crop dashboard and gauges out; no numerical speed or distance is inferred from the scene. Enough contrast to inspect road and leading car on a phone.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "reject",
+            "notes": "Reject: the car has two stacked white rear registration plates, one on tailgate and one on bumper; mechanically unrealistic.",
+            "proposal_sha256": "5d5ff0332f835b7815c65aa40e2a0a6c677225a1fabbbf124d50cf309d4d88b1",
+            "image_sha256": "e15682252f11688aa1af36e38e9f683d3f9a8198cd4d33af2156aa387e1d4f0d",
+            "recorded_on": "2026-10-09"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-001/night_following_before_overtake_dipped/scene-2.jpg",
+          "image_sha256": "45de824596c7001bf5c4b358f83095bcfe2f07d28c3952e5ced7bbad53b22632",
+          "prompt": "Use case: precise-object-edit. Edit only the car ahead in this original night-driving photo. It currently has TWO white rectangular rear registration plates stacked, which is wrong. Keep exactly ONE plate in the upper tailgate recess, with no readable identifying text. Remove the second lower white rectangle on the rear bumper completely, replacing it with realistic uninterrupted dark painted bumper panel. Preserve all road geometry, camera position, night sky, two red rear lights, low dipped-headlight illumination, distance, dashboard silhouette and landscape 16:9 framing. No new objects, text, highlights, or extra lights. Mechanically plausible single rear bumper, single rear registration plate.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+            "proposal_sha256": "5d5ff0332f835b7815c65aa40e2a0a6c677225a1fabbbf124d50cf309d4d88b1",
+            "image_sha256": "45de824596c7001bf5c4b358f83095bcfe2f07d28c3952e5ced7bbad53b22632",
+            "compared_question_keys": [
+              "situation_being_overtaken_hold_speed",
+              "situation_front_fog_lights_heavy_rain",
+              "situation_priority_uphill_near_refuge_reverse",
+              "situation_child_under_ten_front_seat",
+              "situation_motorway_freeflow_pay_72h"
+            ],
+            "checks": {
+              "official_rule": "R416-6 checked 2026-10-09: avoid dazzling driver being followed. Stem expressly says overtaking has not started, preserving the provision's during-overtake distinction.",
+              "signs_and_text": "No signs or readable text; one rear registration plate now, not two. Broken white centre and white road edges.",
+              "road_geometry": "Two-way rural road at night, driver follows in right lane, empty opposing lane and realistic vanishing point; no manoeuvre already underway.",
+              "vehicles_and_people": "Single car ahead in same direction with two red rear lamps; corrected rear bumper has one plate and plausible vehicle parts. No people.",
+              "dashboard_and_equipment": "Low dipped-beam road illumination, dark dash silhouette, no unreadable gauge or control needed.",
+              "full_resolution": "Entire corrected scene-2 JPEG inspected at1672x941 including tailgate, bumper, single plate, rear lights, road edges and illumination.",
+              "phone_size": "390px preview makes following-car context and rear lights clear; no small text required.",
+              "french_and_english": "Both explicitly state following before passing and potential mirror glare; question does not ask for distance or infer glare from brightness.",
+              "all_four_options": "D only. A absence of oncoming traffic does not permit dazzling ahead; B sidelights insufficient; C no lights unsafe; D dipped headlights.",
+              "novelty": "Nearest being-overtaken item asks speed behaviour, rain fog lights ask weather-specific equipment, uphill reversing asks crossing, child seating and freeflow toll ask unrelated obligations. Broader oncoming-main-beam item concerns crossing; here the image/wording establish following before a pass, requiring recognition of possible mirror glare even with no oncoming traffic."
+            },
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-001/night_following_before_overtake_dipped/scene-2.jpg",
+      "image_sha256": "45de824596c7001bf5c4b358f83095bcfe2f07d28c3952e5ced7bbad53b22632",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+        "proposal_sha256": "5d5ff0332f835b7815c65aa40e2a0a6c677225a1fabbbf124d50cf309d4d88b1",
+        "image_sha256": "45de824596c7001bf5c4b358f83095bcfe2f07d28c3952e5ced7bbad53b22632",
+        "compared_question_keys": [
+          "situation_being_overtaken_hold_speed",
+          "situation_front_fog_lights_heavy_rain",
+          "situation_priority_uphill_near_refuge_reverse",
+          "situation_child_under_ten_front_seat",
+          "situation_motorway_freeflow_pay_72h"
+        ],
+        "checks": {
+          "official_rule": "R416-6 checked 2026-10-09: avoid dazzling driver being followed. Stem expressly says overtaking has not started, preserving the provision's during-overtake distinction.",
+          "signs_and_text": "No signs or readable text; one rear registration plate now, not two. Broken white centre and white road edges.",
+          "road_geometry": "Two-way rural road at night, driver follows in right lane, empty opposing lane and realistic vanishing point; no manoeuvre already underway.",
+          "vehicles_and_people": "Single car ahead in same direction with two red rear lamps; corrected rear bumper has one plate and plausible vehicle parts. No people.",
+          "dashboard_and_equipment": "Low dipped-beam road illumination, dark dash silhouette, no unreadable gauge or control needed.",
+          "full_resolution": "Entire corrected scene-2 JPEG inspected at1672x941 including tailgate, bumper, single plate, rear lights, road edges and illumination.",
+          "phone_size": "390px preview makes following-car context and rear lights clear; no small text required.",
+          "french_and_english": "Both explicitly state following before passing and potential mirror glare; question does not ask for distance or infer glare from brightness.",
+          "all_four_options": "D only. A absence of oncoming traffic does not permit dazzling ahead; B sidelights insufficient; C no lights unsafe; D dipped headlights.",
+          "novelty": "Nearest being-overtaken item asks speed behaviour, rain fog lights ask weather-specific equipment, uphill reversing asks crossing, child seating and freeflow toll ask unrelated obligations. Broader oncoming-main-beam item concerns crossing; here the image/wording establish following before a pass, requiring recognition of possible mirror glare even with no oncoming traffic."
+        },
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "3b2365ff8216256a41c28a7e59de39200fdf13ae73ec7842c6d14209193e018a"
+    },
+    {
+      "proposal": {
+        "scenario_id": "motorway_blowout_initial_control",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+        "learning_objective": "Prioritise steering stability and avoid abrupt inputs immediately after a tyre blowout.",
+        "topic": "breakdown.sudden_tyre_failure",
+        "scenario": "While driving on a straight dry motorway, one tyre suddenly bursts. The sudden failure is stated explicitly and is not claimed to be visible from inside the car. Ask the first control action, before any stopped-vehicle procedure.",
+        "novelty_review": "Existing motorway flat-tyre question starts after occupants are behind the barrier and asks who may recover the car. This tests immediate vehicle control while still moving.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_motorway_blowout_initial_control",
+          "category_slug": "motorways",
+          "correct_answers": [
+            "a"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Sur cette autoroute, un pneu éclate brusquement alors que je roule. Quelle est ma première réaction ?",
+              "answer_a": "Tenir fermement le volant et éviter les gestes brusques.",
+              "answer_b": "Freiner immédiatement de toutes mes forces.",
+              "answer_c": "Donner un grand coup de volant vers la droite.",
+              "answer_d": "Serrer immédiatement le frein de stationnement.",
+              "explanation": "Je cherche d’abord à maintenir la trajectoire, sans freinage brutal ni écart soudain. Je ralentis ensuite progressivement pour rejoindre un endroit sûr."
+            },
+            "en": {
+              "question_text": "A tyre suddenly bursts while I am driving on this motorway. What is my first response?",
+              "answer_a": "Hold the wheel firmly and avoid abrupt inputs.",
+              "answer_b": "Brake as hard as possible immediately.",
+              "answer_c": "Swerve sharply to the right.",
+              "answer_d": "Apply the parking brake immediately.",
+              "explanation": "I first maintain the car’s direction without harsh braking or sudden steering. I then slow progressively to reach a safe place."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Correct : priorité à la stabilité.",
+            "b": "Incorrect : risque de déséquilibrer la voiture.",
+            "c": "Incorrect : écart brusque dangereux.",
+            "d": "Incorrect : freinage brutal inadapté."
+          },
+          "en": {
+            "a": "Correct: prioritise stability.",
+            "b": "Incorrect: may destabilise the car.",
+            "c": "Incorrect: a sharp swerve is dangerous.",
+            "d": "Incorrect: an abrupt, unsuitable braking input."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Clear daylight driver-eye photograph from a left-hand-drive car in the right lane of a straight dry French motorway. Two lanes in this direction, broken white lane divider, proper right shoulder separated by French motorway edge markings, guardrail beyond shoulder, central barrier well to the left. No nearby traffic, exit, roadworks, signs or debris. Thin upper steering-wheel rim only at bottom, no hands, pedals or dashboard display showing an answer. The road perspective is steady and realistic. Do not show a tyre inside the windscreen, a crash, smoke, sparks or motion arrows; the question states the sudden tyre failure.",
+        "sources": [
+          {
+            "url": "https://www.michelin.fr/auto/conseils/conseils-conduite/securite-routiere",
+            "kind": "manufacturer",
+            "checked_on": "2026-10-09",
+            "supports": "Tyre-blowout section: hold the wheel firmly, avoid harsh braking, maintain direction, then slow gently towards safety. Other generic breakdown advice on this page is not used."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_rear_fog_lights_falling_snow",
+          "similarity": 0.471,
+          "question_fr": "Sous cette chute de neige qui réduit nettement la visibilité, puis-je allumer les feux arrière de brouillard ?"
+        },
+        {
+          "key": "situation_speed_rain_posted_90_80",
+          "similarity": 0.47,
+          "question_fr": "Il pleut sur cette route à double sens sans séparateur central, normalement limitée à 90 km/h. Quelle limite maximale dois-je respecter ?"
+        },
+        {
+          "key": "situation_front_fog_lights_heavy_rain",
+          "similarity": 0.456,
+          "question_fr": "Sous cette forte pluie, puis-je compléter mes feux de croisement par les feux avant de brouillard ?"
+        },
+        {
+          "key": "situation_minimum_speed_80",
+          "similarity": 0.447,
+          "question_fr": "Sur cette voie fluide, puis-je circuler à 60 km/h sans raison particulière ?"
+        },
+        {
+          "key": "safety_accident_first_actions",
+          "similarity": 0.443,
+          "question_fr": "Lors d’un accident de la route, quelles premières actions sont adaptées ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-001/motorway_blowout_initial_control/scene-1.jpg",
+          "image_sha256": "20e1ca664636c4739a7df19d7fd7969b1cf2090aad1fb57cab48227d30eb80ac",
+          "prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Clear daylight driver-eye photograph from a left-hand-drive car in the right lane of a straight dry French motorway. Two lanes in this direction, broken white lane divider, proper right shoulder separated by French motorway edge markings, guardrail beyond shoulder, central barrier well to the left. No nearby traffic, exit, roadworks, signs or debris. Thin upper steering-wheel rim only at bottom, no hands, pedals or dashboard display showing an answer. The road perspective is steady and realistic. Do not show a tyre inside the windscreen, a crash, smoke, sparks or motion arrows; the question states the sudden tyre failure.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "reject",
+            "notes": "Reject: visible paved emergency shoulder is delimited by continuous stripe. Current IISR 114-4B requires T4 in section courante; current 113-1B specifies 39m white/13m gap, not the old 20m/6m T-prime-3 pattern.",
+            "proposal_sha256": "6a544720e74e0c3cc497d58940ca8da5fb65ce4318d3f4b23039de09f4cacccb",
+            "image_sha256": "20e1ca664636c4739a7df19d7fd7969b1cf2090aad1fb57cab48227d30eb80ac",
+            "recorded_on": "2026-10-09"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-001/motorway_blowout_initial_control/scene-2.jpg",
+          "image_sha256": "330ab67e90f147303985eb4bb09c47cd9c78c908cee3e3858bfb08708adab2e4",
+          "prompt": "Use case: precise-object-edit. Correct only the right-hand emergency-shoulder boundary marking in this original French motorway photograph. Replace the existing continuous white stripe along the right of our driving lane with a French T4 broken boundary: VERY LONG white painted segments approximately 39 metres, separated by approximately 13 metre unpainted asphalt gaps, repeated toward the vanishing point with consistent natural perspective. Show at least one clear gap in foreground/middle distance and more distant repeats, not short dashed lane markings. Keep the right emergency shoulder wide and paved, with guardrail beyond it. Preserve both traffic lanes, their existing short dashed lane divider, continuous left median-edge stripe, empty road, right-hand driving viewpoint, dashboard, trees, sky, barrier, lighting and original landscape16:9 framing. No objects, vehicles, captions, signs or highlighting added.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "reject",
+            "notes": "Reject correction 1: shoulder dashes now broken but much too short and widely gapped relative to lane width; cannot accept as T4. Next correction will depict a narrow verge with no BAU and continuous edge, explicitly permitted by IISR114-4B, without altering the blowout learning objective.",
+            "proposal_sha256": "6a544720e74e0c3cc497d58940ca8da5fb65ce4318d3f4b23039de09f4cacccb",
+            "image_sha256": "330ab67e90f147303985eb4bb09c47cd9c78c908cee3e3858bfb08708adab2e4",
+            "recorded_on": "2026-10-09"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-001/motorway_blowout_initial_control/scene-3.jpg",
+          "image_sha256": "edca2dc8a821a578092e289b5d8f9f6f79423079451585953d0b0394cd0f6b82",
+          "prompt": "Use case: precise-object-edit. Use the original first motorway image as target. Make this a realistic French motorway section WITHOUT an emergency stopping lane (sans bande d'arrêt d'urgence). Keep the right boundary stripe CONTINUOUS as in this target, which is correct for a French motorway without BAU. Move the right guardrail inward so it is just beyond a narrow 0.4 metre paved verge outside the continuous white edge. Remove the existing broad shoulder: there must be no space to park a car to the right of this stripe. Maintain a safe narrow verge and physically plausible guardrail supports along the edge; preserve the width of our full driving lane and the other lane. Do not invent dashed shoulder lines. Preserve original two lanes, broken lane divider, continuous median edge, distant scenery, trees, sky, driver viewpoint, dashboard silhouette and16:9 composition. No traffic, signs, readable labels or highlights. This scene illustrates control during a tyre burst; no tyre or accident needs to be visible.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+            "proposal_sha256": "6a544720e74e0c3cc497d58940ca8da5fb65ce4318d3f4b23039de09f4cacccb",
+            "image_sha256": "edca2dc8a821a578092e289b5d8f9f6f79423079451585953d0b0394cd0f6b82",
+            "compared_question_keys": [
+              "situation_rear_fog_lights_falling_snow",
+              "situation_speed_rain_posted_90_80",
+              "situation_front_fog_lights_heavy_rain",
+              "situation_minimum_speed_80",
+              "safety_accident_first_actions"
+            ],
+            "checks": {
+              "official_rule": "Michelin original guidance checked2026-10-09 supports firm steering and avoiding abrupt inputs before gradual slowdown. Additional visual source IISR114-4B permits continuous edge without BAU; https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_7epartie_vc_20250404.pdf checked2026-10-09.",
+              "signs_and_text": "No signs, captions, readable dash or tyre depiction. Continuous median and right edge; normal broken divider between two lanes. Right side is narrow verge, no emergency stopping lane.",
+              "road_geometry": "Correction2 depicts divided motorway with two lanes our way and guardrails, no BAU. Narrow verge consistently runs between right stripe and barrier; no car-width stopping space. This legitimate configuration replaces original broad shoulder without changing question.",
+              "vehicles_and_people": "No other vehicles or pedestrians; no unsafe recovery operation shown. Driver viewpoint stays in right traffic lane.",
+              "dashboard_and_equipment": "Only steering/dash silhouette, no visible tyre damage or false indicator. Burst explicitly stated in question.",
+              "full_resolution": "Scene-3 inspected at1672x941: narrowed verge, guardrail continuity, lane divider, horizon and dashboard; no unresolved defect.",
+              "phone_size": "390px preview retains divided-road context and continuous narrow-verge edge, no hidden necessary detail.",
+              "french_and_english": "Both explicitly state a sudden tyre burst while driving and ask FIRST response; gradual safe stopping follows, not changing tyre in lane.",
+              "all_four_options": "A only. B harsh full braking, C sudden swerve, D parking-brake application can destabilise car; A prioritises control.",
+              "novelty": "Nearest weather lighting, rain limit, minimum motorway speed and first actions at an accident concern different decisions. Broader flat-tyre recovery item begins after the car has stopped; this asks immediate stability control while moving."
+            },
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-001/motorway_blowout_initial_control/scene-3.jpg",
+      "image_sha256": "edca2dc8a821a578092e289b5d8f9f6f79423079451585953d0b0394cd0f6b82",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+        "proposal_sha256": "6a544720e74e0c3cc497d58940ca8da5fb65ce4318d3f4b23039de09f4cacccb",
+        "image_sha256": "edca2dc8a821a578092e289b5d8f9f6f79423079451585953d0b0394cd0f6b82",
+        "compared_question_keys": [
+          "situation_rear_fog_lights_falling_snow",
+          "situation_speed_rain_posted_90_80",
+          "situation_front_fog_lights_heavy_rain",
+          "situation_minimum_speed_80",
+          "safety_accident_first_actions"
+        ],
+        "checks": {
+          "official_rule": "Michelin original guidance checked2026-10-09 supports firm steering and avoiding abrupt inputs before gradual slowdown. Additional visual source IISR114-4B permits continuous edge without BAU; https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_7epartie_vc_20250404.pdf checked2026-10-09.",
+          "signs_and_text": "No signs, captions, readable dash or tyre depiction. Continuous median and right edge; normal broken divider between two lanes. Right side is narrow verge, no emergency stopping lane.",
+          "road_geometry": "Correction2 depicts divided motorway with two lanes our way and guardrails, no BAU. Narrow verge consistently runs between right stripe and barrier; no car-width stopping space. This legitimate configuration replaces original broad shoulder without changing question.",
+          "vehicles_and_people": "No other vehicles or pedestrians; no unsafe recovery operation shown. Driver viewpoint stays in right traffic lane.",
+          "dashboard_and_equipment": "Only steering/dash silhouette, no visible tyre damage or false indicator. Burst explicitly stated in question.",
+          "full_resolution": "Scene-3 inspected at1672x941: narrowed verge, guardrail continuity, lane divider, horizon and dashboard; no unresolved defect.",
+          "phone_size": "390px preview retains divided-road context and continuous narrow-verge edge, no hidden necessary detail.",
+          "french_and_english": "Both explicitly state a sudden tyre burst while driving and ask FIRST response; gradual safe stopping follows, not changing tyre in lane.",
+          "all_four_options": "A only. B harsh full braking, C sudden swerve, D parking-brake application can destabilise car; A prioritises control.",
+          "novelty": "Nearest weather lighting, rain limit, minimum motorway speed and first actions at an accident concern different decisions. Broader flat-tyre recovery item begins after the car has stopped; this asks immediate stability control while moving."
+        },
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "c029c3be2e640b0dc77367f201a41de71caac70d20558eba42850fd07ffa410d"
+    }
+  ],
+  "imported_on": "2026-10-09",
+  "content_version": 93,
+  "questions_after": 398,
+  "pack_after_sha256": "cb2fb2189ce42ac646f4725bc937c1e1508c8dc65215308497f5108d2cf92f39",
+  "integration_amendments": [
+    {
+      "previous_pack_sha256": "392953e738fbb762c3eab93c728802182741a4b8d9b0f5920cf460ae0ba9e8fb",
+      "previous_content_version": 92,
+      "question_keys": [
+        "situation_first_aid_conscious_waiting_care",
+        "situation_short_left_turn_lane_arrow"
+      ]
+    }
+  ],
+  "verified_on": "2026-10-09",
+  "verification": {
+    "pack_sha256": "cb2fb2189ce42ac646f4725bc937c1e1508c8dc65215308497f5108d2cf92f39",
+    "content_version": 93,
+    "python_tests": {
+      "result": "pass",
+      "notes": "47 workflow tests passed, including stale reviews, duplicate blocking, multiple answers, import recovery and idempotent wording repair.",
+      "path": "assets-source/question-batches/expansion-001/evidence/python-tests.log",
+      "sha256": "843e51c791213fdf77ea8391ebd84bffb3734ee657cdd22b5c44759a52c1e9bc"
+    },
+    "ios_tests": {
+      "result": "pass",
+      "notes": "36 native tests passed after repairing two short explanations; bank seed/progress/image decoding validated.",
+      "path": "assets-source/question-batches/expansion-001/evidence/ios-tests.log",
+      "sha256": "e81c3694b76daf21adff49205290c194b3b1afaf7246cd733de92e1c03f5e097"
+    },
+    "sqlite_check": {
+      "result": "pass",
+      "notes": "All398active questions,369image references and both translations match version93; integrity and unchanged practice-history hash checked.",
+      "path": "assets-source/question-batches/expansion-001/evidence/sqlite-after.json",
+      "sha256": "1b50000062a8d4f69736be8bff90db337f6ce791dbebb2b5abaf046f47bd415f"
+    },
+    "simulator_review": {
+      "result": "pass",
+      "notes": "All ten inspected in actual simulator; single/multiple instructions and exact-set scoring checked in FR/EN; normal home restored.",
+      "path": "assets-source/question-batches/expansion-001/evidence/simulator-review.json",
+      "sha256": "2b0c87f069f9d5fcdabb0016294bbbbfe77a42af2a61d4caf7e0d078324213b1"
+    }
+  }
+}

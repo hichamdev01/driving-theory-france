@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "8b18d1e4335a7ee548c3b08219870747df0566770a852c223aaac4898a594917",
+  "image_sha256": "6bc93da44798cb505d9cef65c85390d60a680a914fb394d9ff0f1f62700ccd57",
+  "result": "pass",
+  "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+  "compared_question_keys": [
+    "situation_b13_ptac_not_actual_mass",
+    "situation_trailer_ptra_over3500_motorway90",
+    "situation_height_limit_3_5m",
+    "situation_height_limit_2_8m",
+    "situation_long_caravan_snow_overtaking_prohibited"
+  ],
+  "checks": {
+    "signs_and_text": "No signs, plates, captions or readable labels.",
+    "road_geometry": "Private driveway, no live traffic lane or ambiguous road restriction.",
+    "vehicles_and_people": "Stationary blue hatchback, plausible tailgate struts, seatbacks and lamps; no people.",
+    "dashboard_and_equipment": "Three cases low below seatbacks, net clipped at four visible anchors; soft folded blanket alongside.",
+    "phone_size": "Boot and net remain recognisable; mass values supplied explicitly in both stems.",
+    "official_rule": "Sources actually read during authoring: R312-2 prohibits actual vehicle mass exceeding its authorised loaded mass; current article read.",
+    "novelty": "Own vehicle maximum laden mass versus actual load, distinct from B13 road access and trailer speed. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+    "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. Stationary blue hatchback, plausible tailgate struts, seatbacks and lamps; no people. Three cases low below seatbacks, net clipped at four visible anchors; soft folded blanket alongside.",
+    "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Boot and net remain recognisable; mass values supplied explicitly in both stems.",
+    "all_four_options": "Correct B. A: The licence ceiling does not replace the car limit.; B: Actual mass exceeds authorised mass.; C: Securing luggage does not reduce mass.; D: Pressure does not change authorised mass."
+  }
+}

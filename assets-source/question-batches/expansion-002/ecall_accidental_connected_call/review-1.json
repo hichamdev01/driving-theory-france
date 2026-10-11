@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "proposal_sha256": "41a46f30b9f9c568468b64687208dce04074ceb493fa563f5934cef3b864ccaf",
+  "image_sha256": "2e047215e57a29d26d3fe7b7d461fa5c1e8419c92fe99cf45323826ced9c1892",
+  "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+  "compared_question_keys": [
+    "situation_motorway_friend_tow_offer",
+    "situation_coolant_hot_cap_wait",
+    "situation_rear_vehicle_already_overtaking",
+    "situation_garage_exit_sidewalk_pedestrian",
+    "parking_on_pavement"
+  ],
+  "checks": {
+    "official_rule": "Reviewed authoritative sources checked 2026-10-09: The manual distinguishes cancelling before connection from a connected call, which only the emergency centre can end. Speaking to the operator clarifies an accidental activation.",
+    "novelty": "Existing motorway emergency-phone questions test location identification, not cancellation of a false in-car eCall. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+    "signs_and_text": "Only text is correctly spelled SOS, readable at full and phone size; no road signs or fake display text.",
+    "road_geometry": "Interior roof console above a private driveway; no traffic geometry or motion shown.",
+    "vehicles_and_people": "No people or moving vehicles; driveway and garage background consistent with stated parked car.",
+    "dashboard_and_equipment": "Two reading lamps, one grille, open hinged protective cover and one SOS button; no duplicate emergency buttons. Connection to an operator is stated, not inferred from lamp colour.",
+    "full_resolution": "Viewed exact staged scene-1.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. Only text is correctly spelled SOS, readable at full and phone size; no road signs or fake display text. Two reading lamps, one grille, open hinged protective cover and one SOS button; no duplicate emergency buttons. Connection to an operator is stated, not inferred from lamp colour.",
+    "phone_size": "Viewed phone-preview-1.jpg at 390 px. SOS and open cover remain recognisable at 390 px; answer depends on connected-call facts in wording, not hidden details.",
+    "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: The car is safely parked. The driver accidentally activated its SOS call and an operator has already answered; this connection status is explicitly stated.",
+    "all_four_options": "Correct set b. FR: A: Incorrect : le silence ne clarifie pas la fausse alerte.; B: Correct : informer le centre déjà en ligne.; C: Incorrect : ne pas intervenir sur la batterie.; D: Incorrect : des pressions répétées ne remplacent pas le dialogue. EN: A: Incorrect: silence does not clarify the false alarm.; B: Correct: inform the connected emergency centre.; C: Incorrect: do not tamper with the battery.; D: Incorrect: repeated presses do not replace speaking to the operator."
+  }
+}

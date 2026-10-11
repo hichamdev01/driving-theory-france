@@ -1,0 +1,1699 @@
+{
+  "schema_version": 1,
+  "id": "expansion-002",
+  "state": "verified",
+  "created_on": "2026-10-09",
+  "target": 1000,
+  "questions_before": 398,
+  "pack_before_sha256": "cb2fb2189ce42ac646f4725bc937c1e1508c8dc65215308497f5108d2cf92f39",
+  "items": [
+    {
+      "proposal": {
+        "scenario_id": "abs_emergency_pedal_pulsation",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car driver; no specialist qualification required.",
+        "learning_objective": "Maintain strong continuous braking when ABS operates and recognise normal pedal pulsation.",
+        "topic": "equipment.abs_emergency_braking",
+        "scenario": "Emergency braking in an ABS-equipped car on a wet road. ABS operation and pedal vibration are stated; a still image cannot establish them.",
+        "novelty_review": "Existing aquaplaning and braking-distance questions concern grip loss or speed physics, not how to operate an ABS brake pedal.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_abs_emergency_pedal_pulsation",
+          "category_slug": "safety",
+          "correct_answers": [
+            "a",
+            "d"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Lors d’un freinage d’urgence, l’ABS de ma voiture entre en action et la pédale vibre. Quelles affirmations sont exactes ?",
+              "answer_a": "Je maintiens une forte pression continue sur le frein.",
+              "answer_b": "Je pompe sur la pédale pour aider l’ABS.",
+              "answer_c": "Je relâche le frein dès les premières vibrations.",
+              "answer_d": "Ces vibrations peuvent être normales lorsque l’ABS agit.",
+              "explanation": "L’ABS module le freinage pour éviter le blocage des roues. Je maintiens une pression forte et continue, sans pomper ; les pulsations de la pédale peuvent accompagner son fonctionnement."
+            },
+            "en": {
+              "question_text": "During emergency braking, my car’s ABS activates and the brake pedal pulses. Which statements are correct?",
+              "answer_a": "I maintain firm, continuous pressure on the brake.",
+              "answer_b": "I pump the pedal to help the ABS.",
+              "answer_c": "I release the brake as soon as it pulses.",
+              "answer_d": "Pulsation can be normal while ABS is working.",
+              "explanation": "ABS modulates braking to prevent wheel lock. I maintain firm, continuous pressure without pumping; pedal pulsation can be a normal part of ABS operation."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Correct : pression forte continue.",
+            "b": "Incorrect : le système module déjà le freinage.",
+            "c": "Incorrect : les pulsations ne justifient pas de relâcher un freinage nécessaire.",
+            "d": "Correct : réaction normale possible de l’ABS."
+          },
+          "en": {
+            "a": "Correct: firm continuous pressure.",
+            "b": "Incorrect: the system already modulates braking.",
+            "c": "Incorrect: pulsation alone does not justify releasing necessary braking.",
+            "d": "Correct: ABS may produce normal pedal pulsation."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. Close interior view of the driver footwell of an ordinary left-hand-drive automatic passenger car, photographed from the open driver door at a natural angle. Only two correctly mounted pedals: a wide rectangular rubber brake pedal in the middle and a narrow vertical accelerator to its right. No clutch pedal. One adult right foot in a plain dark flat shoe rests naturally in contact with the brake; the left foot rests on the footrest at far left. Lower trouser legs only, no face or upper body. Dark clean carpet, no loose mat or objects. No labels, no arrows, no glowing effects. A static illustrative view, no attempt to show vibration.",
+        "sources": [
+          {
+            "url": "https://www.user-manual.renault.com/fr/la-conduite/dispositifs-de-correction-et-dassistance-la-conduite-21",
+            "kind": "manufacturer",
+            "checked_on": "2026-10-09",
+            "supports": "ABS can cause pedal tremor; for emergency braking maintain strong continuous pressure without pumping."
+          },
+          {
+            "url": "https://www.ornikar.com/code/cours/mecanique-vehicule/freins/abs",
+            "kind": "background",
+            "checked_on": "2026-10-09",
+            "supports": "Public ABS topic used for exam-style equipment coverage only; rule verified in manufacturer manual."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "safety_accident_first_actions",
+          "similarity": 0.513,
+          "question_fr": "Lors d’un accident de la route, quelles premières actions sont adaptées ?"
+        },
+        {
+          "key": "situation_parking_secure_before_leaving",
+          "similarity": 0.5,
+          "question_fr": "Avant de laisser ma voiture stationnée dans cette pente, quelle précaution est indispensable ?"
+        },
+        {
+          "key": "situation_cocaine_false_confidence",
+          "similarity": 0.477,
+          "question_fr": "Une personne ayant consommé de la cocaïne se dit très alerte et veut conduire. Quelle réponse est correcte ?"
+        },
+        {
+          "key": "situation_night_unlit_roadside_position_lights",
+          "similarity": 0.474,
+          "question_fr": "Je laisse ma voiture stationnée de nuit sur cette chaussée sans éclairage public. Quelle signalisation conserver ?"
+        },
+        {
+          "key": "situation_ecstasy_false_alertness",
+          "similarity": 0.456,
+          "question_fr": "Après avoir pris de l'ecstasy, cette personne dit ne plus sentir sa fatigue et veut conduire. Quelle décision est correcte ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-002/abs_emergency_pedal_pulsation/scene-1.jpg",
+          "image_sha256": "1777dcc8c2845c501340718b2449fac14519267afe5bbd0e23682566f4e1da98",
+          "prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. Close interior view of the driver footwell of an ordinary left-hand-drive automatic passenger car, photographed from the open driver door at a natural angle. Only two correctly mounted pedals: a wide rectangular rubber brake pedal in the middle and a narrow vertical accelerator to its right. No clutch pedal. One adult right foot in a plain dark flat shoe rests naturally in contact with the brake; the left foot rests on the footrest at far left. Lower trouser legs only, no face or upper body. Dark clean carpet, no loose mat or objects. No labels, no arrows, no glowing effects. A static illustrative view, no attempt to show vibration.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "proposal_sha256": "6c0f86b1ff2a64260db0e83a19b57f4841591b19f31a659d41bb9a21c3faf97a",
+            "image_sha256": "1777dcc8c2845c501340718b2449fac14519267afe5bbd0e23682566f4e1da98",
+            "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+            "compared_question_keys": [
+              "safety_accident_first_actions",
+              "situation_parking_secure_before_leaving",
+              "situation_cocaine_false_confidence",
+              "situation_night_unlit_roadside_position_lights",
+              "situation_ecstasy_false_alertness"
+            ],
+            "checks": {
+              "official_rule": "Reviewed authoritative sources checked 2026-10-09: ABS can cause pedal tremor; for emergency braking maintain strong continuous pressure without pumping.",
+              "novelty": "Existing aquaplaning and braking-distance questions concern grip loss or speed physics, not how to operate an ABS brake pedal. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+              "signs_and_text": "No signs, markings, text, symbols, plates or highlights in the footwell.",
+              "road_geometry": "Interior-only view; no road geometry or direction claim. Automatic-car pedal arrangement is consistent with the wording.",
+              "vehicles_and_people": "Two natural lower legs and flat shoes; right foot contacts the wide brake, left rests on the fixed footrest.",
+              "dashboard_and_equipment": "Wide brake at centre and narrow accelerator at right, footrest at far left; plausible suspended pedal arms; no extra clutch or loose object. Still image cannot demonstrate ABS activation, explicitly supplied in wording.",
+              "full_resolution": "Viewed exact staged scene-1.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No signs, markings, text, symbols, plates or highlights in the footwell. Wide brake at centre and narrow accelerator at right, footrest at far left; plausible suspended pedal arms; no extra clutch or loose object. Still image cannot demonstrate ABS activation, explicitly supplied in wording.",
+              "phone_size": "Viewed phone-preview-1.jpg at 390 px. Both feet and the brake/accelerator distinction remain clear at 390 px; no tiny clue required.",
+              "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: Emergency braking in an ABS-equipped car on a wet road. ABS operation and pedal vibration are stated; a still image cannot establish them.",
+              "all_four_options": "Correct set a,d. FR: A: Correct : pression forte continue.; B: Incorrect : le système module déjà le freinage.; C: Incorrect : les pulsations ne justifient pas de relâcher un freinage nécessaire.; D: Correct : réaction normale possible de l’ABS. EN: A: Correct: firm continuous pressure.; B: Incorrect: the system already modulates braking.; C: Incorrect: pulsation alone does not justify releasing necessary braking.; D: Correct: ABS may produce normal pedal pulsation."
+            },
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-002/abs_emergency_pedal_pulsation/scene-1.jpg",
+      "image_sha256": "1777dcc8c2845c501340718b2449fac14519267afe5bbd0e23682566f4e1da98",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "proposal_sha256": "6c0f86b1ff2a64260db0e83a19b57f4841591b19f31a659d41bb9a21c3faf97a",
+        "image_sha256": "1777dcc8c2845c501340718b2449fac14519267afe5bbd0e23682566f4e1da98",
+        "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+        "compared_question_keys": [
+          "safety_accident_first_actions",
+          "situation_parking_secure_before_leaving",
+          "situation_cocaine_false_confidence",
+          "situation_night_unlit_roadside_position_lights",
+          "situation_ecstasy_false_alertness"
+        ],
+        "checks": {
+          "official_rule": "Reviewed authoritative sources checked 2026-10-09: ABS can cause pedal tremor; for emergency braking maintain strong continuous pressure without pumping.",
+          "novelty": "Existing aquaplaning and braking-distance questions concern grip loss or speed physics, not how to operate an ABS brake pedal. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+          "signs_and_text": "No signs, markings, text, symbols, plates or highlights in the footwell.",
+          "road_geometry": "Interior-only view; no road geometry or direction claim. Automatic-car pedal arrangement is consistent with the wording.",
+          "vehicles_and_people": "Two natural lower legs and flat shoes; right foot contacts the wide brake, left rests on the fixed footrest.",
+          "dashboard_and_equipment": "Wide brake at centre and narrow accelerator at right, footrest at far left; plausible suspended pedal arms; no extra clutch or loose object. Still image cannot demonstrate ABS activation, explicitly supplied in wording.",
+          "full_resolution": "Viewed exact staged scene-1.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No signs, markings, text, symbols, plates or highlights in the footwell. Wide brake at centre and narrow accelerator at right, footrest at far left; plausible suspended pedal arms; no extra clutch or loose object. Still image cannot demonstrate ABS activation, explicitly supplied in wording.",
+          "phone_size": "Viewed phone-preview-1.jpg at 390 px. Both feet and the brake/accelerator distinction remain clear at 390 px; no tiny clue required.",
+          "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: Emergency braking in an ABS-equipped car on a wet road. ABS operation and pedal vibration are stated; a still image cannot establish them.",
+          "all_four_options": "Correct set a,d. FR: A: Correct : pression forte continue.; B: Incorrect : le système module déjà le freinage.; C: Incorrect : les pulsations ne justifient pas de relâcher un freinage nécessaire.; D: Correct : réaction normale possible de l’ABS. EN: A: Correct: firm continuous pressure.; B: Incorrect: the system already modulates braking.; C: Incorrect: pulsation alone does not justify releasing necessary braking.; D: Correct: ABS may produce normal pedal pulsation."
+        },
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "59617472b1479a2cf7ce8523ba4d96bdfe81c9e19b4c60c668b8124e257ceb09"
+    },
+    {
+      "proposal": {
+        "scenario_id": "ecall_accidental_connected_call",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car driver; no specialist qualification required.",
+        "learning_objective": "Respond to an accidental connected emergency call by speaking to the operator.",
+        "topic": "equipment.ecall_accidental_activation",
+        "scenario": "The car is safely parked. The driver accidentally activated its SOS call and an operator has already answered; this connection status is explicitly stated.",
+        "novelty_review": "Existing motorway emergency-phone questions test location identification, not cancellation of a false in-car eCall.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_ecall_accidental_connected_call",
+          "category_slug": "safety",
+          "correct_answers": [
+            "b"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Ma voiture est garée en sécurité. J’ai déclenché le bouton SOS par erreur et un opérateur me répond. Que faire ?",
+              "answer_a": "Quitter la voiture sans répondre.",
+              "answer_b": "Expliquer l’erreur à l’opérateur et suivre ses consignes.",
+              "answer_c": "Débrancher immédiatement la batterie.",
+              "answer_d": "Appuyer plusieurs fois sur SOS pour annuler.",
+              "explanation": "Je précise qu’il s’agit d’un déclenchement accidentel et qu’il n’y a pas d’urgence. Une fois la communication établie, je laisse l’opérateur gérer sa fin et je suis ses consignes."
+            },
+            "en": {
+              "question_text": "My car is safely parked. I pressed the SOS button accidentally and an operator has answered. What should I do?",
+              "answer_a": "Leave the car without answering.",
+              "answer_b": "Explain the mistake to the operator and follow their instructions.",
+              "answer_c": "Immediately disconnect the battery.",
+              "answer_d": "Press SOS repeatedly to cancel.",
+              "explanation": "I explain that the call was accidental and there is no emergency. Once connected, I let the operator manage the end of the call and follow their instructions."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Incorrect : le silence ne clarifie pas la fausse alerte.",
+            "b": "Correct : informer le centre déjà en ligne.",
+            "c": "Incorrect : ne pas intervenir sur la batterie.",
+            "d": "Incorrect : des pressions répétées ne remplacent pas le dialogue."
+          },
+          "en": {
+            "a": "Incorrect: silence does not clarify the false alarm.",
+            "b": "Correct: inform the connected emergency centre.",
+            "c": "Incorrect: do not tamper with the battery.",
+            "d": "Incorrect: repeated presses do not replace speaking to the operator."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. Natural close-up looking upward inside a parked modern unbranded passenger car at its roof console near the windscreen. Two ordinary reading lights, small microphone grille and one clearly legible simple rectangular SOS button under an open transparent protective cover. Exactly the text SOS, no other text, numbers or brand names. No fingers or hands. A small portion of windscreen at bottom shows a quiet private driveway in daylight, no road signs, no traffic, no people. Button is not highlighted or circled; natural even lighting.",
+        "sources": [
+          {
+            "url": "https://www.user-manual.renault.com/fr/la-conduite/appel-durgence-12",
+            "kind": "manufacturer",
+            "checked_on": "2026-10-09",
+            "supports": "The manual distinguishes cancelling before connection from a connected call, which only the emergency centre can end. Speaking to the operator clarifies an accidental activation."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_motorway_friend_tow_offer",
+          "similarity": 0.507,
+          "question_fr": "Ma voiture est en panne sur autoroute et un ami propose de la remorquer avec une sangle. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_coolant_hot_cap_wait",
+          "similarity": 0.469,
+          "question_fr": "Après un trajet, ma voiture est garée, contact coupé, mais le moteur est encore chaud. Pour contrôler le liquide de refroidissement, je dois :"
+        },
+        {
+          "key": "situation_rear_vehicle_already_overtaking",
+          "similarity": 0.422,
+          "question_fr": "Je veux dépasser le camion, mais une voiture derrière moi a déjà commencé à me dépasser. Que faire ?"
+        },
+        {
+          "key": "situation_garage_exit_sidewalk_pedestrian",
+          "similarity": 0.408,
+          "question_fr": "Je sors d'un garage en traversant le trottoir, où un piéton passe devant moi. Que dois-je faire ?"
+        },
+        {
+          "key": "parking_on_pavement",
+          "similarity": 0.398,
+          "question_fr": "Une voiture peut-elle normalement stationner partiellement sur le trottoir sans aménagement matérialisé ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-002/ecall_accidental_connected_call/scene-1.jpg",
+          "image_sha256": "2e047215e57a29d26d3fe7b7d461fa5c1e8419c92fe99cf45323826ced9c1892",
+          "prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. Natural close-up looking upward inside a parked modern unbranded passenger car at its roof console near the windscreen. Two ordinary reading lights, small microphone grille and one clearly legible simple rectangular SOS button under an open transparent protective cover. Exactly the text SOS, no other text, numbers or brand names. No fingers or hands. A small portion of windscreen at bottom shows a quiet private driveway in daylight, no road signs, no traffic, no people. Button is not highlighted or circled; natural even lighting.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "proposal_sha256": "41a46f30b9f9c568468b64687208dce04074ceb493fa563f5934cef3b864ccaf",
+            "image_sha256": "2e047215e57a29d26d3fe7b7d461fa5c1e8419c92fe99cf45323826ced9c1892",
+            "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+            "compared_question_keys": [
+              "situation_motorway_friend_tow_offer",
+              "situation_coolant_hot_cap_wait",
+              "situation_rear_vehicle_already_overtaking",
+              "situation_garage_exit_sidewalk_pedestrian",
+              "parking_on_pavement"
+            ],
+            "checks": {
+              "official_rule": "Reviewed authoritative sources checked 2026-10-09: The manual distinguishes cancelling before connection from a connected call, which only the emergency centre can end. Speaking to the operator clarifies an accidental activation.",
+              "novelty": "Existing motorway emergency-phone questions test location identification, not cancellation of a false in-car eCall. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+              "signs_and_text": "Only text is correctly spelled SOS, readable at full and phone size; no road signs or fake display text.",
+              "road_geometry": "Interior roof console above a private driveway; no traffic geometry or motion shown.",
+              "vehicles_and_people": "No people or moving vehicles; driveway and garage background consistent with stated parked car.",
+              "dashboard_and_equipment": "Two reading lamps, one grille, open hinged protective cover and one SOS button; no duplicate emergency buttons. Connection to an operator is stated, not inferred from lamp colour.",
+              "full_resolution": "Viewed exact staged scene-1.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. Only text is correctly spelled SOS, readable at full and phone size; no road signs or fake display text. Two reading lamps, one grille, open hinged protective cover and one SOS button; no duplicate emergency buttons. Connection to an operator is stated, not inferred from lamp colour.",
+              "phone_size": "Viewed phone-preview-1.jpg at 390 px. SOS and open cover remain recognisable at 390 px; answer depends on connected-call facts in wording, not hidden details.",
+              "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: The car is safely parked. The driver accidentally activated its SOS call and an operator has already answered; this connection status is explicitly stated.",
+              "all_four_options": "Correct set b. FR: A: Incorrect : le silence ne clarifie pas la fausse alerte.; B: Correct : informer le centre déjà en ligne.; C: Incorrect : ne pas intervenir sur la batterie.; D: Incorrect : des pressions répétées ne remplacent pas le dialogue. EN: A: Incorrect: silence does not clarify the false alarm.; B: Correct: inform the connected emergency centre.; C: Incorrect: do not tamper with the battery.; D: Incorrect: repeated presses do not replace speaking to the operator."
+            },
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-002/ecall_accidental_connected_call/scene-1.jpg",
+      "image_sha256": "2e047215e57a29d26d3fe7b7d461fa5c1e8419c92fe99cf45323826ced9c1892",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "proposal_sha256": "41a46f30b9f9c568468b64687208dce04074ceb493fa563f5934cef3b864ccaf",
+        "image_sha256": "2e047215e57a29d26d3fe7b7d461fa5c1e8419c92fe99cf45323826ced9c1892",
+        "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+        "compared_question_keys": [
+          "situation_motorway_friend_tow_offer",
+          "situation_coolant_hot_cap_wait",
+          "situation_rear_vehicle_already_overtaking",
+          "situation_garage_exit_sidewalk_pedestrian",
+          "parking_on_pavement"
+        ],
+        "checks": {
+          "official_rule": "Reviewed authoritative sources checked 2026-10-09: The manual distinguishes cancelling before connection from a connected call, which only the emergency centre can end. Speaking to the operator clarifies an accidental activation.",
+          "novelty": "Existing motorway emergency-phone questions test location identification, not cancellation of a false in-car eCall. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+          "signs_and_text": "Only text is correctly spelled SOS, readable at full and phone size; no road signs or fake display text.",
+          "road_geometry": "Interior roof console above a private driveway; no traffic geometry or motion shown.",
+          "vehicles_and_people": "No people or moving vehicles; driveway and garage background consistent with stated parked car.",
+          "dashboard_and_equipment": "Two reading lamps, one grille, open hinged protective cover and one SOS button; no duplicate emergency buttons. Connection to an operator is stated, not inferred from lamp colour.",
+          "full_resolution": "Viewed exact staged scene-1.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. Only text is correctly spelled SOS, readable at full and phone size; no road signs or fake display text. Two reading lamps, one grille, open hinged protective cover and one SOS button; no duplicate emergency buttons. Connection to an operator is stated, not inferred from lamp colour.",
+          "phone_size": "Viewed phone-preview-1.jpg at 390 px. SOS and open cover remain recognisable at 390 px; answer depends on connected-call facts in wording, not hidden details.",
+          "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: The car is safely parked. The driver accidentally activated its SOS call and an operator has already answered; this connection status is explicitly stated.",
+          "all_four_options": "Correct set b. FR: A: Incorrect : le silence ne clarifie pas la fausse alerte.; B: Correct : informer le centre déjà en ligne.; C: Incorrect : ne pas intervenir sur la batterie.; D: Incorrect : des pressions répétées ne remplacent pas le dialogue. EN: A: Incorrect: silence does not clarify the false alarm.; B: Correct: inform the connected emergency centre.; C: Incorrect: do not tamper with the battery.; D: Incorrect: repeated presses do not replace speaking to the operator."
+        },
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "32d171c76b38c1ac5878b8a3eb7a1e593d9d750a5af7d9def01861d63ea794e7"
+    },
+    {
+      "proposal": {
+        "scenario_id": "ead_retest_stop_engine",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car driver; no specialist qualification required.",
+        "learning_objective": "Perform an EAD repeat breath test only after safely stopping the car and engine.",
+        "topic": "alcohol.ead_repeat_test",
+        "scenario": "An authorised installed alcohol ignition interlock requests a repeat test during a journey. The stated request must be handled according to its permitted interval, not by blowing while driving.",
+        "novelty_review": "The bank tests ordinary breath-test thresholds and refusals, not the procedure for a repeat interlock test during a journey.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_ead_retest_stop_engine",
+          "category_slug": "alcohol_drugs",
+          "correct_answers": [
+            "b",
+            "d"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Mon éthylotest antidémarrage demande un nouveau souffle pendant le trajet. Avant de souffler, je dois :",
+              "answer_a": "Garder le volant d’une main et souffler en roulant.",
+              "answer_b": "M’arrêter dans un endroit sûr.",
+              "answer_c": "Demander à mon passager de souffler à ma place.",
+              "answer_d": "Arrêter aussi le moteur.",
+              "explanation": "Le contrôle demandé par l’EAD doit être réalisé véhicule et moteur arrêtés. Je rejoins un lieu sûr dans le délai prévu ; je ne souffle pas en conduisant et personne ne souffle à ma place."
+            },
+            "en": {
+              "question_text": "My alcohol ignition interlock requests another breath sample during a journey. Before providing it, I must:",
+              "answer_a": "Steer with one hand and blow while driving.",
+              "answer_b": "Stop in a safe place.",
+              "answer_c": "Ask my passenger to provide the sample for me.",
+              "answer_d": "Switch off the engine as well.",
+              "explanation": "The repeat interlock test must be performed with both the vehicle and engine stopped. I reach a safe place within the allowed time; I do not blow while driving or use someone else’s sample."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Incorrect : pas de souffle au volant en mouvement.",
+            "b": "Correct : immobiliser en sécurité.",
+            "c": "Incorrect : contrôle personnel du conducteur.",
+            "d": "Correct : moteur également arrêté."
+          },
+          "en": {
+            "a": "Incorrect: do not provide the sample while moving.",
+            "b": "Correct: stop safely.",
+            "c": "Incorrect: the driver must provide their own sample.",
+            "d": "Correct: the engine must also be off."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. Close interior photograph of a parked left-hand-drive ordinary car. A realistic alcohol ignition interlock handset sits securely in a fitted cradle on the lower centre console: a small rectangular dark housing, simple small blank dark display, one plain button, a clean short translucent cylindrical mouthpiece at the top and a coiled cable leading discreetly behind the console. No brand names, instructions, measurement units or numbers. Handset is obviously a wired breath-testing device, not a mobile phone. No hands, cups, drinks or other objects. A small amount of passenger-seat upholstery in background, no steering wheel or dashboard displays in the crop.",
+        "sources": [
+          {
+            "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F39667",
+            "kind": "official",
+            "checked_on": "2026-10-09",
+            "supports": "Updated 25 September 2026: repeat request 5–30 minutes after starting; 20-minute interval to perform it, with both vehicle and engine stopped. Only the stopped procedure is tested."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_rear_passenger_seatbelt",
+          "similarity": 0.439,
+          "question_fr": "Mon passager adulte à l'arrière ne veut pas boucler sa ceinture pour ce trajet très court. Puis-je démarrer ?"
+        },
+        {
+          "key": "situation_temporary_yellow_lane_shift",
+          "similarity": 0.431,
+          "question_fr": "Dans ce chantier, le marquage jaune temporaire déporte ma voie vers la gauche. Quelle trajectoire dois-je suivre ?"
+        },
+        {
+          "key": "situation_garage_exit_sidewalk_pedestrian",
+          "similarity": 0.417,
+          "question_fr": "Je sors d'un garage en traversant le trottoir, où un piéton passe devant moi. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_front_load_no_projection",
+          "similarity": 0.407,
+          "question_fr": "Ces planches dépassent devant l’aplomb avant de ma voiture. Puis-je prendre la route ?"
+        },
+        {
+          "key": "situation_motorway_toll_intercom_problem",
+          "similarity": 0.404,
+          "question_fr": "Le terminal de péage ne fonctionne pas et la barrière reste fermée. Que dois-je faire ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-002/ead_retest_stop_engine/scene-1.jpg",
+          "image_sha256": "6078a7d8960738d14627fc7ef0cf676f7722466a822df401c1304bb628de0da4",
+          "prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. Close interior photograph of a parked left-hand-drive ordinary car. A realistic alcohol ignition interlock handset sits securely in a fitted cradle on the lower centre console: a small rectangular dark housing, simple small blank dark display, one plain button, a clean short translucent cylindrical mouthpiece at the top and a coiled cable leading discreetly behind the console. No brand names, instructions, measurement units or numbers. Handset is obviously a wired breath-testing device, not a mobile phone. No hands, cups, drinks or other objects. A small amount of passenger-seat upholstery in background, no steering wheel or dashboard displays in the crop.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "proposal_sha256": "45e267470e312337bf1ca2e6177197a2e58464c4e25a8c5cd7db5180806afe22",
+            "image_sha256": "6078a7d8960738d14627fc7ef0cf676f7722466a822df401c1304bb628de0da4",
+            "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+            "compared_question_keys": [
+              "situation_rear_passenger_seatbelt",
+              "situation_temporary_yellow_lane_shift",
+              "situation_garage_exit_sidewalk_pedestrian",
+              "situation_front_load_no_projection",
+              "situation_motorway_toll_intercom_problem"
+            ],
+            "checks": {
+              "official_rule": "Reviewed authoritative sources checked 2026-10-09: Updated 25 September 2026: repeat request 5–30 minutes after starting; 20-minute interval to perform it, with both vehicle and engine stopped. Only the stopped procedure is tested.",
+              "novelty": "The bank tests ordinary breath-test thresholds and refusals, not the procedure for a repeat interlock test during a journey. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+              "signs_and_text": "No signs or readable text; screen is neutral dark rather than a fabricated measurement.",
+              "road_geometry": "Close centre-console crop; no roadway or implied manoeuvre.",
+              "vehicles_and_people": "No hands or people shown blowing while driving. Device secured in cradle.",
+              "dashboard_and_equipment": "Plausible handset with mouthpiece, screen, button and attached coiled cable routed out of crop; normal gear lever and upholstery. Request timing is explicit in stem, not an inferred reading.",
+              "full_resolution": "Viewed exact staged scene-1.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No signs or readable text; screen is neutral dark rather than a fabricated measurement. Plausible handset with mouthpiece, screen, button and attached coiled cable routed out of crop; normal gear lever and upholstery. Request timing is explicit in stem, not an inferred reading.",
+              "phone_size": "Viewed phone-preview-1.jpg at 390 px. Handset, mouthpiece and wired mounting remain visible at 390 px; no screen reading needed.",
+              "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: An authorised installed alcohol ignition interlock requests a repeat test during a journey. The stated request must be handled according to its permitted interval, not by blowing while driving.",
+              "all_four_options": "Correct set b,d. FR: A: Incorrect : pas de souffle au volant en mouvement.; B: Correct : immobiliser en sécurité.; C: Incorrect : contrôle personnel du conducteur.; D: Correct : moteur également arrêté. EN: A: Incorrect: do not provide the sample while moving.; B: Correct: stop safely.; C: Incorrect: the driver must provide their own sample.; D: Correct: the engine must also be off."
+            },
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-002/ead_retest_stop_engine/scene-1.jpg",
+      "image_sha256": "6078a7d8960738d14627fc7ef0cf676f7722466a822df401c1304bb628de0da4",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "proposal_sha256": "45e267470e312337bf1ca2e6177197a2e58464c4e25a8c5cd7db5180806afe22",
+        "image_sha256": "6078a7d8960738d14627fc7ef0cf676f7722466a822df401c1304bb628de0da4",
+        "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+        "compared_question_keys": [
+          "situation_rear_passenger_seatbelt",
+          "situation_temporary_yellow_lane_shift",
+          "situation_garage_exit_sidewalk_pedestrian",
+          "situation_front_load_no_projection",
+          "situation_motorway_toll_intercom_problem"
+        ],
+        "checks": {
+          "official_rule": "Reviewed authoritative sources checked 2026-10-09: Updated 25 September 2026: repeat request 5–30 minutes after starting; 20-minute interval to perform it, with both vehicle and engine stopped. Only the stopped procedure is tested.",
+          "novelty": "The bank tests ordinary breath-test thresholds and refusals, not the procedure for a repeat interlock test during a journey. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+          "signs_and_text": "No signs or readable text; screen is neutral dark rather than a fabricated measurement.",
+          "road_geometry": "Close centre-console crop; no roadway or implied manoeuvre.",
+          "vehicles_and_people": "No hands or people shown blowing while driving. Device secured in cradle.",
+          "dashboard_and_equipment": "Plausible handset with mouthpiece, screen, button and attached coiled cable routed out of crop; normal gear lever and upholstery. Request timing is explicit in stem, not an inferred reading.",
+          "full_resolution": "Viewed exact staged scene-1.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No signs or readable text; screen is neutral dark rather than a fabricated measurement. Plausible handset with mouthpiece, screen, button and attached coiled cable routed out of crop; normal gear lever and upholstery. Request timing is explicit in stem, not an inferred reading.",
+          "phone_size": "Viewed phone-preview-1.jpg at 390 px. Handset, mouthpiece and wired mounting remain visible at 390 px; no screen reading needed.",
+          "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: An authorised installed alcohol ignition interlock requests a repeat test during a journey. The stated request must be handled according to its permitted interval, not by blowing while driving.",
+          "all_four_options": "Correct set b,d. FR: A: Incorrect : pas de souffle au volant en mouvement.; B: Correct : immobiliser en sécurité.; C: Incorrect : contrôle personnel du conducteur.; D: Correct : moteur également arrêté. EN: A: Incorrect: do not provide the sample while moving.; B: Correct: stop safely.; C: Incorrect: the driver must provide their own sample.; D: Correct: the engine must also be off."
+        },
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "7d85cbb565afebb36bafe2820de13c27bde2acb1577506cf0223c97cbdace32d"
+    },
+    {
+      "proposal": {
+        "scenario_id": "medicine_blurred_vision_during_drive",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car driver; no specialist qualification required.",
+        "learning_objective": "Stop safely rather than continue driving when a medicine-related visual warning symptom occurs.",
+        "topic": "medicines.warning_symptoms",
+        "scenario": "The driver reports blurred vision during a journey after taking a medicine whose leaflet lists this possible effect. Causation is not diagnosed from the image; stopping safely and seeking medical advice is tested.",
+        "novelty_review": "Unlike pictogram recognition, OTC status, combinations or skipped doses, this tests action when an actual visual impairment develops during the journey.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_medicine_blurred_vision_during_drive",
+          "category_slug": "alcohol_drugs",
+          "correct_answers": [
+            "c"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Après la prise d’un médicament, ma vision devient floue en roulant ; la notice mentionne cet effet possible. Que faire ?",
+              "answer_a": "Terminer le trajet si je suis près de chez moi.",
+              "answer_b": "Ouvrir la fenêtre et continuer.",
+              "answer_c": "M’arrêter en sécurité et demander un avis médical avant de reprendre.",
+              "answer_d": "Accélérer pour réduire le temps passé sur la route.",
+              "explanation": "Une vision altérée rend la conduite dangereuse. Je m’arrête dès que je peux le faire en sécurité et je demande un avis médical ; la proximité de l’arrivée ne permet pas de continuer."
+            },
+            "en": {
+              "question_text": "After taking a medicine, my vision becomes blurred while driving; its leaflet lists this possible effect. What should I do?",
+              "answer_a": "Finish the journey if I am close to home.",
+              "answer_b": "Open the window and continue.",
+              "answer_c": "Stop safely and seek medical advice before driving again.",
+              "answer_d": "Speed up to spend less time on the road.",
+              "explanation": "Impaired vision makes driving unsafe. I stop as soon as I can do so safely and seek medical advice; being close to my destination does not make continuing safe."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Incorrect : la distance restante ne supprime pas le danger.",
+            "b": "Incorrect : aérer ne rétablit pas une aptitude certaine.",
+            "c": "Correct : sécuriser l’arrêt puis demander un avis.",
+            "d": "Incorrect : vitesse accrue et vision altérée aggravent le risque."
+          },
+          "en": {
+            "a": "Incorrect: a short remaining distance does not remove the danger.",
+            "b": "Incorrect: fresh air does not establish fitness to drive.",
+            "c": "Correct: stop safely and seek advice.",
+            "d": "Incorrect: speeding with impaired vision increases risk."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. Original realistic medium-wide exterior view of a plain compact passenger car standing entirely inside a quiet paved rural lay-by, several metres away from a narrow road. One adult driver is visible through the open side window, seated upright, seat belt correctly across shoulder and chest, looking ahead with a concerned but natural expression. No hand gestures. Daylight, normal sharp photographic focus throughout; do not blur or distort the scene to simulate the symptom. No medicine packaging, no readable text, no traffic signs, no road markings in the visible crop. Quiet trees and stone wall behind. Side three-quarter angle, avoid showing a number plate.",
+        "sources": [
+          {
+            "url": "https://www.ameli.fr/assure/sante/medicaments/effets-indesirables-et-interactions-lies-aux-medicaments/comprendre-risques-lies-medicaments-conduite-vehicule",
+            "kind": "official",
+            "checked_on": "2026-10-09",
+            "supports": "Updated July 2026: medicines can impair vision; warning symptoms can require abstaining from driving and medical/pharmacist advice. The question does not diagnose the cause."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "safety_eco_driving_anticipation",
+          "similarity": 0.439,
+          "question_fr": "Quel style de conduite améliore généralement la sécurité tout en réduisant la consommation d’énergie ?"
+        },
+        {
+          "key": "situation_motorway_keep_right",
+          "similarity": 0.427,
+          "question_fr": "Après mon dépassement, les deux voies de droite sont libres. Où dois-je circuler ?"
+        },
+        {
+          "key": "situation_b21b_straight_at_junction",
+          "similarity": 0.426,
+          "question_fr": "À la prochaine intersection, quelle direction ce panneau m’impose-t-il ?"
+        },
+        {
+          "key": "medicine_level_three",
+          "similarity": 0.424,
+          "question_fr": "Un médicament porte le pictogramme rouge de niveau 3. Que dois-je faire ?"
+        },
+        {
+          "key": "safety_emergency_corridor",
+          "similarity": 0.419,
+          "question_fr": "J’approche d’un véhicule d’intervention ou de service arrêté avec ses feux d’alerte. Que dois-je faire ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-002/medicine_blurred_vision_during_drive/scene-1.jpg",
+          "image_sha256": "f4a3e3014649bde7f5450205ffca9410ffd07a9b6900fdd3c2dd5b8a33e32c9f",
+          "prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. Original realistic medium-wide exterior view of a plain compact passenger car standing entirely inside a quiet paved rural lay-by, several metres away from a narrow road. One adult driver is visible through the open side window, seated upright, seat belt correctly across shoulder and chest, looking ahead with a concerned but natural expression. No hand gestures. Daylight, normal sharp photographic focus throughout; do not blur or distort the scene to simulate the symptom. No medicine packaging, no readable text, no traffic signs, no road markings in the visible crop. Quiet trees and stone wall behind. Side three-quarter angle, avoid showing a number plate.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "reject",
+            "proposal_sha256": "fadfa311df2164ca837ab35f0069cd989869cb2399228509405c6d82c721ed35",
+            "image_sha256": "f4a3e3014649bde7f5450205ffca9410ffd07a9b6900fdd3c2dd5b8a33e32c9f",
+            "notes": "Reject: visibly parked lay-by composition pre-empts the requested decision while wording describes driving; visible front lacks a plate. Use neutral close interior view without road position or front bumper.",
+            "recorded_on": "2026-10-09"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-002/medicine_blurred_vision_during_drive/scene-2.jpg",
+          "image_sha256": "a38c7d334930c0aa555c1ebe24ef86c0e8e02e32211823da906f8f2f0c7f9adc",
+          "prompt": "Edit the supplied original scene into a neutral close interior portrait: camera from the front passenger side inside the same car, showing this same adult driver seated in the left driving seat, seat belt correctly from left shoulder to right hip, both hands naturally on steering wheel at 9 and 3, eyes looking forward with the same concerned expression. Only head, torso, wheel and a small portion of side-window trees visible. Road position, dashboard displays, front bumper and number plates are outside the image. No phones or medicine packages. The image illustrates a reported visual symptom while driving but must not simulate blur or show the car already pulled over. Crisp natural photography, original 16:9 landscape, no words or overlays.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "proposal_sha256": "fadfa311df2164ca837ab35f0069cd989869cb2399228509405c6d82c721ed35",
+            "image_sha256": "a38c7d334930c0aa555c1ebe24ef86c0e8e02e32211823da906f8f2f0c7f9adc",
+            "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+            "compared_question_keys": [
+              "safety_eco_driving_anticipation",
+              "situation_motorway_keep_right",
+              "situation_b21b_straight_at_junction",
+              "medicine_level_three",
+              "safety_emergency_corridor"
+            ],
+            "checks": {
+              "official_rule": "Reviewed authoritative sources checked 2026-10-09: Updated July 2026: medicines can impair vision; warning symptoms can require abstaining from driving and medical/pharmacist advice. The question does not diagnose the cause.",
+              "novelty": "Unlike pictogram recognition, OTC status, combinations or skipped doses, this tests action when an actual visual impairment develops during the journey. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+              "signs_and_text": "No road signs, text, medicine brand or dashboard indicators in final crop.",
+              "road_geometry": "Corrected interior view removes the already-stopped lay-by and missing plate. Road position is outside crop and no unsafe lane inference is needed.",
+              "vehicles_and_people": "One natural adult face, separate plausible hands on wheel; forward gaze. Reported blurred vision is in stem, not a visual diagnosis.",
+              "dashboard_and_equipment": "Left-driving-seat belt runs from outer left shoulder toward inner hip; head restraint, wheel rim and hands plausible. No phone, controls or distracting activity.",
+              "full_resolution": "Viewed exact staged scene-2.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No road signs, text, medicine brand or dashboard indicators in final crop. Left-driving-seat belt runs from outer left shoulder toward inner hip; head restraint, wheel rim and hands plausible. No phone, controls or distracting activity.",
+              "phone_size": "Viewed phone-preview-2.jpg at 390 px. Face, belt and wheel remain clear at 390 px. Scene is sharp; no fake optical blur conceals detail.",
+              "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: The driver reports blurred vision during a journey after taking a medicine whose leaflet lists this possible effect. Causation is not diagnosed from the image; stopping safely and seeking medical advice is tested.",
+              "all_four_options": "Correct set c. FR: A: Incorrect : la distance restante ne supprime pas le danger.; B: Incorrect : aérer ne rétablit pas une aptitude certaine.; C: Correct : sécuriser l’arrêt puis demander un avis.; D: Incorrect : vitesse accrue et vision altérée aggravent le risque. EN: A: Incorrect: a short remaining distance does not remove the danger.; B: Incorrect: fresh air does not establish fitness to drive.; C: Correct: stop safely and seek advice.; D: Incorrect: speeding with impaired vision increases risk."
+            },
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-002/medicine_blurred_vision_during_drive/scene-2.jpg",
+      "image_sha256": "a38c7d334930c0aa555c1ebe24ef86c0e8e02e32211823da906f8f2f0c7f9adc",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "proposal_sha256": "fadfa311df2164ca837ab35f0069cd989869cb2399228509405c6d82c721ed35",
+        "image_sha256": "a38c7d334930c0aa555c1ebe24ef86c0e8e02e32211823da906f8f2f0c7f9adc",
+        "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+        "compared_question_keys": [
+          "safety_eco_driving_anticipation",
+          "situation_motorway_keep_right",
+          "situation_b21b_straight_at_junction",
+          "medicine_level_three",
+          "safety_emergency_corridor"
+        ],
+        "checks": {
+          "official_rule": "Reviewed authoritative sources checked 2026-10-09: Updated July 2026: medicines can impair vision; warning symptoms can require abstaining from driving and medical/pharmacist advice. The question does not diagnose the cause.",
+          "novelty": "Unlike pictogram recognition, OTC status, combinations or skipped doses, this tests action when an actual visual impairment develops during the journey. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+          "signs_and_text": "No road signs, text, medicine brand or dashboard indicators in final crop.",
+          "road_geometry": "Corrected interior view removes the already-stopped lay-by and missing plate. Road position is outside crop and no unsafe lane inference is needed.",
+          "vehicles_and_people": "One natural adult face, separate plausible hands on wheel; forward gaze. Reported blurred vision is in stem, not a visual diagnosis.",
+          "dashboard_and_equipment": "Left-driving-seat belt runs from outer left shoulder toward inner hip; head restraint, wheel rim and hands plausible. No phone, controls or distracting activity.",
+          "full_resolution": "Viewed exact staged scene-2.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No road signs, text, medicine brand or dashboard indicators in final crop. Left-driving-seat belt runs from outer left shoulder toward inner hip; head restraint, wheel rim and hands plausible. No phone, controls or distracting activity.",
+          "phone_size": "Viewed phone-preview-2.jpg at 390 px. Face, belt and wheel remain clear at 390 px. Scene is sharp; no fake optical blur conceals detail.",
+          "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: The driver reports blurred vision during a journey after taking a medicine whose leaflet lists this possible effect. Causation is not diagnosed from the image; stopping safely and seeking medical advice is tested.",
+          "all_four_options": "Correct set c. FR: A: Incorrect : la distance restante ne supprime pas le danger.; B: Incorrect : aérer ne rétablit pas une aptitude certaine.; C: Correct : sécuriser l’arrêt puis demander un avis.; D: Incorrect : vitesse accrue et vision altérée aggravent le risque. EN: A: Incorrect: a short remaining distance does not remove the danger.; B: Incorrect: fresh air does not establish fitness to drive.; C: Correct: stop safely and seek advice.; D: Incorrect: speeding with impaired vision increases risk."
+        },
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "47741d1d5939af05c89e594db69c3e166c522e486edccb69a6b751c377503e05"
+    },
+    {
+      "proposal": {
+        "scenario_id": "moving_procession_do_not_cut",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car driver; no specialist qualification required.",
+        "learning_objective": "Do not drive through a gap in an organised procession while it is still moving.",
+        "topic": "priority.organised_procession",
+        "scenario": "A legally organised walking procession is crossing the street. Its members form a continuing procession with a gap; it has not finished passing. Explicitly stated, not inferred solely from a pedestrian image.",
+        "novelty_review": "Distinct from yielding to an individual pedestrian or an exceptional road convoy: R412-15 protects the continuity of a moving procession even when a gap opens.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_moving_procession_do_not_cut",
+          "category_slug": "priority_rules",
+          "correct_answers": [
+            "d"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Un cortège organisé traverse cette rue et continue de défiler. Un espace se forme entre deux groupes. Puis-je passer au milieu ?",
+              "answer_a": "Oui, si ma voiture tient dans l’espace.",
+              "answer_b": "Oui, après un bref avertissement sonore.",
+              "answer_c": "Oui, puisque les participants sont à pied.",
+              "answer_d": "Non, je ne dois pas couper ce cortège en marche.",
+              "explanation": "Il est interdit de couper un cortège en marche. Je patiente jusqu’à son passage complet ; un intervalle entre deux groupes ne m’autorise pas à m’y insérer."
+            },
+            "en": {
+              "question_text": "An organised procession is crossing this street and is still moving. A gap opens between two groups. May I drive through it?",
+              "answer_a": "Yes, if my car fits in the gap.",
+              "answer_b": "Yes, after briefly sounding the horn.",
+              "answer_c": "Yes, because the participants are on foot.",
+              "answer_d": "No, I must not cut through a moving procession.",
+              "explanation": "Driving through a moving procession is prohibited. I wait until it has fully passed; a gap between two groups does not allow me to insert my car."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Incorrect : la taille de l’espace ne lève pas l’interdiction.",
+            "b": "Incorrect : le klaxon ne donne pas de priorité.",
+            "c": "Incorrect : la règle vise aussi les cortèges à pied.",
+            "d": "Correct : continuité du cortège à respecter."
+          },
+          "en": {
+            "a": "Incorrect: the size of the gap does not remove the prohibition.",
+            "b": "Incorrect: a horn does not grant priority.",
+            "c": "Incorrect: walking processions are also covered.",
+            "d": "Correct: respect the continuity of the procession."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. View straight ahead through the windscreen of a stopped car in a quiet French village street. A small organised ceremonial walking procession passes laterally from the left pavement to the right pavement across the road ahead: six adults in simple formal everyday clothing walking in the same direction, three on the left of the frame and three on the right, with a clearly visible modest gap between the groups. They are one continuing line. All are at least ten metres ahead of the viewpoint. Natural separate limbs and walking poses, no duplicated faces, no banners, placards, musical instruments or flags. Low stone houses, continuous pavements, unmarked low-speed village street, no traffic signals or signs, no parked vehicles hiding people, no readable text. Only a narrow dashboard edge at bottom, no steering wheel or gauges.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842134",
+            "kind": "official",
+            "checked_on": "2026-10-09",
+            "supports": "R412-15 prohibits cutting through a moving procession; the question explicitly identifies a continuing organised procession."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_two_way_wrong_side_parking",
+          "similarity": 0.49,
+          "question_fr": "En agglomération sur cette chaussée à double sens, une place est libre à gauche. Puis-je m’y garer face au sens inverse ?"
+        },
+        {
+          "key": "situation_overtaking_uncontrolled_intersection",
+          "similarity": 0.463,
+          "question_fr": "Je vais dépasser cette voiture à l'approche d'une intersection sans feu ni route prioritaire. Puis-je commencer la manœuvre ?"
+        },
+        {
+          "key": "situation_first_aid_conscious_waiting_care",
+          "similarity": 0.441,
+          "question_fr": "Les lieux sont sécurisés et les secours prévenus. Cette personne blessée est consciente, sans danger immédiat ni saignement important. En attendant, que puis-je faire ?"
+        },
+        {
+          "key": "situation_overtake_right_left_turner",
+          "similarity": 0.437,
+          "question_fr": "Cette voiture ralentit et signale qu'elle tourne à gauche. Si l'espace est suffisant et sûr, de quel côté puis-je la dépasser ?"
+        },
+        {
+          "key": "situation_blind_crest_no_overtake",
+          "similarity": 0.435,
+          "question_fr": "Le véhicule devant roule lentement et le sommet de la côte masque la route. Puis-je commencer à le dépasser ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-002/moving_procession_do_not_cut/scene-1.jpg",
+          "image_sha256": "3c9f4ad347b2ce0b90eafd2b46865631d7332ae0b1a26017c015d5b7c1d08ba5",
+          "prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. View straight ahead through the windscreen of a stopped car in a quiet French village street. A small organised ceremonial walking procession passes laterally from the left pavement to the right pavement across the road ahead: six adults in simple formal everyday clothing walking in the same direction, three on the left of the frame and three on the right, with a clearly visible modest gap between the groups. They are one continuing line. All are at least ten metres ahead of the viewpoint. Natural separate limbs and walking poses, no duplicated faces, no banners, placards, musical instruments or flags. Low stone houses, continuous pavements, unmarked low-speed village street, no traffic signals or signs, no parked vehicles hiding people, no readable text. Only a narrow dashboard edge at bottom, no steering wheel or gauges.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "proposal_sha256": "22b4eb289e3cfd758c64527f4f543a0d092923224bdef7dda64e8a3d24606660",
+            "image_sha256": "3c9f4ad347b2ce0b90eafd2b46865631d7332ae0b1a26017c015d5b7c1d08ba5",
+            "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+            "compared_question_keys": [
+              "situation_two_way_wrong_side_parking",
+              "situation_overtaking_uncontrolled_intersection",
+              "situation_first_aid_conscious_waiting_care",
+              "situation_overtake_right_left_turner",
+              "situation_blind_crest_no_overtake"
+            ],
+            "checks": {
+              "official_rule": "Reviewed authoritative sources checked 2026-10-09: R412-15 prohibits cutting through a moving procession; the question explicitly identifies a continuing organised procession.",
+              "novelty": "Distinct from yielding to an individual pedestrian or an exceptional road convoy: R412-15 protects the continuity of a moving procession even when a gap opens. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+              "signs_and_text": "No signs, signals, road paint, flags, words or supplementary plates.",
+              "road_geometry": "Consistent narrow village street, pavements on both sides. Camera is behind crossing line, unobstructed view of gap.",
+              "vehicles_and_people": "Six separate adults, three on either side of a gap, all walking left-to-right with plausible arms, legs and shadows. Organised continuing procession is explicitly supplied; image alone would not establish legal status.",
+              "dashboard_and_equipment": "Only ordinary dashboard edge; no invented controls or instrument readings.",
+              "full_resolution": "Viewed exact staged scene-1.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No signs, signals, road paint, flags, words or supplementary plates. Only ordinary dashboard edge; no invented controls or instrument readings.",
+              "phone_size": "Viewed phone-preview-1.jpg at 390 px. All six walkers and the gap remain apparent at 390 px; no clothing detail needed to answer.",
+              "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: A legally organised walking procession is crossing the street. Its members form a continuing procession with a gap; it has not finished passing. Explicitly stated, not inferred solely from a pedestrian image.",
+              "all_four_options": "Correct set d. FR: A: Incorrect : la taille de l’espace ne lève pas l’interdiction.; B: Incorrect : le klaxon ne donne pas de priorité.; C: Incorrect : la règle vise aussi les cortèges à pied.; D: Correct : continuité du cortège à respecter. EN: A: Incorrect: the size of the gap does not remove the prohibition.; B: Incorrect: a horn does not grant priority.; C: Incorrect: walking processions are also covered.; D: Correct: respect the continuity of the procession."
+            },
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-002/moving_procession_do_not_cut/scene-1.jpg",
+      "image_sha256": "3c9f4ad347b2ce0b90eafd2b46865631d7332ae0b1a26017c015d5b7c1d08ba5",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "proposal_sha256": "22b4eb289e3cfd758c64527f4f543a0d092923224bdef7dda64e8a3d24606660",
+        "image_sha256": "3c9f4ad347b2ce0b90eafd2b46865631d7332ae0b1a26017c015d5b7c1d08ba5",
+        "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+        "compared_question_keys": [
+          "situation_two_way_wrong_side_parking",
+          "situation_overtaking_uncontrolled_intersection",
+          "situation_first_aid_conscious_waiting_care",
+          "situation_overtake_right_left_turner",
+          "situation_blind_crest_no_overtake"
+        ],
+        "checks": {
+          "official_rule": "Reviewed authoritative sources checked 2026-10-09: R412-15 prohibits cutting through a moving procession; the question explicitly identifies a continuing organised procession.",
+          "novelty": "Distinct from yielding to an individual pedestrian or an exceptional road convoy: R412-15 protects the continuity of a moving procession even when a gap opens. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+          "signs_and_text": "No signs, signals, road paint, flags, words or supplementary plates.",
+          "road_geometry": "Consistent narrow village street, pavements on both sides. Camera is behind crossing line, unobstructed view of gap.",
+          "vehicles_and_people": "Six separate adults, three on either side of a gap, all walking left-to-right with plausible arms, legs and shadows. Organised continuing procession is explicitly supplied; image alone would not establish legal status.",
+          "dashboard_and_equipment": "Only ordinary dashboard edge; no invented controls or instrument readings.",
+          "full_resolution": "Viewed exact staged scene-1.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No signs, signals, road paint, flags, words or supplementary plates. Only ordinary dashboard edge; no invented controls or instrument readings.",
+          "phone_size": "Viewed phone-preview-1.jpg at 390 px. All six walkers and the gap remain apparent at 390 px; no clothing detail needed to answer.",
+          "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: A legally organised walking procession is crossing the street. Its members form a continuing procession with a gap; it has not finished passing. Explicitly stated, not inferred solely from a pedestrian image.",
+          "all_four_options": "Correct set d. FR: A: Incorrect : la taille de l’espace ne lève pas l’interdiction.; B: Incorrect : le klaxon ne donne pas de priorité.; C: Incorrect : la règle vise aussi les cortèges à pied.; D: Correct : continuité du cortège à respecter. EN: A: Incorrect: the size of the gap does not remove the prohibition.; B: Incorrect: a horn does not grant priority.; C: Incorrect: walking processions are also covered.; D: Correct: respect the continuity of the procession."
+        },
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "f8e4626e20b774170828dc2d39f7745dbe213197415660959d9e57ec40792846"
+    },
+    {
+      "proposal": {
+        "scenario_id": "yellow_broken_kerb_parking_only",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car driver; no specialist qualification required.",
+        "learning_objective": "Identify the scope of a broken yellow kerb marking.",
+        "topic": "markings.yellow_broken_kerb",
+        "scenario": "A broken yellow T-prime-2 line is painted along the top of the kerb. The question asks the meaning of that marking alone, not permission to stop despite other hazards.",
+        "novelty_review": "Existing B6 sign questions concern vertical signs and the bus-stop yellow zigzag has different geometry and scope. The broken yellow kerb marking itself has not been tested.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_yellow_broken_kerb_parking_only",
+          "category_slug": "road_signs",
+          "correct_answers": [
+            "b"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Que signifie, à elle seule, cette ligne jaune discontinue sur la bordure du trottoir ?",
+              "answer_a": "Arrêt et stationnement interdits.",
+              "answer_b": "Stationnement interdit, sans interdire à elle seule l’arrêt.",
+              "answer_c": "Stationnement payant.",
+              "answer_d": "Emplacement réservé aux livraisons.",
+              "explanation": "La ligne jaune discontinue interdit le stationnement. Elle n’interdit pas à elle seule un arrêt, qui doit toutefois rester autorisé par les autres règles et ne pas gêner ni mettre en danger."
+            },
+            "en": {
+              "question_text": "What does this broken yellow line on the kerb mean on its own?",
+              "answer_a": "Both stopping and parking are prohibited.",
+              "answer_b": "Parking is prohibited; the line alone does not prohibit stopping.",
+              "answer_c": "Paid parking.",
+              "answer_d": "A space reserved for deliveries.",
+              "explanation": "A broken yellow line prohibits parking. On its own it does not prohibit stopping, which must still comply with other rules and cause neither obstruction nor danger."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Incorrect : correspond à la ligne jaune continue.",
+            "b": "Correct : interdiction de stationnement seule portée du marquage.",
+            "c": "Incorrect : pas un marquage de paiement.",
+            "d": "Incorrect : aucune réservation de livraison exprimée."
+          },
+          "en": {
+            "a": "Incorrect: that is the continuous yellow line.",
+            "b": "Correct: this marking prohibits parking.",
+            "c": "Incorrect: it does not indicate payment.",
+            "d": "Incorrect: it does not designate deliveries."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. Low oblique roadside photograph concentrating on the right-hand kerb of a quiet French urban street, with broad asphalt at left and a plain grey pavement at right. A legally proportioned broken yellow line is painted on the TOP surface of the kerbstone, following the road: each yellow rectangle is approximately 50 centimetres long and 10 centimetres wide, with approximately 50 centimetres of unpainted kerb between successive rectangles. Show at least seven evenly alternating yellow segments and gaps with correct perspective. Paint sits on the horizontal top, not the vertical face. No other road markings, no traffic signs, no people, cars, bicycles, drain grates or text. Natural daylight, realistic modest wear but all yellow segments clear. Pavement stays entirely outside the carriageway.",
+        "sources": [
+          {
+            "url": "https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_7epartie_vc_20250404.pdf",
+            "kind": "official",
+            "checked_on": "2026-10-09",
+            "supports": "IISR seventh part article 118-2B: broken yellow T-prime-2 marking prohibits parking, continuous yellow prohibits stopping. Kerb-top placement allowed; T-prime-2 is 0.5 m line/0.5 m gap, width 2u."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "danger_sign_temporary_warning",
+          "similarity": 0.492,
+          "question_fr": "Que signifie le fond jaune de ce panneau ?"
+        },
+        {
+          "key": "situation_fire_hydrant_parking",
+          "similarity": 0.481,
+          "question_fr": "Puis-je stationner devant cette bouche d'incendie encastrée dans le trottoir ?"
+        },
+        {
+          "key": "situation_c30_car_scenario",
+          "similarity": 0.474,
+          "question_fr": "Que signifie ce panneau sur cette route à trois voies ?"
+        },
+        {
+          "key": "speed_motorway_rain",
+          "similarity": 0.448,
+          "question_fr": "Quelle est la vitesse maximale générale d’une voiture sur autoroute lorsqu’il pleut ?"
+        },
+        {
+          "key": "parking_on_pavement",
+          "similarity": 0.443,
+          "question_fr": "Une voiture peut-elle normalement stationner partiellement sur le trottoir sans aménagement matérialisé ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-002/yellow_broken_kerb_parking_only/scene-1.jpg",
+          "image_sha256": "8fe2ff6608fcd12616ced817a91a1bec8b99f4db3696bca0f3504caded72613b",
+          "prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. Low oblique roadside photograph concentrating on the right-hand kerb of a quiet French urban street, with broad asphalt at left and a plain grey pavement at right. A legally proportioned broken yellow line is painted on the TOP surface of the kerbstone, following the road: each yellow rectangle is approximately 50 centimetres long and 10 centimetres wide, with approximately 50 centimetres of unpainted kerb between successive rectangles. Show at least seven evenly alternating yellow segments and gaps with correct perspective. Paint sits on the horizontal top, not the vertical face. No other road markings, no traffic signs, no people, cars, bicycles, drain grates or text. Natural daylight, realistic modest wear but all yellow segments clear. Pavement stays entirely outside the carriageway.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "proposal_sha256": "11bc2e1f90544ed8c961c60ada7e37387d8a96e07ea8d8d0483be883a87dcd8b",
+            "image_sha256": "8fe2ff6608fcd12616ced817a91a1bec8b99f4db3696bca0f3504caded72613b",
+            "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+            "compared_question_keys": [
+              "danger_sign_temporary_warning",
+              "situation_fire_hydrant_parking",
+              "situation_c30_car_scenario",
+              "speed_motorway_rain",
+              "parking_on_pavement"
+            ],
+            "checks": {
+              "official_rule": "Reviewed authoritative sources checked 2026-10-09: IISR seventh part article 118-2B: broken yellow T-prime-2 marking prohibits parking, continuous yellow prohibits stopping. Kerb-top placement allowed; T-prime-2 is 0.5 m line/0.5 m gap, width 2u.",
+              "novelty": "Existing B6 sign questions concern vertical signs and the bus-stop yellow zigzag has different geometry and scope. The broken yellow kerb marking itself has not been tested. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+              "signs_and_text": "Broken yellow rectangles painted along horizontal top of kerb; no vertical sign, lettering, bus zigzag, loading label or continuous yellow line. Approximate equal segment/gap lengths and narrow 2u width consistent with T-prime-2.",
+              "road_geometry": "Kerb separates asphalt roadway at left from pavement at right, with coherent perspective and regular segment progression.",
+              "vehicles_and_people": "No vehicles or people, no obstruction introducing a second prohibition.",
+              "dashboard_and_equipment": "No dashboard or vehicle equipment present.",
+              "full_resolution": "Viewed exact staged scene-1.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. Broken yellow rectangles painted along horizontal top of kerb; no vertical sign, lettering, bus zigzag, loading label or continuous yellow line. Approximate equal segment/gap lengths and narrow 2u width consistent with T-prime-2. No dashboard or vehicle equipment present.",
+              "phone_size": "Viewed phone-preview-1.jpg at 390 px. Yellow segments and unpainted gaps remain distinct at 390 px; wording asks marking alone and preserves other stopping restrictions.",
+              "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: A broken yellow T-prime-2 line is painted along the top of the kerb. The question asks the meaning of that marking alone, not permission to stop despite other hazards.",
+              "all_four_options": "Correct set b. FR: A: Incorrect : correspond à la ligne jaune continue.; B: Correct : interdiction de stationnement seule portée du marquage.; C: Incorrect : pas un marquage de paiement.; D: Incorrect : aucune réservation de livraison exprimée. EN: A: Incorrect: that is the continuous yellow line.; B: Correct: this marking prohibits parking.; C: Incorrect: it does not indicate payment.; D: Incorrect: it does not designate deliveries."
+            },
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-002/yellow_broken_kerb_parking_only/scene-1.jpg",
+      "image_sha256": "8fe2ff6608fcd12616ced817a91a1bec8b99f4db3696bca0f3504caded72613b",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "proposal_sha256": "11bc2e1f90544ed8c961c60ada7e37387d8a96e07ea8d8d0483be883a87dcd8b",
+        "image_sha256": "8fe2ff6608fcd12616ced817a91a1bec8b99f4db3696bca0f3504caded72613b",
+        "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+        "compared_question_keys": [
+          "danger_sign_temporary_warning",
+          "situation_fire_hydrant_parking",
+          "situation_c30_car_scenario",
+          "speed_motorway_rain",
+          "parking_on_pavement"
+        ],
+        "checks": {
+          "official_rule": "Reviewed authoritative sources checked 2026-10-09: IISR seventh part article 118-2B: broken yellow T-prime-2 marking prohibits parking, continuous yellow prohibits stopping. Kerb-top placement allowed; T-prime-2 is 0.5 m line/0.5 m gap, width 2u.",
+          "novelty": "Existing B6 sign questions concern vertical signs and the bus-stop yellow zigzag has different geometry and scope. The broken yellow kerb marking itself has not been tested. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+          "signs_and_text": "Broken yellow rectangles painted along horizontal top of kerb; no vertical sign, lettering, bus zigzag, loading label or continuous yellow line. Approximate equal segment/gap lengths and narrow 2u width consistent with T-prime-2.",
+          "road_geometry": "Kerb separates asphalt roadway at left from pavement at right, with coherent perspective and regular segment progression.",
+          "vehicles_and_people": "No vehicles or people, no obstruction introducing a second prohibition.",
+          "dashboard_and_equipment": "No dashboard or vehicle equipment present.",
+          "full_resolution": "Viewed exact staged scene-1.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. Broken yellow rectangles painted along horizontal top of kerb; no vertical sign, lettering, bus zigzag, loading label or continuous yellow line. Approximate equal segment/gap lengths and narrow 2u width consistent with T-prime-2. No dashboard or vehicle equipment present.",
+          "phone_size": "Viewed phone-preview-1.jpg at 390 px. Yellow segments and unpainted gaps remain distinct at 390 px; wording asks marking alone and preserves other stopping restrictions.",
+          "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: A broken yellow T-prime-2 line is painted along the top of the kerb. The question asks the meaning of that marking alone, not permission to stop despite other hazards.",
+          "all_four_options": "Correct set b. FR: A: Incorrect : correspond à la ligne jaune continue.; B: Correct : interdiction de stationnement seule portée du marquage.; C: Incorrect : pas un marquage de paiement.; D: Incorrect : aucune réservation de livraison exprimée. EN: A: Incorrect: that is the continuous yellow line.; B: Correct: this marking prohibits parking.; C: Incorrect: it does not indicate payment.; D: Incorrect: it does not designate deliveries."
+        },
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "4e1ade1261d09e149251dead96983c6a1ccbdec1017f270618102055aa7120fe"
+    },
+    {
+      "proposal": {
+        "scenario_id": "alternating_parking_change_evening",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car driver; no specialist qualification required.",
+        "learning_objective": "Know the default evening changeover interval for fortnightly alternating parking.",
+        "topic": "parking.alternating_changeover_time",
+        "scenario": "This street is subject to fortnightly alternating parking. It is the 15th and no different local changeover time applies. These conditions are stated; no sign recognition required.",
+        "novelty_review": "Existing B6a2 asks the forbidden side on the 10th; this tests the separate default time for changing sides at the boundary.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_alternating_parking_change_evening",
+          "category_slug": "parking_stopping",
+          "correct_answers": [
+            "a"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Cette rue est soumise au stationnement alterné semi-mensuel. Le 15 du mois, sans horaire local différent, quand dois-je changer de côté ?",
+              "answer_a": "Entre 20 h 30 et 21 h.",
+              "answer_b": "À minuit exactement.",
+              "answer_c": "Entre 12 h et 12 h 30.",
+              "answer_d": "Le 16 après 9 h.",
+              "explanation": "Sauf règle locale différente, le changement de côté s’effectue entre 20 h 30 et 21 h le dernier jour de chaque période : le 15 et le dernier jour du mois."
+            },
+            "en": {
+              "question_text": "This street has fortnightly alternating parking. On the 15th, with no different local time specified, when must I change sides?",
+              "answer_a": "Between 8:30 pm and 9 pm.",
+              "answer_b": "At exactly midnight.",
+              "answer_c": "Between noon and 12:30 pm.",
+              "answer_d": "After 9 am on the 16th.",
+              "explanation": "Unless a different local rule applies, the side change takes place between 8:30 pm and 9 pm on the final day of each period: the 15th and the last day of the month."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Correct : créneau national par défaut.",
+            "b": "Incorrect : le basculement ne se fait pas à minuit.",
+            "c": "Incorrect : ce n’est pas le créneau prévu.",
+            "d": "Incorrect : le changement aurait dû avoir lieu la veille."
+          },
+          "en": {
+            "a": "Correct: the default national interval.",
+            "b": "Incorrect: changeover is not at midnight.",
+            "c": "Incorrect: this is not the specified interval.",
+            "d": "Incorrect: it should have been done the previous evening."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. A quiet ordinary French residential two-way street at dusk, eye-level photograph. A single blue compact car is parked parallel and close to the right-hand kerb, facing away from the camera in the normal traffic direction. Its wheels straight, pavement entirely unobstructed, adequate clear carriageway on its left. Plain low homes and empty pavements on both sides. No road signs, house numbers, clocks, dates, parking bays, lane markings, shops, traffic or pedestrians. Gentle evening sky, street lighting beginning to glow, mechanically plausible car. Rear plate naturally outside the crop or too oblique to require text, no fabricated plate characters. This is a neutral scene; parking restriction, date and changeover time will be stated separately by the app.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030851522",
+            "kind": "official",
+            "checked_on": "2026-10-09",
+            "supports": "R417-2: unless otherwise specified, side changes take place 20:30–21:00 on the last day of each fortnightly period."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_traffic_lights_blocked",
+          "similarity": 0.435,
+          "question_fr": "Le feu est vert, mais la circulation est arrêtée après le carrefour : puis-je m'engager ?"
+        },
+        {
+          "key": "situation_hazard_lights_strong_slowdown",
+          "similarity": 0.429,
+          "question_fr": "Un bouchon me contraint soudain à rouler très lentement et je suis le dernier de la file. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_officer_stop_over_green",
+          "similarity": 0.429,
+          "question_fr": "Le feu est vert, mais l'agent face à moi m'ordonne clairement de m'arrêter. Quelle indication dois-je suivre ?"
+        },
+        {
+          "key": "situation_random_alcohol_check_no_infraction",
+          "similarity": 0.429,
+          "question_fr": "Je n'ai commis aucune infraction et aucun accident n'a eu lieu. Les forces de l'ordre peuvent-elles quand même contrôler mon alcoolémie ?"
+        },
+        {
+          "key": "situation_overtake_tram_left_one_way",
+          "similarity": 0.427,
+          "question_fr": "Cette rue est à sens unique et le tramway roule sans desservir un arrêt. Si tout est sûr, puis-je le dépasser par la gauche ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-002/alternating_parking_change_evening/scene-1.jpg",
+          "image_sha256": "cf638ed5352f1b0ebe138d0f6e26e6d33d37ce95662d5ace154e1b899c15a3bb",
+          "prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. A quiet ordinary French residential two-way street at dusk, eye-level photograph. A single blue compact car is parked parallel and close to the right-hand kerb, facing away from the camera in the normal traffic direction. Its wheels straight, pavement entirely unobstructed, adequate clear carriageway on its left. Plain low homes and empty pavements on both sides. No road signs, house numbers, clocks, dates, parking bays, lane markings, shops, traffic or pedestrians. Gentle evening sky, street lighting beginning to glow, mechanically plausible car. Rear plate naturally outside the crop or too oblique to require text, no fabricated plate characters. This is a neutral scene; parking restriction, date and changeover time will be stated separately by the app.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "reject",
+            "proposal_sha256": "0bbd3378e9f6649212472fba86f3c81f6bf837931ad2cd5cb0a241268f240871",
+            "image_sha256": "cf638ed5352f1b0ebe138d0f6e26e6d33d37ce95662d5ace154e1b899c15a3bb",
+            "notes": "Reject: complete rear of public-road car has no registration plate and brand-like badge. Recompose true side view with plate faces naturally out of sight.",
+            "recorded_on": "2026-10-09"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-002/alternating_parking_change_evening/scene-2.jpg",
+          "image_sha256": "488724571032647cea29c630536f4d09f67642a6b7b2b41c01d9eb6215d68559",
+          "prompt": "Recompose this same quiet French residential parking scene as a TRUE SIDE PROFILE of the same ordinary unbranded blue car parked parallel and close to the kerb. Camera stands directly perpendicular to its left side, looking across the roadway toward the pavement and houses. Car front points LEFT. Front and rear plate surfaces are naturally not visible because of exact side-on angle; do not remove plates or depict empty plate recesses. Two near wheels on asphalt beside raised kerb, none on pavement. No gate or driveway behind the car: plain house wall and pavement only. No brand badge, signs, numbers or text. Keep dusk streetlamp illumination, mechanically correct car, clear generous roadway foreground. Landscape 16:9.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "proposal_sha256": "0bbd3378e9f6649212472fba86f3c81f6bf837931ad2cd5cb0a241268f240871",
+            "image_sha256": "488724571032647cea29c630536f4d09f67642a6b7b2b41c01d9eb6215d68559",
+            "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+            "compared_question_keys": [
+              "situation_traffic_lights_blocked",
+              "situation_hazard_lights_strong_slowdown",
+              "situation_officer_stop_over_green",
+              "situation_random_alcohol_check_no_infraction",
+              "situation_overtake_tram_left_one_way"
+            ],
+            "checks": {
+              "official_rule": "Reviewed authoritative sources checked 2026-10-09: R417-2: unless otherwise specified, side changes take place 20:30–21:00 on the last day of each fortnightly period.",
+              "novelty": "Existing B6a2 asks the forbidden side on the 10th; this tests the separate default time for changing sides at the boundary. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+              "signs_and_text": "No signs, house numbers, clocks, text or badge visible in corrected side view. Date and applicable alternating rule explicitly stated.",
+              "road_geometry": "Blue car parallel to kerb, tyres on asphalt, pavement unobstructed; no gate or driveway blocked. Side view does not purport to identify odd/even addresses.",
+              "vehicles_and_people": "Plausible side-profile car, normal wheels and lights, no occupant manoeuvre or missing visible plate recess. Plate faces naturally outside viewing angle.",
+              "dashboard_and_equipment": "No dashboard or clock readings. Street lighting supports neutral dusk setting without claiming a precise time.",
+              "full_resolution": "Viewed exact staged scene-2.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No signs, house numbers, clocks, text or badge visible in corrected side view. Date and applicable alternating rule explicitly stated. No dashboard or clock readings. Street lighting supports neutral dusk setting without claiming a precise time.",
+              "phone_size": "Viewed phone-preview-2.jpg at 390 px. Parked car and kerb clear at 390 px; exact changeover interval is a knowledge objective, not an image clock.",
+              "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: This street is subject to fortnightly alternating parking. It is the 15th and no different local changeover time applies. These conditions are stated; no sign recognition required.",
+              "all_four_options": "Correct set a. FR: A: Correct : créneau national par défaut.; B: Incorrect : le basculement ne se fait pas à minuit.; C: Incorrect : ce n’est pas le créneau prévu.; D: Incorrect : le changement aurait dû avoir lieu la veille. EN: A: Correct: the default national interval.; B: Incorrect: changeover is not at midnight.; C: Incorrect: this is not the specified interval.; D: Incorrect: it should have been done the previous evening."
+            },
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-002/alternating_parking_change_evening/scene-2.jpg",
+      "image_sha256": "488724571032647cea29c630536f4d09f67642a6b7b2b41c01d9eb6215d68559",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "proposal_sha256": "0bbd3378e9f6649212472fba86f3c81f6bf837931ad2cd5cb0a241268f240871",
+        "image_sha256": "488724571032647cea29c630536f4d09f67642a6b7b2b41c01d9eb6215d68559",
+        "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+        "compared_question_keys": [
+          "situation_traffic_lights_blocked",
+          "situation_hazard_lights_strong_slowdown",
+          "situation_officer_stop_over_green",
+          "situation_random_alcohol_check_no_infraction",
+          "situation_overtake_tram_left_one_way"
+        ],
+        "checks": {
+          "official_rule": "Reviewed authoritative sources checked 2026-10-09: R417-2: unless otherwise specified, side changes take place 20:30–21:00 on the last day of each fortnightly period.",
+          "novelty": "Existing B6a2 asks the forbidden side on the 10th; this tests the separate default time for changing sides at the boundary. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+          "signs_and_text": "No signs, house numbers, clocks, text or badge visible in corrected side view. Date and applicable alternating rule explicitly stated.",
+          "road_geometry": "Blue car parallel to kerb, tyres on asphalt, pavement unobstructed; no gate or driveway blocked. Side view does not purport to identify odd/even addresses.",
+          "vehicles_and_people": "Plausible side-profile car, normal wheels and lights, no occupant manoeuvre or missing visible plate recess. Plate faces naturally outside viewing angle.",
+          "dashboard_and_equipment": "No dashboard or clock readings. Street lighting supports neutral dusk setting without claiming a precise time.",
+          "full_resolution": "Viewed exact staged scene-2.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No signs, house numbers, clocks, text or badge visible in corrected side view. Date and applicable alternating rule explicitly stated. No dashboard or clock readings. Street lighting supports neutral dusk setting without claiming a precise time.",
+          "phone_size": "Viewed phone-preview-2.jpg at 390 px. Parked car and kerb clear at 390 px; exact changeover interval is a knowledge objective, not an image clock.",
+          "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: This street is subject to fortnightly alternating parking. It is the 15th and no different local changeover time applies. These conditions are stated; no sign recognition required.",
+          "all_four_options": "Correct set a. FR: A: Correct : créneau national par défaut.; B: Incorrect : le basculement ne se fait pas à minuit.; C: Incorrect : ce n’est pas le créneau prévu.; D: Incorrect : le changement aurait dû avoir lieu la veille. EN: A: Correct: the default national interval.; B: Incorrect: changeover is not at midnight.; C: Incorrect: this is not the specified interval.; D: Incorrect: it should have been done the previous evening."
+        },
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "1320a4c65a7a4531788fae255486efd15d7177f96cb23906442f5f58c6df6543"
+    },
+    {
+      "proposal": {
+        "scenario_id": "trailer_ptra_over3500_motorway90",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary B: car PTAC 2500 kg and trailer PTAC 750 kg. PTRA 4500 kg is not the sum-of-PTAC licensing threshold; the actual stated PTAC sum is 3250 kg.",
+        "learning_objective": "Apply the 90 km/h motorway limit when towing with an authorised train weight above 3500 kg.",
+        "topic": "speed.car_trailer_authorised_train_weight",
+        "scenario": "A car has PTAC 2500 kg and PTRA 4500 kg and tows a trailer with PTAC 750 kg. Ordinary category B covers this combination. Dry motorway, good visibility, no lower signed restriction; question tests PTRA rather than actual weight.",
+        "novelty_review": "Existing motorway dry/rain/probationary limits concern a solo car, not a category-B towing combination whose authorised train weight exceeds 3500 kg.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_trailer_ptra_over3500_motorway90",
+          "category_slug": "speed_limits",
+          "correct_answers": [
+            "c"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Ma voiture (PTAC 2 500 kg, PTRA 4 500 kg) tracte une remorque de PTAC 750 kg. Sur autoroute sèche, avec bonne visibilité et sans limite plus basse, mon maximum est :",
+              "answer_a": "70 km/h.",
+              "answer_b": "80 km/h.",
+              "answer_c": "90 km/h.",
+              "answer_d": "130 km/h.",
+              "explanation": "Avec une remorque, le PTRA de cet ensemble dépasse 3,5 tonnes : sa vitesse est limitée à 90 km/h sur autoroute. La règle ne dépend pas seulement du poids réellement chargé."
+            },
+            "en": {
+              "question_text": "My car (maximum authorised vehicle weight 2,500 kg, authorised train weight 4,500 kg) tows a 750 kg maximum-weight trailer. On a dry motorway with good visibility and no lower limit, my maximum is:",
+              "answer_a": "70 km/h.",
+              "answer_b": "80 km/h.",
+              "answer_c": "90 km/h.",
+              "answer_d": "130 km/h.",
+              "explanation": "While towing, this combination has an authorised train weight above 3.5 tonnes, so its motorway limit is 90 km/h. The rule is not based only on its actual loaded weight."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Incorrect : pas le maximum général dans ces conditions.",
+            "b": "Incorrect : pas la limite autoroutière de cet ensemble.",
+            "c": "Correct : PTRA supérieur à 3,5 tonnes avec remorque.",
+            "d": "Incorrect : limite générale d’une voiture seule inapplicable ici."
+          },
+          "en": {
+            "a": "Incorrect: not the general maximum in these conditions.",
+            "b": "Incorrect: not this combination’s motorway limit.",
+            "c": "Correct: towing with authorised train weight over 3.5 tonnes.",
+            "d": "Incorrect: the usual solo-car limit does not apply here."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. Neutral side view of an ordinary medium-size estate passenger car correctly coupled to a small single-axle covered utility trailer on a flat paved private yard in France. Entire combination in frame, car pointing left. Trailer approximately half the car length, plausible two wheels on one axle with only the near wheel fully visible; rigid straight drawbar visibly meets the car tow ball behind the rear bumper, a small cable follows the connection. Plain grey closed trailer cover secured tightly, no load projecting. Four realistic car wheels with only near two prominent. No people, no plates facing camera, no signs, no measurements, no text or logos. Daylight, side angle makes coupling clear without schematic or highlights.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028436426",
+            "kind": "official",
+            "checked_on": "2026-10-09",
+            "supports": "R413-8 limits combinations with PTRA above 3.5 tonnes to 90 km/h on motorways; passenger-car towing can fall within this rule."
+          },
+          {
+            "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2827",
+            "kind": "official",
+            "checked_on": "2026-10-09",
+            "supports": "Ordinary B licence permits a trailer up to 750 kg PTAC, or a heavier trailer when the sum of vehicle and trailer PTAC does not exceed 3500 kg."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_motorway_breakdown_no_triangle",
+          "similarity": 0.406,
+          "question_fr": "Ma voiture est en panne sur la bande d'arrêt d'urgence de l'autoroute. Dois-je marcher sur la chaussée pour poser le triangle ?"
+        },
+        {
+          "key": "situation_motorway_friend_tow_offer",
+          "similarity": 0.405,
+          "question_fr": "Ma voiture est en panne sur autoroute et un ami propose de la remorquer avec une sangle. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_night_unlit_roadside_position_lights",
+          "similarity": 0.388,
+          "question_fr": "Je laisse ma voiture stationnée de nuit sur cette chaussée sans éclairage public. Quelle signalisation conserver ?"
+        },
+        {
+          "key": "situation_overtake_too_little_speed_difference",
+          "similarity": 0.369,
+          "question_fr": "La voiture devant roule presque à ma vitesse. Même à la limite autorisée, mon dépassement serait très long. Que faire ?"
+        },
+        {
+          "key": "situation_overtaking_uncontrolled_intersection",
+          "similarity": 0.366,
+          "question_fr": "Je vais dépasser cette voiture à l'approche d'une intersection sans feu ni route prioritaire. Puis-je commencer la manœuvre ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-002/trailer_ptra_over3500_motorway90/scene-1.jpg",
+          "image_sha256": "68bb9ea6cfc64255814a1094a038be7dfa0d1b077f6bdeb2fa2769dee4f5e83a",
+          "prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. Neutral side view of an ordinary medium-size estate passenger car correctly coupled to a small single-axle covered utility trailer on a flat paved private yard in France. Entire combination in frame, car pointing left. Trailer approximately half the car length, plausible two wheels on one axle with only the near wheel fully visible; rigid straight drawbar visibly meets the car tow ball behind the rear bumper, a small cable follows the connection. Plain grey closed trailer cover secured tightly, no load projecting. Four realistic car wheels with only near two prominent. No people, no plates facing camera, no signs, no measurements, no text or logos. Daylight, side angle makes coupling clear without schematic or highlights.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "proposal_sha256": "bbdd9a325791e73ef2fdce1a2b731ce2aa0e32d29ed26d9b23e6900ef98121c4",
+            "image_sha256": "68bb9ea6cfc64255814a1094a038be7dfa0d1b077f6bdeb2fa2769dee4f5e83a",
+            "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+            "compared_question_keys": [
+              "situation_motorway_breakdown_no_triangle",
+              "situation_motorway_friend_tow_offer",
+              "situation_night_unlit_roadside_position_lights",
+              "situation_overtake_too_little_speed_difference",
+              "situation_overtaking_uncontrolled_intersection"
+            ],
+            "checks": {
+              "official_rule": "Reviewed authoritative sources checked 2026-10-09: R413-8 limits combinations with PTRA above 3.5 tonnes to 90 km/h on motorways; passenger-car towing can fall within this rule. Ordinary B licence permits a trailer up to 750 kg PTAC, or a heavier trailer when the sum of vehicle and trailer PTAC does not exceed 3500 kg.",
+              "novelty": "Existing motorway dry/rain/probationary limits concern a solo car, not a category-B towing combination whose authorised train weight exceeds 3500 kg. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+              "signs_and_text": "No signs, labels, numeric weights or readable plate faces. Weights and road/weather conditions are stated explicitly.",
+              "road_geometry": "Flat private yard with consistent side-on perspective; image illustrates the combination before its motorway journey.",
+              "vehicles_and_people": "Car and small single-axle trailer aligned correctly, near wheels grounded, tight cover fastenings, amber side reflectors and red rear lamp orientation plausible.",
+              "dashboard_and_equipment": "Towball/coupler connection is continuous and cable routed with clearance, no disconnected drawbar or ground-dragging cable.",
+              "full_resolution": "Viewed exact staged scene-1.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No signs, labels, numeric weights or readable plate faces. Weights and road/weather conditions are stated explicitly. Towball/coupler connection is continuous and cable routed with clearance, no disconnected drawbar or ground-dragging cable.",
+              "phone_size": "Viewed phone-preview-1.jpg at 390 px. Car-trailer connection and small trailer clear at 390 px; no weight needs to be inferred from dimensions.",
+              "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: A car has PTAC 2500 kg and PTRA 4500 kg and tows a trailer with PTAC 750 kg. Ordinary category B covers this combination. Dry motorway, good visibility, no lower signed restriction; question tests PTRA rather than actual weight.",
+              "all_four_options": "Correct set c. FR: A: Incorrect : pas le maximum général dans ces conditions.; B: Incorrect : pas la limite autoroutière de cet ensemble.; C: Correct : PTRA supérieur à 3,5 tonnes avec remorque.; D: Incorrect : limite générale d’une voiture seule inapplicable ici. EN: A: Incorrect: not the general maximum in these conditions.; B: Incorrect: not this combination’s motorway limit.; C: Correct: towing with authorised train weight over 3.5 tonnes.; D: Incorrect: the usual solo-car limit does not apply here."
+            },
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-002/trailer_ptra_over3500_motorway90/scene-1.jpg",
+      "image_sha256": "68bb9ea6cfc64255814a1094a038be7dfa0d1b077f6bdeb2fa2769dee4f5e83a",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "proposal_sha256": "bbdd9a325791e73ef2fdce1a2b731ce2aa0e32d29ed26d9b23e6900ef98121c4",
+        "image_sha256": "68bb9ea6cfc64255814a1094a038be7dfa0d1b077f6bdeb2fa2769dee4f5e83a",
+        "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+        "compared_question_keys": [
+          "situation_motorway_breakdown_no_triangle",
+          "situation_motorway_friend_tow_offer",
+          "situation_night_unlit_roadside_position_lights",
+          "situation_overtake_too_little_speed_difference",
+          "situation_overtaking_uncontrolled_intersection"
+        ],
+        "checks": {
+          "official_rule": "Reviewed authoritative sources checked 2026-10-09: R413-8 limits combinations with PTRA above 3.5 tonnes to 90 km/h on motorways; passenger-car towing can fall within this rule. Ordinary B licence permits a trailer up to 750 kg PTAC, or a heavier trailer when the sum of vehicle and trailer PTAC does not exceed 3500 kg.",
+          "novelty": "Existing motorway dry/rain/probationary limits concern a solo car, not a category-B towing combination whose authorised train weight exceeds 3500 kg. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+          "signs_and_text": "No signs, labels, numeric weights or readable plate faces. Weights and road/weather conditions are stated explicitly.",
+          "road_geometry": "Flat private yard with consistent side-on perspective; image illustrates the combination before its motorway journey.",
+          "vehicles_and_people": "Car and small single-axle trailer aligned correctly, near wheels grounded, tight cover fastenings, amber side reflectors and red rear lamp orientation plausible.",
+          "dashboard_and_equipment": "Towball/coupler connection is continuous and cable routed with clearance, no disconnected drawbar or ground-dragging cable.",
+          "full_resolution": "Viewed exact staged scene-1.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No signs, labels, numeric weights or readable plate faces. Weights and road/weather conditions are stated explicitly. Towball/coupler connection is continuous and cable routed with clearance, no disconnected drawbar or ground-dragging cable.",
+          "phone_size": "Viewed phone-preview-1.jpg at 390 px. Car-trailer connection and small trailer clear at 390 px; no weight needs to be inferred from dimensions.",
+          "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: A car has PTAC 2500 kg and PTRA 4500 kg and tows a trailer with PTAC 750 kg. Ordinary category B covers this combination. Dry motorway, good visibility, no lower signed restriction; question tests PTRA rather than actual weight.",
+          "all_four_options": "Correct set c. FR: A: Incorrect : pas le maximum général dans ces conditions.; B: Incorrect : pas la limite autoroutière de cet ensemble.; C: Correct : PTRA supérieur à 3,5 tonnes avec remorque.; D: Incorrect : limite générale d’une voiture seule inapplicable ici. EN: A: Incorrect: not the general maximum in these conditions.; B: Incorrect: not this combination’s motorway limit.; C: Correct: towing with authorised train weight over 3.5 tonnes.; D: Incorrect: the usual solo-car limit does not apply here."
+        },
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "fab0a557d4803a53a62c906311d51988d8e36d7fbe0def49203dee506ff20c5c"
+    },
+    {
+      "proposal": {
+        "scenario_id": "long_caravan_facilitate_overtaking",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary B car and small caravan with sum of PTAC 3200 kg. The tested 8 m length can occur within normal B limits; no BE or B96 training assumed.",
+        "learning_objective": "A car-caravan combination longer than seven metres must facilitate safe overtaking on a narrow road.",
+        "topic": "overtaking.long_combination_facilitation",
+        "scenario": "Driver is towing a caravan; total length 8 metres, sum of PTAC 3200 kg, within ordinary B scope. Narrow road does not allow a following smaller car to pass with ease and safety.",
+        "novelty_review": "Existing being-overtaken rule is do-not-accelerate; this adds a specific positive duty for combinations longer than seven metres when safe overtaking is obstructed by road width/profile.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_long_caravan_facilitate_overtaking",
+          "category_slug": "overtaking",
+          "correct_answers": [
+            "d"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Mon ensemble voiture-caravane mesure 8 m. La route est trop étroite pour que la petite voiture derrière me dépasse facilement et sans danger. Je dois :",
+              "answer_a": "Garder exactement mon allure jusqu’à destination.",
+              "answer_b": "Accélérer pour qu’elle renonce.",
+              "answer_c": "Lui faire signe de passer dans le prochain virage aveugle.",
+              "answer_d": "Ralentir et, au besoin, m’arrêter ou me garer en sécurité pour la laisser passer.",
+              "explanation": "Un ensemble de plus de 7 m doit faciliter le passage des véhicules plus petits quand l’état ou les dimensions de la route empêchent un dépassement facile et sûr. Je ralentis et m’arrête ou me gare si nécessaire."
+            },
+            "en": {
+              "question_text": "My car-and-caravan combination is 8 m long. The road is too narrow for the smaller car behind to pass easily and safely. I must:",
+              "answer_a": "Keep exactly the same speed until my destination.",
+              "answer_b": "Accelerate to discourage it.",
+              "answer_c": "Wave it past at the next blind bend.",
+              "answer_d": "Slow down and, if necessary, stop or pull over safely to let it pass.",
+              "explanation": "A combination longer than 7 m must help smaller vehicles pass when the road prevents easy, safe overtaking. I reduce speed and stop or pull over if necessary."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Incorrect : une action pour faciliter le passage est requise.",
+            "b": "Incorrect : accélérer aggrave la difficulté.",
+            "c": "Incorrect : ne pas inciter à un dépassement sans visibilité.",
+            "d": "Correct : obligation adaptée au gabarit et à la route."
+          },
+          "en": {
+            "a": "Incorrect: action to facilitate passing is required.",
+            "b": "Incorrect: accelerating makes passing harder.",
+            "c": "Incorrect: do not encourage passing without visibility.",
+            "d": "Correct: the duty depends on combination size and road conditions."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. Elevated natural roadside three-quarter side photograph on a narrow unmarked rural two-way French road. A normal passenger car is towing one small touring caravan, overall combination about eight metres long. Both are aligned correctly on their own right side, travelling toward the left of the frame. Clear mechanically plausible drawbar connects caravan to rear tow ball. A smaller car follows at a sensible generous distance, not alongside. Road has grass verges and trees, no centre markings, no signs, no junctions, no people. A broad safe gravel lay-by is visible ahead on the towing vehicle right side, no abrupt ditch or obstacle. No licence plates face the camera, no readable text, no logos. Realistic caravan wheels and body, nothing oversized or heavy-goods-like.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842225",
+            "kind": "official",
+            "checked_on": "2026-10-09",
+            "supports": "R414-9: when road width/profile/condition prevents easy safe overtaking, a combination longer than 7 m must slow and if needed stop or pull over to let smaller vehicles pass."
+          },
+          {
+            "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2827",
+            "kind": "official",
+            "checked_on": "2026-10-09",
+            "supports": "Ordinary B licence permits a trailer up to 750 kg PTAC, or a heavier trailer when the sum of vehicle and trailer PTAC does not exceed 3500 kg."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_motorway_friend_tow_offer",
+          "similarity": 0.452,
+          "question_fr": "Ma voiture est en panne sur autoroute et un ami propose de la remorquer avec une sangle. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_mountain_downhill_yields",
+          "similarity": 0.448,
+          "question_fr": "Je descends cette route de montagne trop étroite pour croiser la voiture qui monte. Qui doit s'arrêter en premier ?"
+        },
+        {
+          "key": "situation_coolant_hot_cap_wait",
+          "similarity": 0.447,
+          "question_fr": "Après un trajet, ma voiture est garée, contact coupé, mais le moteur est encore chaud. Pour contrôler le liquide de refroidissement, je dois :"
+        },
+        {
+          "key": "situation_triangle_placement_personal_danger",
+          "similarity": 0.427,
+          "question_fr": "Hors autoroute, ma voiture est immobilisée après ce virage, mais marcher sur la chaussée pour poser le triangle me mettrait manifestement en danger. Dois-je le faire ?"
+        },
+        {
+          "key": "situation_overtake_middle_lane_hog_no_right",
+          "similarity": 0.419,
+          "question_fr": "La circulation est fluide et cette voiture reste au milieu. Puis-je la dépasser en restant à sa droite ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-002/long_caravan_facilitate_overtaking/scene-1.jpg",
+          "image_sha256": "511bcb6f07898be2119480c8c7b412ce7702b2ad15104a358a79da8c98863e92",
+          "prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. Elevated natural roadside three-quarter side photograph on a narrow unmarked rural two-way French road. A normal passenger car is towing one small touring caravan, overall combination about eight metres long. Both are aligned correctly on their own right side, travelling toward the left of the frame. Clear mechanically plausible drawbar connects caravan to rear tow ball. A smaller car follows at a sensible generous distance, not alongside. Road has grass verges and trees, no centre markings, no signs, no junctions, no people. A broad safe gravel lay-by is visible ahead on the towing vehicle right side, no abrupt ditch or obstacle. No licence plates face the camera, no readable text, no logos. Realistic caravan wheels and body, nothing oversized or heavy-goods-like.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "reject",
+            "proposal_sha256": "bc969700b5270f95344d985f1fd0dcd1c67854ccf7627c6f80c47986d8bd798e",
+            "image_sha256": "511bcb6f07898be2119480c8c7b412ce7702b2ad15104a358a79da8c98863e92",
+            "notes": "Reject: caravan has red rear lamp clusters at the end connected to tow car, appearing towed backwards. Car plates absent; lay-by behind and opposite side. Recompose side-on with correct caravan front, plate faces outside view and no depicted lay-by.",
+            "recorded_on": "2026-10-09"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-002/long_caravan_facilitate_overtaking/scene-2.jpg",
+          "image_sha256": "2a89d3ff12cee2d9c562563364a83d4ac75d5c30e3ec6e7a39d429369dedd3fd",
+          "prompt": "Correct and recompose the original image to a TRUE SIDE PROFILE scene, camera perpendicular to the road. Ordinary estate car and small touring caravan travel LEFT on the FAR half of an unmarked narrow rural two-way French road (their right-hand lane). A smaller car follows behind to the RIGHT at a generous gap. Both cars' front and rear plate surfaces are naturally out of view in exact side profile, not blanked out. CRITICAL caravan orientation: tow drawbar at LEFT connects the caravan FRONT to rear of tow car; caravan front has a sloping aerodynamic front with window and two small WHITE front position lamps. NO RED REAR LAMPS on the caravan front. Red tail lamps only at RIGHT rear end and not facing camera. Caravan side has one wheel on near side and plausible door/window. No lay-by in this corrected composition, just grass verges. No signs, people, numbers or readable text, no brand logos. Correct separate towball coupling and cable. Preserve sunny rural setting, landscape16:9 original realistic photo.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "proposal_sha256": "bc969700b5270f95344d985f1fd0dcd1c67854ccf7627c6f80c47986d8bd798e",
+            "image_sha256": "2a89d3ff12cee2d9c562563364a83d4ac75d5c30e3ec6e7a39d429369dedd3fd",
+            "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+            "compared_question_keys": [
+              "situation_motorway_friend_tow_offer",
+              "situation_mountain_downhill_yields",
+              "situation_coolant_hot_cap_wait",
+              "situation_triangle_placement_personal_danger",
+              "situation_overtake_middle_lane_hog_no_right"
+            ],
+            "checks": {
+              "official_rule": "Reviewed authoritative sources checked 2026-10-09: R414-9: when road width/profile/condition prevents easy safe overtaking, a combination longer than 7 m must slow and if needed stop or pull over to let smaller vehicles pass. Ordinary B licence permits a trailer up to 750 kg PTAC, or a heavier trailer when the sum of vehicle and trailer PTAC does not exceed 3500 kg.",
+              "novelty": "Existing being-overtaken rule is do-not-accelerate; this adds a specific positive duty for combinations longer than seven metres when safe overtaking is obstructed by road width/profile. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+              "signs_and_text": "No readable signs or text. Faint old road paint fragments do not form a continuous separator or a different control.",
+              "road_geometry": "Corrected side view shows both vehicles facing left on the far/right-hand side of a narrow rural road. Lay-by from rejected image removed. Width-limited passing explicitly stated; no precise speed or distance is inferred.",
+              "vehicles_and_people": "Caravan now has sloping front toward towing car and red rear lamps only at the far rear; proper near-side wheel, windows and front coupler. Smaller car follows rather than overtakes. Its following gap is not a model distance and no speed is stated.",
+              "dashboard_and_equipment": "Drawbar and cable connected, small jockey wheel clear of ground; plate faces outside view, no visible blank recesses. No dashboard shown.",
+              "full_resolution": "Viewed exact staged scene-2.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No readable signs or text. Faint old road paint fragments do not form a continuous separator or a different control. Drawbar and cable connected, small jockey wheel clear of ground; plate faces outside view, no visible blank recesses. No dashboard shown.",
+              "phone_size": "Viewed phone-preview-2.jpg at 390 px. Combination and following smaller car remain distinct at 390 px; the stated 8 m length supplies the legal threshold.",
+              "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: Driver is towing a caravan; total length 8 metres, sum of PTAC 3200 kg, within ordinary B scope. Narrow road does not allow a following smaller car to pass with ease and safety.",
+              "all_four_options": "Correct set d. FR: A: Incorrect : une action pour faciliter le passage est requise.; B: Incorrect : accélérer aggrave la difficulté.; C: Incorrect : ne pas inciter à un dépassement sans visibilité.; D: Correct : obligation adaptée au gabarit et à la route. EN: A: Incorrect: action to facilitate passing is required.; B: Incorrect: accelerating makes passing harder.; C: Incorrect: do not encourage passing without visibility.; D: Correct: the duty depends on combination size and road conditions."
+            },
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-002/long_caravan_facilitate_overtaking/scene-2.jpg",
+      "image_sha256": "2a89d3ff12cee2d9c562563364a83d4ac75d5c30e3ec6e7a39d429369dedd3fd",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "proposal_sha256": "bc969700b5270f95344d985f1fd0dcd1c67854ccf7627c6f80c47986d8bd798e",
+        "image_sha256": "2a89d3ff12cee2d9c562563364a83d4ac75d5c30e3ec6e7a39d429369dedd3fd",
+        "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+        "compared_question_keys": [
+          "situation_motorway_friend_tow_offer",
+          "situation_mountain_downhill_yields",
+          "situation_coolant_hot_cap_wait",
+          "situation_triangle_placement_personal_danger",
+          "situation_overtake_middle_lane_hog_no_right"
+        ],
+        "checks": {
+          "official_rule": "Reviewed authoritative sources checked 2026-10-09: R414-9: when road width/profile/condition prevents easy safe overtaking, a combination longer than 7 m must slow and if needed stop or pull over to let smaller vehicles pass. Ordinary B licence permits a trailer up to 750 kg PTAC, or a heavier trailer when the sum of vehicle and trailer PTAC does not exceed 3500 kg.",
+          "novelty": "Existing being-overtaken rule is do-not-accelerate; this adds a specific positive duty for combinations longer than seven metres when safe overtaking is obstructed by road width/profile. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+          "signs_and_text": "No readable signs or text. Faint old road paint fragments do not form a continuous separator or a different control.",
+          "road_geometry": "Corrected side view shows both vehicles facing left on the far/right-hand side of a narrow rural road. Lay-by from rejected image removed. Width-limited passing explicitly stated; no precise speed or distance is inferred.",
+          "vehicles_and_people": "Caravan now has sloping front toward towing car and red rear lamps only at the far rear; proper near-side wheel, windows and front coupler. Smaller car follows rather than overtakes. Its following gap is not a model distance and no speed is stated.",
+          "dashboard_and_equipment": "Drawbar and cable connected, small jockey wheel clear of ground; plate faces outside view, no visible blank recesses. No dashboard shown.",
+          "full_resolution": "Viewed exact staged scene-2.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. No readable signs or text. Faint old road paint fragments do not form a continuous separator or a different control. Drawbar and cable connected, small jockey wheel clear of ground; plate faces outside view, no visible blank recesses. No dashboard shown.",
+          "phone_size": "Viewed phone-preview-2.jpg at 390 px. Combination and following smaller car remain distinct at 390 px; the stated 8 m length supplies the legal threshold.",
+          "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: Driver is towing a caravan; total length 8 metres, sum of PTAC 3200 kg, within ordinary B scope. Narrow road does not allow a following smaller car to pass with ease and safety.",
+          "all_four_options": "Correct set d. FR: A: Incorrect : une action pour faciliter le passage est requise.; B: Incorrect : accélérer aggrave la difficulté.; C: Incorrect : ne pas inciter à un dépassement sans visibilité.; D: Correct : obligation adaptée au gabarit et à la route. EN: A: Incorrect: action to facilitate passing is required.; B: Incorrect: accelerating makes passing harder.; C: Incorrect: do not encourage passing without visibility.; D: Correct: the duty depends on combination size and road conditions."
+        },
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "0caa10d235aa170d472dcf850ca6d3d7e91363f8516003220e451333d021703b"
+    },
+    {
+      "proposal": {
+        "scenario_id": "motorway_tunnel_fire_evacuate",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car driver; no specialist qualification required.",
+        "learning_objective": "Leave the car and evacuate a tunnel on foot when a vehicle ahead is burning.",
+        "topic": "tunnel.fire_self_evacuation",
+        "scenario": "In a motorway tunnel a vehicle ahead is on fire. The driver has safely stopped and switched off the engine. Question asks immediate personal evacuation, not fire-fighting.",
+        "novelty_review": "Existing tunnel items test routine stopping prohibition or queue separation; motorway breakdown protection does not cover fire in a confined tunnel.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_motorway_tunnel_fire_evacuate",
+          "category_slug": "motorways",
+          "correct_answers": [
+            "b"
+          ],
+          "difficulty": "medium",
+          "translations": {
+            "fr": {
+              "question_text": "Dans ce tunnel autoroutier, un véhicule brûle devant moi. Je suis arrêté en sécurité, moteur coupé. Que faire ensuite ?",
+              "answer_a": "Rester dans la voiture, vitres fermées, jusqu’aux pompiers.",
+              "answer_b": "Quitter la voiture prudemment et rejoindre à pied une issue de secours accessible.",
+              "answer_c": "Faire demi-tour dans le tunnel.",
+              "answer_d": "Traverser la fumée en voiture pour sortir plus vite.",
+              "explanation": "La voiture ne protège pas des fumées toxiques. Je quitte le véhicule en faisant attention à la circulation et j’évacue sans attendre les pompiers, en suivant la signalisation des issues de secours."
+            },
+            "en": {
+              "question_text": "In this motorway tunnel, a vehicle ahead is on fire. I have stopped safely and switched off the engine. What should I do next?",
+              "answer_a": "Stay in the car with the windows closed until firefighters arrive.",
+              "answer_b": "Leave the car carefully and walk to an accessible emergency exit.",
+              "answer_c": "Make a U-turn inside the tunnel.",
+              "answer_d": "Drive through the smoke to get out faster.",
+              "explanation": "The car does not protect me from toxic smoke. I leave while watching for traffic and evacuate without waiting for firefighters, following the emergency-exit signs."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Incorrect : la voiture ne protège pas de l’asphyxie.",
+            "b": "Correct : auto-évacuation à pied vers une issue accessible.",
+            "c": "Incorrect : demi-tour dangereux et retard à l’évacuation.",
+            "d": "Incorrect : ne pas s’engager vers le foyer et les fumées."
+          },
+          "en": {
+            "a": "Incorrect: the car does not prevent smoke inhalation.",
+            "b": "Correct: evacuate on foot towards an accessible exit.",
+            "c": "Incorrect: a U-turn creates danger and delays evacuation.",
+            "d": "Incorrect: do not drive towards the fire and smoke."
+          }
+        },
+        "image_prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. Driver-eye view through a stopped car windscreen in a French motorway tunnel with two lanes travelling in the same direction. Frame centres on the roadway ahead; only very small strips of side walls visible, so all side-wall doors and signs are outside the frame. One car is stopped far ahead in the right lane, about sixty metres away, a small realistic flame and dark smoke rising from its engine area and collecting near the tunnel roof. No injuries or people visible. Our viewpoint is in the right lane well behind it. Consistent straight tunnel perspective, one white broken lane divider to the left, long 3 metre strokes with 3.5 metre gaps, solid white right edge line beside a narrow raised walkway. Ordinary evenly spaced overhead tunnel lamps. No readable text, no signals, no exit pictograms invented. Clear air in foreground, no crash debris, no fireballs, no dramatic cinematic lighting. Narrow dashboard edge only at bottom, no gauges.",
+        "sources": [
+          {
+            "url": "https://www.dir.ile-de-france.developpement-durable.gouv.fr/l-auto-evacuation-pour-assurer-la-securite-de-tous-a868.html",
+            "kind": "official",
+            "checked_on": "2026-10-09",
+            "supports": "Updated 8 January 2024: in tunnel fire, leave vehicle carefully and evacuate on foot towards emergency exits without waiting for firefighters; cars do not protect against smoke."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_phone_in_moving_queue",
+          "similarity": 0.481,
+          "question_fr": "La file avance au pas et mon véhicule roule encore. Puis-je tenir mon téléphone pour lire un message ?"
+        },
+        {
+          "key": "safety_emergency_corridor",
+          "similarity": 0.467,
+          "question_fr": "J’approche d’un véhicule d’intervention ou de service arrêté avec ses feux d’alerte. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_motorway_passenger_walks_shoulder",
+          "similarity": 0.452,
+          "question_fr": "Après une panne sur autoroute, mon passager veut marcher sur la bande d'arrêt d'urgence jusqu'à l'aire suivante. Est-ce autorisé ?"
+        },
+        {
+          "key": "situation_tunnel_nonessential_stop",
+          "similarity": 0.444,
+          "question_fr": "Mon passager veut descendre dans ce tunnel, sans urgence ni emplacement prévu. Puis-je m'arrêter quelques instants ?"
+        },
+        {
+          "key": "situation_motorway_friend_tow_offer",
+          "similarity": 0.44,
+          "question_fr": "Ma voiture est en panne sur autoroute et un ami propose de la remorquer avec une sangle. Que dois-je faire ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-002/motorway_tunnel_fire_evacuate/scene-1.jpg",
+          "image_sha256": "971621f60735d5f7b4765ee99ee1fccabaead56c98f0aac4a054ba98f23c88ca",
+          "prompt": "Create one original photorealistic French driving-theory educational scene, landscape 16:9, 1672x941 or greater. No embedded question, answer, caption, watermark, brand logo, solution highlights or collage. Natural mechanically plausible vehicle parts, anatomically accurate people, realistic French right-hand traffic. Every visible marking must be correct. Only show requested scene elements. Composition must remain clear at 390-pixel phone width. Driver-eye view through a stopped car windscreen in a French motorway tunnel with two lanes travelling in the same direction. Frame centres on the roadway ahead; only very small strips of side walls visible, so all side-wall doors and signs are outside the frame. One car is stopped far ahead in the right lane, about sixty metres away, a small realistic flame and dark smoke rising from its engine area and collecting near the tunnel roof. No injuries or people visible. Our viewpoint is in the right lane well behind it. Consistent straight tunnel perspective, one white broken lane divider to the left, long 3 metre strokes with 3.5 metre gaps, solid white right edge line beside a narrow raised walkway. Ordinary evenly spaced overhead tunnel lamps. No readable text, no signals, no exit pictograms invented. Clear air in foreground, no crash debris, no fireballs, no dramatic cinematic lighting. Narrow dashboard edge only at bottom, no gauges.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "reject",
+            "proposal_sha256": "d14ccb87a5141b024751ac27db1919391c41953ec3139f3b65738c78d8764623",
+            "image_sha256": "971621f60735d5f7b4765ee99ee1fccabaead56c98f0aac4a054ba98f23c88ca",
+            "notes": "Reject: short isolated lane dashes do not match specified French proportions; broad blank tunnel walls create unresolved wayfinding realism. Use restricted field of view, continuous white lane separator, wall equipment outside crop.",
+            "recorded_on": "2026-10-09"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-002/motorway_tunnel_fire_evacuate/scene-2.jpg",
+          "image_sha256": "ea114c50fe7f121a40f5c716f2454a682ffd5c6dcc1efca18dae32b621053bc6",
+          "prompt": "Edit this original tunnel fire scene. Use a much tighter telephoto field of view centred on the burning car ahead and the roadway leading to it, with the side-wall equipment and exit doors outside the left and right image edges. A two-lane one-way tunnel: replace all broken lane dashes with one uniform thin CONTINUOUS WHITE lane divider at left; solid white right edge line. No duplicate lines, short dashes or oncoming traffic. Keep camera in right lane far enough behind the car; a thin dashboard edge at bottom. A small amount of ceiling with lamps above, but no broad stretches of blank wall. Car fire visibly starts ahead at engine/bonnet, smoke rises upward; no people or injuries. Number plate either correct French AB-123-CD black on white with blue side bands, or too distant in natural perspective to show legible characters, not a blank recess. No overlaid text/arrows. Landscape16:9, realistic photograph, clear foreground.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "reject",
+            "proposal_sha256": "d14ccb87a5141b024751ac27db1919391c41953ec3139f3b65738c78d8764623",
+            "image_sha256": "ea114c50fe7f121a40f5c716f2454a682ffd5c6dcc1efca18dae32b621053bc6",
+            "notes": "Reject replacement: car now large enough for its wholly blank registration plate to be obvious, and tunnel still exposes broad unsignposted walls. Recompose tightly around upper rear of burning vehicle and smoke, exclude plate and side walls naturally rather than erasing required equipment.",
+            "recorded_on": "2026-10-09"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-002/motorway_tunnel_fire_evacuate/scene-3.jpg",
+          "image_sha256": "9087f191abc390352efca8d2b5315e6eef5e2c4da8e2d353d5d961648d57cc29",
+          "prompt": "Use the supplied image as the scene reference but completely change the framing to a TIGHT TELEPHOTO DETAIL taken from a safe distance in the following car, landscape16:9. The UPPER REAR HALF of the burning car occupies the lower central half of the frame: roof, rear window, and upper portions of rear lights only. The LOWER body, registration plate, wheels and roadway are BELOW THE BOTTOM FRAME EDGE, naturally cropped, never erased. Black smoke and visible orange flames rising from the bonnet at the far front of the vehicle occupy the upper half. Tunnel CEILING with just two realistic ceiling lamps is seen behind the smoke; LEFT AND RIGHT SIDE WALLS and all road markings are outside the frame. This is an optical zoom detail, not a close physical viewpoint. No people, no injuries, no words, no logos, no captions. Mechanically intact rear window and roof shape, no impossible vehicle geometry, realistic restrained fire rather than explosion. The image illustrates an already stated tunnel fire; it need not show evacuation or exits. Original educational photograph.\n",
+          "created_on": "2026-10-09",
+          "review": {
+            "result": "pass",
+            "proposal_sha256": "d14ccb87a5141b024751ac27db1919391c41953ec3139f3b65738c78d8764623",
+            "image_sha256": "9087f191abc390352efca8d2b5315e6eef5e2c4da8e2d353d5d961648d57cc29",
+            "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+            "compared_question_keys": [
+              "situation_phone_in_moving_queue",
+              "safety_emergency_corridor",
+              "situation_motorway_passenger_walks_shoulder",
+              "situation_tunnel_nonessential_stop",
+              "situation_motorway_friend_tow_offer"
+            ],
+            "checks": {
+              "official_rule": "Reviewed authoritative sources checked 2026-10-09: Updated 8 January 2024: in tunnel fire, leave vehicle carefully and evacuate on foot towards emergency exits without waiting for firefighters; cars do not protect against smoke.",
+              "novelty": "Existing tunnel items test routine stopping prohibition or queue separation; motorway breakdown protection does not cover fire in a confined tunnel. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+              "signs_and_text": "Final optical-zoom composition contains no signs, text, road markings or registration plate; lower car body and side-wall equipment are naturally outside frame, not erased.",
+              "road_geometry": "Tight telephoto detail of car ahead in tunnel, ceiling arch and two lamps visible; road and exit locations outside frame. The stem supplies motorway tunnel, safe stopping and engine-off conditions.",
+              "vehicles_and_people": "Burning car upper rear, rear glass, roof rails, antenna and red upper tail lamps coherent. Fire ahead of cabin and smoke rising toward ceiling; no people or injuries. Zoom framing does not assert short physical following distance.",
+              "dashboard_and_equipment": "Headrests, mirror and heated rear-window lines plausible through glass. No dashboard numbers or exit hardware shown.",
+              "full_resolution": "Viewed exact staged scene-3.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. Final optical-zoom composition contains no signs, text, road markings or registration plate; lower car body and side-wall equipment are naturally outside frame, not erased. Headrests, mirror and heated rear-window lines plausible through glass. No dashboard numbers or exit hardware shown.",
+              "phone_size": "Viewed phone-preview-3.jpg at 390 px. Fire, rising smoke and tunnel setting are unmistakable at 390 px. No small route sign must be read to choose immediate evacuation.",
+              "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: In a motorway tunnel a vehicle ahead is on fire. The driver has safely stopped and switched off the engine. Question asks immediate personal evacuation, not fire-fighting.",
+              "all_four_options": "Correct set b. FR: A: Incorrect : la voiture ne protège pas de l’asphyxie.; B: Correct : auto-évacuation à pied vers une issue accessible.; C: Incorrect : demi-tour dangereux et retard à l’évacuation.; D: Incorrect : ne pas s’engager vers le foyer et les fumées. EN: A: Incorrect: the car does not prevent smoke inhalation.; B: Correct: evacuate on foot towards an accessible exit.; C: Incorrect: a U-turn creates danger and delays evacuation.; D: Incorrect: do not drive towards the fire and smoke."
+            },
+            "recorded_on": "2026-10-09"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-002/motorway_tunnel_fire_evacuate/scene-3.jpg",
+      "image_sha256": "9087f191abc390352efca8d2b5315e6eef5e2c4da8e2d353d5d961648d57cc29",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "result": "pass",
+        "proposal_sha256": "d14ccb87a5141b024751ac27db1919391c41953ec3139f3b65738c78d8764623",
+        "image_sha256": "9087f191abc390352efca8d2b5315e6eef5e2c4da8e2d353d5d961648d57cc29",
+        "notes": "No detected unresolved defects after full-resolution and phone-size inspection of these exact bytes. Original scene generated with built-in image tool; correction history retained. This is review acceptance, not a guarantee of infallible AI review.",
+        "compared_question_keys": [
+          "situation_phone_in_moving_queue",
+          "safety_emergency_corridor",
+          "situation_motorway_passenger_walks_shoulder",
+          "situation_tunnel_nonessential_stop",
+          "situation_motorway_friend_tow_offer"
+        ],
+        "checks": {
+          "official_rule": "Reviewed authoritative sources checked 2026-10-09: Updated 8 January 2024: in tunnel fire, leave vehicle carefully and evacuate on foot towards emergency exits without waiting for firefighters; cars do not protect against smoke.",
+          "novelty": "Existing tunnel items test routine stopping prohibition or queue separation; motorway breakdown protection does not cover fire in a confined tunnel. Read all five saved nearest French stems, options and explanations and the broader category inventory; none tests this same decision and conditions.",
+          "signs_and_text": "Final optical-zoom composition contains no signs, text, road markings or registration plate; lower car body and side-wall equipment are naturally outside frame, not erased.",
+          "road_geometry": "Tight telephoto detail of car ahead in tunnel, ceiling arch and two lamps visible; road and exit locations outside frame. The stem supplies motorway tunnel, safe stopping and engine-off conditions.",
+          "vehicles_and_people": "Burning car upper rear, rear glass, roof rails, antenna and red upper tail lamps coherent. Fire ahead of cabin and smoke rising toward ceiling; no people or injuries. Zoom framing does not assert short physical following distance.",
+          "dashboard_and_equipment": "Headrests, mirror and heated rear-window lines plausible through glass. No dashboard numbers or exit hardware shown.",
+          "full_resolution": "Viewed exact staged scene-3.jpg at original 1672x941 resolution, checking entire frame and relevant vehicle/marking/person details. Final optical-zoom composition contains no signs, text, road markings or registration plate; lower car body and side-wall equipment are naturally outside frame, not erased. Headrests, mirror and heated rear-window lines plausible through glass. No dashboard numbers or exit hardware shown.",
+          "phone_size": "Viewed phone-preview-3.jpg at 390 px. Fire, rising smoke and tunnel setting are unmistakable at 390 px. No small route sign must be read to choose immediate evacuation.",
+          "french_and_english": "Read both complete translations and four options. Matching meaning, correct answer set and explanations. Facts not established by the still scene are explicit: In a motorway tunnel a vehicle ahead is on fire. The driver has safely stopped and switched off the engine. Question asks immediate personal evacuation, not fire-fighting.",
+          "all_four_options": "Correct set b. FR: A: Incorrect : la voiture ne protège pas de l’asphyxie.; B: Correct : auto-évacuation à pied vers une issue accessible.; C: Incorrect : demi-tour dangereux et retard à l’évacuation.; D: Incorrect : ne pas s’engager vers le foyer et les fumées. EN: A: Incorrect: the car does not prevent smoke inhalation.; B: Correct: evacuate on foot towards an accessible exit.; C: Incorrect: a U-turn creates danger and delays evacuation.; D: Incorrect: do not drive towards the fire and smoke."
+        },
+        "recorded_on": "2026-10-09"
+      },
+      "imported_question_sha256": "9bc5813864ce2642043b5f4c36d4940a63ecfaa2000c907df983ec8cfd4cbfe7"
+    }
+  ],
+  "imported_on": "2026-10-09",
+  "content_version": 94,
+  "questions_after": 408,
+  "pack_after_sha256": "107dc3d308e592507a3ea975480bcc3ed37a5dcb98cf5f0041a6aa4df2ca15ea",
+  "verified_on": "2026-10-10",
+  "verification": {
+    "pack_sha256": "107dc3d308e592507a3ea975480bcc3ed37a5dcb98cf5f0041a6aa4df2ca15ea",
+    "content_version": 94,
+    "python_tests": {
+      "result": "pass",
+      "notes": "All 47 Python tests passed, including duplicate prevention, multiple answers, stale approvals and recoverable imports.",
+      "path": "assets-source/question-batches/expansion-002/evidence/python-tests.log",
+      "sha256": "3c02d25e239cdfc208891fbcb49fa5401547ccb16c41c3f2ab6d392f87c75cc8"
+    },
+    "ios_tests": {
+      "result": "pass",
+      "notes": "All 36 native tests passed, including image decoding, bank seed parity and stable progress updates.",
+      "path": "assets-source/question-batches/expansion-002/evidence/ios-tests.log",
+      "sha256": "de316b4d0784c810ce02f6cbc0bcb6ce58ceefbda8874ee07c2ac61686523aad"
+    },
+    "sqlite_check": {
+      "result": "pass",
+      "notes": "All 408 active questions and both translations match pack v94; progress hash unchanged before/after review.",
+      "path": "assets-source/question-batches/expansion-002/evidence/sqlite-after.json",
+      "sha256": "f1f9d856f1df496d443d5e898b5fd8809a1e1efc0baa652e7d0c4a0e369fa140"
+    },
+    "simulator_review": {
+      "result": "pass",
+      "notes": "All ten new French screens inspected and scored; English full, partial and extra multi-answer selections and long-text scrolling checked.",
+      "path": "assets-source/question-batches/expansion-002/evidence/simulator-review.json",
+      "sha256": "336eab4cae956f2f2e3b73bdd29919ef6f90f4f781cf1c727ae8ff24c7684a89"
+    }
+  }
+}

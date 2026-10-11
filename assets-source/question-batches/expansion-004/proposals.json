@@ -1,0 +1,614 @@
+[
+  {
+    "scenario_id": "ead_restriction_borrowed_car",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+    "learning_objective": "Apply a personal EAD driving restriction to a borrowed passenger car.",
+    "topic": "alcohol.ead_licence_scope",
+    "scenario": "A sober driver whose B licence has an active EAD restriction is offered a borrowed car with no EAD.",
+    "novelty_review": "Existing EAD question covers stopping before a requested repeat breath. This tests which cars the restricted licence permits, including a loan, even while sober.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_ead_restriction_borrowed_car",
+      "category_slug": "alcohol_drugs",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Mon permis B impose actuellement un éthylotest antidémarrage (EAD). Je suis sobre. Puis-je conduire la voiture prêtée par un ami si elle n’a pas d’EAD ?",
+          "answer_a": "Oui, puisque je n’ai pas bu.",
+          "answer_b": "Non, la restriction s’applique aussi à cette voiture prêtée.",
+          "answer_c": "Oui, si mon ami m’accompagne.",
+          "answer_d": "Oui, pour un trajet inférieur à dix kilomètres.",
+          "explanation": "La restriction limite mon droit de conduire aux voitures équipées d’un EAD. Le prêt du véhicule, ma sobriété ou la présence de son propriétaire ne suppriment pas cette condition."
+        },
+        "en": {
+          "question_text": "My category-B licence currently requires an alcohol interlock (EAD). I am sober. May I drive a friend’s borrowed car if it has no EAD?",
+          "answer_a": "Yes, because I have not drunk alcohol.",
+          "answer_b": "No; the restriction also applies to this borrowed car.",
+          "answer_c": "Yes, if my friend travels with me.",
+          "answer_d": "Yes, for a journey of less than ten kilometres.",
+          "explanation": "The restriction limits my driving entitlement to cars equipped with an alcohol interlock. Borrowing the car, being sober or having its owner present does not remove that condition."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "La sobriété ne supprime pas la restriction.",
+        "b": "Le droit à conduire reste soumis à l’équipement.",
+        "c": "La présence de l’ami ne vaut pas dérogation.",
+        "d": "Aucune exception de distance."
+      },
+      "en": {
+        "a": "Sobriety does not remove the restriction.",
+        "b": "The equipment condition still applies.",
+        "c": "The owner’s presence is not an exemption.",
+        "d": "There is no short-distance exemption."
+      }
+    },
+    "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Outside a quiet private home, one adult hand extends a plain black car key fob toward the camera, in front of the closed driver door of a parked ordinary blue hatchback. The key has no lettering or logo. Side view of the door and mirror only, front and rear number plates out of frame. No road signs, no dashboard, no drinks, no other people. Natural late-afternoon light; believable five-finger hand. The image illustrates borrowing; the question supplies licence restriction and equipment facts.",
+    "sources": [
+      {
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2671",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "Current page verified 25 September 2026: a licence with EAD restriction permits only equipped light vehicles; category B car loan is no exemption."
+      }
+    ]
+  },
+  {
+    "scenario_id": "ead_personal_breath_no_substitute",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+    "learning_objective": "Do not substitute another person’s breath in an alcohol interlock.",
+    "topic": "alcohol.ead_personal_measurement",
+    "scenario": "Before starting an EAD-equipped car, the intended driver is offered a breath sample by a sober passenger.",
+    "novelty_review": "Distinct from EAD repeat-test timing and equipment restriction: identifies fraudulent substitution of the driver’s own measurement.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_ead_personal_breath_no_substitute",
+      "category_slug": "alcohol_drugs",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Ma voiture est obligatoirement équipée d’un EAD. Avant que je conduise, mon passager sobre propose de souffler à ma place pour permettre le démarrage. Puis-je accepter ?",
+          "answer_a": "Oui, si le résultat est négatif.",
+          "answer_b": "Oui, si le passager reste à mes côtés.",
+          "answer_c": "Oui, si je souffle moi-même au prochain contrôle.",
+          "answer_d": "Non, le souffle doit être celui du conducteur.",
+          "explanation": "L’EAD doit mesurer l’alcoolémie du conducteur avant le démarrage. Conduire après qu’un tiers a soufflé pour permettre de démarrer est interdit ; un nouveau souffle ultérieur ne régularise pas cette substitution."
+        },
+        "en": {
+          "question_text": "My car must be fitted with an alcohol interlock. Before I drive, my sober passenger offers to blow into it for me so the engine can start. May I accept?",
+          "answer_a": "Yes, if the result is negative.",
+          "answer_b": "Yes, if the passenger stays beside me.",
+          "answer_c": "Yes, if I blow into it myself at the next check.",
+          "answer_d": "No; the breath sample must come from the driver.",
+          "explanation": "The interlock must measure the driver’s alcohol level before starting. Driving after someone else has supplied the breath to enable starting is prohibited; a later personal test does not undo that substitution."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Un résultat concernant le passager ne mesure pas le conducteur.",
+        "b": "Le passager n’est pas le conducteur testé.",
+        "c": "Un contrôle futur n’autorise pas la substitution.",
+        "d": "La mesure personnelle est obligatoire."
+      },
+      "en": {
+        "a": "A passenger’s result does not measure the driver.",
+        "b": "Remaining in the car changes nothing.",
+        "c": "A later test does not permit substitution.",
+        "d": "The driver must provide the sample."
+      }
+    },
+    "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Close natural photograph inside a parked left-hand-drive passenger car. A generic alcohol-interlock handset is clipped securely to the centre console: compact rectangular black device, blank unlit LCD, a clear disposable mouthpiece protruding horizontally from its top side, coiled cable visibly connecting it to the lower dashboard. Driver steering wheel partially visible on the LEFT. No hands or people, no readable control labels, no test result, no brand. No phone resemblance: substantial breath-testing mouthpiece and wired handset are clear. Exterior through windows is a quiet parking area, not a moving road.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000025109766/",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "R234-6: the driver must use the EAD before starting and may not drive after a third party supplied the breath to enable starting."
+      }
+    ]
+  },
+  {
+    "scenario_id": "motorway_long_combination_two_right_lanes",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+    "learning_objective": "Restrict a combination over seven metres to the two rightmost general traffic lanes when overtaking.",
+    "topic": "motorway.towing_lane_restriction",
+    "scenario": "Three motorway lanes in one direction, dry, no reserved lanes or change of direction. Car and caravan together 8m; sum of PTACs 3200kg.",
+    "novelty_review": "Keeping right after a pass and a three-lane TWO-WAY road are covered. Here the restriction derives from combination length on three SAME-DIRECTION motorway lanes.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_motorway_long_combination_two_right_lanes",
+      "category_slug": "motorways",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Sur cette autoroute à trois voies dans mon sens, mon ensemble voiture-caravane mesure 8 m (somme des PTAC : 3 200 kg). Puis-je utiliser la voie la plus à gauche pour dépasser ?",
+          "answer_a": "Oui, car l’ensemble est autorisé avec mon permis B.",
+          "answer_b": "Oui, si la voie est libre.",
+          "answer_c": "Non, je suis limité aux deux voies les plus à droite.",
+          "answer_d": "Oui, si je reste sous 90 km/h.",
+          "explanation": "Sur une chaussée à au moins trois voies de circulation générale dans un même sens, un ensemble de plus de 7 m utilise seulement les deux voies les plus à droite pour circuler et dépasser. La masse inférieure à 3,5 tonnes ne supprime pas cette règle de longueur."
+        },
+        "en": {
+          "question_text": "On this motorway with three lanes in my direction, my car and caravan are 8 m long (combined maximum authorised masses: 3,200 kg). May I use the leftmost lane to overtake?",
+          "answer_a": "Yes, because my category-B licence covers the combination.",
+          "answer_b": "Yes, if that lane is clear.",
+          "answer_c": "No; I am limited to the two rightmost lanes.",
+          "answer_d": "Yes, if I stay below 90 km/h.",
+          "explanation": "On a road with at least three general traffic lanes in the same direction, a combination longer than 7 m uses only the two rightmost lanes for normal driving and overtaking. Being below 3.5 tonnes does not remove this length-based rule."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "La catégorie de permis ne supprime pas la restriction de voie.",
+        "b": "Une voie libre reste interdite à cet ensemble pour dépasser.",
+        "c": "R412-25 vise les ensembles de plus de 7 m.",
+        "d": "Ralentir ne lève pas la restriction."
+      },
+      "en": {
+        "a": "Licence entitlement does not remove the lane restriction.",
+        "b": "An empty lane does not make it available.",
+        "c": "R412-25 applies to combinations over 7 m.",
+        "d": "A lower speed does not remove the restriction."
+      }
+    },
+    "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Forward-facing eye-level road photograph from an ordinary car in the RIGHTMOST lane of a dry straight French motorway, with THREE equally wide traffic lanes in this direction, clearly formed by exactly TWO broken white lane-divider lines. A continuous white edge line on the right borders a broad empty emergency shoulder and guardrail. Concrete median barrier at the left edge of the leftmost lane. No other vehicles, no signs, no exit, no junction, no arrows painted on road. All three lanes converge consistently to the same vanishing point. No dashboard. The camera car’s caravan is behind the camera and need not appear. Wide daylight landscape.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177122",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "R412-25 in force: combinations longer than 7m use the two rightmost general lanes when three or more serve one direction; stated scenario is overtaking, not an exception for changing direction."
+      }
+    ]
+  },
+  {
+    "scenario_id": "motorway_long_combinations_fifty_metre_gap",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+    "learning_objective": "Apply the fifty-metre minimum when two long combinations follow at the same speed outside built-up areas.",
+    "topic": "motorway.towing_following_distance",
+    "scenario": "Two car-caravan combinations each 8m long travel at the same 70km/h outside a built-up area on a motorway. Own sum PTAC3200kg. No special increased-distance sign.",
+    "novelty_review": "Existing following distance tests general two seconds and rain. The specific 50m floor for TWO long combinations at equal speed is a different condition; 70km/h avoids two-second distance exceeding 50m.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_motorway_long_combinations_fifty_metre_gap",
+      "category_slug": "motorways",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Hors agglomération, nos deux ensembles voiture-caravane mesurent chacun 8 m et roulent à la même vitesse de 70 km/h. Le mien totalise 3 200 kg de PTAC. Sans prescription plus stricte, quelle distance minimale dois-je garder derrière l’autre ?",
+          "answer_a": "Au moins 50 mètres.",
+          "answer_b": "Seulement la distance parcourue en une seconde.",
+          "answer_c": "20 mètres, puisque je conduis une voiture.",
+          "answer_d": "La longueur de ma caravane suffit.",
+          "explanation": "Quand deux véhicules ou ensembles de plus de 7 m se suivent à la même vitesse hors agglomération, l’écart est d’au moins 50 m. À 70 km/h, ce minimum est supérieur à la distance parcourue en deux secondes ; les circonstances peuvent demander davantage."
+        },
+        "en": {
+          "question_text": "Outside a built-up area, our two car-and-caravan combinations are each 8 m long and both travel at 70 km/h. Mine has combined maximum authorised masses of 3,200 kg. With no stricter requirement, what minimum gap must I leave behind the other?",
+          "answer_a": "At least 50 metres.",
+          "answer_b": "Only the distance travelled in one second.",
+          "answer_c": "20 metres, because I am driving a car.",
+          "answer_d": "The length of my caravan is enough.",
+          "explanation": "When two vehicles or combinations longer than 7 m follow at the same speed outside a built-up area, the gap must be at least 50 m. At 70 km/h this exceeds the distance travelled in two seconds; conditions may require an even larger gap."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "R412-12 II impose ce plancher aux deux ensembles longs.",
+        "b": "Une seconde est déjà inférieure au minimum général.",
+        "c": "La voiture tractrice fait partie de l’ensemble long.",
+        "d": "La longueur de la caravane ne constitue pas la distance légale."
+      },
+      "en": {
+        "a": "R412-12 II sets this floor for the two long combinations.",
+        "b": "One second is below even the general time minimum.",
+        "c": "The towing car is part of a long combination.",
+        "d": "The caravan’s length is not the statutory gap."
+      }
+    },
+    "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Natural daylight motorway scene from a following car, TWO lanes in our direction with one broken white lane-divider on the left of our right-hand lane. A compact white touring caravan being towed by an ordinary car is well ahead in our RIGHT lane, rear visible, not a motorhome: caravan box, two small rear red lights, no brake lamps lit, no lettering, registration too distant to resolve any characters. A portion of the towing car can be glimpsed naturally forward of the caravan, not beside it. Clear dry road, empty left lane, continuous right edge line and broad shoulder, guardrail, median on the far left. No signs, arrows or distance annotations. Neither exact speed, length nor distance is to be inferred from the photo; those conditions are supplied in the question.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051682619/",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "R412-12 I/II current since June2025: at least2s generally; outside towns two vehicles/combinations >7m following at equal speed leave at least50m."
+      }
+    ]
+  },
+  {
+    "scenario_id": "r16_right_arrow_conditional_passage",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+    "learning_objective": "Understand the conditional movement and retained yielding duty of a flashing amber R16 arrow.",
+    "topic": "signals.conditional_right_arrow",
+    "scenario": "Driver is in a right-turn lane. Main R11 is red; separate R16 right arrow flashes. No still image is claimed to prove flashing.",
+    "novelty_review": "Existing fixed amber, dark signal and green pedestrian turns do not test permission to cross an associated RED signal in the arrow direction without acquiring priority.",
+    "primary_codes": [
+      "R16"
+    ],
+    "context_codes": [],
+    "question": {
+      "key": "situation_r16_right_arrow_conditional_passage",
+      "category_slug": "priority_rules",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a",
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Je suis dans la voie pour tourner à droite. La flèche jaune clignote alors que le feu principal est rouge. Quelles affirmations sont exactes ?",
+          "answer_a": "Je peux franchir le feu pour tourner à droite avec prudence.",
+          "answer_b": "Je dois céder le passage aux usagers qui ont la priorité.",
+          "answer_c": "Cette flèche m’autorise aussi à aller tout droit.",
+          "answer_d": "La flèche me donne la priorité sur les piétons.",
+          "explanation": "La flèche jaune clignotante d’anticipation autorise uniquement le mouvement indiqué malgré le rouge du feu associé. Elle ne donne pas la priorité : je contrôle les autres usagers et leur cède le passage avant de tourner."
+        },
+        "en": {
+          "question_text": "I am in the right-turn lane. The amber arrow is flashing while the main signal is red. Which statements are correct?",
+          "answer_a": "I may pass the signal to turn right cautiously.",
+          "answer_b": "I must give way to road users who have priority.",
+          "answer_c": "This arrow also allows me to go straight ahead.",
+          "answer_d": "The arrow gives me priority over pedestrians.",
+          "explanation": "The flashing amber filter arrow permits only the indicated movement despite the associated red signal. It does not confer priority: I check for other road users and give way before turning."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Le mouvement indiqué est autorisé sous conditions.",
+        "b": "Le devoir de céder le passage demeure.",
+        "c": "L’autorisation ne concerne pas la direction tout droit.",
+        "d": "Les piétons prioritaires restent prioritaires."
+      },
+      "en": {
+        "a": "The indicated movement is conditionally permitted.",
+        "b": "The duty to give way remains.",
+        "c": "Straight ahead is not authorised by a right arrow.",
+        "d": "Pedestrian priority is not removed."
+      }
+    },
+    "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Close eye-level photograph of a French traffic signal mounted on a single grey pole at a quiet urban corner. Main narrow black vertical housing has exactly three circular lenses: RED top lens brightly lit, middle amber lens OFF dark, bottom green lens OFF dark. Immediately to the RIGHT of the bottom green lens, at the same height, a separate small black single-lens circular signal contains a bright AMBER arrow pointing horizontally to the RIGHT, the standard French R16td filter-arrow shape; ONLY that arrow illuminates against its black background. It is photographed during the on phase of flashing, no drawn motion marks. Main red and separate amber arrow both fully visible, large and sharp. Background: neutral stone wall and leafy trees at the corner, a little asphalt and pavement; shallow depth of field, no other signals, people, signs, lane markings or readable text. No inset, no highlighting.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "Article7 R16: amber flashing arrow associated with R11 permits indicated direction despite red, cautiously while respecting others’ priority."
+      },
+      {
+        "url": "https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_6epartie_vc_20250904.pdf",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "IISR6 articles109-3 and110-5: R16 direction signal associated with R11, directional arrow and placement."
+      }
+    ]
+  },
+  {
+    "scenario_id": "b10a_combination_total_length",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+    "learning_objective": "Apply B10a to the total length of a car-caravan combination despite the lorry silhouette.",
+    "topic": "signs.total_combination_length",
+    "scenario": "B10a7m; car+caravan8m, combined PTAC3200kg. Do not infer length from picture.",
+    "novelty_review": "Other dimensional signs cover height/width/mass; B10a remains catalogue-only. The lorry pictogram does not exclude a passenger-car combination.",
+    "primary_codes": [
+      "B10a"
+    ],
+    "context_codes": [],
+    "question": {
+      "key": "situation_b10a_combination_total_length",
+      "category_slug": "road_signs",
+      "difficulty": "medium",
+      "correct_answers": [
+        "c"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Mon ensemble voiture-caravane mesure 8 m au total (somme des PTAC : 3 200 kg). Puis-je entrer sur la route signalée par ce panneau ?",
+          "answer_a": "Oui, car le dessin ne concerne que les camions.",
+          "answer_b": "Oui, si la voiture seule mesure moins de 7 m.",
+          "answer_c": "Non, la longueur totale de l’ensemble dépasse 7 m.",
+          "answer_d": "Oui, car l’ensemble pèse moins de 3,5 tonnes.",
+          "explanation": "Le panneau B10a limite la longueur des véhicules et des ensembles, pas seulement celle des camions. Les 8 m de l’ensemble dépassent les 7 m indiqués : je choisis un autre itinéraire."
+        },
+        "en": {
+          "question_text": "My car and caravan are 8 m long in total (combined maximum authorised masses: 3,200 kg). May I enter the road marked by this sign?",
+          "answer_a": "Yes, because the picture applies only to lorries.",
+          "answer_b": "Yes, if the car alone is shorter than 7 m.",
+          "answer_c": "No; the total combination length exceeds 7 m.",
+          "answer_d": "Yes, because the combination is below 3.5 tonnes.",
+          "explanation": "B10a restricts the length of vehicles and combinations, not just lorries. The combination’s 8 m length exceeds the displayed 7 m, so I must choose another route."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "La silhouette ne limite pas la règle aux poids lourds.",
+        "b": "Il faut prendre l’ensemble en compte.",
+        "c": "8 m dépasse le seuil de7m.",
+        "d": "Le seuil est une longueur, pas une masse."
+      },
+      "en": {
+        "a": "The silhouette does not limit the rule to lorries.",
+        "b": "The entire combination counts.",
+        "c": "8m exceeds the7m threshold.",
+        "d": "This is a length limit, not a mass limit."
+      }
+    },
+    "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Quiet rural French road with one official B10a length-restriction sign on the RIGHT verge in the near foreground, large and front-facing. Sign is a white circle with thick RED ring; black side-profile lorry silhouette facing LEFT in upper centre; below the truck, black outward-pointing small arrowheads bracket the exact text \"7 m\" horizontally (left arrow points left; right arrow points right). Correct sign graphic, no other words or numbers. Single grey pole. Narrow two-way asphalt rural road recedes beside fields and a stone wall, no centre or edge markings, no vehicles or other signs. Sign occupies roughly one third image height minimum and all symbols remain legible on a phone. No caravan shown: length supplied in the question.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "Article4 B10a excludes vehicles and combinations longer than the displayed length, regardless of passenger-car towing status."
+      }
+    ]
+  },
+  {
+    "scenario_id": "parked_engine_unnecessary_idling",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+    "learning_objective": "Stop an unnecessarily idling combustion engine during parking, even when remaining in the car.",
+    "topic": "environment.parked_engine",
+    "scenario": "Driver waiting parked10min, enginewarm,mildweather,nomechanicalorhealthnecessity.",
+    "novelty_review": "Existing securing parked car concerns runaway/theft on departure. This tests needless idling during parking while the driver stays, a pollution obligation.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_parked_engine_unnecessary_idling",
+      "category_slug": "parking_stopping",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Je stationne dix minutes en attendant un ami, par temps doux. Le moteur thermique est chaud et rien ne nécessite de le laisser tourner. Que dois-je faire ?",
+          "answer_a": "Le laisser au ralenti puisque je reste au volant.",
+          "answer_b": "Couper le moteur pendant cette attente.",
+          "answer_c": "Accélérer légèrement pour éviter l’encrassement.",
+          "answer_d": "Le laisser tourner si les vitres sont fermées.",
+          "explanation": "Un véhicule en stationnement doit avoir son moteur arrêté, sauf nécessité. Ici, rester au volant ne justifie pas le ralenti ; couper le moteur évite aussi une consommation et des émissions inutiles."
+        },
+        "en": {
+          "question_text": "I am parked for ten minutes waiting for a friend in mild weather. The combustion engine is warm and there is no need to keep it running. What must I do?",
+          "answer_a": "Leave it idling because I remain at the wheel.",
+          "answer_b": "Switch off the engine while waiting.",
+          "answer_c": "Rev it slightly to prevent deposits.",
+          "answer_d": "Keep it running if the windows are closed.",
+          "explanation": "A parked vehicle must have its engine stopped unless running it is necessary. Remaining at the wheel does not justify idling here; switching off also avoids needless fuel use and emissions."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "La présence au volant n’est pas une nécessité.",
+        "b": "L’arrêté du12novembre1963art2 impose l’arrêt hors nécessité.",
+        "c": "Accélérer accroît bruit et consommation sans nécessité.",
+        "d": "Les vitres ne créent pas de dérogation."
+      },
+      "en": {
+        "a": "Being at the wheel is not a necessity.",
+        "b": "Article2 requires the engine stopped unless necessary.",
+        "c": "Revving needlessly adds consumption and noise.",
+        "d": "Closed windows are no exemption."
+      }
+    },
+    "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. A plain silver petrol hatchback parked entirely inside a clearly marked white rectangular parking bay on a quiet level outdoor car park, side three-quarter view with number plates outside the crop. One adult driver sits normally behind the left-hand steering wheel, seen through the side window, both hands resting naturally, no phone. Doors closed, tyres on asphalt, no exhaust smoke, no lights flashing, no people near the car. Soft mild-weather daylight, green trees and blank building wall background. No road signs, no text, no dashboard details. No illustration of sound or engine state; these facts are stated in the question.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006074457/",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "Article2, arrêté12November1963 in force: parked vehicles must have engine stopped except necessity, notably cold starts. Conditions exclude necessity."
+      }
+    ]
+  },
+  {
+    "scenario_id": "night_overtake_warning_headlights",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+    "learning_objective": "Use brief light signals rather than the horn for a non-urgent night-time overtaking warning.",
+    "topic": "overtaking.night_warning",
+    "scenario": "Outside town at night, overtaking otherwise lawful and safe, no absolute need to sound horn. Question concerns warning method only.",
+    "novelty_review": "Existing following car at night tests dipping sustained main beams. This tests brief warning signals before an otherwise-safe overtake; no impatience/horn urban scenario repeat.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_night_overtake_warning_headlights",
+      "category_slug": "overtaking",
+      "difficulty": "medium",
+      "correct_answers": [
+        "a"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "De nuit, hors agglomération, je veux avertir le conducteur devant avant un dépassement autorisé et sûr. Sans nécessité absolue de klaxonner, quel avertissement utiliser ?",
+          "answer_a": "Un bref appel de phares, sans maintenir les feux de route.",
+          "answer_b": "Un long coup de klaxon.",
+          "answer_c": "Les feux de détresse en continu.",
+          "answer_d": "Les feux arrière de brouillard.",
+          "explanation": "De nuit, les avertissements se font par allumage intermittent des feux de croisement ou de route. Le klaxon est réservé à l’absolue nécessité ; un bref appel ne doit pas devenir un éclairage éblouissant maintenu."
+        },
+        "en": {
+          "question_text": "At night outside a built-up area, I want to warn the driver ahead before an otherwise lawful and safe overtake. With no absolute need to use the horn, which warning should I use?",
+          "answer_a": "A brief headlight flash, without keeping main beam on.",
+          "answer_b": "A long blast of the horn.",
+          "answer_c": "Continuous hazard warning lights.",
+          "answer_d": "Rear fog lights.",
+          "explanation": "At night, warnings are given by briefly flashing dipped or main beams. The horn is reserved for absolute necessity; a brief flash must not become sustained dazzling main-beam lighting."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "R416-2 prévoit les avertissements lumineux intermittents.",
+        "b": "Pas d’absolue nécessité justifiant le klaxon.",
+        "c": "Les feux de détresse ne signalent pas cette intention.",
+        "d": "Les antibrouillard ne sont pas un avertisseur de dépassement."
+      },
+      "en": {
+        "a": "R416-2 specifies intermittent light warnings at night.",
+        "b": "No absolute necessity justifies the horn.",
+        "c": "Hazards do not communicate this warning.",
+        "d": "Fog lamps are not overtaking warning lights."
+      }
+    },
+    "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Night-time forward road photograph from a following passenger car on a straight dry rural French two-way road. One ordinary dark car ahead in our RIGHT-hand lane with two normal dim red rear position lamps, no brake or turn indicators. White broken centreline to its LEFT, clear empty opposing lane and continuous white road edges. Wide unlit countryside, stars not necessary, no moon glare. Road gently illuminated by the camera car’s normal dipped headlight beam with controlled cutoff, no theatrical long light beams. The car ahead distant enough its rear plate has no resolvable characters. No dashboard, signs, junction, bend or crest. Photograph is just the context before warning; no flash-state inference or solution annotation.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842258",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "R416-2 requires intermittent dipped/main light warnings at night; sound warnings only absolute necessity."
+      }
+    ]
+  },
+  {
+    "scenario_id": "temporary_spare_wheel_speed_label",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+    "learning_objective": "Obey the fitted temporary spare’s stated maximum even on a road with a higher limit.",
+    "topic": "equipment.temporary_spare_speed",
+    "scenario": "Temporary spare fitted, label80km/h, dry road otherwise90. Avoid claiming all spares share a universal limit.",
+    "novelty_review": "Existing blowout, tyrepressure, tread and bulge do not test the lower equipment-specific speed limit after fitting a temporary spare.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_temporary_spare_wheel_speed_label",
+      "category_slug": "speed_limits",
+      "difficulty": "medium",
+      "correct_answers": [
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Une roue de secours temporaire portant la limite « 80 km/h » est montée sur ma voiture. Sur une route autorisée à 90 km/h par temps sec, quelle vitesse ne dois-je pas dépasser ?",
+          "answer_a": "90 km/h, comme les autres voitures.",
+          "answer_b": "100 km/h pendant quelques minutes.",
+          "answer_c": "Aucune limite particulière si le pneu est bien gonflé.",
+          "answer_d": "80 km/h, et moins si les conditions l’exigent.",
+          "explanation": "Je respecte la limite indiquée sur la roue de secours temporaire, même si la route autorise davantage. Cette roue reste une solution provisoire à remplacer rapidement ; les conditions peuvent imposer une vitesse encore plus faible."
+        },
+        "en": {
+          "question_text": "A temporary spare wheel marked “80 km/h” is fitted to my car. On a dry road with a 90 km/h limit, what speed must I not exceed?",
+          "answer_a": "90 km/h, like other cars.",
+          "answer_b": "100 km/h for a few minutes.",
+          "answer_c": "No special limit if the tyre is correctly inflated.",
+          "answer_d": "80 km/h, or less if conditions require it.",
+          "explanation": "I must respect the limit stated on the temporary spare even when the road allows more. The wheel is only a temporary solution and should be replaced promptly; conditions may require an even lower speed."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "La limitation de la roue est inférieure à celle de la route.",
+        "b": "Il n’existe pas d’exception de quelques minutes.",
+        "c": "La pression correcte ne supprime pas la limite.",
+        "d": "La limite propre à cette roue reste80."
+      },
+      "en": {
+        "a": "The wheel’s limit is lower than the road’s.",
+        "b": "There is no brief high-speed exception.",
+        "c": "Correct pressure does not remove the limit.",
+        "d": "This wheel’s80limit applies."
+      }
+    },
+    "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Close natural photograph of a temporary narrow space-saver spare wheel properly fitted to the front corner of a parked grey ordinary passenger car on a safe paved driveway. Black narrow tyre, black stamped steel rim, five evenly spaced wheel bolts, no hubcap. A large genuine-looking yellow manufacturer safety sticker on the flat part of the rim bears ONLY black text \"80 km/h\" in clean readable type. No red circle or road sign. Entire wheel, small fender section and ground visible, no lifting jack, wheel rests with vehicle weight normally on ground. No other lettering, brand, people or other equipment. Sticker easily legible at390px width, no graphic highlight.",
+    "sources": [
+      {
+        "url": "https://www.user-manual.renault.com/fr/pneumatiques/crevaison-roue-de-secours-14",
+        "kind": "manufacturer",
+        "checked_on": "2026-10-10",
+        "supports": "Temporary spare use must not exceed speed marked on wheel label; replace with original-type wheel as soon as possible.80is the stated pictured wheel limit, not asserted universal."
+      }
+    ]
+  },
+  {
+    "scenario_id": "signed_accident_report_no_front_changes",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger car. Each towing example explicitly has combined PTACs of 3200 kg, within category B.",
+    "learning_objective": "Preserve the jointly signed accident report front and complete only the individual reverse later.",
+    "topic": "responsibility.accident_report",
+    "scenario": "Material-only accident, safe location, both drivers have agreed and signed paper report front, each keptcopy.",
+    "novelty_review": "Existing accident question covers immediate protect-alert-aid. This covers subsequent insurance paperwork integrity, not rescue.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_signed_accident_report_no_front_changes",
+      "category_slug": "safety",
+      "difficulty": "medium",
+      "correct_answers": [
+        "b",
+        "d"
+      ],
+      "translations": {
+        "fr": {
+          "question_text": "Après un accident sans blessé, nous avons rempli et signé le recto du constat amiable papier. Chacun a son exemplaire. Que puis-je faire ensuite ?",
+          "answer_a": "Ajouter seul une nouvelle case cochée au recto.",
+          "answer_b": "Compléter individuellement le verso.",
+          "answer_c": "Modifier seul le croquis commun déjà signé.",
+          "answer_d": "Conserver le recto signé sans rien y ajouter.",
+          "explanation": "Après la signature des deux conducteurs, la partie commune au recto ne doit plus être modifiée. Chacun conserve son exemplaire et peut compléter ensuite son propre verso pour la déclaration à l’assureur."
+        },
+        "en": {
+          "question_text": "After a collision with no injuries, both drivers have completed and signed the front of the paper accident report. Each has a copy. What may I do next?",
+          "answer_a": "Tick an additional box on the front on my own.",
+          "answer_b": "Complete the reverse individually.",
+          "answer_c": "Alter the jointly signed sketch on my own.",
+          "answer_d": "Keep the signed front unchanged.",
+          "explanation": "Once both drivers have signed, the shared front of the report must not be changed. Each keeps a copy and may later complete their own reverse side for the declaration to their insurer."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Une case ajoutée modifierait le constat commun signé.",
+        "b": "Le verso individuel peut être rempli plus tard.",
+        "c": "Le croquis fait partie du recto commun signé.",
+        "d": "Préserver le document commun signé."
+      },
+      "en": {
+        "a": "An extra tick changes the signed joint record.",
+        "b": "The individual reverse can be completed later.",
+        "c": "The sketch is part of the signed front.",
+        "d": "Preserve the signed joint record."
+      }
+    },
+    "image_prompt": "Use case: photorealistic-natural. Create one original landscape 16:9 photograph, at least 1672x941, for a French passenger-car theory question. Scene only: no question, answer, caption, watermark, logo, graphic arrows, solution highlight or collage. Mechanically realistic vehicles and natural materials. French right-hand traffic. Important details readable at 390-pixel width. Original realistic landscape photograph illustrating minor car damage after a low-speed bump, safely parked away from traffic in a quiet outdoor parking area. Tight close-up of a grey passenger car’s rear bumper corner, with a small shallow scuff and slight dent; intact tail-lamp partly in frame. No broken glass, no smoke, no injury, no visible number plate. A second plain blue car is softly out of focus behind on another marked parking bay. No people or paperwork visible, no legible text, no signs. Gentle daylight. This is context only; the question explicitly supplies what has happened with the paper report, do not fabricate a form.",
+    "sources": [
+      {
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2149",
+        "kind": "official",
+        "checked_on": "2026-10-10",
+        "supports": "Paper accident report: jointly complete and sign front, add nothing once signed, each retain copy; reverse may be completed later individually."
+      }
+    ]
+  }
+]

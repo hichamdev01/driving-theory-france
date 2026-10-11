@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "7a7396abbd982bd0a69baee7eb7d675910121949cb3af52f3de0e8c17b9dca4d",
+  "image_sha256": "fdc7307ea4ae58620724a4028544f5a578cee46c03840a2819b7a6b186e35b42",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected at full resolution and390px. No detected unresolved defects.",
+  "compared_question_keys": [
+    "situation_height_limit_3_5m",
+    "safety_eco_driving_anticipation",
+    "situation_speed_narrows_useful_visual_field",
+    "situation_alcohol_peak_empty_stomach",
+    "situation_parked_engine_unnecessary_idling"
+  ],
+  "checks": {
+    "official_rule": "Prefecture guidance: remove roof accessories after use to avoid unnecessary consumption; indexed text read, direct page502. ADEME current advice paragraph39 remove unused roof box/racks. Full page read. No numeric consumption claim used.",
+    "novelty": "OldB12 tests totalheight, roofloadtestssecureattachment and ecoanticipation drivingstyle. New objective unnecessary aerodynamic drag of an empty accessory. Five nearest complete questions/options/explanations and whole-bank topic inventory reviewed.",
+    "signs_and_text": "No signs, text, badges or registration.",
+    "road_geometry": "Parked car in driveway, no road manoeuvre.",
+    "vehicles_and_people": "Silver estate upper body, windows, mirror and doors coherent; no people.",
+    "dashboard_and_equipment": "Closed roof box supported on two transverse bars with feet on longitudinal rails; no loose luggage. Empty state supplied in stem.",
+    "full_resolution": "Exact1672x941 scene-1.jpg viewed at original resolution. No signs, text, badges or registration. Closed roof box supported on two transverse bars with feet on longitudinal rails; no loose luggage. Empty state supplied in stem.",
+    "phone_size": "Entire box and attachment context visible at390px; no hidden load inferred.",
+    "french_and_english": "Same conditions, learning objective and correct answer set in both translations. Holiday ended, empty roof box no longer needed; car parked before removal.",
+    "all_four_options": "Correct set c. {'fr': {'a': 'La résistance à l’air subsiste.', 'b': 'Rouler coffre ouvert serait dangereux.', 'c': 'On supprime un accessoire inutile qui accroît la traînée.', 'd': 'Ajouter une masse est inutile.'}, 'en': {'a': 'Aerodynamic resistance remains.', 'b': 'Driving with it open is unsafe.', 'c': 'This removes unnecessary drag.', 'd': 'Extra mass is unnecessary.'}}"
+  }
+}

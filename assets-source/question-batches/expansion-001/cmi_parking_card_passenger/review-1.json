@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defects after full-file, phone-size, source, bilingual and option review. Accepted composition differences explicitly recorded; approval applies to exact hashes.",
+  "proposal_sha256": "9fd6655eaebaac1a4bf22abb94b5ddb7e6db859bf3aa064e2cab900303426d6d",
+  "image_sha256": "1984cea76b0e237cd188d912cfdd1c408ecccb40a8f22ef913427d7a44a6a9ab",
+  "compared_question_keys": [
+    "situation_night_unlit_roadside_position_lights",
+    "safety_accident_first_actions",
+    "situation_speed_carpark_walking_pace",
+    "situation_ecstasy_false_alertness",
+    "situation_motorway_last_in_slow_queue"
+  ],
+  "checks": {
+    "official_rule": "Service Public CMI guidance checked 2026-10-09: cardholder can be passenger; card must be displayed visibly inside against windscreen; driver cannot use it for personal trips without holder.",
+    "signs_and_text": "Blank reverse of card, no invented identity, expiry or CMI design; no reserved-parking symbol or sign. Valid CMI status explicitly supplied.",
+    "road_geometry": "Car stationary on paved courtyard, not in a depicted restricted bay. No lane or right-of-way inference.",
+    "vehicles_and_people": "Woman in front passenger seat holds card naturally, driver at left-hand steering position (image right), both seated with plausible hands and anatomy.",
+    "dashboard_and_equipment": "Wheel, windscreen, wipers, mirror, headrests and restraints inspected; no necessary dashboard text.",
+    "full_resolution": "Inspected 1672x941 JPEG including card hand, steering hand, windshield reflections, mirror, body panels and passenger location; no unresolved defect.",
+    "phone_size": "390px preview clearly retains holder as passenger and card, without needing its reverse to be readable.",
+    "french_and_english": "Both specify valid CMI parking card and transport with holder; no claim all parking restrictions disappear.",
+    "all_four_options": "B,D exactly. A wrongly requires holder to drive; C wrongly transfers personal entitlement; B passenger use valid; D visible interior display required.",
+    "novelty": "Nearest night parking, first aid, carpark pace, ecstasy and queue warning questions are unrelated. Broader disabled-bay-without-card rule does not ask whose card/right applies when its holder travels as passenger."
+  }
+}

@@ -1,0 +1,1843 @@
+{
+  "schema_version": 1,
+  "id": "expansion-006",
+  "state": "verified",
+  "created_on": "2026-10-10",
+  "target": 1000,
+  "questions_before": 438,
+  "pack_before_sha256": "9049451b9f4ed6f641ed7c5e9ee62f63259102928441797e209064c235b350b3",
+  "items": [
+    {
+      "proposal": {
+        "scenario_id": "b7a_mopeds_exception_not_all_motor",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car driver knowledge; other users appear only to interpret the road environment.",
+        "learning_objective": "Distinguish the B7a moped exception from B7b covering all motor vehicles.",
+        "topic": "sign.motor_access_exception",
+        "scenario": "A car driver sees B7a, no supplementary plate. Identify the exact restriction, not merely whether own car can enter.",
+        "novelty_review": "Existing B7b asks whether electric car is a motor vehicle; B0 all traffic. This tests the moped exception of a different protected sign code.",
+        "primary_codes": [
+          "B7a"
+        ],
+        "context_codes": [],
+        "question": {
+          "key": "situation_b7a_mopeds_exception_not_all_motor",
+          "category_slug": "road_signs",
+          "difficulty": "medium",
+          "correct_answers": [
+            "c"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Quelle interdiction précise ce panneau indique-t-il ?",
+              "answer_a": "Accès interdit uniquement aux voitures particulières.",
+              "answer_b": "Accès interdit à tous les véhicules, même aux vélos.",
+              "answer_c": "Accès interdit aux véhicules à moteur, sauf aux cyclomoteurs.",
+              "answer_d": "Accès interdit seulement aux motocyclettes.",
+              "explanation": "Le panneau B7a interdit les véhicules à moteur à l’exception des cyclomoteurs. Ma voiture est concernée ; il ne faut pas le confondre avec B7b, qui inclut aussi les cyclomoteurs."
+            },
+            "en": {
+              "question_text": "What exact restriction does this sign indicate?",
+              "answer_a": "Access prohibited only to passenger cars.",
+              "answer_b": "Access prohibited to all vehicles, including bicycles.",
+              "answer_c": "Access prohibited to motor vehicles, except mopeds.",
+              "answer_d": "Access prohibited only to motorcycles.",
+              "explanation": "Sign B7a prohibits motor vehicles except mopeds. It applies to my car; it differs from B7b, whose restriction also includes mopeds."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Le panneau vise plus que les voitures.",
+            "b": "Les cycles ne sont pas des véhicules à moteur.",
+            "c": "C’est la portée de B7a.",
+            "d": "Les voitures sont également concernées."
+          },
+          "en": {
+            "a": "It covers more than cars.",
+            "b": "Bicycles are not motor vehicles.",
+            "c": "This is the scope of B7a.",
+            "d": "Cars are also covered."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. Close roadside photograph of one authentic French B7a sign: circular white face, thick RED rim and RED diagonal slash from upper left to lower right; black small FRONT-VIEW car in upper right portion and black side-view motorcycle in lower left portion. Exactly these two black vehicle silhouettes, no text or supplementary plate. Metal post at right verge of a quiet narrow lane, low stone wall, leafy trees, empty road, no other signs, vehicles or people. Sign occupies about one third frame height, straight-on readable. Correct red slash essential to distinguish B7a from B7b.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Article4 B7a: motor vehicles prohibited except mopeds; B7b all motor vehicles."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_b7b_car_sign_interpretation",
+          "similarity": 0.236,
+          "question_fr": "Je conduis une voiture électrique. Puis-je entrer sur cette voie ?"
+        },
+        {
+          "key": "situation_no_overtaking_goods",
+          "similarity": 0.209,
+          "question_fr": "Avec ma voiture particulière, cette interdiction me concerne-t-elle ?"
+        },
+        {
+          "key": "situation_height_limit_2_8m",
+          "similarity": 0.188,
+          "question_fr": "Que vous annonce ce panneau ?"
+        },
+        {
+          "key": "situation_bus_lane",
+          "similarity": 0.171,
+          "question_fr": "Que vous indique ce panneau ?"
+        },
+        {
+          "key": "situation_no_motor_vehicles",
+          "similarity": 0.153,
+          "question_fr": "Avec ma voiture, puis-je m'engager dans cette rue pour déposer un passager ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-006/b7a_mopeds_exception_not_all_motor/scene-1.jpg",
+          "image_sha256": "62a9aab1596e71342403e9fb834c223f6d54e45affdf4bc20583dbdf7f1587ba",
+          "prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. Close roadside photograph of one authentic French B7a sign: circular white face, thick RED rim and RED diagonal slash from upper left to lower right; black small FRONT-VIEW car in upper right portion and black side-view motorcycle in lower left portion. Exactly these two black vehicle silhouettes, no text or supplementary plate. Metal post at right verge of a quiet narrow lane, low stone wall, leafy trees, empty road, no other signs, vehicles or people. Sign occupies about one third frame height, straight-on readable. Correct red slash essential to distinguish B7a from B7b.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "b8d571624747fa0b22a63996d26c7ef0f044943e54ca81fb95109343499d92a6",
+            "image_sha256": "62a9aab1596e71342403e9fb834c223f6d54e45affdf4bc20583dbdf7f1587ba",
+            "result": "pass",
+            "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+            "compared_question_keys": [
+              "situation_b7b_car_sign_interpretation",
+              "situation_no_overtaking_goods",
+              "situation_height_limit_2_8m",
+              "situation_bus_lane",
+              "situation_no_motor_vehicles"
+            ],
+            "checks": {
+              "official_rule": "Article4 B7a: motor vehicles prohibited except mopeds; B7b all motor vehicles.",
+              "novelty": "Existing B7b asks whether electric car is a motor vehicle; B0 all traffic. This tests the moped exception of a different protected sign code. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+              "signs_and_text": "White circular B7a, red rim and diagonal slash, car upper-right and motorcycle lower-left; no other text, plate or sign.",
+              "road_geometry": "Single narrow empty paved lane with verge and stone walls; no contradictory markings or junction.",
+              "vehicles_and_people": "No people or vehicles. Black sign silhouettes are identifiable, not actual road users.",
+              "dashboard_and_equipment": "Only mounted metal sign/post; no dashboard or vehicle equipment.",
+              "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. White circular B7a, red rim and diagonal slash, car upper-right and motorcycle lower-left; no other text, plate or sign. Only mounted metal sign/post; no dashboard or vehicle equipment.",
+              "phone_size": "At390px red diagonal and both vehicle silhouettes remain clear; moped exception is knowledge tested, not illegible text.",
+              "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. A car driver sees B7a, no supplementary plate. Identify the exact restriction, not merely whether own car can enter.",
+              "all_four_options": "Correct set c. {'fr': {'a': 'Le panneau vise plus que les voitures.', 'b': 'Les cycles ne sont pas des véhicules à moteur.', 'c': 'C’est la portée de B7a.', 'd': 'Les voitures sont également concernées.'}, 'en': {'a': 'It covers more than cars.', 'b': 'Bicycles are not motor vehicles.', 'c': 'This is the scope of B7a.', 'd': 'Cars are also covered.'}}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-006/b7a_mopeds_exception_not_all_motor/scene-1.jpg",
+      "image_sha256": "62a9aab1596e71342403e9fb834c223f6d54e45affdf4bc20583dbdf7f1587ba",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "b8d571624747fa0b22a63996d26c7ef0f044943e54ca81fb95109343499d92a6",
+        "image_sha256": "62a9aab1596e71342403e9fb834c223f6d54e45affdf4bc20583dbdf7f1587ba",
+        "result": "pass",
+        "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+        "compared_question_keys": [
+          "situation_b7b_car_sign_interpretation",
+          "situation_no_overtaking_goods",
+          "situation_height_limit_2_8m",
+          "situation_bus_lane",
+          "situation_no_motor_vehicles"
+        ],
+        "checks": {
+          "official_rule": "Article4 B7a: motor vehicles prohibited except mopeds; B7b all motor vehicles.",
+          "novelty": "Existing B7b asks whether electric car is a motor vehicle; B0 all traffic. This tests the moped exception of a different protected sign code. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+          "signs_and_text": "White circular B7a, red rim and diagonal slash, car upper-right and motorcycle lower-left; no other text, plate or sign.",
+          "road_geometry": "Single narrow empty paved lane with verge and stone walls; no contradictory markings or junction.",
+          "vehicles_and_people": "No people or vehicles. Black sign silhouettes are identifiable, not actual road users.",
+          "dashboard_and_equipment": "Only mounted metal sign/post; no dashboard or vehicle equipment.",
+          "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. White circular B7a, red rim and diagonal slash, car upper-right and motorcycle lower-left; no other text, plate or sign. Only mounted metal sign/post; no dashboard or vehicle equipment.",
+          "phone_size": "At390px red diagonal and both vehicle silhouettes remain clear; moped exception is knowledge tested, not illegible text.",
+          "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. A car driver sees B7a, no supplementary plate. Identify the exact restriction, not merely whether own car can enter.",
+          "all_four_options": "Correct set c. {'fr': {'a': 'Le panneau vise plus que les voitures.', 'b': 'Les cycles ne sont pas des véhicules à moteur.', 'c': 'C’est la portée de B7a.', 'd': 'Les voitures sont également concernées.'}, 'en': {'a': 'It covers more than cars.', 'b': 'Bicycles are not motor vehicles.', 'c': 'This is the scope of B7a.', 'd': 'Cars are also covered.'}}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "83c3d1ae6f653d55553db783b3677cd49d56c2c7bf554f5337bdbc711f85fc0e"
+    },
+    {
+      "proposal": {
+        "scenario_id": "c13d_dead_end_cycle_pedestrian_outlet",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car driver knowledge; other users appear only to interpret the road environment.",
+        "learning_objective": "Recognise the two active-travel exits indicated by C13d while the road remains a car dead end.",
+        "topic": "sign.filtered_dead_end",
+        "scenario": "C13d at residential entrance; no other permissions. Ask which road users have an outlet.",
+        "novelty_review": "C13a/b mean dead end and C13c only pedestrian outlet. C13d distinct code and bicycle outlet not tested; question tests both symbols rather than repeating car-no-through decision.",
+        "primary_codes": [
+          "C13d"
+        ],
+        "context_codes": [],
+        "question": {
+          "key": "situation_c13d_dead_end_cycle_pedestrian_outlet",
+          "category_slug": "road_signs",
+          "difficulty": "medium",
+          "correct_answers": [
+            "a"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Cette rue reste une impasse pour ma voiture. Pour quels usagers le panneau indique-t-il une issue ?",
+              "answer_a": "Les piétons et les cyclistes.",
+              "answer_b": "Les piétons uniquement.",
+              "answer_c": "Les voitures électriques uniquement.",
+              "answer_d": "Tous les véhicules à deux roues, même les motos.",
+              "explanation": "Le panneau C13d indique une impasse comportant une issue pour les piétons et les cyclistes. Ces pictogrammes n’annoncent pas un passage pour les voitures ni une autorisation générale pour les deux-roues motorisés."
+            },
+            "en": {
+              "question_text": "This street remains a dead end for my car. For which users does the sign indicate an exit?",
+              "answer_a": "Pedestrians and cyclists.",
+              "answer_b": "Pedestrians only.",
+              "answer_c": "Electric cars only.",
+              "answer_d": "All two-wheelers, including motorcycles.",
+              "explanation": "Sign C13d indicates a dead end with an outlet for pedestrians and cyclists. These symbols do not indicate a through route for cars or general access for powered two-wheelers."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Les deux pictogrammes l’indiquent.",
+            "b": "Le vélo est également représenté.",
+            "c": "Aucune exception électrique.",
+            "d": "Le cycle n’est pas une moto."
+          },
+          "en": {
+            "a": "Both pictograms indicate this.",
+            "b": "A bicycle is also shown.",
+            "c": "There is no electric-car exception.",
+            "d": "A bicycle symbol does not mean motorcycle."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. Original roadside photograph, quiet French residential lane. One authentic French C13d square BLUE sign with narrow white inner border: upright WHITE vertical stem capped by a horizontal RED rectangle with white outline, forming dead-end T; above it two separate WHITE pictograms, cyclist on bicycle on LEFT and walking pedestrian on RIGHT. Clear standard icon silhouettes. No writing, no arrows. Post on right pavement near lane entrance; muted houses and empty asphalt recede behind. Sign occupies 40 percent frame height, fully in focus. No people or vehicles; no other signs.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Article5 C13d: dead end with an outlet for pedestrians and cyclists."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_c13c_dead_end_pedestrian_exit",
+          "similarity": 0.314,
+          "question_fr": "L’issue indiquée au fond de cette impasse me permet-elle de rejoindre la rue suivante avec ma voiture ?"
+        },
+        {
+          "key": "situation_c13b_car_scenario",
+          "similarity": 0.204,
+          "question_fr": "D’après ce panneau, quelle voie est sans issue ?"
+        },
+        {
+          "key": "situation_dead_end_c13a_access",
+          "similarity": 0.191,
+          "question_fr": "Mon adresse se trouve dans cette rue signalée par C13a. Puis-je m'y engager ?"
+        },
+        {
+          "key": "situation_c113_car_interpretation",
+          "similarity": 0.178,
+          "question_fr": "Le panneau est carré. Cela m’autorise-t-il à emprunter cette piste en voiture ?"
+        },
+        {
+          "key": "situation_b22b_car_sign_interpretation",
+          "similarity": 0.166,
+          "question_fr": "Puis-je emprunter ce chemin en voiture pour rejoindre plus vite la rue suivante ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-006/c13d_dead_end_cycle_pedestrian_outlet/scene-1.jpg",
+          "image_sha256": "e82df0176932fedc1ab75cd231295f17d9b6dfdd558e8bdc032692c106df9681",
+          "prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. Original roadside photograph, quiet French residential lane. One authentic French C13d square BLUE sign with narrow white inner border: upright WHITE vertical stem capped by a horizontal RED rectangle with white outline, forming dead-end T; above it two separate WHITE pictograms, cyclist on bicycle on LEFT and walking pedestrian on RIGHT. Clear standard icon silhouettes. No writing, no arrows. Post on right pavement near lane entrance; muted houses and empty asphalt recede behind. Sign occupies 40 percent frame height, fully in focus. No people or vehicles; no other signs.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "0fd6500fc3bc4bb9e63ef9238f04601ad3cde7c355014373808fe3ade1a24b47",
+            "image_sha256": "e82df0176932fedc1ab75cd231295f17d9b6dfdd558e8bdc032692c106df9681",
+            "result": "pass",
+            "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+            "compared_question_keys": [
+              "situation_c13c_dead_end_pedestrian_exit",
+              "situation_c13b_car_scenario",
+              "situation_dead_end_c13a_access",
+              "situation_c113_car_interpretation",
+              "situation_b22b_car_sign_interpretation"
+            ],
+            "checks": {
+              "official_rule": "Article5 C13d: dead end with an outlet for pedestrians and cyclists.",
+              "novelty": "C13a/b mean dead end and C13c only pedestrian outlet. C13d distinct code and bicycle outlet not tested; question tests both symbols rather than repeating car-no-through decision. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+              "signs_and_text": "Blue C13d with white inner border, red cap/white stem, distinct white cyclist and pedestrian above. No other visible sign or lettering.",
+              "road_geometry": "Residential lane terminates in background; the sign indicates filtered outlet, full layout of exit is outside close view. Pavements and verge plausible.",
+              "vehicles_and_people": "No real people/cars; sign pedestrian and bicycle have clear distinct silhouettes.",
+              "dashboard_and_equipment": "Sign post stable at pavement edge, no dashboard.",
+              "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. Blue C13d with white inner border, red cap/white stem, distinct white cyclist and pedestrian above. No other visible sign or lettering. Sign post stable at pavement edge, no dashboard.",
+              "phone_size": "At390px both cyclist and pedestrian icons remain distinct above dead-end T.",
+              "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. C13d at residential entrance; no other permissions. Ask which road users have an outlet.",
+              "all_four_options": "Correct set a. {'fr': {'a': 'Les deux pictogrammes l’indiquent.', 'b': 'Le vélo est également représenté.', 'c': 'Aucune exception électrique.', 'd': 'Le cycle n’est pas une moto.'}, 'en': {'a': 'Both pictograms indicate this.', 'b': 'A bicycle is also shown.', 'c': 'There is no electric-car exception.', 'd': 'A bicycle symbol does not mean motorcycle.'}}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-006/c13d_dead_end_cycle_pedestrian_outlet/scene-1.jpg",
+      "image_sha256": "e82df0176932fedc1ab75cd231295f17d9b6dfdd558e8bdc032692c106df9681",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "0fd6500fc3bc4bb9e63ef9238f04601ad3cde7c355014373808fe3ade1a24b47",
+        "image_sha256": "e82df0176932fedc1ab75cd231295f17d9b6dfdd558e8bdc032692c106df9681",
+        "result": "pass",
+        "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+        "compared_question_keys": [
+          "situation_c13c_dead_end_pedestrian_exit",
+          "situation_c13b_car_scenario",
+          "situation_dead_end_c13a_access",
+          "situation_c113_car_interpretation",
+          "situation_b22b_car_sign_interpretation"
+        ],
+        "checks": {
+          "official_rule": "Article5 C13d: dead end with an outlet for pedestrians and cyclists.",
+          "novelty": "C13a/b mean dead end and C13c only pedestrian outlet. C13d distinct code and bicycle outlet not tested; question tests both symbols rather than repeating car-no-through decision. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+          "signs_and_text": "Blue C13d with white inner border, red cap/white stem, distinct white cyclist and pedestrian above. No other visible sign or lettering.",
+          "road_geometry": "Residential lane terminates in background; the sign indicates filtered outlet, full layout of exit is outside close view. Pavements and verge plausible.",
+          "vehicles_and_people": "No real people/cars; sign pedestrian and bicycle have clear distinct silhouettes.",
+          "dashboard_and_equipment": "Sign post stable at pavement edge, no dashboard.",
+          "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. Blue C13d with white inner border, red cap/white stem, distinct white cyclist and pedestrian above. No other visible sign or lettering. Sign post stable at pavement edge, no dashboard.",
+          "phone_size": "At390px both cyclist and pedestrian icons remain distinct above dead-end T.",
+          "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. C13d at residential entrance; no other permissions. Ask which road users have an outlet.",
+          "all_four_options": "Correct set a. {'fr': {'a': 'Les deux pictogrammes l’indiquent.', 'b': 'Le vélo est également représenté.', 'c': 'Aucune exception électrique.', 'd': 'Le cycle n’est pas une moto.'}, 'en': {'a': 'Both pictograms indicate this.', 'b': 'A bicycle is also shown.', 'c': 'There is no electric-car exception.', 'd': 'A bicycle symbol does not mean motorcycle.'}}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "e824c4680db1abf54611808404f369a7a8658e9754b5a44dbc8bc8ddae82376e"
+    },
+    {
+      "proposal": {
+        "scenario_id": "b5b_police_checkpoint_required_stop",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car driver knowledge; other users appear only to interpret the road environment.",
+        "learning_objective": "Distinguish an obligatory police-checkpoint stop from merely slowing down.",
+        "topic": "sign.checkpoint_stop",
+        "scenario": "B5b police checkpoint; no agent gives contrary instructions; car approaches.",
+        "novelty_review": "B4 customs and C64 toll payment are different facilities; B5b unreserved. Tests compulsory stop at police control even without personal suspicion, not an ordinary STOP intersection.",
+        "primary_codes": [
+          "B5b"
+        ],
+        "context_codes": [],
+        "question": {
+          "key": "situation_b5b_police_checkpoint_required_stop",
+          "category_slug": "road_signs",
+          "difficulty": "medium",
+          "correct_answers": [
+            "d"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "J’approche de ce contrôle, sans consigne contraire d’un agent. Que m’impose ce panneau ?",
+              "answer_a": "Ralentir seulement si je pense avoir commis une infraction.",
+              "answer_b": "Passer au pas si aucun véhicule ne me précède.",
+              "answer_c": "Klaxonner puis poursuivre.",
+              "answer_d": "M’arrêter au poste de police pour le contrôle.",
+              "explanation": "Le panneau B5b impose l’arrêt au poste de police. Je prépare mon arrêt et suis les consignes des agents ; l’absence d’infraction supposée ou de véhicule devant ne dispense pas de ce contrôle."
+            },
+            "en": {
+              "question_text": "I approach this checkpoint with no contrary instruction from an officer. What does this sign require?",
+              "answer_a": "Slow down only if I think I committed an offence.",
+              "answer_b": "Pass at walking pace if no vehicle is ahead.",
+              "answer_c": "Sound the horn and continue.",
+              "answer_d": "Stop at the police checkpoint for the check.",
+              "explanation": "Sign B5b requires a stop at the police checkpoint. I prepare to stop and follow officers’ instructions; believing I committed no offence or seeing no vehicle ahead does not exempt me."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "L’arrêt ne dépend pas d’une faute supposée.",
+            "b": "Rouler au pas ne constitue pas un arrêt.",
+            "c": "Le klaxon ne dispense pas du contrôle.",
+            "d": "B5b impose cet arrêt."
+          },
+          "en": {
+            "a": "Stopping is not conditional on an assumed offence.",
+            "b": "Walking pace is not a stop.",
+            "c": "A horn does not exempt the check.",
+            "d": "B5b requires this stop."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. One original photorealistic French temporary police-checkpoint sign at the edge of a paved roadside pull-off. Main large circular sign white face, thick red outer rim, exact black uppercase HALTE above a thick horizontal BLACK bar, exact black uppercase POLICE below the bar. On a plausible sturdy low tripod, fully visible front-on. Three ordinary orange cones with one white reflective band each guide the pull-off edge behind it, not across the opposing road. Tight roadside composition, no officers, no police vehicle, no barrier, no other signs or text. Quiet daylight; signal letters large and crisp. Do not use a red diagonal slash.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Article4 B5b: arrêt au poste de police; original catalogue appearance inspected."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_b4_car_sign_interpretation",
+          "similarity": 0.253,
+          "question_fr": "La barrière est levée et personne ne me précède. Que m’impose ce panneau ?"
+        },
+        {
+          "key": "situation_random_alcohol_check_no_infraction",
+          "similarity": 0.186,
+          "question_fr": "Je n'ai commis aucune infraction et aucun accident n'a eu lieu. Les forces de l'ordre peuvent-elles quand même contrôler mon alcoolémie ?"
+        },
+        {
+          "key": "situation_b21c1_car_scenario",
+          "similarity": 0.143,
+          "question_fr": "À quel endroit ce panneau m’impose-t-il de tourner à droite ?"
+        },
+        {
+          "key": "situation_overtaking_uncontrolled_intersection",
+          "similarity": 0.143,
+          "question_fr": "Je vais dépasser cette voiture à l'approche d'une intersection sans feu ni route prioritaire. Puis-je commencer la manœuvre ?"
+        },
+        {
+          "key": "situation_b21b_straight_at_junction",
+          "similarity": 0.14,
+          "question_fr": "À la prochaine intersection, quelle direction ce panneau m’impose-t-il ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-006/b5b_police_checkpoint_required_stop/scene-1.jpg",
+          "image_sha256": "1dcfcc91a3250394a0f446147ddcea1247f59c109812d06a7a668e8f0a3f18f3",
+          "prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. One original photorealistic French temporary police-checkpoint sign at the edge of a paved roadside pull-off. Main large circular sign white face, thick red outer rim, exact black uppercase HALTE above a thick horizontal BLACK bar, exact black uppercase POLICE below the bar. On a plausible sturdy low tripod, fully visible front-on. Three ordinary orange cones with one white reflective band each guide the pull-off edge behind it, not across the opposing road. Tight roadside composition, no officers, no police vehicle, no barrier, no other signs or text. Quiet daylight; signal letters large and crisp. Do not use a red diagonal slash.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "23f6b9a368a49ec51b3646e537a71b04c1467300a36fbaa5bafcb401b2255419",
+            "image_sha256": "1dcfcc91a3250394a0f446147ddcea1247f59c109812d06a7a668e8f0a3f18f3",
+            "result": "pass",
+            "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+            "compared_question_keys": [
+              "situation_b4_car_sign_interpretation",
+              "situation_random_alcohol_check_no_infraction",
+              "situation_b21c1_car_scenario",
+              "situation_overtaking_uncontrolled_intersection",
+              "situation_b21b_straight_at_junction"
+            ],
+            "checks": {
+              "official_rule": "Article4 B5b: arrêt au poste de police; original catalogue appearance inspected.",
+              "novelty": "B4 customs and C64 toll payment are different facilities; B5b unreserved. Tests compulsory stop at police control even without personal suspicion, not an ordinary STOP intersection. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+              "signs_and_text": "HALTE and POLICE spelled exactly, black horizontal bar on white within red rim; no diagonal slash or supplementary text. Three orange cones with white bands.",
+              "road_geometry": "Two-way rural road beside broad gravel pull-off; cones/sign outside running lanes, coherent road edges.",
+              "vehicles_and_people": "No people or vehicles; no unsupported agent gesture. Question explicitly excludes contrary instruction.",
+              "dashboard_and_equipment": "Tripod supports sign at verge; no dashboard or signal hardware.",
+              "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. HALTE and POLICE spelled exactly, black horizontal bar on white within red rim; no diagonal slash or supplementary text. Three orange cones with white bands. Tripod supports sign at verge; no dashboard or signal hardware.",
+              "phone_size": "At390px both HALTE and POLICE readable; black bar/red rim and cones clear.",
+              "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. B5b police checkpoint; no agent gives contrary instructions; car approaches.",
+              "all_four_options": "Correct set d. {'fr': {'a': 'L’arrêt ne dépend pas d’une faute supposée.', 'b': 'Rouler au pas ne constitue pas un arrêt.', 'c': 'Le klaxon ne dispense pas du contrôle.', 'd': 'B5b impose cet arrêt.'}, 'en': {'a': 'Stopping is not conditional on an assumed offence.', 'b': 'Walking pace is not a stop.', 'c': 'A horn does not exempt the check.', 'd': 'B5b requires this stop.'}}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-006/b5b_police_checkpoint_required_stop/scene-1.jpg",
+      "image_sha256": "1dcfcc91a3250394a0f446147ddcea1247f59c109812d06a7a668e8f0a3f18f3",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "23f6b9a368a49ec51b3646e537a71b04c1467300a36fbaa5bafcb401b2255419",
+        "image_sha256": "1dcfcc91a3250394a0f446147ddcea1247f59c109812d06a7a668e8f0a3f18f3",
+        "result": "pass",
+        "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+        "compared_question_keys": [
+          "situation_b4_car_sign_interpretation",
+          "situation_random_alcohol_check_no_infraction",
+          "situation_b21c1_car_scenario",
+          "situation_overtaking_uncontrolled_intersection",
+          "situation_b21b_straight_at_junction"
+        ],
+        "checks": {
+          "official_rule": "Article4 B5b: arrêt au poste de police; original catalogue appearance inspected.",
+          "novelty": "B4 customs and C64 toll payment are different facilities; B5b unreserved. Tests compulsory stop at police control even without personal suspicion, not an ordinary STOP intersection. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+          "signs_and_text": "HALTE and POLICE spelled exactly, black horizontal bar on white within red rim; no diagonal slash or supplementary text. Three orange cones with white bands.",
+          "road_geometry": "Two-way rural road beside broad gravel pull-off; cones/sign outside running lanes, coherent road edges.",
+          "vehicles_and_people": "No people or vehicles; no unsupported agent gesture. Question explicitly excludes contrary instruction.",
+          "dashboard_and_equipment": "Tripod supports sign at verge; no dashboard or signal hardware.",
+          "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. HALTE and POLICE spelled exactly, black horizontal bar on white within red rim; no diagonal slash or supplementary text. Three orange cones with white bands. Tripod supports sign at verge; no dashboard or signal hardware.",
+          "phone_size": "At390px both HALTE and POLICE readable; black bar/red rim and cones clear.",
+          "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. B5b police checkpoint; no agent gives contrary instructions; car approaches.",
+          "all_four_options": "Correct set d. {'fr': {'a': 'L’arrêt ne dépend pas d’une faute supposée.', 'b': 'Rouler au pas ne constitue pas un arrêt.', 'c': 'Le klaxon ne dispense pas du contrôle.', 'd': 'B5b impose cet arrêt.'}, 'en': {'a': 'Stopping is not conditional on an assumed offence.', 'b': 'Walking pace is not a stop.', 'c': 'A horn does not exempt the check.', 'd': 'B5b requires this stop.'}}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "b43df0c203743acda097dfa3a37e98cbfba633744b5b3573ee5c350dcc18670e"
+    },
+    {
+      "proposal": {
+        "scenario_id": "alcohol_screening_then_evidential_measurement",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car driver knowledge; other users appear only to interpret the road environment.",
+        "learning_objective": "Distinguish screening from the subsequent precise evidential measurement.",
+        "topic": "alcohol.test_procedure",
+        "scenario": "Roadside alcohol screening ethylotest positive; officers proceed to verification. Question does not ask refusal/penalty/threshold.",
+        "novelty_review": "Existing refusal question tests illegality of refusing verification; quantitative tests ask thresholds. New objective is identifying why a second instrument is used after positive screening.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_alcohol_screening_then_evidential_measurement",
+          "category_slug": "alcohol_drugs",
+          "difficulty": "medium",
+          "correct_answers": [
+            "b"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Lors d’un contrôle, le dépistage par éthylotest est positif. À quoi sert ensuite l’éthylomètre utilisé par les forces de l’ordre ?",
+              "answer_a": "À faire baisser mon alcoolémie.",
+              "answer_b": "À mesurer précisément le taux d’alcool dans l’air expiré.",
+              "answer_c": "À dépister uniquement le cannabis.",
+              "answer_d": "À vérifier la validité de mon assurance.",
+              "explanation": "L’éthylotest sert au dépistage. L’éthylomètre permet ensuite la vérification par mesure du taux d’alcool dans l’air expiré ; les deux étapes ne doivent pas être confondues."
+            },
+            "en": {
+              "question_text": "At a roadside check, the alcohol screening test is positive. What is the purpose of the evidential breath instrument then used by the officers?",
+              "answer_a": "To lower my alcohol level.",
+              "answer_b": "To measure the alcohol concentration in exhaled breath accurately.",
+              "answer_c": "To screen only for cannabis.",
+              "answer_d": "To check whether my insurance is valid.",
+              "explanation": "A screening breath test detects possible alcohol impairment. The evidential breath instrument then measures the alcohol concentration in exhaled air; screening and verification are different stages."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Une mesure n’élimine pas l’alcool.",
+            "b": "La vérification établit le taux.",
+            "c": "Ce dispositif mesure l’alcool.",
+            "d": "Ce n’est pas un contrôle d’assurance."
+          },
+          "en": {
+            "a": "Measurement does not remove alcohol.",
+            "b": "Verification establishes the concentration.",
+            "c": "This instrument measures alcohol.",
+            "d": "It does not check insurance."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. Close realistic photograph of a generic professional breath-alcohol analyser resting in a plain open protective case on a roadside inspection table. Practical dark-grey rectangular handheld body, a clean disposable white horizontal mouthpiece attached near top, small blank dark display and two plain buttons. No invented digits, logos, text, cables or tubes. Neutral blurred parked-car side panel in background, wheel and registration plate out of frame. No people or breath being blown. Equipment provides context only; the question supplies procedural role, no visual claim about measured alcohol.",
+        "sources": [
+          {
+            "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2881",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Dépistage and vérification sections explicitly separate ethylotest screening from ethylomètre precise breath measurement; read current page."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_refuse_alcohol_verification_offence",
+          "similarity": 0.243,
+          "question_fr": "Après un dépistage positif, les forces de l'ordre me demandent la vérification de l'alcoolémie. Puis-je la refuser sans conséquence ?"
+        },
+        {
+          "key": "situation_injury_collision_alcohol_verification",
+          "similarity": 0.205,
+          "question_fr": "Je suis conducteur impliqué dans un accident ayant causé un dommage corporel. Les forces de l'ordre doivent-elles vérifier mon état alcoolique ?"
+        },
+        {
+          "key": "situation_refuse_drug_verification_offence",
+          "similarity": 0.183,
+          "question_fr": "Après un dépistage salivaire positif aux stupéfiants, puis-je refuser les vérifications demandées sans commettre de délit ?"
+        },
+        {
+          "key": "situation_breath_test_probationary_limit",
+          "similarity": 0.167,
+          "question_fr": "Je suis en permis probatoire et l’éthylomètre affiche 0,10 mg/L d’air expiré. Puis-je prendre le volant ?"
+        },
+        {
+          "key": "situation_alcohol_0_40mg_offence",
+          "similarity": 0.158,
+          "question_fr": "La vérification indique exactement 0,40 mg d'alcool par litre d'air expiré. Comment cette conduite est-elle qualifiée ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-006/alcohol_screening_then_evidential_measurement/scene-1.jpg",
+          "image_sha256": "efbdf06a7ec17069209ed7f918b4e87a95b51f05abb24b4efc805d26caaae3eb",
+          "prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. Close realistic photograph of a generic professional breath-alcohol analyser resting in a plain open protective case on a roadside inspection table. Practical dark-grey rectangular handheld body, a clean disposable white horizontal mouthpiece attached near top, small blank dark display and two plain buttons. No invented digits, logos, text, cables or tubes. Neutral blurred parked-car side panel in background, wheel and registration plate out of frame. No people or breath being blown. Equipment provides context only; the question supplies procedural role, no visual claim about measured alcohol.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "10001473c8318ec59be8c4da40d6cffc49ae6d9daa8e7a100fe8f7a8f350afb6",
+            "image_sha256": "efbdf06a7ec17069209ed7f918b4e87a95b51f05abb24b4efc805d26caaae3eb",
+            "result": "pass",
+            "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+            "compared_question_keys": [
+              "situation_refuse_alcohol_verification_offence",
+              "situation_injury_collision_alcohol_verification",
+              "situation_refuse_drug_verification_offence",
+              "situation_breath_test_probationary_limit",
+              "situation_alcohol_0_40mg_offence"
+            ],
+            "checks": {
+              "official_rule": "Dépistage and vérification sections explicitly separate ethylotest screening from ethylomètre precise breath measurement; read current page.",
+              "novelty": "Existing refusal question tests illegality of refusing verification; quantitative tests ask thresholds. New objective is identifying why a second instrument is used after positive screening. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+              "signs_and_text": "No signs, plates, digits or invented labels. Small standard power symbol on one button.",
+              "road_geometry": "No road decision encoded; table and parked-car side only.",
+              "vehicles_and_people": "No person; plausible car door/handle/mirror in background, no required movement inferred.",
+              "dashboard_and_equipment": "Handheld breath analyser with mouthpiece, blank display, buttons and fitted protective case; no result claimed from picture.",
+              "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. No signs, plates, digits or invented labels. Small standard power symbol on one button. Handheld breath analyser with mouthpiece, blank display, buttons and fitted protective case; no result claimed from picture.",
+              "phone_size": "At390px mouthpiece and analyser remain visible. Procedural identity stated in wording so no dependence on a tiny model label.",
+              "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. Roadside alcohol screening ethylotest positive; officers proceed to verification. Question does not ask refusal/penalty/threshold.",
+              "all_four_options": "Correct set b. {'fr': {'a': 'Une mesure n’élimine pas l’alcool.', 'b': 'La vérification établit le taux.', 'c': 'Ce dispositif mesure l’alcool.', 'd': 'Ce n’est pas un contrôle d’assurance.'}, 'en': {'a': 'Measurement does not remove alcohol.', 'b': 'Verification establishes the concentration.', 'c': 'This instrument measures alcohol.', 'd': 'It does not check insurance.'}}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-006/alcohol_screening_then_evidential_measurement/scene-1.jpg",
+      "image_sha256": "efbdf06a7ec17069209ed7f918b4e87a95b51f05abb24b4efc805d26caaae3eb",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "10001473c8318ec59be8c4da40d6cffc49ae6d9daa8e7a100fe8f7a8f350afb6",
+        "image_sha256": "efbdf06a7ec17069209ed7f918b4e87a95b51f05abb24b4efc805d26caaae3eb",
+        "result": "pass",
+        "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+        "compared_question_keys": [
+          "situation_refuse_alcohol_verification_offence",
+          "situation_injury_collision_alcohol_verification",
+          "situation_refuse_drug_verification_offence",
+          "situation_breath_test_probationary_limit",
+          "situation_alcohol_0_40mg_offence"
+        ],
+        "checks": {
+          "official_rule": "Dépistage and vérification sections explicitly separate ethylotest screening from ethylomètre precise breath measurement; read current page.",
+          "novelty": "Existing refusal question tests illegality of refusing verification; quantitative tests ask thresholds. New objective is identifying why a second instrument is used after positive screening. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+          "signs_and_text": "No signs, plates, digits or invented labels. Small standard power symbol on one button.",
+          "road_geometry": "No road decision encoded; table and parked-car side only.",
+          "vehicles_and_people": "No person; plausible car door/handle/mirror in background, no required movement inferred.",
+          "dashboard_and_equipment": "Handheld breath analyser with mouthpiece, blank display, buttons and fitted protective case; no result claimed from picture.",
+          "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. No signs, plates, digits or invented labels. Small standard power symbol on one button. Handheld breath analyser with mouthpiece, blank display, buttons and fitted protective case; no result claimed from picture.",
+          "phone_size": "At390px mouthpiece and analyser remain visible. Procedural identity stated in wording so no dependence on a tiny model label.",
+          "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. Roadside alcohol screening ethylotest positive; officers proceed to verification. Question does not ask refusal/penalty/threshold.",
+          "all_four_options": "Correct set b. {'fr': {'a': 'Une mesure n’élimine pas l’alcool.', 'b': 'La vérification établit le taux.', 'c': 'Ce dispositif mesure l’alcool.', 'd': 'Ce n’est pas un contrôle d’assurance.'}, 'en': {'a': 'Measurement does not remove alcohol.', 'b': 'Verification establishes the concentration.', 'c': 'This instrument measures alcohol.', 'd': 'It does not check insurance.'}}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "58452533f8a8b381bc22d6a83edf37329b019aad2179ff18daf55f4690809b44"
+    },
+    {
+      "proposal": {
+        "scenario_id": "probation_alcohol_six_point_deduction",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car driver knowledge; other users appear only to interpret the road environment.",
+        "learning_objective": "Know a probationary alcohol contravention withdraws six points even below the general 0.5g/L threshold.",
+        "topic": "alcohol.points_consequence",
+        "scenario": "Probationary car driver verified blood0.30g/L; ask point deduction alone, not instantaneous licence status.",
+        "novelty_review": "Existing questions test blood/breath thresholds and offence classification/max imprisonment. No current item asks the six-point deduction; no invented timing or recovery claim.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_probation_alcohol_six_point_deduction",
+          "category_slug": "alcohol_drugs",
+          "difficulty": "medium",
+          "correct_answers": [
+            "c"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "En permis probatoire, je suis contrôlé au volant avec 0,30 g/L d’alcool dans le sang. Combien de points cette infraction retire-t-elle ?",
+              "answer_a": "Aucun, car le taux est inférieur à 0,5 g/L.",
+              "answer_b": "Un point.",
+              "answer_c": "Six points.",
+              "answer_d": "Trois points seulement si un accident a eu lieu.",
+              "explanation": "En période probatoire, le seuil est de 0,2 g/L. Cette contravention entraîne un retrait de six points, même sans accident : cela représente tout le capital initial du permis."
+            },
+            "en": {
+              "question_text": "While on a probationary licence, I am checked driving with 0.30 g/L of alcohol in my blood. How many points does this offence deduct?",
+              "answer_a": "None, because it is below 0.5 g/L.",
+              "answer_b": "One point.",
+              "answer_c": "Six points.",
+              "answer_d": "Three points, only if there was a collision.",
+              "explanation": "The probationary threshold is 0.2 g/L. This contravention deducts six points even without a collision, equivalent to the licence’s entire initial points balance."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Le seuil probatoire est inférieur.",
+            "b": "Le retrait est de six points.",
+            "c": "R234-1 IV prévoit six points.",
+            "d": "Ni trois points ni condition d’accident."
+          },
+          "en": {
+            "a": "The probationary threshold is lower.",
+            "b": "The deduction is six points.",
+            "c": "R234-1 IV specifies six points.",
+            "d": "Neither three points nor a collision condition applies."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. Original photorealistic close view of rear hatch window and upper body of a parked plain compact car in daylight. One authentic French novice-driver disc attached on lower left of rear body, below glass: circular WHITE disc with large RED uppercase A, no red border. Crop composition excludes registration plate and wheels, includes intact corner of rear lamp, no extra text or road sign. Car stationary in a safe parking area, clean pavement and hedge background, no people or alcohol props. The question supplies alcohol measurement; image only establishes novice-driving context.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038954545/",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "R234-1 I1 and IV: probation0.2 threshold; contravention six points. Current article read."
+          },
+          {
+            "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2390",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Probationary licence initial balance6points."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "alcohol_probationary_limit",
+          "similarity": 0.219,
+          "question_fr": "Quel taux maximal d’alcool dans le sang s’applique à un conducteur en permis probatoire ?"
+        },
+        {
+          "key": "alcohol_general_limit",
+          "similarity": 0.203,
+          "question_fr": "Pour un conducteur qui n’est pas soumis au seuil probatoire, à partir de quel taux d’alcool dans le sang la conduite est-elle interdite ?"
+        },
+        {
+          "key": "situation_breath_test_probationary_limit",
+          "similarity": 0.183,
+          "question_fr": "Je suis en permis probatoire et l’éthylomètre affiche 0,10 mg/L d’air expiré. Puis-je prendre le volant ?"
+        },
+        {
+          "key": "situation_probationary_one_glass_risk",
+          "similarity": 0.179,
+          "question_fr": "J'ai un permis probatoire et on me propose un seul verre avant de conduire. Quelle décision est sûre ?"
+        },
+        {
+          "key": "situation_breath_test_general_limit",
+          "similarity": 0.163,
+          "question_fr": "Mon éthylomètre affiche 0,25 mg d’alcool par litre d’air expiré. Mon permis n’est plus probatoire. Puis-je conduire ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-006/probation_alcohol_six_point_deduction/scene-1.jpg",
+          "image_sha256": "98db2ad682de48dfe3a59617c29eed74d925c05b870f4e9960ad8fdd11578cb2",
+          "prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. Original photorealistic close view of rear hatch window and upper body of a parked plain compact car in daylight. One authentic French novice-driver disc attached on lower left of rear body, below glass: circular WHITE disc with large RED uppercase A, no red border. Crop composition excludes registration plate and wheels, includes intact corner of rear lamp, no extra text or road sign. Car stationary in a safe parking area, clean pavement and hedge background, no people or alcohol props. The question supplies alcohol measurement; image only establishes novice-driving context.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "92375e1f2b26ee9efe322387da7b88cd404d93bddcea85836bb652aa0599e51e",
+            "image_sha256": "98db2ad682de48dfe3a59617c29eed74d925c05b870f4e9960ad8fdd11578cb2",
+            "result": "pass",
+            "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+            "compared_question_keys": [
+              "alcohol_probationary_limit",
+              "alcohol_general_limit",
+              "situation_breath_test_probationary_limit",
+              "situation_probationary_one_glass_risk",
+              "situation_breath_test_general_limit"
+            ],
+            "checks": {
+              "official_rule": "R234-1 I1 and IV: probation0.2 threshold; contravention six points. Current article read. Probationary licence initial balance6points.",
+              "novelty": "Existing questions test blood/breath thresholds and offence classification/max imprisonment. No current item asks the six-point deduction; no invented timing or recovery claim. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+              "signs_and_text": "Correct plain white novice disc with red A at left rear body; no red border or other text.",
+              "road_geometry": "Stationary-car closeup with hedge/kerb; no traffic or road markings.",
+              "vehicles_and_people": "Rear hatch/window, left mirror and lamp plausible; no occupant action claimed.",
+              "dashboard_and_equipment": "Rear wiper, defroster lines, head restraints and upper brake-light housing consistent. A disc does not hide lamp/window.",
+              "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. Correct plain white novice disc with red A at left rear body; no red border or other text. Rear wiper, defroster lines, head restraints and upper brake-light housing consistent. A disc does not hide lamp/window.",
+              "phone_size": "At390px A disc clear; numeric alcohol and sanction facts supplied in both stems.",
+              "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. Probationary car driver verified blood0.30g/L; ask point deduction alone, not instantaneous licence status.",
+              "all_four_options": "Correct set c. {'fr': {'a': 'Le seuil probatoire est inférieur.', 'b': 'Le retrait est de six points.', 'c': 'R234-1 IV prévoit six points.', 'd': 'Ni trois points ni condition d’accident.'}, 'en': {'a': 'The probationary threshold is lower.', 'b': 'The deduction is six points.', 'c': 'R234-1 IV specifies six points.', 'd': 'Neither three points nor a collision condition applies.'}}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-006/probation_alcohol_six_point_deduction/scene-1.jpg",
+      "image_sha256": "98db2ad682de48dfe3a59617c29eed74d925c05b870f4e9960ad8fdd11578cb2",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "92375e1f2b26ee9efe322387da7b88cd404d93bddcea85836bb652aa0599e51e",
+        "image_sha256": "98db2ad682de48dfe3a59617c29eed74d925c05b870f4e9960ad8fdd11578cb2",
+        "result": "pass",
+        "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+        "compared_question_keys": [
+          "alcohol_probationary_limit",
+          "alcohol_general_limit",
+          "situation_breath_test_probationary_limit",
+          "situation_probationary_one_glass_risk",
+          "situation_breath_test_general_limit"
+        ],
+        "checks": {
+          "official_rule": "R234-1 I1 and IV: probation0.2 threshold; contravention six points. Current article read. Probationary licence initial balance6points.",
+          "novelty": "Existing questions test blood/breath thresholds and offence classification/max imprisonment. No current item asks the six-point deduction; no invented timing or recovery claim. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+          "signs_and_text": "Correct plain white novice disc with red A at left rear body; no red border or other text.",
+          "road_geometry": "Stationary-car closeup with hedge/kerb; no traffic or road markings.",
+          "vehicles_and_people": "Rear hatch/window, left mirror and lamp plausible; no occupant action claimed.",
+          "dashboard_and_equipment": "Rear wiper, defroster lines, head restraints and upper brake-light housing consistent. A disc does not hide lamp/window.",
+          "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. Correct plain white novice disc with red A at left rear body; no red border or other text. Rear wiper, defroster lines, head restraints and upper brake-light housing consistent. A disc does not hide lamp/window.",
+          "phone_size": "At390px A disc clear; numeric alcohol and sanction facts supplied in both stems.",
+          "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. Probationary car driver verified blood0.30g/L; ask point deduction alone, not instantaneous licence status.",
+          "all_four_options": "Correct set c. {'fr': {'a': 'Le seuil probatoire est inférieur.', 'b': 'Le retrait est de six points.', 'c': 'R234-1 IV prévoit six points.', 'd': 'Ni trois points ni condition d’accident.'}, 'en': {'a': 'The probationary threshold is lower.', 'b': 'The deduction is six points.', 'c': 'R234-1 IV specifies six points.', 'd': 'Neither three points nor a collision condition applies.'}}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "6528c9a47c208213887d27ad19314d046cc4ae5a609e95c6edf906e27abe149f"
+    },
+    {
+      "proposal": {
+        "scenario_id": "wrong_fuel_discovered_before_start",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car driver knowledge; other users appear only to interpret the road environment.",
+        "learning_objective": "Avoid starting after a fuel mix-up; arrange professional draining/assistance.",
+        "topic": "vehicle.misfuelling",
+        "scenario": "Diesel passenger car mistakenly filled with petrol; driver notices before restarting. Type and mistake explicitly stated, no reliance on nozzle colours.",
+        "novelty_review": "Entire438-bank search for carburant/diesel/gazole/refuel/wrongfuel found only unrelated downhill and toll items. No current question tests misfuelling or avoiding circulating contaminated fuel. Different from oil-pressure urgent stop and coolant hot-cap precautions.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_wrong_fuel_discovered_before_start",
+          "category_slug": "safety",
+          "difficulty": "medium",
+          "correct_answers": [
+            "b"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Je viens de mettre de l’essence dans le réservoir de ma voiture diesel, sans avoir redémarré. Que dois-je faire ?",
+              "answer_a": "Démarrer pour vérifier si le moteur accepte le mélange.",
+              "answer_b": "Ne pas démarrer et faire organiser une intervention professionnelle.",
+              "answer_c": "Compléter avec du gazole puis repartir sans avis.",
+              "answer_d": "Rouler vite pour consommer le mélange plus rapidement.",
+              "explanation": "Je ne démarre pas : le mauvais carburant risque d’endommager le circuit et le moteur. Je préviens la station et fais organiser l’assistance et la vidange nécessaires, sans improviser une dilution."
+            },
+            "en": {
+              "question_text": "I have just put petrol into my diesel car’s tank and have not restarted it. What should I do?",
+              "answer_a": "Start it to check whether the engine accepts the mixture.",
+              "answer_b": "Do not start it; arrange professional assistance.",
+              "answer_c": "Add diesel and leave without seeking advice.",
+              "answer_d": "Drive fast to use up the mixture sooner.",
+              "explanation": "I do not start the engine: the wrong fuel can damage the fuel system and engine. I inform the station and arrange the necessary assistance and draining, without improvising a dilution."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Démarrer peut faire circuler le carburant inadapté.",
+            "b": "Une prise en charge professionnelle évite d’aggraver les dégâts.",
+            "c": "Ajouter le bon carburant ne garantit pas la sécurité du mélange.",
+            "d": "La vitesse ne supprime pas le carburant inadapté et aggrave les risques."
+          },
+          "en": {
+            "a": "Starting can circulate the wrong fuel.",
+            "b": "Professional intervention avoids worsening damage.",
+            "c": "Adding correct fuel does not guarantee a safe mixture.",
+            "d": "Speed does not fix the fuel and adds risk."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape16:9 scene1672x941. French passenger-car theory illustration, scene only, no quiz text, labels, brand or answer highlight. Tight close-up of an ordinary dark-red hatchback fuel-filler flap OPEN on rear quarter, plain black threaded cap tethered and resting in its holder inside flap, filler neck clearly visible with no nozzle inserted. Car stationary in clean petrol-station forecourt. Soft background shows only plain lower silver pump casing, no display, hose label, prices, brand or text. Crop excludes registration plate, tyre writing and dashboard. No people, flames, spilled liquid or smoke. Natural daylight, realistic hinges, cap, filler neck and tether. The question establishes wrong fuel and diesel engine; never infer fuel type from colours or add a made-up label.",
+        "sources": [
+          {
+            "url": "https://public.servicebox.peugeot.com/APddb/modeles/208.p2/eGuide_p21_ed01-19/pdfs/9999_9999_287_fr-FR.pdf",
+            "kind": "manufacturer",
+            "checked_on": "2026-10-10",
+            "supports": "Original Peugeot208 guide printedp145: incompatible fuel requires tank draining before engine start. General wrong-fuel no-start precaution, no model-specific nozzle assumption."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-006/wrong_fuel_discovered_before_start/scene-1.jpg",
+          "image_sha256": "e638af2c687cec781b4cb607826d2e00c2feeb888a07072af742837ad6720334",
+          "prompt": "Create ONE original photorealistic landscape16:9 scene1672x941. French passenger-car theory illustration, scene only, no quiz text, labels, brand or answer highlight. Tight close-up of an ordinary dark-red hatchback fuel-filler flap OPEN on rear quarter, plain black threaded cap tethered and resting in its holder inside flap, filler neck clearly visible with no nozzle inserted. Car stationary in clean petrol-station forecourt. Soft background shows only plain lower silver pump casing, no display, hose label, prices, brand or text. Crop excludes registration plate, tyre writing and dashboard. No people, flames, spilled liquid or smoke. Natural daylight, realistic hinges, cap, filler neck and tether. The question establishes wrong fuel and diesel engine; never infer fuel type from colours or add a made-up label.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "9f8289e2c69914b7365640b4e382c259590c5b47903e5c9eb46918048e410e67",
+            "image_sha256": "e638af2c687cec781b4cb607826d2e00c2feeb888a07072af742837ad6720334",
+            "result": "pass",
+            "notes": "Entire exact replacement JPEG inspected at1672x941 and390px. No detected unresolved defects; previous rejected versions retained.",
+            "compared_question_keys": [
+              "situation_tyre_sidewall_bulge_before_trip",
+              "situation_coolant_hot_cap_wait",
+              "situation_dog_on_driver_lap_no_departure",
+              "situation_safety_oil_pressure_stop_engine",
+              "situation_parked_engine_unnecessary_idling"
+            ],
+            "checks": {
+              "official_rule": "Original Peugeot208 guide printedp145: incompatible fuel requires tank draining before engine start. General wrong-fuel no-start precaution, no model-specific nozzle assumption.",
+              "novelty": "Entire438-bank search for carburant/diesel/gazole/refuel/wrongfuel found only unrelated downhill and toll items. No current question tests misfuelling or avoiding circulating contaminated fuel. Different from oil-pressure urgent stop and coolant hot-cap precautions. Full five nearest questions/options/explanations inspected; whole-bank topic search performed.",
+              "signs_and_text": "No road signs, prices, fuel labels or invented lettering. Nozzle colour is not used to infer fuel type.",
+              "road_geometry": "Stationary-car forecourt close-up, clean concrete pump island; no lane or right-of-way decision.",
+              "vehicles_and_people": "Car rear-quarter, door handle, mirror and tail lamp plausible; a cropped distant car beyond forecourt supplies no decision clue. No people.",
+              "dashboard_and_equipment": "Open filler door, circular neck, hinged flap and tethered cap held inside door are coherent; no spilled liquid.",
+              "full_resolution": "Viewed exact staged scene-1.jpg in full original resolution. No road signs, prices, fuel labels or invented lettering. Nozzle colour is not used to infer fuel type. Open filler door, circular neck, hinged flap and tethered cap held inside door are coherent; no spilled liquid.",
+              "phone_size": "At390px open filler and separate cap remain clear; actual fuel error and engine state are explicitly in both stems.",
+              "french_and_english": "FR/EN both supply same facts and correct answer set. No image-dependent hidden measurement or invented universal equipment specification. Diesel passenger car mistakenly filled with petrol; driver notices before restarting. Type and mistake explicitly stated, no reliance on nozzle colours.",
+              "all_four_options": "Correct set b. {'fr': {'a': 'Démarrer peut faire circuler le carburant inadapté.', 'b': 'Une prise en charge professionnelle évite d’aggraver les dégâts.', 'c': 'Ajouter le bon carburant ne garantit pas la sécurité du mélange.', 'd': 'La vitesse ne supprime pas le carburant inadapté et aggrave les risques.'}, 'en': {'a': 'Starting can circulate the wrong fuel.', 'b': 'Professional intervention avoids worsening damage.', 'c': 'Adding correct fuel does not guarantee a safe mixture.', 'd': 'Speed does not fix the fuel and adds risk.'}}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "nearest_questions": [
+        {
+          "key": "situation_tyre_sidewall_bulge_before_trip",
+          "similarity": 0.135,
+          "question_fr": "Avant de partir, je découvre cette hernie sur le flanc d’un pneu. Que faire ?"
+        },
+        {
+          "key": "situation_coolant_hot_cap_wait",
+          "similarity": 0.121,
+          "question_fr": "Après un trajet, ma voiture est garée, contact coupé, mais le moteur est encore chaud. Pour contrôler le liquide de refroidissement, je dois :"
+        },
+        {
+          "key": "situation_dog_on_driver_lap_no_departure",
+          "similarity": 0.114,
+          "question_fr": "Ce petit chien est installé sur mes genoux et gêne le volant. Puis-je démarrer pour un trajet court ?"
+        },
+        {
+          "key": "situation_safety_oil_pressure_stop_engine",
+          "similarity": 0.114,
+          "question_fr": "En roulant, le témoin rouge de pression d’huile reste allumé avec l’alerte STOP. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_parked_engine_unnecessary_idling",
+          "similarity": 0.111,
+          "question_fr": "Je stationne dix minutes en attendant un ami, par temps doux. Le moteur thermique est chaud et rien ne nécessite de le laisser tourner. Que dois-je faire ?"
+        }
+      ],
+      "replacements": [
+        {
+          "reason": "Original plus three image corrections failed exact road-marking review; replace with distinct researched misfuelling scenario.",
+          "previous": {
+            "proposal": {
+              "scenario_id": "red_light_empty_cycle_advanced_stop_box",
+              "scope": "ordinary_passenger_car",
+              "scope_review": "Ordinary category-B passenger-car driver knowledge; other users appear only to interpret the road environment.",
+              "learning_objective": "Stop a car before the rear boundary of an empty cycle advanced stop box at red.",
+              "topic": "intersection.cycle_advanced_stop",
+              "scenario": "Empty sas vélo between two thin dashed effect-of-signal lines, red light. Question asks car stopping position.",
+              "novelty_review": "No sas/advanced-stop item in all438; STOPline, greenblockage and cycletrackturn priorities are different decisions. Applies even with no cyclist present.",
+              "primary_codes": [],
+              "context_codes": [],
+              "question": {
+                "key": "situation_red_light_empty_cycle_advanced_stop_box",
+                "category_slug": "priority_rules",
+                "difficulty": "medium",
+                "correct_answers": [
+                  "a"
+                ],
+                "translations": {
+                  "fr": {
+                    "question_text": "Le feu est rouge et le sas vélo devant moi est vide. Où dois-je arrêter ma voiture ?",
+                    "answer_a": "Avant la première ligne, en laissant le sas libre.",
+                    "answer_b": "Dans le sas, puisqu’aucun cycliste n’est présent.",
+                    "answer_c": "À la ligne avant du sas, comme un cycliste.",
+                    "answer_d": "Sur le passage piéton pour dégager le sas.",
+                    "explanation": "Le sas dispose d’une ligne d’arrêt réservée aux voitures en amont de l’espace cyclable. Au rouge, je reste avant cette première ligne même si le sas est vide, afin de préserver cet espace pour ses usagers autorisés."
+                  },
+                  "en": {
+                    "question_text": "The light is red and the cycle advanced stop box ahead is empty. Where must I stop my car?",
+                    "answer_a": "Before the first line, keeping the box clear.",
+                    "answer_b": "Inside the box, because no cyclist is there.",
+                    "answer_c": "At the front line of the box, like a cyclist.",
+                    "answer_d": "On the pedestrian crossing to keep the box clear.",
+                    "explanation": "The car stop line is behind the cycle box. At red, I remain before this first line even when the box is empty, preserving the space for its authorised users."
+                  }
+                }
+              },
+              "option_rationale": {
+                "fr": {
+                  "a": "C’est la ligne applicable à la voiture.",
+                  "b": "L’absence de vélo ne change pas la réservation.",
+                  "c": "Cette ligne est destinée aux usagers autorisés du sas.",
+                  "d": "Le passage piéton doit rester libre."
+                },
+                "en": {
+                  "a": "This is the line applicable to the car.",
+                  "b": "Absence of a bicycle does not remove the reservation.",
+                  "c": "That line belongs to authorised box users.",
+                  "d": "The crossing must remain clear."
+                }
+              },
+              "image_prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. Original daylight photograph from a car stopped several metres before a French urban traffic light. One narrow one-way approach street 3.5m wide, sidewalks both sides, empty intersection ahead. Near foreground, a thin WHITE DASHED transverse stop line (15cm deep with equal 0.5m strokes/gaps) spans the lane. Four metres farther forward a second identical thin dashed stop line spans it; between the lines one large correctly shaped WHITE BICYCLE pictogram, no arrows or words, asphalt not green. Front line aligns with a black traffic signal on right sidewalk: three vertical round lenses, RED top lens illuminated, amber middle and green bottom unlit. A zebra crossing is just beyond that front line and traffic light. No cars, no pedestrians, no cycle lane, no extra road signs. All bicycle-box geometry fits clearly in image, no bonnet hiding rear line.",
+              "sources": [
+                {
+                  "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025544/",
+                  "kind": "official",
+                  "checked_on": "2026-10-10",
+                  "supports": "R415-15 permits two separate stop lines for cycles/EDPM and other vehicles."
+                },
+                {
+                  "url": "https://www.msr25.doubs.developpement-durable.gouv.fr/fiche-28-le-sas-a-velo-a744.html",
+                  "kind": "official",
+                  "checked_on": "2026-10-10",
+                  "supports": "Sas rear line3–5m behind front, T2 15cm dashed lines; red signal cars stop behind rear line. Current permitted users crosschecked against R415-15, not old cyclomoteur wording."
+                }
+              ]
+            },
+            "state": "rejected",
+            "nearest_questions": [
+              {
+                "key": "situation_c113_car_interpretation",
+                "similarity": 0.213,
+                "question_fr": "Le panneau est carré. Cela m’autorise-t-il à emprunter cette piste en voiture ?"
+              },
+              {
+                "key": "situation_red_flashing_level_crossing_stop",
+                "similarity": 0.194,
+                "question_fr": "Le feu rouge du passage à niveau clignote. Que dois-je faire ?"
+              },
+              {
+                "key": "situation_emergency_vehicle_without_special_signals",
+                "similarity": 0.174,
+                "question_fr": "Le feu est rouge. Une ambulance attend derrière moi sans feu bleu ni sirène. Dois-je franchir la ligne d'arrêt pour la laisser passer ?"
+              },
+              {
+                "key": "situation_fixed_amber_safe_stop",
+                "similarity": 0.172,
+                "question_fr": "Le feu vient de passer au jaune fixe et je peux m’arrêter sans freinage brutal. Que dois-je faire ?"
+              },
+              {
+                "key": "situation_b27b_car_scenario",
+                "similarity": 0.164,
+                "question_fr": "Cette voie est vide. Puis-je la prendre en voiture pour éviter la circulation ?"
+              }
+            ],
+            "history": [
+              {
+                "image_path": "assets-source/question-batches/expansion-006/red_light_empty_cycle_advanced_stop_box/scene-1.jpg",
+                "image_sha256": "b207529cb3bd2b5288bc34c95ecbaa279a994d17482e16caf6a0b0f98ca38e3b",
+                "prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. Original daylight photograph from a car stopped several metres before a French urban traffic light. One narrow one-way approach street 3.5m wide, sidewalks both sides, empty intersection ahead. Near foreground, a thin WHITE DASHED transverse stop line (15cm deep with equal 0.5m strokes/gaps) spans the lane. Four metres farther forward a second identical thin dashed stop line spans it; between the lines one large correctly shaped WHITE BICYCLE pictogram, no arrows or words, asphalt not green. Front line aligns with a black traffic signal on right sidewalk: three vertical round lenses, RED top lens illuminated, amber middle and green bottom unlit. A zebra crossing is just beyond that front line and traffic light. No cars, no pedestrians, no cycle lane, no extra road signs. All bicycle-box geometry fits clearly in image, no bonnet hiding rear line.\n",
+                "created_on": "2026-10-10",
+                "review": {
+                  "proposal_sha256": "ebaeec658edaa07191eb7b5fc1f9e9727b54da17bea8031b4ff34cee116ea563",
+                  "image_sha256": "b207529cb3bd2b5288bc34c95ecbaa279a994d17482e16caf6a0b0f98ca38e3b",
+                  "result": "reject",
+                  "notes": "Reject: extra distant signs and a car too small to inspect; rear/front dashed-line stroke-to-gap ratios do not clearly match the required equal0.5m pattern. Replace remote street view with plain wall/trees, remove tiny signs and correct the two transverse lines.",
+                  "compared_question_keys": [
+                    "situation_c113_car_interpretation",
+                    "situation_red_flashing_level_crossing_stop",
+                    "situation_emergency_vehicle_without_special_signals",
+                    "situation_fixed_amber_safe_stop",
+                    "situation_b27b_car_scenario"
+                  ],
+                  "recorded_on": "2026-10-10"
+                }
+              },
+              {
+                "image_path": "assets-source/question-batches/expansion-006/red_light_empty_cycle_advanced_stop_box/scene-2.jpg",
+                "image_sha256": "88cd12e36a928f354ff91a49554cd69ac3bdb63904c2dba2878e5b1696d7a38e",
+                "prompt": "Edit this original French cycle advanced-stop-box photo. Preserve the foreground empty bicycle box, the bicycle pictogram, zebra crossing, red traffic light with its two other lenses unlit, buildings and realistic photo style. Correct BOTH transverse dashed stop lines: each white stroke must have the SAME width across the lane as the empty gap next to it (0.5m white,0.5m gap), thin15cm depth; use four evenly spaced strokes across this approximately4m-wide one-way lane. Box length4m. Remove every tiny distant traffic sign, vehicle and pole-mounted signal in the far street beyond the intersection. End the far view after about20m with the road gently bending behind a plain stone wall and trees so there is no long vanishing street of illegible objects. Preserve the main foreground red traffic light and low repeater. No additional symbols, arrows, labels or annotations. Landscape1672x941.\n",
+                "created_on": "2026-10-10",
+                "review": {
+                  "proposal_sha256": "ebaeec658edaa07191eb7b5fc1f9e9727b54da17bea8031b4ff34cee116ea563",
+                  "image_sha256": "88cd12e36a928f354ff91a49554cd69ac3bdb63904c2dba2878e5b1696d7a38e",
+                  "result": "reject",
+                  "notes": "Replacement removes distant unreadable signs but transverse strokes remain appreciably longer than gaps; low repeater has no illuminated red lens while main signal is red. Correct both before complete reinspection.",
+                  "recorded_on": "2026-10-10"
+                }
+              },
+              {
+                "image_path": "assets-source/question-batches/expansion-006/red_light_empty_cycle_advanced_stop_box/scene-3.jpg",
+                "image_sha256": "5b106edc9c216e221f0a9491249659b6ce0fa526fdda1ad43012fcc67826c82f",
+                "prompt": "Edit this photograph with two precise corrections only. 1) The small traffic-light repeater low on the right pole MUST display a brightly illuminated RED TOP lamp, matching the main red signal; its lower amber and green remain dark. 2) Shorten each of the FOUR white horizontal dash marks on BOTH transverse stop lines by about25percent, keeping each mark centred at its current position. White stroke width and empty gap width must become EQUAL, not long white bars with short gaps. Each line remains thin in the road-travel direction. Keep four dashes per line, bicycle symbol, red main signal, zebra crossing, geometry, lighting and architecture. Do not add any signs, text, vehicles or other changes. Landscape1672x941 photorealistic.\n",
+                "created_on": "2026-10-10",
+                "review": {
+                  "proposal_sha256": "ebaeec658edaa07191eb7b5fc1f9e9727b54da17bea8031b4ff34cee116ea563",
+                  "image_sha256": "5b106edc9c216e221f0a9491249659b6ce0fa526fdda1ad43012fcc67826c82f",
+                  "result": "reject",
+                  "notes": "Second correction fixes repeater red but over-shortens transverse white dashes; gaps now clearly longer than strokes. Final correction must provide equal stroke/gap lengths. No approval while this remains.",
+                  "recorded_on": "2026-10-10"
+                }
+              },
+              {
+                "image_path": "assets-source/question-batches/expansion-006/red_light_empty_cycle_advanced_stop_box/scene-4.jpg",
+                "image_sha256": "ab740d0b655642e39480d720bde326ef71dc64c8e4b33b28c2fdb21b38c3ad57",
+                "prompt": "Precisely edit ONLY the two rows of white dashed transverse stop lines on this French bicycle box. Keep all other scene details including both RED signals unchanged. Existing gaps are too wide. Completely repaint the rear line near image y750 with FOUR white dashes, each130pixels wide, separated by130pixel blank gaps: x300–430, x560–690, x820–950, x1080–1210. Thin15pixel depth and road perspective. Repaint front line near y552 with FOUR80pixel dashes separated by80pixel gaps: x520–600, x680–760, x840–920, x1000–1080, thin8pixel depth. The target is equal-length WHITE and ASPHALT intervals,50percent duty cycle, across each line. Remove all old paint outside these dashes. Retain natural painted texture and perspective. These coordinates are editing instructions only, never put any number, label or guide on the image. Preserve bicycle marking, zebra crossing, red lights, architecture and1672x941 landscape photorealism.\n",
+                "created_on": "2026-10-10",
+                "review": {
+                  "proposal_sha256": "ebaeec658edaa07191eb7b5fc1f9e9727b54da17bea8031b4ff34cee116ea563",
+                  "image_sha256": "ab740d0b655642e39480d720bde326ef71dc64c8e4b33b28c2fdb21b38c3ad57",
+                  "result": "reject",
+                  "notes": "Final correction still leaves front-line gaps visibly longer than white strokes and line not fully spanning approach. Original plus three corrections exhausted. Replace candidate; do not import this scene.",
+                  "recorded_on": "2026-10-10"
+                }
+              }
+            ],
+            "image_path": "assets-source/question-batches/expansion-006/red_light_empty_cycle_advanced_stop_box/scene-4.jpg",
+            "image_sha256": "ab740d0b655642e39480d720bde326ef71dc64c8e4b33b28c2fdb21b38c3ad57",
+            "dimensions": [
+              1672,
+              941
+            ],
+            "review": {
+              "proposal_sha256": "ebaeec658edaa07191eb7b5fc1f9e9727b54da17bea8031b4ff34cee116ea563",
+              "image_sha256": "ab740d0b655642e39480d720bde326ef71dc64c8e4b33b28c2fdb21b38c3ad57",
+              "result": "reject",
+              "notes": "Final correction still leaves front-line gaps visibly longer than white strokes and line not fully spanning approach. Original plus three corrections exhausted. Replace candidate; do not import this scene.",
+              "recorded_on": "2026-10-10"
+            }
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-006/wrong_fuel_discovered_before_start/scene-1.jpg",
+      "image_sha256": "e638af2c687cec781b4cb607826d2e00c2feeb888a07072af742837ad6720334",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "9f8289e2c69914b7365640b4e382c259590c5b47903e5c9eb46918048e410e67",
+        "image_sha256": "e638af2c687cec781b4cb607826d2e00c2feeb888a07072af742837ad6720334",
+        "result": "pass",
+        "notes": "Entire exact replacement JPEG inspected at1672x941 and390px. No detected unresolved defects; previous rejected versions retained.",
+        "compared_question_keys": [
+          "situation_tyre_sidewall_bulge_before_trip",
+          "situation_coolant_hot_cap_wait",
+          "situation_dog_on_driver_lap_no_departure",
+          "situation_safety_oil_pressure_stop_engine",
+          "situation_parked_engine_unnecessary_idling"
+        ],
+        "checks": {
+          "official_rule": "Original Peugeot208 guide printedp145: incompatible fuel requires tank draining before engine start. General wrong-fuel no-start precaution, no model-specific nozzle assumption.",
+          "novelty": "Entire438-bank search for carburant/diesel/gazole/refuel/wrongfuel found only unrelated downhill and toll items. No current question tests misfuelling or avoiding circulating contaminated fuel. Different from oil-pressure urgent stop and coolant hot-cap precautions. Full five nearest questions/options/explanations inspected; whole-bank topic search performed.",
+          "signs_and_text": "No road signs, prices, fuel labels or invented lettering. Nozzle colour is not used to infer fuel type.",
+          "road_geometry": "Stationary-car forecourt close-up, clean concrete pump island; no lane or right-of-way decision.",
+          "vehicles_and_people": "Car rear-quarter, door handle, mirror and tail lamp plausible; a cropped distant car beyond forecourt supplies no decision clue. No people.",
+          "dashboard_and_equipment": "Open filler door, circular neck, hinged flap and tethered cap held inside door are coherent; no spilled liquid.",
+          "full_resolution": "Viewed exact staged scene-1.jpg in full original resolution. No road signs, prices, fuel labels or invented lettering. Nozzle colour is not used to infer fuel type. Open filler door, circular neck, hinged flap and tethered cap held inside door are coherent; no spilled liquid.",
+          "phone_size": "At390px open filler and separate cap remain clear; actual fuel error and engine state are explicitly in both stems.",
+          "french_and_english": "FR/EN both supply same facts and correct answer set. No image-dependent hidden measurement or invented universal equipment specification. Diesel passenger car mistakenly filled with petrol; driver notices before restarting. Type and mistake explicitly stated, no reliance on nozzle colours.",
+          "all_four_options": "Correct set b. {'fr': {'a': 'Démarrer peut faire circuler le carburant inadapté.', 'b': 'Une prise en charge professionnelle évite d’aggraver les dégâts.', 'c': 'Ajouter le bon carburant ne garantit pas la sécurité du mélange.', 'd': 'La vitesse ne supprime pas le carburant inadapté et aggrave les risques.'}, 'en': {'a': 'Starting can circulate the wrong fuel.', 'b': 'Professional intervention avoids worsening damage.', 'c': 'Adding correct fuel does not guarantee a safe mixture.', 'd': 'Speed does not fix the fuel and adds risk.'}}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "38628c88fd633da62afc525b4e0587e0d61034430855683877e2acb7b79ead69"
+    },
+    {
+      "proposal": {
+        "scenario_id": "stopping_distance_reaction_plus_braking",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car driver knowledge; other users appear only to interpret the road environment.",
+        "learning_objective": "Add reaction travel and braking travel rather than using only braking distance.",
+        "topic": "speed.total_stopping_distance",
+        "scenario": "Given reaction14m and braking16m for THIS situation, no universal speed/road-condition formula. Ask total from danger perception to full stop.",
+        "novelty_review": "Existing one-second90 question computes reaction travel, another speed doubling affects braking. This tests sum of the two stages and their different start/end definitions.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_stopping_distance_reaction_plus_braking",
+          "category_slug": "speed_limits",
+          "difficulty": "medium",
+          "correct_answers": [
+            "d"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Dans cette situation, je parcours 14 m avant de commencer à freiner, puis 16 m pendant le freinage. Quelle est ma distance totale d’arrêt depuis la perception du danger ?",
+              "answer_a": "2 m.",
+              "answer_b": "14 m.",
+              "answer_c": "16 m.",
+              "answer_d": "30 m.",
+              "explanation": "La distance d’arrêt additionne la distance parcourue pendant la réaction et celle du freinage. Avec les valeurs données, 14 + 16 = 30 m ; ces distances ne sont pas universelles et changent selon les conditions."
+            },
+            "en": {
+              "question_text": "In this situation, I travel 14 m before starting to brake, then 16 m while braking. What is my total stopping distance from noticing the danger?",
+              "answer_a": "2 m.",
+              "answer_b": "14 m.",
+              "answer_c": "16 m.",
+              "answer_d": "30 m.",
+              "explanation": "Stopping distance adds the distance travelled during reaction to the braking distance. With the given values, 14 + 16 = 30 m; these are not universal distances and vary with conditions."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Il faut additionner, pas soustraire.",
+            "b": "La phase de freinage manque.",
+            "c": "La phase de réaction manque.",
+            "d": "Les deux phases donnent trente mètres."
+          },
+          "en": {
+            "a": "Add rather than subtract.",
+            "b": "This omits braking.",
+            "c": "This omits reaction travel.",
+            "d": "The two stages total thirty metres."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. Original realistic car-driver view down a straight quiet French suburban road in dry daylight. Two-way road, one lane each direction, thin dashed white centreline, low sidewalks, empty carriageway. A clear uninterrupted stretch ahead, a low stone wall and trees. No road signs, no traffic lights, no vehicles or people, no dashboard or readable lettering. No arrows, ruler, metre marks, skid marks, crash or hazard highlight. Image is a neutral road situation; numbers and perception/braking timing are supplied in the question, never depicted as a measured real distance.",
+        "sources": [
+          {
+            "url": "https://www.securite-routiere.gouv.fr/sites/default/files/press-kits/3728-distances_de_securite_23-06-03_2.pdf",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Page6 defines stopping distance as reaction distance plus braking distance. Use only stable definition, no historical crash statistics or universal numeric table."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_speed_reaction_one_second_90",
+          "similarity": 0.219,
+          "question_fr": "À 90 km/h, avec un temps de réaction d’une seconde, quelle distance est parcourue avant le début du freinage ?"
+        },
+        {
+          "key": "safety_tyre_pressure",
+          "similarity": 0.13,
+          "question_fr": "Comment dois-je contrôler la pression des pneus ?"
+        },
+        {
+          "key": "situation_motorway_blowout_initial_control",
+          "similarity": 0.115,
+          "question_fr": "Sur cette autoroute, un pneu éclate brusquement alors que je roule. Quelle est ma première réaction ?"
+        },
+        {
+          "key": "situation_speed_double_braking_distance_quadruples",
+          "similarity": 0.107,
+          "question_fr": "À adhérence et conditions de freinage identiques, si la vitesse double, la distance de freinage est approximativement :"
+        },
+        {
+          "key": "situation_fixed_amber_safe_stop",
+          "similarity": 0.105,
+          "question_fr": "Le feu vient de passer au jaune fixe et je peux m’arrêter sans freinage brutal. Que dois-je faire ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-006/stopping_distance_reaction_plus_braking/scene-1.jpg",
+          "image_sha256": "362a784065033ccd883e121923f2159dbd8f63f884bbf2ee73dc553407f02214",
+          "prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. Original realistic car-driver view down a straight quiet French suburban road in dry daylight. Two-way road, one lane each direction, thin dashed white centreline, low sidewalks, empty carriageway. A clear uninterrupted stretch ahead, a low stone wall and trees. No road signs, no traffic lights, no vehicles or people, no dashboard or readable lettering. No arrows, ruler, metre marks, skid marks, crash or hazard highlight. Image is a neutral road situation; numbers and perception/braking timing are supplied in the question, never depicted as a measured real distance.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "8e047c1cc72012380a14c6e8ca3d8eef9b5714813495c8fd7fff044a81e5661e",
+            "image_sha256": "362a784065033ccd883e121923f2159dbd8f63f884bbf2ee73dc553407f02214",
+            "result": "reject",
+            "notes": "Reject: centreline stroke/gap ratios inconsistent for intended ordinary French separation. Neutral image does not require markings; remove line completely for an unmarked residential road.",
+            "compared_question_keys": [
+              "situation_speed_reaction_one_second_90",
+              "safety_tyre_pressure",
+              "situation_motorway_blowout_initial_control",
+              "situation_speed_double_braking_distance_quadruples",
+              "situation_fixed_amber_safe_stop"
+            ],
+            "recorded_on": "2026-10-10"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-006/stopping_distance_reaction_plus_braking/scene-2.jpg",
+          "image_sha256": "171699e9088b13246e6f372fab5d40b06a4d2c9f6149afcfe9a440fa2bb41200",
+          "prompt": "Edit this original quiet residential road photograph only to remove every white dashed centreline mark from foreground all the way to the distant vanishing point. Replace paint with matching natural asphalt texture, making an entirely UNMARKED two-way residential road. Preserve realistic perspective, sidewalks, trees, walls and houses. No vehicles, people, signs, captions, numbers or overlays. Landscape1672x941, scene only.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "8e047c1cc72012380a14c6e8ca3d8eef9b5714813495c8fd7fff044a81e5661e",
+            "image_sha256": "171699e9088b13246e6f372fab5d40b06a4d2c9f6149afcfe9a440fa2bb41200",
+            "result": "pass",
+            "notes": "Entire exact replacement JPEG inspected at1672x941 and390px. No detected unresolved defects; previous rejected versions retained.",
+            "compared_question_keys": [
+              "situation_speed_reaction_one_second_90",
+              "safety_tyre_pressure",
+              "situation_motorway_blowout_initial_control",
+              "situation_speed_double_braking_distance_quadruples",
+              "situation_fixed_amber_safe_stop"
+            ],
+            "checks": {
+              "official_rule": "Page6 defines stopping distance as reaction distance plus braking distance. Use only stable definition, no historical crash statistics or universal numeric table.",
+              "novelty": "Existing one-second90 question computes reaction travel, another speed doubling affects braking. This tests sum of the two stages and their different start/end definitions. Full five nearest questions/options/explanations inspected; whole-bank topic search performed.",
+              "signs_and_text": "No signs, letters or road paint remain. Original inconsistent centreline removed completely.",
+              "road_geometry": "Unmarked quiet two-way residential street, coherent kerbs and pavements; numeric distances are explicitly supplied, not measured from scene.",
+              "vehicles_and_people": "No vehicles or people; no hazard/location invented from timing unavailable in still image.",
+              "dashboard_and_equipment": "No dashboard or vehicle controls visible.",
+              "full_resolution": "Viewed exact staged scene-2.jpg in full original resolution. No signs, letters or road paint remain. Original inconsistent centreline removed completely. No dashboard or vehicle controls visible.",
+              "phone_size": "At390px entire clear road remains visible; no diagram/scale implies a physical30m measurement.",
+              "french_and_english": "FR/EN both supply same facts and correct answer set. No image-dependent hidden measurement or invented universal equipment specification. Given reaction14m and braking16m for THIS situation, no universal speed/road-condition formula. Ask total from danger perception to full stop.",
+              "all_four_options": "Correct set d. {'fr': {'a': 'Il faut additionner, pas soustraire.', 'b': 'La phase de freinage manque.', 'c': 'La phase de réaction manque.', 'd': 'Les deux phases donnent trente mètres.'}, 'en': {'a': 'Add rather than subtract.', 'b': 'This omits braking.', 'c': 'This omits reaction travel.', 'd': 'The two stages total thirty metres.'}}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-006/stopping_distance_reaction_plus_braking/scene-2.jpg",
+      "image_sha256": "171699e9088b13246e6f372fab5d40b06a4d2c9f6149afcfe9a440fa2bb41200",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "8e047c1cc72012380a14c6e8ca3d8eef9b5714813495c8fd7fff044a81e5661e",
+        "image_sha256": "171699e9088b13246e6f372fab5d40b06a4d2c9f6149afcfe9a440fa2bb41200",
+        "result": "pass",
+        "notes": "Entire exact replacement JPEG inspected at1672x941 and390px. No detected unresolved defects; previous rejected versions retained.",
+        "compared_question_keys": [
+          "situation_speed_reaction_one_second_90",
+          "safety_tyre_pressure",
+          "situation_motorway_blowout_initial_control",
+          "situation_speed_double_braking_distance_quadruples",
+          "situation_fixed_amber_safe_stop"
+        ],
+        "checks": {
+          "official_rule": "Page6 defines stopping distance as reaction distance plus braking distance. Use only stable definition, no historical crash statistics or universal numeric table.",
+          "novelty": "Existing one-second90 question computes reaction travel, another speed doubling affects braking. This tests sum of the two stages and their different start/end definitions. Full five nearest questions/options/explanations inspected; whole-bank topic search performed.",
+          "signs_and_text": "No signs, letters or road paint remain. Original inconsistent centreline removed completely.",
+          "road_geometry": "Unmarked quiet two-way residential street, coherent kerbs and pavements; numeric distances are explicitly supplied, not measured from scene.",
+          "vehicles_and_people": "No vehicles or people; no hazard/location invented from timing unavailable in still image.",
+          "dashboard_and_equipment": "No dashboard or vehicle controls visible.",
+          "full_resolution": "Viewed exact staged scene-2.jpg in full original resolution. No signs, letters or road paint remain. Original inconsistent centreline removed completely. No dashboard or vehicle controls visible.",
+          "phone_size": "At390px entire clear road remains visible; no diagram/scale implies a physical30m measurement.",
+          "french_and_english": "FR/EN both supply same facts and correct answer set. No image-dependent hidden measurement or invented universal equipment specification. Given reaction14m and braking16m for THIS situation, no universal speed/road-condition formula. Ask total from danger perception to full stop.",
+          "all_four_options": "Correct set d. {'fr': {'a': 'Il faut additionner, pas soustraire.', 'b': 'La phase de freinage manque.', 'c': 'La phase de réaction manque.', 'd': 'Les deux phases donnent trente mètres.'}, 'en': {'a': 'Add rather than subtract.', 'b': 'This omits braking.', 'c': 'This omits reaction travel.', 'd': 'The two stages total thirty metres.'}}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "0c01b2866c4d503ce0af5a0e85c7be7a25bc06530febe5c1fda73adcd3b10738"
+    },
+    {
+      "proposal": {
+        "scenario_id": "hot_tyre_pressure_do_not_bleed",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car driver knowledge; other users appear only to interpret the road environment.",
+        "learning_objective": "Avoid bleeding a hot tyre to its cold reference; recheck when cold.",
+        "topic": "vehicle.hot_tyre_pressure",
+        "scenario": "After long driving, tyres hot and gauge above cold recommended pressure; no damage or other fault.",
+        "novelty_review": "Existing tyre-pressure question says measure cold. This tests concrete dangerous correction when hot reading is higher, including thermal expansion and later verification.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_hot_tyre_pressure_do_not_bleed",
+          "category_slug": "safety",
+          "difficulty": "medium",
+          "correct_answers": [
+            "b",
+            "d"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Après un long trajet, mes pneus chauds affichent une pression supérieure à la valeur conseillée à froid. Quelles précautions sont correctes ?",
+              "answer_a": "Les dégonfler aussitôt jusqu’à la valeur à froid.",
+              "answer_b": "Ne pas les dégonfler pour corriger cette hausse à chaud.",
+              "answer_c": "Les vider de moitié avant de repartir.",
+              "answer_d": "Recontrôler la pression à froid selon la notice.",
+              "explanation": "La pression augmente avec l’échauffement du pneu. Je ne dégonfle pas un pneu chaud pour le ramener à la valeur à froid : je risquerais un sous-gonflage après refroidissement. Je recontrôle à froid suivant les préconisations."
+            },
+            "en": {
+              "question_text": "After a long drive, my hot tyres show a pressure above the recommended cold value. Which precautions are correct?",
+              "answer_a": "Immediately bleed them down to the cold value.",
+              "answer_b": "Do not deflate them to correct this rise while hot.",
+              "answer_c": "Release half their air before setting off.",
+              "answer_d": "Recheck the pressure when cold, following the manual.",
+              "explanation": "Tyre pressure rises as the tyre heats up. Bleeding a hot tyre down to its cold reference can leave it underinflated after cooling. I recheck it cold according to the manufacturer’s guidance."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Risque de sous-gonflage une fois froid.",
+            "b": "La hausse thermique ne doit pas être corrigée ainsi.",
+            "c": "Cette perte d’air crée un danger.",
+            "d": "Le contrôle à froid permet la comparaison prescrite."
+          },
+          "en": {
+            "a": "It may be underinflated after cooling.",
+            "b": "Do not correct the thermal rise this way.",
+            "c": "Releasing that air is dangerous.",
+            "d": "A cold check allows the specified comparison."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. Original close realistic photograph of one intact passenger-car alloy wheel and tyre in a clean service-station inflation area. Black flexible air hose attaches plausibly to the valve at lower right of rim; gauge is outside crop, no pressure digits. Plain dark blue car body corner above wheel, tyre sidewall free of tiny invented lettering, tread visibly intact, no bulge, crack, smoke or puncture. No hands or people, no logos, no signs. Neutral daylight. Heat and pressure state cannot be seen and are established by the question, no cartoon heat effects.",
+        "sources": [
+          {
+            "url": "https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus",
+            "kind": "manufacturer",
+            "checked_on": "2026-10-10",
+            "supports": "Original Michelin passenger-car guide: never deflate hot tyres; pressure rises with temperature; recheck and adjust cold. Full page read."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_coolant_hot_cap_wait",
+          "similarity": 0.202,
+          "question_fr": "Après un trajet, ma voiture est garée, contact coupé, mais le moteur est encore chaud. Pour contrôler le liquide de refroidissement, je dois :"
+        },
+        {
+          "key": "safety_tyre_pressure",
+          "similarity": 0.179,
+          "question_fr": "Comment dois-je contrôler la pression des pneus ?"
+        },
+        {
+          "key": "situation_abs_emergency_pedal_pulsation",
+          "similarity": 0.11,
+          "question_fr": "Lors d’un freinage d’urgence, l’ABS de ma voiture entre en action et la pédale vibre. Quelles affirmations sont exactes ?"
+        },
+        {
+          "key": "situation_dynamic_speed_limit_over_fixed",
+          "similarity": 0.104,
+          "question_fr": "Le panneau fixe indique 110, mais le panneau lumineux affiche 70. Quelle limite s'applique ici ?"
+        },
+        {
+          "key": "situation_severe_bleeding_direct_pressure",
+          "similarity": 0.101,
+          "question_fr": "Après avoir sécurisé les lieux, une victime consciente saigne abondamment du bras. Quel geste immédiat effectuer ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-006/hot_tyre_pressure_do_not_bleed/scene-1.jpg",
+          "image_sha256": "5c98f12dc2359dedd2a40720cc96f5131e1b38c6151a0ac967c243162bb7bb26",
+          "prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. Original close realistic photograph of one intact passenger-car alloy wheel and tyre in a clean service-station inflation area. Black flexible air hose attaches plausibly to the valve at lower right of rim; gauge is outside crop, no pressure digits. Plain dark blue car body corner above wheel, tyre sidewall free of tiny invented lettering, tread visibly intact, no bulge, crack, smoke or puncture. No hands or people, no logos, no signs. Neutral daylight. Heat and pressure state cannot be seen and are established by the question, no cartoon heat effects.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "6735028b1710039c95eda38e81d24d6df1a9268775eddb0a6ddebcb804eaa323",
+            "image_sha256": "5c98f12dc2359dedd2a40720cc96f5131e1b38c6151a0ac967c243162bb7bb26",
+            "result": "reject",
+            "notes": "Reject: invented and unreadable embossed sidewall characters remain visible around top of tyre; remove all such lettering, preserve intact tyre and connected valve.",
+            "compared_question_keys": [
+              "situation_coolant_hot_cap_wait",
+              "safety_tyre_pressure",
+              "situation_abs_emergency_pedal_pulsation",
+              "situation_dynamic_speed_limit_over_fixed",
+              "situation_severe_bleeding_direct_pressure"
+            ],
+            "recorded_on": "2026-10-10"
+          }
+        },
+        {
+          "image_path": "assets-source/question-batches/expansion-006/hot_tyre_pressure_do_not_bleed/scene-2.jpg",
+          "image_sha256": "ce258bf842f62663669914556afc3022c6677fdeb4c3443eafae003853c943c0",
+          "prompt": "Edit this tyre-inflation photograph. Remove ALL embossed letters, numbers, logos and fake writing anywhere on the visible tyre sidewall, especially the upper arc above the rim. Replace them with plain smooth natural black rubber texture; no inscription should remain. Keep the intact tyre tread, alloy wheel with five wheel bolts, actual tyre valve and connected black air hose exactly plausible and in place. Do not remove the hose or alter wheel geometry. Preserve car body, lighting, service-area background and full landscape composition. No added text, gauges, markings or arrows.1672x941.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "6735028b1710039c95eda38e81d24d6df1a9268775eddb0a6ddebcb804eaa323",
+            "image_sha256": "ce258bf842f62663669914556afc3022c6677fdeb4c3443eafae003853c943c0",
+            "result": "pass",
+            "notes": "Entire exact replacement JPEG inspected at1672x941 and390px. No detected unresolved defects; previous rejected versions retained.",
+            "compared_question_keys": [
+              "situation_coolant_hot_cap_wait",
+              "safety_tyre_pressure",
+              "situation_abs_emergency_pedal_pulsation",
+              "situation_dynamic_speed_limit_over_fixed",
+              "situation_severe_bleeding_direct_pressure"
+            ],
+            "checks": {
+              "official_rule": "Original Michelin passenger-car guide: never deflate hot tyres; pressure rises with temperature; recheck and adjust cold. Full page read.",
+              "novelty": "Existing tyre-pressure question says measure cold. This tests concrete dangerous correction when hot reading is higher, including thermal expansion and later verification. Full five nearest questions/options/explanations inspected; whole-bank topic search performed.",
+              "signs_and_text": "All fake embossed sidewall writing removed. No signs, digits or labels; no pressure inferred from a hidden gauge.",
+              "road_geometry": "Wheel on flat service-area pavement beside pump base; no road manoeuvre.",
+              "vehicles_and_people": "No people; one intact tyre with coherent wheel arch and car body.",
+              "dashboard_and_equipment": "Five wheel bolts, brake disc/caliper, valve and attached hose plausible; tyre has normal tread and no bulge/crack.",
+              "full_resolution": "Viewed exact staged scene-2.jpg in full original resolution. All fake embossed sidewall writing removed. No signs, digits or labels; no pressure inferred from a hidden gauge. Five wheel bolts, brake disc/caliper, valve and attached hose plausible; tyre has normal tread and no bulge/crack.",
+              "phone_size": "At390px hose-to-valve connection and intact tyre clear; hot state and relative pressure explicitly stated.",
+              "french_and_english": "FR/EN both supply same facts and correct answer set. No image-dependent hidden measurement or invented universal equipment specification. After long driving, tyres hot and gauge above cold recommended pressure; no damage or other fault.",
+              "all_four_options": "Correct set b,d. {'fr': {'a': 'Risque de sous-gonflage une fois froid.', 'b': 'La hausse thermique ne doit pas être corrigée ainsi.', 'c': 'Cette perte d’air crée un danger.', 'd': 'Le contrôle à froid permet la comparaison prescrite.'}, 'en': {'a': 'It may be underinflated after cooling.', 'b': 'Do not correct the thermal rise this way.', 'c': 'Releasing that air is dangerous.', 'd': 'A cold check allows the specified comparison.'}}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-006/hot_tyre_pressure_do_not_bleed/scene-2.jpg",
+      "image_sha256": "ce258bf842f62663669914556afc3022c6677fdeb4c3443eafae003853c943c0",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "6735028b1710039c95eda38e81d24d6df1a9268775eddb0a6ddebcb804eaa323",
+        "image_sha256": "ce258bf842f62663669914556afc3022c6677fdeb4c3443eafae003853c943c0",
+        "result": "pass",
+        "notes": "Entire exact replacement JPEG inspected at1672x941 and390px. No detected unresolved defects; previous rejected versions retained.",
+        "compared_question_keys": [
+          "situation_coolant_hot_cap_wait",
+          "safety_tyre_pressure",
+          "situation_abs_emergency_pedal_pulsation",
+          "situation_dynamic_speed_limit_over_fixed",
+          "situation_severe_bleeding_direct_pressure"
+        ],
+        "checks": {
+          "official_rule": "Original Michelin passenger-car guide: never deflate hot tyres; pressure rises with temperature; recheck and adjust cold. Full page read.",
+          "novelty": "Existing tyre-pressure question says measure cold. This tests concrete dangerous correction when hot reading is higher, including thermal expansion and later verification. Full five nearest questions/options/explanations inspected; whole-bank topic search performed.",
+          "signs_and_text": "All fake embossed sidewall writing removed. No signs, digits or labels; no pressure inferred from a hidden gauge.",
+          "road_geometry": "Wheel on flat service-area pavement beside pump base; no road manoeuvre.",
+          "vehicles_and_people": "No people; one intact tyre with coherent wheel arch and car body.",
+          "dashboard_and_equipment": "Five wheel bolts, brake disc/caliper, valve and attached hose plausible; tyre has normal tread and no bulge/crack.",
+          "full_resolution": "Viewed exact staged scene-2.jpg in full original resolution. All fake embossed sidewall writing removed. No signs, digits or labels; no pressure inferred from a hidden gauge. Five wheel bolts, brake disc/caliper, valve and attached hose plausible; tyre has normal tread and no bulge/crack.",
+          "phone_size": "At390px hose-to-valve connection and intact tyre clear; hot state and relative pressure explicitly stated.",
+          "french_and_english": "FR/EN both supply same facts and correct answer set. No image-dependent hidden measurement or invented universal equipment specification. After long driving, tyres hot and gauge above cold recommended pressure; no damage or other fault.",
+          "all_four_options": "Correct set b,d. {'fr': {'a': 'Risque de sous-gonflage une fois froid.', 'b': 'La hausse thermique ne doit pas être corrigée ainsi.', 'c': 'Cette perte d’air crée un danger.', 'd': 'Le contrôle à froid permet la comparaison prescrite.'}, 'en': {'a': 'It may be underinflated after cooling.', 'b': 'Do not correct the thermal rise this way.', 'c': 'Releasing that air is dangerous.', 'd': 'A cold check allows the specified comparison.'}}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "35c19df2ff37faa92a98a6f2e3ac4e8103a0c250505e21345098dca6c1851b71"
+    },
+    {
+      "proposal": {
+        "scenario_id": "wiper_split_rubber_before_rain_trip",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car driver knowledge; other users appear only to interpret the road environment.",
+        "learning_objective": "Replace a visibly split wiping edge before a planned wet-weather drive.",
+        "topic": "vehicle.wiper_blade_condition",
+        "scenario": "Before departure in rain, a wiper blade rubber edge split and wiping leaves streaks; reservoir full.",
+        "novelty_review": "Other visibility questions concern interior condensation, frost removal, lighting. None tests worn wiper rubber despite adequate washer fluid.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_wiper_split_rubber_before_rain_trip",
+          "category_slug": "safety",
+          "difficulty": "medium",
+          "correct_answers": [
+            "c"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Avant de partir sous la pluie, je constate que le caoutchouc d’un essuie-glace est fendu et qu’il laisse des traces. Le lave-glace est plein. Que faire ?",
+              "answer_a": "Ajouter de l’eau dans le réservoir déjà plein.",
+              "answer_b": "Compter sur une vitesse plus élevée pour chasser l’eau.",
+              "answer_c": "Remplacer le balai défectueux avant le trajet.",
+              "answer_d": "Désactiver les essuie-glaces pendant la pluie.",
+              "explanation": "Un balai détérioré ne garantit plus un essuyage correct. Le lave-glace ne répare pas le caoutchouc : je remplace le balai avant ce trajet pour conserver une vue nette sur la route."
+            },
+            "en": {
+              "question_text": "Before a rainy drive, I find that a wiper’s rubber edge is split and leaves streaks. The washer reservoir is full. What should I do?",
+              "answer_a": "Add water to the already full reservoir.",
+              "answer_b": "Rely on higher speed to clear the water.",
+              "answer_c": "Replace the faulty blade before the trip.",
+              "answer_d": "Switch the wipers off during the rain.",
+              "explanation": "A damaged blade no longer provides reliable wiping. Washer fluid cannot repair its rubber edge; I replace the blade before this journey to maintain a clear view of the road."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Cela ne répare pas le balai.",
+            "b": "La vitesse aggrave le risque.",
+            "c": "Le caoutchouc défectueux doit être remplacé.",
+            "d": "Il faut pouvoir essuyer la pluie."
+          },
+          "en": {
+            "a": "This cannot repair the blade.",
+            "b": "Speed increases the risk.",
+            "c": "The damaged blade needs replacement.",
+            "d": "Rain must be wiped away."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. Original close-up photographic scene of a parked passenger car windscreen with one wiper arm carefully raised for inspection. Focus on a physically plausible flexible black wiper blade with its thin rubber wiping lip visibly SPLIT near one end, a short loose 3cm rubber strip dangling from the blade; rigid plastic spine intact. Windscreen below has light raindrops, no huge cracks, no hands. Tight composition excludes road, registration, brands, letters and dashboard. Natural soft overcast daylight. Defect clear enough at phone size, realistic tiny rubber tear not a broken metal arm.",
+        "sources": [
+          {
+            "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042266012/",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "R316-4 requires sufficient effective windscreen wiping to see road distinctly; current article read. Wiper blade condition follows maintenance guidance."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "situation_ev_charge_cable_cut_insulation",
+          "similarity": 0.1,
+          "question_fr": "Avant de brancher ma voiture électrique, je vois une coupure dans la gaine du câble de recharge. Que faire ?"
+        },
+        {
+          "key": "situation_engine_oil_level_measurement_conditions",
+          "similarity": 0.097,
+          "question_fr": "Avant un trajet, je veux vérifier le niveau d’huile moteur avec la jauge. Dans quelles conditions obtenir une lecture fiable ?"
+        },
+        {
+          "key": "situation_wet_bend_below_posted_limit",
+          "similarity": 0.096,
+          "question_fr": "La limitation est de 70 km/h, mais ce virage mouillé masque la suite de la route. Comment adapter mon allure ?"
+        },
+        {
+          "key": "situation_dual_carriageway_rain_100",
+          "similarity": 0.095,
+          "question_fr": "Il pleut sur cette route à deux chaussées séparées, sans limitation inférieure. Quelle vitesse maximale s'applique à ma voiture ?"
+        },
+        {
+          "key": "situation_parking_solid_line_insufficient_passage",
+          "similarity": 0.093,
+          "question_fr": "Si je stationne contre ce bord droit, les autres voitures devront chevaucher la ligne continue pour passer. Puis-je m'y garer ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-006/wiper_split_rubber_before_rain_trip/scene-1.jpg",
+          "image_sha256": "3dc1fc09fab6ade7b4fadb8f9edfd1b6b8b1bca2bcfbc30d8e0ddcb127cd37dd",
+          "prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. Original close-up photographic scene of a parked passenger car windscreen with one wiper arm carefully raised for inspection. Focus on a physically plausible flexible black wiper blade with its thin rubber wiping lip visibly SPLIT near one end, a short loose 3cm rubber strip dangling from the blade; rigid plastic spine intact. Windscreen below has light raindrops, no huge cracks, no hands. Tight composition excludes road, registration, brands, letters and dashboard. Natural soft overcast daylight. Defect clear enough at phone size, realistic tiny rubber tear not a broken metal arm.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "75863651741f8563d64282f44f2f4bbbf13152e8822ad0c3ede6a2c47f975904",
+            "image_sha256": "3dc1fc09fab6ade7b4fadb8f9edfd1b6b8b1bca2bcfbc30d8e0ddcb127cd37dd",
+            "result": "pass",
+            "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+            "compared_question_keys": [
+              "situation_ev_charge_cable_cut_insulation",
+              "situation_engine_oil_level_measurement_conditions",
+              "situation_wet_bend_below_posted_limit",
+              "situation_dual_carriageway_rain_100",
+              "situation_parking_solid_line_insufficient_passage"
+            ],
+            "checks": {
+              "official_rule": "R316-4 requires sufficient effective windscreen wiping to see road distinctly; current article read. Wiper blade condition follows maintenance guidance.",
+              "novelty": "Other visibility questions concern interior condensation, frost removal, lighting. None tests worn wiper rubber despite adequate washer fluid. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+              "signs_and_text": "No signs/text/labels. No highlighted defect marker.",
+              "road_geometry": "Windscreen closeup; road and other traffic outside frame.",
+              "vehicles_and_people": "No people or vehicles beyond the inspected parked car.",
+              "dashboard_and_equipment": "Raised wiper blade has intact rigid spine and split flexible lip near end, visible loose rubber. Glass has rain drops, no unrelated crack.",
+              "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. No signs/text/labels. No highlighted defect marker. Raised wiper blade has intact rigid spine and split flexible lip near end, visible loose rubber. Glass has rain drops, no unrelated crack.",
+              "phone_size": "At390px loose rubber end remains visible; split and streaking also explicitly stated.",
+              "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. Before departure in rain, a wiper blade rubber edge split and wiping leaves streaks; reservoir full.",
+              "all_four_options": "Correct set c. {'fr': {'a': 'Cela ne répare pas le balai.', 'b': 'La vitesse aggrave le risque.', 'c': 'Le caoutchouc défectueux doit être remplacé.', 'd': 'Il faut pouvoir essuyer la pluie.'}, 'en': {'a': 'This cannot repair the blade.', 'b': 'Speed increases the risk.', 'c': 'The damaged blade needs replacement.', 'd': 'Rain must be wiped away.'}}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-006/wiper_split_rubber_before_rain_trip/scene-1.jpg",
+      "image_sha256": "3dc1fc09fab6ade7b4fadb8f9edfd1b6b8b1bca2bcfbc30d8e0ddcb127cd37dd",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "75863651741f8563d64282f44f2f4bbbf13152e8822ad0c3ede6a2c47f975904",
+        "image_sha256": "3dc1fc09fab6ade7b4fadb8f9edfd1b6b8b1bca2bcfbc30d8e0ddcb127cd37dd",
+        "result": "pass",
+        "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+        "compared_question_keys": [
+          "situation_ev_charge_cable_cut_insulation",
+          "situation_engine_oil_level_measurement_conditions",
+          "situation_wet_bend_below_posted_limit",
+          "situation_dual_carriageway_rain_100",
+          "situation_parking_solid_line_insufficient_passage"
+        ],
+        "checks": {
+          "official_rule": "R316-4 requires sufficient effective windscreen wiping to see road distinctly; current article read. Wiper blade condition follows maintenance guidance.",
+          "novelty": "Other visibility questions concern interior condensation, frost removal, lighting. None tests worn wiper rubber despite adequate washer fluid. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+          "signs_and_text": "No signs/text/labels. No highlighted defect marker.",
+          "road_geometry": "Windscreen closeup; road and other traffic outside frame.",
+          "vehicles_and_people": "No people or vehicles beyond the inspected parked car.",
+          "dashboard_and_equipment": "Raised wiper blade has intact rigid spine and split flexible lip near end, visible loose rubber. Glass has rain drops, no unrelated crack.",
+          "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. No signs/text/labels. No highlighted defect marker. Raised wiper blade has intact rigid spine and split flexible lip near end, visible loose rubber. Glass has rain drops, no unrelated crack.",
+          "phone_size": "At390px loose rubber end remains visible; split and streaking also explicitly stated.",
+          "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. Before departure in rain, a wiper blade rubber edge split and wiping leaves streaks; reservoir full.",
+          "all_four_options": "Correct set c. {'fr': {'a': 'Cela ne répare pas le balai.', 'b': 'La vitesse aggrave le risque.', 'c': 'Le caoutchouc défectueux doit être remplacé.', 'd': 'Il faut pouvoir essuyer la pluie.'}, 'en': {'a': 'This cannot repair the blade.', 'b': 'Speed increases the risk.', 'c': 'The damaged blade needs replacement.', 'd': 'Rain must be wiped away.'}}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "72d1a611a5e8dacb9d6d2eca8172f7fb128cd3870ce2da0d72a69079973c9055"
+    },
+    {
+      "proposal": {
+        "scenario_id": "accident_emergency_call_information",
+        "scope": "ordinary_passenger_car",
+        "scope_review": "Ordinary category-B passenger-car driver knowledge; other users appear only to interpret the road environment.",
+        "learning_objective": "Give useful accident-location and victim information and wait for the operator before ending the call.",
+        "topic": "first_aid.emergency_call_information",
+        "scenario": "Witness parked safely away from traffic; area secured, road collision with injured person; already connected to112. Ask communication priorities, no treatment instruction.",
+        "novelty_review": "Existing protect-alert-rescue sequence and SOSlocation advantage do not test verbal alert content or who ends the call. eCallaccidentmispress is false alarm, different objective.",
+        "primary_codes": [],
+        "context_codes": [],
+        "question": {
+          "key": "situation_accident_emergency_call_information",
+          "category_slug": "safety",
+          "difficulty": "medium",
+          "correct_answers": [
+            "a",
+            "c"
+          ],
+          "translations": {
+            "fr": {
+              "question_text": "Témoin d’un accident avec blessé, je suis à l’abri et en ligne avec le 112. Quelles actions sont adaptées ?",
+              "answer_a": "Donner le lieu précis et l’état apparent des victimes.",
+              "answer_b": "Raccrocher dès que j’ai dit « accident ».",
+              "answer_c": "Répondre aux questions et attendre l’autorisation de raccrocher.",
+              "answer_d": "Attendre de connaître le responsable avant de donner le lieu.",
+              "explanation": "Une localisation précise et les informations sur les victimes aident à envoyer les secours adaptés. Je réponds calmement, signale les dangers connus et ne termine pas l’appel avant les consignes de l’opérateur."
+            },
+            "en": {
+              "question_text": "I witnessed a collision with an injured person, am in a safe place and am speaking to 112. Which actions are appropriate?",
+              "answer_a": "Give the exact location and the victims’ apparent condition.",
+              "answer_b": "Hang up as soon as I have said “collision”.",
+              "answer_c": "Answer questions and wait for permission to hang up.",
+              "answer_d": "Wait to identify who was at fault before giving the location.",
+              "explanation": "An exact location and information about the victims help dispatch suitable assistance. I answer calmly, report known hazards and do not end the call before the operator’s instructions."
+            }
+          }
+        },
+        "option_rationale": {
+          "fr": {
+            "a": "Informations nécessaires pour orienter les secours.",
+            "b": "L’alerte serait incomplète.",
+            "c": "L’opérateur doit pouvoir obtenir les précisions utiles.",
+            "d": "L’attribution des responsabilités n’est pas prioritaire."
+          },
+          "en": {
+            "a": "This helps direct suitable assistance.",
+            "b": "The alert would be incomplete.",
+            "c": "The operator needs to obtain useful details.",
+            "d": "Assigning blame is not the priority."
+          }
+        },
+        "image_prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. Original photorealistic close side portrait of an adult road-collision witness standing safely on a wide grassy area well behind a steel roadside guardrail, wearing a realistic yellow high-visibility vest with two horizontal reflective silver bands over a navy jacket. Person holds a plain smartphone to their ear, screen facing inward not readable. Natural calm attentive expression, realistic five-finger hand partly wrapping phone. Guardrail behind the person separates them from an empty road in distant background. Tight waist-up crop, no crash or injured person shown, no logos, no text, no road signs. Bright neutral daylight; no unsafe standing in lane.",
+        "sources": [
+          {
+            "url": "https://www.interieur.gouv.fr/fr/Archives/Archives-de-la-rubrique-Ma-securite/Les-services-de-secours",
+            "kind": "official",
+            "checked_on": "2026-10-10",
+            "supports": "Interior emergency-call advice: precise address, reason/circumstances, casualty details, do not hang up first. Original page read; stable communication guidance."
+          }
+        ]
+      },
+      "state": "reviewed",
+      "nearest_questions": [
+        {
+          "key": "safety_accident_first_actions",
+          "similarity": 0.212,
+          "question_fr": "Lors d’un accident de la route, quelles premières actions sont adaptées ?"
+        },
+        {
+          "key": "situation_motorway_sos_location",
+          "similarity": 0.144,
+          "question_fr": "Après une panne, je suis à l’abri et une borne SOS est accessible sans danger. Quel est son principal avantage pour l’alerte ?"
+        },
+        {
+          "key": "situation_ecall_accidental_connected_call",
+          "similarity": 0.131,
+          "question_fr": "Ma voiture est garée en sécurité. J’ai déclenché le bouton SOS par erreur et un opérateur me répond. Que faire ?"
+        },
+        {
+          "key": "situation_signed_accident_report_no_front_changes",
+          "similarity": 0.12,
+          "question_fr": "Après un accident sans blessé, nous avons rempli et signé le recto du constat amiable papier. Chacun a son exemplaire. Que puis-je faire ensuite ?"
+        },
+        {
+          "key": "situation_safety_oil_pressure_stop_engine",
+          "similarity": 0.115,
+          "question_fr": "En roulant, le témoin rouge de pression d’huile reste allumé avec l’alerte STOP. Que dois-je faire ?"
+        }
+      ],
+      "history": [
+        {
+          "image_path": "assets-source/question-batches/expansion-006/accident_emergency_call_information/scene-1.jpg",
+          "image_sha256": "1d0ba0c7ade6634f53d505f4d781f1ea9cd424ba09999f283c8c2a77882a114e",
+          "prompt": "Create ONE original photorealistic landscape 16:9 scene, 1672x941 or larger, for a French car-driving theory question. Scene only: no embedded quiz text, answers, annotations, solution highlighting, collage, watermark or brand. Physically realistic French road geometry and equipment. Main clue clear at 390px width. Original photorealistic close side portrait of an adult road-collision witness standing safely on a wide grassy area well behind a steel roadside guardrail, wearing a realistic yellow high-visibility vest with two horizontal reflective silver bands over a navy jacket. Person holds a plain smartphone to their ear, screen facing inward not readable. Natural calm attentive expression, realistic five-finger hand partly wrapping phone. Guardrail behind the person separates them from an empty road in distant background. Tight waist-up crop, no crash or injured person shown, no logos, no text, no road signs. Bright neutral daylight; no unsafe standing in lane.\n",
+          "created_on": "2026-10-10",
+          "review": {
+            "proposal_sha256": "58c7b01714875ddeb34b32103dcd054fdd1b0146cd45302cf8a133ad55dd0b18",
+            "image_sha256": "1d0ba0c7ade6634f53d505f4d781f1ea9cd424ba09999f283c8c2a77882a114e",
+            "result": "pass",
+            "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+            "compared_question_keys": [
+              "safety_accident_first_actions",
+              "situation_motorway_sos_location",
+              "situation_ecall_accidental_connected_call",
+              "situation_signed_accident_report_no_front_changes",
+              "situation_safety_oil_pressure_stop_engine"
+            ],
+            "checks": {
+              "official_rule": "Interior emergency-call advice: precise address, reason/circumstances, casualty details, do not hang up first. Original page read; stable communication guidance.",
+              "novelty": "Existing protect-alert-rescue sequence and SOSlocation advantage do not test verbal alert content or who ends the call. eCallaccidentmispress is false alarm, different objective. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+              "signs_and_text": "No signs, labels, registration or readable phone interface. Vest has two silver reflective bands.",
+              "road_geometry": "Witness on grassy safe side of continuous metal guardrail, separated from empty carriageway; road edges/centre dashes coherent.",
+              "vehicles_and_people": "One adult holding phone to ear naturally, hand/anatomy coherent, no visible injury or victim requiring invented diagnosis.",
+              "dashboard_and_equipment": "Phone back visible, screen toward ear; high visibility vest over jacket; guardrail posts support barrier.",
+              "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. No signs, labels, registration or readable phone interface. Vest has two silver reflective bands. Phone back visible, screen toward ear; high visibility vest over jacket; guardrail posts support barrier.",
+              "phone_size": "At390px caller, vest and protective barrier easily identified; all unavailable collision facts stated in stem.",
+              "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. Witness parked safely away from traffic; area secured, road collision with injured person; already connected to112. Ask communication priorities, no treatment instruction.",
+              "all_four_options": "Correct set a,c. {'fr': {'a': 'Informations nécessaires pour orienter les secours.', 'b': 'L’alerte serait incomplète.', 'c': 'L’opérateur doit pouvoir obtenir les précisions utiles.', 'd': 'L’attribution des responsabilités n’est pas prioritaire.'}, 'en': {'a': 'This helps direct suitable assistance.', 'b': 'The alert would be incomplete.', 'c': 'The operator needs to obtain useful details.', 'd': 'Assigning blame is not the priority.'}}"
+            },
+            "recorded_on": "2026-10-10"
+          }
+        }
+      ],
+      "image_path": "assets-source/question-batches/expansion-006/accident_emergency_call_information/scene-1.jpg",
+      "image_sha256": "1d0ba0c7ade6634f53d505f4d781f1ea9cd424ba09999f283c8c2a77882a114e",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "review": {
+        "proposal_sha256": "58c7b01714875ddeb34b32103dcd054fdd1b0146cd45302cf8a133ad55dd0b18",
+        "image_sha256": "1d0ba0c7ade6634f53d505f4d781f1ea9cd424ba09999f283c8c2a77882a114e",
+        "result": "pass",
+        "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+        "compared_question_keys": [
+          "safety_accident_first_actions",
+          "situation_motorway_sos_location",
+          "situation_ecall_accidental_connected_call",
+          "situation_signed_accident_report_no_front_changes",
+          "situation_safety_oil_pressure_stop_engine"
+        ],
+        "checks": {
+          "official_rule": "Interior emergency-call advice: precise address, reason/circumstances, casualty details, do not hang up first. Original page read; stable communication guidance.",
+          "novelty": "Existing protect-alert-rescue sequence and SOSlocation advantage do not test verbal alert content or who ends the call. eCallaccidentmispress is false alarm, different objective. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+          "signs_and_text": "No signs, labels, registration or readable phone interface. Vest has two silver reflective bands.",
+          "road_geometry": "Witness on grassy safe side of continuous metal guardrail, separated from empty carriageway; road edges/centre dashes coherent.",
+          "vehicles_and_people": "One adult holding phone to ear naturally, hand/anatomy coherent, no visible injury or victim requiring invented diagnosis.",
+          "dashboard_and_equipment": "Phone back visible, screen toward ear; high visibility vest over jacket; guardrail posts support barrier.",
+          "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. No signs, labels, registration or readable phone interface. Vest has two silver reflective bands. Phone back visible, screen toward ear; high visibility vest over jacket; guardrail posts support barrier.",
+          "phone_size": "At390px caller, vest and protective barrier easily identified; all unavailable collision facts stated in stem.",
+          "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. Witness parked safely away from traffic; area secured, road collision with injured person; already connected to112. Ask communication priorities, no treatment instruction.",
+          "all_four_options": "Correct set a,c. {'fr': {'a': 'Informations nécessaires pour orienter les secours.', 'b': 'L’alerte serait incomplète.', 'c': 'L’opérateur doit pouvoir obtenir les précisions utiles.', 'd': 'L’attribution des responsabilités n’est pas prioritaire.'}, 'en': {'a': 'This helps direct suitable assistance.', 'b': 'The alert would be incomplete.', 'c': 'The operator needs to obtain useful details.', 'd': 'Assigning blame is not the priority.'}}"
+        },
+        "recorded_on": "2026-10-10"
+      },
+      "imported_question_sha256": "fbea6fac3d81dfec07f58ddb3a5abd83a63f3300f77697bc39c55a9d78eb261d"
+    }
+  ],
+  "imported_on": "2026-10-10",
+  "content_version": 99,
+  "questions_after": 448,
+  "pack_after_sha256": "bc59f891f9cf080c9cba98f0a45bb63a456303666e6342e5c0ef7d676cba1fa8",
+  "verified_on": "2026-10-10",
+  "verification": {
+    "pack_sha256": "bc59f891f9cf080c9cba98f0a45bb63a456303666e6342e5c0ef7d676cba1fa8",
+    "content_version": 99,
+    "python_tests": {
+      "result": "pass",
+      "notes": "52 workflow tests passed, covering duplicate blocking, exact approvals, recovery and retries.",
+      "path": "assets-source/question-batches/expansion-006/python-tests.log",
+      "sha256": "edf5ba4d0621aca73066cbe24c325ab23843dc41ad1759131be867bc0cf25e2e"
+    },
+    "ios_tests": {
+      "result": "pass",
+      "notes": "36 native tests passed, including bundled content, decoding and multiple-answer handling.",
+      "path": "assets-source/question-batches/expansion-006/ios-tests.log",
+      "sha256": "afcb5af538e260791dc8d4e19a982fdacb85506009f4f703c9f4c5ad9fa8ef3e"
+    },
+    "sqlite_check": {
+      "result": "pass",
+      "notes": "448 active questions, 419 illustrated; translations, categories, answer sets and paths match version99. Saved practice history unchanged.",
+      "path": "assets-source/question-batches/expansion-006/sqlite-after-ui.json",
+      "sha256": "17e5ebff09e909f9f6be739aa0b22f053ba28b38d981963009085dcb7e10b473"
+    },
+    "simulator_review": {
+      "result": "pass",
+      "notes": "All ten French questions displayed and complete answer sets accepted. Both English partial multi-answer sets rejected; plural corrections verified. Normal home restored.",
+      "path": "assets-source/question-batches/expansion-006/simulator-review.json",
+      "sha256": "39a01b375fde8a7544881dc5a84791bfb57814c2828b7ce54c61daef856e8605"
+    }
+  }
+}

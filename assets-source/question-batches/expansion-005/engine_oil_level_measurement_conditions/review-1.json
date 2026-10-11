@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "20820ef790cdbbc0d6b341855663cfba2d11e4f6f998aa933429858dd027aaab",
+  "image_sha256": "b2834da716aa4d4a7bce98d8f479b551ce1210ba471d3c7414a5cadbc511dd7d",
+  "result": "pass",
+  "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+  "compared_question_keys": [
+    "situation_safety_oil_pressure_stop_engine",
+    "situation_alcohol_expired_self_test_unreliable",
+    "situation_coolant_hot_cap_wait",
+    "situation_speed_carpark_walking_pace",
+    "situation_abs_warning_stays_on_without_red_brake"
+  ],
+  "checks": {
+    "signs_and_text": "No letters, numbers or captions on the dipstick or bench.",
+    "road_geometry": "Workbench context; level-ground condition is an answer, not inferred from image.",
+    "vehicles_and_people": "No person handling hot machinery and no vehicle shown.",
+    "dashboard_and_equipment": "One orange ring handle, attached thin metal strip with measuring zone between paired notches; whole dipstick in frame.",
+    "phone_size": "Dipstick and clean cloth recognisable at390px; notches are context, no oil-level reading required.",
+    "official_rule": "Sources actually read during authoring: Original Renault Clio5 manual, engine-oil-level section: horizontal ground after prolonged engine stop; wipe dipstick, fully reinsert then read; never exceed maximum. Question defers precise waiting interval to vehicle manual.",
+    "novelty": "Whole-bank oil/jauge search finds only urgent red oil-pressure warning. This teaches obtaining a reliable routine level measurement, not responding to pressure failure, opening a hot coolant cap, or checking tyre pressure. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+    "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No person handling hot machinery and no vehicle shown. One orange ring handle, attached thin metal strip with measuring zone between paired notches; whole dipstick in frame.",
+    "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Dipstick and clean cloth recognisable at390px; notches are context, no oil-level reading required.",
+    "all_four_options": "Correct B. A: A running engine and slope distort the reading.; B: Level ground and the specified wait support an accurate reading.; C: A slope and immediate reading can distort the result.; D: Overfilling risks engine damage."
+  }
+}

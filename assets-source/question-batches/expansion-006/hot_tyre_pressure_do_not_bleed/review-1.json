@@ -1,0 +1,13 @@
+{
+  "proposal_sha256": "6735028b1710039c95eda38e81d24d6df1a9268775eddb0a6ddebcb804eaa323",
+  "image_sha256": "5c98f12dc2359dedd2a40720cc96f5131e1b38c6151a0ac967c243162bb7bb26",
+  "result": "reject",
+  "notes": "Reject: invented and unreadable embossed sidewall characters remain visible around top of tyre; remove all such lettering, preserve intact tyre and connected valve.",
+  "compared_question_keys": [
+    "situation_coolant_hot_cap_wait",
+    "safety_tyre_pressure",
+    "situation_abs_emergency_pedal_pulsation",
+    "situation_dynamic_speed_limit_over_fixed",
+    "situation_severe_bleeding_direct_pressure"
+  ]
+}

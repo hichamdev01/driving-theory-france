@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "a5d6245e02988c8c18a97ebfca040b97a512fb81cfcf6398dc3bc038474751b3",
+  "image_sha256": "f3b01c3665361d6723ca1043fc0aefb9d208a964970dd862df74efcfec5f3d0d",
+  "result": "pass",
+  "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+  "compared_question_keys": [
+    "situation_truck_right_turn_blind_spot",
+    "safety_door_cyclist_check",
+    "situation_overtake_signal_before_moving_left",
+    "situation_overtake_right_left_turner",
+    "situation_parking_camera_requires_direct_checks"
+  ],
+  "checks": {
+    "signs_and_text": "Dark unlit two-car blind-spot icon; no glowing alert or invented explanatory text.",
+    "road_geometry": "Left mirror on driver door, receding road reflected with car body at inner right edge; actual blind spot outside view.",
+    "vehicles_and_people": "No traffic appears in the mirror; this does not establish an empty blind spot.",
+    "dashboard_and_equipment": "Mirror mount, glass, door frame and body reflection plausible; factory-style sensor icon unlit.",
+    "phone_size": "Mirror and unlit icon discernible at390px; both stems explicitly establish no warning and require independent checks.",
+    "official_rule": "Sources actually read during authoring: Original Renault Express manual: system only supplements vigilance, limitations/objects may not detected; indicatoroff meansno detection,notguaranteedclearzone.; Sécurité routière, La vue (July 2015 leaflet, still hosted on official site), page 2, Voir large: speed narrows the useful visual field; mirrors leave blind spots checked by a brief head turn. Actual PDF downloaded and read; no numerical angle claim used.",
+    "novelty": "Negative blind-spot detector result does not certify a safe lane change, distinct from camera view coverage when reversing or timing an indicator after completed checks. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+    "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No traffic appears in the mirror; this does not establish an empty blind spot. Mirror mount, glass, door frame and body reflection plausible; factory-style sensor icon unlit.",
+    "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Mirror and unlit icon discernible at390px; both stems explicitly establish no warning and require independent checks.",
+    "all_four_options": "Correct B,D. A: System limitations prevent that guarantee.; B: Observation remains essential.; C: Indicators do not grant priority.; D: Some users or circumstances may not be detected."
+  }
+}

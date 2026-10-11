@@ -1,0 +1,44 @@
+{
+  "state": "imported_awaiting_simulator_visual_review",
+  "pack_sha256": "8103f8c47032696f66f70b1d689817a89b2b76a38c0b1262d2bcfa42495ccc83",
+  "content_version": 102,
+  "questions": 478,
+  "python_tests": {
+    "result": "pass",
+    "count": 59,
+    "path": "assets-source/question-batches/expansion-009/python-tests-current.log",
+    "sha256": "4551e1817bdec01359b3b5b5f7108e8d165ccf7157b44f590a93fa62d02735ef"
+  },
+  "ios_tests": {
+    "result": "pass",
+    "count": 36,
+    "path": "assets-source/question-batches/expansion-009/ios-tests.log",
+    "sha256": "75fa5a13ae84b08afdb0f938eadf0f7a3b0860b5351f7ef6cffb40266fde9645"
+  },
+  "sqlite_check": {
+    "result": "pass",
+    "content_version": 102,
+    "questions": 478,
+    "illustrated": 449,
+    "categories": {
+      "road_signs": 123,
+      "priority_rules": 46,
+      "speed_limits": 44,
+      "parking_stopping": 43,
+      "overtaking": 42,
+      "motorways": 36,
+      "alcohol_drugs": 48,
+      "safety": 96
+    },
+    "pack_sha256": "8103f8c47032696f66f70b1d689817a89b2b76a38c0b1262d2bcfa42495ccc83",
+    "progress_sha256": "35e5e3503c10891d92e69ab9fc0074f4358999baeafe7ed2d75992723533da75",
+    "checks": "SQLite integrity, all active FR keys, categories, media paths, difficulty, answer sets and both full translations match the current pack."
+  },
+  "simulator_review": {
+    "result": "pending",
+    "blocker": "Computer-use tool reports Mac is locked and automatic unlock unsuccessful; user asked to unlock manually. No UI acceptance claimed.",
+    "next_action": "Inspect all ten French questions and both English incomplete multi-answer sets in the Debug ContentReviewKeys route; restore normal launch and compare saved progress afterward."
+  },
+  "unrelated_starting_files_changed": [],
+  "next_batch_gate": "Do not reserve expansion-010 until expansion-009 simulator review and verify pass."
+}

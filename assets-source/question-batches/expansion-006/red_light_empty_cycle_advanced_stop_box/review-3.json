@@ -1,0 +1,6 @@
+{
+  "proposal_sha256": "ebaeec658edaa07191eb7b5fc1f9e9727b54da17bea8031b4ff34cee116ea563",
+  "image_sha256": "5b106edc9c216e221f0a9491249659b6ce0fa526fdda1ad43012fcc67826c82f",
+  "result": "reject",
+  "notes": "Second correction fixes repeater red but over-shortens transverse white dashes; gaps now clearly longer than strokes. Final correction must provide equal stroke/gap lengths. No approval while this remains."
+}

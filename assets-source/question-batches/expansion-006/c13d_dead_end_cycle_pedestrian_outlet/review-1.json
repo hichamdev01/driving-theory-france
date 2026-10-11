@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "0fd6500fc3bc4bb9e63ef9238f04601ad3cde7c355014373808fe3ade1a24b47",
+  "image_sha256": "e82df0176932fedc1ab75cd231295f17d9b6dfdd558e8bdc032692c106df9681",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected in full resolution and390px phone rendering; no detected unresolved defects. Approval applies only to these question/image bytes.",
+  "compared_question_keys": [
+    "situation_c13c_dead_end_pedestrian_exit",
+    "situation_c13b_car_scenario",
+    "situation_dead_end_c13a_access",
+    "situation_c113_car_interpretation",
+    "situation_b22b_car_sign_interpretation"
+  ],
+  "checks": {
+    "official_rule": "Article5 C13d: dead end with an outlet for pedestrians and cyclists.",
+    "novelty": "C13a/b mean dead end and C13c only pedestrian outlet. C13d distinct code and bicycle outlet not tested; question tests both symbols rather than repeating car-no-through decision. Read all five nearest full explanations and cross-category inventory; not a scenery-only rewrite.",
+    "signs_and_text": "Blue C13d with white inner border, red cap/white stem, distinct white cyclist and pedestrian above. No other visible sign or lettering.",
+    "road_geometry": "Residential lane terminates in background; the sign indicates filtered outlet, full layout of exit is outside close view. Pavements and verge plausible.",
+    "vehicles_and_people": "No real people/cars; sign pedestrian and bicycle have clear distinct silhouettes.",
+    "dashboard_and_equipment": "Sign post stable at pavement edge, no dashboard.",
+    "full_resolution": "Viewed exact1672x941 staged scene-1.jpg, scanning entire frame and focal details. Blue C13d with white inner border, red cap/white stem, distinct white cyclist and pedestrian above. No other visible sign or lettering. Sign post stable at pavement edge, no dashboard.",
+    "phone_size": "At390px both cyclist and pedestrian icons remain distinct above dead-end T.",
+    "french_and_english": "Both translations reviewed against objective and all options: same assumptions, scope and answer set; no required fact inferred from a still image. C13d at residential entrance; no other permissions. Ask which road users have an outlet.",
+    "all_four_options": "Correct set a. {'fr': {'a': 'Les deux pictogrammes l’indiquent.', 'b': 'Le vélo est également représenté.', 'c': 'Aucune exception électrique.', 'd': 'Le cycle n’est pas une moto.'}, 'en': {'a': 'Both pictograms indicate this.', 'b': 'A bicycle is also shown.', 'c': 'There is no electric-car exception.', 'd': 'A bicycle symbol does not mean motorcycle.'}}"
+  }
+}

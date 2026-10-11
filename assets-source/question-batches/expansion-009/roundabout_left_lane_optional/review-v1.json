@@ -1,0 +1,6 @@
+{
+  "proposal_sha256": "df4bee393bb807dd04e88d53016f9aed39def97a1b5a675ad8d6fcd1067bf196",
+  "image_sha256": "d1264e198abe86bb5ae2d3c6d1c542729a5cd9c8c8fb4bc3f3e4d88bb18f8992",
+  "result": "reject",
+  "notes": "Rejected after full-resolution and 390px inspection: stray outer dashed arcs span side entry/exit mouths, and other visible approaches lack coherent give-way signing/markings. Retain two circulating lanes but correct every visible entry."
+}

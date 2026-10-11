@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "12e594c4de5bf703458a14a40b3fa7aa5c44c3f49f71ba9f8dee4e06a81e4a24",
+  "image_sha256": "07eeb25aa892b666febc30781054ef0ab1111b39efdd28bcf8d87792f0a031a2",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected at original1672x941 and390px; no detected unresolved defects.",
+  "compared_question_keys": [
+    "speed_motorway_dry_general",
+    "situation_speed_limit_110",
+    "speed_motorway_probationary",
+    "situation_dual_carriageway_default_110",
+    "situation_speed_two_same_direction_90"
+  ],
+  "checks": {
+    "official_rule": "Official speed education explains overestimated travel-time gains. Our original30km110/130 calculation is independently computed, not copied from their example.",
+    "novelty": "Existing numerical items cover stopping and reaction distances, not journey-time gains. Original values differ from source example. Both translations/options/explanations of five nearest reviewed, with whole-category inventory.",
+    "signs_and_text": "No signs, text or markings visible.",
+    "road_geometry": "Lateral passenger-window view of paved shoulder, correctly joined guardrail panels/supports and grass beyond.",
+    "vehicles_and_people": "No other vehicles or people.",
+    "dashboard_and_equipment": "Passenger window lower edge only, no speedometer or false numeric clue.",
+    "full_resolution": "Exact scene-1.jpg1672x941 inspected. No signs, text or markings visible. Passenger window lower edge only, no speedometer or false numeric clue.",
+    "phone_size": "Travel context clear at390px; all calculation inputs provided in wording.",
+    "french_and_english": "Both translations match conditions and correct set. Pure calculation:30km at constant110 versus130, no stops, dry permitted130 motorway with experienced driver; not a recommendation to accelerate.",
+    "all_four_options": "Correct set d. {\"fr\": {\"a\": \"Très supérieur au résultat.\", \"b\": \"Très supérieur au résultat.\", \"c\": \"Encore plus du double du gain.\", \"d\": \"30/110×60−30/130×60 =2,517minutes.\"}, \"en\": {\"a\": \"Far above the result.\", \"b\": \"Far above the result.\", \"c\": \"More than double the actual gain.\", \"d\": \"30/110×60−30/130×60 =2.517minutes.\"}}"
+  }
+}

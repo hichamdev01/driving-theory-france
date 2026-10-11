@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "f34d47d4c22122435487dc5301e7f87490f900623a6a68428235a000901e24e0",
+  "image_sha256": "8857a174c1083afde7133f97978bf61cade7cbd45869609cfbee166877ed3813",
+  "result": "pass",
+  "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+  "compared_question_keys": [
+    "situation_ev_charger_blocked_parking",
+    "situation_parking_blocks_parked_exit",
+    "situation_disabled_bay_without_card",
+    "situation_ev_charge_cable_cut_insulation",
+    "situation_c26a_car_scenario"
+  ],
+  "checks": {
+    "signs_and_text": "Blank charger display; corrected tyre sidewalls and centre caps have no invented lettering; no sign or plate.",
+    "road_geometry": "Paved charging area; explicit reserved-while-charging condition in stem, no inference from absent signs.",
+    "vehicles_and_people": "White hatchback stationary, plausible lamps, panels, wheels and reflections; no people.",
+    "dashboard_and_equipment": "One cable joins pedestal socket and car inlet with plausible connector geometry and gentle loop; no active-charge indication.",
+    "phone_size": "Connected cable and charger clear at390px; completed charging is a stated fact, not inferred from dark screen.",
+    "official_rule": "Sources actually read during authoring: Article8EVparkingmarkingreservesbayduringbatteryrecharging; explicitreservationinquestion. Electricvehiclealoneafterchargeisnotsufficient.",
+    "novelty": "Electric-car reservation expires when charging ends, distinct from a combustion car never being eligible or damaged cable safety. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+    "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. White hatchback stationary, plausible lamps, panels, wheels and reflections; no people. One cable joins pedestal socket and car inlet with plausible connector geometry and gentle loop; no active-charge indication.",
+    "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Connected cable and charger clear at390px; completed charging is a stated fact, not inferred from dark screen.",
+    "all_four_options": "Correct D. A: Electric propulsion alone is not enough after charging.; B: An inactive connection is not charging.; C: A phone number does not grant permission.; D: The bay is reserved while charging."
+  }
+}

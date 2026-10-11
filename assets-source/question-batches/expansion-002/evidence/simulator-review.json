@@ -1,0 +1,118 @@
+{
+  "result": "pass",
+  "reviewed_on": "2026-10-10",
+  "device": "iPhone 17 Pro, iOS 26.5",
+  "mode": "Debug ContentReviewKeys, real QuestionView, history writes disabled",
+  "french": [
+    {
+      "key": "situation_abs_emergency_pedal_pulsation",
+      "image_sha256": "1777dcc8c2845c501340718b2449fac14519267afe5bbd0e23682566f4e1da98",
+      "proposal_sha256": "6c0f86b1ff2a64260db0e83a19b57f4841591b19f31a659d41bb9a21c3faf97a",
+      "selected": [
+        "a"
+      ],
+      "observed_result": "incorrect with A and D shown as correct",
+      "observations": "Viewed actual scene, full stem, category and single/multiple instruction on simulator screenshot; all four options and explanation checked in accessibility state."
+    },
+    {
+      "key": "situation_ecall_accidental_connected_call",
+      "image_sha256": "2e047215e57a29d26d3fe7b7d461fa5c1e8419c92fe99cf45323826ced9c1892",
+      "proposal_sha256": "41a46f30b9f9c568468b64687208dce04074ceb493fa563f5934cef3b864ccaf",
+      "selected": [
+        "b"
+      ],
+      "observed_result": "correct",
+      "observations": "Viewed actual scene, full stem, category and single/multiple instruction on simulator screenshot; all four options and explanation checked in accessibility state."
+    },
+    {
+      "key": "situation_ead_retest_stop_engine",
+      "image_sha256": "6078a7d8960738d14627fc7ef0cf676f7722466a822df401c1304bb628de0da4",
+      "proposal_sha256": "45e267470e312337bf1ca2e6177197a2e58464c4e25a8c5cd7db5180806afe22",
+      "selected": [
+        "b",
+        "d"
+      ],
+      "observed_result": "correct",
+      "observations": "Viewed actual scene, full stem, category and single/multiple instruction on simulator screenshot; all four options and explanation checked in accessibility state."
+    },
+    {
+      "key": "situation_medicine_blurred_vision_during_drive",
+      "image_sha256": "a38c7d334930c0aa555c1ebe24ef86c0e8e02e32211823da906f8f2f0c7f9adc",
+      "proposal_sha256": "fadfa311df2164ca837ab35f0069cd989869cb2399228509405c6d82c721ed35",
+      "selected": [
+        "c"
+      ],
+      "observed_result": "correct",
+      "observations": "Viewed actual scene, full stem, category and single/multiple instruction on simulator screenshot; all four options and explanation checked in accessibility state."
+    },
+    {
+      "key": "situation_moving_procession_do_not_cut",
+      "image_sha256": "3c9f4ad347b2ce0b90eafd2b46865631d7332ae0b1a26017c015d5b7c1d08ba5",
+      "proposal_sha256": "22b4eb289e3cfd758c64527f4f543a0d092923224bdef7dda64e8a3d24606660",
+      "selected": [
+        "d"
+      ],
+      "observed_result": "correct",
+      "observations": "Viewed actual scene, full stem, category and single/multiple instruction on simulator screenshot; all four options and explanation checked in accessibility state."
+    },
+    {
+      "key": "situation_yellow_broken_kerb_parking_only",
+      "image_sha256": "8fe2ff6608fcd12616ced817a91a1bec8b99f4db3696bca0f3504caded72613b",
+      "proposal_sha256": "11bc2e1f90544ed8c961c60ada7e37387d8a96e07ea8d8d0483be883a87dcd8b",
+      "selected": [
+        "b"
+      ],
+      "observed_result": "correct",
+      "observations": "Viewed actual scene, full stem, category and single/multiple instruction on simulator screenshot; all four options and explanation checked in accessibility state."
+    },
+    {
+      "key": "situation_alternating_parking_change_evening",
+      "image_sha256": "488724571032647cea29c630536f4d09f67642a6b7b2b41c01d9eb6215d68559",
+      "proposal_sha256": "0bbd3378e9f6649212472fba86f3c81f6bf837931ad2cd5cb0a241268f240871",
+      "selected": [
+        "a"
+      ],
+      "observed_result": "correct",
+      "observations": "Viewed actual scene, full stem, category and single/multiple instruction on simulator screenshot; all four options and explanation checked in accessibility state."
+    },
+    {
+      "key": "situation_trailer_ptra_over3500_motorway90",
+      "image_sha256": "68bb9ea6cfc64255814a1094a038be7dfa0d1b077f6bdeb2fa2769dee4f5e83a",
+      "proposal_sha256": "bbdd9a325791e73ef2fdce1a2b731ce2aa0e32d29ed26d9b23e6900ef98121c4",
+      "selected": [
+        "c"
+      ],
+      "observed_result": "correct",
+      "observations": "Viewed actual scene, full stem, category and single/multiple instruction on simulator screenshot; all four options and explanation checked in accessibility state."
+    },
+    {
+      "key": "situation_long_caravan_facilitate_overtaking",
+      "image_sha256": "2a89d3ff12cee2d9c562563364a83d4ac75d5c30e3ec6e7a39d429369dedd3fd",
+      "proposal_sha256": "bc969700b5270f95344d985f1fd0dcd1c67854ccf7627c6f80c47986d8bd798e",
+      "selected": [
+        "d"
+      ],
+      "observed_result": "correct",
+      "observations": "Viewed actual scene, full stem, category and single/multiple instruction on simulator screenshot; all four options and explanation checked in accessibility state."
+    },
+    {
+      "key": "situation_motorway_tunnel_fire_evacuate",
+      "image_sha256": "9087f191abc390352efca8d2b5315e6eef5e2c4da8e2d353d5d961648d57cc29",
+      "proposal_sha256": "d14ccb87a5141b024751ac27db1919391c41953ec3139f3b65738c78d8764623",
+      "selected": [
+        "b"
+      ],
+      "observed_result": "correct",
+      "observations": "Viewed actual scene, full stem, category and single/multiple instruction on simulator screenshot; all four options and explanation checked in accessibility state."
+    }
+  ],
+  "english_checks": [
+    "ABS A+D: Correct; More than one answer is correct shown.",
+    "EAD A+B+D: Incorrect; A red, B and D green; correct set B+D reported.",
+    "Towing PTRA question: long English text wraps; scrolling by visible option element exposes all four options without truncation; C scores Correct."
+  ],
+  "normal_home": "Restored English normal launch; Your progress shows 54 of 408 questions explored.",
+  "progress_sha256_before": "35e5e3503c10891d92e69ab9fc0074f4358999baeafe7ed2d75992723533da75",
+  "progress_sha256_after": "35e5e3503c10891d92e69ab9fc0074f4358999baeafe7ed2d75992723533da75",
+  "screenshot_record": "Actual simulator screenshots were inspected inline via CUA; retained evidence is these observations plus exact source/image hashes and full SQLite checks. No claim of locally saved simulator PNGs."
+}

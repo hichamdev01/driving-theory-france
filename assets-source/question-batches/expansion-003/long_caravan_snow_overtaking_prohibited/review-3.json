@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "No detected unresolved defect after complete visual and bilingual review. Approval applies only to these exact proposal and image hashes; it is not an infallibility guarantee.",
+  "proposal_sha256": "829beaf26a540872b84fbda24cba691343eae579dec8ffb438a9aee6090ca6c8",
+  "image_sha256": "e66c7e8eb551779ee1746802ae75f6d2243925be1b8432f9361414b5a4305484",
+  "compared_question_keys": [
+    "situation_tram_stop_passengers_no_overtake",
+    "situation_overtaking_active_snowplow",
+    "situation_blind_crest_no_overtake",
+    "situation_frosted_windscreen_clear_before_drive",
+    "situation_truck_right_turn_blind_spot"
+  ],
+  "checks": {
+    "official_rule": "Current 10 October 2026 R414-17 I1 prohibits overtaking/lane changes for combinations over 7 m if any lane is partly snowy/icy. 8 m and combined PTAC 3200 kg stay within category B.",
+    "signs_and_text": "White dashed centre line and pale road edges; no contradictory sign/signal. Snow patches lie on asphalt, not solely beyond edge.",
+    "road_geometry": "Final scene 3 forward view has camera in clear right lane, snow across LEFT traffic lane, straight road and coherent perspective. Rejected side views retained.",
+    "vehicles_and_people": "No other vehicles or people; caravan behind camera is described explicitly rather than an inaccurate visible coupling or dimensions. Hypothetical passing question does not say a visible car is present.",
+    "dashboard_and_equipment": "Only dashboard edge; no gauges or indicators. Length and mass are stated rather than measured in image.",
+    "phone_size": "Snow on the opposing lane remains unmistakable at 390 pixels, resolving the rejected versions.",
+    "french_and_english": "Both stems 8m/3200kg/partly snow-covered lane. C correct; B entitlement, slow traffic and winter tyres are not exceptions. Distinct from active snowplough ban.",
+    "novelty": "Existing active-snowplough question concerns the vehicle being overtaken. This applies because of the learner combination length even with an ordinary car ahead; differs from last batch facilitating overtaking. Reviewed the five saved nearest questions, including earlier candidates of this batch, plus targeted full-bank topic search. Shared words did not duplicate the tested decision.",
+    "full_resolution": "Inspected the entire final scene-3.jpg at original 1672x941 resolution and phone-3.jpg at 390 pixels. No other vehicles or people; caravan behind camera is described explicitly rather than an inaccurate visible coupling or dimensions. Hypothetical passing question does not say a visible car is present. Only dashboard edge; no gauges or indicators. Length and mass are stated rather than measured in image.",
+    "all_four_options": "Correct set C. A: Licence category does not remove this restriction. B: A slow vehicle creates no exception. C: The combination exceeds seven metres. D: Tyres do not provide an exemption. Four distinct options in both languages."
+  }
+}

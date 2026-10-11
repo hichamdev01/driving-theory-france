@@ -1,0 +1,13 @@
+{
+  "proposal_sha256": "3b41debfed0ffdfa64f367babe11fb8129eae89c550da8b7d0f0a4b2978e84d4",
+  "image_sha256": "61c8bb5308cf16b3186c7c0bba912b7e0b3d12483ac62bc76dfe57d0503f7bba",
+  "result": "reject",
+  "notes": "Visible front and side of helmet lack identifiable retroreflective patches. Add realistic plain white front and visible-side patches without covering vents/visor; preserve secured helmet and conscious casualty.",
+  "compared_question_keys": [
+    "situation_first_aid_conscious_waiting_care",
+    "situation_unconscious_breathing_pls",
+    "situation_severe_bleeding_direct_pressure",
+    "situation_not_breathing_cpr_aed",
+    "safety_accident_first_actions"
+  ]
+}

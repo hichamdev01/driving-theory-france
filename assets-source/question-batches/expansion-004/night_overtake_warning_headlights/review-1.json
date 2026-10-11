@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+  "proposal_sha256": "dfc1cbcbc03441ea2a2db272b9d56c10a789befb4f867c7c149f6cd56960ab7b",
+  "image_sha256": "ffe4a6d9fab7763133d4e9558e6882a6329bcfa88a3761525020c1d44acf0adc",
+  "compared_question_keys": [
+    "situation_rural_park_off_carriageway_right",
+    "situation_dual_carriageway_default_110",
+    "situation_parked_engine_unnecessary_idling",
+    "situation_motorway_tunnel_fire_evacuate",
+    "situation_night_following_before_overtake_dipped"
+  ],
+  "checks": {
+    "official_rule": "Checked 2026-10-10. R416-2 requires intermittent dipped/main light warnings at night; sound warnings only absolute necessity.",
+    "novelty": "Existing following car at night tests dipping sustained main beams. This tests brief warning signals before an otherwise-safe overtake; no impatience/horn urban scenario repeat. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+    "signs_and_text": "No signs or plates with interpretable instructions. White broken centreline and continuous edges, red rear lamps.",
+    "road_geometry": "Straight two-way road, vehicle in right lane and empty opposing lane. Normal dipped illumination and open visibility; no junction, solid divider or crest to prohibit stated safe overtake.",
+    "vehicles_and_people": "One car ahead, two red rear lights, no people or oncoming car. It is before the warning, not an image claiming that the flash already occurred.",
+    "dashboard_and_equipment": "No dashboard; no persistent high-beam telltale.",
+    "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Straight two-way road, vehicle in right lane and empty opposing lane. Normal dipped illumination and open visibility; no junction, solid divider or crest to prohibit stated safe overtake. One car ahead, two red rear lights, no people or oncoming car. It is before the warning, not an image claiming that the flash already occurred.",
+    "phone_size": "Inspected saved390px phone-1.jpg. Night, lane arrangement and car ahead all remain clear. Distinct question from sustained following-light choice.",
+    "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Outside town at night, overtaking otherwise lawful and safe, no absolute need to sound horn. Question concerns warning method only.",
+    "all_four_options": "Correct set a. FR: {\"a\": \"R416-2 prévoit les avertissements lumineux intermittents.\", \"b\": \"Pas d’absolue nécessité justifiant le klaxon.\", \"c\": \"Les feux de détresse ne signalent pas cette intention.\", \"d\": \"Les antibrouillard ne sont pas un avertisseur de dépassement.\"} EN: {\"a\": \"R416-2 specifies intermittent light warnings at night.\", \"b\": \"No absolute necessity justifies the horn.\", \"c\": \"Hazards do not communicate this warning.\", \"d\": \"Fog lamps are not overtaking warning lights.\"}"
+  }
+}

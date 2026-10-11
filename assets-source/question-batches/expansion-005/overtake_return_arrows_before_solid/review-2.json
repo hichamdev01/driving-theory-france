@@ -1,0 +1,6 @@
+{
+  "proposal_sha256": "035f5ae223f720212756247b518591efe51162005483420b7c0d662bc5af87a1",
+  "image_sha256": "c51ca5b6a4c2204893ae30c81da6aab624212be5195fc552bee3bf2220a4333c",
+  "result": "reject",
+  "notes": "Second image has four arrow-like shapes and still compact spacing. Cannot approve a nonstandard whole sequence."
+}

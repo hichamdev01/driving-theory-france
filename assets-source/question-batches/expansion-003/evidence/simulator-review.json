@@ -1,0 +1,134 @@
+{
+  "result": "pass",
+  "checked_on": "2026-10-10",
+  "device": "iPhone 17 Pro / iOS 26.5",
+  "device_id": "B49BFA96-2E2B-4EBD-BF84-0860E2C2FD3B",
+  "method": "Actual Simulator app controlled through CUA; screenshots inspected inline with accessibility text. No separate screenshot files claimed.",
+  "content_version": 95,
+  "pack_sha256": "017498fa2abe706993e999c2394bfcffeac900f751235fbd4e9970dc6dc5aedc",
+  "french": [
+    {
+      "key": "situation_tyre_sidewall_bulge_before_trip",
+      "image_sha256": "b20066458d2d5e3197616de6b7ce78de357a29e17c2717771981c3667aa46be5",
+      "selected": [
+        "c"
+      ],
+      "observed": "Correct",
+      "display": "Original image, French stem, single/multiple instruction and four accessible options inspected. Scrolled lower options; submitted and read explanation."
+    },
+    {
+      "key": "situation_ev_charge_cable_cut_insulation",
+      "image_sha256": "4b0e430b4b6c693201b3c446cc692a177cbaf0c3d48e40c1775f5a1aedc819ad",
+      "selected": [
+        "b"
+      ],
+      "observed": "Correct",
+      "display": "Original image, French stem, single/multiple instruction and four accessible options inspected. Scrolled lower options; submitted and read explanation."
+    },
+    {
+      "key": "situation_windscreen_condensation_air_recirculation",
+      "image_sha256": "fec5dea24101c66b244206ffd2f925fa357e7dfca60969d9a8bf192a0dda43cf",
+      "selected": [
+        "a"
+      ],
+      "observed": "Incorrect, A and D shown as correct",
+      "display": "Original image, French stem, single/multiple instruction and four accessible options inspected. Scrolled lower options; submitted and read explanation."
+    },
+    {
+      "key": "situation_first_technical_inspection_timing",
+      "image_sha256": "6dbccb5592f86fb41cb6ba49537abba00eb377d6701aff69bd572e6477246075",
+      "selected": [
+        "b",
+        "c"
+      ],
+      "observed": "Correct",
+      "display": "Original image, French stem, single/multiple instruction and four accessible options inspected. Scrolled lower options; submitted and read explanation."
+    },
+    {
+      "key": "situation_cruise_control_rain_deactivate",
+      "image_sha256": "8f80b315d23243afa113d15ded4c0087711e5bbb6adaca00abee140ad6b4313c",
+      "selected": [
+        "a"
+      ],
+      "observed": "Correct",
+      "display": "Original image, French stem, single/multiple instruction and four accessible options inspected. Scrolled lower options; submitted and read explanation."
+    },
+    {
+      "key": "situation_rail_trapped_break_exit_barrier",
+      "image_sha256": "b24fbd7c7b120ad4ccf43af72583ecfb29903ee4885173097be54b1c0f2b1301",
+      "selected": [
+        "d"
+      ],
+      "observed": "Correct",
+      "display": "Original image, French stem, single/multiple instruction and four accessible options inspected. Scrolled lower options; submitted and read explanation."
+    },
+    {
+      "key": "situation_cmi_parking_local_twelve_hour_limit",
+      "image_sha256": "1ecedfdceebb62482adeb3285c8b143dbbd0d95a816a67f65e561d87f38a36e0",
+      "selected": [
+        "b"
+      ],
+      "observed": "Correct",
+      "display": "Original image, French stem, single/multiple instruction and four accessible options inspected. Scrolled lower options; submitted and read explanation."
+    },
+    {
+      "key": "situation_long_caravan_snow_overtaking_prohibited",
+      "image_sha256": "e66c7e8eb551779ee1746802ae75f6d2243925be1b8432f9361414b5a4305484",
+      "selected": [
+        "c"
+      ],
+      "observed": "Correct",
+      "display": "Original image, French stem, single/multiple instruction and four accessible options inspected. Scrolled lower options; submitted and read explanation."
+    },
+    {
+      "key": "situation_b13_ptac_not_actual_mass",
+      "image_sha256": "77d4f4859c3376066ab625ce8c7a4914c53c6805e063fbd834b01cddb2a96af8",
+      "selected": [
+        "a"
+      ],
+      "observed": "Correct",
+      "display": "Original image, French stem, single/multiple instruction and four accessible options inspected. Scrolled lower options; submitted and read explanation."
+    },
+    {
+      "key": "situation_insurance_fva_no_green_sticker",
+      "image_sha256": "6a5614a00d2388cbdd46661f4135278f26281a446abb47fa0a3e938c8dee8b2d",
+      "selected": [
+        "d"
+      ],
+      "observed": "Correct",
+      "display": "Original image, French stem, single/multiple instruction and four accessible options inspected. Scrolled lower options; submitted and read explanation."
+    }
+  ],
+  "english": [
+    {
+      "key": "situation_windscreen_condensation_air_recirculation",
+      "selected": [
+        "a",
+        "d"
+      ],
+      "observed": "Correct",
+      "notes": "Both options green; more-than-one-answer instruction and explanation inspected."
+    },
+    {
+      "key": "situation_first_technical_inspection_timing",
+      "selected": [
+        "a",
+        "b",
+        "c"
+      ],
+      "observed": "Incorrect",
+      "notes": "Extra wrong A red, B and C green; both correct options and long wording rendered after scroll."
+    },
+    {
+      "key": "situation_b13_ptac_not_actual_mass",
+      "selected": [
+        "a"
+      ],
+      "observed": "Correct",
+      "notes": "English PTAC definition and all four options match French; sign 2 t clearly readable."
+    }
+  ],
+  "normal_home": "Restored English home; Questions explored 54 of 418, Themes solid 0 of 8.",
+  "history_preserved": true,
+  "progress_sha256": "35e5e3503c10891d92e69ab9fc0074f4358999baeafe7ed2d75992723533da75"
+}

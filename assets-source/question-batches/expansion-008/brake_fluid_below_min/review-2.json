@@ -1,0 +1,13 @@
+{
+  "proposal_sha256": "abc03f55fdf67a11d5b7f5ad16ebd68abf675a11423f8ebe6d7a6e9d82f5fbd6",
+  "image_sha256": "8c904b9b6a262c319303f448749e3804a0f7f09dc64b7b53fb17f62ef082ce2b",
+  "result": "reject",
+  "notes": "Full replacement inspected at original1672x941 and390px. Fluid level remains visually too close toMINon phone; reservoir shows three lower support/feed stubs inconsistent with requested two-port tandem arrangement. Reframe tightly to reservoir and lower level decisively.",
+  "compared_question_keys": [
+    "situation_driver_mat_secure_no_stacking",
+    "situation_coolant_hot_cap_wait",
+    "situation_parking_secure_before_leaving",
+    "situation_medicine_level_one_notice",
+    "situation_otc_medicine_not_driving_guarantee"
+  ]
+}

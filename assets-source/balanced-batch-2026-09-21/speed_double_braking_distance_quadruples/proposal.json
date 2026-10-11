@@ -1,0 +1,49 @@
+{
+  "sequence": 4,
+  "scenario_id": "speed_double_braking_distance_quadruples",
+  "scope": "ordinary_passenger_car",
+  "scope_review": "The learner drives or prepares a normal passenger car; no specialist vehicle operating rules.",
+  "learning_objective": "Distinguish braking-distance growth from speed growth",
+  "references": [
+    "https://media.education.gouv.fr/file/Securite/92/3/07assr_3maths_distancearret_108923.pdf"
+  ],
+  "novelty_review": "Different from reaction-time calculation and legal speed limits: tests the approximate square relationship of braking distance to speed at unchanged grip and braking conditions.",
+  "scenario": "Natural roadside photograph on a closed driver-training track in France: one ordinary grey passenger car in three-quarter front view on a broad straight dry tarmac surface, with a few orange cones far off its path and empty run-off area. Normal tyres, no smoke, no skidding, no racing graphics, no road signs, no speed labels, no people near the moving car. Calm daylight, generous empty track ahead.",
+  "image_prompt": "Use case: photorealistic-natural. Create ONE realistic educational photograph for a French Code de la Route passenger-car question. Landscape 16:9, preferably 2048x1152. Contemporary France, natural photographic colours and exposure, physically plausible perspective. Natural roadside photograph on a closed driver-training track in France: one ordinary grey passenger car in three-quarter front view on a broad straight dry tarmac surface, with a few orange cones far off its path and empty run-off area. Normal tyres, no smoke, no skidding, no racing graphics, no road signs, no speed labels, no people near the moving car. Calm daylight, generous empty track ahead. No quiz panel, question text, answer choices, highlighted answer, watermark, instructional overlay, collage or invented road signs. Any cars use French-style plates with unreadable small characters. This is a scene photograph, not an infographic.",
+  "question": {
+    "key": "situation_speed_double_braking_distance_quadruples",
+    "category_slug": "speed_limits",
+    "correct_answer": "d",
+    "difficulty": "medium",
+    "translations": {
+      "fr": {
+        "question_text": "À adhérence et conditions de freinage identiques, si la vitesse double, la distance de freinage est approximativement :",
+        "answer_a": "Divisée par deux.",
+        "answer_b": "Inchangée.",
+        "answer_c": "Multipliée par deux.",
+        "answer_d": "Multipliée par quatre.",
+        "explanation": "Dans les mêmes conditions, la distance de freinage augmente approximativement avec le carré de la vitesse : doubler la vitesse la multiplie donc par quatre. Cela concerne le freinage, pas à lui seul toute la distance d’arrêt."
+      },
+      "en": {
+        "question_text": "With the same grip and braking conditions, if speed doubles, the braking distance is approximately:",
+        "answer_a": "Halved.",
+        "answer_b": "Unchanged.",
+        "answer_c": "Doubled.",
+        "answer_d": "Multiplied by four.",
+        "explanation": "Under the same conditions, braking distance increases approximately with the square of speed, so doubling speed multiplies it by four. This describes braking distance, not the whole stopping distance on its own."
+      }
+    }
+  },
+  "state": "imported",
+  "generation_method": "built-in image_gen",
+  "native_image_path": "/Users/hichamlabani/.codex/generated_images/01a097bb-1553-75f3-9ae9-2c47e28d41ee/exec-3eb4f055-23f8-452c-9a9d-5b2162dbe2b0.png",
+  "native_image_sha256": "d04b1505df8ea3fd6446a8873240f438d8d48790f83e646f1d11b7f73e7413ef",
+  "image_path": "assets-source/balanced-batch-2026-09-21/speed_double_braking_distance_quadruples/scene.jpg",
+  "image_sha256": "bd6184f85a5654f2158841c37d748f41fdfe4191b6f5c938f2f658fe6eef8c33",
+  "visual_review": "Reviewed ordinary passenger car on dry training track, cones away from vehicle path, no skid or racing situation. Question explicitly holds grip and braking conditions constant; D follows d=k*v^2, so d(2v)=4d(v). Both languages qualify approximation and distinguish braking from stopping distance.",
+  "reviewed_on": "2026-09-21",
+  "reviewed_sha256": "d172a19cb6d25a080018c03532f7459b6a5b7881c7a10d34220f84451a9c902a",
+  "question_key": "situation_speed_double_braking_distance_quadruples",
+  "imported_content_version": 89,
+  "imported_on": "2026-09-21"
+}

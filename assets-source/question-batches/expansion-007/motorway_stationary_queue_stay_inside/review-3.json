@@ -1,0 +1,13 @@
+{
+  "proposal_sha256": "07022967b3da24f99650768e831b65c71161bf54ae04bbbe4e3b0e8915ac4ccf",
+  "image_sha256": "6ed6bab0669cd27e5888c19235e5f8089050b4e3f7bcf046067bd84eedd0c615",
+  "result": "reject",
+  "notes": "Second correction removed dense dashes but remaining spacing is not consistently T1 under perspective; final correction will use a tighter natural queue view with markings occluded, avoiding unverifiable repetition.",
+  "compared_question_keys": [
+    "situation_motorway_passenger_walks_shoulder",
+    "situation_motorway_friend_tow_offer",
+    "situation_motorway_breakdown_no_triangle",
+    "situation_tunnel_stopped_keep_safety_gap",
+    "situation_motorway_nonessential_stop"
+  ]
+}

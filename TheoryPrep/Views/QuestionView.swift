@@ -317,7 +317,7 @@ struct QuestionView: View {
             }
 
             if !isCorrect {
-                Text("\(settings.t(.correctAnswerWas)) \(question.correctAnswerText(displayOrder: answerOrder))")
+                Text("\(settings.t(question.correctAnswers.count > 1 ? .correctAnswersAre : .correctAnswerWas)) \(question.correctAnswerText(displayOrder: answerOrder))")
                     .font(.subheadline.weight(.semibold))
                     .foregroundColor(Theme.text)
             }
@@ -352,18 +352,34 @@ struct QuestionView: View {
 
     private func loadQuestions() {
         guard questions == nil, let country = settings.countryCode, let language = settings.languageCode else { return }
+        #if DEBUG
+        if ContentReviewMode.isEnabled {
+            let pool = Queries.getPracticeQuestions(Database.shared, country, language)
+            let byID = Dictionary(uniqueKeysWithValues: pool.map { ($0.id, $0) })
+            let loaded = ContentReviewMode.keys.compactMap { key -> QuestionWithTranslation? in
+                let ids = Database.shared.query(
+                    "SELECT id FROM questions WHERE question_key = ? AND active = 1", [key]
+                ) { $0.int64("id") }
+                return ids.first.flatMap { byID[$0] }
+            }
+            questions = loaded
+            answerOrders = Dictionary(uniqueKeysWithValues: loaded.map {
+                ($0.id, AnswerPresentation.canonicalOrder)
+            })
+            return
+        }
+        #endif
         let loaded: [QuestionWithTranslation]
         switch mode {
         case .practice:
-            loaded = Queries.getPracticeQuestions(
-                Database.shared,
-                country,
-                language,
-                categoryId: categoryId,
-                // Random practice covers the complete bank. Category and
-                // mistake sessions stay intentionally shorter.
-                limit: categoryId == nil ? nil : sessionLength
-            )
+            if let categoryId {
+                loaded = Queries.getPracticeQuestions(
+                    Database.shared, country, language,
+                    categoryId: categoryId, limit: sessionLength
+                )
+            } else {
+                loaded = Queries.getRandomPracticeQuestions(Database.shared, country, language)
+            }
         case .mistakes:
             loaded = Array(
                 Queries.getMistakes(Database.shared, country, language)
@@ -426,7 +442,9 @@ struct QuestionView: View {
         guard !selected.isEmpty else { return }
         let isCorrect = selected == question.correctAnswers
         if isCorrect { correctCount += 1 }
-        Queries.recordAnswer(Database.shared, question.id, isCorrect, confidence: confidence)
+        if !ContentReviewMode.isEnabled {
+            Queries.recordAnswer(Database.shared, question.id, isCorrect, confidence: confidence)
+        }
         submitted = true
         AppFeedback.result(
             correct: isCorrect,

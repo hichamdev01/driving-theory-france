@@ -1,0 +1,6 @@
+{
+  "result": "reject",
+  "notes": "Reject: the car has two stacked white rear registration plates, one on tailgate and one on bumper; mechanically unrealistic.",
+  "proposal_sha256": "5d5ff0332f835b7815c65aa40e2a0a6c677225a1fabbbf124d50cf309d4d88b1",
+  "image_sha256": "e15682252f11688aa1af36e38e9f683d3f9a8198cd4d33af2156aa387e1d4f0d"
+}

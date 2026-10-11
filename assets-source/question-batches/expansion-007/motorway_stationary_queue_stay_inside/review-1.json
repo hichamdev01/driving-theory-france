@@ -1,0 +1,13 @@
+{
+  "proposal_sha256": "07022967b3da24f99650768e831b65c71161bf54ae04bbbe4e3b0e8915ac4ccf",
+  "image_sha256": "1bbe11cdad3ba1be8a14a5895ae5ceda0672d7ac1ebefbf8882e6200aa5f0573",
+  "result": "reject",
+  "notes": "Camera straddles lane divider instead of centred in a traffic lane. Divider stroke/gap ratio also inconsistent with T1. Reframe camera squarely in right lane behind blue car and correct all visible markings.",
+  "compared_question_keys": [
+    "situation_motorway_passenger_walks_shoulder",
+    "situation_motorway_friend_tow_offer",
+    "situation_motorway_breakdown_no_triangle",
+    "situation_tunnel_stopped_keep_safety_gap",
+    "situation_motorway_nonessential_stop"
+  ]
+}

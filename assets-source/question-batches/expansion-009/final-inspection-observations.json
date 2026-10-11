@@ -1,0 +1,92 @@
+[
+  {
+    "signs_and_text": "One visible AB3a yield sign: inverted triangle, red border, white centre, facing the approach. No plates, text, signals, lane-allocation signs or overlay arrows.",
+    "road_geometry": "Third candidate shows entry give-way rectangles between splitter island and right kerb, then two circulating lanes divided by one curved broken white line around raised planted island. Other arms are outside the frame or hidden. No line crosses an exit.",
+    "vehicles_and_people": "Empty approach and ring; no vehicle movement or pedestrian intention is inferred.",
+    "dashboard_and_equipment": "No dashboard, vehicle controls or roadside machinery. Splitter bollard and yield pole are physically grounded.",
+    "phone_size": "390px preview clearly retains the yield triangle, entry line and two circular lanes. Destination and absence of lane allocation are explicit in both stems.",
+    "french_and_english": "Both specify an exit left of the approach axis, two lanes and no special allocation; both distinguish permission from obligation. No exact exit position must be deduced from the photograph.",
+    "all_four_options": "AC: left lane is permitted and right lane may be retained. B incorrectly makes the permission compulsory. D proposes driving across the raised island. Both translations preserve these four distinct meanings."
+  },
+  {
+    "signs_and_text": "No road signs, signals, painted arrows or necessary readable text. Vehicle plates are not a question clue. Two red triangular caravan reflectors now present separately below rear lamps.",
+    "road_geometry": "Unmarked two-way village carriageway with an empty opposite half and a tight branch to the combination's right. Kerbs, house walls and branch mouth connect plausibly; tyres stay on asphalt.",
+    "vehicles_and_people": "Estate car and single-axle caravan aligned before manoeuvring, tow connection partly occluded naturally; body, windows, wheels and lights coherent. No other road users or fabricated gestures.",
+    "dashboard_and_equipment": "No dashboard shown. Caravan has separate rear lamp clusters, corrected paired red triangular reflectors, side amber markers and plausible roof fittings.",
+    "phone_size": "Full combination and right-hand branch remain visible at 390px; no tiny indicator or reflector is required to solve the question.",
+    "french_and_english": "Both explicitly establish that dimensions/turn prevent keeping right, permitted caravan and no prohibiting markings; the still image need not prove swept-path dimensions. Moderate speed and danger check match.",
+    "all_four_options": "B alone states the conditional manoeuvre at moderate speed without endangering others. A omits checks; C incorrectly limits the exception to buses; D falsely grants priority through the indicator."
+  },
+  {
+    "signs_and_text": "No signs, supplementary plates, readable instructions, arrows or solution highlights. Car registrations are not used as clues.",
+    "road_geometry": "Three queued same-direction lanes bounded by left central barrier and empty right shoulder. Two internal broken dividers; latest candidate replaces shoulder short dashes with long painted stretches and gaps. Opposite carriageway lies beyond the barrier.",
+    "vehicles_and_people": "All foreground cars face away and remain within lanes; oncoming cars beyond median face camera. Wheels, lamps and spacing are coherent. No motorcycle gives away the answer. Queue speed is supplied in text.",
+    "dashboard_and_equipment": "No dashboard. Barriers, mirrors, rear lamps and central reservation are coherent, with no readable false controls.",
+    "phone_size": "Three queues, median and shoulder remain distinct in 390px rendering, so leftmost versus rightmost corridors are unambiguous.",
+    "french_and_english": "Both state dry three-lane motorway, slow continuous queues and lawful filtering, asking the car driver's anticipation location. No motorcycle licence instruction is implied.",
+    "all_four_options": "D: between two leftmost lanes. A central reservation, B hard shoulder and C middle/right gap are different incorrect locations. Each option matches in FR/EN."
+  },
+  {
+    "signs_and_text": "No traffic signs, legal text, bottle labels or solution highlights. Private driveway scene has no required text.",
+    "road_geometry": "Paved private driveway alongside a low stone wall; no public lanes, signals, junction priority or road markings to interpret.",
+    "vehicles_and_people": "One empty blue compact car with visible front wing/bumper damage near a wall. Body and wheels plausible; no injured person or visually inferred intoxication. Damage side is irrelevant to wording.",
+    "dashboard_and_equipment": "Only natural glimpses of seats and steering wheel, no readable dashboard or insurance document. Lamp and bumper damage consistent with parked post-collision vehicle.",
+    "phone_size": "Car and front damage remain clear at 390px. Alcohol, responsibility and policy type come from the stem rather than invisible evidence.",
+    "french_and_english": "Both explicitly state caused crash under alcohol and ask whether comprehensive cover necessarily reimburses own damage. Both say may refuse, avoiding a claim that every contract has identical exclusions.",
+    "all_four_options": "A: cover is not guaranteed and may be refused. Paid premium B, no other damaged car C and same-day reporting D do not guarantee removal of an exclusion."
+  },
+  {
+    "signs_and_text": "No signs, signal lamps, camera labels or overlays. Second candidate has no road paint; no inaccurate painted pattern remains.",
+    "road_geometry": "Ordinary unmarked rural two-way road, car ahead on right, grass verges and fields, continuous coherent asphalt perspective.",
+    "vehicles_and_people": "One distant compact car seen from rear in the right half, no pedestrians or oncoming vehicle. No precise speed or camera location is visually asserted.",
+    "dashboard_and_equipment": "Only a dark curved bottom windscreen/dashboard edge, no controls, speed display or camera equipment to misidentify.",
+    "phone_size": "Road and vehicle stay readable at 390px. This is a contextual scene; the stem explicitly names the average-speed system rather than relying on tiny camera hardware.",
+    "french_and_english": "Both ask what an average-speed system measures over a controlled section; French explains radar tronçon. Explanations require speed-limit compliance throughout, without evasion advice.",
+    "all_four_options": "C measures own average speed over section. A/B incorrectly restrict measurement to one endpoint, D incorrectly says only the vehicle ahead. Distinct equivalent FR/EN options."
+  },
+  {
+    "signs_and_text": "No traffic signs or readable text. The corrected tighter image excludes malformed console labels and gear pattern entirely.",
+    "road_geometry": "Private driveway visible through glass; stationary pre-departure situation. No public road junction or lane implication.",
+    "vehicles_and_people": "One adult passenger with two anatomically coherent bent legs and two shoes resting on passenger dashboard; hands rest naturally. No duplicated limbs or injuries.",
+    "dashboard_and_equipment": "Chest belt visible; both shoes on plain passenger-side dashboard near vent. Right door, mirror, glovebox and A-pillar coherent. Airbag not deployed, controls outside frame.",
+    "phone_size": "Both feet on dashboard and chest belt remain clear at 390px, with no reliance on tiny labels.",
+    "french_and_english": "Both say adult, belt fastened and before departure. Both explanations address severe airbag injury and restoring proper posture, with no invented claim that belt alone fixes the posture.",
+    "all_four_options": "B restores feet to floor and proper sitting. A relies on belt alone, C retains legs on dash and D proposes disabling airbag to keep unsafe posture; all three are rejected."
+  },
+  {
+    "signs_and_text": "No road signs or displayed inspection outcome. Small workshop labels and vehicle badge carry no necessary rule or date; R result is explicitly written in the question.",
+    "road_geometry": "Stationary vehicle in level workshop inspection bay with roller equipment and safe perspective; no road movement or public markings.",
+    "vehicles_and_people": "Gray compact car externally intact, wheels and lamps coherent, nobody inside or performing an implausible action. Critical defects may be hidden; none is diagnosed from appearance.",
+    "dashboard_and_equipment": "Roller stands, workshop cabinets and blank display plausible. No dashboard warning or computer result is fabricated as evidence.",
+    "phone_size": "Inspection-bay context and vehicle visible at 390px; outcome, yesterday's date and lack of repairs are in both stems.",
+    "french_and_english": "Both specify critical R yesterday, no repair or favourable reinspection and normal use today. Both separate one-day validity from the two-month reinspection deadline.",
+    "all_four_options": "D: validity limited to inspection day. A confuses reinspection deadline with permission to drive; B invents one week; C invents short-trip permission."
+  },
+  {
+    "signs_and_text": "No signs, mass plates or textual claims in picture. No weight or entitlement is guessed from the pictured model.",
+    "road_geometry": "Level private gravel driveway, no lane, junction or road signal. Complete combination visible without road positioning ambiguity.",
+    "vehicles_and_people": "SUV attached to low-sided empty single-axle utility trailer; tyres, drawbar and coupling plausible. No people or moving load. Rear trailer face is turned away.",
+    "dashboard_and_equipment": "Towbar/drawbar, side amber markers, trailer wheels and small jockey wheel coherent for a stationary parked combination. No dashboard or licence document shown.",
+    "phone_size": "Car, small trailer and attachment remain distinct at 390px. Exact authorised masses and technical compliance are provided in the text.",
+    "french_and_english": "Both give car 3000kg, trailer 750kg authorised mass, not actual load, and all technical towing limits met. Both correctly sum 3750kg and retain the <=750kg trailer exception.",
+    "all_four_options": "A category B alone sufficient. B code96 and C BE are not compulsory for this 750kg trailer; D C is not required for this category B car. All four remain distinct in both languages."
+  },
+  {
+    "signs_and_text": "Moving boxes are unlabelled, no address, registration document, road sign or invented readable text.",
+    "road_geometry": "Private gravel driveway beside house entrance; no public road lane, traffic signal or parking-rule implication.",
+    "vehicles_and_people": "Stationary hatchback with open boot, boxes inside and on porch. Wheels, lights, boot hinges and loading space plausible. No people; no claim car is travelling with unsecured load.",
+    "dashboard_and_equipment": "No controls or dashboard; open hatch and stationary loading objects coherent. No certificate displayed.",
+    "phone_size": "Home, boxes and open boot are clear at 390px. Deadline and owner status are given by wording.",
+    "french_and_english": "Both restrict case to owner registered in their name moving within France; neither includes leasing or importing from abroad. One-month deadline consistent.",
+    "all_four_options": "C one month. A one week and B six months invent deadlines; D incorrectly delays until sale. Both translations preserve the same alternatives."
+  },
+  {
+    "signs_and_text": "No legal signs, labels, overlays or answer highlights. Wall socket cover closed; no unreadable charging specifications are needed.",
+    "road_geometry": "Dry level private garage with parked EV, wall socket and extension reel. No public road, traffic marking or collision geometry.",
+    "vehicles_and_people": "One stationary EV with closed charging flap, coherent rear quarter/wheel/light. No people handling live equipment. Bicycle and shelves in background physically plausible.",
+    "dashboard_and_equipment": "Second candidate fixes loose plug to two projecting round pins with recessed earth contact. Four reel sockets, cable, handle and covered wall outlet coherent; nothing is connected. Reel represents proposed unsuitable equipment, not endorsed practice.",
+    "phone_size": "At 390px the reel, car, covered outlet and disconnected cable are recognisable. Pin detail inspected at full resolution; no solution depends on recognising tiny plug contacts.",
+    "french_and_english": "Both say charging cable does not reach household socket; this fact is supplied, not measured from scene. Both recommend no extension/power strip and professional installation check under manufacturer guidance.",
+    "all_four_options": "BD: no inserted extension/power strip and professional socket/installation check. A unwinding domestic lead does not make it suitable; C new power strip is still unsuitable. Both translations preserve exact multiple-answer set."
+  }
+]

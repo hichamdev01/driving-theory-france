@@ -1,0 +1,616 @@
+[
+  {
+    "scenario_id": "first_aid_conscious_waiting_care",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+    "learning_objective": "Support a conscious casualty while awaiting the emergency services, without unnecessary movement or oral intake.",
+    "topic": "first_aid.conscious_casualty",
+    "scenario": "A conscious adult remains seated where found in a safe off-road area after a collision. The scene is secured and help has already been called; no immediate danger or life-threatening bleeding is present. These facts are stated, not inferred from the still image.",
+    "novelty_review": "Existing PLS, CPR, bleeding, choking and initial protect-alert questions concern different conditions or urgent interventions. This asks appropriate waiting care for a conscious casualty after the alert.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_first_aid_conscious_waiting_care",
+      "category_slug": "safety",
+      "correct_answers": [
+        "a",
+        "c"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Les lieux sont sécurisés et les secours prévenus. Cette personne blessée est consciente, sans danger immédiat ni saignement important. En attendant, que puis-je faire ?",
+          "answer_a": "La couvrir sans la déplacer.",
+          "answer_b": "Lui donner de l’eau.",
+          "answer_c": "Rester près d’elle et la rassurer.",
+          "answer_d": "La faire marcher pour la réchauffer.",
+          "explanation": "Je la protège du froid et la rassure. Je ne lui donne rien à boire et ne la déplace pas inutilement."
+        },
+        "en": {
+          "question_text": "The scene is safe and help has been called. This injured person is conscious, with no immediate danger or major bleeding. While waiting, what can I do?",
+          "answer_a": "Cover them without moving them.",
+          "answer_b": "Give them water.",
+          "answer_c": "Stay nearby and reassure them.",
+          "answer_d": "Make them walk to warm up.",
+          "explanation": "I keep them warm and reassure them. I do not give them drinks or move them unnecessarily."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Correct : couvrir sans déplacer.",
+        "b": "Incorrect : ne rien donner à boire.",
+        "c": "Correct : présence et réconfort.",
+        "d": "Incorrect : déplacement inutile."
+      },
+      "en": {
+        "a": "Correct: cover without moving.",
+        "b": "Incorrect: do not give drinks.",
+        "c": "Correct: stay and reassure.",
+        "d": "Incorrect: unnecessary movement."
+      }
+    },
+    "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Eye-level view of a quiet paved lay-by, well away from the road. An alert adult in everyday clothes sits on the ground, back naturally supported by a low wall. Another adult in a high-visibility vest kneels nearby listening, hands relaxed. A folded plain blanket rests within reach, not yet applied. A parked compact car with a small bumper dent is in the background. No wounds, blood, medical equipment, drinks, ambulance, traffic, signs or readable text. Do not depict moving or treating the casualty. Both adults fully clothed with natural anatomy.",
+    "sources": [
+      {
+        "url": "https://www.interieur.gouv.fr/archive/que-faire-en-cas-de-panne-ou-d-accident",
+        "kind": "official",
+        "checked_on": "2026-10-09",
+        "supports": "Victim-care section: cover and reassure casualties; no drinks or unnecessary movement. The older page is used only for these care principles, not its roadside-placement advice."
+      }
+    ]
+  },
+  {
+    "scenario_id": "coolant_hot_cap_wait",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+    "learning_objective": "Recognise the burn risk of opening a hot cooling circuit.",
+    "topic": "maintenance.coolant_burn_risk",
+    "scenario": "A car is safely parked after a journey, ignition off. Its engine is still hot and its coolant reservoir remains closed; engine temperature is stated in the wording.",
+    "novelty_review": "The bank covers oil-pressure warnings and tyres but not opening a pressurised hot cooling circuit.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_coolant_hot_cap_wait",
+      "category_slug": "safety",
+      "correct_answers": [
+        "b"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Après un trajet, ma voiture est garée, contact coupé, mais le moteur est encore chaud. Pour contrôler le liquide de refroidissement, je dois :",
+          "answer_a": "Dévisser immédiatement le bouchon.",
+          "answer_b": "Attendre le refroidissement et suivre la notice.",
+          "answer_c": "Ouvrir le bouchon en gardant le moteur en marche.",
+          "answer_d": "Percer le bouchon pour libérer la pression.",
+          "explanation": "Le circuit chaud peut provoquer des brûlures. Je n’ouvre pas le bouchon à chaud ; je respecte les consignes du constructeur."
+        },
+        "en": {
+          "question_text": "After a journey, my car is parked with the ignition off, but the engine is still hot. To check the coolant, I should:",
+          "answer_a": "Unscrew the cap immediately.",
+          "answer_b": "Wait for it to cool and follow the manual.",
+          "answer_c": "Open the cap with the engine running.",
+          "answer_d": "Pierce the cap to release pressure.",
+          "explanation": "A hot cooling system can cause burns. I do not open its cap while hot and follow the manufacturer’s instructions."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Incorrect : risque de brûlure.",
+        "b": "Correct : contrôle selon la notice, à froid.",
+        "c": "Incorrect : le moteur doit être arrêté et refroidi.",
+        "d": "Incorrect : ce n’est pas une opération sûre."
+      },
+      "en": {
+        "a": "Incorrect: burn risk.",
+        "b": "Correct: check cold as instructed.",
+        "c": "Incorrect: stop and cool the engine.",
+        "d": "Incorrect: this is unsafe."
+      }
+    },
+    "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Close natural view into the engine bay of an ordinary unbranded petrol passenger car parked on a private driveway. Hood properly supported. A translucent coolant expansion reservoir with pink coolant and a fully closed black screw cap is prominent, with plausible connected hoses. No hands, tools, pouring, steam or leaks. Do not include tiny invented warning labels, numbers, logos or a dashboard. The composition must not imply that the cap has been opened.",
+    "sources": [
+      {
+        "url": "https://www.user-manual.renault.com/fr/acc%C3%A8s-moteur-niveaux/niveau-liquide-de-refroidissement-3",
+        "kind": "manufacturer",
+        "checked_on": "2026-10-09",
+        "supports": "Renault owner manual: check coolant cold; do not work on a hot cooling circuit because of burn risk."
+      }
+    ]
+  },
+  {
+    "scenario_id": "aac_accompanying_adult_alcohol",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+    "learning_objective": "Know that alcohol-driving provisions also apply to an accompanying adult supervising a learner.",
+    "topic": "alcohol.learner_accompanier",
+    "scenario": "Before an AAC trip, the adult assigned to accompany the learner has 0.80 g/L blood alcohol. The learner is sober. The role and measurement are supplied by the wording; neither can be established from a photograph.",
+    "novelty_review": "Existing alcohol thresholds ask about the driver. This asks whether sitting in the passenger seat exempts the legally designated learner accompanier.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_aac_accompanying_adult_alcohol",
+      "category_slug": "alcohol_drugs",
+      "correct_answers": [
+        "d"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "En conduite accompagnée, l’accompagnateur a 0,80 g/L d’alcool dans le sang. L’élève est sobre. L’accompagnateur peut-il assurer ce trajet ?",
+          "answer_a": "Oui, puisqu’il ne tient pas le volant.",
+          "answer_b": "Oui, si le trajet dure moins de dix minutes.",
+          "answer_c": "Oui, s’il ne présente aucun signe d’ivresse.",
+          "answer_d": "Non, les dispositions sur l’alcool s’appliquent aussi à lui.",
+          "explanation": "L’article L234-1 s’applique également à l’accompagnateur d’un élève conducteur. La place passager et l’absence de signes d’ivresse ne l’exemptent pas."
+        },
+        "en": {
+          "question_text": "During accompanied driving practice, the supervising adult has a blood alcohol level of 0.80 g/L. The learner is sober. May this adult supervise the trip?",
+          "answer_a": "Yes, because they are not steering.",
+          "answer_b": "Yes, if the trip lasts under ten minutes.",
+          "answer_c": "Yes, if they show no signs of drunkenness.",
+          "answer_d": "No, the alcohol provisions also apply to them.",
+          "explanation": "Article L234-1 also applies to an adult supervising a learner driver. Sitting in the passenger seat and appearing sober provide no exemption."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Incorrect : la règle vise aussi l’accompagnateur.",
+        "b": "Incorrect : aucune exemption pour un trajet court.",
+        "c": "Incorrect : aucun signe visible n’est nécessaire.",
+        "d": "Correct : l’article s’applique aussi à ce rôle."
+      },
+      "en": {
+        "a": "Incorrect: the supervising adult is also covered.",
+        "b": "Incorrect: no short-trip exemption.",
+        "c": "Incorrect: visible drunkenness is not required.",
+        "d": "Correct: this role is also covered."
+      }
+    },
+    "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Parked left-hand-drive compact car on a private driveway, photographed from outside through the open driver-side window. A young adult learner occupies the left driver seat; a middle-aged supervising adult sits in the right front passenger seat. Both are naturally seated with correctly routed seatbelts and sober neutral appearances. Engine off before departure. No alcohol containers, police, breathalyser display or numerical measurement. Crop dashboard instruments out. No need for an external learner badge in this close interior framing.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054724895",
+        "kind": "official",
+        "checked_on": "2026-10-09",
+        "supports": "Current L234-1 I covers blood alcohol at or above 0.80 g/L, even without visible drunkenness; V applies it to the learner’s accompanier."
+      }
+    ]
+  },
+  {
+    "scenario_id": "otc_medicine_not_driving_guarantee",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+    "learning_objective": "Do not equate non-prescription availability with safety for driving.",
+    "topic": "medicines.non_prescription",
+    "scenario": "At home before driving, a person has just bought a medicine without a prescription. Its purchase status is stated; no specific medicine or dose is depicted or recommended.",
+    "novelty_review": "Existing pictogram levels and treatment-interaction questions give known risk information. This tests the separate misconception that an over-the-counter purchase guarantees driving safety.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_otc_medicine_not_driving_guarantee",
+      "category_slug": "alcohol_drugs",
+      "correct_answers": [
+        "c"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "J’ai acheté un médicament sans ordonnance. Cela garantit-il qu’il est sans risque pour la conduite ?",
+          "answer_a": "Oui, tous les médicaments en vente libre sont compatibles.",
+          "answer_b": "Oui, si je ne prends qu’une seule dose.",
+          "answer_c": "Non, je vérifie la notice et demande conseil au pharmacien.",
+          "answer_d": "Oui, dès lors que le trajet est court.",
+          "explanation": "Un médicament sans ordonnance peut aussi altérer la conduite. Je vérifie ses précautions avant de prendre le volant."
+        },
+        "en": {
+          "question_text": "I bought a medicine without a prescription. Does that guarantee it is safe for driving?",
+          "answer_a": "Yes, all over-the-counter medicines are suitable.",
+          "answer_b": "Yes, if I take only one dose.",
+          "answer_c": "No, I check the leaflet and ask a pharmacist.",
+          "answer_d": "Yes, provided the trip is short.",
+          "explanation": "Non-prescription medicines can also affect driving. I check the precautions before getting behind the wheel."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Incorrect : la vente libre n’est pas une garantie.",
+        "b": "Incorrect : une seule dose peut avoir un effet.",
+        "c": "Correct : vérifier les précautions.",
+        "d": "Incorrect : la durée du trajet ne supprime pas le risque."
+      },
+      "en": {
+        "a": "Incorrect: availability is no guarantee.",
+        "b": "Incorrect: even one dose may have an effect.",
+        "c": "Correct: check the precautions.",
+        "d": "Incorrect: a short trip does not remove the risk."
+      }
+    },
+    "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Original domestic still life before a car journey: a closed medicine carton seen from a plain side, a folded leaflet with its blank reverse visible, and ordinary car keys on a wooden table. Natural daylight, no person taking medicine. No readable drug name, dose, advertising, invented medical symbols or safety pictograms. The question will state that the medicine was bought without a prescription; do not try to communicate that with text in the image.",
+    "sources": [
+      {
+        "url": "https://www.ameli.fr/assure/sante/medicaments/effets-indesirables-et-interactions-lies-aux-medicaments/comprendre-risques-lies-medicaments-conduite-vehicule",
+        "kind": "official",
+        "checked_on": "2026-10-09",
+        "supports": "Assurance Maladie guidance updated 1 July 2026: both prescribed and non-prescription medicines may impair driving; check the leaflet and consult a pharmacist."
+      }
+    ]
+  },
+  {
+    "scenario_id": "limiter_no_braking_downhill",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+    "learning_objective": "Understand that a speed limiter without brake control may not prevent overspeed on a steep descent.",
+    "topic": "driver_aids.limiter_descent",
+    "scenario": "A car descends a steep road. Its limiter only reduces engine power and cannot apply the brakes. These equipment capabilities are explicit in both translations; the still image establishes only the downhill setting.",
+    "novelty_review": "Existing downhill engine-braking questions concern gear selection. This tests the operational limit of a specific driver aid and the driver’s continuing duty to monitor speed.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_limiter_no_braking_downhill",
+      "category_slug": "speed_limits",
+      "correct_answers": [
+        "a"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Dans cette descente, mon limiteur agit seulement sur le moteur, jamais sur les freins. Que dois-je savoir ?",
+          "answer_a": "La vitesse peut dépasser la consigne : je dois la maîtriser.",
+          "answer_b": "La consigne ne peut jamais être dépassée.",
+          "answer_c": "Le limiteur actionne forcément les freins.",
+          "answer_d": "Je peux cesser de surveiller la vitesse.",
+          "explanation": "Un limiteur sans action sur les freins peut être dépassé en forte descente. Je surveille ma vitesse et adapte ma conduite."
+        },
+        "en": {
+          "question_text": "On this descent, my limiter controls engine power only and never applies the brakes. What should I know?",
+          "answer_a": "Speed may exceed the setting: I must control it.",
+          "answer_b": "The set speed can never be exceeded.",
+          "answer_c": "The limiter necessarily applies the brakes.",
+          "answer_d": "I can stop monitoring my speed.",
+          "explanation": "A limiter without brake control may not hold the set speed on a steep descent. I monitor my speed and adjust my driving."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Correct : la gravité peut entraîner un dépassement.",
+        "b": "Incorrect : ce système n’offre pas cette garantie.",
+        "c": "Incorrect : contraire à la condition précisée.",
+        "d": "Incorrect : je reste responsable de la vitesse."
+      },
+      "en": {
+        "a": "Correct: gravity may cause overspeed.",
+        "b": "Incorrect: this system provides no such guarantee.",
+        "c": "Incorrect: contrary to the stated equipment.",
+        "d": "Incorrect: I remain responsible for speed."
+      }
+    },
+    "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Driver-eye view through the windscreen down a clearly descending rural French road, with hills beyond. Dry daylight. One lane each direction with a continuous central white line and continuous edge lines, coherent road width and perspective. The camera is in the right-hand lane. No vehicles, junctions, signs, pedestrians or buildings with text. Crop out instrument cluster and hands; only a thin dashboard edge. Show the slope through terrain and horizon, without exaggerated dangerous geometry or diagrams.",
+    "sources": [
+      {
+        "url": "https://www.user-manual.renault.com/fr/la-conduite/limiteur-de-vitesse-4",
+        "kind": "manufacturer",
+        "checked_on": "2026-10-09",
+        "supports": "Renault describes this limiter as having no braking action; its set speed may not be maintained on steep descents. The question explicitly restricts itself to that system type."
+      }
+    ]
+  },
+  {
+    "scenario_id": "cmi_parking_card_passenger",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+    "learning_objective": "Use a valid CMI stationnement for its beneficiary as a passenger, and display it visibly without transferring the right to unrelated journeys.",
+    "topic": "accessibility.card_person_not_vehicle",
+    "scenario": "The driver transports the holder of a valid CMI stationnement. The beneficiary will actually accompany the parking visit; the question states card validity and beneficiary presence. No personal card data must be generated.",
+    "novelty_review": "Existing disabled-bay-without-card question tests prohibition without entitlement. This tests the card’s attachment to a person, use when they are a passenger, and visible display.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_cmi_parking_card_passenger",
+      "category_slug": "parking_stopping",
+      "correct_answers": [
+        "b",
+        "d"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Je transporte une personne titulaire d’une CMI « stationnement » valide. Pour stationner avec elle, quelles affirmations sont exactes ?",
+          "answer_a": "La carte est utilisable seulement si son titulaire conduit.",
+          "answer_b": "Je peux l’utiliser pour ce déplacement avec son titulaire.",
+          "answer_c": "Je pourrai aussi l’utiliser seul pour mes courses personnelles.",
+          "answer_d": "Je dois la placer en évidence à l’intérieur, contre le pare-brise.",
+          "explanation": "Le droit est lié au titulaire, conducteur ou passager. La carte doit être visible et ne m’autorise pas à l’utiliser lors de mes déplacements sans lui."
+        },
+        "en": {
+          "question_text": "I am carrying someone with a valid CMI parking card. When parking with them, which statements are correct?",
+          "answer_a": "The card is usable only if its holder drives.",
+          "answer_b": "I may use it for this trip with its holder.",
+          "answer_c": "I may also use it alone for my own shopping.",
+          "answer_d": "I must display it clearly inside against the windscreen.",
+          "explanation": "The right belongs to the holder, whether driver or passenger. The card must be visible and does not entitle me to use it on trips without them."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Incorrect : le titulaire peut être passager.",
+        "b": "Correct : le titulaire bénéficie du déplacement.",
+        "c": "Incorrect : le conducteur n’obtient pas un droit personnel.",
+        "d": "Correct : affichage visible à l’intérieur."
+      },
+      "en": {
+        "a": "Incorrect: the holder may be a passenger.",
+        "b": "Correct: the journey is with the beneficiary.",
+        "c": "Incorrect: the driver gains no personal entitlement.",
+        "d": "Correct: display visibly inside."
+      }
+    },
+    "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Parked left-hand-drive ordinary car in a plain private paved courtyard, seen obliquely from outside the front passenger side. Adult driver in the left front seat and another adult in the right front passenger seat, both seated naturally. Passenger holds a small card with its plain reverse towards the camera, no visible identity or writing. A folded mobility aid is not needed: disability need not be visible. No parking signs, painted disability symbols, storefronts or other cars. No card already on the dashboard, to avoid showing an answer. Scene illustrates the passenger role; wording supplies eligibility.",
+    "sources": [
+      {
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34049",
+        "kind": "official",
+        "checked_on": "2026-10-09",
+        "supports": "CMI stationnement belongs to its holder, not the vehicle; its holder may be driver or passenger. Display it visibly inside the vehicle against the windscreen."
+      }
+    ]
+  },
+  {
+    "scenario_id": "amber_beacon_alone_no_priority",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+    "learning_objective": "Distinguish an amber warning beacon from a priority entitlement.",
+    "topic": "special_vehicles.amber_warning",
+    "scenario": "An ordinary road-maintenance van is at a quiet junction with an amber beacon. No priority emergency vehicle, convoy escort, active snow clearance, manual traffic controller or special traffic order is involved. Ask only what the amber beacon alone establishes, not which vehicle must cross first.",
+    "novelty_review": "Existing emergency blue-light and exceptional-convoy questions concern special legal priority. This tests the distinct meaning of an amber hazard beacon without inventing a right of way.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_amber_beacon_alone_no_priority",
+      "category_slug": "priority_rules",
+      "correct_answers": [
+        "b"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Ce véhicule d’entretien porte un gyrophare orange. Ce feu, à lui seul, lui donne-t-il la priorité au carrefour ?",
+          "answer_a": "Oui, sur tous les autres usagers.",
+          "answer_b": "Non, il signale un véhicule à remarquer avec prudence.",
+          "answer_c": "Oui, mais seulement en agglomération.",
+          "answer_d": "Oui, dès qu’il roule lentement.",
+          "explanation": "Le gyrophare orange avertit notamment de la présence d’un véhicule lent ou encombrant. À lui seul, il n’accorde pas la priorité ; je reste prudent et applique les règles du carrefour."
+        },
+        "en": {
+          "question_text": "This maintenance vehicle has an amber beacon. Does that light alone give it priority at the junction?",
+          "answer_a": "Yes, over every other road user.",
+          "answer_b": "No, it warns me to pay particular attention.",
+          "answer_c": "Yes, but only in built-up areas.",
+          "answer_d": "Yes, whenever it is moving slowly.",
+          "explanation": "An amber beacon warns of a vehicle that may be slow or bulky. By itself, it grants no priority; I remain cautious and follow the junction’s rules."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Incorrect : ce feu n’établit pas cette priorité.",
+        "b": "Correct : signal d’avertissement.",
+        "c": "Incorrect : l’agglomération ne change pas sa signification.",
+        "d": "Incorrect : la lenteur ne crée pas cette priorité."
+      },
+      "en": {
+        "a": "Incorrect: the beacon establishes no such priority.",
+        "b": "Correct: it is a warning signal.",
+        "c": "Incorrect: a built-up area does not change its meaning.",
+        "d": "Incorrect: slow speed does not create this priority."
+      }
+    },
+    "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Daylight exterior view of a quiet ordinary French junction. A compact generic orange municipal road-maintenance van stands on a side approach, clearly separated from the main roadway. Exactly one small amber rotating beacon on its roof, visibly amber, no blue light or siren equipment. Normal road tyres and compact service body, no snowplough, convoy, emergency livery, workers directing traffic or readable labels. Simple low buildings and clear road geometry. No arrows or highlights; do not imply the van is forcing passage.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177087",
+        "kind": "official",
+        "checked_on": "2026-10-09",
+        "supports": "R313-28 permits special lights for slow or bulky vehicles; this is a warning-device rule, not an automatic grant of priority."
+      },
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842252",
+        "kind": "official",
+        "checked_on": "2026-10-09",
+        "supports": "R415-12 concerns priority vehicles of general interest using their special warnings. Do not extend that priority solely from an amber beacon."
+      },
+      {
+        "url": "https://www.ornikar.com/code/cours/signalisation/sur-vehicule/gyrophare",
+        "kind": "background",
+        "checked_on": "2026-10-09",
+        "supports": "Topic reference distinguishing amber beacons from blue emergency signals. Original question and scene; no proprietary exercise copied."
+      }
+    ]
+  },
+  {
+    "scenario_id": "short_left_turn_lane_arrow",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+    "learning_objective": "Interpret a left-only directional arrow in a short dedicated turn lane.",
+    "topic": "markings.directional_lane_arrow",
+    "scenario": "Driver is in a short left-turn pocket beside the through lane before a junction. A single clear left-only directional arrow is painted in this pocket. This is not a lane-reduction layout; the through lane continues. No manoeuvre or priority decision is asked.",
+    "novelty_review": "Existing B21 and C24 questions interpret vertical signs. This targets a short turn lane’s pavement marking, not a new rendering of a covered sign code.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_short_left_turn_lane_arrow",
+      "category_slug": "road_signs",
+      "correct_answers": [
+        "c"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Je suis dans cette courte voie spécialisée. Quelle direction indique la flèche peinte dans ma voie ?",
+          "answer_a": "Tout droit uniquement.",
+          "answer_b": "À droite uniquement.",
+          "answer_c": "À gauche uniquement.",
+          "answer_d": "Tout droit ou à gauche.",
+          "explanation": "La flèche directionnelle de cette voie indique seulement la gauche. Elle ne comporte pas de branche autorisant à continuer tout droit."
+        },
+        "en": {
+          "question_text": "I am in this short dedicated turn lane. Which direction does the arrow painted in my lane indicate?",
+          "answer_a": "Straight ahead only.",
+          "answer_b": "Right only.",
+          "answer_c": "Left only.",
+          "answer_d": "Straight ahead or left.",
+          "explanation": "This lane’s directional arrow points left only. It has no branch indicating straight ahead."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Incorrect : aucune branche tout droit.",
+        "b": "Incorrect : la flèche pointe à gauche.",
+        "c": "Correct : seule direction représentée.",
+        "d": "Incorrect : la flèche n’a qu’une direction."
+      },
+      "en": {
+        "a": "Incorrect: there is no straight-ahead branch.",
+        "b": "Incorrect: the arrow points left.",
+        "c": "Correct: the sole direction shown.",
+        "d": "Incorrect: this arrow shows only one direction."
+      }
+    },
+    "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Driver-eye view from a car centred in a short urban left-turn pocket approaching a simple French T-junction where a side road joins from the left and the main road continues straight. Right-hand traffic. One regular through lane immediately to our right continues unchanged; one opposing lane is to our left beyond a continuous centre line. The short turn pocket is separated from our through lane by a broken white line. Large clean French-style directional arrow on asphalt within our pocket: a standard left-turn-only arrow conforming to French IISR part 7 annex B2, mirrored from the standard right-turn-only diagram; absolutely no forward arrowhead or second branch. Exactly two successive left-turn arrows visible at regular spacing in this short urban pocket, with consistent orientation; no room for a third within this short pocket. Dry daylight, no vehicles or pedestrians. No traffic lights or vertical signs in frame. Crop before the actual junction conflict area so no priority-control inference is needed. Realistic widths, perspective, no permanent through-lane reduction. Use the actual French annex B2 form: approximately 4 m overall longitudinal length, narrow 0.15 m stem, an oblique branch toward the left (not an American square elbow), and a narrow elongated triangular arrowhead pointing left; perspective naturally foreshortens its longitudinal dimensions.",
+    "sources": [
+      {
+        "url": "https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_7epartie_vc_20250404.pdf",
+        "kind": "official",
+        "checked_on": "2026-10-09",
+        "supports": "IISR part 7 (VC20250404), article 115-3 C: directional arrows identify permitted lane directions; short specialised lanes are excluded from the lane-reduction definition. Two repetitions are exceptional for short urban junction space. Final arrow geometry must be compared visually with annex B2 before approval. Annex B2 on PDF page 62 visually inspected on 2026-10-09: turn arrow uses an oblique branch and elongated head; left is the mirror of right."
+      }
+    ]
+  },
+  {
+    "scenario_id": "night_following_before_overtake_dipped",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+    "learning_objective": "Avoid dazzling the driver being followed before an overtaking manoeuvre has begun.",
+    "topic": "lighting.before_night_overtake",
+    "scenario": "At night the driver follows another car, close enough for main beam to dazzle its driver through mirrors. An overtaking manoeuvre has not started. Both facts are stated, since an image alone cannot establish intent or glare at the other driver’s eyes.",
+    "novelty_review": "The existing oncoming-dip question addresses crossing traffic. This asks about following and the before-manoeuvre condition, rather than treating empty opposing traffic as permission for main beam.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_night_following_before_overtake_dipped",
+      "category_slug": "overtaking",
+      "correct_answers": [
+        "d"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "De nuit, je suis cette voiture sans avoir commencé à dépasser. Mes feux de route risqueraient d’éblouir son conducteur dans les rétroviseurs. Quel éclairage dois-je utiliser ?",
+          "answer_a": "Les feux de route puisqu’il n’y a personne en face.",
+          "answer_b": "Les feux de position seuls.",
+          "answer_c": "Aucun feu tant que je reste derrière elle.",
+          "answer_d": "Les feux de croisement.",
+          "explanation": "Avant de dépasser, je ne dois pas éblouir le conducteur que je suis. J’utilise les feux de croisement ; l’absence de véhicule en face ne suffit pas à justifier les feux de route."
+        },
+        "en": {
+          "question_text": "At night, I am following this car and have not started overtaking. Main beam would dazzle its driver through the mirrors. Which lights should I use?",
+          "answer_a": "Main beam because there is no oncoming traffic.",
+          "answer_b": "Sidelights alone.",
+          "answer_c": "No lights while I remain behind it.",
+          "answer_d": "Dipped headlights.",
+          "explanation": "Before overtaking, I must not dazzle the driver ahead. I use dipped headlights; an empty opposing lane alone does not justify main beam."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Incorrect : risque d’éblouissement devant moi.",
+        "b": "Incorrect : éclairage insuffisant sur cette route.",
+        "c": "Incorrect : je dois garder un éclairage adapté.",
+        "d": "Correct : évite l’éblouissement évoqué."
+      },
+      "en": {
+        "a": "Incorrect: the driver ahead could be dazzled.",
+        "b": "Incorrect: insufficient lighting on this road.",
+        "c": "Incorrect: suitable lights remain necessary.",
+        "d": "Correct: avoids the stated dazzling risk."
+      }
+    },
+    "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Realistic night photograph through the windscreen of a car following a compact car on an unlit rural French road. Both cars aligned in the right-hand lane, no lane change underway. The leading car has exactly two natural red rear position lights, not reversing lights or indicators. Broken white centre line to the left and right edge line, road straight and clear. Ordinary headlight illumination on nearby asphalt, no theatrical glare. No oncoming traffic, signs, signals or street lights. Crop dashboard and gauges out; no numerical speed or distance is inferred from the scene. Enough contrast to inspect road and leading car on a phone.",
+    "sources": [
+      {
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842262",
+        "kind": "official",
+        "checked_on": "2026-10-09",
+        "supports": "R416-6 II 1(b) and III: dipped lights when following close enough to dazzle, with the overtaking exception. Wording expressly sets the situation before the manoeuvre starts."
+      }
+    ]
+  },
+  {
+    "scenario_id": "motorway_blowout_initial_control",
+    "scope": "ordinary_passenger_car",
+    "scope_review": "Ordinary category-B passenger-car learner; no specialist vehicle qualification required.",
+    "learning_objective": "Prioritise steering stability and avoid abrupt inputs immediately after a tyre blowout.",
+    "topic": "breakdown.sudden_tyre_failure",
+    "scenario": "While driving on a straight dry motorway, one tyre suddenly bursts. The sudden failure is stated explicitly and is not claimed to be visible from inside the car. Ask the first control action, before any stopped-vehicle procedure.",
+    "novelty_review": "Existing motorway flat-tyre question starts after occupants are behind the barrier and asks who may recover the car. This tests immediate vehicle control while still moving.",
+    "primary_codes": [],
+    "context_codes": [],
+    "question": {
+      "key": "situation_motorway_blowout_initial_control",
+      "category_slug": "motorways",
+      "correct_answers": [
+        "a"
+      ],
+      "difficulty": "medium",
+      "translations": {
+        "fr": {
+          "question_text": "Sur cette autoroute, un pneu éclate brusquement alors que je roule. Quelle est ma première réaction ?",
+          "answer_a": "Tenir fermement le volant et éviter les gestes brusques.",
+          "answer_b": "Freiner immédiatement de toutes mes forces.",
+          "answer_c": "Donner un grand coup de volant vers la droite.",
+          "answer_d": "Serrer immédiatement le frein de stationnement.",
+          "explanation": "Je cherche d’abord à maintenir la trajectoire, sans freinage brutal ni écart soudain. Je ralentis ensuite progressivement pour rejoindre un endroit sûr."
+        },
+        "en": {
+          "question_text": "A tyre suddenly bursts while I am driving on this motorway. What is my first response?",
+          "answer_a": "Hold the wheel firmly and avoid abrupt inputs.",
+          "answer_b": "Brake as hard as possible immediately.",
+          "answer_c": "Swerve sharply to the right.",
+          "answer_d": "Apply the parking brake immediately.",
+          "explanation": "I first maintain the car’s direction without harsh braking or sudden steering. I then slow progressively to reach a safe place."
+        }
+      }
+    },
+    "option_rationale": {
+      "fr": {
+        "a": "Correct : priorité à la stabilité.",
+        "b": "Incorrect : risque de déséquilibrer la voiture.",
+        "c": "Incorrect : écart brusque dangereux.",
+        "d": "Incorrect : freinage brutal inadapté."
+      },
+      "en": {
+        "a": "Correct: prioritise stability.",
+        "b": "Incorrect: may destabilise the car.",
+        "c": "Incorrect: a sharp swerve is dangerous.",
+        "d": "Incorrect: an abrupt, unsuitable braking input."
+      }
+    },
+    "image_prompt": "Create one original photorealistic French driving-theory scene, landscape 16:9, at least 1536 pixels wide. Natural proportions, realistic French road geometry and right-hand traffic. No embedded question, answer, caption, watermark, logo or solution highlight. Only include the scene elements explicitly requested. All hands, vehicle parts and any markings must be anatomically or mechanically plausible. Keep the subject clear at 390-pixel phone width. Clear daylight driver-eye photograph from a left-hand-drive car in the right lane of a straight dry French motorway. Two lanes in this direction, broken white lane divider, proper right shoulder separated by French motorway edge markings, guardrail beyond shoulder, central barrier well to the left. No nearby traffic, exit, roadworks, signs or debris. Thin upper steering-wheel rim only at bottom, no hands, pedals or dashboard display showing an answer. The road perspective is steady and realistic. Do not show a tyre inside the windscreen, a crash, smoke, sparks or motion arrows; the question states the sudden tyre failure.",
+    "sources": [
+      {
+        "url": "https://www.michelin.fr/auto/conseils/conseils-conduite/securite-routiere",
+        "kind": "manufacturer",
+        "checked_on": "2026-10-09",
+        "supports": "Tyre-blowout section: hold the wheel firmly, avoid harsh braking, maintain direction, then slow gently towards safety. Other generic breakdown advice on this page is not used."
+      }
+    ]
+  }
+]

@@ -1,0 +1,411 @@
+{
+  "schema_version": 1,
+  "batch_id": "expansion-001",
+  "stage": "authored_awaiting_baseline_gate",
+  "checked_on": "2026-10-09",
+  "bank_sha256": "65c1b63fc7dfaee5118d0b0952c36db640f172bdcb633c3e2341c31d6a3176fc",
+  "proposals_sha256": "320dee98d634f42d648c853b024abe1d337a9c6febe32ee23988d3986cb75754",
+  "bank_questions": 388,
+  "pending_sign_jobs": 0,
+  "reserved_batches": 0,
+  "answer_mix": {
+    "single": 8,
+    "multiple": 2
+  },
+  "categories": {
+    "safety": 2,
+    "alcohol_drugs": 2,
+    "speed_limits": 1,
+    "parking_stopping": 1,
+    "priority_rules": 1,
+    "road_signs": 1,
+    "overtaking": 1,
+    "motorways": 1
+  },
+  "structural_validation": "pass",
+  "status_note": "Authored and structurally screened. Baseline gate now verified. No images or visual approvals yet.",
+  "style_source": {
+    "url": "https://www.ornikar.com/code/gratuit/test-examen-blanc",
+    "checked_on": "2026-10-09",
+    "use": "Public page reviewed for illustrated scenario format, mixed answer types and topic coverage. No proprietary question wording or images copied; linked interactive series not inspected."
+  },
+  "source_review_limitations": [
+    "2024 PDF was unavailable; 2025 consolidation downloaded successfully. Article text and annex B2 diagram (page 62) inspected. Reference page retained; prompt amended to the oblique-branch French arrow form.",
+    "Légifrance date-specific October URLs failed; current undated canonical article URLs opened successfully.",
+    "Manufacturer guidance supports equipment/handling advice rather than a statutory rule."
+  ],
+  "items": [
+    {
+      "scenario_id": "first_aid_conscious_waiting_care",
+      "proposal_sha256": "30d6d1e38b841d6a10005bb12c8b194d43b48c31a1146ce6d3bdb25c72290eff",
+      "correct_answers": [
+        "a",
+        "c"
+      ],
+      "nearest_questions": [
+        {
+          "key": "situation_unconscious_breathing_pls",
+          "similarity": 0.508,
+          "question_fr": "La zone est sécurisée. Cette victime est inconsciente, respire normalement et ne présente pas de traumatisme suspecté. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_not_breathing_cpr_aed",
+          "similarity": 0.444,
+          "question_fr": "La victime est inconsciente et ne respire pas normalement. Après l'alerte, que dois-je faire ?"
+        },
+        {
+          "key": "situation_pedestrian_intent_no_crosswalk",
+          "similarity": 0.437,
+          "question_fr": "Aucun passage piéton n'est proche et cette personne manifeste clairement son intention de traverser. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_speed_rain_posted_90_80",
+          "similarity": 0.434,
+          "question_fr": "Il pleut sur cette route à double sens sans séparateur central, normalement limitée à 90 km/h. Quelle limite maximale dois-je respecter ?"
+        },
+        {
+          "key": "situation_motorway_sos_location",
+          "similarity": 0.423,
+          "question_fr": "Après une panne, je suis à l’abri et une borne SOS est accessible sans danger. Quel est son principal avantage pour l’alerte ?"
+        }
+      ],
+      "novelty_screening_note": "Compared the five nearest stems: PLS and CPR involve unconscious casualties, pedestrian crossing involves yielding, rain speed involves a legal maximum, and SOS location involves alerting. The broader first-actions item shares two distractors but asks protection/alert, not the new positive actions of covering and reassuring after alert.",
+      "visual_review": "not_started",
+      "review_approval": null
+    },
+    {
+      "scenario_id": "coolant_hot_cap_wait",
+      "proposal_sha256": "40b0660b57c0bf4b6cf746d167355c623e3129effd2962cb11a345c624ac8b74",
+      "correct_answers": [
+        "b"
+      ],
+      "nearest_questions": [
+        {
+          "key": "situation_triangle_placement_personal_danger",
+          "similarity": 0.525,
+          "question_fr": "Hors autoroute, ma voiture est immobilisée après ce virage, mais marcher sur la chaussée pour poser le triangle me mettrait manifestement en danger. Dois-je le faire ?"
+        },
+        {
+          "key": "situation_motorway_planned_break_two_hours",
+          "similarity": 0.456,
+          "question_fr": "Après environ deux heures de conduite sur autoroute, je me sens encore alerte. Quelle bonne habitude adopter ?"
+        },
+        {
+          "key": "situation_medicine_no_self_dose_change_drive",
+          "similarity": 0.421,
+          "question_fr": "Mon traitement peut gêner la conduite. Puis-je sauter moi-même une dose pour prendre le volant ?"
+        },
+        {
+          "key": "situation_overtaking_no_safe_return_gap",
+          "similarity": 0.414,
+          "question_fr": "Je veux dépasser cette camionnette, mais l'espace devant elle est trop court pour me rabattre sans gêner le camion. Puis-je commencer ?"
+        },
+        {
+          "key": "situation_b22c_car_scenario",
+          "similarity": 0.408,
+          "question_fr": "Puis-je m’arrêter en voiture sur ce chemin pour attendre quelqu’un ?"
+        }
+      ],
+      "novelty_screening_note": "Nearest triangle, break timing, medicine dosing, overtaking gap and B22c items test different decisions. The broader oil-pressure warning asks stopping the engine during a drive, not hot cooling-system handling.",
+      "visual_review": "not_started",
+      "review_approval": null
+    },
+    {
+      "scenario_id": "aac_accompanying_adult_alcohol",
+      "proposal_sha256": "3b6318a83a20c7ca0ba3de05c717c12b3a505de84ac2362848dd5a5539fdc746",
+      "correct_answers": [
+        "d"
+      ],
+      "nearest_questions": [
+        {
+          "key": "alcohol_probationary_limit",
+          "similarity": 0.452,
+          "question_fr": "Quel taux maximal d’alcool dans le sang s’applique à un conducteur en permis probatoire ?"
+        },
+        {
+          "key": "alcohol_general_limit",
+          "similarity": 0.425,
+          "question_fr": "Pour un conducteur qui n’est pas soumis au seuil probatoire, à partir de quel taux d’alcool dans le sang la conduite est-elle interdite ?"
+        },
+        {
+          "key": "situation_two_way_wrong_side_parking",
+          "similarity": 0.398,
+          "question_fr": "En agglomération sur cette chaussée à double sens, une place est libre à gauche. Puis-je m’y garer face au sens inverse ?"
+        },
+        {
+          "key": "situation_breath_test_general_limit",
+          "similarity": 0.397,
+          "question_fr": "Mon éthylomètre affiche 0,25 mg d’alcool par litre d’air expiré. Mon permis n’est plus probatoire. Puis-je conduire ?"
+        },
+        {
+          "key": "situation_parking_disc_actual_arrival",
+          "similarity": 0.384,
+          "question_fr": "Je viens de me garer sur une place où le disque est obligatoire. Quelle heure dois-je y indiquer ?"
+        }
+      ],
+      "novelty_screening_note": "Nearest probationary/general/breath thresholds regulate a driver, whereas this question tests the designated accompanier’s legal role. Wrong-side parking and parking-disc arrival time are unrelated.",
+      "visual_review": "not_started",
+      "review_approval": null
+    },
+    {
+      "scenario_id": "otc_medicine_not_driving_guarantee",
+      "proposal_sha256": "ca33205e1b11bd9e15165383c05ed9068886d1a0e0506cb8d496c9d81c0d665e",
+      "correct_answers": [
+        "c"
+      ],
+      "nearest_questions": [
+        {
+          "key": "situation_alcohol_sedating_medicine",
+          "similarity": 0.487,
+          "question_fr": "J'ai pris un médicament pouvant provoquer une somnolence. Puis-je boire de l'alcool puis conduire ?"
+        },
+        {
+          "key": "designated_driver_plan",
+          "similarity": 0.478,
+          "question_fr": "À quel moment un groupe doit-il choisir la personne qui restera sobre pour conduire ?"
+        },
+        {
+          "key": "situation_speed_night_dipped_visibility",
+          "similarity": 0.423,
+          "question_fr": "De nuit, mes feux de croisement n’éclairent qu’une portion limitée de la route. Que dois-je faire avec ma vitesse ?"
+        },
+        {
+          "key": "situation_motorway_lost_object_no_retrieval",
+          "similarity": 0.419,
+          "question_fr": "Une valise vient de tomber de ma galerie sur l'autoroute. Puis-je revenir à pied sur la chaussée pour la récupérer ?"
+        },
+        {
+          "key": "situation_alcohol_cbd_legal_sale_not_driving",
+          "similarity": 0.416,
+          "question_fr": "Un produit au CBD a été acheté légalement. Cela exclut-il une infraction si l’analyse établit une conduite après usage de THC ?"
+        }
+      ],
+      "novelty_screening_note": "Nearest alcohol-plus-medicine item tests potentiation. Designated-driver planning, limited night visibility and lost-object retrieval are unrelated. Legal CBD sale versus THC liability is another product with a distinct legal mechanism; this item tests medicine purchase status versus precaution checking. Also compared all medication-pictogram and dosing items.",
+      "visual_review": "not_started",
+      "review_approval": null
+    },
+    {
+      "scenario_id": "limiter_no_braking_downhill",
+      "proposal_sha256": "78448827f8ba9431dda317f8cd7cc6a7dbff764c38120599a29f375fffb35db2",
+      "correct_answers": [
+        "a"
+      ],
+      "nearest_questions": [
+        {
+          "key": "situation_tram_crossing_without_signals",
+          "similarity": 0.495,
+          "question_fr": "Sans feu ni agent, ce tramway approche sur les rails qui traversent ma voie. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_unconscious_breathing_pls",
+          "similarity": 0.485,
+          "question_fr": "La zone est sécurisée. Cette victime est inconsciente, respire normalement et ne présente pas de traumatisme suspecté. Que dois-je faire ?"
+        },
+        {
+          "key": "situation_motorway_entry",
+          "similarity": 0.48,
+          "question_fr": "En m'engageant sur l'autoroute, que dois-je faire ?"
+        },
+        {
+          "key": "situation_downhill_queue_reduce_speed",
+          "similarity": 0.475,
+          "question_fr": "Dans cette forte descente, une file arrêtée apparaît plus bas. Quelle action dois-je effectuer d'abord ?"
+        },
+        {
+          "key": "situation_rear_fog_lights_falling_snow",
+          "similarity": 0.459,
+          "question_fr": "Sous cette chute de neige qui réduit nettement la visibilité, puis-je allumer les feux arrière de brouillard ?"
+        }
+      ],
+      "novelty_screening_note": "Nearest tram, PLS, motorway entry and snow-fog-light questions are unrelated. Downhill queue requires anticipation of a visible obstruction. Here there is no queue: the specific misconception is whether a limiter lacking brake control guarantees the set speed.",
+      "visual_review": "not_started",
+      "review_approval": null
+    },
+    {
+      "scenario_id": "cmi_parking_card_passenger",
+      "proposal_sha256": "9fd6655eaebaac1a4bf22abb94b5ddb7e6db859bf3aa064e2cab900303426d6d",
+      "correct_answers": [
+        "b",
+        "d"
+      ],
+      "nearest_questions": [
+        {
+          "key": "situation_night_unlit_roadside_position_lights",
+          "similarity": 0.479,
+          "question_fr": "Je laisse ma voiture stationnée de nuit sur cette chaussée sans éclairage public. Quelle signalisation conserver ?"
+        },
+        {
+          "key": "safety_accident_first_actions",
+          "similarity": 0.477,
+          "question_fr": "Lors d’un accident de la route, quelles premières actions sont adaptées ?"
+        },
+        {
+          "key": "situation_speed_carpark_walking_pace",
+          "similarity": 0.472,
+          "question_fr": "Je circule dans ce parc de stationnement aménagé au sol. Quelle allure dois-je adopter ?"
+        },
+        {
+          "key": "situation_ecstasy_false_alertness",
+          "similarity": 0.47,
+          "question_fr": "Après avoir pris de l'ecstasy, cette personne dit ne plus sentir sa fatigue et veut conduire. Quelle décision est correcte ?"
+        },
+        {
+          "key": "situation_motorway_last_in_slow_queue",
+          "similarity": 0.453,
+          "question_fr": "Je suis le dernier véhicule d'une file qui ralentit fortement sur autoroute. Comment avertir les conducteurs derrière moi ?"
+        }
+      ],
+      "novelty_screening_note": "Nearest night parking, first aid, carpark pace, ecstasy and queue warning questions are unrelated. Broader disabled-bay-without-card rule does not ask whose card/right applies when its holder travels as passenger.",
+      "visual_review": "not_started",
+      "review_approval": null
+    },
+    {
+      "scenario_id": "amber_beacon_alone_no_priority",
+      "proposal_sha256": "931bec8dd9ed6e3a6f509c04e1b474b87e5f0b4f1429c97cf591ea5c52cc7089",
+      "correct_answers": [
+        "b"
+      ],
+      "nearest_questions": [
+        {
+          "key": "situation_b9b_car_interpretation",
+          "similarity": 0.419,
+          "question_fr": "Je conduis une voiture particulière. Ce panneau, à lui seul, m’interdit-il l’accès ?"
+        },
+        {
+          "key": "situation_priority_rural_bus_no_automatic_priority",
+          "similarity": 0.413,
+          "question_fr": "Hors agglomération, cet autocar veut quitter son arrêt. Son clignotant lui donne-t-il automatiquement la priorité ?"
+        },
+        {
+          "key": "situation_end_priority_road_ab7",
+          "similarity": 0.407,
+          "question_fr": "À la prochaine intersection, le véhicule venant de droite est-il prioritaire ?"
+        },
+        {
+          "key": "situation_blind_crest_no_overtake",
+          "similarity": 0.404,
+          "question_fr": "Le véhicule devant roule lentement et le sommet de la côte masque la route. Puis-je commencer à le dépasser ?"
+        },
+        {
+          "key": "situation_urban_horn_impatience",
+          "similarity": 0.396,
+          "question_fr": "En ville, le véhicule devant tarde à repartir au feu vert sans danger immédiat. Puis-je klaxonner par impatience ?"
+        }
+      ],
+      "novelty_screening_note": "Nearest B9b, end-of-priority road, blind crest and horn questions use different cues and obligations. Rural bus indicator question distinguishes intent from priority, whereas this item identifies a different warning device and vehicle class. Also compared emergency/convoy questions; no claim is made about all maintenance vehicles in all circumstances.",
+      "visual_review": "not_started",
+      "review_approval": null
+    },
+    {
+      "scenario_id": "short_left_turn_lane_arrow",
+      "proposal_sha256": "09f68e02f4ec5b41c11713a5638332b45867c9f9f77950a7aa776fa336d46965",
+      "correct_answers": [
+        "c"
+      ],
+      "nearest_questions": [
+        {
+          "key": "situation_b55_car_scenario",
+          "similarity": 0.547,
+          "question_fr": "Je quitte cette aire où ma voiture était autorisée. Que m’indique le panneau ?"
+        },
+        {
+          "key": "situation_c13c_dead_end_pedestrian_exit",
+          "similarity": 0.525,
+          "question_fr": "L’issue indiquée au fond de cette impasse me permet-elle de rejoindre la rue suivante avec ma voiture ?"
+        },
+        {
+          "key": "situation_left_turn_oncoming_yield",
+          "similarity": 0.485,
+          "question_fr": "Je tourne à gauche dans cette rue tandis qu’une voiture arrive en face. Quelle action est correcte ?"
+        },
+        {
+          "key": "situation_c24b_car_interpretation",
+          "similarity": 0.478,
+          "question_fr": "Je souhaite continuer tout droit. Quelle voie correspond à mon itinéraire sur ce panneau ?"
+        },
+        {
+          "key": "situation_probationary_posted_90_max_80",
+          "similarity": 0.473,
+          "question_fr": "Je suis en permis probatoire sur cette route à double sens hors agglomération, signalée à 90 km/h. Quelle vitesse maximale s'applique à ma voiture ?"
+        }
+      ],
+      "novelty_screening_note": "Nearest B55, C13c, left-turn yielding and probationary-speed questions are unrelated. C24b tests reading a vertical lane diagram to choose a through lane; this item decodes the pavement-only directional marking of a short turn pocket. It must not reuse a C24 sign as a new primary target.",
+      "visual_review": "not_started",
+      "review_approval": null
+    },
+    {
+      "scenario_id": "night_following_before_overtake_dipped",
+      "proposal_sha256": "5d5ff0332f835b7815c65aa40e2a0a6c677225a1fabbbf124d50cf309d4d88b1",
+      "correct_answers": [
+        "d"
+      ],
+      "nearest_questions": [
+        {
+          "key": "situation_being_overtaken_hold_speed",
+          "similarity": 0.486,
+          "question_fr": "Cette voiture a commencé à me dépasser sur une route à double sens. Comment dois-je réagir ?"
+        },
+        {
+          "key": "situation_front_fog_lights_heavy_rain",
+          "similarity": 0.444,
+          "question_fr": "Sous cette forte pluie, puis-je compléter mes feux de croisement par les feux avant de brouillard ?"
+        },
+        {
+          "key": "situation_priority_uphill_near_refuge_reverse",
+          "similarity": 0.418,
+          "question_fr": "Deux voitures seules ne peuvent pas se croiser. Je monte, mais une place d’évitement est juste derrière moi et reculer y est manifestement plus facile. Qui doit reculer ?"
+        },
+        {
+          "key": "situation_child_under_ten_front_seat",
+          "similarity": 0.413,
+          "question_fr": "Un enfant de huit ans est installé face à la route sur le siège avant, alors que les places arrière sont libres et utilisables. Que faire ?"
+        },
+        {
+          "key": "situation_motorway_freeflow_pay_72h",
+          "similarity": 0.404,
+          "question_fr": "Je viens d’emprunter le péage en flux libre Sanef, sans badge ni paiement automatique. Dans quel délai dois-je régler mon passage ?"
+        }
+      ],
+      "novelty_screening_note": "Nearest being-overtaken item asks speed behaviour, rain fog lights ask weather-specific equipment, uphill reversing asks crossing, child seating and freeflow toll ask unrelated obligations. Broader oncoming-main-beam item concerns crossing; here the image/wording establish following before a pass, requiring recognition of possible mirror glare even with no oncoming traffic.",
+      "visual_review": "not_started",
+      "review_approval": null
+    },
+    {
+      "scenario_id": "motorway_blowout_initial_control",
+      "proposal_sha256": "6a544720e74e0c3cc497d58940ca8da5fb65ce4318d3f4b23039de09f4cacccb",
+      "correct_answers": [
+        "a"
+      ],
+      "nearest_questions": [
+        {
+          "key": "situation_rear_fog_lights_falling_snow",
+          "similarity": 0.471,
+          "question_fr": "Sous cette chute de neige qui réduit nettement la visibilité, puis-je allumer les feux arrière de brouillard ?"
+        },
+        {
+          "key": "situation_speed_rain_posted_90_80",
+          "similarity": 0.47,
+          "question_fr": "Il pleut sur cette route à double sens sans séparateur central, normalement limitée à 90 km/h. Quelle limite maximale dois-je respecter ?"
+        },
+        {
+          "key": "situation_front_fog_lights_heavy_rain",
+          "similarity": 0.456,
+          "question_fr": "Sous cette forte pluie, puis-je compléter mes feux de croisement par les feux avant de brouillard ?"
+        },
+        {
+          "key": "situation_minimum_speed_80",
+          "similarity": 0.447,
+          "question_fr": "Sur cette voie fluide, puis-je circuler à 60 km/h sans raison particulière ?"
+        },
+        {
+          "key": "safety_accident_first_actions",
+          "similarity": 0.443,
+          "question_fr": "Lors d’un accident de la route, quelles premières actions sont adaptées ?"
+        }
+      ],
+      "novelty_screening_note": "Nearest weather lighting, rain limit, minimum motorway speed and first actions at an accident concern different decisions. Broader flat-tyre recovery item begins after the car has stopped; this asks immediate stability control while moving.",
+      "visual_review": "not_started",
+      "review_approval": null
+    }
+  ]
+}

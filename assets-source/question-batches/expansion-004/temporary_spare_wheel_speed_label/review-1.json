@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+  "proposal_sha256": "4c684dace1b096dc5882d88f707277272f36a3ae0cc320a9cec185cdfb71910e",
+  "image_sha256": "4edb5bb04aef66e5fa48e5a82e92d26ccbd7d85800e0b453db3a63aa810fb216",
+  "compared_question_keys": [
+    "situation_roadworks_b14_50_over_general_80",
+    "situation_driveway_exit_yield",
+    "situation_red_cross_lane_closed",
+    "situation_mountain_car_backs_for_caravan",
+    "situation_limiter_no_braking_downhill"
+  ],
+  "checks": {
+    "official_rule": "Checked 2026-10-10. Temporary spare use must not exceed speed marked on wheel label; replace with original-type wheel as soon as possible.80is the stated pictured wheel limit, not asserted universal.",
+    "novelty": "Existing blowout, tyrepressure, tread and bulge do not test the lower equipment-specific speed limit after fitting a temporary spare. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+    "signs_and_text": "Exact yellow wheel label80km/h readable, no roadside speed sign. Faint moulded tyre texture has no interpretable competing limit.",
+    "road_geometry": "Stationary close-up on paved driveway, no road movement implied.",
+    "vehicles_and_people": "Mounted spare wheel supports car normally, no jack, damaged tyre or person.",
+    "dashboard_and_equipment": "Five bolts, black stamped wheel, narrow tyre, valve and wheel well plausible.80label is manufacturer-type equipment label, not an invented road sign.",
+    "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Stationary close-up on paved driveway, no road movement implied. Mounted spare wheel supports car normally, no jack, damaged tyre or person.",
+    "phone_size": "Inspected saved390px phone-1.jpg. 80 remains readily legible;km/h is also explicit in bilingual stem. No universal80limit for every spare is claimed.",
+    "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Temporary spare fitted, label80km/h, dry road otherwise90. Avoid claiming all spares share a universal limit.",
+    "all_four_options": "Correct set d. FR: {\"a\": \"La limitation de la roue est inférieure à celle de la route.\", \"b\": \"Il n’existe pas d’exception de quelques minutes.\", \"c\": \"La pression correcte ne supprime pas la limite.\", \"d\": \"La limite propre à cette roue reste80.\"} EN: {\"a\": \"The wheel’s limit is lower than the road’s.\", \"b\": \"There is no brief high-speed exception.\", \"c\": \"Correct pressure does not remove the limit.\", \"d\": \"This wheel’s80limit applies.\"}"
+  }
+}

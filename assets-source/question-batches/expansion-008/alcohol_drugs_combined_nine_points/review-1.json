@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "66232c3b7b2fa6ef4c1528af32958d50e97f6cba0a86e262ad6525a5c5942b68",
+  "image_sha256": "63a5bfe00c9b2641180e323217d1c39ea48e97645cffc9368e07be403221c3bf",
+  "result": "pass",
+  "notes": "Exact staged JPEG inspected at original1672x941 and390px; no detected unresolved defects.",
+  "compared_question_keys": [
+    "situation_probation_alcohol_six_point_deduction",
+    "situation_drug_driving_principal_penalty_2026",
+    "situation_aac_accompanying_adult_alcohol",
+    "drugs_no_safe_threshold",
+    "situation_ead_restriction_borrowed_car"
+  ],
+  "checks": {
+    "official_rule": "Current official table verified27Feb2026: drug driving6points; drug driving with alcohol influence9points. Read table directly.",
+    "novelty": "Existing combined-consumption item concerns crash risk; drug penalty item concerns imprisonment/fine, probation alcohol item6points. This tests the current specific combined9point deduction. Both translations/options/explanations of five nearest reviewed, with whole-category inventory.",
+    "signs_and_text": "No signs or lettering; key lock/unlock/boot icons small but coherent.",
+    "road_geometry": "Stationary cafe-table context, parked vehicle side; no driving lane, road-marking question or movement.",
+    "vehicles_and_people": "No people, single wine glass; no inference of dose or laboratory result from glass.",
+    "dashboard_and_equipment": "Key blade, fob, glass and closed folder coherent; car window/door/wheel perspective plausible.",
+    "full_resolution": "Exact scene-1.jpg1672x941 inspected. No signs or lettering; key lock/unlock/boot icons small but coherent. Key blade, fob, glass and closed folder coherent; car window/door/wheel perspective plausible.",
+    "phone_size": "Glass, key and parked car remain distinct at390px.",
+    "french_and_english": "Both translations match conditions and correct set. Definitively established driving after drug use and under alcohol influence, blood alcohol0.80g/L, ordinary full12pointlicence; no other simultaneous offences.",
+    "all_four_options": "Correct set b. {\"fr\": {\"a\": \"Six concerne les stupéfiants seuls.\", \"b\": \"Barème actuel pour le cumul indiqué.\", \"c\": \"Exception spécifique au plafond général.\", \"d\": \"Pas de retrait automatique de12pour ce seul délit.\"}, \"en\": {\"a\": \"Six applies to drug use alone.\", \"b\": \"Current deduction for this combination.\", \"c\": \"There is a specific exception to the general cap.\", \"d\": \"This offence alone does not automatically deduct12.\"}}"
+  }
+}

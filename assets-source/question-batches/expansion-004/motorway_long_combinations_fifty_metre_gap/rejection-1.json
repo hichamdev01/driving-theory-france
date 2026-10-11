@@ -1,0 +1,6 @@
+{
+  "result": "reject",
+  "proposal_sha256": "52ad0072c4fc112881ddeccbecade0c7ce4f5423235acc9d110a01e0b5e5e2e8",
+  "image_sha256": "54a11ad6f447fe3cd37ad16407182ef8b1cb9cb4b6de7475d74e4018c3ba111e",
+  "notes": "Tow car shows rear lamp alongside the rear of the caravan, so the towing geometry is ambiguous and appears like a second vehicle beside the trailer. Regenerate with towing car fully occluded in front of caravan; no speculative glimpse. Caravan also lacks a credible registration location at this distance."
+}

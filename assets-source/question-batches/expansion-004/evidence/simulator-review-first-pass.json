@@ -1,0 +1,20 @@
+{
+  "status": "content_pass_feedback_wording_repair_pending",
+  "device": "iPhone 17 Pro / iOS26.5 / B49BFA96-2E2B-4EBD-BF84-0860E2C2FD3B",
+  "date": "2026-10-10",
+  "method": "Actual app via DEBUG ContentReviewKeys, canonical answer order, French. Each question image and heading visually inspected via CUA screenshot, every option and feedback read via accessibility; long questions scrolled. Screenshots are in conversation tool output, not separate saved files.",
+  "observed_in_order": [
+    "ead_restriction_borrowed_car: B correct; no progress write",
+    "ead_personal_breath_no_substitute: D correct; corrected handset image",
+    "motorway_long_combination_two_right_lanes: C correct; three clear lanes",
+    "motorway_long_combinations_fifty_metre_gap: A correct; entire long stem and options accessible by scrolling",
+    "r16_right_arrow_conditional_passage: multiple instruction; A only correctly scores Incorrect and displays A+B as correct",
+    "b10a_combination_total_length: C correct;7m legible",
+    "parked_engine_unnecessary_idling: B correct",
+    "night_overtake_warning_headlights: A correct; night scene legible",
+    "temporary_spare_wheel_speed_label: D correct;80km/h visible",
+    "signed_accident_report_no_front_changes: multiple instruction;B+D correctly scores Correct"
+  ],
+  "defect": "Incorrect multiple-answer feedback prefix used singular wording despite displaying both correct answers. Fixed only the prefix selection and FR/EN plural localisation; re-test and re-observe before final approval.",
+  "other_observations": "Existing scrolled content can pass behind status bar; all questions/options/feedback remain accessible. No content mismatch or image-loading failure detected. Dismissed unrelated Apple-account verification using Not Now; no account changes."
+}

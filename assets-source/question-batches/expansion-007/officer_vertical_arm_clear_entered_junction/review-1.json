@@ -1,0 +1,13 @@
+{
+  "proposal_sha256": "0e74476e4878b8da0115fa4c3f45c39b373d6874867ccaa8f4a3d2343c4122c9",
+  "image_sha256": "2395a81442bd17822a53df1684d5a9e9e72ac9912fb51a6d0601a03bbb52279a",
+  "result": "reject",
+  "notes": "Vehicle viewpoint appears before the junction entry kerbs, contradicting already inside intersection. Advance viewpoint into junction; keep clear exit and vertical-arm officer.",
+  "compared_question_keys": [
+    "situation_priority_officer_over_green_light",
+    "situation_b4_car_sign_interpretation",
+    "situation_b5b_police_checkpoint_required_stop",
+    "situation_motorway_exit_deceleration",
+    "situation_overtaking_uncontrolled_intersection"
+  ]
+}

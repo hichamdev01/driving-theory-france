@@ -6,7 +6,7 @@ enum StringKey: String, CaseIterable {
     case home, today, practice, exam, roadSigns, mistakes, review, progress
     case yourProgress, questionsAnswered, accuracy, weakTopic, continueStudying, startExam, noDataYet
     case allCategories, randomPractice, randomPracticeSubtitle, practiceByCategory
-    case submitAnswer, continueButton, finishButton, correct, incorrect, correctAnswerWas, explanation
+    case submitAnswer, continueButton, finishButton, correct, incorrect, correctAnswerWas, correctAnswersAre, explanation
     case selectOneAnswer, selectAllAnswers, maximumMistakes, mistakeCount
     case questionOf, practiceComplete, backToHome, practiceAgain
     case timeRemaining, examIntroTitle, examIntroDescription, numberOfQuestions, passingScore, beginExam
@@ -29,6 +29,10 @@ enum StringKey: String, CaseIterable {
     case knowledgeDrill
     case finishExamPrompt, finishExamConfirm, cancel, unansweredQuestionsFormat
     case exitExamLabel, exitExamTitle, exitExamMessage, exitExamConfirm
+    case homeNextStep, homeFirstSession, homeMixedSession, homeStartPractice, homePracticeTheme
+    case homeAccuracyReason, homeRefreshReason, homeCoverageReason
+    case homeTrainingModes, homeCategorySubtitle, homeExamSubtitle, homeReviewSubtitle
+    case homeQuestionsExplored, homeBankScope, homeUnmeasured, homeProgressHint
 }
 
 private typealias L = [LanguageCode: String]
@@ -62,7 +66,7 @@ private func buildStrings() -> [StringKey: L] {
     s[.mistakes] = entry("Mistakes", "Erreurs")
     s[.review] = entry("Review", "Révision")
     s[.progress] = entry("Progress", "Progrès")
-    s[.yourProgress] = entry("Your Progress", "Votre Progression")
+    s[.yourProgress] = entry("Your progress", "Votre progression")
     s[.questionsAnswered] = entry("Questions Answered", "Questions Répondues")
     s[.accuracy] = entry("Accuracy", "Précision")
     s[.weakTopic] = entry("Weakest Topic", "Sujet le Plus Faible")
@@ -73,10 +77,45 @@ private func buildStrings() -> [StringKey: L] {
         "Pas encore de pratique — commencez votre première session !"
     )
     s[.allCategories] = entry("All Categories", "Toutes les Catégories")
-    s[.randomPractice] = entry("Random Practice", "Entraînement Aléatoire")
+    s[.randomPractice] = entry("Random practice", "Entraînement aléatoire")
     s[.randomPracticeSubtitle] = entry(
-        "All questions from every category, in random order",
-        "Toutes les questions de chaque catégorie, dans un ordre aléatoire"
+        "Up to 30 different questions from all categories",
+        "Jusqu’à 30 questions différentes, tous thèmes confondus"
+    )
+    s[.homeNextStep] = entry("Your next step", "Votre prochaine étape")
+    s[.homeFirstSession] = entry("Start with a practice session", "Commencez par une série")
+    s[.homeMixedSession] = entry("Keep practising across themes", "Gardez le rythme")
+    s[.homeStartPractice] = entry("Start practising", "Commencer l’entraînement")
+    s[.homePracticeTheme] = entry("Practise this theme", "Travailler ce thème")
+    s[.homeAccuracyReason] = entry(
+        "Strengthen this theme with a short session and explanations after every answer.",
+        "Renforcez ce thème avec une courte série et une explication après chaque réponse."
+    )
+    s[.homeRefreshReason] = entry(
+        "It’s time to revisit this theme. Refresh what you’ve learned with a short session.",
+        "Ce thème mérite une révision. Réactivez vos acquis avec une courte série."
+    )
+    s[.homeCoverageReason] = entry(
+        "Explore more questions in this theme, with explanations to help you learn.",
+        "Explorez davantage de questions de ce thème, avec des explications pour progresser."
+    )
+    s[.homeTrainingModes] = entry("Ways to practise", "À vous de choisir")
+    s[.homeCategorySubtitle] = entry("Choose a theme to work on", "Choisissez un thème à travailler")
+    s[.homeExamSubtitle] = entry(
+        "%d questions, results at the end", "%d questions, bilan à la fin"
+    )
+    s[.homeReviewSubtitle] = entry("Learn from your previous mistakes", "Reprenez vos erreurs pour progresser")
+    s[.homeQuestionsExplored] = entry("Questions explored", "Questions explorées")
+    s[.homeBankScope] = entry(
+        "Progress in this question bank, not a prediction of exam success.",
+        "Progrès dans cette banque, sans garantie de réussite à l’examen."
+    )
+    s[.homeUnmeasured] = entry(
+        "Themes not measurable: %d", "Thèmes non mesurables : %d"
+    )
+    s[.homeProgressHint] = entry(
+        "Opens progress by theme and explains how readiness is measured.",
+        "Affiche vos progrès par thème et les critères de préparation."
     )
     s[.practiceByCategory] = entry("Practice by Category", "S’entraîner par Catégorie")
     s[.submitAnswer] = entry("Submit", "Valider")
@@ -95,6 +134,7 @@ private func buildStrings() -> [StringKey: L] {
     s[.correct] = entry("Correct!", "Correct !")
     s[.incorrect] = entry("Incorrect", "Incorrect")
     s[.correctAnswerWas] = entry("The correct answer is:", "La bonne réponse est :")
+    s[.correctAnswersAre] = entry("The correct answers are:", "Les bonnes réponses sont :")
     s[.explanation] = entry("Explanation", "Explication")
     s[.questionOf] = entry("Question", "Question")
     s[.practiceComplete] = entry("Practice Session Complete", "Session Terminée")

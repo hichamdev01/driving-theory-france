@@ -1,0 +1,6 @@
+{
+  "result": "reject",
+  "proposal_sha256": "a49c0107015d46c4cfc9543a70f47e4bc2bacc2f7b6e05435c59fb1b079a1356",
+  "image_sha256": "ffb7fadf1da9370dde04e90e6ad3b150aadae23823da4e6730aa827589da8d13",
+  "notes": "Rejected after full-resolution and phone inspection: full-road barrier/central camera and full-width transverse line make the crossing exit layout ambiguous; rails appear entirely ahead rather than clearly under a trapped car. Regenerate a neutral close-up of the barrier, with the emergency facts explicitly supplied by the wording."
+}

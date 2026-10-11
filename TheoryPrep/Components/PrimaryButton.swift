@@ -43,7 +43,11 @@ struct PrimaryButton: View {
                 Text(label)
                     .font(.headline)
                     .foregroundStyle(foreground)
+                    .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
             }
+            .foregroundStyle(foreground)
+            .padding(.vertical, AppSpacing.small)
             .frame(maxWidth: .infinity)
             .frame(minHeight: 54)
             .padding(.horizontal, AppSpacing.standard)

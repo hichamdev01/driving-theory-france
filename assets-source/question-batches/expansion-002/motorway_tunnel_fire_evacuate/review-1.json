@@ -1,0 +1,6 @@
+{
+  "result": "reject",
+  "proposal_sha256": "d14ccb87a5141b024751ac27db1919391c41953ec3139f3b65738c78d8764623",
+  "image_sha256": "971621f60735d5f7b4765ee99ee1fccabaead56c98f0aac4a054ba98f23c88ca",
+  "notes": "Reject: short isolated lane dashes do not match specified French proportions; broad blank tunnel walls create unresolved wayfinding realism. Use restricted field of view, continuous white lane separator, wall equipment outside crop."
+}

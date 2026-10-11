@@ -1,0 +1,302 @@
+[
+  {
+    "scenario": "loaded_car_exceeds_own_ptac",
+    "nearest": [
+      {
+        "key": "situation_b13_ptac_not_actual_mass",
+        "similarity": 0.28,
+        "question_fr": "Ma voiture sans remorque a un PTAC de 2 300 kg, mais pèse aujourd’hui 1 700 kg. Puis-je franchir ce panneau ?"
+      },
+      {
+        "key": "situation_trailer_ptra_over3500_motorway90",
+        "similarity": 0.17,
+        "question_fr": "Ma voiture (PTAC 2 500 kg, PTRA 4 500 kg) tracte une remorque de PTAC 750 kg. Sur autoroute sèche, avec bonne visibilité et sans limite plus basse, mon maximum est :"
+      },
+      {
+        "key": "situation_height_limit_3_5m",
+        "similarity": 0.142,
+        "question_fr": "Pour vérifier que ma voiture équipée d’un coffre de toit peut passer, quelle hauteur dois-je comparer à 3,5 m ?"
+      },
+      {
+        "key": "situation_height_limit_2_8m",
+        "similarity": 0.131,
+        "question_fr": "Que vous annonce ce panneau ?"
+      },
+      {
+        "key": "situation_long_caravan_snow_overtaking_prohibited",
+        "similarity": 0.122,
+        "question_fr": "Je tracte une caravane : longueur totale 8 m, somme des PTAC 3 200 kg. Une voie de la chaussée est partiellement enneigée. Puis-je dépasser une voiture ?"
+      }
+    ]
+  },
+  {
+    "scenario": "licence_0106_contact_lenses",
+    "nearest": [
+      {
+        "key": "situation_ead_restriction_borrowed_car",
+        "similarity": 0.123,
+        "question_fr": "Mon permis B impose actuellement un éthylotest antidémarrage (EAD). Je suis sobre. Puis-je conduire la voiture prêtée par un ami si elle n’a pas d’EAD ?"
+      },
+      {
+        "key": "situation_probationary_one_glass_risk",
+        "similarity": 0.114,
+        "question_fr": "J'ai un permis probatoire et on me propose un seul verre avant de conduire. Quelle décision est sûre ?"
+      },
+      {
+        "key": "danger_sign_double_bend_left",
+        "similarity": 0.107,
+        "question_fr": "Que vous annonce ce panneau ?"
+      },
+      {
+        "key": "situation_dynamic_speed_limit_over_fixed",
+        "similarity": 0.105,
+        "question_fr": "Le panneau fixe indique 110, mais le panneau lumineux affiche 70. Quelle limite s'applique ici ?"
+      },
+      {
+        "key": "situation_high_beams_oncoming_dip",
+        "similarity": 0.096,
+        "question_fr": "De nuit, une voiture arrive en face sur cette route non éclairée. Que dois-je faire avec mes feux de route ?"
+      }
+    ]
+  },
+  {
+    "scenario": "abs_warning_stays_on_without_red_brake",
+    "nearest": [
+      {
+        "key": "situation_abs_emergency_pedal_pulsation",
+        "similarity": 0.301,
+        "question_fr": "Lors d’un freinage d’urgence, l’ABS de ma voiture entre en action et la pédale vibre. Quelles affirmations sont exactes ?"
+      },
+      {
+        "key": "situation_safety_oil_pressure_stop_engine",
+        "similarity": 0.187,
+        "question_fr": "En roulant, le témoin rouge de pression d’huile reste allumé avec l’alerte STOP. Que dois-je faire ?"
+      },
+      {
+        "key": "situation_cmi_parking_card_passenger",
+        "similarity": 0.154,
+        "question_fr": "Je transporte une personne titulaire d’une CMI « stationnement » valide. Pour stationner avec elle, quelles affirmations sont exactes ?"
+      },
+      {
+        "key": "situation_motorway_blowout_initial_control",
+        "similarity": 0.121,
+        "question_fr": "Sur cette autoroute, un pneu éclate brusquement alors que je roule. Quelle est ma première réaction ?"
+      },
+      {
+        "key": "situation_emergency_vehicle_without_special_signals",
+        "similarity": 0.117,
+        "question_fr": "Le feu est rouge. Une ambulance attend derrière moi sans feu bleu ni sirène. Dois-je franchir la ligne d'arrêt pour la laisser passer ?"
+      }
+    ]
+  },
+  {
+    "scenario": "mountain_winter_ms_without_3pmsf",
+    "nearest": [
+      {
+        "key": "situation_snow_chains_b26_fit",
+        "similarity": 0.222,
+        "question_fr": "La chaussée est enneigée et ce panneau B26 est implanté. Ma voiture a des pneus été et les chaînes sont dans le coffre. Que faire ?"
+      },
+      {
+        "key": "situation_long_caravan_snow_overtaking_prohibited",
+        "similarity": 0.137,
+        "question_fr": "Je tracte une caravane : longueur totale 8 m, somme des PTAC 3 200 kg. Une voie de la chaussée est partiellement enneigée. Puis-je dépasser une voiture ?"
+      },
+      {
+        "key": "situation_b44_car_scenario",
+        "similarity": 0.133,
+        "question_fr": "Quelle obligation prend fin à ce panneau ?"
+      },
+      {
+        "key": "situation_no_overtaking_basic",
+        "similarity": 0.101,
+        "question_fr": "Sous réserve des autres règles de dépassement, quelles manœuvres le panneau B3 autorise-t-il encore ?"
+      },
+      {
+        "key": "situation_insurance_fva_no_green_sticker",
+        "similarity": 0.1,
+        "question_fr": "Une voiture immatriculée en France n’a plus de vignette verte d’assurance sur le pare-brise. Cela prouve-t-il qu’elle n’est pas assurée ?"
+      }
+    ]
+  },
+  {
+    "scenario": "yellow_continuous_kerb_no_stopping",
+    "nearest": [
+      {
+        "key": "situation_yellow_broken_kerb_parking_only",
+        "similarity": 0.356,
+        "question_fr": "Que signifie, à elle seule, cette ligne jaune discontinue sur la bordure du trottoir ?"
+      },
+      {
+        "key": "situation_no_stopping_b6d",
+        "similarity": 0.327,
+        "question_fr": "Puis-je m'arrêter après ce panneau pour laisser descendre un passager ?"
+      },
+      {
+        "key": "situation_no_parking",
+        "similarity": 0.305,
+        "question_fr": "Face à ce panneau, puis-je m'arrêter quelques instants pour laisser descendre un passager ?"
+      },
+      {
+        "key": "situation_no_motor_vehicles",
+        "similarity": 0.254,
+        "question_fr": "Avec ma voiture, puis-je m'engager dans cette rue pour déposer un passager ?"
+      },
+      {
+        "key": "situation_bus_stop_marking_no_stop",
+        "similarity": 0.215,
+        "question_fr": "Puis-je m'arrêter sur ce zigzag jaune d'arrêt d'autobus pour déposer rapidement un passager ?"
+      }
+    ]
+  },
+  {
+    "scenario": "speed_narrows_useful_visual_field",
+    "nearest": [
+      {
+        "key": "situation_bus_passengers_alighting_slow",
+        "similarity": 0.12,
+        "question_fr": "Des voyageurs descendent de ce bus arrêté et peuvent traverser devant lui. Comment adapter mon allure ?"
+      },
+      {
+        "key": "situation_occluded_pedestrian_hazard",
+        "similarity": 0.113,
+        "question_fr": "Une camionnette masque le trottoir et une partie du passage piéton. Quelle action est la plus sûre ?"
+      },
+      {
+        "key": "situation_frosted_windscreen_clear_before_drive",
+        "similarity": 0.112,
+        "question_fr": "Je n'ai gratté qu'une petite ouverture dans ce pare-brise givré. Puis-je partir ainsi ?"
+      },
+      {
+        "key": "safety_eco_driving_anticipation",
+        "similarity": 0.102,
+        "question_fr": "Quel style de conduite améliore généralement la sécurité tout en réduisant la consommation d’énergie ?"
+      },
+      {
+        "key": "situation_slippery_rain",
+        "similarity": 0.099,
+        "question_fr": "Par temps de pluie, face à ce panneau, quelle attitude dois-je adopter ?"
+      }
+    ]
+  },
+  {
+    "scenario": "overtake_return_arrows_before_solid",
+    "nearest": [
+      {
+        "key": "situation_two_way_traffic",
+        "similarity": 0.186,
+        "question_fr": "Que m’annonce le panneau A18 ?"
+      },
+      {
+        "key": "situation_overtake_no_speed_limit_exception",
+        "similarity": 0.175,
+        "question_fr": "Pour dépasser sur cette route limitée à 80 km/h, puis-je monter brièvement à 90 ?"
+      },
+      {
+        "key": "situation_c29a_car_scenario",
+        "similarity": 0.168,
+        "question_fr": "Que m’annonce ce panneau avant l’aménagement visible plus loin ?"
+      },
+      {
+        "key": "situation_priority_road_intersection_overtake",
+        "similarity": 0.166,
+        "question_fr": "Je circule sur une route prioritaire et les routes latérales ont un STOP. L'intersection interdit-elle à elle seule tout dépassement ?"
+      },
+      {
+        "key": "situation_mixed_line_broken_my_side",
+        "similarity": 0.152,
+        "question_fr": "La ligne discontinue est de mon côté et longe une ligne continue. Puis-je franchir l'ensemble pour dépasser si toutes les autres conditions sont sûres ?"
+      }
+    ]
+  },
+  {
+    "scenario": "blind_spot_monitor_not_clearance_guarantee",
+    "nearest": [
+      {
+        "key": "situation_truck_right_turn_blind_spot",
+        "similarity": 0.21,
+        "question_fr": "Ce poids lourd devant moi signale à droite et se décale vers la gauche. Puis-je passer dans l'espace ouvert à sa droite ?"
+      },
+      {
+        "key": "safety_door_cyclist_check",
+        "similarity": 0.176,
+        "question_fr": "Avant d’ouvrir ma portière du côté de la circulation, que dois-je faire ?"
+      },
+      {
+        "key": "situation_overtake_signal_before_moving_left",
+        "similarity": 0.175,
+        "question_fr": "Les contrôles confirment que le dépassement est possible. Quand dois-je actionner le clignotant gauche ?"
+      },
+      {
+        "key": "situation_overtake_right_left_turner",
+        "similarity": 0.163,
+        "question_fr": "Cette voiture ralentit et signale qu'elle tourne à gauche. Si l'espace est suffisant et sûr, de quel côté puis-je la dépasser ?"
+      },
+      {
+        "key": "situation_parking_camera_requires_direct_checks",
+        "similarity": 0.163,
+        "question_fr": "Pour me garer en marche arrière, l’écran de la caméra semble dégagé. Puis-je regarder uniquement cet écran ?"
+      }
+    ]
+  },
+  {
+    "scenario": "tunnel_radio_safety_messages",
+    "nearest": [
+      {
+        "key": "situation_motorway_tunnel_fire_evacuate",
+        "similarity": 0.156,
+        "question_fr": "Dans ce tunnel autoroutier, un véhicule brûle devant moi. Je suis arrêté en sécurité, moteur coupé. Que faire ensuite ?"
+      },
+      {
+        "key": "situation_motorway_sos_location",
+        "similarity": 0.119,
+        "question_fr": "Après une panne, je suis à l’abri et une borne SOS est accessible sans danger. Quel est son principal avantage pour l’alerte ?"
+      },
+      {
+        "key": "situation_rear_passenger_seatbelt",
+        "similarity": 0.118,
+        "question_fr": "Mon passager adulte à l'arrière ne veut pas boucler sa ceinture pour ce trajet très court. Puis-je démarrer ?"
+      },
+      {
+        "key": "situation_motorway_exit_lane_deadline",
+        "similarity": 0.116,
+        "question_fr": "La sortie que je veux prendre est annoncée. Quand dois-je avoir gagné la voie correspondante ?"
+      },
+      {
+        "key": "situation_b9b_car_interpretation",
+        "similarity": 0.113,
+        "question_fr": "Je conduis une voiture particulière. Ce panneau, à lui seul, m’interdit-il l’accès ?"
+      }
+    ]
+  },
+  {
+    "scenario": "electric_car_finished_charging_leave_bay",
+    "nearest": [
+      {
+        "key": "situation_ev_charger_blocked_parking",
+        "similarity": 0.238,
+        "question_fr": "Ma voiture thermique peut-elle stationner ici devant la borne de recharge, même pour peu de temps ?"
+      },
+      {
+        "key": "situation_parking_blocks_parked_exit",
+        "similarity": 0.158,
+        "question_fr": "Je veux laisser ma voiture en travers de la sortie de cette place, ce qui bloquera la voiture garée. Puis-je le faire quelques minutes ?"
+      },
+      {
+        "key": "situation_disabled_bay_without_card",
+        "similarity": 0.136,
+        "question_fr": "Cette place réservée est libre, mais je ne possède pas de carte mobilité inclusion stationnement. Puis-je m'y garer ?"
+      },
+      {
+        "key": "situation_ev_charge_cable_cut_insulation",
+        "similarity": 0.135,
+        "question_fr": "Avant de brancher ma voiture électrique, je vois une coupure dans la gaine du câble de recharge. Que faire ?"
+      },
+      {
+        "key": "situation_c26a_car_scenario",
+        "similarity": 0.126,
+        "question_fr": "Que désigne la branche terminée par un damier sur ce panneau ?"
+      }
+    ]
+  }
+]

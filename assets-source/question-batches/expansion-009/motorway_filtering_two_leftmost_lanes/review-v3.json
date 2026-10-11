@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "5df4d391ed178720c2b90be6facebec51ece544556553f55350cc54719532ddc",
+  "image_sha256": "97d46ea7124d038b1577ec6762574a6c0c746d737dad2898bf84563e9c081839",
+  "result": "pass",
+  "notes": "Manual full-resolution and phone-size inspection of the exact staged bytes and bilingual proposal completed. Approval means no detected unresolved defect, not an infallibility guarantee.",
+  "compared_question_keys": [
+    "situation_queued_lanes_right_moves_faster",
+    "situation_motorway_long_combination_two_right_lanes",
+    "situation_overtake_three_lane_no_far_left",
+    "situation_road_narrows_right_a3a",
+    "situation_parking_solid_line_insufficient_passage"
+  ],
+  "checks": {
+    "signs_and_text": "No signs, supplementary plates, readable instructions, arrows or solution highlights. Car registrations are not used as clues.",
+    "road_geometry": "Three queued same-direction lanes bounded by left central barrier and empty right shoulder. Two internal broken dividers; latest candidate replaces shoulder short dashes with long painted stretches and gaps. Opposite carriageway lies beyond the barrier.",
+    "vehicles_and_people": "All foreground cars face away and remain within lanes; oncoming cars beyond median face camera. Wheels, lamps and spacing are coherent. No motorcycle gives away the answer. Queue speed is supplied in text.",
+    "dashboard_and_equipment": "No dashboard. Barriers, mirrors, rear lamps and central reservation are coherent, with no readable false controls.",
+    "phone_size": "Three queues, median and shoulder remain distinct in 390px rendering, so leftmost versus rightmost corridors are unambiguous.",
+    "french_and_english": "Both state dry three-lane motorway, slow continuous queues and lawful filtering, asking the car driver's anticipation location. No motorcycle licence instruction is implied.",
+    "all_four_options": "D: between two leftmost lanes. A central reservation, B hard shoulder and C middle/right gap are different incorrect locations. Each option matches in FR/EN.",
+    "official_rule": "Sources read and checked 2026-10-11; research-and-selection.json records facts and limitations. Since11January2025 filtering under specified dense-traffic/road/weather conditions is between the two leftmost queues. Applies to car-driver anticipation of that location. Source: https://www.service-public.gouv.fr/particuliers/actualites/A17992",
+    "novelty": "Existing queue question distinguishes lanes advancing at different rates; existing overtaking/merging checks do not teach the lawful filtering corridor between the two leftmost lanes. All five saved nearest questions, including bilingual options/explanations, compared as recorded in research-and-selection.json; broader current bank screened.",
+    "full_resolution": "Inspected entire final staged JPEG 1671x941, plus 390px preview, against both translations and all four options. Rejected earlier candidates remain in history. No detected unresolved defect in this version."
+  }
+}

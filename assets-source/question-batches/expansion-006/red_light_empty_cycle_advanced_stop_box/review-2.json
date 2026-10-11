@@ -1,0 +1,6 @@
+{
+  "proposal_sha256": "ebaeec658edaa07191eb7b5fc1f9e9727b54da17bea8031b4ff34cee116ea563",
+  "image_sha256": "88cd12e36a928f354ff91a49554cd69ac3bdb63904c2dba2878e5b1696d7a38e",
+  "result": "reject",
+  "notes": "Replacement removes distant unreadable signs but transverse strokes remain appreciably longer than gaps; low repeater has no illuminated red lens while main signal is red. Correct both before complete reinspection."
+}

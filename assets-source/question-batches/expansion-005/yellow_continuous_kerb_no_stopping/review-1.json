@@ -1,0 +1,25 @@
+{
+  "proposal_sha256": "8f4b62272d4e0c861a6996ec412483be60a73b15fea630949d4a70bb6f8f0ce2",
+  "image_sha256": "bbb133c5d0cd490b472179b5510554137ccf79de20ccc624aeee5056d894087c",
+  "result": "pass",
+  "notes": "No detected unresolved defects after full-resolution and390px inspection; all source, novelty, wording and option checks completed. Approval binds exact proposal and image bytes.",
+  "compared_question_keys": [
+    "situation_yellow_broken_kerb_parking_only",
+    "situation_no_stopping_b6d",
+    "situation_no_parking",
+    "situation_no_motor_vehicles",
+    "situation_bus_stop_marking_no_stop"
+  ],
+  "checks": {
+    "signs_and_text": "One continuous yellow stripe across kerb top, no gaps beyond stone joints; no extra signs or symbols.",
+    "road_geometry": "Urban kerb and pavement continuous; no bays, crossing, driveway or temporary works.",
+    "vehicles_and_people": "No pedestrians or vehicles whose position could add an exception.",
+    "dashboard_and_equipment": "No dashboard or other equipment in frame.",
+    "phone_size": "Continuity and yellow colour unmistakable at390px; no passenger movement needed for hypothetical question.",
+    "official_rule": "Sources actually read during authoring: Current availableIISR7 Article118-2B,p47 and tablep10: continuous yellow kerb marking for prohibited stopping; broken for parking. Read cached officialPDF downloaded earlier.; 2015modification Article8 introduced current118-2B wording, confirmed in2025consolidation.",
+    "novelty": "Continuous yellow kerb recognition supplies a different controlling marking from broken yellow or B6d. Its no-stop meaning is the point, not a scenery-only B6d repeat. Compared the full nearest bilingual records; whole-bank topic checks include all categories.",
+    "full_resolution": "Viewed complete final JPEG [1672, 941] at original resolution and corresponding390px preview. No pedestrians or vehicles whose position could add an exception. No dashboard or other equipment in frame.",
+    "french_and_english": "Read both stems, all eight translated option strings and both explanations. Conditions and answer set match. Continuity and yellow colour unmistakable at390px; no passenger movement needed for hypothetical question.",
+    "all_four_options": "Correct A. A: Stopping is prohibited too.; B: Remaining present is no exemption.; C: Brief duration does not allow it.; D: No night-only qualification is shown."
+  }
+}

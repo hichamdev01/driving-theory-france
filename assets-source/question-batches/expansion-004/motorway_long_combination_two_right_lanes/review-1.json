@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "notes": "Manual source, novelty, full-resolution and phone-size review completed. No detected unresolved defect in this exact proposal and image. This does not claim infallible review.",
+  "proposal_sha256": "78d0887a47a12f1704c3968159115b05214cdcae3b550a186736745b7e4b20bd",
+  "image_sha256": "0968c7c818d27990ddf3efa00d9ac325dafe0510cf52b7d4ee11b399d900a535",
+  "compared_question_keys": [
+    "situation_motorway_left_lane_minimum_80",
+    "situation_overtake_three_lane_no_far_left",
+    "situation_long_caravan_snow_overtaking_prohibited",
+    "situation_long_caravan_facilitate_overtaking",
+    "situation_overtake_tram_left_one_way"
+  ],
+  "checks": {
+    "official_rule": "Checked 2026-10-10. R412-25 in force: combinations longer than 7m use the two rightmost general lanes when three or more serve one direction; stated scenario is overtaking, not an exception for changing direction.",
+    "novelty": "Keeping right after a pass and a three-lane TWO-WAY road are covered. Here the restriction derives from combination length on three SAME-DIRECTION motorway lanes. Read all five nearest stems and explanations plus the wider relevant-category inventory; no equivalent decision found among pending work.",
+    "signs_and_text": "No signs or supplementary plates; white lane markings only.",
+    "road_geometry": "Exactly two broken dividers form three same-direction lanes between median and right edge. Continuous shoulder edge is permitted. Camera is in middle lane, a deviation from prompt but not from question: current lane is unspecified and middle is allowed.",
+    "vehicles_and_people": "No vehicles, people or competing movements. Caravan and dimensions are explicitly stated, behind/outside image.",
+    "dashboard_and_equipment": "No dashboard, speed reading or controls.",
+    "full_resolution": "Inspected complete final staged JPEG at native1672×941 with view_image original, including contextual details. Exactly two broken dividers form three same-direction lanes between median and right edge. Continuous shoulder edge is permitted. Camera is in middle lane, a deviation from prompt but not from question: current lane is unspecified and middle is allowed. No vehicles, people or competing movements. Caravan and dimensions are explicitly stated, behind/outside image.",
+    "phone_size": "Inspected saved390px phone-1.jpg. Three lanes, left median and right shoulder are easy to distinguish; no implied fourth traffic lane.",
+    "french_and_english": "Both translations reviewed clause by clause; same conditions, answer meaning and explanation. Invisible facts explicitly stated in question. Three motorway lanes in one direction, dry, no reserved lanes or change of direction. Car and caravan together 8m; sum of PTACs 3200kg.",
+    "all_four_options": "Correct set c. FR: {\"a\": \"La catégorie de permis ne supprime pas la restriction de voie.\", \"b\": \"Une voie libre reste interdite à cet ensemble pour dépasser.\", \"c\": \"R412-25 vise les ensembles de plus de 7 m.\", \"d\": \"Ralentir ne lève pas la restriction.\"} EN: {\"a\": \"Licence entitlement does not remove the lane restriction.\", \"b\": \"An empty lane does not make it available.\", \"c\": \"R412-25 applies to combinations over 7 m.\", \"d\": \"A lower speed does not remove the restriction.\"}"
+  }
+}

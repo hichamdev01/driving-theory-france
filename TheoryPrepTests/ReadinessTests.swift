@@ -145,4 +145,34 @@ final class ReadinessTests: XCTestCase {
         XCTAssertEqual(report.bankSize, 0)
         XCTAssertTrue(report.themes.isEmpty)
     }
+
+    func testNewLearnerGetsMixedPracticeInsteadOfAnArbitraryTheme() {
+        let report = ReadinessReport.make(from: [
+            theme(available: 30, seen: 0, attempts: 0, correct: 0, daysAgo: nil)
+        ], now: now)
+        XCTAssertNil(report.recommendedTheme)
+        XCTAssertNil(ReadinessReport.empty.recommendedTheme)
+    }
+
+    func testRecommendationPrioritisesAccuracyThenStaleRevisionThenCoverage() {
+        let inputs = [
+            theme(id: 1, available: 10, seen: 0, attempts: 0, correct: 0, daysAgo: nil),
+            theme(id: 2, available: 10, seen: 1, attempts: 1, correct: 1),
+            theme(id: 3, available: 10, seen: 10, attempts: 10, correct: 10, daysAgo: 30),
+            theme(id: 4, available: 10, seen: 10, attempts: 10, correct: 2)
+        ]
+        XCTAssertEqual(ReadinessReport.make(from: inputs, now: now).recommendedTheme?.categoryId, 4)
+        XCTAssertEqual(ReadinessReport.make(from: Array(inputs.prefix(3)), now: now).recommendedTheme?.categoryId, 3)
+        XCTAssertEqual(ReadinessReport.make(from: Array(inputs.prefix(2)), now: now).recommendedTheme?.categoryId, 1)
+    }
+
+    func testRecommendationDoesNotTreatUnmeasurableOrSolidThemesAsWeak() {
+        let report = ReadinessReport.make(from: [
+            theme(id: 1, available: 3, seen: 1, attempts: 1, correct: 0),
+            theme(id: 2, available: 10, seen: 10, attempts: 10, correct: 10)
+        ], now: now)
+        XCTAssertNil(report.recommendedTheme)
+        XCTAssertEqual(report.unmeasurable.count, 1)
+        XCTAssertEqual(report.verdict, .readyOnMeasured)
+    }
 }
